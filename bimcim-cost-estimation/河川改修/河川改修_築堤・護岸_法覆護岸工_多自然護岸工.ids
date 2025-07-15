@@ -1,0 +1,591 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>河川改修_築堤・護岸_法覆護岸工_多自然護岸工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>1.0</version>
+        <description>令和5年度対応の積算用属性情報（properties_202304_01.xlsx）に準拠します。
+このIDSファイルにない項目、設定が困難な項目等は、設計数量管理機能で設定してしてください。
+このIDSファイルは次のソフトウェアで出力したIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2025-07-01</date>
+        <purpose>BIM/CIM積算のための属性情報を設定します。</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="かごマット(スロープ型)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>かごマット(スロープ型)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_かごマット(スロープ型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_かごマット(スロープ型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>かご厚さ</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_t=30cm" />
+                            <xs:enumeration value="2_t=50cm" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_かごマット(スロープ型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>かご本体材質</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_亜鉛ｱﾙﾐﾒｯｷ" />
+                            <xs:enumeration value="2_各種" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_かごマット(スロープ型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1045600101_1053200101_1056600101_B057100101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_かごマット(スロープ型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>詰石種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_栗石" />
+                            <xs:enumeration value="2_割栗石" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_かごマット(スロープ型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>詰石規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_径5～15cm" />
+                            <xs:enumeration value="2_径15～20cm" />
+                            <xs:enumeration value="3_各種" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="かごマット(多段積型)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>かごマット(多段積型)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_かごマット(多段積型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_かごマット(多段積型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>かご本体材質</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_亜鉛アルミメッキ鉄線" />
+                            <xs:enumeration value="2_各種" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_かごマット(多段積型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>かご本体材質（文字入力）</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_かごマット(多段積型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1045600101_1053200101_1056600101_1057100201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_かごマット(多段積型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>詰石種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_割栗石" />
+                            <xs:enumeration value="2_栗石" />
+                            <xs:enumeration value="3_玉石" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_かごマット(多段積型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>詰石規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_15～20cm" />
+                            <xs:enumeration value="2_各種" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_かごマット(多段積型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>詰石規格（文字入力）</simpleValue>
+                    </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ブロックマット" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ブロックマット</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_ブロックマット</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_ブロックマット</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1045600101_1053200101_1056600101_1057100301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_ブロックマット</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>法勾配</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_1:1.5以上 1:1.8未満" />
+                            <xs:enumeration value="2_1:1.8以上 1:2.0未満" />
+                            <xs:enumeration value="3_1:2.0以上 1:3.0未満" />
+                            <xs:enumeration value="4_1:3.0" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="巨石張(空)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>巨石張(空)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_巨石張(空)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_巨石張(空)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1045600101_1053200101_1056600101_B056805201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_巨石張(空)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>吸出し防止材の有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_吸出し防止材有" />
+                            <xs:enumeration value="2_吸出し防止材無" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_巨石張(空)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>石材径</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_40cm以上60cm未満" />
+                            <xs:enumeration value="2_60cm以上80cm未満" />
+                            <xs:enumeration value="3_80cm以上100cm以下" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="巨石張(練)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>巨石張(練)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_巨石張(練)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_巨石張(練)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1045600101_1053200101_1056600101_B056800101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_巨石張(練)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>止水ｼｰﾄの有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_止水ｼｰﾄ有" />
+                            <xs:enumeration value="2_止水ｼｰﾄ無" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_巨石張(練)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>石材径</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_40cm以上60cm未満" />
+                            <xs:enumeration value="2_60cm以上80cm未満" />
+                            <xs:enumeration value="3_80cm以上100cm以下" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_巨石張(練)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>遮水ｼｰﾄの有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_遮水ｼｰﾄ有" />
+                            <xs:enumeration value="2_遮水ｼｰﾄ無" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="巨石据付" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>巨石据付</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_巨石据付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_巨石据付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1045600101_1053200101_1056600101_1554200101</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_巨石据付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>石材径</simpleValue>
+                    </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="巨石積(練)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>巨石積(練)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_巨石積(練)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_巨石積(練)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1045600101_1053200101_1056600101_B056900101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_巨石積(練)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>止水ｼｰﾄの有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_止水ｼｰﾄ有" />
+                            <xs:enumeration value="2_止水ｼｰﾄ無" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_巨石積(練)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>石材径</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_40cm以上60cm未満" />
+                            <xs:enumeration value="2_60cm以上80cm未満" />
+                            <xs:enumeration value="3_80cm以上100cm以下" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_巨石積(練)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>遮水ｼｰﾄの有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_遮水ｼｰﾄ有" />
+                            <xs:enumeration value="2_遮水ｼｰﾄ無" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="木杭" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>木杭</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_木杭</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_木杭</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1045600101_1053200101_1056600101_B048500101</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_木杭</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>杭材質</simpleValue>
+                    </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="雑割石張" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>雑割石張</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_雑割石張</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_雑割石張</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1045600101_1053200101_1056600101_1057000101</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_多自然護岸工_雑割石張</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>空石規格</simpleValue>
+                    </baseName>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>

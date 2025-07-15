@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>河川改修_堰_固定堰本体工_矢板工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>1.0</version>
+        <description>令和5年度対応の積算用属性情報（properties_202304_01.xlsx）に準拠します。
+このIDSファイルにない項目、設定が困難な項目等は、設計数量管理機能で設定してしてください。
+このIDSファイルは次のソフトウェアで出力したIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2025-07-01</date>
+        <purpose>BIM/CIM積算のための属性情報を設定します。</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="可とう鋼矢板" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>可とう鋼矢板</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_固定堰本体工_矢板工_可とう鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_固定堰本体工_矢板工_可とう鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1477500101_1051100302_1545000101</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_固定堰本体工_矢板工_可とう鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>可とう種別</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_固定堰本体工_矢板工_可とう鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>打込工法</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_ﾊﾞｲﾌﾞﾛ工法" />
+                            <xs:enumeration value="2_ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛ工法" />
+                            <xs:enumeration value="3_ｱｰｽｵｰｶﾞ併用圧入工法" />
+                            <xs:enumeration value="4_油圧式杭圧入工法" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_固定堰本体工_矢板工_可とう鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鋼矢板型式</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_II型" />
+                            <xs:enumeration value="2_III型" />
+                            <xs:enumeration value="3_IV型" />
+                            <xs:enumeration value="4_VL型" />
+                            <xs:enumeration value="5_VIL型" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_固定堰本体工_矢板工_可とう鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鋼矢板長さ</simpleValue>
+                    </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="広幅鋼矢板" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>広幅鋼矢板</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_固定堰本体工_矢板工_広幅鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_固定堰本体工_矢板工_広幅鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1477500101_1051100302_1563200101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_固定堰本体工_矢板工_広幅鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>広幅鋼矢板型式</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_IIw型" />
+                            <xs:enumeration value="2_IIIw型" />
+                            <xs:enumeration value="3_IVw型" />
+                            <xs:enumeration value="4_10H型" />
+                            <xs:enumeration value="5_25H型" />
+                            <xs:enumeration value="6_45H型" />
+                            <xs:enumeration value="7_50H型" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_固定堰本体工_矢板工_広幅鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>広幅鋼矢板平均長さ</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_固定堰本体工_矢板工_広幅鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>打込工法</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
+                            <xs:enumeration value="2_ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
+                            <xs:enumeration value="3_油圧圧入工法" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_固定堰本体工_矢板工_広幅鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鋼矢板平均引抜長</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_固定堰本体工_矢板工_広幅鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鋼矢板打込長</simpleValue>
+                    </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="鋼矢板" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>鋼矢板</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_固定堰本体工_矢板工_鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_固定堰本体工_矢板工_鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1477500101_1051100302_1051200102</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_固定堰本体工_矢板工_鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>打込工法</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
+                            <xs:enumeration value="2_ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
+                            <xs:enumeration value="3_ｱｰｽｵｰｶﾞ併用圧入工法" />
+                            <xs:enumeration value="4_油圧圧入工法" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_固定堰本体工_矢板工_鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鋼矢板型式</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_II型" />
+                            <xs:enumeration value="2_III型" />
+                            <xs:enumeration value="3_IV型" />
+                            <xs:enumeration value="4_VL型" />
+                            <xs:enumeration value="5_VIL型" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_固定堰本体工_矢板工_鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鋼矢板平均引抜長</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_固定堰本体工_矢板工_鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鋼矢板平均長さ</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_固定堰本体工_矢板工_鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鋼矢板打込長</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_固定堰本体工_矢板工_鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鋼矢板材質</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_SY295" />
+                            <xs:enumeration value="2_SY390" />
+                            <xs:enumeration value="3_SYW295" />
+                            <xs:enumeration value="4_SYW390" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>
