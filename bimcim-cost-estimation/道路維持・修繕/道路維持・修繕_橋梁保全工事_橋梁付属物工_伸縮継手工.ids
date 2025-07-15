@@ -1,0 +1,355 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>1.0</version>
+        <description>令和5年度対応の積算用属性情報（properties_202304_01.xlsx）に準拠します。
+このIDSファイルにない項目、設定が困難な項目等は、設計数量管理機能で設定してしてください。
+このIDSファイルは次のソフトウェアで出力したIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2025-07-01</date>
+        <purpose>BIM/CIM積算のための属性情報を設定します。</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="埋設ジョイント補修" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>埋設ジョイント補修</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_埋設ジョイント補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_埋設ジョイント補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>伸縮装置断面積</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_埋設ジョイント補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508500101_1378900401_1515600101_1538800101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_埋設ジョイント補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>取付部位</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_舗装厚内型" />
+                            <xs:enumeration value="2_床版箱抜型" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_埋設ジョイント補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>工法区分</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_埋設ジョイント補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>工種</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_補修</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_埋設ジョイント補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>補修形式</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_1車線相当" />
+                            <xs:enumeration value="2_2車線相当" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_埋設ジョイント補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼﾞｮｲﾝﾄ規格</simpleValue>
+                    </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="殻処分" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>殻処分</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_殻処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_殻処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508500101_1378900401_1515600101_B003805108</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_殻処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>殻種別</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_ｱｽﾌｧﾙﾄ殻" />
+                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ殻(無筋)" />
+                            <xs:enumeration value="3_ｺﾝｸﾘｰﾄ殻(鉄筋)" />
+                            <xs:enumeration value="4_ﾓﾙﾀﾙ殻" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="殻運搬" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>殻運搬</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_殻運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_殻運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508500101_1378900401_1515600101_B003800108</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_殻運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>殻種別</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_ｺﾝｸﾘｰﾄ(無筋)構造物とりこわし" />
+                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ(鉄筋)構造物とりこわし" />
+                            <xs:enumeration value="3_舗装版破砕" />
+                            <xs:enumeration value="4_吹付法面とりこわし(ﾓﾙﾀﾙ)" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="鋼・ゴム製伸縮装置補修" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>鋼・ゴム製伸縮装置補修</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_鋼・ゴム製伸縮装置補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_鋼・ゴム製伸縮装置補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仕様</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_1車線相当" />
+                            <xs:enumeration value="2_2車線相当" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_鋼・ゴム製伸縮装置補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>伸縮装置本体型式</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_軽量型" />
+                            <xs:enumeration value="2_普通型" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_鋼・ゴム製伸縮装置補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>伸縮装置本体材料の計上</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_伸縮装置本体材料有" />
+                            <xs:enumeration value="2_伸縮装置本体材料無" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_鋼・ゴム製伸縮装置補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508500101_1378900401_1515600101_1602100101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_鋼・ゴム製伸縮装置補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>工種</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_新設" />
+                            <xs:enumeration value="2_補修" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="鋼製伸縮継手補修" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>鋼製伸縮継手補修</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_鋼製伸縮継手補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_鋼製伸縮継手補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>伸縮装置補修</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_補修軽量2車線" />
+                            <xs:enumeration value="2_補修普通2車線" />
+                            <xs:enumeration value="3_補修軽量1車線" />
+                            <xs:enumeration value="4_補修普通1車線" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁付属物工_伸縮継手工_鋼製伸縮継手補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508500101_1378900401_1515600101_B548600101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>

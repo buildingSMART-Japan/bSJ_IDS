@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>道路維持・修繕_道路修繕_排水構造物工_場所打水路工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>1.0</version>
+        <description>令和5年度対応の積算用属性情報（properties_202304_01.xlsx）に準拠します。
+このIDSファイルにない項目、設定が困難な項目等は、設計数量管理機能で設定してしてください。
+このIDSファイルは次のソフトウェアで出力したIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2025-07-01</date>
+        <purpose>BIM/CIM積算のための属性情報を設定します。</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="側溝蓋" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>側溝蓋</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_排水構造物工_場所打水路工_側溝蓋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_排水構造物工_場所打水路工_側溝蓋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1322400201_1324100101_1067500301</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_排水構造物工_場所打水路工_側溝蓋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>蓋種類</simpleValue>
+                    </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="現場打水路" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>現場打水路</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_排水構造物工_場所打水路工_現場打水路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_排水構造物工_場所打水路工_現場打水路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1322400201_1324100101_B102400102</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_排水構造物工_場所打水路工_現場打水路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>内幅(複単不使用の場合)</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_排水構造物工_場所打水路工_現場打水路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>内高(複単不使用の場合)</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_排水構造物工_場所打水路工_現場打水路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1_21-8-25(20)(普通)" />
+                            <xs:enumeration value="10_21-12-40(普通)" />
+                            <xs:enumeration value="11_24-8-40(普通)" />
+                            <xs:enumeration value="12_24-12-40(普通)" />
+                            <xs:enumeration value="13_21-8-25(20)(高炉)" />
+                            <xs:enumeration value="14_21-12-25(20)(高炉)" />
+                            <xs:enumeration value="15_24-8-25(20)(高炉)" />
+                            <xs:enumeration value="16_24-12-25(20)(高炉)" />
+                            <xs:enumeration value="17_18-8-40(高炉)" />
+                            <xs:enumeration value="18_18-12-40(高炉)" />
+                            <xs:enumeration value="19_21-8-40(高炉)" />
+                            <xs:enumeration value="2_21-12-25(20)(普通)" />
+                            <xs:enumeration value="20_21-12-40(高炉)" />
+                            <xs:enumeration value="21_24-8-40(高炉)" />
+                            <xs:enumeration value="22_24-12-40(高炉)" />
+                            <xs:enumeration value="23_21-8-25(早強)" />
+                            <xs:enumeration value="24_21-12-25(早強)" />
+                            <xs:enumeration value="25_24-8-25(早強)" />
+                            <xs:enumeration value="26_24-12-25(早強)" />
+                            <xs:enumeration value="27_18-8-25(高炉)" />
+                            <xs:enumeration value="28_18-12-25(高炉)" />
+                            <xs:enumeration value="29_各種" />
+                            <xs:enumeration value="3_24-8-25(20)(普通)" />
+                            <xs:enumeration value="4_24-12-25(20)(普通)" />
+                            <xs:enumeration value="5_27-8-25(20)(普通)" />
+                            <xs:enumeration value="6_27-12-25(20)(普通)" />
+                            <xs:enumeration value="7_18-8-40(普通)" />
+                            <xs:enumeration value="8_18-12-40(普通)" />
+                            <xs:enumeration value="9_21-8-40(普通)" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>
