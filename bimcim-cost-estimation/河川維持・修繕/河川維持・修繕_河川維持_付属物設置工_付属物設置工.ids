@@ -58,6 +58,17 @@
                         <simpleValue>本体ｺﾝｸﾘｰﾄ規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_付属物設置工_付属物設置工_境界(法留)壁</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="境界鋲" ifcVersion="IFC2X3">
@@ -99,6 +110,17 @@
                         <simpleValue>境界鋲規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_付属物設置工_付属物設置工_境界鋲</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>境界鋲設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>境界鋲設置［市場単価］</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_付属物設置工_付属物設置工_境界鋲</simpleValue>
@@ -108,10 +130,54 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_30枚以上" />
-                            <xs:enumeration value="2_10枚以上30枚未満" />
-                            <xs:enumeration value="3_10枚未満" />
+                            <xs:enumeration value="30枚以上" />
+                            <xs:enumeration value="10枚以上30枚未満" />
+                            <xs:enumeration value="10枚未満" />
                         </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="標識" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>標識</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_付属物設置工_付属物設置工_標識</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_付属物設置工_付属物設置工_標識</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1536400401_1580200101_1580100101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_付属物設置工_付属物設置工_標識</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>標識設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>標識設置</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -156,8 +222,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_設置" />
-                            <xs:enumeration value="2_撤去" />
+                            <xs:enumeration value="設置" />
+                            <xs:enumeration value="撤去" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -170,10 +236,32 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_パネル式(アンカー固定)" />
-                            <xs:enumeration value="2_パネル式(金具固定)" />
-                            <xs:enumeration value="3_パネル式(土中埋込)" />
+                            <xs:enumeration value="パネル式(アンカー固定)" />
+                            <xs:enumeration value="パネル式(金具固定)" />
+                            <xs:enumeration value="パネル式(土中埋込)" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_付属物設置工_付属物設置工_距離標</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>距離標材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>距離標(材料費)</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_付属物設置工_付属物設置工_距離標</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>距離標設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>距離標</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -216,6 +304,17 @@
                     <baseName>
                         <simpleValue>車止めﾎﾟｽﾄ径</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_付属物設置工_付属物設置工_車止めポスト</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>車止めﾎﾟｽﾄ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>車止めポスト設置</simpleValue>
+                    </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>

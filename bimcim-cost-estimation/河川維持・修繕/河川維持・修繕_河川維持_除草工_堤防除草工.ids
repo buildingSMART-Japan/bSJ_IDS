@@ -59,9 +59,290 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_除草，集草（機械），梱包，積込・荷卸" />
-                            <xs:enumeration value="2_除草，集草（人力），梱包，積込・荷卸" />
+                            <xs:enumeration value="除草，集草（機械），梱包，積込・荷卸" />
+                            <xs:enumeration value="除草，集草（人力），梱包，積込・荷卸" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_除草工_堤防除草工_堤防除草(複合)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>堤防除草費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="除草，集草（機械），梱包，積込・荷卸（総合）" />
+                            <xs:enumeration value="除草，集草（人力），梱包，積込・荷卸（総合）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="梱包" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>梱包</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_除草工_堤防除草工_梱包</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_除草工_堤防除草工_梱包</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1501600101_1501700101_B501805301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_除草工_堤防除草工_梱包</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>梱包費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>梱包</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="積込・荷卸" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>積込・荷卸</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_除草工_堤防除草工_積込・荷卸</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_除草工_堤防除草工_積込・荷卸</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1501600101_1501700101_B501805401</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_除草工_堤防除草工_積込・荷卸</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>積込・荷卸費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>積込・荷卸</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="運搬(堤防除草)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>運搬(堤防除草)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_除草工_堤防除草工_運搬(堤防除草)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_除草工_堤防除草工_運搬(堤防除草)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1501600101_1501700101_B501805501</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_除草工_堤防除草工_運搬(堤防除草)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>運搬（堤防除草）</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="除草" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>除草</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_除草工_堤防除草工_除草</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_除草工_堤防除草工_除草</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1501600101_1501700101_B501805101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_除草工_堤防除草工_除草</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>除草費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>除草</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="除草処分" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>除草処分</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_除草工_堤防除草工_除草処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_除草工_堤防除草工_除草処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1501600101_1501700101_B501805601</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_除草工_堤防除草工_除草処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>処分費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="処分費（ｍ３）" />
+                            <xs:enumeration value="処分費（ｔ）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="集草" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>集草</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_除草工_堤防除草工_集草</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_除草工_堤防除草工_集草</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1501600101_1501700101_B501805201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_除草工_堤防除草工_集草</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>集草費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>集草</simpleValue>
                     </value>
                 </property>
             </requirements>

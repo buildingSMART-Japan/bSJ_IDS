@@ -19,6 +19,61 @@
         <milestone>詳細設計</milestone>
     </info>
     <specifications>
+        <specification name="シール材" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>シール材</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_堤脚保護工_石積工_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_堤脚保護工_石積工_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1498700101_1499100101_1499200101_B616000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_堤脚保護工_石積工_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼｰﾙ材設置(材料費)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>シール材（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_堤脚保護工_石積工_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼｰﾙ材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>シール材</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
         <specification name="現場打天端コンクリート" ifcVersion="IFC2X3">
             <applicability minOccurs="1" maxOccurs="1">
                 <attribute>
@@ -50,6 +105,28 @@
                         <simpleValue>1472300101_1498700101_1499100101_1499200101_B053800103</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_堤脚保護工_石積工_現場打天端コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>基礎砕石</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_堤脚保護工_石積工_現場打天端コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>現場打天端ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>現場打天端コンクリート</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_堤脚保護工_石積工_現場打天端コンクリート</simpleValue>
@@ -59,11 +136,11 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_18-8-25(普通)" />
-                            <xs:enumeration value="2_18-8-40(普通)" />
-                            <xs:enumeration value="3_18-8-25(高炉)" />
-                            <xs:enumeration value="4_18-8-40(高炉)" />
-                            <xs:enumeration value="5_生ｺﾝｸﾘｰﾄ各種" />
+                            <xs:enumeration value="18-8-25(普通)" />
+                            <xs:enumeration value="18-8-40(普通)" />
+                            <xs:enumeration value="18-8-25(高炉)" />
+                            <xs:enumeration value="18-8-40(高炉)" />
+                            <xs:enumeration value="生ｺﾝｸﾘｰﾄ各種" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -109,19 +186,19 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_瀝青質目地板ｔ=10" />
-                            <xs:enumeration value="10_樹脂発泡体(30倍発泡)t=20" />
-                            <xs:enumeration value="11_ｺﾞﾑ発泡体t=20" />
-                            <xs:enumeration value="12_発泡ｽﾁﾛｰﾙt=20" />
-                            <xs:enumeration value="13_各種" />
-                            <xs:enumeration value="2_瀝青繊維質目地板t=10" />
-                            <xs:enumeration value="3_樹脂発泡体(15倍発泡)t=10" />
-                            <xs:enumeration value="4_樹脂発泡体(30倍発泡)t=10" />
-                            <xs:enumeration value="5_ｺﾞﾑ発泡体t=10" />
-                            <xs:enumeration value="6_発泡ｽﾁﾛｰﾙt=10" />
-                            <xs:enumeration value="7_瀝青質目地板ｔ=20" />
-                            <xs:enumeration value="8_瀝青繊維質目地板t=20" />
-                            <xs:enumeration value="9_樹脂発泡体(15倍発泡)t=20" />
+                            <xs:enumeration value="瀝青質目地板ｔ=10" />
+                            <xs:enumeration value="瀝青繊維質目地板t=10" />
+                            <xs:enumeration value="樹脂発泡体(15倍発泡)t=10" />
+                            <xs:enumeration value="樹脂発泡体(30倍発泡)t=10" />
+                            <xs:enumeration value="ｺﾞﾑ発泡体t=10" />
+                            <xs:enumeration value="発泡ｽﾁﾛｰﾙt=10" />
+                            <xs:enumeration value="瀝青質目地板ｔ=20" />
+                            <xs:enumeration value="瀝青繊維質目地板t=20" />
+                            <xs:enumeration value="樹脂発泡体(15倍発泡)t=20" />
+                            <xs:enumeration value="樹脂発泡体(30倍発泡)t=20" />
+                            <xs:enumeration value="ｺﾞﾑ発泡体t=20" />
+                            <xs:enumeration value="発泡ｽﾁﾛｰﾙt=20" />
+                            <xs:enumeration value="各種" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
                     </value>
@@ -135,9 +212,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_厚10mm" />
-                            <xs:enumeration value="2_厚20mm" />
+                            <xs:enumeration value="厚10mm" />
+                            <xs:enumeration value="厚20mm" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_堤脚保護工_石積工_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>目地板</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -173,6 +261,39 @@
                         <simpleValue>1472300101_1498700101_1499100101_1499200101_B056000101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_堤脚保護工_石積工_石積</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>吸出し防止材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>吸出し防止材設置</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_堤脚保護工_石積工_石積</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>水抜ﾊﾟｲﾌﾟ材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_堤脚保護工_石積工_石積</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>目地板</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_堤脚保護工_石積工_石積</simpleValue>
@@ -182,8 +303,22 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_玉石" />
-                            <xs:enumeration value="2_雑割石" />
+                            <xs:enumeration value="玉石" />
+                            <xs:enumeration value="雑割石" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_堤脚保護工_石積工_石積</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>石積費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="石積（張）" />
+                            <xs:enumeration value="石積（張）（材料費）" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -220,6 +355,17 @@
                         <simpleValue>1472300101_1498700101_1499100101_1499200101_B056005201</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_堤脚保護工_石積工_胴込・裏込コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>胴込･裏込ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>胴込・裏込コンクリート</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_堤脚保護工_石積工_胴込・裏込コンクリート</simpleValue>
@@ -229,15 +375,15 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_18-8-25" />
-                            <xs:enumeration value="2_18-8-40" />
-                            <xs:enumeration value="3_19.5-8-40" />
-                            <xs:enumeration value="4_21-8-25" />
-                            <xs:enumeration value="5_18-8-25(高炉)" />
-                            <xs:enumeration value="6_18-8-40(高炉)" />
-                            <xs:enumeration value="7_19.5-8-40(高炉)" />
-                            <xs:enumeration value="8_21-8-25(高炉)" />
-                            <xs:enumeration value="9_各種" />
+                            <xs:enumeration value="18-8-25" />
+                            <xs:enumeration value="18-8-40" />
+                            <xs:enumeration value="19.5-8-40" />
+                            <xs:enumeration value="21-8-25" />
+                            <xs:enumeration value="18-8-25(高炉)" />
+                            <xs:enumeration value="18-8-40(高炉)" />
+                            <xs:enumeration value="19.5-8-40(高炉)" />
+                            <xs:enumeration value="21-8-25(高炉)" />
+                            <xs:enumeration value="各種" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
                     </value>
@@ -284,13 +430,24 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_再生クラッシャラン　RC-40" />
-                            <xs:enumeration value="2_再生クラッシャラン　RC-80" />
-                            <xs:enumeration value="3_クラッシャラン　C-40" />
-                            <xs:enumeration value="4_クラッシャラン　C-80" />
-                            <xs:enumeration value="5_各種" />
+                            <xs:enumeration value="再生クラッシャラン　RC-40" />
+                            <xs:enumeration value="再生クラッシャラン　RC-80" />
+                            <xs:enumeration value="クラッシャラン　C-40" />
+                            <xs:enumeration value="クラッシャラン　C-80" />
+                            <xs:enumeration value="各種" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_堤脚保護工_石積工_裏込材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>裏込材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>裏込材（クラッシャラン）</simpleValue>
                     </value>
                 </property>
             </requirements>

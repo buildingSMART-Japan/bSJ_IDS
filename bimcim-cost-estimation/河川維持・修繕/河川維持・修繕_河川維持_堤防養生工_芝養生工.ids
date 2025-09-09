@@ -59,12 +59,23 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_抜根+集草+積込運搬" />
-                            <xs:enumeration value="2_抜根+集草" />
-                            <xs:enumeration value="3_抜根のみ" />
-                            <xs:enumeration value="4_集草のみ" />
-                            <xs:enumeration value="5_積込運搬のみ" />
+                            <xs:enumeration value="抜根+集草+積込運搬" />
+                            <xs:enumeration value="抜根+集草" />
+                            <xs:enumeration value="抜根のみ" />
+                            <xs:enumeration value="集草のみ" />
+                            <xs:enumeration value="積込運搬のみ" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_堤防養生工_芝養生工_抜根</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>抜根費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>抜根</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -98,6 +109,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1472300101_1501100101_1501900101_1502000101_B545300101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_堤防養生工_芝養生工_施肥</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>施肥費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>施肥</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">

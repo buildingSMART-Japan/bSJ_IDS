@@ -74,6 +74,17 @@
                         <simpleValue>管規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_光ケーブル配管工_配管工_配管設置(埋設部)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>配管設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>配管設置(埋設部)</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
     </specifications>

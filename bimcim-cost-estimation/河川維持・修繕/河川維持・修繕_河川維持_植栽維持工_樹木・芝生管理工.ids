@@ -50,6 +50,17 @@
                         <simpleValue>1472300101_1501100101_1506300101_1506400101_1507500101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_地被類植付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>地被類植付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>地被類植付</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_地被類植付</simpleValue>
@@ -100,8 +111,22 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_除草，集草（機械），梱包，積込・荷卸" />
-                            <xs:enumeration value="2_除草，集草（人力），梱包，積込・荷卸" />
+                            <xs:enumeration value="除草，集草（機械），梱包，積込・荷卸" />
+                            <xs:enumeration value="除草，集草（人力），梱包，積込・荷卸" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_堤防除草(複合)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>堤防除草費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="除草，集草（機械），梱包，積込・荷卸（総合）" />
+                            <xs:enumeration value="除草，集草（人力），梱包，積込・荷卸（総合）" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -127,6 +152,17 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_寄植せん定</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>せん定費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>せん定</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_寄植せん定</simpleValue>
@@ -187,6 +223,17 @@
                         <simpleValue>1472300101_1501100101_1506300101_1506400101_B058800105</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_市松芝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>散水養生費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>養生（散水養生）</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_市松芝</simpleValue>
@@ -194,6 +241,17 @@
                     <baseName>
                         <simpleValue>施工規模</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_市松芝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>芝張費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>市松芝</simpleValue>
+                    </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
@@ -204,8 +262,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_高麗芝" />
-                            <xs:enumeration value="2_野芝" />
+                            <xs:enumeration value="高麗芝" />
+                            <xs:enumeration value="野芝" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -242,6 +300,17 @@
                         <simpleValue>1472300101_1501100101_1506300101_1506400101_B058600105</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_張芝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>張芝費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>人力施工による植生工</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_張芝</simpleValue>
@@ -251,12 +320,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1000m2以上" />
-                            <xs:enumeration value="2_500m2以上1000m2未満" />
-                            <xs:enumeration value="3_500m2未満" />
-                            <xs:enumeration value="4_500m2以上" />
-                            <xs:enumeration value="5_300m2以上500m2未満" />
-                            <xs:enumeration value="6_300m2未満" />
+                            <xs:enumeration value="1000m2以上" />
+                            <xs:enumeration value="500m2以上1000m2未満" />
+                            <xs:enumeration value="500m2未満" />
+                            <xs:enumeration value="500m2以上" />
+                            <xs:enumeration value="300m2以上500m2未満" />
+                            <xs:enumeration value="300m2未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -269,12 +338,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_植生ﾏｯﾄ工" />
-                            <xs:enumeration value="2_植生ｼｰﾄ工(標準品)" />
-                            <xs:enumeration value="3_植生ｼｰﾄ工(環境品)" />
-                            <xs:enumeration value="4_植生筋工" />
-                            <xs:enumeration value="5_筋芝工" />
-                            <xs:enumeration value="6_張芝工" />
+                            <xs:enumeration value="植生ﾏｯﾄ工" />
+                            <xs:enumeration value="植生ｼｰﾄ工(標準品)" />
+                            <xs:enumeration value="植生ｼｰﾄ工(環境品)" />
+                            <xs:enumeration value="植生筋工" />
+                            <xs:enumeration value="筋芝工" />
+                            <xs:enumeration value="張芝工" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -319,6 +388,39 @@
                         <simpleValue>支柱型式</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支柱撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>支柱撤去</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支柱補修費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>支柱補修</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支柱設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>支柱設置</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_支柱</simpleValue>
@@ -334,6 +436,50 @@
                     <baseName>
                         <simpleValue>規格･仕様</simpleValue>
                     </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="梱包" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>梱包</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_梱包</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_梱包</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1506300101_1506400101_B501805301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_梱包</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>梱包費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>梱包</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -357,6 +503,17 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_樹木せん定</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>せん定費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>せん定</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_樹木せん定</simpleValue>
@@ -417,6 +574,17 @@
                         <simpleValue>1472300101_1501100101_1506300101_1506400101_1545800102</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_樹木施肥</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>樹木施肥費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>樹木施肥</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_樹木施肥</simpleValue>
@@ -466,6 +634,17 @@
                         <simpleValue>潅水時期</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_潅水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>潅水費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>潅水</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="種子散布" ifcVersion="IFC2X3">
@@ -508,11 +687,22 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1000m2以上" />
-                            <xs:enumeration value="2_500m2以上1000m2未満" />
-                            <xs:enumeration value="3_250m2以上500m2未満" />
-                            <xs:enumeration value="4_250m2未満" />
+                            <xs:enumeration value="1000m2以上" />
+                            <xs:enumeration value="500m2以上1000m2未満" />
+                            <xs:enumeration value="250m2以上500m2未満" />
+                            <xs:enumeration value="250m2未満" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_種子散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>種子散布費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>機械播種施工による植生工</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -523,6 +713,17 @@
                         <simpleValue>種子規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_種子散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>繊維ﾈｯﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>繊維ネット工</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_種子散布</simpleValue>
@@ -532,9 +733,64 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_肥料有り" />
-                            <xs:enumeration value="2_肥料無し" />
+                            <xs:enumeration value="肥料有り" />
+                            <xs:enumeration value="肥料無し" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_種子散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾗｽ張費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ラス張工［市場単価］</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="積込・荷卸" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>積込・荷卸</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_積込・荷卸</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_積込・荷卸</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1506300101_1506400101_B501805401</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_積込・荷卸</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>積込・荷卸費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>積込・荷卸</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -579,13 +835,24 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1000m2以上" />
-                            <xs:enumeration value="2_500m2以上1000m2未満" />
-                            <xs:enumeration value="3_500m2未満" />
-                            <xs:enumeration value="4_500m2以上" />
-                            <xs:enumeration value="5_300m2以上500m2未満" />
-                            <xs:enumeration value="6_300m2未満" />
+                            <xs:enumeration value="1000m2以上" />
+                            <xs:enumeration value="500m2以上1000m2未満" />
+                            <xs:enumeration value="500m2未満" />
+                            <xs:enumeration value="500m2以上" />
+                            <xs:enumeration value="300m2以上500m2未満" />
+                            <xs:enumeration value="300m2未満" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_筋芝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>筋芝費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>人力施工による植生工</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -597,12 +864,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_植生ﾏｯﾄ工" />
-                            <xs:enumeration value="2_植生ｼｰﾄ工(標準品)" />
-                            <xs:enumeration value="3_植生ｼｰﾄ工(環境品)" />
-                            <xs:enumeration value="4_植生筋工" />
-                            <xs:enumeration value="5_筋芝工" />
-                            <xs:enumeration value="6_張芝工" />
+                            <xs:enumeration value="植生ﾏｯﾄ工" />
+                            <xs:enumeration value="植生ｼｰﾄ工(標準品)" />
+                            <xs:enumeration value="植生ｼｰﾄ工(環境品)" />
+                            <xs:enumeration value="植生筋工" />
+                            <xs:enumeration value="筋芝工" />
+                            <xs:enumeration value="張芝工" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -637,6 +904,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1472300101_1501100101_1506300101_1506400101_1507400102</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_芝刈</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>芝刈費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>芝刈</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -696,6 +974,61 @@
                         <simpleValue>樹高</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_補植</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>補植費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>補植</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="運搬(堤防除草)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>運搬(堤防除草)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_運搬(堤防除草)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_運搬(堤防除草)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1506300101_1506400101_B501805501</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_運搬(堤防除草)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>運搬（堤防除草）</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="防除" ifcVersion="IFC2X3">
@@ -738,8 +1071,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_夜間作業補正無" />
-                            <xs:enumeration value="2_夜間作業補正有" />
+                            <xs:enumeration value="夜間作業補正無" />
+                            <xs:enumeration value="夜間作業補正有" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -752,12 +1085,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_低木樹高60cm未満" />
-                            <xs:enumeration value="2_中木樹高60cm以上100cm未満" />
-                            <xs:enumeration value="3_中木樹高100cm以上200cm未満" />
-                            <xs:enumeration value="4_中木樹高200cm以上300cm未満" />
-                            <xs:enumeration value="5_高木幹周60cm未満" />
-                            <xs:enumeration value="6_高木幹周60cm以上120cm未満" />
+                            <xs:enumeration value="低木樹高60cm未満" />
+                            <xs:enumeration value="中木樹高60cm以上100cm未満" />
+                            <xs:enumeration value="中木樹高100cm以上200cm未満" />
+                            <xs:enumeration value="中木樹高200cm以上300cm未満" />
+                            <xs:enumeration value="高木幹周60cm未満" />
+                            <xs:enumeration value="高木幹周60cm以上120cm未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -770,10 +1103,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_供用区間 標準(歩道及び交通島)" />
-                            <xs:enumeration value="2_供用区間 中央分離帯" />
-                            <xs:enumeration value="3_供用区間 環境緑地帯" />
-                            <xs:enumeration value="4_未供用区間" />
+                            <xs:enumeration value="供用区間 標準(歩道及び交通島)" />
+                            <xs:enumeration value="供用区間 中央分離帯" />
+                            <xs:enumeration value="供用区間 環境緑地帯" />
+                            <xs:enumeration value="未供用区間" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -786,9 +1119,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_10本未満" />
-                            <xs:enumeration value="2_10本以上50本未満" />
-                            <xs:enumeration value="3_50本以上" />
+                            <xs:enumeration value="10本未満" />
+                            <xs:enumeration value="10本以上50本未満" />
+                            <xs:enumeration value="50本以上" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -801,8 +1134,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_時間制約補正無" />
-                            <xs:enumeration value="2_時間制約補正有" />
+                            <xs:enumeration value="時間制約補正無" />
+                            <xs:enumeration value="時間制約補正有" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -813,6 +1146,152 @@
                     <baseName>
                         <simpleValue>薬剤種類</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_防除</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>高木･中低木薬剤防除費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>植樹管理（防除）（高木・中木・低木）</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="除草" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>除草</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_除草</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_除草</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1506300101_1506400101_B501805101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_除草</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>除草費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>除草</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="除草処分" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>除草処分</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_除草処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_除草処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1506300101_1506400101_B501805601</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_除草処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>処分費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="処分費（ｍ３）" />
+                            <xs:enumeration value="処分費（ｔ）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="集草" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>集草</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_集草</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_集草</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1506300101_1506400101_B501805201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_植栽維持工_樹木・芝生管理工_集草</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>集草費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>集草</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

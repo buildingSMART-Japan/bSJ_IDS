@@ -58,6 +58,17 @@
                         <simpleValue>削孔土質</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_構造物補修工_ボーリンググラウト工_削孔</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>削孔費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>削孔</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_構造物補修工_ボーリンググラウト工_削孔</simpleValue>
@@ -67,31 +78,31 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1.0m以上2.0m未満" />
-                            <xs:enumeration value="10_10.0m以上11.0m未満" />
-                            <xs:enumeration value="11_11.0m以上12.0m未満" />
-                            <xs:enumeration value="12_12.0m以上13.0m未満" />
-                            <xs:enumeration value="13_13.0m以上14.0m未満" />
-                            <xs:enumeration value="14_14.0m以上15.0m未満" />
-                            <xs:enumeration value="15_15.0m以上16.0m未満" />
-                            <xs:enumeration value="16_0.2m未満" />
-                            <xs:enumeration value="17_0.2m以上0.4m未満" />
-                            <xs:enumeration value="18_0.4m以上0.6m未満" />
-                            <xs:enumeration value="19_0.6m以上0.8m未満" />
-                            <xs:enumeration value="2_2.0m以上3.0m未満" />
-                            <xs:enumeration value="20_0.8m以上1.0m未満" />
-                            <xs:enumeration value="21_1.0m以上1.2m未満" />
-                            <xs:enumeration value="22_1.2m以上1.4m未満" />
-                            <xs:enumeration value="23_1.4m以上1.6m未満" />
-                            <xs:enumeration value="24_1.6m以上1.8m未満" />
-                            <xs:enumeration value="25_1.8m以上2.0m未満" />
-                            <xs:enumeration value="3_3.0m以上4.0m未満" />
-                            <xs:enumeration value="4_4.0m以上5.0m未満" />
-                            <xs:enumeration value="5_5.0m以上6.0m未満" />
-                            <xs:enumeration value="6_6.0m以上7.0m未満" />
-                            <xs:enumeration value="7_7.0m以上8.0m未満" />
-                            <xs:enumeration value="8_8.0m以上9.0m未満" />
-                            <xs:enumeration value="9_9.0m以上10.0m未満" />
+                            <xs:enumeration value="1.0m以上2.0m未満" />
+                            <xs:enumeration value="2.0m以上3.0m未満" />
+                            <xs:enumeration value="3.0m以上4.0m未満" />
+                            <xs:enumeration value="4.0m以上5.0m未満" />
+                            <xs:enumeration value="5.0m以上6.0m未満" />
+                            <xs:enumeration value="6.0m以上7.0m未満" />
+                            <xs:enumeration value="7.0m以上8.0m未満" />
+                            <xs:enumeration value="8.0m以上9.0m未満" />
+                            <xs:enumeration value="9.0m以上10.0m未満" />
+                            <xs:enumeration value="10.0m以上11.0m未満" />
+                            <xs:enumeration value="11.0m以上12.0m未満" />
+                            <xs:enumeration value="12.0m以上13.0m未満" />
+                            <xs:enumeration value="13.0m以上14.0m未満" />
+                            <xs:enumeration value="14.0m以上15.0m未満" />
+                            <xs:enumeration value="15.0m以上16.0m未満" />
+                            <xs:enumeration value="0.2m未満" />
+                            <xs:enumeration value="0.2m以上0.4m未満" />
+                            <xs:enumeration value="0.4m以上0.6m未満" />
+                            <xs:enumeration value="0.6m以上0.8m未満" />
+                            <xs:enumeration value="0.8m以上1.0m未満" />
+                            <xs:enumeration value="1.0m以上1.2m未満" />
+                            <xs:enumeration value="1.2m以上1.4m未満" />
+                            <xs:enumeration value="1.4m以上1.6m未満" />
+                            <xs:enumeration value="1.6m以上1.8m未満" />
+                            <xs:enumeration value="1.8m以上2.0m未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -104,8 +115,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾛｯﾄﾞ工法" />
-                            <xs:enumeration value="2_ﾊﾟｯｶｰ工法" />
+                            <xs:enumeration value="ﾛｯﾄﾞ工法" />
+                            <xs:enumeration value="ﾊﾟｯｶｰ工法" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -158,6 +169,17 @@
                         <simpleValue>注入材料規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_構造物補修工_ボーリンググラウト工_注入</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>注入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>注入</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_構造物補修工_ボーリンググラウト工_注入</simpleValue>
@@ -165,6 +187,50 @@
                     <baseName>
                         <simpleValue>注入量</simpleValue>
                     </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="注入設備据付解体" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>注入設備据付解体</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_構造物補修工_ボーリンググラウト工_注入設備据付解体</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_構造物補修工_ボーリンググラウト工_注入設備据付解体</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1502900101_1503800101_B504100101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_構造物補修工_ボーリンググラウト工_注入設備据付解体</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>注入設備据付解体費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>注入設備据付・解体</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -208,9 +274,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_安全ネット必要" />
-                            <xs:enumeration value="2_安全ネット不要" />
+                            <xs:enumeration value="安全ネット必要" />
+                            <xs:enumeration value="安全ネット不要" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_構造物補修工_ボーリンググラウト工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>足場工</simpleValue>
                     </value>
                 </property>
             </requirements>

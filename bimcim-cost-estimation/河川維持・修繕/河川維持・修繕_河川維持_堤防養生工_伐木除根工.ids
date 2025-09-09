@@ -44,6 +44,17 @@
                         <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_堤防養生工_伐木除根工_伐木・伐竹</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>伐木･伐竹費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>伐木・伐竹（伐木除根）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_堤防養生工_伐木除根工_伐木・伐竹</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -59,10 +70,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_伐木(粗)" />
-                            <xs:enumeration value="2_伐木(中)" />
-                            <xs:enumeration value="3_伐木(密)" />
-                            <xs:enumeration value="4_伐竹" />
+                            <xs:enumeration value="伐木(粗)" />
+                            <xs:enumeration value="伐木(中)" />
+                            <xs:enumeration value="伐木(密)" />
+                            <xs:enumeration value="伐竹" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -93,6 +104,17 @@
                         <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_堤防養生工_伐木除根工_伐木・伐竹(複合)</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>伐木･伐竹費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>伐木・伐竹（複合）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_堤防養生工_伐木除根工_伐木・伐竹(複合)</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -108,10 +130,196 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_伐木(粗)" />
-                            <xs:enumeration value="2_伐木(中)" />
-                            <xs:enumeration value="3_伐木(密)" />
-                            <xs:enumeration value="4_伐竹" />
+                            <xs:enumeration value="伐木(粗)" />
+                            <xs:enumeration value="伐木(中)" />
+                            <xs:enumeration value="伐木(密)" />
+                            <xs:enumeration value="伐竹" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="伐木伐竹運搬" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>伐木伐竹運搬</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_堤防養生工_伐木除根工_伐木伐竹運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_堤防養生工_伐木除根工_伐木伐竹運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1501900101_1502500101_B502700501</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_堤防養生工_伐木除根工_伐木伐竹運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>運搬（伐木除根）</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="処分費" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>処分費</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_堤防養生工_伐木除根工_処分費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_堤防養生工_伐木除根工_処分費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1501900101_1502500101_B040805101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_堤防養生工_伐木除根工_処分費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>堆積塵芥処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="処分費（ｍ３）" />
+                            <xs:enumeration value="処分費（ｔ）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="除根整地" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>除根整地</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_堤防養生工_伐木除根工_除根整地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_堤防養生工_伐木除根工_除根整地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1501900101_1502500101_B502700301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_堤防養生工_伐木除根工_除根整地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>除根整地費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="除根（伐木除根）" />
+                            <xs:enumeration value="整地（伐木除根）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="集積積込み" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>集積積込み</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_堤防養生工_伐木除根工_集積積込み</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_堤防養生工_伐木除根工_集積積込み</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1501900101_1502500101_B502700401</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川維持_堤防養生工_伐木除根工_集積積込み</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>集積費･積込み費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="集積（人力施工）（伐木除根）" />
+                            <xs:enumeration value="集積積込み（機械施工）（伐木除根）" />
+                            <xs:enumeration value="積込み（人力施工）（伐木除根）" />
                         </xs:restriction>
                     </value>
                 </property>

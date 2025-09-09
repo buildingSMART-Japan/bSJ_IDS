@@ -50,6 +50,17 @@
                         <simpleValue>1472300101_1498700101_1536800101_1139000501_B068000103</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_管理用通路工_道路付属物工_歩車道境界ブロック</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>歩車道境界ﾌﾞﾛｯｸ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>歩車道境界ブロック</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_管理用通路工_道路付属物工_歩車道境界ブロック</simpleValue>
@@ -59,16 +70,16 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_A種(150/170×200×600)" />
-                            <xs:enumeration value="2_B種(180/205×250×600)" />
-                            <xs:enumeration value="3_C種(180/210×300×600)" />
-                            <xs:enumeration value="4_各種(600mm以下､50kg未満)" />
-                            <xs:enumeration value="5_各種(600mm以下､50kg以上100kg未満)" />
-                            <xs:enumeration value="6_各種(600mm超1000mm以下、50kg以上150kg未満)" />
-                            <xs:enumeration value="7_各種(1000mm超2000mm以下、150kg以上550kg未満)" />
-                            <xs:enumeration value="1_A種(150/170×200×600)" />
-                            <xs:enumeration value="2_B種(180/205×250×600)" />
-                            <xs:enumeration value="3_C種(180/210×300×600)" />
+                            <xs:enumeration value="A種(150/170×200×600)" />
+                            <xs:enumeration value="B種(180/205×250×600)" />
+                            <xs:enumeration value="C種(180/210×300×600)" />
+                            <xs:enumeration value="各種(600mm以下､50kg未満)" />
+                            <xs:enumeration value="各種(600mm以下､50kg以上100kg未満)" />
+                            <xs:enumeration value="各種(600mm超1000mm以下、50kg以上150kg未満)" />
+                            <xs:enumeration value="各種(1000mm超2000mm以下、150kg以上550kg未満)" />
+                            <xs:enumeration value="A種(150/170×200×600)" />
+                            <xs:enumeration value="B種(180/205×250×600)" />
+                            <xs:enumeration value="C種(180/210×300×600)" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
                     </value>
@@ -113,6 +124,20 @@
                     <baseName>
                         <simpleValue>発生材種類</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_管理用通路工_道路付属物工_現場発生品運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>積込･荷卸し･運搬</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="現場発生品及び支給品運搬" />
+                            <xs:enumeration value="現場発生品及び支給品積込み・荷卸し" />
+                        </xs:restriction>
+                    </value>
                 </property>
             </requirements>
         </specification>

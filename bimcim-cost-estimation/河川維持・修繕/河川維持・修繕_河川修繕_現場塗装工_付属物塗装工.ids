@@ -59,8 +59,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_新橋現場塗装" />
-                            <xs:enumeration value="2_塗替塗装" />
+                            <xs:enumeration value="新橋現場塗装" />
+                            <xs:enumeration value="塗替塗装" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -81,15 +81,15 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_弱溶剤形ふっ素樹脂塗料 ｽﾌﾟﾚｰ 赤系" />
-                            <xs:enumeration value="2_弱溶剤形ふっ素樹脂塗料 ｽﾌﾟﾚｰ 淡彩" />
-                            <xs:enumeration value="3_弱溶剤形ふっ素樹脂塗料 ｽﾌﾟﾚｰ 濃彩" />
-                            <xs:enumeration value="4_弱溶剤形ふっ素樹脂塗料 はけ･ﾛｰﾗｰ 赤系" />
-                            <xs:enumeration value="5_弱溶剤形ふっ素樹脂塗料 はけ･ﾛｰﾗｰ 淡彩" />
-                            <xs:enumeration value="6_弱溶剤形ふっ素樹脂塗料 はけ･ﾛｰﾗｰ 濃彩" />
-                            <xs:enumeration value="7_長油性ﾌﾀﾙ酸樹脂塗料 はけ･ﾛｰﾗｰ 赤系" />
-                            <xs:enumeration value="8_長油性ﾌﾀﾙ酸樹脂塗料 はけ･ﾛｰﾗｰ 淡彩" />
-                            <xs:enumeration value="9_長油性ﾌﾀﾙ酸樹脂塗料 はけ･ﾛｰﾗｰ 濃彩" />
+                            <xs:enumeration value="弱溶剤形ふっ素樹脂塗料 ｽﾌﾟﾚｰ 赤系" />
+                            <xs:enumeration value="弱溶剤形ふっ素樹脂塗料 ｽﾌﾟﾚｰ 淡彩" />
+                            <xs:enumeration value="弱溶剤形ふっ素樹脂塗料 ｽﾌﾟﾚｰ 濃彩" />
+                            <xs:enumeration value="弱溶剤形ふっ素樹脂塗料 はけ･ﾛｰﾗｰ 赤系" />
+                            <xs:enumeration value="弱溶剤形ふっ素樹脂塗料 はけ･ﾛｰﾗｰ 淡彩" />
+                            <xs:enumeration value="弱溶剤形ふっ素樹脂塗料 はけ･ﾛｰﾗｰ 濃彩" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料 はけ･ﾛｰﾗｰ 赤系" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料 はけ･ﾛｰﾗｰ 淡彩" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料 はけ･ﾛｰﾗｰ 濃彩" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -102,12 +102,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_長油性ﾌﾀﾙ酸樹脂塗料 赤系" />
-                            <xs:enumeration value="2_長油性ﾌﾀﾙ酸樹脂塗料 淡彩" />
-                            <xs:enumeration value="3_長油性ﾌﾀﾙ酸樹脂塗料 濃彩" />
-                            <xs:enumeration value="4_ふっ素樹脂塗料 赤系" />
-                            <xs:enumeration value="5_ふっ素樹脂塗料 淡彩" />
-                            <xs:enumeration value="6_ふっ素樹脂塗料 濃彩" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料 赤系" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料 淡彩" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料 濃彩" />
+                            <xs:enumeration value="ふっ素樹脂塗料 赤系" />
+                            <xs:enumeration value="ふっ素樹脂塗料 淡彩" />
+                            <xs:enumeration value="ふっ素樹脂塗料 濃彩" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -118,6 +118,31 @@
                     <baseName>
                         <simpleValue>塗装箇所</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_現場塗装工_付属物塗装工_上塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>現場塗装費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="中塗り・上塗り（新橋現場・新橋継手部現場塗装）" />
+                            <xs:enumeration value="塗替塗装" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_現場塗装工_付属物塗装工_上塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>継手部上塗費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>中塗り・上塗り（新橋現場・新橋継手部現場塗装）</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -161,8 +186,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_新橋現場塗装" />
-                            <xs:enumeration value="2_塗替塗装" />
+                            <xs:enumeration value="新橋現場塗装" />
+                            <xs:enumeration value="塗替塗装" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -174,6 +199,17 @@
                         <simpleValue>塗装回数</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_現場塗装工_付属物塗装工_下塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>塗装準備費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>準備・補修（新橋現場塗装）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_現場塗装工_付属物塗装工_下塗</simpleValue>
@@ -183,14 +219,14 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_有機ｼﾞﾝｸﾘｯﾁﾍﾟｲﾝﾄ(1層) ｽﾌﾟﾚｰ" />
-                            <xs:enumeration value="2_有機ｼﾞﾝｸﾘｯﾁﾍﾟｲﾝﾄ(1層) はけ･ﾛｰﾗｰI" />
-                            <xs:enumeration value="3_有機ｼﾞﾝｸﾘｯﾁﾍﾟｲﾝﾄ(2回塗り/層)はけ･ﾛｰﾗｰII" />
-                            <xs:enumeration value="4_弱溶剤形変性ｴﾎﾟｷｼ樹脂塗料(2層)ｽﾌﾟﾚｰ" />
-                            <xs:enumeration value="5_弱溶剤形変性ｴﾎﾟｷｼ樹脂塗料(2層)はけ･ﾛｰﾗｰ" />
-                            <xs:enumeration value="6_弱溶剤形変性ｴﾎﾟｷｼ樹脂塗料(1層) はけ･ﾛｰﾗｰ" />
-                            <xs:enumeration value="7_鉛･ｸﾛﾑﾌﾘｰさび止めﾍﾟｲﾝﾄ(2層)はけ･ﾛｰﾗｰ" />
-                            <xs:enumeration value="8_無溶剤形変性ｴﾎﾟｷｼ樹脂塗料(2層)はけ･ﾛｰﾗｰ" />
+                            <xs:enumeration value="有機ｼﾞﾝｸﾘｯﾁﾍﾟｲﾝﾄ(1層) ｽﾌﾟﾚｰ" />
+                            <xs:enumeration value="有機ｼﾞﾝｸﾘｯﾁﾍﾟｲﾝﾄ(1層) はけ･ﾛｰﾗｰI" />
+                            <xs:enumeration value="有機ｼﾞﾝｸﾘｯﾁﾍﾟｲﾝﾄ(2回塗り/層)はけ･ﾛｰﾗｰII" />
+                            <xs:enumeration value="弱溶剤形変性ｴﾎﾟｷｼ樹脂塗料(2層)ｽﾌﾟﾚｰ" />
+                            <xs:enumeration value="弱溶剤形変性ｴﾎﾟｷｼ樹脂塗料(2層)はけ･ﾛｰﾗｰ" />
+                            <xs:enumeration value="弱溶剤形変性ｴﾎﾟｷｼ樹脂塗料(1層) はけ･ﾛｰﾗｰ" />
+                            <xs:enumeration value="鉛･ｸﾛﾑﾌﾘｰさび止めﾍﾟｲﾝﾄ(2層)はけ･ﾛｰﾗｰ" />
+                            <xs:enumeration value="無溶剤形変性ｴﾎﾟｷｼ樹脂塗料(2層)はけ･ﾛｰﾗｰ" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -203,13 +239,13 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾐｽﾄｺｰﾄ 変性ｴﾎﾟｷｼ樹脂塗料(1層)" />
-                            <xs:enumeration value="2_超厚膜形ｴﾎﾟｷｼ樹脂塗料(2回塗り/層)" />
-                            <xs:enumeration value="3_有機ｼﾞﾝｸﾘｯﾁﾍﾟｲﾝﾄ(2回塗り/層)" />
-                            <xs:enumeration value="4_有機ｼﾞﾝｸﾘｯﾁﾍﾟｲﾝﾄ(2層)" />
-                            <xs:enumeration value="5_変性ｴﾎﾟｷｼ樹脂塗料(2層)" />
-                            <xs:enumeration value="6_鉛･ｸﾛﾑﾌﾘｰさび止めﾍﾟｲﾝﾄ(3層)" />
-                            <xs:enumeration value="7_変性ｴﾎﾟｷｼ樹脂塗料((1層)" />
+                            <xs:enumeration value="ﾐｽﾄｺｰﾄ 変性ｴﾎﾟｷｼ樹脂塗料(1層)" />
+                            <xs:enumeration value="超厚膜形ｴﾎﾟｷｼ樹脂塗料(2回塗り/層)" />
+                            <xs:enumeration value="有機ｼﾞﾝｸﾘｯﾁﾍﾟｲﾝﾄ(2回塗り/層)" />
+                            <xs:enumeration value="有機ｼﾞﾝｸﾘｯﾁﾍﾟｲﾝﾄ(2層)" />
+                            <xs:enumeration value="変性ｴﾎﾟｷｼ樹脂塗料(2層)" />
+                            <xs:enumeration value="鉛･ｸﾛﾑﾌﾘｰさび止めﾍﾟｲﾝﾄ(3層)" />
+                            <xs:enumeration value="変性ｴﾎﾟｷｼ樹脂塗料((1層)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -220,6 +256,39 @@
                     <baseName>
                         <simpleValue>塗装箇所</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_現場塗装工_付属物塗装工_下塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>現場塗装費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>塗替塗装</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_現場塗装工_付属物塗装工_下塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>継手部下塗費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>継手部下塗り（新橋現場・新橋継手部現場塗装）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_現場塗装工_付属物塗装工_下塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>継手部素地調整費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>継手部素地調整（新橋現場・新橋継手部現場塗装）</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -263,8 +332,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_新橋現場塗装" />
-                            <xs:enumeration value="2_塗替塗装" />
+                            <xs:enumeration value="新橋現場塗装" />
+                            <xs:enumeration value="塗替塗装" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -276,6 +345,17 @@
                         <simpleValue>塗装回数</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_現場塗装工_付属物塗装工_中塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>塗装準備費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>準備・補修（新橋現場塗装）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_現場塗装工_付属物塗装工_中塗</simpleValue>
@@ -285,15 +365,15 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_弱溶剤形ふっ素樹脂塗料 ｽﾌﾟﾚｰ 赤系" />
-                            <xs:enumeration value="2_弱溶剤形ふっ素樹脂塗料 ｽﾌﾟﾚｰ 淡彩" />
-                            <xs:enumeration value="3_弱溶剤形ふっ素樹脂塗料 ｽﾌﾟﾚｰ 濃彩" />
-                            <xs:enumeration value="4_弱溶剤形ふっ素樹脂塗料 はけ･ﾛｰﾗｰ 赤系" />
-                            <xs:enumeration value="5_弱溶剤形ふっ素樹脂塗料 はけ･ﾛｰﾗｰ 淡彩" />
-                            <xs:enumeration value="6_弱溶剤形ふっ素樹脂塗料 はけ･ﾛｰﾗｰ 濃彩" />
-                            <xs:enumeration value="7_長油性ﾌﾀﾙ酸樹脂塗料 はけ･ﾛｰﾗｰ 赤系" />
-                            <xs:enumeration value="8_長油性ﾌﾀﾙ酸樹脂塗料 はけ･ﾛｰﾗｰ 淡彩" />
-                            <xs:enumeration value="9_長油性ﾌﾀﾙ酸樹脂塗料 はけ･ﾛｰﾗｰ 濃彩" />
+                            <xs:enumeration value="弱溶剤形ふっ素樹脂塗料 ｽﾌﾟﾚｰ 赤系" />
+                            <xs:enumeration value="弱溶剤形ふっ素樹脂塗料 ｽﾌﾟﾚｰ 淡彩" />
+                            <xs:enumeration value="弱溶剤形ふっ素樹脂塗料 ｽﾌﾟﾚｰ 濃彩" />
+                            <xs:enumeration value="弱溶剤形ふっ素樹脂塗料 はけ･ﾛｰﾗｰ 赤系" />
+                            <xs:enumeration value="弱溶剤形ふっ素樹脂塗料 はけ･ﾛｰﾗｰ 淡彩" />
+                            <xs:enumeration value="弱溶剤形ふっ素樹脂塗料 はけ･ﾛｰﾗｰ 濃彩" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料 はけ･ﾛｰﾗｰ 赤系" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料 はけ･ﾛｰﾗｰ 淡彩" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料 はけ･ﾛｰﾗｰ 濃彩" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -306,12 +386,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_長油性ﾌﾀﾙ酸樹脂塗料 赤系" />
-                            <xs:enumeration value="2_長油性ﾌﾀﾙ酸樹脂塗料 淡彩" />
-                            <xs:enumeration value="3_長油性ﾌﾀﾙ酸樹脂塗料 濃彩" />
-                            <xs:enumeration value="4_ふっ素樹脂塗料 赤系" />
-                            <xs:enumeration value="5_ふっ素樹脂塗料 淡彩" />
-                            <xs:enumeration value="6_ふっ素樹脂塗料 濃彩" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料 赤系" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料 淡彩" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料 濃彩" />
+                            <xs:enumeration value="ふっ素樹脂塗料 赤系" />
+                            <xs:enumeration value="ふっ素樹脂塗料 淡彩" />
+                            <xs:enumeration value="ふっ素樹脂塗料 濃彩" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -322,6 +402,31 @@
                     <baseName>
                         <simpleValue>塗装箇所</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_現場塗装工_付属物塗装工_中塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>現場塗装費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="中塗り・上塗り（新橋現場・新橋継手部現場塗装）" />
+                            <xs:enumeration value="塗替塗装" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_現場塗装工_付属物塗装工_中塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>継手部中塗費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>中塗り・上塗り（新橋現場・新橋継手部現場塗装）</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -354,6 +459,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1472300101_1498700101_1500800101_1500900102_1501000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持・修繕_河川修繕_現場塗装工_付属物塗装工_素地調整</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>素地調整費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>現場塗装</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
