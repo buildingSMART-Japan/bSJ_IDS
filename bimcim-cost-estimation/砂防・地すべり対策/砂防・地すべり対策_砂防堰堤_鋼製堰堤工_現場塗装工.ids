@@ -59,11 +59,11 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_塩化ｺﾞﾑ系樹脂塗料" />
-                            <xs:enumeration value="2_ﾎﾟﾘｳﾚﾀﾝ樹脂塗料" />
-                            <xs:enumeration value="3_ｼﾘｺﾝｱﾙｷﾄﾞ樹脂塗料" />
-                            <xs:enumeration value="4_ふっ素樹脂塗料" />
-                            <xs:enumeration value="5_各種" />
+                            <xs:enumeration value="塩化ｺﾞﾑ系樹脂塗料" />
+                            <xs:enumeration value="ﾎﾟﾘｳﾚﾀﾝ樹脂塗料" />
+                            <xs:enumeration value="ｼﾘｺﾝｱﾙｷﾄﾞ樹脂塗料" />
+                            <xs:enumeration value="ふっ素樹脂塗料" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -76,12 +76,23 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_塩化ｺﾞﾑ系樹脂塗料" />
-                            <xs:enumeration value="2_ﾎﾟﾘｳﾚﾀﾝ樹脂塗料" />
-                            <xs:enumeration value="3_ｼﾘｺﾝｱﾙｷﾄﾞ樹脂塗料" />
-                            <xs:enumeration value="4_ふっ素樹脂塗料" />
-                            <xs:enumeration value="5_各種" />
+                            <xs:enumeration value="塩化ｺﾞﾑ系樹脂塗料" />
+                            <xs:enumeration value="ﾎﾟﾘｳﾚﾀﾝ樹脂塗料" />
+                            <xs:enumeration value="ｼﾘｺﾝｱﾙｷﾄﾞ樹脂塗料" />
+                            <xs:enumeration value="ふっ素樹脂塗料" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_現場塗装工_現場塗装(はけ塗り)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>現場塗装費(はけ塗り)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>現場塗装工（はけ塗り）</simpleValue>
                     </value>
                 </property>
             </requirements>

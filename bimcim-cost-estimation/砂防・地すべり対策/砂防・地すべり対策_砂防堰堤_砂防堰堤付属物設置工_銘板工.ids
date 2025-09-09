@@ -50,6 +50,17 @@
                         <simpleValue>1470500101_1123800101_1537200101_1105300102_1105500102</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防堰堤付属物設置工_銘板工_表示板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>表示板材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（枚）</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防堰堤付属物設置工_銘板工_表示板</simpleValue>
@@ -106,6 +117,17 @@
                     <baseName>
                         <simpleValue>材質</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防堰堤付属物設置工_銘板工_銘板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>銘板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>銘板設置</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

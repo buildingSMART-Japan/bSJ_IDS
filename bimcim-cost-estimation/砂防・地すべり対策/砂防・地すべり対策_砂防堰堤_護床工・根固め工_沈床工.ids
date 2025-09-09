@@ -58,6 +58,17 @@
                         <simpleValue>厚さ</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_護床工・根固め工_沈床工_吸出し防止材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>吸出し防止材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>吸出し防止材設置</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_護床工・根固め工_沈床工_吸出し防止材</simpleValue>
@@ -73,6 +84,116 @@
                     <baseName>
                         <simpleValue>種類</simpleValue>
                     </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="粗朶単床" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>粗朶単床</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_護床工・根固め工_沈床工_粗朶単床</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_護床工・根固め工_沈床工_粗朶単床</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1123800101_1132800101_1063800203_1554400101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_護床工・根固め工_沈床工_粗朶単床</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>粗朶単床費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>粗朶単床工</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="粗朶沈床" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>粗朶沈床</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_護床工・根固め工_沈床工_粗朶沈床</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_護床工・根固め工_沈床工_粗朶沈床</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1123800101_1132800101_1063800203_1063900103</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_護床工・根固め工_沈床工_粗朶沈床</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>沈床沈設･沈石投入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>沈床沈設・沈石投入</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_護床工・根固め工_沈床工_粗朶沈床</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>連柴製作･沈床組立費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>連柴製作・沈床組立</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_護床工・根固め工_沈床工_粗朶沈床</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>間詰石投入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>間詰石投入</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

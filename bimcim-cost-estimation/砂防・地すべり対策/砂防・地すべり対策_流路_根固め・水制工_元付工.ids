@@ -55,14 +55,28 @@
                         <simpleValue>数量情報_202304_01_砂防・地すべり対策_流路_根固め・水制工_元付工_元付</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="型枠" />
+                            <xs:enumeration value="型枠工［砂防］" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_流路_根固め・水制工_元付工_元付</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>打設方法</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_人力打設" />
-                            <xs:enumeration value="2_ｸﾚｰﾝ打設(平均高30m以下)" />
-                            <xs:enumeration value="3_ｸﾚｰﾝ打設" />
-                            <xs:enumeration value="4_ﾎﾟﾝﾌﾟ車打設" />
+                            <xs:enumeration value="人力打設" />
+                            <xs:enumeration value="ｸﾚｰﾝ打設(平均高30m以下)" />
+                            <xs:enumeration value="ｸﾚｰﾝ打設" />
+                            <xs:enumeration value="ﾎﾟﾝﾌﾟ車打設" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -73,6 +87,68 @@
                     <baseName>
                         <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_流路_根固め・水制工_元付工_元付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費(人力打設)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_流路_根固め・水制工_元付工_元付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費(平均高30m以下)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>一般部コンクリート打設</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_流路_根固め・水制工_元付工_元付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費(ｸﾚｰﾝ打設)</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="コンクリート投入（ケーブルクレーン両端固定式）" />
+                            <xs:enumeration value="コンクリート締固め・打継面清掃" />
+                            <xs:enumeration value="コンクリート養生［散水］" />
+                            <xs:enumeration value="コンクリート養生［練炭］" />
+                            <xs:enumeration value="自然水施設" />
+                            <xs:enumeration value="不整地運搬車による横取り" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_流路_根固め・水制工_元付工_元付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費(ﾎﾟﾝﾌﾟ車打設)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_流路_根固め・水制工_元付工_元付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ運搬費(現地ﾌﾟﾗﾝﾄ)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート運搬　アジテータトラック［砂防］</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

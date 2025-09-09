@@ -55,14 +55,71 @@
                         <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水遮断工_固結工_薬液注入</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>排水汚泥土処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="排水汚泥土処理" />
+                            <xs:enumeration value="中和剤材料費" />
+                            <xs:enumeration value="バキューム車運転費" />
+                            <xs:enumeration value="処分費（ｍ３）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水遮断工_固結工_薬液注入</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>注入材料</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｾﾒﾝﾄﾍﾞﾝﾅｲﾄ" />
-                            <xs:enumeration value="2_溶液型有機系" />
-                            <xs:enumeration value="3_溶液型無機系" />
+                            <xs:enumeration value="ｾﾒﾝﾄﾍﾞﾝﾅｲﾄ" />
+                            <xs:enumeration value="溶液型有機系" />
+                            <xs:enumeration value="溶液型無機系" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水遮断工_固結工_薬液注入</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>注入設備据付解体･移設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="注入設備据付・解体" />
+                            <xs:enumeration value="注入設備移設" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水遮断工_固結工_薬液注入</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>薬液注入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="二重管ストレーナ工法" />
+                            <xs:enumeration value="二重管ダブルパッカー工法（削孔工）" />
+                            <xs:enumeration value="二重管ダブルパッカー工法（一次注入）" />
+                            <xs:enumeration value="二重管ダブルパッカー工法（二次注入）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水遮断工_固結工_薬液注入</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>足場工</simpleValue>
                     </value>
                 </property>
             </requirements>

@@ -66,6 +66,46 @@
                         <simpleValue>内高</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_現場打水路工_現場打水路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>均しCo費(平均高30m以下)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>一般部コンクリート打設</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_現場打水路工_現場打水路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>均しCo費(ｸﾚｰﾝ打設)</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="コンクリート投入（ケーブルクレーン両端固定式）" />
+                            <xs:enumeration value="コンクリート締固め・打継面清掃" />
+                            <xs:enumeration value="コンクリート養生［散水］" />
+                            <xs:enumeration value="コンクリート養生［練炭］" />
+                            <xs:enumeration value="自然水施設" />
+                            <xs:enumeration value="不整地運搬車による横取り" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_現場打水路工_現場打水路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>均しｺﾝｸﾘｰﾄ型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_現場打水路工_現場打水路</simpleValue>
@@ -75,11 +115,66 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_人力打設" />
-                            <xs:enumeration value="2_ｸﾚｰﾝ打設(平均高30m以下)" />
-                            <xs:enumeration value="3_ｸﾚｰﾝ打設" />
-                            <xs:enumeration value="4_ﾎﾟﾝﾌﾟ車打設" />
+                            <xs:enumeration value="人力打設" />
+                            <xs:enumeration value="ｸﾚｰﾝ打設(平均高30m以下)" />
+                            <xs:enumeration value="ｸﾚｰﾝ打設" />
+                            <xs:enumeration value="ﾎﾟﾝﾌﾟ車打設" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_現場打水路工_現場打水路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>均しｺﾝｸﾘｰﾄ費(人力打設)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_現場打水路工_現場打水路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>均しｺﾝｸﾘｰﾄ費(ﾎﾟﾝﾌﾟ車打設)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_現場打水路工_現場打水路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>均しｺﾝｸﾘｰﾄ運搬費(現地)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート運搬　アジテータトラック［砂防］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_現場打水路工_現場打水路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_現場打水路工_現場打水路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>基礎砕石</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -91,9 +186,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_使用する" />
-                            <xs:enumeration value="2_使用しない" />
+                            <xs:enumeration value="使用する" />
+                            <xs:enumeration value="使用しない" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_現場打水路工_現場打水路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋工［市場単価］</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -105,10 +211,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_人力打設" />
-                            <xs:enumeration value="2_ｸﾚｰﾝ打設(平均高30m以下)" />
-                            <xs:enumeration value="3_ｸﾚｰﾝ打設" />
-                            <xs:enumeration value="4_ﾎﾟﾝﾌﾟ車打設" />
+                            <xs:enumeration value="人力打設" />
+                            <xs:enumeration value="ｸﾚｰﾝ打設(平均高30m以下)" />
+                            <xs:enumeration value="ｸﾚｰﾝ打設" />
+                            <xs:enumeration value="ﾎﾟﾝﾌﾟ車打設" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -129,8 +235,73 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_有" />
-                            <xs:enumeration value="2_無" />
+                            <xs:enumeration value="有" />
+                            <xs:enumeration value="無" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_現場打水路工_現場打水路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費(人力打設)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_現場打水路工_現場打水路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費(平均高30m以下)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>一般部コンクリート打設</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_現場打水路工_現場打水路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費(ｸﾚｰﾝ打設)</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="コンクリート投入（ケーブルクレーン両端固定式）" />
+                            <xs:enumeration value="コンクリート締固め・打継面清掃" />
+                            <xs:enumeration value="コンクリート養生［散水］" />
+                            <xs:enumeration value="コンクリート養生［練炭］" />
+                            <xs:enumeration value="自然水施設" />
+                            <xs:enumeration value="不整地運搬車による横取り" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_現場打水路工_現場打水路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費(ﾎﾟﾝﾌﾟ車打設)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_現場打水路工_現場打水路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ運搬費(現地ﾌﾟﾗﾝﾄ)</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="コンクリート混合物製造" />
+                            <xs:enumeration value="コンクリート運搬　アジテータトラック［砂防］" />
                         </xs:restriction>
                     </value>
                 </property>

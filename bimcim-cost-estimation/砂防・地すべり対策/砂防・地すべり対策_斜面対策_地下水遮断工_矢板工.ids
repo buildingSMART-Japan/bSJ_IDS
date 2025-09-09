@@ -59,13 +59,13 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_IIw型" />
-                            <xs:enumeration value="2_IIIw型" />
-                            <xs:enumeration value="3_IVw型" />
-                            <xs:enumeration value="4_10H型" />
-                            <xs:enumeration value="5_25H型" />
-                            <xs:enumeration value="6_45H型" />
-                            <xs:enumeration value="7_50H型" />
+                            <xs:enumeration value="IIw型" />
+                            <xs:enumeration value="IIIw型" />
+                            <xs:enumeration value="IVw型" />
+                            <xs:enumeration value="10H型" />
+                            <xs:enumeration value="25H型" />
+                            <xs:enumeration value="45H型" />
+                            <xs:enumeration value="50H型" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -82,13 +82,45 @@
                         <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水遮断工_矢板工_広幅鋼矢板</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>広幅鋼矢板材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="鋼矢板材料（６－２０ｍ以外は適用外）" />
+                            <xs:enumeration value="鋼矢板（各種）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水遮断工_矢板工_広幅鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>打込工法</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
-                            <xs:enumeration value="2_ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
-                            <xs:enumeration value="3_油圧圧入工法" />
+                            <xs:enumeration value="ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
+                            <xs:enumeration value="ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
+                            <xs:enumeration value="油圧圧入工法" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水遮断工_矢板工_広幅鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>油圧圧入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="鋼矢板圧入（Ｎｍａｘ≦２５）" />
+                            <xs:enumeration value="鋼矢板圧入（Ｎｍａｘ≦５０）" />
+                            <xs:enumeration value="鋼矢板圧入（５０＜Ｎｍａｘ≦６００）" />
+                            <xs:enumeration value="継鋼矢板圧入（Ｎｍａｘ≦２５）" />
+                            <xs:enumeration value="継鋼矢板圧入（Ｎｍａｘ≦５０）" />
+                            <xs:enumeration value="油圧式杭圧入引抜機据付・解体" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -107,6 +139,28 @@
                     <baseName>
                         <simpleValue>鋼矢板打込長</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水遮断工_矢板工_広幅鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛﾊﾝﾏ打込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＷＪ併用バイブロハンマ施工による鋼矢板打込み</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水遮断工_矢板工_広幅鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾊﾞｲﾌﾞﾛﾊﾝﾏ打込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>バイブロハンマ施工による鋼矢板打込み</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -150,10 +204,42 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
-                            <xs:enumeration value="2_ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
-                            <xs:enumeration value="3_ｱｰｽｵｰｶﾞ併用圧入工法" />
-                            <xs:enumeration value="4_油圧圧入工法" />
+                            <xs:enumeration value="ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
+                            <xs:enumeration value="ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
+                            <xs:enumeration value="ｱｰｽｵｰｶﾞ併用圧入工法" />
+                            <xs:enumeration value="油圧圧入工法" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水遮断工_矢板工_鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>油圧圧入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="鋼矢板圧入（Ｎｍａｘ≦２５）" />
+                            <xs:enumeration value="鋼矢板圧入（Ｎｍａｘ≦５０）" />
+                            <xs:enumeration value="鋼矢板圧入（５０＜Ｎｍａｘ≦６００）" />
+                            <xs:enumeration value="継鋼矢板圧入（Ｎｍａｘ≦２５）" />
+                            <xs:enumeration value="継鋼矢板圧入（Ｎｍａｘ≦５０）" />
+                            <xs:enumeration value="油圧式杭圧入引抜機据付・解体" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水遮断工_矢板工_鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>矢板材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="鋼矢板材料（６－２０ｍ以外は適用外）" />
+                            <xs:enumeration value="鋼矢板（各種）" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -166,11 +252,11 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_II型" />
-                            <xs:enumeration value="2_III型" />
-                            <xs:enumeration value="3_IV型" />
-                            <xs:enumeration value="4_VL型" />
-                            <xs:enumeration value="5_VIL型" />
+                            <xs:enumeration value="II型" />
+                            <xs:enumeration value="III型" />
+                            <xs:enumeration value="IV型" />
+                            <xs:enumeration value="VL型" />
+                            <xs:enumeration value="VIL型" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -207,10 +293,46 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_SY295" />
-                            <xs:enumeration value="2_SY390" />
-                            <xs:enumeration value="3_SYW295" />
-                            <xs:enumeration value="4_SYW390" />
+                            <xs:enumeration value="SY295" />
+                            <xs:enumeration value="SY390" />
+                            <xs:enumeration value="SYW295" />
+                            <xs:enumeration value="SYW390" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水遮断工_矢板工_鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｱｰｽｵｰｶﾞ併用圧入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鋼矢板打込み工（アースオーガ併用圧入）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水遮断工_矢板工_鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛﾊﾝﾏ打込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＷＪ併用バイブロハンマ施工による鋼矢板打込み</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水遮断工_矢板工_鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾊﾞｲﾌﾞﾛﾊﾝﾏ打込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="バイブロハンマ施工による鋼矢板打込み" />
+                            <xs:enumeration value="鋼矢板打込み工（陸上・バイブロ（可変））" />
                         </xs:restriction>
                     </value>
                 </property>

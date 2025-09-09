@@ -82,6 +82,17 @@
                         <simpleValue>ｱﾝｶｰ規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_付帯道路施設工_道路付属物工_アンカー</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｱﾝｶｰﾎﾞﾙﾄ</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>アンカーボルト</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="視線誘導標" ifcVersion="IFC2X3">
@@ -124,11 +135,11 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_土中建込" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ建込(穿孔含む)" />
-                            <xs:enumeration value="3_ｺﾝｸﾘｰﾄ建込(穿孔含まない)" />
-                            <xs:enumeration value="4_防護柵取付" />
-                            <xs:enumeration value="5_構造物取付" />
+                            <xs:enumeration value="土中建込" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ建込(穿孔含む)" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ建込(穿孔含まない)" />
+                            <xs:enumeration value="防護柵取付" />
+                            <xs:enumeration value="構造物取付" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -141,9 +152,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_30本以上" />
-                            <xs:enumeration value="2_10本以上30本未満" />
-                            <xs:enumeration value="3_10本未満" />
+                            <xs:enumeration value="30本以上" />
+                            <xs:enumeration value="10本以上30本未満" />
+                            <xs:enumeration value="10本未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -154,6 +165,20 @@
                     <baseName>
                         <simpleValue>視線誘導標規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_付帯道路施設工_道路付属物工_視線誘導標</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>視線誘導標設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="視線誘導標設置［市場単価］" />
+                            <xs:enumeration value="視線誘導標設置（スノーポール併用型）" />
+                        </xs:restriction>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -197,9 +222,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_可変式(穿孔式･1本脚)" />
-                            <xs:enumeration value="2_着脱式(穿孔式･3本脚)" />
-                            <xs:enumeration value="3_固定式(貼付式)" />
+                            <xs:enumeration value="可変式(穿孔式･1本脚)" />
+                            <xs:enumeration value="着脱式(穿孔式･3本脚)" />
+                            <xs:enumeration value="固定式(貼付式)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -212,9 +237,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_30本以上" />
-                            <xs:enumeration value="2_10本以上30本未満" />
-                            <xs:enumeration value="3_10本未満" />
+                            <xs:enumeration value="30本以上" />
+                            <xs:enumeration value="10本以上30本未満" />
+                            <xs:enumeration value="10本未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -225,6 +250,17 @@
                     <baseName>
                         <simpleValue>車線分離標規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_付帯道路施設工_道路付属物工_車線分離標</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>車線分離標設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>道路付属物設置工（車線分離標（ラバーポール））</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -268,8 +304,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_大型鋲" />
-                            <xs:enumeration value="2_小型鋲" />
+                            <xs:enumeration value="大型鋲" />
+                            <xs:enumeration value="小型鋲" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -282,9 +318,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_30個以上" />
-                            <xs:enumeration value="2_10個以上30個未満" />
-                            <xs:enumeration value="3_10個未満" />
+                            <xs:enumeration value="30個以上" />
+                            <xs:enumeration value="10個以上30個未満" />
+                            <xs:enumeration value="10個未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -295,6 +331,17 @@
                     <baseName>
                         <simpleValue>道路鋲規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_付帯道路施設工_道路付属物工_道路鋲</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>道路鋲設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>道路鋲設置［市場単価］</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

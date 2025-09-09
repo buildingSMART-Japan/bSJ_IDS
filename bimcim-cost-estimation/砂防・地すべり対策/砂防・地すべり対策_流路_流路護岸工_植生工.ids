@@ -59,10 +59,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_厚1cm" />
-                            <xs:enumeration value="2_厚2cm" />
-                            <xs:enumeration value="3_厚3cm" />
+                            <xs:enumeration value="厚1cm" />
+                            <xs:enumeration value="厚2cm" />
+                            <xs:enumeration value="厚3cm" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_流路_流路護岸工_植生工_客土吹付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>客土吹付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>機械播種施工による植生工</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -73,7 +84,7 @@
                         <simpleValue>工種区分</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>1_客土吹付工</simpleValue>
+                        <simpleValue>客土吹付工</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -85,11 +96,33 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1000m2以上" />
-                            <xs:enumeration value="2_500m2以上1000m2未満" />
-                            <xs:enumeration value="3_250m2以上500m2未満" />
-                            <xs:enumeration value="4_250m2未満" />
+                            <xs:enumeration value="1000m2以上" />
+                            <xs:enumeration value="500m2以上1000m2未満" />
+                            <xs:enumeration value="250m2以上500m2未満" />
+                            <xs:enumeration value="250m2未満" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_流路_流路護岸工_植生工_客土吹付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>繊維ﾈｯﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>繊維ネット工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_流路_流路護岸工_植生工_客土吹付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾗｽ張費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ラス張工［市場単価］</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -134,13 +167,13 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_3cm" />
-                            <xs:enumeration value="2_4cm" />
-                            <xs:enumeration value="3_5cm" />
-                            <xs:enumeration value="4_6cm" />
-                            <xs:enumeration value="5_7cm" />
-                            <xs:enumeration value="6_8cm" />
-                            <xs:enumeration value="7_10cm" />
+                            <xs:enumeration value="3cm" />
+                            <xs:enumeration value="4cm" />
+                            <xs:enumeration value="5cm" />
+                            <xs:enumeration value="6cm" />
+                            <xs:enumeration value="7cm" />
+                            <xs:enumeration value="8cm" />
+                            <xs:enumeration value="10cm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -152,7 +185,7 @@
                         <simpleValue>工種区分</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>1_植生基材吹付工</simpleValue>
+                        <simpleValue>植生基材吹付工</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -164,11 +197,33 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1000m2以上" />
-                            <xs:enumeration value="2_500m2以上1000m2未満" />
-                            <xs:enumeration value="3_250m2以上500m2未満" />
-                            <xs:enumeration value="4_250m2未満" />
+                            <xs:enumeration value="1000m2以上" />
+                            <xs:enumeration value="500m2以上1000m2未満" />
+                            <xs:enumeration value="250m2以上500m2未満" />
+                            <xs:enumeration value="250m2未満" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_流路_流路護岸工_植生工_植生基材吹付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>植生基材吹付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>機械播種施工による植生工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_流路_流路護岸工_植生工_植生基材吹付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>繊維ﾈｯﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>繊維ネット工</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -213,11 +268,22 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1000m2以上" />
-                            <xs:enumeration value="2_500m2以上1000m2未満" />
-                            <xs:enumeration value="3_250m2以上500m2未満" />
-                            <xs:enumeration value="4_250m2未満" />
+                            <xs:enumeration value="1000m2以上" />
+                            <xs:enumeration value="500m2以上1000m2未満" />
+                            <xs:enumeration value="250m2以上500m2未満" />
+                            <xs:enumeration value="250m2未満" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_流路_流路護岸工_植生工_種子散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>種子散布費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>機械播種施工による植生工</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -228,6 +294,17 @@
                         <simpleValue>種子規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_流路_流路護岸工_植生工_種子散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>繊維ﾈｯﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>繊維ネット工</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_砂防・地すべり対策_流路_流路護岸工_植生工_種子散布</simpleValue>
@@ -237,9 +314,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_肥料有り" />
-                            <xs:enumeration value="2_肥料無し" />
+                            <xs:enumeration value="肥料有り" />
+                            <xs:enumeration value="肥料無し" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_流路_流路護岸工_植生工_種子散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾗｽ張費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ラス張工［市場単価］</simpleValue>
                     </value>
                 </property>
             </requirements>

@@ -59,10 +59,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_土中建込" />
-                            <xs:enumeration value="2_ﾌﾟﾚｷｬｽﾄｺﾝｸﾘｰﾄﾌﾞﾛｯｸ建込" />
-                            <xs:enumeration value="3_ｺﾝｸﾘｰﾄ建込" />
-                            <xs:enumeration value="4_ｱﾝｶｰﾎﾞﾙﾄ固定" />
+                            <xs:enumeration value="土中建込" />
+                            <xs:enumeration value="ﾌﾟﾚｷｬｽﾄｺﾝｸﾘｰﾄﾌﾞﾛｯｸ建込" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ建込" />
+                            <xs:enumeration value="ｱﾝｶｰﾎﾞﾙﾄ固定" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -73,6 +73,34 @@
                     <baseName>
                         <simpleValue>柵高</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_流路_流路付属物設置工_防止柵工_転落(横断)防止柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>転落(横断)防止柵設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="防護柵（横断・転落防止柵）設置工" />
+                            <xs:enumeration value="防護柵（横断・転落防止柵）撤去工" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_流路_流路付属物設置工_防止柵工_転落(横断)防止柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>転落(横断)防止柵部材設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="部材設置工（ビーム・パネル）" />
+                            <xs:enumeration value="部材撤去工（ビーム・パネル）" />
+                        </xs:restriction>
+                    </value>
                 </property>
             </requirements>
         </specification>

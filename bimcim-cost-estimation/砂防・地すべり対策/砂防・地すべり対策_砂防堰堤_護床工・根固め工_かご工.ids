@@ -44,6 +44,17 @@
                         <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_護床工・根固め工_かご工_じゃかご</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>じゃかご費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>じゃかご</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_護床工・根固め工_かご工_じゃかご</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -59,9 +70,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_径45cm" />
-                            <xs:enumeration value="2_径60cm" />
+                            <xs:enumeration value="径45cm" />
+                            <xs:enumeration value="径60cm" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_護床工・根固め工_かご工_じゃかご</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>止杭設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>止杭打込</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -107,6 +129,17 @@
                         <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_護床工・根固め工_かご工_ふとんかご</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>ふとんかご費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ふとんかご</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_護床工・根固め工_かご工_ふとんかご</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -130,8 +163,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｽﾛｰﾌﾟ式" />
-                            <xs:enumeration value="2_階段式" />
+                            <xs:enumeration value="ｽﾛｰﾌﾟ式" />
+                            <xs:enumeration value="階段式" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -144,9 +177,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_高さ40cm×幅120cm" />
-                            <xs:enumeration value="2_高さ50cm×幅120cm" />
-                            <xs:enumeration value="3_高さ60cm×幅120cm" />
+                            <xs:enumeration value="高さ40cm×幅120cm" />
+                            <xs:enumeration value="高さ50cm×幅120cm" />
+                            <xs:enumeration value="高さ60cm×幅120cm" />
                         </xs:restriction>
                     </value>
                 </property>

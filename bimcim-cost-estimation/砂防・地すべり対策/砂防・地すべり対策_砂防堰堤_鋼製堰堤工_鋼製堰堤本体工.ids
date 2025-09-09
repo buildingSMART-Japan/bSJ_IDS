@@ -50,6 +50,17 @@
                         <simpleValue>1470500101_1123800101_1128400101_1128800101_1041100201</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>岩盤清掃費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>岩盤清掃</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_コンクリート</simpleValue>
@@ -59,8 +70,23 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｸﾚｰﾝ打設(平均高30m以下)" />
-                            <xs:enumeration value="2_ｸﾚｰﾝ打設" />
+                            <xs:enumeration value="ｸﾚｰﾝ打設(平均高30m以下)" />
+                            <xs:enumeration value="ｸﾚｰﾝ打設" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>特殊養生費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="コンクリート養生［練炭］" />
+                            <xs:enumeration value="コンクリート養生［ジェットヒータ］" />
+                            <xs:enumeration value="コンクリート養生［仮囲い内ジェットヒータ養生］" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -73,8 +99,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_使用する" />
-                            <xs:enumeration value="2_使用しない" />
+                            <xs:enumeration value="使用する" />
+                            <xs:enumeration value="使用しない" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -87,8 +113,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_生ｺﾝｸﾘｰﾄ割増額無" />
-                            <xs:enumeration value="2_生ｺﾝｸﾘｰﾄ割増額有" />
+                            <xs:enumeration value="生ｺﾝｸﾘｰﾄ割増額無" />
+                            <xs:enumeration value="生ｺﾝｸﾘｰﾄ割増額有" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -101,11 +127,11 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_一般養生" />
-                            <xs:enumeration value="2_特殊養生(練炭)" />
-                            <xs:enumeration value="3_特殊養生(ｼﾞｪｯﾄﾋｰﾀ)" />
-                            <xs:enumeration value="4_特殊養生(仮囲い内ｼﾞｪｯﾄﾋｰﾀ養生)" />
-                            <xs:enumeration value="5_散水養生" />
+                            <xs:enumeration value="一般養生" />
+                            <xs:enumeration value="特殊養生(練炭)" />
+                            <xs:enumeration value="特殊養生(ｼﾞｪｯﾄﾋｰﾀ)" />
+                            <xs:enumeration value="特殊養生(仮囲い内ｼﾞｪｯﾄﾋｰﾀ養生)" />
+                            <xs:enumeration value="散水養生" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -118,22 +144,77 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_18-5-40(高炉B)" />
-                            <xs:enumeration value="10_21-5-80(高炉B)" />
-                            <xs:enumeration value="11_27-5-40(高炉B)" />
-                            <xs:enumeration value="12_c=300kg/m3-5-40(高炉B)" />
-                            <xs:enumeration value="13_c=300kg/m3-5-80(高炉B)" />
-                            <xs:enumeration value="14_c=600kg/m3 Gmax=40(高炉B)" />
-                            <xs:enumeration value="15_c=600kg/m3 Gmax=80(高炉B)" />
-                            <xs:enumeration value="16_各種" />
-                            <xs:enumeration value="2_18-8-40(高炉B)" />
-                            <xs:enumeration value="3_18-5-80(高炉B)" />
-                            <xs:enumeration value="4_18-8-80(高炉B)" />
-                            <xs:enumeration value="5_19.5-5-40(高炉B)" />
-                            <xs:enumeration value="6_19.5-8-40(高炉B)" />
-                            <xs:enumeration value="7_19.5-5-80(高炉B)" />
-                            <xs:enumeration value="8_19.5-8-80(高炉B)" />
-                            <xs:enumeration value="9_21-5-40(高炉B)" />
+                            <xs:enumeration value="18-5-40(高炉B)" />
+                            <xs:enumeration value="18-8-40(高炉B)" />
+                            <xs:enumeration value="18-5-80(高炉B)" />
+                            <xs:enumeration value="18-8-80(高炉B)" />
+                            <xs:enumeration value="19.5-5-40(高炉B)" />
+                            <xs:enumeration value="19.5-8-40(高炉B)" />
+                            <xs:enumeration value="19.5-5-80(高炉B)" />
+                            <xs:enumeration value="19.5-8-80(高炉B)" />
+                            <xs:enumeration value="21-5-40(高炉B)" />
+                            <xs:enumeration value="21-5-80(高炉B)" />
+                            <xs:enumeration value="27-5-40(高炉B)" />
+                            <xs:enumeration value="c=300kg/m3-5-40(高炉B)" />
+                            <xs:enumeration value="c=300kg/m3-5-80(高炉B)" />
+                            <xs:enumeration value="c=600kg/m3 Gmax=40(高炉B)" />
+                            <xs:enumeration value="c=600kg/m3 Gmax=80(高炉B)" />
+                            <xs:enumeration value="各種" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費(平均高30m以下)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>一般部コンクリート打設</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費(ｹｰﾌﾞﾙｸﾚｰﾝ打設)</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="コンクリート投入（ケーブルクレーン両端固定式）" />
+                            <xs:enumeration value="コンクリート締固め・打継面清掃" />
+                            <xs:enumeration value="コンクリート養生［散水］" />
+                            <xs:enumeration value="自然水施設" />
+                            <xs:enumeration value="岩盤清掃" />
+                            <xs:enumeration value="チッピング" />
+                            <xs:enumeration value="不整地運搬車による横取り" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ運搬費(現地ﾌﾟﾗﾝﾄ)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート運搬　アジテータトラック［砂防］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾁｯﾋﾟﾝｸﾞ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="チッピング（岩盤面・打継面）" />
+                            <xs:enumeration value="チッピング（既設堰堤腹付け面）" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -177,6 +258,17 @@
                     <baseName>
                         <simpleValue>厚さ</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_吸出し防止材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>吸出し防止材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>吸出し防止材設置</simpleValue>
+                    </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
@@ -227,6 +319,60 @@
                         <simpleValue>1470500101_1123800101_1128400101_1128800101_B040500401</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_均しコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>均しｺﾝｸﾘｰﾄ型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_均しコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>均しｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="コンクリート投入（ケーブルクレーン両端固定式）" />
+                            <xs:enumeration value="コンクリート締固め・打継面清掃" />
+                            <xs:enumeration value="コンクリート養生［散水］" />
+                            <xs:enumeration value="コンクリート養生［練炭］" />
+                            <xs:enumeration value="自然水施設" />
+                            <xs:enumeration value="不整地運搬車による横取り" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_均しコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>均しｺﾝｸﾘｰﾄ費(平均高30m以下)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>一般部コンクリート打設</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_均しコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>岩盤清掃費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="岩盤清掃" />
+                            <xs:enumeration value="岩盤清掃" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_均しコンクリート</simpleValue>
@@ -236,8 +382,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｸﾚｰﾝ打設(平均高30m以下)" />
-                            <xs:enumeration value="2_ｸﾚｰﾝ打設" />
+                            <xs:enumeration value="ｸﾚｰﾝ打設(平均高30m以下)" />
+                            <xs:enumeration value="ｸﾚｰﾝ打設" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -258,8 +404,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_使用する" />
-                            <xs:enumeration value="2_使用しない" />
+                            <xs:enumeration value="使用する" />
+                            <xs:enumeration value="使用しない" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -272,23 +418,95 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_18-5-40(高炉B)" />
-                            <xs:enumeration value="10_21-5-80(高炉B)" />
-                            <xs:enumeration value="11_27-5-40(高炉B)" />
-                            <xs:enumeration value="12_c=300kg/m3-5-40(高炉B)" />
-                            <xs:enumeration value="13_c=300kg/m3-5-80(高炉B)" />
-                            <xs:enumeration value="14_c=600kg/m3 Gmax=40(高炉B)" />
-                            <xs:enumeration value="15_c=600kg/m3 Gmax=80(高炉B)" />
-                            <xs:enumeration value="16_各種" />
-                            <xs:enumeration value="17_ｺﾝｸﾘｰﾄ不要" />
-                            <xs:enumeration value="2_18-8-40(高炉B)" />
-                            <xs:enumeration value="3_18-5-80(高炉B)" />
-                            <xs:enumeration value="4_18-8-80(高炉B)" />
-                            <xs:enumeration value="5_19.5-5-40(高炉B)" />
-                            <xs:enumeration value="6_19.5-8-40(高炉B)" />
-                            <xs:enumeration value="7_19.5-5-80(高炉B)" />
-                            <xs:enumeration value="8_19.5-8-80(高炉B)" />
-                            <xs:enumeration value="9_21-5-40(高炉B)" />
+                            <xs:enumeration value="18-5-40(高炉B)" />
+                            <xs:enumeration value="18-8-40(高炉B)" />
+                            <xs:enumeration value="18-5-80(高炉B)" />
+                            <xs:enumeration value="18-8-80(高炉B)" />
+                            <xs:enumeration value="19.5-5-40(高炉B)" />
+                            <xs:enumeration value="19.5-8-40(高炉B)" />
+                            <xs:enumeration value="19.5-5-80(高炉B)" />
+                            <xs:enumeration value="19.5-8-80(高炉B)" />
+                            <xs:enumeration value="21-5-40(高炉B)" />
+                            <xs:enumeration value="21-5-80(高炉B)" />
+                            <xs:enumeration value="27-5-40(高炉B)" />
+                            <xs:enumeration value="c=300kg/m3-5-40(高炉B)" />
+                            <xs:enumeration value="c=300kg/m3-5-80(高炉B)" />
+                            <xs:enumeration value="c=600kg/m3 Gmax=40(高炉B)" />
+                            <xs:enumeration value="c=600kg/m3 Gmax=80(高炉B)" />
+                            <xs:enumeration value="各種" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ不要" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_均しコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ運搬費(現地ﾌﾟﾗﾝﾄ)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート運搬　アジテータトラック［砂防］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_均しコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾁｯﾋﾟﾝｸﾞ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="チッピング（岩盤面・打継面）" />
+                            <xs:enumeration value="チッピング（既設堰堤腹付け面）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="型枠" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1123800101_1128400101_1128800101_B040800301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="型枠工［砂防］" />
+                            <xs:enumeration value="型枠" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -333,6 +551,31 @@
                         <simpleValue>土質</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_枠内中詰</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>壁面中詰費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>積込（ルーズ）（砂防）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_枠内中詰</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>採取地からの積込･運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="積込（ルーズ）（砂防）" />
+                            <xs:enumeration value="土砂等運搬（砂防）" />
+                        </xs:restriction>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="水抜暗渠" ifcVersion="IFC2X3">
@@ -375,9 +618,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_据付" />
-                            <xs:enumeration value="2_撤去" />
-                            <xs:enumeration value="3_据付・撤去" />
+                            <xs:enumeration value="据付" />
+                            <xs:enumeration value="撤去" />
+                            <xs:enumeration value="据付・撤去" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -390,11 +633,22 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_90°巻き" />
-                            <xs:enumeration value="2_180°巻き" />
-                            <xs:enumeration value="3_360°巻き" />
-                            <xs:enumeration value="4_無し" />
+                            <xs:enumeration value="90°巻き" />
+                            <xs:enumeration value="180°巻き" />
+                            <xs:enumeration value="360°巻き" />
+                            <xs:enumeration value="無し" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_水抜暗渠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>水抜暗渠設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ヒューム管（Ｂ形管）</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -406,21 +660,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_200mm" />
-                            <xs:enumeration value="10_800mm" />
-                            <xs:enumeration value="11_900mm" />
-                            <xs:enumeration value="12_1000mm" />
-                            <xs:enumeration value="13_1100mm" />
-                            <xs:enumeration value="14_1200mm" />
-                            <xs:enumeration value="15_1350mm" />
-                            <xs:enumeration value="2_250mm" />
-                            <xs:enumeration value="3_300mm" />
-                            <xs:enumeration value="4_350mm" />
-                            <xs:enumeration value="5_400mm" />
-                            <xs:enumeration value="6_450mm" />
-                            <xs:enumeration value="7_500mm" />
-                            <xs:enumeration value="8_600mm" />
-                            <xs:enumeration value="9_700mm" />
+                            <xs:enumeration value="200mm" />
+                            <xs:enumeration value="250mm" />
+                            <xs:enumeration value="300mm" />
+                            <xs:enumeration value="350mm" />
+                            <xs:enumeration value="400mm" />
+                            <xs:enumeration value="450mm" />
+                            <xs:enumeration value="500mm" />
+                            <xs:enumeration value="600mm" />
+                            <xs:enumeration value="700mm" />
+                            <xs:enumeration value="800mm" />
+                            <xs:enumeration value="900mm" />
+                            <xs:enumeration value="1000mm" />
+                            <xs:enumeration value="1100mm" />
+                            <xs:enumeration value="1200mm" />
+                            <xs:enumeration value="1350mm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -433,9 +687,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_外圧管1種" />
-                            <xs:enumeration value="2_外圧管2種" />
-                            <xs:enumeration value="3_各種" />
+                            <xs:enumeration value="外圧管1種" />
+                            <xs:enumeration value="外圧管2種" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -446,6 +700,64 @@
                     <baseName>
                         <simpleValue>管長さ</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_水抜暗渠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙｸﾚｰﾝによる水抜暗渠設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="ケーブルクレーン運搬工（ヒューム管等）" />
+                            <xs:enumeration value="ヒューム管据付工（ケーブルクレーン）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="砂防ソイルセメント(撹拌混合)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>砂防ソイルセメント(撹拌混合)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_砂防ソイルセメント(撹拌混合)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_砂防ソイルセメント(撹拌混合)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1123800101_1128400101_1128800101_B604505301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_砂防ソイルセメント(撹拌混合)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撹拌混合費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>撹拌混合</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -489,8 +801,66 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_4.5m未満" />
-                            <xs:enumeration value="2_4.5m以上" />
+                            <xs:enumeration value="4.5m未満" />
+                            <xs:enumeration value="4.5m以上" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_砂防ソイルセメント(敷均し・締固め)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>混合材料敷均し･締固め費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>混合材料敷均し・締固め</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="砂防ソイルセメント(混合材料運搬・投入)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>砂防ソイルセメント(混合材料運搬・投入)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_砂防ソイルセメント(混合材料運搬・投入)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_砂防ソイルセメント(混合材料運搬・投入)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1123800101_1128400101_1128800101_B604505401</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_砂防ソイルセメント(混合材料運搬・投入)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>混合材料運搬・投入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="積込（ルーズ）（砂防）" />
+                            <xs:enumeration value="土砂等運搬（砂防）" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -536,12 +906,114 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_40を超え45%以下" />
-                            <xs:enumeration value="2_45を超え50%以下" />
-                            <xs:enumeration value="3_50を超え60%以下" />
-                            <xs:enumeration value="4_60を超え80%以下" />
-                            <xs:enumeration value="5_80を超え100%以下" />
+                            <xs:enumeration value="40を超え45%以下" />
+                            <xs:enumeration value="45を超え50%以下" />
+                            <xs:enumeration value="50を超え60%以下" />
+                            <xs:enumeration value="60を超え80%以下" />
+                            <xs:enumeration value="80を超え100%以下" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_砂防ソイルセメント(粒径処理)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>粒径処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>粒径処理</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="砂防ソイルセメント(粒径処理土積込・運搬)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>砂防ソイルセメント(粒径処理土積込・運搬)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_砂防ソイルセメント(粒径処理土積込・運搬)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_砂防ソイルセメント(粒径処理土積込・運搬)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1123800101_1128400101_1128800101_B604505201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_砂防ソイルセメント(粒径処理土積込・運搬)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>粒径処理土積込・運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="積込（ルーズ）（砂防）" />
+                            <xs:enumeration value="土砂等運搬（砂防）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="足場" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>足場</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1123800101_1128400101_1128800101_1005501101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>足場設置・撤去［砂防］</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -585,6 +1057,38 @@
                         <simpleValue>型式</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_鋼製枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>隔壁材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="材料費（ｔ）" />
+                            <xs:enumeration value="隔壁材設置" />
+                            <xs:enumeration value="ケーブルクレーン運転" />
+                            <xs:enumeration value="トラッククレーン又はクローラクレーン運転" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_鋼製枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>面型材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="材料費（ｔ）" />
+                            <xs:enumeration value="面壁材設置" />
+                            <xs:enumeration value="ケーブルクレーン運転" />
+                            <xs:enumeration value="トラッククレーン又はクローラクレーン運転" />
+                        </xs:restriction>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="鋼製枠(鋼管フレーム型・バットレス型)" ifcVersion="IFC2X3">
@@ -627,11 +1131,11 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_塩化ｺﾞﾑ系樹脂塗料" />
-                            <xs:enumeration value="2_ﾎﾟﾘｳﾚﾀﾝ樹脂塗料" />
-                            <xs:enumeration value="3_ｼﾘｺﾝｱﾙｷﾄﾞ樹脂塗料" />
-                            <xs:enumeration value="4_ふっ素樹脂塗料" />
-                            <xs:enumeration value="5_各種" />
+                            <xs:enumeration value="塩化ｺﾞﾑ系樹脂塗料" />
+                            <xs:enumeration value="ﾎﾟﾘｳﾚﾀﾝ樹脂塗料" />
+                            <xs:enumeration value="ｼﾘｺﾝｱﾙｷﾄﾞ樹脂塗料" />
+                            <xs:enumeration value="ふっ素樹脂塗料" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -644,11 +1148,27 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_塩化ｺﾞﾑ系樹脂塗料" />
-                            <xs:enumeration value="2_ﾎﾟﾘｳﾚﾀﾝ樹脂塗料" />
-                            <xs:enumeration value="3_ｼﾘｺﾝｱﾙｷﾄﾞ樹脂塗料" />
-                            <xs:enumeration value="4_ふっ素樹脂塗料" />
-                            <xs:enumeration value="5_各種" />
+                            <xs:enumeration value="塩化ｺﾞﾑ系樹脂塗料" />
+                            <xs:enumeration value="ﾎﾟﾘｳﾚﾀﾝ樹脂塗料" />
+                            <xs:enumeration value="ｼﾘｺﾝｱﾙｷﾄﾞ樹脂塗料" />
+                            <xs:enumeration value="ふっ素樹脂塗料" />
+                            <xs:enumeration value="各種" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_鋼製枠(鋼管フレーム型・バットレス型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鋼管ﾌﾚｰﾑ型砂防堰堤費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="アンカー工" />
+                            <xs:enumeration value="鋼製部材組立・据付け(鋼管ﾌﾚｰﾑ型砂防堰堤)" />
+                            <xs:enumeration value="本締め工" />
+                            <xs:enumeration value="現場塗装工（はけ塗り）" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -661,9 +1181,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_鋼管ﾌﾚｰﾑ型砂防堰堤" />
-                            <xs:enumeration value="2_ﾊﾞｯﾄﾚｽ型砂防堰堤" />
+                            <xs:enumeration value="鋼管ﾌﾚｰﾑ型砂防堰堤" />
+                            <xs:enumeration value="ﾊﾞｯﾄﾚｽ型砂防堰堤" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_鋼製枠(鋼管フレーム型・バットレス型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾊﾞｯﾄﾚｽ型砂防堰堤費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鋼製部材組立・据付け(ﾊﾞｯﾄﾚｽ型砂防堰堤)</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -699,6 +1230,34 @@
                         <simpleValue>1470500101_1123800101_1128400101_1128800101_B129000101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_隔壁コンクリート基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="型枠" />
+                            <xs:enumeration value="型枠工［砂防］" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_隔壁コンクリート基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>岩盤清掃費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="岩盤清掃" />
+                            <xs:enumeration value="岩盤清掃" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_隔壁コンクリート基礎</simpleValue>
@@ -716,8 +1275,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｸﾚｰﾝ打設(平均高30m以下)" />
-                            <xs:enumeration value="2_ｸﾚｰﾝ打設" />
+                            <xs:enumeration value="ｸﾚｰﾝ打設(平均高30m以下)" />
+                            <xs:enumeration value="ｸﾚｰﾝ打設" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -730,9 +1289,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_使用する" />
-                            <xs:enumeration value="2_使用しない" />
+                            <xs:enumeration value="使用する" />
+                            <xs:enumeration value="使用しない" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_隔壁コンクリート基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋工［市場単価］</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -752,22 +1322,76 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_18-5-40(高炉B)" />
-                            <xs:enumeration value="10_21-5-80(高炉B)" />
-                            <xs:enumeration value="11_27-5-40(高炉B)" />
-                            <xs:enumeration value="12_c=300kg/m3-5-40(高炉B)" />
-                            <xs:enumeration value="13_c=300kg/m3-5-80(高炉B)" />
-                            <xs:enumeration value="14_c=600kg/m3 Gmax=40(高炉B)" />
-                            <xs:enumeration value="15_c=600kg/m3 Gmax=80(高炉B)" />
-                            <xs:enumeration value="16_各種" />
-                            <xs:enumeration value="2_18-8-40(高炉B)" />
-                            <xs:enumeration value="3_18-5-80(高炉B)" />
-                            <xs:enumeration value="4_18-8-80(高炉B)" />
-                            <xs:enumeration value="5_19.5-5-40(高炉B)" />
-                            <xs:enumeration value="6_19.5-8-40(高炉B)" />
-                            <xs:enumeration value="7_19.5-5-80(高炉B)" />
-                            <xs:enumeration value="8_19.5-8-80(高炉B)" />
-                            <xs:enumeration value="9_21-5-40(高炉B)" />
+                            <xs:enumeration value="18-5-40(高炉B)" />
+                            <xs:enumeration value="18-8-40(高炉B)" />
+                            <xs:enumeration value="18-5-80(高炉B)" />
+                            <xs:enumeration value="18-8-80(高炉B)" />
+                            <xs:enumeration value="19.5-5-40(高炉B)" />
+                            <xs:enumeration value="19.5-8-40(高炉B)" />
+                            <xs:enumeration value="19.5-5-80(高炉B)" />
+                            <xs:enumeration value="19.5-8-80(高炉B)" />
+                            <xs:enumeration value="21-5-40(高炉B)" />
+                            <xs:enumeration value="21-5-80(高炉B)" />
+                            <xs:enumeration value="27-5-40(高炉B)" />
+                            <xs:enumeration value="c=300kg/m3-5-40(高炉B)" />
+                            <xs:enumeration value="c=300kg/m3-5-80(高炉B)" />
+                            <xs:enumeration value="c=600kg/m3 Gmax=40(高炉B)" />
+                            <xs:enumeration value="c=600kg/m3 Gmax=80(高炉B)" />
+                            <xs:enumeration value="各種" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_隔壁コンクリート基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費(平均高30m以下)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>一般部コンクリート打設</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_隔壁コンクリート基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費(ｸﾚｰﾝ打設)</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="コンクリート投入（ケーブルクレーン両端固定式）" />
+                            <xs:enumeration value="コンクリート締固め・打継面清掃" />
+                            <xs:enumeration value="コンクリート養生［散水］" />
+                            <xs:enumeration value="コンクリート養生［練炭］" />
+                            <xs:enumeration value="自然水施設" />
+                            <xs:enumeration value="不整地運搬車による横取り" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_隔壁コンクリート基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ運搬費(現地簡易)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート運搬　アジテータトラック［砂防］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_鋼製堰堤工_鋼製堰堤本体工_隔壁コンクリート基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾁｯﾋﾟﾝｸﾞ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="チッピング（岩盤面・打継面）" />
+                            <xs:enumeration value="チッピング（既設堰堤腹付け面）" />
                         </xs:restriction>
                     </value>
                 </property>

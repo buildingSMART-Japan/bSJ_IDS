@@ -59,9 +59,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_径90mm" />
-                            <xs:enumeration value="2_径115mm" />
-                            <xs:enumeration value="3_径135mm" />
+                            <xs:enumeration value="径90mm" />
+                            <xs:enumeration value="径115mm" />
+                            <xs:enumeration value="径135mm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -74,10 +74,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_粘性土･砂質土" />
-                            <xs:enumeration value="2_ﾚｷ質土" />
-                            <xs:enumeration value="3_岩塊･玉石" />
-                            <xs:enumeration value="4_軟岩" />
+                            <xs:enumeration value="粘性土･砂質土" />
+                            <xs:enumeration value="ﾚｷ質土" />
+                            <xs:enumeration value="岩塊･玉石" />
+                            <xs:enumeration value="軟岩" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -90,9 +90,119 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_地表" />
-                            <xs:enumeration value="2_集水井内" />
+                            <xs:enumeration value="地表" />
+                            <xs:enumeration value="集水井内" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水排除工_集排水ボーリング工_ボーリング</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾎﾞｰﾘﾝｸﾞ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ボーリング</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ボーリング仮設機材" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ボーリング仮設機材</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水排除工_集排水ボーリング工_ボーリング仮設機材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水排除工_集排水ボーリング工_ボーリング仮設機材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1174000101_1186200201_1186600101_B186900101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水排除工_集排水ボーリング工_ボーリング仮設機材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾎﾞｰﾘﾝｸﾞ機械据付撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ボーリング仮設機材</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ボーリング洗浄" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ボーリング洗浄</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水排除工_集排水ボーリング工_ボーリング洗浄</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水排除工_集排水ボーリング工_ボーリング洗浄</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1174000101_1186200201_1186600101_1576200101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水排除工_集排水ボーリング工_ボーリング洗浄</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>足場費(集排水ﾎﾞｰﾘﾝｸﾞ孔洗浄工)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>集水井内足場設置・撤去</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水排除工_集排水ボーリング工_ボーリング洗浄</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾎﾞｰﾘﾝｸﾞ孔洗浄費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>集排水ボーリング孔洗浄工</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -128,6 +238,17 @@
                         <simpleValue>1470500101_1174000101_1186200201_1186600101_B186800101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水排除工_集排水ボーリング工_保孔管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>保孔管挿入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>保孔管</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水排除工_集排水ボーリング工_保孔管</simpleValue>
@@ -137,12 +258,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_SGP40A" />
-                            <xs:enumeration value="2_SGP50A" />
-                            <xs:enumeration value="3_SGP65A" />
-                            <xs:enumeration value="4_SGP80A" />
-                            <xs:enumeration value="5_SGP90A" />
-                            <xs:enumeration value="6_各種" />
+                            <xs:enumeration value="SGP40A" />
+                            <xs:enumeration value="SGP50A" />
+                            <xs:enumeration value="SGP65A" />
+                            <xs:enumeration value="SGP80A" />
+                            <xs:enumeration value="SGP90A" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -155,11 +276,11 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_VP40" />
-                            <xs:enumeration value="2_VP50" />
-                            <xs:enumeration value="3_VP65" />
-                            <xs:enumeration value="4_VP75" />
-                            <xs:enumeration value="5_各種" />
+                            <xs:enumeration value="VP40" />
+                            <xs:enumeration value="VP50" />
+                            <xs:enumeration value="VP65" />
+                            <xs:enumeration value="VP75" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -180,10 +301,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_地表VP" />
-                            <xs:enumeration value="2_地表SGP" />
-                            <xs:enumeration value="3_集水井内VP" />
-                            <xs:enumeration value="4_集水井内SGP" />
+                            <xs:enumeration value="地表VP" />
+                            <xs:enumeration value="地表SGP" />
+                            <xs:enumeration value="集水井内VP" />
+                            <xs:enumeration value="集水井内SGP" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -196,8 +317,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_工場加工品" />
-                            <xs:enumeration value="2_既製保孔管" />
+                            <xs:enumeration value="工場加工品" />
+                            <xs:enumeration value="既製保孔管" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -210,9 +331,53 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｽﾄﾚｰﾅ現場加工有" />
-                            <xs:enumeration value="2_ｽﾄﾚｰﾅ現場加工無" />
+                            <xs:enumeration value="ｽﾄﾚｰﾅ現場加工有" />
+                            <xs:enumeration value="ｽﾄﾚｰﾅ現場加工無" />
                         </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="足場" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>足場</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水排除工_集排水ボーリング工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水排除工_集排水ボーリング工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1174000101_1186200201_1186600101_B005501901</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_地下水排除工_集排水ボーリング工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>足場（地表）</simpleValue>
                     </value>
                 </property>
             </requirements>

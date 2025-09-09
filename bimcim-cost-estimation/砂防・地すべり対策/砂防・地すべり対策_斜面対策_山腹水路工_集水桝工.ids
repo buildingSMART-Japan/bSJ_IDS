@@ -58,6 +58,20 @@
                         <simpleValue>集水桝種類</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_集水桝工_プレキャスト集水桝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ集水桝設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="プレキャスト集水桝据付" />
+                            <xs:enumeration value="水路工各種材料費" />
+                        </xs:restriction>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="蓋" ifcVersion="IFC2X3">
@@ -89,6 +103,28 @@
                     </baseName>
                     <value>
                         <simpleValue>1470500101_1174000101_1184500101_1067700206_1582100105</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_集水桝工_蓋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>蓋版材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（枚）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_集水桝工_蓋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>蓋版設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>蓋版</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -145,16 +181,30 @@
                         <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_集水桝工_集水桝</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>集水桝設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="集水桝設置" />
+                            <xs:enumeration value="水路工各種材料費" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_集水桝工_集水桝</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>ｺﾝｸﾘ-ﾄ規格</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_18-5-40(普通)" />
-                            <xs:enumeration value="2_18-8-25(20)(普通)" />
-                            <xs:enumeration value="3_18-8-40(普通)" />
-                            <xs:enumeration value="4_18-5-40(高炉)" />
-                            <xs:enumeration value="5_18-8-40(高炉)" />
-                            <xs:enumeration value="6_生ｺﾝｸﾘ-ﾄ各種" />
+                            <xs:enumeration value="18-5-40(普通)" />
+                            <xs:enumeration value="18-8-25(20)(普通)" />
+                            <xs:enumeration value="18-8-40(普通)" />
+                            <xs:enumeration value="18-5-40(高炉)" />
+                            <xs:enumeration value="18-8-40(高炉)" />
+                            <xs:enumeration value="生ｺﾝｸﾘ-ﾄ各種" />
                         </xs:restriction>
                     </value>
                 </property>

@@ -44,6 +44,17 @@
                         <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防土工_盛土工_盛土(採取土)</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>人力盛土費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>埋戻し</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防土工_盛土工_盛土(採取土)</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -55,13 +66,63 @@
                         <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防土工_盛土工_盛土(採取土)</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>土取場での掘削積込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="積込（ルーズ）（砂防）" />
+                            <xs:enumeration value="積込（ルーズ）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防土工_盛土工_盛土(採取土)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土取場での集積費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>押土（ルーズ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防土工_盛土工_盛土(採取土)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>採取土運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="土砂等運搬（砂防）" />
+                            <xs:enumeration value="土砂等運搬" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防土工_盛土工_盛土(採取土)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>敷均し･締固め費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>路体（築堤）盛土</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防土工_盛土工_盛土(採取土)</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>施工幅員</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_2.5m未満" />
-                            <xs:enumeration value="2_2.5m以上4.0m未満" />
-                            <xs:enumeration value="3_4.0m以上" />
+                            <xs:enumeration value="2.5m未満" />
+                            <xs:enumeration value="2.5m以上4.0m未満" />
+                            <xs:enumeration value="4.0m以上" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -92,10 +153,49 @@
                         <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防土工_盛土工_盛土(流用土)</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>人力盛土費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>埋戻し</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防土工_盛土工_盛土(流用土)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仮置土集積･積込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="押土（ルーズ）" />
+                            <xs:enumeration value="積込（ルーズ）（砂防）" />
+                            <xs:enumeration value="積込（ルーズ）" />
+                            <xs:enumeration value="土砂等運搬（砂防）" />
+                            <xs:enumeration value="土砂等運搬" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防土工_盛土工_盛土(流用土)</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
                         <simpleValue>1470500101_1123800101_1151200102_1013200104_B013300201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防土工_盛土工_盛土(流用土)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>敷均し･締固め費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>路体（築堤）盛土</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -107,9 +207,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_2.5m未満" />
-                            <xs:enumeration value="2_2.5m以上4.0m未満" />
-                            <xs:enumeration value="3_4.0m以上" />
+                            <xs:enumeration value="2.5m未満" />
+                            <xs:enumeration value="2.5m以上4.0m未満" />
+                            <xs:enumeration value="4.0m以上" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -140,10 +240,32 @@
                         <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防土工_盛土工_盛土(発生土)</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>人力盛土費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>埋戻し</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防土工_盛土工_盛土(発生土)</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
                         <simpleValue>1470500101_1123800101_1151200102_1013200104_B013400201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防土工_盛土工_盛土(発生土)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>敷均し･締固め費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>路体（築堤）盛土</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -155,9 +277,23 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_2.5m未満" />
-                            <xs:enumeration value="2_2.5m以上4.0m未満" />
-                            <xs:enumeration value="3_4.0m以上" />
+                            <xs:enumeration value="2.5m未満" />
+                            <xs:enumeration value="2.5m以上4.0m未満" />
+                            <xs:enumeration value="4.0m以上" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防土工_盛土工_盛土(発生土)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>発生土運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="土砂等運搬（砂防）" />
+                            <xs:enumeration value="土砂等運搬" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -188,10 +324,43 @@
                         <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防土工_盛土工_盛土(購入土)</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>人力盛土費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>埋戻し</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防土工_盛土工_盛土(購入土)</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
                         <simpleValue>1470500101_1123800101_1151200102_1013200104_B013600201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防土工_盛土工_盛土(購入土)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土砂購入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土材料</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防土工_盛土工_盛土(購入土)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>敷均し･締固め費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>路体（築堤）盛土</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -203,9 +372,23 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_2.5m未満" />
-                            <xs:enumeration value="2_2.5m以上4.0m未満" />
-                            <xs:enumeration value="3_4.0m以上" />
+                            <xs:enumeration value="2.5m未満" />
+                            <xs:enumeration value="2.5m以上4.0m未満" />
+                            <xs:enumeration value="4.0m以上" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防土工_盛土工_盛土(購入土)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>購入土運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="土砂等運搬（砂防）" />
+                            <xs:enumeration value="土砂等運搬" />
                         </xs:restriction>
                     </value>
                 </property>

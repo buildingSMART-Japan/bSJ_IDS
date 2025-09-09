@@ -39,6 +39,20 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防堰堤付属物設置工_作業土工_埋戻し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仮置場からの積込･運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="積込（ルーズ）（砂防）" />
+                            <xs:enumeration value="土砂等運搬（砂防）" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防堰堤付属物設置工_作業土工_埋戻し</simpleValue>
@@ -48,6 +62,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1470500101_1123800101_1537200101_1050100101_B004100401</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防堰堤付属物設置工_作業土工_埋戻し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土砂購入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土材料</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -67,8 +92,33 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_土砂" />
-                            <xs:enumeration value="2_岩塊・玉石" />
+                            <xs:enumeration value="土砂" />
+                            <xs:enumeration value="岩塊・玉石" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防堰堤付属物設置工_作業土工_埋戻し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>埋戻し費(ﾊﾞｯｸﾎｳ)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>埋戻し</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防堰堤付属物設置工_作業土工_埋戻し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>小規模土工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="埋戻し" />
+                            <xs:enumeration value="土砂等運搬" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -81,12 +131,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_最小埋戻幅4m以上" />
-                            <xs:enumeration value="2_最大埋戻幅4m以上" />
-                            <xs:enumeration value="3_最大埋戻幅1m以上4m未満" />
-                            <xs:enumeration value="4_最大埋戻幅1m未満" />
-                            <xs:enumeration value="5_上記以外(小規模)" />
-                            <xs:enumeration value="6_現場制約あり" />
+                            <xs:enumeration value="最小埋戻幅4m以上" />
+                            <xs:enumeration value="最大埋戻幅4m以上" />
+                            <xs:enumeration value="最大埋戻幅1m以上4m未満" />
+                            <xs:enumeration value="最大埋戻幅1m未満" />
+                            <xs:enumeration value="上記以外(小規模)" />
+                            <xs:enumeration value="現場制約あり" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -131,6 +181,109 @@
                         <simpleValue>土質</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防堰堤付属物設置工_作業土工_床掘り</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>小規模土工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="土砂等運搬（砂防）" />
+                            <xs:enumeration value="床掘り" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防堰堤付属物設置工_作業土工_床掘り</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>床均し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>基面整正</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防堰堤付属物設置工_作業土工_床掘り</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>掘削(人力)･運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="土砂等運搬" />
+                            <xs:enumeration value="掘削（砂防）" />
+                            <xs:enumeration value="掘削" />
+                            <xs:enumeration value="床掘り" />
+                            <xs:enumeration value="人力積込" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防堰堤付属物設置工_作業土工_床掘り</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>掘削費(火薬)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>掘削（砂防）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防堰堤付属物設置工_作業土工_床掘り</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>現地敷均し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>整地</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防堰堤付属物設置工_作業土工_床掘り</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>破砕片除去及び集積押土費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="積込（ルーズ）" />
+                            <xs:enumeration value="押土（ルーズ）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防堰堤付属物設置工_作業土工_床掘り</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>積込･運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="土砂等運搬（砂防）" />
+                            <xs:enumeration value="積込（ルーズ）（砂防）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防堰堤付属物設置工_作業土工_床掘り</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>転石破砕費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>転石破砕</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="床掘り(掘削(砂防))" ifcVersion="IFC2X3">
@@ -173,12 +326,23 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_土砂" />
-                            <xs:enumeration value="2_岩塊･玉石" />
-                            <xs:enumeration value="3_軟岩" />
-                            <xs:enumeration value="4_硬岩" />
-                            <xs:enumeration value="5_転石" />
+                            <xs:enumeration value="土砂" />
+                            <xs:enumeration value="岩塊･玉石" />
+                            <xs:enumeration value="軟岩" />
+                            <xs:enumeration value="硬岩" />
+                            <xs:enumeration value="転石" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_砂防堰堤_砂防堰堤付属物設置工_作業土工_床掘り(掘削(砂防))</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>掘削(砂防)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>掘削（砂防）</simpleValue>
                     </value>
                 </property>
             </requirements>

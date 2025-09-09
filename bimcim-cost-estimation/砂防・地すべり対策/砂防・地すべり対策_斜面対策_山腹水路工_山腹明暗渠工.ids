@@ -48,9 +48,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_L=600mm" />
-                            <xs:enumeration value="2_L=1000mm" />
-                            <xs:enumeration value="3_L=2000mm" />
+                            <xs:enumeration value="L=600mm" />
+                            <xs:enumeration value="L=1000mm" />
+                            <xs:enumeration value="L=2000mm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -63,6 +63,21 @@
                     </baseName>
                     <value>
                         <simpleValue>1470500101_1174000101_1184500101_1185400101_B185500101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_山腹明暗渠工_山腹U形側溝明暗渠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>山腹U形側溝明暗渠設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="山腹Ｕ形側溝明暗渠" />
+                            <xs:enumeration value="水路工各種材料費" />
+                            <xs:enumeration value="止杭工" />
+                        </xs:restriction>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -82,8 +97,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_有り" />
-                            <xs:enumeration value="2_無し" />
+                            <xs:enumeration value="有り" />
+                            <xs:enumeration value="無し" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -96,13 +111,24 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_18-5-40(普通)" />
-                            <xs:enumeration value="2_18-8-25(20)(普通)" />
-                            <xs:enumeration value="3_18-8-40(普通)" />
-                            <xs:enumeration value="4_18-5-40(高炉)" />
-                            <xs:enumeration value="5_18-8-40(高炉)" />
-                            <xs:enumeration value="6_生ｺﾝｸﾘ-ﾄ各種" />
+                            <xs:enumeration value="18-5-40(普通)" />
+                            <xs:enumeration value="18-8-25(20)(普通)" />
+                            <xs:enumeration value="18-8-40(普通)" />
+                            <xs:enumeration value="18-5-40(高炉)" />
+                            <xs:enumeration value="18-8-40(高炉)" />
+                            <xs:enumeration value="生ｺﾝｸﾘ-ﾄ各種" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_山腹明暗渠工_山腹U形側溝明暗渠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>表面ｺﾝｸﾘｰﾄ打設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ｺﾝｸﾘｰﾄ</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -154,6 +180,21 @@
                         <simpleValue>1470500101_1174000101_1184500101_1185400101_B185600101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_山腹明暗渠工_山腹コルゲートフリューム明暗渠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>山腹ｺﾙｹﾞｰﾄﾌﾘｭｰﾑ明暗渠設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="山腹コルゲートフリューム明暗渠" />
+                            <xs:enumeration value="水路工各種材料費" />
+                            <xs:enumeration value="止杭工" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_山腹明暗渠工_山腹コルゲートフリューム明暗渠</simpleValue>
@@ -171,9 +212,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_有り" />
-                            <xs:enumeration value="2_無し" />
+                            <xs:enumeration value="有り" />
+                            <xs:enumeration value="無し" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防・地すべり対策_斜面対策_山腹水路工_山腹明暗渠工_山腹コルゲートフリューム明暗渠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>表面ｺﾝｸﾘｰﾄ打設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ｺﾝｸﾘｰﾄ</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -185,12 +237,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_18-5-40(普通)" />
-                            <xs:enumeration value="2_18-8-25(20)(普通)" />
-                            <xs:enumeration value="3_18-8-40(普通)" />
-                            <xs:enumeration value="4_18-5-40(高炉)" />
-                            <xs:enumeration value="5_18-8-40(高炉)" />
-                            <xs:enumeration value="6_各種" />
+                            <xs:enumeration value="18-5-40(普通)" />
+                            <xs:enumeration value="18-8-25(20)(普通)" />
+                            <xs:enumeration value="18-8-40(普通)" />
+                            <xs:enumeration value="18-5-40(高炉)" />
+                            <xs:enumeration value="18-8-40(高炉)" />
+                            <xs:enumeration value="各種" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
                     </value>
