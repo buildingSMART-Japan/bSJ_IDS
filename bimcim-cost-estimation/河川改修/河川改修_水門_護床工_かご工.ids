@@ -48,8 +48,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_t=30cm" />
-                            <xs:enumeration value="2_t=50cm" />
+                            <xs:enumeration value="t=30cm" />
+                            <xs:enumeration value="t=50cm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -62,9 +62,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_亜鉛ｱﾙﾐﾒｯｷ" />
-                            <xs:enumeration value="2_各種" />
+                            <xs:enumeration value="亜鉛ｱﾙﾐﾒｯｷ" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごマット(スロープ型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>かごﾏｯﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>かごマット設置（スロープ型）</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -87,8 +98,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_栗石" />
-                            <xs:enumeration value="2_割栗石" />
+                            <xs:enumeration value="栗石" />
+                            <xs:enumeration value="割栗石" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -101,9 +112,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_径5～15cm" />
-                            <xs:enumeration value="2_径15～20cm" />
-                            <xs:enumeration value="3_各種" />
+                            <xs:enumeration value="径5～15cm" />
+                            <xs:enumeration value="径15～20cm" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -138,8 +149,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_亜鉛アルミメッキ鉄線" />
-                            <xs:enumeration value="2_各種" />
+                            <xs:enumeration value="亜鉛アルミメッキ鉄線" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -150,6 +161,17 @@
                     <baseName>
                         <simpleValue>かご本体材質（文字入力）</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごマット(多段積型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>かごﾏｯﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>かごマット工(多段型)</simpleValue>
+                    </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
                     <propertySet>
@@ -171,9 +193,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_割栗石" />
-                            <xs:enumeration value="2_栗石" />
-                            <xs:enumeration value="3_玉石" />
+                            <xs:enumeration value="割栗石" />
+                            <xs:enumeration value="栗石" />
+                            <xs:enumeration value="玉石" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -186,8 +208,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_15～20cm" />
-                            <xs:enumeration value="2_各種" />
+                            <xs:enumeration value="15～20cm" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -226,6 +248,17 @@
                         <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_じゃかご</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>じゃかご費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>じゃかご</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_じゃかご</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -241,9 +274,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_径45cm" />
-                            <xs:enumeration value="2_径60cm" />
+                            <xs:enumeration value="径45cm" />
+                            <xs:enumeration value="径60cm" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_じゃかご</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>止杭設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>止杭打込</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -289,6 +333,17 @@
                         <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_ふとんかご</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>ふとんかご費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ふとんかご</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_ふとんかご</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -312,8 +367,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｽﾛｰﾌﾟ式" />
-                            <xs:enumeration value="2_階段式" />
+                            <xs:enumeration value="ｽﾛｰﾌﾟ式" />
+                            <xs:enumeration value="階段式" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -326,9 +381,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_高さ40cm×幅120cm" />
-                            <xs:enumeration value="2_高さ50cm×幅120cm" />
-                            <xs:enumeration value="3_高さ60cm×幅120cm" />
+                            <xs:enumeration value="高さ40cm×幅120cm" />
+                            <xs:enumeration value="高さ50cm×幅120cm" />
+                            <xs:enumeration value="高さ60cm×幅120cm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -398,10 +453,24 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1:1.5以上 1:1.8未満" />
-                            <xs:enumeration value="2_1:1.8以上 1:2.0未満" />
-                            <xs:enumeration value="3_1:2.0以上 1:3.0未満" />
-                            <xs:enumeration value="4_1:3.0" />
+                            <xs:enumeration value="1:1.5以上 1:1.8未満" />
+                            <xs:enumeration value="1:1.8以上 1:2.0未満" />
+                            <xs:enumeration value="1:2.0以上 1:3.0未満" />
+                            <xs:enumeration value="1:3.0" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_ブロックマット</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸﾏｯﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="ﾌﾞﾛｯｸﾏｯﾄ工（最大法長5.5ｍ以下）" />
+                            <xs:enumeration value="ﾌﾞﾛｯｸﾏｯﾄ工（最大法長5.5ｍ超え18m以下）" />
                         </xs:restriction>
                     </value>
                 </property>

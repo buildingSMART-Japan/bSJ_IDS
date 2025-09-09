@@ -66,6 +66,17 @@
                         <simpleValue>ｱﾝｶｰ材規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_工場製作工_橋梁用防護柵製作工_アンカーボルト</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｱﾝｶｰﾎﾞﾙﾄ材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>工場製作材料費（組）</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="ボルト・ナット" ifcVersion="IFC2X3">
@@ -97,8 +108,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_普通ボルト" />
-                            <xs:enumeration value="2_H.T.B" />
+                            <xs:enumeration value="普通ボルト" />
+                            <xs:enumeration value="H.T.B" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -111,6 +122,21 @@
                     </baseName>
                     <value>
                         <simpleValue>1470400101_1561000101_1037201101_1369600101_1124200501</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_工場製作工_橋梁用防護柵製作工_ボルト・ナット</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="高力ボルト材料費（規格品）" />
+                            <xs:enumeration value="高力ボルト材料費（各種）" />
+                            <xs:enumeration value="工場製作材料費（ｔ）" />
+                        </xs:restriction>
                     </value>
                 </property>
             </requirements>
@@ -146,6 +172,28 @@
                         <simpleValue>1470400101_1561000101_1037201101_1369600101_1039901101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_工場製作工_橋梁用防護柵製作工_製作加工</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>副資材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>副資材費（ｔ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_工場製作工_橋梁用防護柵製作工_製作加工</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>製作加工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>製作直接労務費（橋梁用防護柵）</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_水門_工場製作工_橋梁用防護柵製作工_製作加工</simpleValue>
@@ -153,6 +201,39 @@
                     <baseName>
                         <simpleValue>鋼材規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_工場製作工_橋梁用防護柵製作工_製作加工</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鋼板材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鋼材費（鋼板１　各種）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_工場製作工_橋梁用防護柵製作工_製作加工</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鋼管材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｔ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_工場製作工_橋梁用防護柵製作工_製作加工</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾊﾟｲﾌﾟ材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｔ）</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

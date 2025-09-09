@@ -71,13 +71,78 @@
                         <simpleValue>数量情報_202304_01_河川改修_水門_鋼管理橋上部工_支承工_ゴム支承</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>橋梁ｺﾞﾑ支承据付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="ゴム支承据付工" />
+                            <xs:enumeration value="支承工（ポストテンション場所打ホロースラブ橋工）" />
+                            <xs:enumeration value="ゴム支承Ａタイプ（パッドタイプ）据付" />
+                            <xs:enumeration value="ゴム支承Ｂタイプ据付" />
+                            <xs:enumeration value="ゴム支承Ａタイプ（プレテン用簡易タイプ）据付" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_鋼管理橋上部工_支承工_ゴム支承</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>橋種</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_PC橋片持架設" />
-                            <xs:enumeration value="2_ﾎﾟｽﾄﾃﾝｼｮﾝ場所打ﾎﾛｰｽﾗﾌﾞ橋" />
-                            <xs:enumeration value="3_PC橋架設" />
+                            <xs:enumeration value="PC橋片持架設" />
+                            <xs:enumeration value="ﾎﾟｽﾄﾃﾝｼｮﾝ場所打ﾎﾛｰｽﾗﾌﾞ橋" />
+                            <xs:enumeration value="PC橋架設" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="簡易ゴム支承" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>簡易ゴム支承</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_鋼管理橋上部工_支承工_簡易ゴム支承</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_鋼管理橋上部工_支承工_簡易ゴム支承</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1561000101_1478400201_1478700301_1545200101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_鋼管理橋上部工_支承工_簡易ゴム支承</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>簡易ｺﾞﾑ支承据付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="ゴム支承Ａタイプ（プレテン用簡易タイプ）据付" />
+                            <xs:enumeration value="ジョイントプロテクター［材料費］" />
+                            <xs:enumeration value="変位制限装置［材料費］" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -121,6 +186,33 @@
                     <baseName>
                         <simpleValue>支承規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_鋼管理橋上部工_支承工_金属支承設置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>現場塗装費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>現場塗装工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_鋼管理橋上部工_支承工_金属支承設置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>金属支承据付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="金属支承据付工" />
+                            <xs:enumeration value="移動式クレーン運転費（賃料）［鋼橋架設工］" />
+                            <xs:enumeration value="架設工具損料" />
+                            <xs:enumeration value="発動発電機賃料［鋼橋架設工］" />
+                        </xs:restriction>
+                    </value>
                 </property>
             </requirements>
         </specification>

@@ -58,6 +58,17 @@
                         <simpleValue>厚さ</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_沈床工_吸出し防止材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>吸出し防止材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>吸出し防止材設置</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_水門_護床工_沈床工_吸出し防止材</simpleValue>
@@ -73,6 +84,116 @@
                     <baseName>
                         <simpleValue>種類</simpleValue>
                     </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="粗朶単床" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>粗朶単床</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_沈床工_粗朶単床</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_沈床工_粗朶単床</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1561000101_1098700101_1063800202_1554400101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_沈床工_粗朶単床</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>粗朶単床費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>粗朶単床工</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="粗朶沈床" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>粗朶沈床</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_沈床工_粗朶沈床</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_沈床工_粗朶沈床</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1561000101_1098700101_1063800202_1063900102</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_沈床工_粗朶沈床</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>沈床沈設･沈石投入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>沈床沈設・沈石投入</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_沈床工_粗朶沈床</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>連柴製作･沈床組立費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>連柴製作・沈床組立</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_沈床工_粗朶沈床</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>間詰石投入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>間詰石投入</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -105,8 +226,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_購入材" />
-                            <xs:enumeration value="2_流用又は採取材" />
+                            <xs:enumeration value="購入材" />
+                            <xs:enumeration value="流用又は採取材" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -130,9 +251,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_2t用(長期性能型)" />
-                            <xs:enumeration value="2_3t用(長期性能型)" />
+                            <xs:enumeration value="2t用(長期性能型)" />
+                            <xs:enumeration value="3t用(長期性能型)" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_沈床工_袋詰玉石</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>袋詰玉石工製作･据付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>袋詰玉石</simpleValue>
                     </value>
                 </property>
             </requirements>

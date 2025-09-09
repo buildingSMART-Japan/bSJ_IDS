@@ -66,6 +66,28 @@
                         <simpleValue>長さ</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_樋門・樋管_付属物設置工_グラウトホール工_グラウトホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｸﾞﾗｳﾄ管材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>グラウト管（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_樋門・樋管_付属物設置工_グラウトホール工_グラウトホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｸﾞﾗｳﾄﾎｰﾙ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>グラウトホール</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
     </specifications>

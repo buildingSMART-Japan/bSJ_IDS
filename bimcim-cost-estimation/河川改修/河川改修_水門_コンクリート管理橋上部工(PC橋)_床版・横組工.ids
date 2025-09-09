@@ -39,6 +39,17 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_床版・横組工_PCケーブル</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>PC費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＰＣ工</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_床版・横組工_PCケーブル</simpleValue>
@@ -48,10 +59,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞｼｽﾃﾑ 390kN(40t)(1S17.8)" />
-                            <xs:enumeration value="2_ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞｼｽﾃﾑ 450kN(50t)(1S19.3)" />
-                            <xs:enumeration value="3_ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞｼｽﾃﾑ 570kN(60t)(1S21.8)" />
-                            <xs:enumeration value="4_ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞｼｽﾃﾑ 950kN(100t)(1S28.6)" />
+                            <xs:enumeration value="ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞｼｽﾃﾑ 390kN(40t)(1S17.8)" />
+                            <xs:enumeration value="ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞｼｽﾃﾑ 450kN(50t)(1S19.3)" />
+                            <xs:enumeration value="ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞｼｽﾃﾑ 570kN(60t)(1S21.8)" />
+                            <xs:enumeration value="ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞｼｽﾃﾑ 950kN(100t)(1S28.6)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -75,8 +86,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾌﾟﾚﾃﾝｼｮﾝ桁" />
-                            <xs:enumeration value="2_ﾎﾟｽﾄﾃﾝｼｮﾝ桁" />
+                            <xs:enumeration value="ﾌﾟﾚﾃﾝｼｮﾝ桁" />
+                            <xs:enumeration value="ﾎﾟｽﾄﾃﾝｼｮﾝ桁" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -122,8 +133,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_散水養生無し" />
-                            <xs:enumeration value="2_散水養生有り" />
+                            <xs:enumeration value="散水養生無し" />
+                            <xs:enumeration value="散水養生有り" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -136,9 +147,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾌﾟﾚﾃﾝｼｮﾝT桁･ﾎﾟｽﾄﾃﾝｼｮﾝ桁" />
-                            <xs:enumeration value="2_ﾌﾟﾚﾃﾝｼｮﾝ床版桁" />
+                            <xs:enumeration value="ﾌﾟﾚﾃﾝｼｮﾝT桁･ﾎﾟｽﾄﾃﾝｼｮﾝ桁" />
+                            <xs:enumeration value="ﾌﾟﾚﾃﾝｼｮﾝ床版桁" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_床版・横組工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>横組ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>横組コンクリート工</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -150,8 +172,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｺﾝｸﾘｰﾄ夜間割増無" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ夜間割増有" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ夜間割増無" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ夜間割増有" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -164,15 +186,15 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_24-8-25(20)(普通)" />
-                            <xs:enumeration value="2_24-12-25(20)(普通)" />
-                            <xs:enumeration value="3_30-8-25(20)(普通)" />
-                            <xs:enumeration value="4_30-12-25(20)(普通)" />
-                            <xs:enumeration value="5_24-8-25(20)(早強)" />
-                            <xs:enumeration value="6_24-12-25(20)(早強)" />
-                            <xs:enumeration value="7_30-8-25(20)(早強)" />
-                            <xs:enumeration value="8_30-12-25(20)(早強)" />
-                            <xs:enumeration value="9_各種" />
+                            <xs:enumeration value="24-8-25(20)(普通)" />
+                            <xs:enumeration value="24-12-25(20)(普通)" />
+                            <xs:enumeration value="30-8-25(20)(普通)" />
+                            <xs:enumeration value="30-12-25(20)(普通)" />
+                            <xs:enumeration value="24-8-25(20)(早強)" />
+                            <xs:enumeration value="24-12-25(20)(早強)" />
+                            <xs:enumeration value="30-8-25(20)(早強)" />
+                            <xs:enumeration value="30-12-25(20)(早強)" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -217,6 +239,64 @@
                         <simpleValue>型枠の種類</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_床版・横組工_床版型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>床版型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>床版型枠工</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="登り桟橋" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>登り桟橋</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_床版・横組工_登り桟橋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_床版・横組工_登り桟橋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1561000101_1479000101_1479400101_1387600101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_床版・横組工_登り桟橋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>登り桟橋設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="登り桟橋工（箇所）" />
+                            <xs:enumeration value="登り桟橋工（ｍ）" />
+                        </xs:restriction>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="緊張" ifcVersion="IFC2X3">
@@ -248,10 +328,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞｼｽﾃﾑ 390kN(40t)(1S17.8)" />
-                            <xs:enumeration value="2_ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞｼｽﾃﾑ 450kN(50t)(1S19.3)" />
-                            <xs:enumeration value="3_ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞｼｽﾃﾑ 570kN(60t)(1S21.8)" />
-                            <xs:enumeration value="4_ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞｼｽﾃﾑ 950kN(100t)(1S28.6)" />
+                            <xs:enumeration value="ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞｼｽﾃﾑ 390kN(40t)(1S17.8)" />
+                            <xs:enumeration value="ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞｼｽﾃﾑ 450kN(50t)(1S19.3)" />
+                            <xs:enumeration value="ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞｼｽﾃﾑ 570kN(60t)(1S21.8)" />
+                            <xs:enumeration value="ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞｼｽﾃﾑ 950kN(100t)(1S28.6)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -275,8 +355,78 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_固定側(緊張用)" />
-                            <xs:enumeration value="2_固定側(固定用)" />
+                            <xs:enumeration value="固定側(緊張用)" />
+                            <xs:enumeration value="固定側(固定用)" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_床版・横組工_緊張</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>機械器具損料</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>機械器具損料［ＰＣ橋架設工］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_床版・横組工_緊張</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>緊張費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>緊張工</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="足場" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>足場</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_床版・横組工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_床版・横組工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1561000101_1479000101_1479400101_1005502301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_床版・横組工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="桁下足場［ポストテンション・プレテンション桁］" />
+                            <xs:enumeration value="側部足場（スラブ桁橋）" />
+                            <xs:enumeration value="橋台・橋脚回り足場ブラケット" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -313,6 +463,17 @@
                         <simpleValue>1470400101_1561000101_1479000101_1479400101_1040901101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_床版・横組工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>横組鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>横組鉄筋工</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_床版・横組工_鉄筋</simpleValue>
@@ -322,14 +483,61 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_SD295 D10" />
-                            <xs:enumeration value="2_SD295 D13" />
-                            <xs:enumeration value="3_SD295 D16" />
-                            <xs:enumeration value="4_SD345 D10" />
-                            <xs:enumeration value="5_SD345 D13" />
-                            <xs:enumeration value="6_SD345 D16～25" />
-                            <xs:enumeration value="7_SD345 D29～32" />
-                            <xs:enumeration value="8_各種" />
+                            <xs:enumeration value="SD295 D10" />
+                            <xs:enumeration value="SD295 D13" />
+                            <xs:enumeration value="SD295 D16" />
+                            <xs:enumeration value="SD345 D10" />
+                            <xs:enumeration value="SD345 D13" />
+                            <xs:enumeration value="SD345 D16～25" />
+                            <xs:enumeration value="SD345 D29～32" />
+                            <xs:enumeration value="各種" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="防護" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>防護</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_床版・横組工_防護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_床版・横組工_防護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1561000101_1479000101_1479400101_1330200501</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_床版・横組工_防護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防護費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="板張防護工" />
+                            <xs:enumeration value="ﾈｯﾄ防護" />
                         </xs:restriction>
                     </value>
                 </property>

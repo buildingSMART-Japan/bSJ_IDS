@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
     <info>
         <title>河川改修_堰_河川土工_盛土補強工</title>
         <copyright>buildingSMART Japan 土木委員会</copyright>
@@ -44,6 +44,17 @@
                         <simpleValue>数量情報_202304_01_河川改修_堰_河川土工_盛土補強工_まき出し・敷均し、締固め</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>まき出し・敷均し、締固め</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>まき出し・敷均し、締固め</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_河川土工_盛土補強工_まき出し・敷均し、締固め</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -57,6 +68,17 @@
                     <baseName>
                         <simpleValue>土質</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_河川土工_盛土補強工_まき出し・敷均し、締固め</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>購入土盛土材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土材料</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -99,6 +121,28 @@
                         <simpleValue>壁面材の種類</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_河川土工_盛土補強工_ジオテキスタイル壁面材組立・設置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>壁面材材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ジオテキスタイル壁面材（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_河川土工_盛土補強工_ジオテキスタイル壁面材組立・設置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>壁面材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ジオテキスタイル壁面材組立・設置</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="ジオテキスタイル敷設" ifcVersion="IFC2X3">
@@ -130,6 +174,39 @@
                     </baseName>
                     <value>
                         <simpleValue>1470400101_1476400101_1012700107_1013700105_B565005201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_河川土工_盛土補強工_ジオテキスタイル敷設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>補強材材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ジオテキスタイル（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_河川土工_盛土補強工_ジオテキスタイル敷設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>補強材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ジオテキスタイル敷設</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_河川土工_盛土補強工_ジオテキスタイル敷設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>購入土盛土材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土材料</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -173,6 +250,50 @@
                         <simpleValue>1470400101_1476400101_1012700107_1013700105_B565005401</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_河川土工_盛土補強工_壁面上端処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>天端型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_河川土工_盛土補強工_壁面上端処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>天端鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋工［市場単価］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_河川土工_盛土補強工_壁面上端処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>天端ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_河川土工_盛土補強工_壁面上端処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>天端ｺﾝｸﾘｰﾄ足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>足場工</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_堰_河川土工_盛土補強工_壁面上端処理</simpleValue>
@@ -212,6 +333,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1470400101_1476400101_1012700107_1013700105_B565005501</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_河川土工_盛土補強工_排水管敷設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>排水管敷設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>暗渠排水管</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -270,6 +402,21 @@
                     <baseName>
                         <simpleValue>土質</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_河川土工_盛土補強工_採取土盛土材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>採取土盛土材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="押土（ルーズ）" />
+                            <xs:enumeration value="積込（ルーズ）" />
+                            <xs:enumeration value="土砂等運搬" />
+                        </xs:restriction>
+                    </value>
                 </property>
             </requirements>
         </specification>

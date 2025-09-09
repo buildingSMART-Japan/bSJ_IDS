@@ -58,6 +58,61 @@
                         <simpleValue>材質</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_橋梁付属物工(鋼管理橋)_銘板工_橋名板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>銘板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>橋名板等取付</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="橋歴板" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>橋歴板</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_橋梁付属物工(鋼管理橋)_銘板工_橋歴板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_橋梁付属物工(鋼管理橋)_銘板工_橋歴板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1561000101_1591300101_1105300201_B370900302</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_橋梁付属物工(鋼管理橋)_銘板工_橋歴板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>橋歴板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>橋名板等取付</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
     </specifications>

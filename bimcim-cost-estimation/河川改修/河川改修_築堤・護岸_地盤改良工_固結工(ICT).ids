@@ -82,6 +82,17 @@
                         <simpleValue>長さ(杭長)</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_地盤改良工_固結工(ICT)_スラリー撹拌(ICT)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｽﾗﾘｰ撹拌費(ICT)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ｽﾗﾘｰ撹拌(ICT)</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="中層混合処理(ICT)" ifcVersion="IFC2X3">
@@ -104,6 +115,17 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_地盤改良工_固結工(ICT)_中層混合処理(ICT)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>中層混合処理費(ICT)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>中層混合処理(ICT)</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_地盤改良工_固結工(ICT)_中層混合処理(ICT)</simpleValue>

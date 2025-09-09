@@ -39,6 +39,20 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_コンクリート管理橋上部工(PC橋)_架設工(架設桁架設)_桁架設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>主桁架設費(架設桁架設)</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="主桁架設（架設桁）" />
+                            <xs:enumeration value="架設桁による架設" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_堰_コンクリート管理橋上部工(PC橋)_架設工(架設桁架設)_桁架設</simpleValue>
@@ -50,6 +64,42 @@
                         <simpleValue>1470400101_1476400101_1479000101_1541000201_1373100801</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_コンクリート管理橋上部工(PC橋)_架設工(架設桁架設)_桁架設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>架設機械器具組立解体費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>架設機械据付・解体</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_コンクリート管理橋上部工(PC橋)_架設工(架設桁架設)_桁架設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>架設機械器具経費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="架設機械器具経費（架設桁）" />
+                            <xs:enumeration value="架設機械器具経費" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_コンクリート管理橋上部工(PC橋)_架設工(架設桁架設)_桁架設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>架設機械移動費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>架設機械移動（支間２０以上４５ｍ以下）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_堰_コンクリート管理橋上部工(PC橋)_架設工(架設桁架設)_桁架設</simpleValue>
@@ -59,9 +109,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾎﾟｽﾄﾃﾝｼｮﾝ桁" />
-                            <xs:enumeration value="2_ﾌﾟﾚｷｬｽﾄｾｸﾞﾒﾝﾄ桁" />
-                            <xs:enumeration value="3_各種" />
+                            <xs:enumeration value="ﾎﾟｽﾄﾃﾝｼｮﾝ桁" />
+                            <xs:enumeration value="ﾌﾟﾚｷｬｽﾄｾｸﾞﾒﾝﾄ桁" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -72,6 +122,28 @@
                     <baseName>
                         <simpleValue>規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_コンクリート管理橋上部工(PC橋)_架設工(架設桁架設)_桁架設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>軌道設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>軌道設置・撤去</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_コンクリート管理橋上部工(PC橋)_架設工(架設桁架設)_桁架設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｱﾝｶｰ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>アンカー工（架設）</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

@@ -55,12 +55,26 @@
                         <simpleValue>数量情報_202304_01_河川改修_水門_舗装工_橋面防水工_橋面防水</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>橋面防水費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="シート系防水［市場単価］" />
+                            <xs:enumeration value="塗膜系防水［市場単価］" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_舗装工_橋面防水工_橋面防水</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>防水工種類</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｼｰﾄ防水" />
-                            <xs:enumeration value="2_塗膜防水" />
+                            <xs:enumeration value="ｼｰﾄ防水" />
+                            <xs:enumeration value="塗膜防水" />
                         </xs:restriction>
                     </value>
                 </property>

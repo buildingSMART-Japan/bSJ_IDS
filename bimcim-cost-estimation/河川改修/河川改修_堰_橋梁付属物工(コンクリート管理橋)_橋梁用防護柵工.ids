@@ -19,6 +19,61 @@
         <milestone>詳細設計</milestone>
     </info>
     <specifications>
+        <specification name="橋梁用防護柵" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>橋梁用防護柵</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_橋梁付属物工(コンクリート管理橋)_橋梁用防護柵工_橋梁用防護柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_橋梁付属物工(コンクリート管理橋)_橋梁用防護柵工_橋梁用防護柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1588600101_1379900101_B380000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_橋梁付属物工(コンクリート管理橋)_橋梁用防護柵工_橋梁用防護柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防護柵材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>防護柵材料費</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_橋梁付属物工(コンクリート管理橋)_橋梁用防護柵工_橋梁用防護柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防護柵設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>防護柵設置工（ガードレール設置工）</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
         <specification name="落下物等防止柵" ifcVersion="IFC2X3">
             <applicability minOccurs="1" maxOccurs="1">
                 <attribute>
@@ -58,6 +113,28 @@
                         <simpleValue>柵高</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_橋梁付属物工(コンクリート管理橋)_橋梁用防護柵工_落下物等防止柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防護柵材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>落下物等防止柵（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_橋梁付属物工(コンクリート管理橋)_橋梁用防護柵工_落下物等防止柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防護柵設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>落下物等防止柵</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_堰_橋梁付属物工(コンクリート管理橋)_橋梁用防護柵工_落下物等防止柵</simpleValue>
@@ -67,8 +144,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｱﾝｶｰﾎﾞﾙﾄ設置有" />
-                            <xs:enumeration value="2_ｱﾝｶｰﾎﾞﾙﾄ設置無" />
+                            <xs:enumeration value="ｱﾝｶｰﾎﾞﾙﾄ設置有" />
+                            <xs:enumeration value="ｱﾝｶｰﾎﾞﾙﾄ設置無" />
                         </xs:restriction>
                     </value>
                 </property>

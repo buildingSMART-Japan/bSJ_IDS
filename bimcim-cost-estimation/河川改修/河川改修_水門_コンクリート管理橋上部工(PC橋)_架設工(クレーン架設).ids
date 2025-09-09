@@ -19,6 +19,66 @@
         <milestone>詳細設計</milestone>
     </info>
     <specifications>
+        <specification name="桁小運搬" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>桁小運搬</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_架設工(クレーン架設)_桁小運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_架設工(クレーン架設)_桁小運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1561000101_1479000101_1536600201_1570100101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_架設工(クレーン架設)_桁小運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>特殊ﾄﾚｰﾗｰによる桁小運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>貨物自動車による運搬（１車１回）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_架設工(クレーン架設)_桁小運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>重量台車による桁小運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="重量台車による桁小運搬" />
+                            <xs:enumeration value="アンカー工（架設）" />
+                            <xs:enumeration value="軌道設置・撤去" />
+                            <xs:enumeration value="機械器具損料（重量台車桁小運搬）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
         <specification name="桁架設" ifcVersion="IFC2X3">
             <applicability minOccurs="1" maxOccurs="1">
                 <attribute>
@@ -59,9 +119,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾌﾟﾚﾃﾝｼｮﾝPC単純T桁橋" />
-                            <xs:enumeration value="2_ﾌﾟﾚﾃﾝｼｮﾝPC単純床版橋" />
-                            <xs:enumeration value="3_ﾎﾟｽﾄﾃﾝｼｮﾝ桁" />
+                            <xs:enumeration value="ﾌﾟﾚﾃﾝｼｮﾝPC単純T桁橋" />
+                            <xs:enumeration value="ﾌﾟﾚﾃﾝｼｮﾝPC単純床版橋" />
+                            <xs:enumeration value="ﾎﾟｽﾄﾃﾝｼｮﾝ桁" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -72,6 +132,39 @@
                     <baseName>
                         <simpleValue>規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_架設工(クレーン架設)_桁架設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾄﾗｯｸｸﾚｰﾝ架設費(橋台背面)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>トラッククレーン架設（橋台背面）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_架設工(クレーン架設)_桁架設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾄﾗｯｸｸﾚｰﾝ架設費(橋梁下)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>トラッククレーン架設（橋梁下）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_架設工(クレーン架設)_桁架設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾄﾗｯｸｸﾚｰﾝ架設費(ﾌﾟﾚﾋﾞｰﾑ)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>トラッククレーンによる架設</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

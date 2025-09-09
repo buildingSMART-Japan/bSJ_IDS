@@ -59,10 +59,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾚｷ質土､砂及び砂質土､粘性土" />
-                            <xs:enumeration value="2_軟岩I､軟岩II､中硬岩､硬岩" />
-                            <xs:enumeration value="3_軟岩I" />
+                            <xs:enumeration value="ﾚｷ質土､砂及び砂質土､粘性土" />
+                            <xs:enumeration value="軟岩I､軟岩II､中硬岩､硬岩" />
+                            <xs:enumeration value="軟岩I" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_河川土工_法面整形工_法面整形(切土部)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>法面整形費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>法面整形</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -74,8 +85,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_現場制約有" />
-                            <xs:enumeration value="2_現場制約無" />
+                            <xs:enumeration value="現場制約有" />
+                            <xs:enumeration value="現場制約無" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -112,6 +123,28 @@
                         <simpleValue>1470400101_1481100101_1012700106_1013900205_B002400104</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_河川土工_法面整形工_法面整形(盛土部)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土砂購入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土材料</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_河川土工_法面整形工_法面整形(盛土部)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>法面整形費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>法面整形</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_河川土工_法面整形工_法面整形(盛土部)</simpleValue>
@@ -121,8 +154,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_法面締固め有" />
-                            <xs:enumeration value="2_法面締固め無" />
+                            <xs:enumeration value="法面締固め有" />
+                            <xs:enumeration value="法面締固め無" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -135,8 +168,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_現場制約有" />
-                            <xs:enumeration value="2_現場制約無" />
+                            <xs:enumeration value="現場制約有" />
+                            <xs:enumeration value="現場制約無" />
                         </xs:restriction>
                     </value>
                 </property>

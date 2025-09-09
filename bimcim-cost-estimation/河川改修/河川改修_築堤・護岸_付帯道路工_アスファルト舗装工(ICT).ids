@@ -58,6 +58,17 @@
                         <simpleValue>1470400101_1045600101_1065500104_1065810104_B066005104</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_付帯道路工_アスファルト舗装工(ICT)_上層路盤(歩道部)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>路盤材敷均し･締固め費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>上層路盤（歩道部）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_付帯道路工_アスファルト舗装工(ICT)_上層路盤(歩道部)</simpleValue>
@@ -67,13 +78,13 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_再生粒度調整砕石 RM-25" />
-                            <xs:enumeration value="2_再生粒度調整砕石 RM-30" />
-                            <xs:enumeration value="3_再生粒度調整砕石 RM-40" />
-                            <xs:enumeration value="4_粒度調整砕石 M-25" />
-                            <xs:enumeration value="5_粒度調整砕石 M-30" />
-                            <xs:enumeration value="6_粒度調整砕石 M-40" />
-                            <xs:enumeration value="7_路盤材(各種)" />
+                            <xs:enumeration value="再生粒度調整砕石 RM-25" />
+                            <xs:enumeration value="再生粒度調整砕石 RM-30" />
+                            <xs:enumeration value="再生粒度調整砕石 RM-40" />
+                            <xs:enumeration value="粒度調整砕石 M-25" />
+                            <xs:enumeration value="粒度調整砕石 M-30" />
+                            <xs:enumeration value="粒度調整砕石 M-40" />
+                            <xs:enumeration value="路盤材(各種)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -126,6 +137,17 @@
                         <simpleValue>1470400101_1045600101_1065500104_1065810104_B066010104</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_付帯道路工_アスファルト舗装工(ICT)_上層路盤(車道・路肩部)(ICT)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>路盤材敷均し･締固め費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>上層路盤（車道・路肩部）(ICT)</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_付帯道路工_アスファルト舗装工(ICT)_上層路盤(車道・路肩部)(ICT)</simpleValue>
@@ -135,13 +157,13 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_再生粒度調整砕石 RM-25" />
-                            <xs:enumeration value="2_再生粒度調整砕石 RM-30" />
-                            <xs:enumeration value="3_再生粒度調整砕石 RM-40" />
-                            <xs:enumeration value="4_粒度調整砕石 M-25" />
-                            <xs:enumeration value="5_粒度調整砕石 M-30" />
-                            <xs:enumeration value="6_粒度調整砕石 M-40" />
-                            <xs:enumeration value="7_路盤材(各種)" />
+                            <xs:enumeration value="再生粒度調整砕石 RM-25" />
+                            <xs:enumeration value="再生粒度調整砕石 RM-30" />
+                            <xs:enumeration value="再生粒度調整砕石 RM-40" />
+                            <xs:enumeration value="粒度調整砕石 M-25" />
+                            <xs:enumeration value="粒度調整砕石 M-30" />
+                            <xs:enumeration value="粒度調整砕石 M-40" />
+                            <xs:enumeration value="路盤材(各種)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -194,6 +216,17 @@
                         <simpleValue>1470400101_1045600101_1065500104_1065810104_B065905104</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_付帯道路工_アスファルト舗装工(ICT)_下層路盤(歩道部)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>路盤材敷均し･締固め費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>下層路盤（歩道部）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_付帯道路工_アスファルト舗装工(ICT)_下層路盤(歩道部)</simpleValue>
@@ -203,13 +236,13 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｸﾗｯｼｬﾗﾝ C-20" />
-                            <xs:enumeration value="2_ｸﾗｯｼｬﾗﾝ C-30" />
-                            <xs:enumeration value="3_ｸﾗｯｼｬﾗﾝ C-40" />
-                            <xs:enumeration value="4_再生ｸﾗｯｼｬﾗﾝ RC-20" />
-                            <xs:enumeration value="5_再生ｸﾗｯｼｬﾗﾝ RC-30" />
-                            <xs:enumeration value="6_再生ｸﾗｯｼｬﾗﾝ RC-40" />
-                            <xs:enumeration value="7_路盤材(各種)" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ C-20" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ C-30" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ C-40" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ RC-20" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ RC-30" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ RC-40" />
+                            <xs:enumeration value="路盤材(各種)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -262,6 +295,17 @@
                         <simpleValue>1470400101_1045600101_1065500104_1065810104_B065910104</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_付帯道路工_アスファルト舗装工(ICT)_下層路盤(車道・路肩部)(ICT)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>路盤材敷均し･締固め費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>下層路盤（車道・路肩部）(ICT)</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_付帯道路工_アスファルト舗装工(ICT)_下層路盤(車道・路肩部)(ICT)</simpleValue>
@@ -271,13 +315,13 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｸﾗｯｼｬﾗﾝ C-20" />
-                            <xs:enumeration value="2_ｸﾗｯｼｬﾗﾝ C-30" />
-                            <xs:enumeration value="3_ｸﾗｯｼｬﾗﾝ C-40" />
-                            <xs:enumeration value="4_再生ｸﾗｯｼｬﾗﾝ RC-20" />
-                            <xs:enumeration value="5_再生ｸﾗｯｼｬﾗﾝ RC-30" />
-                            <xs:enumeration value="6_再生ｸﾗｯｼｬﾗﾝ RC-40" />
-                            <xs:enumeration value="7_路盤材(各種)" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ C-20" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ C-30" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ C-40" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ RC-20" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ RC-30" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ RC-40" />
+                            <xs:enumeration value="路盤材(各種)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -331,10 +375,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1.4m未満（1層当り平均仕上り厚50mm以下）" />
-                            <xs:enumeration value="2_1.4m未満（1層当り平均仕上り厚50mm超70mm以下）" />
-                            <xs:enumeration value="3_1.4m以上" />
+                            <xs:enumeration value="1.4m未満（1層当り平均仕上り厚50mm以下）" />
+                            <xs:enumeration value="1.4m未満（1層当り平均仕上り厚50mm超70mm以下）" />
+                            <xs:enumeration value="1.4m以上" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_付帯道路工_アスファルト舗装工(ICT)_中間層(歩道部)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>施工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>中間層（歩道部）</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -346,29 +401,29 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_密粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="10_再生密粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="11_再生密粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="12_再生粗粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="13_細粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="14_細粒度ｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="15_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="16_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="17_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(5F)" />
-                            <xs:enumeration value="18_再生細粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="19_各種(1.90以上2.00t/m3未満)" />
-                            <xs:enumeration value="2_密粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="20_各種(2.00以上2.10t/m3未満)" />
-                            <xs:enumeration value="21_各種(2.10以上2.20t/m3未満)" />
-                            <xs:enumeration value="22_各種(2.20以上2.30t/m3未満)" />
-                            <xs:enumeration value="23_各種(2.30以上2.40t/m3未満)" />
-                            <xs:enumeration value="3_密粒度ｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="4_密粒度ｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="5_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20)" />
-                            <xs:enumeration value="6_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13)" />
-                            <xs:enumeration value="7_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="8_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="9_粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="再生密粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="再生密粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="再生粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="細粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="細粒度ｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(5F)" />
+                            <xs:enumeration value="再生細粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="各種(1.90以上2.00t/m3未満)" />
+                            <xs:enumeration value="各種(2.00以上2.10t/m3未満)" />
+                            <xs:enumeration value="各種(2.10以上2.20t/m3未満)" />
+                            <xs:enumeration value="各種(2.20以上2.30t/m3未満)" />
+                            <xs:enumeration value="各種(2.30以上2.40t/m3未満)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -430,11 +485,22 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1.4m未満（1層当り平均仕上り厚50mm以下）" />
-                            <xs:enumeration value="2_1.4m未満（1層当り平均仕上り厚50mm超70mm以下）" />
-                            <xs:enumeration value="3_1.4m以上3.0m以下" />
-                            <xs:enumeration value="4_3.0m超" />
+                            <xs:enumeration value="1.4m未満（1層当り平均仕上り厚50mm以下）" />
+                            <xs:enumeration value="1.4m未満（1層当り平均仕上り厚50mm超70mm以下）" />
+                            <xs:enumeration value="1.4m以上3.0m以下" />
+                            <xs:enumeration value="3.0m超" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_付帯道路工_アスファルト舗装工(ICT)_中間層(車道・路肩部)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>施工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>中間層（車道・路肩部）</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -446,42 +512,42 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_密粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="10_再生密粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="11_再生密粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="12_再生粗粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="13_改質As 粗粒AC-100(20)" />
-                            <xs:enumeration value="14_改質As 密粒AC-100(20)" />
-                            <xs:enumeration value="15_改質As 密粒AC-100(13)" />
-                            <xs:enumeration value="16_改質As 密粒I型(20)" />
-                            <xs:enumeration value="17_改質As 密粒II型(20)DS3000" />
-                            <xs:enumeration value="18_改質As 粗粒I型(20)" />
-                            <xs:enumeration value="19_改質As 粗粒I型(20)DS3000" />
-                            <xs:enumeration value="2_密粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="20_改質As 粗粒II型(20)DS5000" />
-                            <xs:enumeration value="21_改質As 再生粗粒I型(20)" />
-                            <xs:enumeration value="22_改質As 再生粗粒I型(20)DS3000" />
-                            <xs:enumeration value="23_改質As 再生粗粒II型(20)DS5000" />
-                            <xs:enumeration value="24_細粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="25_細粒度ｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="26_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="27_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="28_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(5F)" />
-                            <xs:enumeration value="29_再生細粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="3_密粒度ｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="30_開粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="31_各種(1.90以上2.00t/m3未満)" />
-                            <xs:enumeration value="32_各種(2.00以上2.10t/m3未満)" />
-                            <xs:enumeration value="33_各種(2.10以上2.20t/m3未満)" />
-                            <xs:enumeration value="34_各種(2.20以上2.30t/m3未満)" />
-                            <xs:enumeration value="35_各種(2.30以上2.40t/m3未満)" />
-                            <xs:enumeration value="36_各種(2.40以上2.50t/m3未満)" />
-                            <xs:enumeration value="4_密粒度ｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="5_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20)" />
-                            <xs:enumeration value="6_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13)" />
-                            <xs:enumeration value="7_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="8_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="9_粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="再生密粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="再生密粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="再生粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="改質As 粗粒AC-100(20)" />
+                            <xs:enumeration value="改質As 密粒AC-100(20)" />
+                            <xs:enumeration value="改質As 密粒AC-100(13)" />
+                            <xs:enumeration value="改質As 密粒I型(20)" />
+                            <xs:enumeration value="改質As 密粒II型(20)DS3000" />
+                            <xs:enumeration value="改質As 粗粒I型(20)" />
+                            <xs:enumeration value="改質As 粗粒I型(20)DS3000" />
+                            <xs:enumeration value="改質As 粗粒II型(20)DS5000" />
+                            <xs:enumeration value="改質As 再生粗粒I型(20)" />
+                            <xs:enumeration value="改質As 再生粗粒I型(20)DS3000" />
+                            <xs:enumeration value="改質As 再生粗粒II型(20)DS5000" />
+                            <xs:enumeration value="細粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="細粒度ｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(5F)" />
+                            <xs:enumeration value="再生細粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="開粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="各種(1.90以上2.00t/m3未満)" />
+                            <xs:enumeration value="各種(2.00以上2.10t/m3未満)" />
+                            <xs:enumeration value="各種(2.10以上2.20t/m3未満)" />
+                            <xs:enumeration value="各種(2.20以上2.30t/m3未満)" />
+                            <xs:enumeration value="各種(2.30以上2.40t/m3未満)" />
+                            <xs:enumeration value="各種(2.40以上2.50t/m3未満)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -543,10 +609,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1.4m未満（1層当り平均仕上り厚50mm以下）" />
-                            <xs:enumeration value="2_1.4m未満（1層当り平均仕上り厚50mm超70mm以下）" />
-                            <xs:enumeration value="3_1.4m以上" />
+                            <xs:enumeration value="1.4m未満（1層当り平均仕上り厚50mm以下）" />
+                            <xs:enumeration value="1.4m未満（1層当り平均仕上り厚50mm超70mm以下）" />
+                            <xs:enumeration value="1.4m以上" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_付帯道路工_アスファルト舗装工(ICT)_基層(歩道部)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>施工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>基層（歩道部）</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -558,29 +635,29 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_密粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="10_再生密粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="11_再生密粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="12_再生粗粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="13_細粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="14_細粒度ｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="15_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="16_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="17_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(5F)" />
-                            <xs:enumeration value="18_再生細粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="19_各種(1.90以上2.00t/m3未満)" />
-                            <xs:enumeration value="2_密粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="20_各種(2.00以上2.10t/m3未満)" />
-                            <xs:enumeration value="21_各種(2.10以上2.20t/m3未満)" />
-                            <xs:enumeration value="22_各種(2.20以上2.30t/m3未満)" />
-                            <xs:enumeration value="23_各種(2.30以上2.40t/m3未満)" />
-                            <xs:enumeration value="3_密粒度ｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="4_密粒度ｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="5_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20)" />
-                            <xs:enumeration value="6_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13)" />
-                            <xs:enumeration value="7_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="8_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="9_粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="再生密粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="再生密粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="再生粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="細粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="細粒度ｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(5F)" />
+                            <xs:enumeration value="再生細粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="各種(1.90以上2.00t/m3未満)" />
+                            <xs:enumeration value="各種(2.00以上2.10t/m3未満)" />
+                            <xs:enumeration value="各種(2.10以上2.20t/m3未満)" />
+                            <xs:enumeration value="各種(2.20以上2.30t/m3未満)" />
+                            <xs:enumeration value="各種(2.30以上2.40t/m3未満)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -642,11 +719,22 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1.4m未満（1層当り平均仕上り厚50mm以下）" />
-                            <xs:enumeration value="2_1.4m未満（1層当り平均仕上り厚50mm超70mm以下）" />
-                            <xs:enumeration value="3_1.4m以上3.0m以下" />
-                            <xs:enumeration value="4_3.0m超" />
+                            <xs:enumeration value="1.4m未満（1層当り平均仕上り厚50mm以下）" />
+                            <xs:enumeration value="1.4m未満（1層当り平均仕上り厚50mm超70mm以下）" />
+                            <xs:enumeration value="1.4m以上3.0m以下" />
+                            <xs:enumeration value="3.0m超" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_付帯道路工_アスファルト舗装工(ICT)_基層(車道・路肩部)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>施工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>基層（車道・路肩部）</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -658,42 +746,42 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_密粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="10_再生密粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="11_再生密粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="12_再生粗粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="13_改質As 粗粒AC-100(20)" />
-                            <xs:enumeration value="14_改質As 密粒AC-100(20)" />
-                            <xs:enumeration value="15_改質As 密粒AC-100(13)" />
-                            <xs:enumeration value="16_改質As 密粒I型(20)" />
-                            <xs:enumeration value="17_改質As 密粒II型(20)DS3000" />
-                            <xs:enumeration value="18_改質As 粗粒I型(20)" />
-                            <xs:enumeration value="19_改質As 粗粒I型(20)DS3000" />
-                            <xs:enumeration value="2_密粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="20_改質As 粗粒II型(20)DS5000" />
-                            <xs:enumeration value="21_改質As 再生粗粒I型(20)" />
-                            <xs:enumeration value="22_改質As 再生粗粒I型(20)DS3000" />
-                            <xs:enumeration value="23_改質As 再生粗粒II型(20)DS5000" />
-                            <xs:enumeration value="24_細粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="25_細粒度ｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="26_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="27_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="28_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(5F)" />
-                            <xs:enumeration value="29_再生細粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="3_密粒度ｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="30_開粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="31_各種(1.90以上2.00t/m3未満)" />
-                            <xs:enumeration value="32_各種(2.00以上2.10t/m3未満)" />
-                            <xs:enumeration value="33_各種(2.10以上2.20t/m3未満)" />
-                            <xs:enumeration value="34_各種(2.20以上2.30t/m3未満)" />
-                            <xs:enumeration value="35_各種(2.30以上2.40t/m3未満)" />
-                            <xs:enumeration value="36_各種(2.40以上2.50t/m3未満)" />
-                            <xs:enumeration value="4_密粒度ｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="5_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20)" />
-                            <xs:enumeration value="6_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13)" />
-                            <xs:enumeration value="7_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="8_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="9_粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="再生密粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="再生密粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="再生粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="改質As 粗粒AC-100(20)" />
+                            <xs:enumeration value="改質As 密粒AC-100(20)" />
+                            <xs:enumeration value="改質As 密粒AC-100(13)" />
+                            <xs:enumeration value="改質As 密粒I型(20)" />
+                            <xs:enumeration value="改質As 密粒II型(20)DS3000" />
+                            <xs:enumeration value="改質As 粗粒I型(20)" />
+                            <xs:enumeration value="改質As 粗粒I型(20)DS3000" />
+                            <xs:enumeration value="改質As 粗粒II型(20)DS5000" />
+                            <xs:enumeration value="改質As 再生粗粒I型(20)" />
+                            <xs:enumeration value="改質As 再生粗粒I型(20)DS3000" />
+                            <xs:enumeration value="改質As 再生粗粒II型(20)DS5000" />
+                            <xs:enumeration value="細粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="細粒度ｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(5F)" />
+                            <xs:enumeration value="再生細粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="開粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="各種(1.90以上2.00t/m3未満)" />
+                            <xs:enumeration value="各種(2.00以上2.10t/m3未満)" />
+                            <xs:enumeration value="各種(2.10以上2.20t/m3未満)" />
+                            <xs:enumeration value="各種(2.20以上2.30t/m3未満)" />
+                            <xs:enumeration value="各種(2.30以上2.40t/m3未満)" />
+                            <xs:enumeration value="各種(2.40以上2.50t/m3未満)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -755,10 +843,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1.4m未満（1層当り平均仕上り厚50mm以下）" />
-                            <xs:enumeration value="2_1.4m未満（1層当り平均仕上り厚50mm超70mm以下）" />
-                            <xs:enumeration value="3_1.4m以上" />
+                            <xs:enumeration value="1.4m未満（1層当り平均仕上り厚50mm以下）" />
+                            <xs:enumeration value="1.4m未満（1層当り平均仕上り厚50mm超70mm以下）" />
+                            <xs:enumeration value="1.4m以上" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_付帯道路工_アスファルト舗装工(ICT)_表層(歩道部)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>施工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>表層（歩道部）</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -770,29 +869,29 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_密粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="10_再生密粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="11_再生密粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="12_再生粗粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="13_細粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="14_細粒度ｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="15_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="16_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="17_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(5F)" />
-                            <xs:enumeration value="18_再生細粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="19_各種(1.90以上2.00t/m3未満)" />
-                            <xs:enumeration value="2_密粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="20_各種(2.00以上2.10t/m3未満)" />
-                            <xs:enumeration value="21_各種(2.10以上2.20t/m3未満)" />
-                            <xs:enumeration value="22_各種(2.20以上2.30t/m3未満)" />
-                            <xs:enumeration value="23_各種(2.30以上2.40t/m3未満)" />
-                            <xs:enumeration value="3_密粒度ｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="4_密粒度ｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="5_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20)" />
-                            <xs:enumeration value="6_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13)" />
-                            <xs:enumeration value="7_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="8_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="9_粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="再生密粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="再生密粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="再生粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="細粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="細粒度ｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(5F)" />
+                            <xs:enumeration value="再生細粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="各種(1.90以上2.00t/m3未満)" />
+                            <xs:enumeration value="各種(2.00以上2.10t/m3未満)" />
+                            <xs:enumeration value="各種(2.10以上2.20t/m3未満)" />
+                            <xs:enumeration value="各種(2.20以上2.30t/m3未満)" />
+                            <xs:enumeration value="各種(2.30以上2.40t/m3未満)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -854,11 +953,22 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1.4m未満（1層当り平均仕上り厚50mm以下）" />
-                            <xs:enumeration value="2_1.4m未満（1層当り平均仕上り厚50mm超70mm以下）" />
-                            <xs:enumeration value="3_1.4m以上3.0m以下" />
-                            <xs:enumeration value="4_3.0m超" />
+                            <xs:enumeration value="1.4m未満（1層当り平均仕上り厚50mm以下）" />
+                            <xs:enumeration value="1.4m未満（1層当り平均仕上り厚50mm超70mm以下）" />
+                            <xs:enumeration value="1.4m以上3.0m以下" />
+                            <xs:enumeration value="3.0m超" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_付帯道路工_アスファルト舗装工(ICT)_表層(車道・路肩部)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>施工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>表層（車道・路肩部）</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -870,42 +980,42 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_密粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="10_再生密粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="11_再生密粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="12_再生粗粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="13_改質As 粗粒AC-100(20)" />
-                            <xs:enumeration value="14_改質As 密粒AC-100(20)" />
-                            <xs:enumeration value="15_改質As 密粒AC-100(13)" />
-                            <xs:enumeration value="16_改質As 密粒I型(20)" />
-                            <xs:enumeration value="17_改質As 密粒II型(20)DS3000" />
-                            <xs:enumeration value="18_改質As 粗粒I型(20)" />
-                            <xs:enumeration value="19_改質As 粗粒I型(20)DS3000" />
-                            <xs:enumeration value="2_密粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="20_改質As 粗粒II型(20)DS5000" />
-                            <xs:enumeration value="21_改質As 再生粗粒I型(20)" />
-                            <xs:enumeration value="22_改質As 再生粗粒I型(20)DS3000" />
-                            <xs:enumeration value="23_改質As 再生粗粒II型(20)DS5000" />
-                            <xs:enumeration value="24_細粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="25_細粒度ｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="26_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="27_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="28_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(5F)" />
-                            <xs:enumeration value="29_再生細粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="3_密粒度ｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="30_開粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="31_各種(1.90以上2.00t/m3未満)" />
-                            <xs:enumeration value="32_各種(2.00以上2.10t/m3未満)" />
-                            <xs:enumeration value="33_各種(2.10以上2.20t/m3未満)" />
-                            <xs:enumeration value="34_各種(2.20以上2.30t/m3未満)" />
-                            <xs:enumeration value="35_各種(2.30以上2.40t/m3未満)" />
-                            <xs:enumeration value="36_各種(2.40以上2.50t/m3未満)" />
-                            <xs:enumeration value="4_密粒度ｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="5_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20)" />
-                            <xs:enumeration value="6_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13)" />
-                            <xs:enumeration value="7_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="8_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="9_粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="再生密粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="再生密粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="再生粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="改質As 粗粒AC-100(20)" />
+                            <xs:enumeration value="改質As 密粒AC-100(20)" />
+                            <xs:enumeration value="改質As 密粒AC-100(13)" />
+                            <xs:enumeration value="改質As 密粒I型(20)" />
+                            <xs:enumeration value="改質As 密粒II型(20)DS3000" />
+                            <xs:enumeration value="改質As 粗粒I型(20)" />
+                            <xs:enumeration value="改質As 粗粒I型(20)DS3000" />
+                            <xs:enumeration value="改質As 粗粒II型(20)DS5000" />
+                            <xs:enumeration value="改質As 再生粗粒I型(20)" />
+                            <xs:enumeration value="改質As 再生粗粒I型(20)DS3000" />
+                            <xs:enumeration value="改質As 再生粗粒II型(20)DS5000" />
+                            <xs:enumeration value="細粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="細粒度ｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(5F)" />
+                            <xs:enumeration value="再生細粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="開粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="各種(1.90以上2.00t/m3未満)" />
+                            <xs:enumeration value="各種(2.00以上2.10t/m3未満)" />
+                            <xs:enumeration value="各種(2.10以上2.20t/m3未満)" />
+                            <xs:enumeration value="各種(2.20以上2.30t/m3未満)" />
+                            <xs:enumeration value="各種(2.30以上2.40t/m3未満)" />
+                            <xs:enumeration value="各種(2.40以上2.50t/m3未満)" />
                         </xs:restriction>
                     </value>
                 </property>

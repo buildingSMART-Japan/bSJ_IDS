@@ -59,9 +59,31 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_150kg未満" />
-                            <xs:enumeration value="2_150kg以上" />
+                            <xs:enumeration value="150kg未満" />
+                            <xs:enumeration value="150kg以上" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_コンクリート(間知)ブロック積</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ積費(間知150kg以上)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>間知ブロック積</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_コンクリート(間知)ブロック積</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ積費(間知150kg未満)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリートブロック積工</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -71,6 +93,61 @@
                     <baseName>
                         <simpleValue>ﾌﾞﾛｯｸ規格</simpleValue>
                     </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="シール材" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>シール材</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1482400101_1061500103_B616000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼｰﾙ材設置(材料費)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>シール材（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼｰﾙ材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>シール材</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -112,6 +189,17 @@
                     <baseName>
                         <simpleValue>厚さ</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_吸出し防止材(全面)設置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>吸出し防止材</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>吸出し防止材（全面）設置</simpleValue>
+                    </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
@@ -162,6 +250,39 @@
                         <simpleValue>1470400101_1481100101_1482400101_1061500103_B053500101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_大型ブロック積</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>大型ﾌﾞﾛｯｸ積費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>大型ﾌﾞﾛｯｸ積</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_大型ブロック積</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地材（材料費）</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>目地材（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_大型ブロック積</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋（材料費）</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋（材料費）</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_大型ブロック積</simpleValue>
@@ -208,12 +329,49 @@
                         <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_現場打天端コンクリート</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="型枠" />
+                            <xs:enumeration value="型枠工［砂防］" />
+                            <xs:enumeration value="残存型枠及び残存化粧型枠" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_現場打天端コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>基礎砕石</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_現場打天端コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>天端手摺設置・撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>天端手摺設置・撤去</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_現場打天端コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>打設方法</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｸﾚｰﾝ打設(平均高30m以下)" />
-                            <xs:enumeration value="2_ｸﾚｰﾝ打設" />
+                            <xs:enumeration value="ｸﾚｰﾝ打設(平均高30m以下)" />
+                            <xs:enumeration value="ｸﾚｰﾝ打設" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -226,9 +384,31 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_使用する" />
-                            <xs:enumeration value="2_使用しない" />
+                            <xs:enumeration value="使用する" />
+                            <xs:enumeration value="使用しない" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_現場打天端コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>目地板</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_現場打天端コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>足場設置・撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>足場（キャットウォーク）設置・撤去</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -238,6 +418,57 @@
                     <baseName>
                         <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_現場打天端コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費(平均高30m以下)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>一般部コンクリート打設</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_現場打天端コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費(ｸﾚｰﾝ打設)</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="コンクリート投入（ケーブルクレーン両端固定式）" />
+                            <xs:enumeration value="コンクリート締固め・打継面清掃" />
+                            <xs:enumeration value="コンクリート養生［散水］" />
+                            <xs:enumeration value="コンクリート養生［練炭］" />
+                            <xs:enumeration value="自然水施設" />
+                            <xs:enumeration value="不整地運搬車による横取り" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_現場打天端コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費(ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ積)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>現場打天端コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_現場打天端コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ運搬費(現地ﾌﾟﾗﾝﾄ)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート運搬　アジテータトラック［砂防］</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -281,19 +512,19 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_瀝青質目地板ｔ=10" />
-                            <xs:enumeration value="10_樹脂発泡体(30倍発泡)t=20" />
-                            <xs:enumeration value="11_ｺﾞﾑ発泡体t=20" />
-                            <xs:enumeration value="12_発泡ｽﾁﾛｰﾙt=20" />
-                            <xs:enumeration value="13_各種" />
-                            <xs:enumeration value="2_瀝青繊維質目地板t=10" />
-                            <xs:enumeration value="3_樹脂発泡体(15倍発泡)t=10" />
-                            <xs:enumeration value="4_樹脂発泡体(30倍発泡)t=10" />
-                            <xs:enumeration value="5_ｺﾞﾑ発泡体t=10" />
-                            <xs:enumeration value="6_発泡ｽﾁﾛｰﾙt=10" />
-                            <xs:enumeration value="7_瀝青質目地板ｔ=20" />
-                            <xs:enumeration value="8_瀝青繊維質目地板t=20" />
-                            <xs:enumeration value="9_樹脂発泡体(15倍発泡)t=20" />
+                            <xs:enumeration value="瀝青質目地板ｔ=10" />
+                            <xs:enumeration value="瀝青繊維質目地板t=10" />
+                            <xs:enumeration value="樹脂発泡体(15倍発泡)t=10" />
+                            <xs:enumeration value="樹脂発泡体(30倍発泡)t=10" />
+                            <xs:enumeration value="ｺﾞﾑ発泡体t=10" />
+                            <xs:enumeration value="発泡ｽﾁﾛｰﾙt=10" />
+                            <xs:enumeration value="瀝青質目地板ｔ=20" />
+                            <xs:enumeration value="瀝青繊維質目地板t=20" />
+                            <xs:enumeration value="樹脂発泡体(15倍発泡)t=20" />
+                            <xs:enumeration value="樹脂発泡体(30倍発泡)t=20" />
+                            <xs:enumeration value="ｺﾞﾑ発泡体t=20" />
+                            <xs:enumeration value="発泡ｽﾁﾛｰﾙt=20" />
+                            <xs:enumeration value="各種" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
                     </value>
@@ -307,9 +538,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_厚10mm" />
-                            <xs:enumeration value="2_厚20mm" />
+                            <xs:enumeration value="厚10mm" />
+                            <xs:enumeration value="厚20mm" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地板設置</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>目地板</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -345,6 +587,17 @@
                         <simpleValue>1470400101_1481100101_1482400101_1061500103_B021505101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_胴込・裏込コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>胴込・裏込コンクリート</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_胴込・裏込コンクリート</simpleValue>
@@ -354,12 +607,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_18-8-25(普通)" />
-                            <xs:enumeration value="2_18-8-40(普通)" />
-                            <xs:enumeration value="3_18-8-25(高炉)" />
-                            <xs:enumeration value="4_18-8-40(高炉)" />
-                            <xs:enumeration value="5_生ｺﾝｸﾘｰﾄ各種" />
-                            <xs:enumeration value="6_ｺﾝｸﾘｰﾄ不要" />
+                            <xs:enumeration value="18-8-25(普通)" />
+                            <xs:enumeration value="18-8-40(普通)" />
+                            <xs:enumeration value="18-8-25(高炉)" />
+                            <xs:enumeration value="18-8-40(高炉)" />
+                            <xs:enumeration value="生ｺﾝｸﾘｰﾄ各種" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ不要" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -405,13 +658,24 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_再生砕石 RC-40" />
-                            <xs:enumeration value="2_再生砕石 RC-80" />
-                            <xs:enumeration value="3_砕石 C-40" />
-                            <xs:enumeration value="4_砕石 C-80" />
-                            <xs:enumeration value="5_砕石各種" />
-                            <xs:enumeration value="6_砕石不要" />
+                            <xs:enumeration value="再生砕石 RC-40" />
+                            <xs:enumeration value="再生砕石 RC-80" />
+                            <xs:enumeration value="砕石 C-40" />
+                            <xs:enumeration value="砕石 C-80" />
+                            <xs:enumeration value="砕石各種" />
+                            <xs:enumeration value="砕石不要" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_胴込・裏込材(砕石)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>胴込・裏込材（砕石）費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>胴込・裏込材工(砕石)</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -470,6 +734,76 @@
                     <baseName>
                         <simpleValue>種類</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_遮水シート張</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>遮水ｼｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>遮水シート張</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="養生費" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>養生費</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_養生費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_養生費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1482400101_1061500103_B601705301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_養生費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>養生工の種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="一般養生" />
+                            <xs:enumeration value="特殊養生(練炭)" />
+                            <xs:enumeration value="特殊養生(ｼﾞｪｯﾄﾋｰﾀ)" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_山留擁壁工_ブロック積擁壁工_養生費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>養生費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>養生工</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

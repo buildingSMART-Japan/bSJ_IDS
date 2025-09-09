@@ -50,6 +50,17 @@
                         <simpleValue>1470400101_1090600101_1536400101_1107700101_1107900101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_樋門・樋管_付属物設置工_観測施設工_水位計</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_樋門・樋管_付属物設置工_観測施設工_水位計</simpleValue>
@@ -57,6 +68,17 @@
                     <baseName>
                         <simpleValue>水位計規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_樋門・樋管_付属物設置工_観測施設工_水位計</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>設置費</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -99,6 +121,28 @@
                         <simpleValue>流量計規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_樋門・樋管_付属物設置工_観測施設工_流量計</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>製品費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>製品費</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_樋門・樋管_付属物設置工_観測施設工_流量計</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>設置</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="量水標" ifcVersion="IFC2X3">
@@ -130,6 +174,28 @@
                     </baseName>
                     <value>
                         <simpleValue>1470400101_1090600101_1536400101_1107700101_1107800101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_樋門・樋管_付属物設置工_観測施設工_量水標</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_樋門・樋管_付属物設置工_観測施設工_量水標</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>設置費</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">

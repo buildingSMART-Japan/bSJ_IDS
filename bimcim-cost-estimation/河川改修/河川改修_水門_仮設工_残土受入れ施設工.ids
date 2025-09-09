@@ -59,13 +59,13 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_仕拵･積立･撤去" />
-                            <xs:enumeration value="2_仕拵･積立" />
-                            <xs:enumeration value="3_撤去" />
-                            <xs:enumeration value="1_製作･設置" />
-                            <xs:enumeration value="2_製作" />
-                            <xs:enumeration value="3_設置" />
-                            <xs:enumeration value="4_撤去" />
+                            <xs:enumeration value="仕拵･積立･撤去" />
+                            <xs:enumeration value="仕拵･積立" />
+                            <xs:enumeration value="撤去" />
+                            <xs:enumeration value="製作･設置" />
+                            <xs:enumeration value="製作" />
+                            <xs:enumeration value="設置" />
+                            <xs:enumeration value="撤去" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -78,9 +78,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_土のう" />
-                            <xs:enumeration value="2_大型土のう" />
+                            <xs:enumeration value="土のう" />
+                            <xs:enumeration value="大型土のう" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_仮設工_残土受入れ施設工_土のう</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土のう積費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土のう工</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -90,6 +101,61 @@
                     <baseName>
                         <simpleValue>大型土のう規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_仮設工_残土受入れ施設工_土のう</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>大型土のう費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>大型土のう工</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="土のう積" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>土のう積</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_仮設工_残土受入れ施設工_土のう積</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_仮設工_残土受入れ施設工_土のう積</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1561000101_1002500901_1021200101_1602300101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_仮設工_残土受入れ施設工_土のう積</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土のう積費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土のう積工</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

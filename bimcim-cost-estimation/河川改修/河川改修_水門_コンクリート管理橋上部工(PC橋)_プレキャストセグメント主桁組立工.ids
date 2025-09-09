@@ -48,10 +48,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1300kN(130t)型(7S12.7B)" />
-                            <xs:enumeration value="2_1300kN(130t)型(8S12.4A)" />
-                            <xs:enumeration value="3_2200kN(225t)型(12S12.7B)" />
-                            <xs:enumeration value="4_3100kN(320t)型(12S15.2B)" />
+                            <xs:enumeration value="1300kN(130t)型(7S12.7B)" />
+                            <xs:enumeration value="1300kN(130t)型(8S12.4A)" />
+                            <xs:enumeration value="2200kN(225t)型(12S12.7B)" />
+                            <xs:enumeration value="3100kN(320t)型(12S15.2B)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -64,6 +64,28 @@
                     </baseName>
                     <value>
                         <simpleValue>1470400101_1561000101_1479000101_1569600101_1575900101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_プレキャストセグメント主桁組立工_プレキャストセグメント主桁組立</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>機械器具損料</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>機械器具損料</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_コンクリート管理橋上部工(PC橋)_プレキャストセグメント主桁組立工_プレキャストセグメント主桁組立</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄｾｸﾞﾒﾝﾄ主桁組立費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>プレキャストセグメント主桁組立工</simpleValue>
                     </value>
                 </property>
             </requirements>

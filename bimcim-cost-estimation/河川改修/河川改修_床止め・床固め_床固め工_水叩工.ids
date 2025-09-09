@@ -59,10 +59,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｺﾝｸﾘｰﾄﾎﾟﾝﾌﾟ車打設" />
-                            <xs:enumeration value="2_ｸﾚｰﾝ車打設" />
-                            <xs:enumeration value="3_ﾊﾞｯｸﾎｳ(ｸﾚｰﾝ機能付)打設" />
-                            <xs:enumeration value="4_人力打設" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄﾎﾟﾝﾌﾟ車打設" />
+                            <xs:enumeration value="ｸﾚｰﾝ車打設" />
+                            <xs:enumeration value="ﾊﾞｯｸﾎｳ(ｸﾚｰﾝ機能付)打設" />
+                            <xs:enumeration value="人力打設" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -75,8 +75,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_無筋・鉄筋構造物" />
-                            <xs:enumeration value="2_小型構造物" />
+                            <xs:enumeration value="無筋・鉄筋構造物" />
+                            <xs:enumeration value="小型構造物" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -89,53 +89,119 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_21-8-25(20)(普通)" />
-                            <xs:enumeration value="10_40-12-25(20)(普通)" />
-                            <xs:enumeration value="11_18-8-40(普通)" />
-                            <xs:enumeration value="12_18-12-40(普通)" />
-                            <xs:enumeration value="13_19.5-8-40(普通)" />
-                            <xs:enumeration value="14_21-8-40(普通)" />
-                            <xs:enumeration value="15_21-12-40(普通)" />
-                            <xs:enumeration value="16_22.5-8-40(普通)" />
-                            <xs:enumeration value="17_24-8-40(普通)" />
-                            <xs:enumeration value="18_24-12-40(普通)" />
-                            <xs:enumeration value="19_4.5-2.5-40(普通)" />
-                            <xs:enumeration value="2_21-12-25(20)(普通)" />
-                            <xs:enumeration value="20_21-8-25(20)(高炉)" />
-                            <xs:enumeration value="21_21-12-25(20)(高炉)" />
-                            <xs:enumeration value="22_24-8-25(20)(高炉)" />
-                            <xs:enumeration value="23_24-12-25(20)(高炉)" />
-                            <xs:enumeration value="24_19.5-5-40(高炉)" />
-                            <xs:enumeration value="25_19.5-8-40(高炉)" />
-                            <xs:enumeration value="26_19.5-12-40(高炉)" />
-                            <xs:enumeration value="27_18-5-40(高炉)" />
-                            <xs:enumeration value="28_21-5-40(高炉)" />
-                            <xs:enumeration value="29_18-8-40(高炉)" />
-                            <xs:enumeration value="3_24-8-25(20)(普通)" />
-                            <xs:enumeration value="30_18-12-40(高炉)" />
-                            <xs:enumeration value="31_21-8-40(高炉)" />
-                            <xs:enumeration value="32_24-8-40(高炉)" />
-                            <xs:enumeration value="33_24-12-40(高炉)" />
-                            <xs:enumeration value="34_21-12-40(高炉)" />
-                            <xs:enumeration value="35_40-8-25(早強)" />
-                            <xs:enumeration value="36_40-12-25(早強)" />
-                            <xs:enumeration value="37_21-8-25(早強)" />
-                            <xs:enumeration value="38_21-12-25(早強)" />
-                            <xs:enumeration value="39_24-8-25(早強)" />
-                            <xs:enumeration value="4_24-12-25(20)(普通)" />
-                            <xs:enumeration value="40_24-12-25(早強)" />
-                            <xs:enumeration value="41_18-8-25(高炉)" />
-                            <xs:enumeration value="42_18-12-25(高炉)" />
-                            <xs:enumeration value="43_21-5-80(高炉)" />
-                            <xs:enumeration value="44_18-3-40(高炉)" />
-                            <xs:enumeration value="45_21-3-40(高炉)" />
-                            <xs:enumeration value="46_各種" />
-                            <xs:enumeration value="5_27-8-25(20)(普通)" />
-                            <xs:enumeration value="6_27-12-25(20)(普通)" />
-                            <xs:enumeration value="7_30-8-25(20)(普通)" />
-                            <xs:enumeration value="8_30-12-25(20)(普通)" />
-                            <xs:enumeration value="9_40-8-25(20)(普通)" />
+                            <xs:enumeration value="21-8-25(20)(普通)" />
+                            <xs:enumeration value="21-12-25(20)(普通)" />
+                            <xs:enumeration value="24-8-25(20)(普通)" />
+                            <xs:enumeration value="24-12-25(20)(普通)" />
+                            <xs:enumeration value="27-8-25(20)(普通)" />
+                            <xs:enumeration value="27-12-25(20)(普通)" />
+                            <xs:enumeration value="30-8-25(20)(普通)" />
+                            <xs:enumeration value="30-12-25(20)(普通)" />
+                            <xs:enumeration value="40-8-25(20)(普通)" />
+                            <xs:enumeration value="40-12-25(20)(普通)" />
+                            <xs:enumeration value="18-8-40(普通)" />
+                            <xs:enumeration value="18-12-40(普通)" />
+                            <xs:enumeration value="19.5-8-40(普通)" />
+                            <xs:enumeration value="21-8-40(普通)" />
+                            <xs:enumeration value="21-12-40(普通)" />
+                            <xs:enumeration value="22.5-8-40(普通)" />
+                            <xs:enumeration value="24-8-40(普通)" />
+                            <xs:enumeration value="24-12-40(普通)" />
+                            <xs:enumeration value="4.5-2.5-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(高炉)" />
+                            <xs:enumeration value="21-12-25(20)(高炉)" />
+                            <xs:enumeration value="24-8-25(20)(高炉)" />
+                            <xs:enumeration value="24-12-25(20)(高炉)" />
+                            <xs:enumeration value="19.5-5-40(高炉)" />
+                            <xs:enumeration value="19.5-8-40(高炉)" />
+                            <xs:enumeration value="19.5-12-40(高炉)" />
+                            <xs:enumeration value="18-5-40(高炉)" />
+                            <xs:enumeration value="21-5-40(高炉)" />
+                            <xs:enumeration value="18-8-40(高炉)" />
+                            <xs:enumeration value="18-12-40(高炉)" />
+                            <xs:enumeration value="21-8-40(高炉)" />
+                            <xs:enumeration value="24-8-40(高炉)" />
+                            <xs:enumeration value="24-12-40(高炉)" />
+                            <xs:enumeration value="21-12-40(高炉)" />
+                            <xs:enumeration value="40-8-25(早強)" />
+                            <xs:enumeration value="40-12-25(早強)" />
+                            <xs:enumeration value="21-8-25(早強)" />
+                            <xs:enumeration value="21-12-25(早強)" />
+                            <xs:enumeration value="24-8-25(早強)" />
+                            <xs:enumeration value="24-12-25(早強)" />
+                            <xs:enumeration value="18-8-25(高炉)" />
+                            <xs:enumeration value="18-12-25(高炉)" />
+                            <xs:enumeration value="21-5-80(高炉)" />
+                            <xs:enumeration value="18-3-40(高炉)" />
+                            <xs:enumeration value="21-3-40(高炉)" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="シール材" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>シール材</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1155400201_1097800501_B616000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼｰﾙ材設置(材料費)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>シール材（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼｰﾙ材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>シール材</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -178,6 +244,17 @@
                     <baseName>
                         <simpleValue>厚さ</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_吸出し防止材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>吸出し防止材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>吸出し防止材設置</simpleValue>
+                    </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
@@ -228,6 +305,17 @@
                         <simpleValue>1470400101_1481100101_1155400201_1097800501_B040500102</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_均しコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_均しコンクリート</simpleValue>
@@ -237,10 +325,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｺﾝｸﾘｰﾄﾎﾟﾝﾌﾟ車打設" />
-                            <xs:enumeration value="2_ｸﾚｰﾝ車打設" />
-                            <xs:enumeration value="3_ﾊﾞｯｸﾎｳ(ｸﾚｰﾝ機能付)打設" />
-                            <xs:enumeration value="4_人力打設" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄﾎﾟﾝﾌﾟ車打設" />
+                            <xs:enumeration value="ｸﾚｰﾝ車打設" />
+                            <xs:enumeration value="ﾊﾞｯｸﾎｳ(ｸﾚｰﾝ機能付)打設" />
+                            <xs:enumeration value="人力打設" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -261,8 +349,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_無筋・鉄筋構造物" />
-                            <xs:enumeration value="2_小型構造物" />
+                            <xs:enumeration value="無筋・鉄筋構造物" />
+                            <xs:enumeration value="小型構造物" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -275,53 +363,64 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_21-8-25(20)(普通)" />
-                            <xs:enumeration value="10_40-12-25(20)(普通)" />
-                            <xs:enumeration value="11_18-8-40(普通)" />
-                            <xs:enumeration value="12_18-12-40(普通)" />
-                            <xs:enumeration value="13_19.5-8-40(普通)" />
-                            <xs:enumeration value="14_21-8-40(普通)" />
-                            <xs:enumeration value="15_21-12-40(普通)" />
-                            <xs:enumeration value="16_22.5-8-40(普通)" />
-                            <xs:enumeration value="17_24-8-40(普通)" />
-                            <xs:enumeration value="18_24-12-40(普通)" />
-                            <xs:enumeration value="19_4.5-2.5-40(普通)" />
-                            <xs:enumeration value="2_21-12-25(20)(普通)" />
-                            <xs:enumeration value="20_21-8-25(20)(高炉)" />
-                            <xs:enumeration value="21_21-12-25(20)(高炉)" />
-                            <xs:enumeration value="22_24-8-25(20)(高炉)" />
-                            <xs:enumeration value="23_24-12-25(20)(高炉)" />
-                            <xs:enumeration value="24_19.5-5-40(高炉)" />
-                            <xs:enumeration value="25_19.5-8-40(高炉)" />
-                            <xs:enumeration value="26_19.5-12-40(高炉)" />
-                            <xs:enumeration value="27_18-5-40(高炉)" />
-                            <xs:enumeration value="28_21-5-40(高炉)" />
-                            <xs:enumeration value="29_18-8-40(高炉)" />
-                            <xs:enumeration value="3_24-8-25(20)(普通)" />
-                            <xs:enumeration value="30_18-12-40(高炉)" />
-                            <xs:enumeration value="31_21-8-40(高炉)" />
-                            <xs:enumeration value="32_24-8-40(高炉)" />
-                            <xs:enumeration value="33_24-12-40(高炉)" />
-                            <xs:enumeration value="34_21-12-40(高炉)" />
-                            <xs:enumeration value="35_40-8-25(早強)" />
-                            <xs:enumeration value="36_40-12-25(早強)" />
-                            <xs:enumeration value="37_21-8-25(早強)" />
-                            <xs:enumeration value="38_21-12-25(早強)" />
-                            <xs:enumeration value="39_24-8-25(早強)" />
-                            <xs:enumeration value="4_24-12-25(20)(普通)" />
-                            <xs:enumeration value="40_24-12-25(早強)" />
-                            <xs:enumeration value="41_18-8-25(高炉)" />
-                            <xs:enumeration value="42_18-12-25(高炉)" />
-                            <xs:enumeration value="43_21-5-80(高炉)" />
-                            <xs:enumeration value="44_18-3-40(高炉)" />
-                            <xs:enumeration value="45_21-3-40(高炉)" />
-                            <xs:enumeration value="46_各種" />
-                            <xs:enumeration value="5_27-8-25(20)(普通)" />
-                            <xs:enumeration value="6_27-12-25(20)(普通)" />
-                            <xs:enumeration value="7_30-8-25(20)(普通)" />
-                            <xs:enumeration value="8_30-12-25(20)(普通)" />
-                            <xs:enumeration value="9_40-8-25(20)(普通)" />
+                            <xs:enumeration value="21-8-25(20)(普通)" />
+                            <xs:enumeration value="21-12-25(20)(普通)" />
+                            <xs:enumeration value="24-8-25(20)(普通)" />
+                            <xs:enumeration value="24-12-25(20)(普通)" />
+                            <xs:enumeration value="27-8-25(20)(普通)" />
+                            <xs:enumeration value="27-12-25(20)(普通)" />
+                            <xs:enumeration value="30-8-25(20)(普通)" />
+                            <xs:enumeration value="30-12-25(20)(普通)" />
+                            <xs:enumeration value="40-8-25(20)(普通)" />
+                            <xs:enumeration value="40-12-25(20)(普通)" />
+                            <xs:enumeration value="18-8-40(普通)" />
+                            <xs:enumeration value="18-12-40(普通)" />
+                            <xs:enumeration value="19.5-8-40(普通)" />
+                            <xs:enumeration value="21-8-40(普通)" />
+                            <xs:enumeration value="21-12-40(普通)" />
+                            <xs:enumeration value="22.5-8-40(普通)" />
+                            <xs:enumeration value="24-8-40(普通)" />
+                            <xs:enumeration value="24-12-40(普通)" />
+                            <xs:enumeration value="4.5-2.5-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(高炉)" />
+                            <xs:enumeration value="21-12-25(20)(高炉)" />
+                            <xs:enumeration value="24-8-25(20)(高炉)" />
+                            <xs:enumeration value="24-12-25(20)(高炉)" />
+                            <xs:enumeration value="19.5-5-40(高炉)" />
+                            <xs:enumeration value="19.5-8-40(高炉)" />
+                            <xs:enumeration value="19.5-12-40(高炉)" />
+                            <xs:enumeration value="18-5-40(高炉)" />
+                            <xs:enumeration value="21-5-40(高炉)" />
+                            <xs:enumeration value="18-8-40(高炉)" />
+                            <xs:enumeration value="18-12-40(高炉)" />
+                            <xs:enumeration value="21-8-40(高炉)" />
+                            <xs:enumeration value="24-8-40(高炉)" />
+                            <xs:enumeration value="24-12-40(高炉)" />
+                            <xs:enumeration value="21-12-40(高炉)" />
+                            <xs:enumeration value="40-8-25(早強)" />
+                            <xs:enumeration value="40-12-25(早強)" />
+                            <xs:enumeration value="21-8-25(早強)" />
+                            <xs:enumeration value="21-12-25(早強)" />
+                            <xs:enumeration value="24-8-25(早強)" />
+                            <xs:enumeration value="24-12-25(早強)" />
+                            <xs:enumeration value="18-8-25(高炉)" />
+                            <xs:enumeration value="18-12-25(高炉)" />
+                            <xs:enumeration value="21-5-80(高炉)" />
+                            <xs:enumeration value="18-3-40(高炉)" />
+                            <xs:enumeration value="21-3-40(高炉)" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_均しコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -357,6 +456,28 @@
                         <simpleValue>1470400101_1481100101_1155400201_1097800501_B040800201</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>化粧型枠処分費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>処分費（ｍ３）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>化粧型枠材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>化粧型枠（材料費）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_型枠</simpleValue>
@@ -366,10 +487,32 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_一般型枠" />
-                            <xs:enumeration value="2_化粧型枠" />
-                            <xs:enumeration value="3_撤去しない埋設型枠" />
+                            <xs:enumeration value="一般型枠" />
+                            <xs:enumeration value="化粧型枠" />
+                            <xs:enumeration value="撤去しない埋設型枠" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費(省力化構造)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠（鉄筋構造）［省力化構造］</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -414,9 +557,31 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_吸出し防止材有" />
-                            <xs:enumeration value="2_吸出し防止材無" />
+                            <xs:enumeration value="吸出し防止材有" />
+                            <xs:enumeration value="吸出し防止材無" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_巨石張(空)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>巨石張費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>巨石張（空）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_巨石張(空)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>巨石材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>巨石（材料費）</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -428,9 +593,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_40cm以上60cm未満" />
-                            <xs:enumeration value="2_60cm以上80cm未満" />
-                            <xs:enumeration value="3_80cm以上100cm以下" />
+                            <xs:enumeration value="40cm以上60cm未満" />
+                            <xs:enumeration value="60cm以上80cm未満" />
+                            <xs:enumeration value="80cm以上100cm以下" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -467,6 +632,28 @@
                         <simpleValue>1470400101_1481100101_1155400201_1097800501_B056800101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_巨石張(練)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>巨石張費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>巨石張（練）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_巨石張(練)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>巨石材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>巨石（材料費）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_巨石張(練)</simpleValue>
@@ -476,8 +663,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_止水ｼｰﾄ有" />
-                            <xs:enumeration value="2_止水ｼｰﾄ無" />
+                            <xs:enumeration value="止水ｼｰﾄ有" />
+                            <xs:enumeration value="止水ｼｰﾄ無" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -490,9 +677,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_40cm以上60cm未満" />
-                            <xs:enumeration value="2_60cm以上80cm未満" />
-                            <xs:enumeration value="3_80cm以上100cm以下" />
+                            <xs:enumeration value="40cm以上60cm未満" />
+                            <xs:enumeration value="60cm以上80cm未満" />
+                            <xs:enumeration value="80cm以上100cm以下" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -505,9 +692,100 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_遮水ｼｰﾄ有" />
-                            <xs:enumeration value="2_遮水ｼｰﾄ無" />
+                            <xs:enumeration value="遮水ｼｰﾄ有" />
+                            <xs:enumeration value="遮水ｼｰﾄ無" />
                         </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="巨石採取" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>巨石採取</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_巨石採取</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_巨石採取</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1155400201_1097800501_B056805101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_巨石採取</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>巨石採取費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="巨石採取" />
+                            <xs:enumeration value="破砕・発破作業" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="巨石運搬" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>巨石運搬</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_巨石運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_巨石運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1155400201_1097800501_B056805301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_巨石運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>巨石運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>巨石運搬費</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -543,6 +821,28 @@
                         <simpleValue>1470400101_1481100101_1155400201_1097800501_B063000102</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_根固めブロック据付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ据付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>消波根固めブロック据付け</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_根固めブロック据付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ横取り費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>消波根固めブロック横取り</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_根固めブロック据付</simpleValue>
@@ -552,8 +852,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_無筋ﾌﾞﾛｯｸ" />
-                            <xs:enumeration value="2_鉄筋ﾌﾞﾛｯｸ" />
+                            <xs:enumeration value="無筋ﾌﾞﾛｯｸ" />
+                            <xs:enumeration value="鉄筋ﾌﾞﾛｯｸ" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -565,6 +865,28 @@
                         <simpleValue>ﾌﾞﾛｯｸ種類(実質量)</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_根固めブロック据付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ積込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>消波根固めブロック積込み</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_根固めブロック据付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ荷卸費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>消波根固めブロック荷卸</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_根固めブロック据付</simpleValue>
@@ -574,9 +896,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾌﾞﾛｯｸ購入有" />
-                            <xs:enumeration value="2_ﾌﾞﾛｯｸ購入無" />
+                            <xs:enumeration value="ﾌﾞﾛｯｸ購入有" />
+                            <xs:enumeration value="ﾌﾞﾛｯｸ購入無" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_根固めブロック据付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ購入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>根固めブロック製品費</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -612,6 +945,39 @@
                         <simpleValue>1470400101_1481100101_1155400201_1097800501_B062900102</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_根固めブロック製作</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>特許料</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>特許料（式）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_根固めブロック製作</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋工［市場単価］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_根固めブロック製作</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>養生費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>消波根固ブロック給熱養生</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_根固めブロック製作</simpleValue>
@@ -621,8 +987,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_無筋ﾌﾞﾛｯｸ" />
-                            <xs:enumeration value="2_鉄筋ﾌﾞﾛｯｸ" />
+                            <xs:enumeration value="無筋ﾌﾞﾛｯｸ" />
+                            <xs:enumeration value="鉄筋ﾌﾞﾛｯｸ" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -633,6 +999,17 @@
                     <baseName>
                         <simpleValue>ﾌﾞﾛｯｸ種類(実質量)</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_根固めブロック製作</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ製作費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ブロック製作［消波工］</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -676,19 +1053,41 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_FF(塩ﾋﾞ製)200×5" />
-                            <xs:enumeration value="10_CC300×7" />
-                            <xs:enumeration value="11_UC200×6" />
-                            <xs:enumeration value="12_各種" />
-                            <xs:enumeration value="2_FC(塩ﾋﾞ製)200×5" />
-                            <xs:enumeration value="3_CF(塩ﾋﾞ製)200×5" />
-                            <xs:enumeration value="4_CF(塩ﾋﾞ製)230×9" />
-                            <xs:enumeration value="5_CC(塩ﾋﾞ製)200×5" />
-                            <xs:enumeration value="6_UC(塩ﾋﾞ製)300×7" />
-                            <xs:enumeration value="7_S.R(塩ﾋﾞ製)200×5" />
-                            <xs:enumeration value="8_S.SF(塩ﾋﾞ製)200×5" />
-                            <xs:enumeration value="9_CF300×7" />
+                            <xs:enumeration value="FF(塩ﾋﾞ製)200×5" />
+                            <xs:enumeration value="FC(塩ﾋﾞ製)200×5" />
+                            <xs:enumeration value="CF(塩ﾋﾞ製)200×5" />
+                            <xs:enumeration value="CF(塩ﾋﾞ製)230×9" />
+                            <xs:enumeration value="CC(塩ﾋﾞ製)200×5" />
+                            <xs:enumeration value="UC(塩ﾋﾞ製)300×7" />
+                            <xs:enumeration value="S.R(塩ﾋﾞ製)200×5" />
+                            <xs:enumeration value="S.SF(塩ﾋﾞ製)200×5" />
+                            <xs:enumeration value="CF300×7" />
+                            <xs:enumeration value="CC300×7" />
+                            <xs:enumeration value="UC200×6" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_止水板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>止水板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>止水板</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_止水板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>止水板設置費(砂防)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>止水板設置</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -724,6 +1123,17 @@
                         <simpleValue>1470400101_1481100101_1155400201_1097800501_B063005101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック仮置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ横取り費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>消波根固めブロック横取り</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック仮置</simpleValue>
@@ -733,8 +1143,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_無筋ﾌﾞﾛｯｸ" />
-                            <xs:enumeration value="2_鉄筋ﾌﾞﾛｯｸ" />
+                            <xs:enumeration value="無筋ﾌﾞﾛｯｸ" />
+                            <xs:enumeration value="鉄筋ﾌﾞﾛｯｸ" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -745,6 +1155,28 @@
                     <baseName>
                         <simpleValue>ﾌﾞﾛｯｸ種類(実質量)</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック仮置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ積込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>消波根固めブロック積込み</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック仮置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ荷卸費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>消波根固めブロック荷卸</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -779,6 +1211,17 @@
                         <simpleValue>1470400101_1481100101_1155400201_1097800501_B063005301</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック製作</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋工［市場単価］</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック製作</simpleValue>
@@ -794,6 +1237,17 @@
                     <baseName>
                         <simpleValue>ﾌﾞﾛｯｸ種類（実質量）</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック製作</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ製作費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>消波根固めブロック</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -837,9 +1291,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_積込み･荷卸" />
-                            <xs:enumeration value="2_積込み･据付け(乱積)" />
-                            <xs:enumeration value="3_積込み･据付け(層積)" />
+                            <xs:enumeration value="積込み･荷卸" />
+                            <xs:enumeration value="積込み･据付け(乱積)" />
+                            <xs:enumeration value="積込み･据付け(層積)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -852,9 +1306,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_2.5t以下" />
-                            <xs:enumeration value="2_2.5tを超え5.5t以下" />
-                            <xs:enumeration value="3_5.5tを超え11.0t以下" />
+                            <xs:enumeration value="2.5t以下" />
+                            <xs:enumeration value="2.5tを超え5.5t以下" />
+                            <xs:enumeration value="5.5tを超え11.0t以下" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -867,18 +1321,18 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1個" />
-                            <xs:enumeration value="10_10個" />
-                            <xs:enumeration value="11_11個以上15個以下" />
-                            <xs:enumeration value="12_15個を超え23個以下" />
-                            <xs:enumeration value="2_2個" />
-                            <xs:enumeration value="3_3個" />
-                            <xs:enumeration value="4_4個" />
-                            <xs:enumeration value="5_5個" />
-                            <xs:enumeration value="6_6個" />
-                            <xs:enumeration value="7_7個" />
-                            <xs:enumeration value="8_8個" />
-                            <xs:enumeration value="9_9個" />
+                            <xs:enumeration value="1個" />
+                            <xs:enumeration value="2個" />
+                            <xs:enumeration value="3個" />
+                            <xs:enumeration value="4個" />
+                            <xs:enumeration value="5個" />
+                            <xs:enumeration value="6個" />
+                            <xs:enumeration value="7個" />
+                            <xs:enumeration value="8個" />
+                            <xs:enumeration value="9個" />
+                            <xs:enumeration value="10個" />
+                            <xs:enumeration value="11個以上15個以下" />
+                            <xs:enumeration value="15個を超え23個以下" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -891,29 +1345,40 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_0.5km以下" />
-                            <xs:enumeration value="10_5.0km以下" />
-                            <xs:enumeration value="11_5.5km以下" />
-                            <xs:enumeration value="12_6.0km以下" />
-                            <xs:enumeration value="13_6.5km以下" />
-                            <xs:enumeration value="14_7.0km以下" />
-                            <xs:enumeration value="15_7.5km以下" />
-                            <xs:enumeration value="16_8.5km以下" />
-                            <xs:enumeration value="17_9.5km以下" />
-                            <xs:enumeration value="18_10.5km以下" />
-                            <xs:enumeration value="19_11.5km以下" />
-                            <xs:enumeration value="2_1.0km以下" />
-                            <xs:enumeration value="20_12.5km以下" />
-                            <xs:enumeration value="21_14.0km以下" />
-                            <xs:enumeration value="22_15.0km以下" />
-                            <xs:enumeration value="3_1.5km以下" />
-                            <xs:enumeration value="4_2.0km以下" />
-                            <xs:enumeration value="5_2.5km以下" />
-                            <xs:enumeration value="6_3.0km以下" />
-                            <xs:enumeration value="7_3.5km以下" />
-                            <xs:enumeration value="8_4.0km以下" />
-                            <xs:enumeration value="9_4.5km以下" />
+                            <xs:enumeration value="0.5km以下" />
+                            <xs:enumeration value="1.0km以下" />
+                            <xs:enumeration value="1.5km以下" />
+                            <xs:enumeration value="2.0km以下" />
+                            <xs:enumeration value="2.5km以下" />
+                            <xs:enumeration value="3.0km以下" />
+                            <xs:enumeration value="3.5km以下" />
+                            <xs:enumeration value="4.0km以下" />
+                            <xs:enumeration value="4.5km以下" />
+                            <xs:enumeration value="5.0km以下" />
+                            <xs:enumeration value="5.5km以下" />
+                            <xs:enumeration value="6.0km以下" />
+                            <xs:enumeration value="6.5km以下" />
+                            <xs:enumeration value="7.0km以下" />
+                            <xs:enumeration value="7.5km以下" />
+                            <xs:enumeration value="8.5km以下" />
+                            <xs:enumeration value="9.5km以下" />
+                            <xs:enumeration value="10.5km以下" />
+                            <xs:enumeration value="11.5km以下" />
+                            <xs:enumeration value="12.5km以下" />
+                            <xs:enumeration value="14.0km以下" />
+                            <xs:enumeration value="15.0km以下" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>消波根固めブロック運搬</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -958,19 +1423,19 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_瀝青質目地板ｔ=10" />
-                            <xs:enumeration value="10_樹脂発泡体(30倍発泡)t=20" />
-                            <xs:enumeration value="11_ｺﾞﾑ発泡体t=20" />
-                            <xs:enumeration value="12_発泡ｽﾁﾛｰﾙt=20" />
-                            <xs:enumeration value="13_各種" />
-                            <xs:enumeration value="2_瀝青繊維質目地板t=10" />
-                            <xs:enumeration value="3_樹脂発泡体(15倍発泡)t=10" />
-                            <xs:enumeration value="4_樹脂発泡体(30倍発泡)t=10" />
-                            <xs:enumeration value="5_ｺﾞﾑ発泡体t=10" />
-                            <xs:enumeration value="6_発泡ｽﾁﾛｰﾙt=10" />
-                            <xs:enumeration value="7_瀝青質目地板ｔ=20" />
-                            <xs:enumeration value="8_瀝青繊維質目地板t=20" />
-                            <xs:enumeration value="9_樹脂発泡体(15倍発泡)t=20" />
+                            <xs:enumeration value="瀝青質目地板ｔ=10" />
+                            <xs:enumeration value="瀝青繊維質目地板t=10" />
+                            <xs:enumeration value="樹脂発泡体(15倍発泡)t=10" />
+                            <xs:enumeration value="樹脂発泡体(30倍発泡)t=10" />
+                            <xs:enumeration value="ｺﾞﾑ発泡体t=10" />
+                            <xs:enumeration value="発泡ｽﾁﾛｰﾙt=10" />
+                            <xs:enumeration value="瀝青質目地板ｔ=20" />
+                            <xs:enumeration value="瀝青繊維質目地板t=20" />
+                            <xs:enumeration value="樹脂発泡体(15倍発泡)t=20" />
+                            <xs:enumeration value="樹脂発泡体(30倍発泡)t=20" />
+                            <xs:enumeration value="ｺﾞﾑ発泡体t=20" />
+                            <xs:enumeration value="発泡ｽﾁﾛｰﾙt=20" />
+                            <xs:enumeration value="各種" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
                     </value>
@@ -984,9 +1449,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_厚10mm" />
-                            <xs:enumeration value="2_厚20mm" />
+                            <xs:enumeration value="厚10mm" />
+                            <xs:enumeration value="厚20mm" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>目地板</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -1031,50 +1507,64 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_SD295 D10" />
-                            <xs:enumeration value="10_SD345 D41" />
-                            <xs:enumeration value="11_SD345 D51" />
-                            <xs:enumeration value="12_SR235 φ9" />
-                            <xs:enumeration value="13_SR235 φ13" />
-                            <xs:enumeration value="14_SR235 φ16～25" />
-                            <xs:enumeration value="15_SD390 D25" />
-                            <xs:enumeration value="16_SD390 D29" />
-                            <xs:enumeration value="17_SD390 D32" />
-                            <xs:enumeration value="18_SD390 D35" />
-                            <xs:enumeration value="19_SD390 D38" />
-                            <xs:enumeration value="2_SD295 D13" />
-                            <xs:enumeration value="20_SD390 D41" />
-                            <xs:enumeration value="21_SD490 D35" />
-                            <xs:enumeration value="22_SD490 D38" />
-                            <xs:enumeration value="23_SD490 D41" />
-                            <xs:enumeration value="24_SD345(ねじ節鉄筋) D13" />
-                            <xs:enumeration value="25_SD345(ねじ節鉄筋) D16" />
-                            <xs:enumeration value="26_SD345(ねじ節鉄筋) D19" />
-                            <xs:enumeration value="27_SD345(ねじ節鉄筋) D22" />
-                            <xs:enumeration value="28_SD345(ねじ節鉄筋) D25" />
-                            <xs:enumeration value="29_SD345(ねじ節鉄筋) D29" />
-                            <xs:enumeration value="3_SD295 D16" />
-                            <xs:enumeration value="30_SD345(ねじ節鉄筋) D32" />
-                            <xs:enumeration value="31_SD345(ねじ節鉄筋) D35" />
-                            <xs:enumeration value="32_SD345(ねじ節鉄筋) D38" />
-                            <xs:enumeration value="33_SD345(ねじ節鉄筋) D41" />
-                            <xs:enumeration value="34_SD345(ねじ節鉄筋) D51" />
-                            <xs:enumeration value="35_SD390(ねじ節鉄筋) D25" />
-                            <xs:enumeration value="36_SD390(ねじ節鉄筋) D29" />
-                            <xs:enumeration value="37_SD390(ねじ節鉄筋) D32" />
-                            <xs:enumeration value="38_SD390(ねじ節鉄筋) D35" />
-                            <xs:enumeration value="39_SD390(ねじ節鉄筋) D38" />
-                            <xs:enumeration value="4_SD345 D10" />
-                            <xs:enumeration value="40_SD390(ねじ節鉄筋) D41" />
-                            <xs:enumeration value="41_SD490(ねじ節鉄筋) D35" />
-                            <xs:enumeration value="42_SD490(ねじ節鉄筋) D38" />
-                            <xs:enumeration value="43_SD490(ねじ節鉄筋) D41" />
-                            <xs:enumeration value="44_各種" />
-                            <xs:enumeration value="5_SD345 D13" />
-                            <xs:enumeration value="6_SD345 D16～25" />
-                            <xs:enumeration value="7_SD345 D29～32" />
-                            <xs:enumeration value="8_SD345 D35" />
-                            <xs:enumeration value="9_SD345 D38" />
+                            <xs:enumeration value="SD295 D10" />
+                            <xs:enumeration value="SD295 D13" />
+                            <xs:enumeration value="SD295 D16" />
+                            <xs:enumeration value="SD345 D10" />
+                            <xs:enumeration value="SD345 D13" />
+                            <xs:enumeration value="SD345 D16～25" />
+                            <xs:enumeration value="SD345 D29～32" />
+                            <xs:enumeration value="SD345 D35" />
+                            <xs:enumeration value="SD345 D38" />
+                            <xs:enumeration value="SD345 D41" />
+                            <xs:enumeration value="SD345 D51" />
+                            <xs:enumeration value="SR235 φ9" />
+                            <xs:enumeration value="SR235 φ13" />
+                            <xs:enumeration value="SR235 φ16～25" />
+                            <xs:enumeration value="SD390 D25" />
+                            <xs:enumeration value="SD390 D29" />
+                            <xs:enumeration value="SD390 D32" />
+                            <xs:enumeration value="SD390 D35" />
+                            <xs:enumeration value="SD390 D38" />
+                            <xs:enumeration value="SD390 D41" />
+                            <xs:enumeration value="SD490 D35" />
+                            <xs:enumeration value="SD490 D38" />
+                            <xs:enumeration value="SD490 D41" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D13" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D16" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D19" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D22" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D25" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D29" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D32" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D35" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D38" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D41" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D51" />
+                            <xs:enumeration value="SD390(ねじ節鉄筋) D25" />
+                            <xs:enumeration value="SD390(ねじ節鉄筋) D29" />
+                            <xs:enumeration value="SD390(ねじ節鉄筋) D32" />
+                            <xs:enumeration value="SD390(ねじ節鉄筋) D35" />
+                            <xs:enumeration value="SD390(ねじ節鉄筋) D38" />
+                            <xs:enumeration value="SD390(ねじ節鉄筋) D41" />
+                            <xs:enumeration value="SD490(ねじ節鉄筋) D35" />
+                            <xs:enumeration value="SD490(ねじ節鉄筋) D38" />
+                            <xs:enumeration value="SD490(ねじ節鉄筋) D41" />
+                            <xs:enumeration value="各種" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_床固め工_水叩工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="鉄筋工［市場単価］" />
+                            <xs:enumeration value="ガス圧接工（手動・自動）［市場単価］" />
                         </xs:restriction>
                     </value>
                 </property>

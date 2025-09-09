@@ -58,6 +58,17 @@
                         <simpleValue>土質</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_樋門・樋管_水路工_作業土工(ICT)_床掘り(ICT)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>床掘り費(ICT)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>床掘り(ICT)</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
     </specifications>

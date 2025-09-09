@@ -59,9 +59,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾚｷ質土､砂及び砂質土､粘性土" />
-                            <xs:enumeration value="2_軟岩I" />
+                            <xs:enumeration value="ﾚｷ質土､砂及び砂質土､粘性土" />
+                            <xs:enumeration value="軟岩I" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_河川土工_法面整形工(ICT)_法面整形(切土部)(ICT)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>法面整形費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>法面整形(ICT)</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -97,6 +108,17 @@
                         <simpleValue>1470400101_1481100101_1012700106_1013910105_B002410104</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_河川土工_法面整形工(ICT)_法面整形(盛土部)(ICT)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>法面整形費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>法面整形(ICT)</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_床止め・床固め_河川土工_法面整形工(ICT)_法面整形(盛土部)(ICT)</simpleValue>
@@ -106,8 +128,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_法面締固め有り" />
-                            <xs:enumeration value="2_法面締固め無し" />
+                            <xs:enumeration value="法面締固め有り" />
+                            <xs:enumeration value="法面締固め無し" />
                         </xs:restriction>
                     </value>
                 </property>

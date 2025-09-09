@@ -59,9 +59,31 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_鋼製" />
-                            <xs:enumeration value="2_ﾀﾞｸﾀｲﾙ製" />
+                            <xs:enumeration value="鋼製" />
+                            <xs:enumeration value="ﾀﾞｸﾀｲﾙ製" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_橋梁付属物工(鋼管理橋)_橋梁用高欄工_橋梁用高欄</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>橋梁用高欄材料費(一体式)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>橋梁用高欄一体式(材料費)</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_橋梁付属物工(鋼管理橋)_橋梁用高欄工_橋梁用高欄</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>橋梁用高欄設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>橋梁用高欄</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -73,8 +95,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_橋梁用高欄(組立式)" />
-                            <xs:enumeration value="2_橋梁用高欄(一体式)" />
+                            <xs:enumeration value="橋梁用高欄(組立式)" />
+                            <xs:enumeration value="橋梁用高欄(一体式)" />
                         </xs:restriction>
                     </value>
                 </property>

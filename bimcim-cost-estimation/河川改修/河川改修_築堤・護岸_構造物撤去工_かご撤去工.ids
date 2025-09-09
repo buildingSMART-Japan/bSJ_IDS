@@ -48,8 +48,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_径45cm" />
-                            <xs:enumeration value="2_径60cm" />
+                            <xs:enumeration value="径45cm" />
+                            <xs:enumeration value="径60cm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -62,6 +62,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1470400101_1045600101_1069300101_1590500101_B583800101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_構造物撤去工_かご撤去工_じゃかご撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>じゃかご</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -95,8 +106,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｽﾛｰﾌﾟ式" />
-                            <xs:enumeration value="2_階段式" />
+                            <xs:enumeration value="ｽﾛｰﾌﾟ式" />
+                            <xs:enumeration value="階段式" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -109,9 +120,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_高さ40cm×幅120cm" />
-                            <xs:enumeration value="2_高さ50cm×幅120cm" />
-                            <xs:enumeration value="3_高さ60cm×幅120cm" />
+                            <xs:enumeration value="高さ40cm×幅120cm" />
+                            <xs:enumeration value="高さ50cm×幅120cm" />
+                            <xs:enumeration value="高さ60cm×幅120cm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -124,6 +135,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1470400101_1045600101_1069300101_1590500101_B583900101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_構造物撤去工_かご撤去工_ふとんかご撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ふとんかご</simpleValue>
                     </value>
                 </property>
             </requirements>

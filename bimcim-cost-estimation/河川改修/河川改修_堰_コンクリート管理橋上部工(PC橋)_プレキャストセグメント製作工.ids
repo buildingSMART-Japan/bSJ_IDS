@@ -58,6 +58,17 @@
                         <simpleValue>桁規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_コンクリート管理橋上部工(PC橋)_プレキャストセグメント製作工_プレキャストセグメント製作</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄﾌﾞﾛｯｸ材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（本）</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
     </specifications>

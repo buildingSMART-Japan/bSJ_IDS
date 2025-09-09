@@ -59,10 +59,32 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_設置" />
-                            <xs:enumeration value="2_撤去" />
-                            <xs:enumeration value="3_設置･撤去" />
+                            <xs:enumeration value="設置" />
+                            <xs:enumeration value="撤去" />
+                            <xs:enumeration value="設置･撤去" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_路面覆工_覆工板・覆工板受桁</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工板賃料</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>覆工板賃料</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_路面覆工_覆工板・覆工板受桁</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工板･覆工板受桁設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>覆工板・覆工板受桁設置・撤去(設置面積700m2以下)</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -115,10 +137,36 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_設置" />
-                            <xs:enumeration value="2_撤去" />
-                            <xs:enumeration value="3_設置･撤去" />
+                            <xs:enumeration value="設置" />
+                            <xs:enumeration value="撤去" />
+                            <xs:enumeration value="設置･撤去" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_路面覆工_覆工板受桁</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工材等賃料</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="受板賃料" />
+                            <xs:enumeration value="桁受賃料" />
+                            <xs:enumeration value="材料費（ｔ）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_路面覆工_覆工板受桁</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工鋼材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>覆工板受桁設置･撤去(覆工板設置面積700m2を超える)</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -128,6 +176,204 @@
                     <baseName>
                         <simpleValue>鋼材規格</simpleValue>
                     </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="覆工板設置・撤去(仮桟橋設置撤去工)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>覆工板設置・撤去(仮桟橋設置撤去工)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_路面覆工_覆工板設置・撤去(仮桟橋設置撤去工)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_路面覆工_覆工板設置・撤去(仮桟橋設置撤去工)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1002500901_1472700101_B008605201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_路面覆工_覆工板設置・撤去(仮桟橋設置撤去工)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工板日々取付取外し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>覆工板開閉工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_路面覆工_覆工板設置・撤去(仮桟橋設置撤去工)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工板設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>覆工板設置・撤去［仮設材設置撤去工］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_路面覆工_覆工板設置・撤去(仮桟橋設置撤去工)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工板賃料</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>覆工板賃料</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="覆工板設置・撤去(仮橋・仮桟橋)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>覆工板設置・撤去(仮橋・仮桟橋)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_路面覆工_覆工板設置・撤去(仮橋・仮桟橋)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_路面覆工_覆工板設置・撤去(仮橋・仮桟橋)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1002500901_1472700101_B008605301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_路面覆工_覆工板設置・撤去(仮橋・仮桟橋)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工板日々取付取外し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>覆工板開閉工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_路面覆工_覆工板設置・撤去(仮橋・仮桟橋)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工板設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>覆工板設置・撤去工［仮橋・仮桟橋］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_路面覆工_覆工板設置・撤去(仮橋・仮桟橋)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工板賃料</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>覆工板賃料</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="覆工板設置・撤去(電線共同溝)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>覆工板設置・撤去(電線共同溝)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_路面覆工_覆工板設置・撤去(電線共同溝)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_路面覆工_覆工板設置・撤去(電線共同溝)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1002500901_1472700101_B008605101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_路面覆工_覆工板設置・撤去(電線共同溝)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工板日々取付取外し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>覆工板開閉工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_路面覆工_覆工板設置・撤去(電線共同溝)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工板設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>覆工板設置・撤去［電線共同溝］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_路面覆工_覆工板設置・撤去(電線共同溝)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工板賃料</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>覆工板賃料</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

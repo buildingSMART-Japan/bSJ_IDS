@@ -58,6 +58,17 @@
                         <simpleValue>支承規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_工場製作工_鋳造費_大型ゴム支承</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾞﾑ支承材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>支承材料費（鋼橋各種）</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="排水桝" ifcVersion="IFC2X3">
@@ -89,6 +100,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1470400101_1476400101_1037200701_1370400101_1370700101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_工場製作工_鋳造費_排水桝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>排水桝材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>工場製作材料費（個）</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -140,6 +162,61 @@
                         <simpleValue>材質</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_工場製作工_鋳造費_橋名板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>橋名板材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>工場製作材料費（枚）</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="橋歴板" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>橋歴板</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_工場製作工_鋳造費_橋歴板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_工場製作工_鋳造費_橋歴板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1037200701_1370400101_1370900101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_工場製作工_鋳造費_橋歴板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>橋歴板材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>工場製作材料費（枚）</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="金属支承" ifcVersion="IFC2X3">
@@ -180,6 +257,17 @@
                     <baseName>
                         <simpleValue>支承規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_工場製作工_鋳造費_金属支承</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>金属支承材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>支承材料費（鋼橋各種）</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

@@ -52,6 +52,17 @@
                         <simpleValue>数量情報_202304_01_河川改修_樋門・樋管_水路工_側溝工_プレキャストU型側溝</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>U型側溝設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>Ｕ型側溝</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_樋門・樋管_水路工_側溝工_プレキャストU型側溝</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -100,25 +111,36 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_240 33×4.5×60" />
-                            <xs:enumeration value="10_600 74×15×60" />
-                            <xs:enumeration value="11_250 36.2×9×50" />
-                            <xs:enumeration value="12_300 41.2×9.5×50" />
-                            <xs:enumeration value="13_400 51.2×11×50" />
-                            <xs:enumeration value="14_500 62.2×12.5×50" />
-                            <xs:enumeration value="15_250 36.2×9×50" />
-                            <xs:enumeration value="16_300 41.2×9.5×50" />
-                            <xs:enumeration value="17_400 51.2×11×50" />
-                            <xs:enumeration value="18_500 62.2×12.5×50" />
-                            <xs:enumeration value="2_300 40×6×60" />
-                            <xs:enumeration value="3_360 46×6.5×60" />
-                            <xs:enumeration value="4_450 56×7×60" />
-                            <xs:enumeration value="5_600 74×7.5×60" />
-                            <xs:enumeration value="6_240 33×10×60" />
-                            <xs:enumeration value="7_300 40×10×60" />
-                            <xs:enumeration value="8_360 46×10×60" />
-                            <xs:enumeration value="9_450 56×12×60" />
+                            <xs:enumeration value="240 33×4.5×60" />
+                            <xs:enumeration value="300 40×6×60" />
+                            <xs:enumeration value="360 46×6.5×60" />
+                            <xs:enumeration value="450 56×7×60" />
+                            <xs:enumeration value="600 74×7.5×60" />
+                            <xs:enumeration value="240 33×10×60" />
+                            <xs:enumeration value="300 40×10×60" />
+                            <xs:enumeration value="360 46×10×60" />
+                            <xs:enumeration value="450 56×12×60" />
+                            <xs:enumeration value="600 74×15×60" />
+                            <xs:enumeration value="250 36.2×9×50" />
+                            <xs:enumeration value="300 41.2×9.5×50" />
+                            <xs:enumeration value="400 51.2×11×50" />
+                            <xs:enumeration value="500 62.2×12.5×50" />
+                            <xs:enumeration value="250 36.2×9×50" />
+                            <xs:enumeration value="300 41.2×9.5×50" />
+                            <xs:enumeration value="400 51.2×11×50" />
+                            <xs:enumeration value="500 62.2×12.5×50" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_樋門・樋管_水路工_側溝工_側溝蓋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>蓋版設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>蓋版</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -130,11 +152,11 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_鉄筋ｺﾝｸﾘｰﾄU型 1種 JIS A 5372" />
-                            <xs:enumeration value="2_鉄筋ｺﾝｸﾘｰﾄU型 2種 JIS A 5372" />
-                            <xs:enumeration value="3_道路用鉄筋ｺﾝｸﾘｰﾄ側溝 1種 JIS A 5372" />
-                            <xs:enumeration value="4_道路用鉄筋ｺﾝｸﾘｰﾄ側溝 3種 JIS A 5372" />
-                            <xs:enumeration value="5_蓋版(各種)" />
+                            <xs:enumeration value="鉄筋ｺﾝｸﾘｰﾄU型 1種 JIS A 5372" />
+                            <xs:enumeration value="鉄筋ｺﾝｸﾘｰﾄU型 2種 JIS A 5372" />
+                            <xs:enumeration value="道路用鉄筋ｺﾝｸﾘｰﾄ側溝 1種 JIS A 5372" />
+                            <xs:enumeration value="道路用鉄筋ｺﾝｸﾘｰﾄ側溝 3種 JIS A 5372" />
+                            <xs:enumeration value="蓋版(各種)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -178,6 +200,17 @@
                     <baseName>
                         <simpleValue>側溝規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_樋門・樋管_水路工_側溝工_自由勾配側溝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>自由勾配側溝設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>自由勾配側溝</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

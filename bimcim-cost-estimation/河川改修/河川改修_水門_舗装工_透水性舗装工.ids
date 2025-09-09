@@ -66,6 +66,17 @@
                         <simpleValue>材料種類</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_舗装工_透水性舗装工_フィルター層</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌｨﾙﾀｰ層敷設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>フィルター層</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="下層路盤(歩道部)" ifcVersion="IFC2X3">
@@ -107,6 +118,17 @@
                         <simpleValue>1470400101_1561000101_1342800101_1581200101_B065905104</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_舗装工_透水性舗装工_下層路盤(歩道部)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>路盤材敷均し･締固め費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>下層路盤（歩道部）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_水門_舗装工_透水性舗装工_下層路盤(歩道部)</simpleValue>
@@ -116,13 +138,13 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｸﾗｯｼｬﾗﾝ C-20" />
-                            <xs:enumeration value="2_ｸﾗｯｼｬﾗﾝ C-30" />
-                            <xs:enumeration value="3_ｸﾗｯｼｬﾗﾝ C-40" />
-                            <xs:enumeration value="4_再生ｸﾗｯｼｬﾗﾝ RC-20" />
-                            <xs:enumeration value="5_再生ｸﾗｯｼｬﾗﾝ RC-30" />
-                            <xs:enumeration value="6_再生ｸﾗｯｼｬﾗﾝ RC-40" />
-                            <xs:enumeration value="7_路盤材(各種)" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ C-20" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ C-30" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ C-40" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ RC-20" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ RC-30" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ RC-40" />
+                            <xs:enumeration value="路盤材(各種)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -175,6 +197,17 @@
                         <simpleValue>1470400101_1561000101_1342800101_1581200101_B065900104</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_舗装工_透水性舗装工_下層路盤(車道・路肩部)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>路盤材敷均し･締固め費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>下層路盤（車道・路肩部）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_水門_舗装工_透水性舗装工_下層路盤(車道・路肩部)</simpleValue>
@@ -184,13 +217,13 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｸﾗｯｼｬﾗﾝ C-20" />
-                            <xs:enumeration value="2_ｸﾗｯｼｬﾗﾝ C-30" />
-                            <xs:enumeration value="3_ｸﾗｯｼｬﾗﾝ C-40" />
-                            <xs:enumeration value="4_再生ｸﾗｯｼｬﾗﾝ RC-20" />
-                            <xs:enumeration value="5_再生ｸﾗｯｼｬﾗﾝ RC-30" />
-                            <xs:enumeration value="6_再生ｸﾗｯｼｬﾗﾝ RC-40" />
-                            <xs:enumeration value="7_路盤材(各種)" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ C-20" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ C-30" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ C-40" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ RC-20" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ RC-30" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ RC-40" />
+                            <xs:enumeration value="路盤材(各種)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -244,9 +277,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1.4m未満" />
-                            <xs:enumeration value="2_1.4m以上2.4m未満" />
-                            <xs:enumeration value="3_2.4m以上" />
+                            <xs:enumeration value="1.4m未満" />
+                            <xs:enumeration value="1.4m以上2.4m未満" />
+                            <xs:enumeration value="2.4m以上" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -265,6 +298,17 @@
                     <baseName>
                         <simpleValue>材料規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_舗装工_透水性舗装工_表層</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>機械施工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>透水性アスファルト舗装</simpleValue>
+                    </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>

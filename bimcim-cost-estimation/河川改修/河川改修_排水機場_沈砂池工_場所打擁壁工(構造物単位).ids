@@ -44,6 +44,17 @@
                         <simpleValue>数量情報_202304_01_河川改修_排水機場_沈砂池工_場所打擁壁工(構造物単位)_L型擁壁</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>ガス圧接費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ガス圧接工（手動・自動）［市場単価］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_排水機場_沈砂池工_場所打擁壁工(構造物単位)_L型擁壁</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -59,37 +70,48 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_21-8-25(20)(普通)" />
-                            <xs:enumeration value="10_21-12-40(普通)" />
-                            <xs:enumeration value="11_24-8-40(普通)" />
-                            <xs:enumeration value="12_24-12-40(普通)" />
-                            <xs:enumeration value="13_21-8-25(20)(高炉)" />
-                            <xs:enumeration value="14_21-12-25(20)(高炉)" />
-                            <xs:enumeration value="15_24-8-25(20)(高炉)" />
-                            <xs:enumeration value="16_24-12-25(20)(高炉)" />
-                            <xs:enumeration value="17_18-8-40(高炉)" />
-                            <xs:enumeration value="18_18-12-40(高炉)" />
-                            <xs:enumeration value="19_21-8-40(高炉)" />
-                            <xs:enumeration value="2_21-12-25(20)(普通)" />
-                            <xs:enumeration value="20_21-12-40(高炉)" />
-                            <xs:enumeration value="21_24-8-40(高炉)" />
-                            <xs:enumeration value="22_24-12-40(高炉)" />
-                            <xs:enumeration value="23_21-8-25(早強)" />
-                            <xs:enumeration value="24_21-12-25(早強)" />
-                            <xs:enumeration value="25_24-8-25(早強)" />
-                            <xs:enumeration value="26_24-12-25(早強)" />
-                            <xs:enumeration value="27_18-8-25(高炉)" />
-                            <xs:enumeration value="28_18-12-25(高炉)" />
-                            <xs:enumeration value="29_各種" />
-                            <xs:enumeration value="3_24-8-25(20)(普通)" />
-                            <xs:enumeration value="4_24-12-25(20)(普通)" />
-                            <xs:enumeration value="5_27-8-25(20)(普通)" />
-                            <xs:enumeration value="6_27-12-25(20)(普通)" />
-                            <xs:enumeration value="7_18-8-40(普通)" />
-                            <xs:enumeration value="8_18-12-40(普通)" />
-                            <xs:enumeration value="9_21-8-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(普通)" />
+                            <xs:enumeration value="21-12-25(20)(普通)" />
+                            <xs:enumeration value="24-8-25(20)(普通)" />
+                            <xs:enumeration value="24-12-25(20)(普通)" />
+                            <xs:enumeration value="27-8-25(20)(普通)" />
+                            <xs:enumeration value="27-12-25(20)(普通)" />
+                            <xs:enumeration value="18-8-40(普通)" />
+                            <xs:enumeration value="18-12-40(普通)" />
+                            <xs:enumeration value="21-8-40(普通)" />
+                            <xs:enumeration value="21-12-40(普通)" />
+                            <xs:enumeration value="24-8-40(普通)" />
+                            <xs:enumeration value="24-12-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(高炉)" />
+                            <xs:enumeration value="21-12-25(20)(高炉)" />
+                            <xs:enumeration value="24-8-25(20)(高炉)" />
+                            <xs:enumeration value="24-12-25(20)(高炉)" />
+                            <xs:enumeration value="18-8-40(高炉)" />
+                            <xs:enumeration value="18-12-40(高炉)" />
+                            <xs:enumeration value="21-8-40(高炉)" />
+                            <xs:enumeration value="21-12-40(高炉)" />
+                            <xs:enumeration value="24-8-40(高炉)" />
+                            <xs:enumeration value="24-12-40(高炉)" />
+                            <xs:enumeration value="21-8-25(早強)" />
+                            <xs:enumeration value="21-12-25(早強)" />
+                            <xs:enumeration value="24-8-25(早強)" />
+                            <xs:enumeration value="24-12-25(早強)" />
+                            <xs:enumeration value="18-8-25(高炉)" />
+                            <xs:enumeration value="18-12-25(高炉)" />
+                            <xs:enumeration value="各種" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_排水機場_沈砂池工_場所打擁壁工(構造物単位)_L型擁壁</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ擁壁構築費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>Ｌ型擁壁</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -134,37 +156,103 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_21-8-25(20)(普通)" />
-                            <xs:enumeration value="10_21-12-40(普通)" />
-                            <xs:enumeration value="11_24-8-40(普通)" />
-                            <xs:enumeration value="12_24-12-40(普通)" />
-                            <xs:enumeration value="13_21-8-25(20)(高炉)" />
-                            <xs:enumeration value="14_21-12-25(20)(高炉)" />
-                            <xs:enumeration value="15_24-8-25(20)(高炉)" />
-                            <xs:enumeration value="16_24-12-25(20)(高炉)" />
-                            <xs:enumeration value="17_18-8-40(高炉)" />
-                            <xs:enumeration value="18_18-12-40(高炉)" />
-                            <xs:enumeration value="19_21-8-40(高炉)" />
-                            <xs:enumeration value="2_21-12-25(20)(普通)" />
-                            <xs:enumeration value="20_21-12-40(高炉)" />
-                            <xs:enumeration value="21_24-8-40(高炉)" />
-                            <xs:enumeration value="22_24-12-40(高炉)" />
-                            <xs:enumeration value="23_21-8-25(早強)" />
-                            <xs:enumeration value="24_21-12-25(早強)" />
-                            <xs:enumeration value="25_24-8-25(早強)" />
-                            <xs:enumeration value="26_24-12-25(早強)" />
-                            <xs:enumeration value="27_18-8-25(高炉)" />
-                            <xs:enumeration value="28_18-12-25(高炉)" />
-                            <xs:enumeration value="29_各種" />
-                            <xs:enumeration value="3_24-8-25(20)(普通)" />
-                            <xs:enumeration value="4_24-12-25(20)(普通)" />
-                            <xs:enumeration value="5_27-8-25(20)(普通)" />
-                            <xs:enumeration value="6_27-12-25(20)(普通)" />
-                            <xs:enumeration value="7_18-8-40(普通)" />
-                            <xs:enumeration value="8_18-12-40(普通)" />
-                            <xs:enumeration value="9_21-8-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(普通)" />
+                            <xs:enumeration value="21-12-25(20)(普通)" />
+                            <xs:enumeration value="24-8-25(20)(普通)" />
+                            <xs:enumeration value="24-12-25(20)(普通)" />
+                            <xs:enumeration value="27-8-25(20)(普通)" />
+                            <xs:enumeration value="27-12-25(20)(普通)" />
+                            <xs:enumeration value="18-8-40(普通)" />
+                            <xs:enumeration value="18-12-40(普通)" />
+                            <xs:enumeration value="21-8-40(普通)" />
+                            <xs:enumeration value="21-12-40(普通)" />
+                            <xs:enumeration value="24-8-40(普通)" />
+                            <xs:enumeration value="24-12-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(高炉)" />
+                            <xs:enumeration value="21-12-25(20)(高炉)" />
+                            <xs:enumeration value="24-8-25(20)(高炉)" />
+                            <xs:enumeration value="24-12-25(20)(高炉)" />
+                            <xs:enumeration value="18-8-40(高炉)" />
+                            <xs:enumeration value="18-12-40(高炉)" />
+                            <xs:enumeration value="21-8-40(高炉)" />
+                            <xs:enumeration value="21-12-40(高炉)" />
+                            <xs:enumeration value="24-8-40(高炉)" />
+                            <xs:enumeration value="24-12-40(高炉)" />
+                            <xs:enumeration value="21-8-25(早強)" />
+                            <xs:enumeration value="21-12-25(早強)" />
+                            <xs:enumeration value="24-8-25(早強)" />
+                            <xs:enumeration value="24-12-25(早強)" />
+                            <xs:enumeration value="18-8-25(高炉)" />
+                            <xs:enumeration value="18-12-25(高炉)" />
+                            <xs:enumeration value="各種" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_排水機場_沈砂池工_場所打擁壁工(構造物単位)_もたれ式擁壁</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ擁壁構築費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>もたれ式擁壁</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="シール材" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>シール材</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_排水機場_沈砂池工_場所打擁壁工(構造物単位)_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_排水機場_沈砂池工_場所打擁壁工(構造物単位)_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1479800101_1480500101_1569100101_B616000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_排水機場_沈砂池工_場所打擁壁工(構造物単位)_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼｰﾙ材設置(材料費)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>シール材（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_排水機場_沈砂池工_場所打擁壁工(構造物単位)_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼｰﾙ材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>シール材</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -200,6 +288,17 @@
                         <simpleValue>1470400101_1479800101_1480500101_1569100101_B575505201</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_排水機場_沈砂池工_場所打擁壁工(構造物単位)_ペーラインコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ペーラインコンクリート（材料費）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_排水機場_沈砂池工_場所打擁壁工(構造物単位)_ペーラインコンクリート</simpleValue>
@@ -209,35 +308,35 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_21-8-25(20)(普通)" />
-                            <xs:enumeration value="10_21-12-40(普通)" />
-                            <xs:enumeration value="11_24-8-40(普通)" />
-                            <xs:enumeration value="12_24-12-40(普通)" />
-                            <xs:enumeration value="13_21-8-25(20)(高炉)" />
-                            <xs:enumeration value="14_21-12-25(20)(高炉)" />
-                            <xs:enumeration value="15_24-8-25(20)(高炉)" />
-                            <xs:enumeration value="16_24-12-25(20)(高炉)" />
-                            <xs:enumeration value="17_18-8-40(高炉)" />
-                            <xs:enumeration value="18_18-12-40(高炉)" />
-                            <xs:enumeration value="19_21-8-40(高炉)" />
-                            <xs:enumeration value="2_21-12-25(20)(普通)" />
-                            <xs:enumeration value="20_21-12-40(高炉)" />
-                            <xs:enumeration value="21_24-8-40(高炉)" />
-                            <xs:enumeration value="22_24-12-40(高炉)" />
-                            <xs:enumeration value="23_21-8-25(早強)" />
-                            <xs:enumeration value="24_21-12-25(早強)" />
-                            <xs:enumeration value="25_24-8-25(早強)" />
-                            <xs:enumeration value="26_24-12-25(早強)" />
-                            <xs:enumeration value="27_18-8-25(高炉)" />
-                            <xs:enumeration value="28_18-12-25(高炉)" />
-                            <xs:enumeration value="29_各種" />
-                            <xs:enumeration value="3_24-8-25(20)(普通)" />
-                            <xs:enumeration value="4_24-12-25(20)(普通)" />
-                            <xs:enumeration value="5_27-8-25(20)(普通)" />
-                            <xs:enumeration value="6_27-12-25(20)(普通)" />
-                            <xs:enumeration value="7_18-8-40(普通)" />
-                            <xs:enumeration value="8_18-12-40(普通)" />
-                            <xs:enumeration value="9_21-8-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(普通)" />
+                            <xs:enumeration value="21-12-25(20)(普通)" />
+                            <xs:enumeration value="24-8-25(20)(普通)" />
+                            <xs:enumeration value="24-12-25(20)(普通)" />
+                            <xs:enumeration value="27-8-25(20)(普通)" />
+                            <xs:enumeration value="27-12-25(20)(普通)" />
+                            <xs:enumeration value="18-8-40(普通)" />
+                            <xs:enumeration value="18-12-40(普通)" />
+                            <xs:enumeration value="21-8-40(普通)" />
+                            <xs:enumeration value="21-12-40(普通)" />
+                            <xs:enumeration value="24-8-40(普通)" />
+                            <xs:enumeration value="24-12-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(高炉)" />
+                            <xs:enumeration value="21-12-25(20)(高炉)" />
+                            <xs:enumeration value="24-8-25(20)(高炉)" />
+                            <xs:enumeration value="24-12-25(20)(高炉)" />
+                            <xs:enumeration value="18-8-40(高炉)" />
+                            <xs:enumeration value="18-12-40(高炉)" />
+                            <xs:enumeration value="21-8-40(高炉)" />
+                            <xs:enumeration value="21-12-40(高炉)" />
+                            <xs:enumeration value="24-8-40(高炉)" />
+                            <xs:enumeration value="24-12-40(高炉)" />
+                            <xs:enumeration value="21-8-25(早強)" />
+                            <xs:enumeration value="21-12-25(早強)" />
+                            <xs:enumeration value="24-8-25(早強)" />
+                            <xs:enumeration value="24-12-25(早強)" />
+                            <xs:enumeration value="18-8-25(高炉)" />
+                            <xs:enumeration value="18-12-25(高炉)" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -272,6 +371,28 @@
                     </baseName>
                     <value>
                         <simpleValue>1470400101_1479800101_1480500101_1569100101_B575505101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_排水機場_沈砂池工_場所打擁壁工(構造物単位)_化粧型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>化粧型枠</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>化粧型枠</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_排水機場_沈砂池工_場所打擁壁工(構造物単位)_化粧型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>化粧型枠(材料費)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>化粧型枠（材料費）</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -324,9 +445,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_0.5m以上0.6m未満" />
-                            <xs:enumeration value="2_0.6m以上0.8m未満" />
-                            <xs:enumeration value="3_0.8m以上1.0m以下" />
+                            <xs:enumeration value="0.5m以上0.6m未満" />
+                            <xs:enumeration value="0.6m以上0.8m未満" />
+                            <xs:enumeration value="0.8m以上1.0m以下" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -339,37 +460,48 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_21-8-25(20)(普通)" />
-                            <xs:enumeration value="10_21-12-40(普通)" />
-                            <xs:enumeration value="11_24-8-40(普通)" />
-                            <xs:enumeration value="12_24-12-40(普通)" />
-                            <xs:enumeration value="13_21-8-25(20)(高炉)" />
-                            <xs:enumeration value="14_21-12-25(20)(高炉)" />
-                            <xs:enumeration value="15_24-8-25(20)(高炉)" />
-                            <xs:enumeration value="16_24-12-25(20)(高炉)" />
-                            <xs:enumeration value="17_18-8-40(高炉)" />
-                            <xs:enumeration value="18_18-12-40(高炉)" />
-                            <xs:enumeration value="19_21-8-40(高炉)" />
-                            <xs:enumeration value="2_21-12-25(20)(普通)" />
-                            <xs:enumeration value="20_21-12-40(高炉)" />
-                            <xs:enumeration value="21_24-8-40(高炉)" />
-                            <xs:enumeration value="22_24-12-40(高炉)" />
-                            <xs:enumeration value="23_21-8-25(早強)" />
-                            <xs:enumeration value="24_21-12-25(早強)" />
-                            <xs:enumeration value="25_24-8-25(早強)" />
-                            <xs:enumeration value="26_24-12-25(早強)" />
-                            <xs:enumeration value="27_18-8-25(高炉)" />
-                            <xs:enumeration value="28_18-12-25(高炉)" />
-                            <xs:enumeration value="29_各種" />
-                            <xs:enumeration value="3_24-8-25(20)(普通)" />
-                            <xs:enumeration value="4_24-12-25(20)(普通)" />
-                            <xs:enumeration value="5_27-8-25(20)(普通)" />
-                            <xs:enumeration value="6_27-12-25(20)(普通)" />
-                            <xs:enumeration value="7_18-8-40(普通)" />
-                            <xs:enumeration value="8_18-12-40(普通)" />
-                            <xs:enumeration value="9_21-8-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(普通)" />
+                            <xs:enumeration value="21-12-25(20)(普通)" />
+                            <xs:enumeration value="24-8-25(20)(普通)" />
+                            <xs:enumeration value="24-12-25(20)(普通)" />
+                            <xs:enumeration value="27-8-25(20)(普通)" />
+                            <xs:enumeration value="27-12-25(20)(普通)" />
+                            <xs:enumeration value="18-8-40(普通)" />
+                            <xs:enumeration value="18-12-40(普通)" />
+                            <xs:enumeration value="21-8-40(普通)" />
+                            <xs:enumeration value="21-12-40(普通)" />
+                            <xs:enumeration value="24-8-40(普通)" />
+                            <xs:enumeration value="24-12-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(高炉)" />
+                            <xs:enumeration value="21-12-25(20)(高炉)" />
+                            <xs:enumeration value="24-8-25(20)(高炉)" />
+                            <xs:enumeration value="24-12-25(20)(高炉)" />
+                            <xs:enumeration value="18-8-40(高炉)" />
+                            <xs:enumeration value="18-12-40(高炉)" />
+                            <xs:enumeration value="21-8-40(高炉)" />
+                            <xs:enumeration value="21-12-40(高炉)" />
+                            <xs:enumeration value="24-8-40(高炉)" />
+                            <xs:enumeration value="24-12-40(高炉)" />
+                            <xs:enumeration value="21-8-25(早強)" />
+                            <xs:enumeration value="21-12-25(早強)" />
+                            <xs:enumeration value="24-8-25(早強)" />
+                            <xs:enumeration value="24-12-25(早強)" />
+                            <xs:enumeration value="18-8-25(高炉)" />
+                            <xs:enumeration value="18-12-25(高炉)" />
+                            <xs:enumeration value="各種" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_排水機場_沈砂池工_場所打擁壁工(構造物単位)_小型擁壁</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ擁壁構築費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>小型擁壁</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -414,19 +546,41 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_FF(塩ﾋﾞ製)200×5" />
-                            <xs:enumeration value="10_CC300×7" />
-                            <xs:enumeration value="11_UC200×6" />
-                            <xs:enumeration value="12_各種" />
-                            <xs:enumeration value="2_FC(塩ﾋﾞ製)200×5" />
-                            <xs:enumeration value="3_CF(塩ﾋﾞ製)200×5" />
-                            <xs:enumeration value="4_CF(塩ﾋﾞ製)230×9" />
-                            <xs:enumeration value="5_CC(塩ﾋﾞ製)200×5" />
-                            <xs:enumeration value="6_UC(塩ﾋﾞ製)300×7" />
-                            <xs:enumeration value="7_S.R(塩ﾋﾞ製)200×5" />
-                            <xs:enumeration value="8_S.SF(塩ﾋﾞ製)200×5" />
-                            <xs:enumeration value="9_CF300×7" />
+                            <xs:enumeration value="FF(塩ﾋﾞ製)200×5" />
+                            <xs:enumeration value="FC(塩ﾋﾞ製)200×5" />
+                            <xs:enumeration value="CF(塩ﾋﾞ製)200×5" />
+                            <xs:enumeration value="CF(塩ﾋﾞ製)230×9" />
+                            <xs:enumeration value="CC(塩ﾋﾞ製)200×5" />
+                            <xs:enumeration value="UC(塩ﾋﾞ製)300×7" />
+                            <xs:enumeration value="S.R(塩ﾋﾞ製)200×5" />
+                            <xs:enumeration value="S.SF(塩ﾋﾞ製)200×5" />
+                            <xs:enumeration value="CF300×7" />
+                            <xs:enumeration value="CC300×7" />
+                            <xs:enumeration value="UC200×6" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_排水機場_沈砂池工_場所打擁壁工(構造物単位)_止水板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>止水板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>止水板</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_排水機場_沈砂池工_場所打擁壁工(構造物単位)_止水板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>止水板設置費(砂防)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>止水板設置</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -471,17 +625,28 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｸﾗｯｼｬﾗﾝ40～0" />
-                            <xs:enumeration value="10_砕石(各種)" />
-                            <xs:enumeration value="2_ｸﾗｯｼｬﾗﾝ30～0" />
-                            <xs:enumeration value="3_ｸﾗｯｼｬﾗﾝ20～0" />
-                            <xs:enumeration value="4_高炉ｽﾗｸﾞCS-40" />
-                            <xs:enumeration value="5_高炉ｽﾗｸﾞMS-25" />
-                            <xs:enumeration value="6_高炉ｽﾗｸﾞHMS-25" />
-                            <xs:enumeration value="7_ｸﾗｯｼｬﾗﾝ80～0" />
-                            <xs:enumeration value="8_再生ｸﾗｯｼｬﾗﾝ40～0" />
-                            <xs:enumeration value="9_再生ｸﾗｯｼｬﾗﾝ80～0" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ40～0" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ30～0" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ20～0" />
+                            <xs:enumeration value="高炉ｽﾗｸﾞCS-40" />
+                            <xs:enumeration value="高炉ｽﾗｸﾞMS-25" />
+                            <xs:enumeration value="高炉ｽﾗｸﾞHMS-25" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ80～0" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ40～0" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ80～0" />
+                            <xs:enumeration value="砕石(各種)" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_排水機場_沈砂池工_場所打擁壁工(構造物単位)_裏込砕石</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>裏込砕石費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>裏込砕石</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -511,6 +676,17 @@
                         <simpleValue>数量情報_202304_01_河川改修_排水機場_沈砂池工_場所打擁壁工(構造物単位)_逆T型擁壁</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>ガス圧接費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ガス圧接工（手動・自動）［市場単価］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_排水機場_沈砂池工_場所打擁壁工(構造物単位)_逆T型擁壁</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -526,37 +702,48 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_21-8-25(20)(普通)" />
-                            <xs:enumeration value="10_21-12-40(普通)" />
-                            <xs:enumeration value="11_24-8-40(普通)" />
-                            <xs:enumeration value="12_24-12-40(普通)" />
-                            <xs:enumeration value="13_21-8-25(20)(高炉)" />
-                            <xs:enumeration value="14_21-12-25(20)(高炉)" />
-                            <xs:enumeration value="15_24-8-25(20)(高炉)" />
-                            <xs:enumeration value="16_24-12-25(20)(高炉)" />
-                            <xs:enumeration value="17_18-8-40(高炉)" />
-                            <xs:enumeration value="18_18-12-40(高炉)" />
-                            <xs:enumeration value="19_21-8-40(高炉)" />
-                            <xs:enumeration value="2_21-12-25(20)(普通)" />
-                            <xs:enumeration value="20_21-12-40(高炉)" />
-                            <xs:enumeration value="21_24-8-40(高炉)" />
-                            <xs:enumeration value="22_24-12-40(高炉)" />
-                            <xs:enumeration value="23_21-8-25(早強)" />
-                            <xs:enumeration value="24_21-12-25(早強)" />
-                            <xs:enumeration value="25_24-8-25(早強)" />
-                            <xs:enumeration value="26_24-12-25(早強)" />
-                            <xs:enumeration value="27_18-8-25(高炉)" />
-                            <xs:enumeration value="28_18-12-25(高炉)" />
-                            <xs:enumeration value="29_各種" />
-                            <xs:enumeration value="3_24-8-25(20)(普通)" />
-                            <xs:enumeration value="4_24-12-25(20)(普通)" />
-                            <xs:enumeration value="5_27-8-25(20)(普通)" />
-                            <xs:enumeration value="6_27-12-25(20)(普通)" />
-                            <xs:enumeration value="7_18-8-40(普通)" />
-                            <xs:enumeration value="8_18-12-40(普通)" />
-                            <xs:enumeration value="9_21-8-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(普通)" />
+                            <xs:enumeration value="21-12-25(20)(普通)" />
+                            <xs:enumeration value="24-8-25(20)(普通)" />
+                            <xs:enumeration value="24-12-25(20)(普通)" />
+                            <xs:enumeration value="27-8-25(20)(普通)" />
+                            <xs:enumeration value="27-12-25(20)(普通)" />
+                            <xs:enumeration value="18-8-40(普通)" />
+                            <xs:enumeration value="18-12-40(普通)" />
+                            <xs:enumeration value="21-8-40(普通)" />
+                            <xs:enumeration value="21-12-40(普通)" />
+                            <xs:enumeration value="24-8-40(普通)" />
+                            <xs:enumeration value="24-12-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(高炉)" />
+                            <xs:enumeration value="21-12-25(20)(高炉)" />
+                            <xs:enumeration value="24-8-25(20)(高炉)" />
+                            <xs:enumeration value="24-12-25(20)(高炉)" />
+                            <xs:enumeration value="18-8-40(高炉)" />
+                            <xs:enumeration value="18-12-40(高炉)" />
+                            <xs:enumeration value="21-8-40(高炉)" />
+                            <xs:enumeration value="21-12-40(高炉)" />
+                            <xs:enumeration value="24-8-40(高炉)" />
+                            <xs:enumeration value="24-12-40(高炉)" />
+                            <xs:enumeration value="21-8-25(早強)" />
+                            <xs:enumeration value="21-12-25(早強)" />
+                            <xs:enumeration value="24-8-25(早強)" />
+                            <xs:enumeration value="24-12-25(早強)" />
+                            <xs:enumeration value="18-8-25(高炉)" />
+                            <xs:enumeration value="18-12-25(高炉)" />
+                            <xs:enumeration value="各種" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_排水機場_沈砂池工_場所打擁壁工(構造物単位)_逆T型擁壁</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ擁壁構築費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>逆Ｔ型擁壁</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -601,8 +788,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1mを超え2m未満" />
-                            <xs:enumeration value="2_2m以上5m以下" />
+                            <xs:enumeration value="1mを超え2m未満" />
+                            <xs:enumeration value="2m以上5m以下" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -615,37 +802,48 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_21-8-25(20)(普通)" />
-                            <xs:enumeration value="10_21-12-40(普通)" />
-                            <xs:enumeration value="11_24-8-40(普通)" />
-                            <xs:enumeration value="12_24-12-40(普通)" />
-                            <xs:enumeration value="13_21-8-25(20)(高炉)" />
-                            <xs:enumeration value="14_21-12-25(20)(高炉)" />
-                            <xs:enumeration value="15_24-8-25(20)(高炉)" />
-                            <xs:enumeration value="16_24-12-25(20)(高炉)" />
-                            <xs:enumeration value="17_18-8-40(高炉)" />
-                            <xs:enumeration value="18_18-12-40(高炉)" />
-                            <xs:enumeration value="19_21-8-40(高炉)" />
-                            <xs:enumeration value="2_21-12-25(20)(普通)" />
-                            <xs:enumeration value="20_21-12-40(高炉)" />
-                            <xs:enumeration value="21_24-8-40(高炉)" />
-                            <xs:enumeration value="22_24-12-40(高炉)" />
-                            <xs:enumeration value="23_21-8-25(早強)" />
-                            <xs:enumeration value="24_21-12-25(早強)" />
-                            <xs:enumeration value="25_24-8-25(早強)" />
-                            <xs:enumeration value="26_24-12-25(早強)" />
-                            <xs:enumeration value="27_18-8-25(高炉)" />
-                            <xs:enumeration value="28_18-12-25(高炉)" />
-                            <xs:enumeration value="29_各種" />
-                            <xs:enumeration value="3_24-8-25(20)(普通)" />
-                            <xs:enumeration value="4_24-12-25(20)(普通)" />
-                            <xs:enumeration value="5_27-8-25(20)(普通)" />
-                            <xs:enumeration value="6_27-12-25(20)(普通)" />
-                            <xs:enumeration value="7_18-8-40(普通)" />
-                            <xs:enumeration value="8_18-12-40(普通)" />
-                            <xs:enumeration value="9_21-8-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(普通)" />
+                            <xs:enumeration value="21-12-25(20)(普通)" />
+                            <xs:enumeration value="24-8-25(20)(普通)" />
+                            <xs:enumeration value="24-12-25(20)(普通)" />
+                            <xs:enumeration value="27-8-25(20)(普通)" />
+                            <xs:enumeration value="27-12-25(20)(普通)" />
+                            <xs:enumeration value="18-8-40(普通)" />
+                            <xs:enumeration value="18-12-40(普通)" />
+                            <xs:enumeration value="21-8-40(普通)" />
+                            <xs:enumeration value="21-12-40(普通)" />
+                            <xs:enumeration value="24-8-40(普通)" />
+                            <xs:enumeration value="24-12-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(高炉)" />
+                            <xs:enumeration value="21-12-25(20)(高炉)" />
+                            <xs:enumeration value="24-8-25(20)(高炉)" />
+                            <xs:enumeration value="24-12-25(20)(高炉)" />
+                            <xs:enumeration value="18-8-40(高炉)" />
+                            <xs:enumeration value="18-12-40(高炉)" />
+                            <xs:enumeration value="21-8-40(高炉)" />
+                            <xs:enumeration value="21-12-40(高炉)" />
+                            <xs:enumeration value="24-8-40(高炉)" />
+                            <xs:enumeration value="24-12-40(高炉)" />
+                            <xs:enumeration value="21-8-25(早強)" />
+                            <xs:enumeration value="21-12-25(早強)" />
+                            <xs:enumeration value="24-8-25(早強)" />
+                            <xs:enumeration value="24-12-25(早強)" />
+                            <xs:enumeration value="18-8-25(高炉)" />
+                            <xs:enumeration value="18-12-25(高炉)" />
+                            <xs:enumeration value="各種" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_排水機場_沈砂池工_場所打擁壁工(構造物単位)_重力式擁壁</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ擁壁構築費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>重力式擁壁</simpleValue>
                     </value>
                 </property>
             </requirements>

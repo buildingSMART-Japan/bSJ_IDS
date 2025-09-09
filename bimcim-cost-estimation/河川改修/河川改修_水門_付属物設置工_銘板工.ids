@@ -50,6 +50,17 @@
                         <simpleValue>1470400101_1561000101_1536400301_1105300101_1105500101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_付属物設置工_銘板工_表示板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>表示板材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（枚）</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_水門_付属物設置工_銘板工_表示板</simpleValue>
@@ -106,6 +117,17 @@
                     <baseName>
                         <simpleValue>材質</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_付属物設置工_銘板工_銘板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>銘板材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（枚）</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

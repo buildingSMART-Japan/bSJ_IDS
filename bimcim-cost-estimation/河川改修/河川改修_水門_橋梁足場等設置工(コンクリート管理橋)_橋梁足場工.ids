@@ -19,6 +19,50 @@
         <milestone>詳細設計</milestone>
     </info>
     <specifications>
+        <specification name="側面塗装足場" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>側面塗装足場</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_橋梁足場等設置工(コンクリート管理橋)_橋梁足場工_側面塗装足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_橋梁足場等設置工(コンクリート管理橋)_橋梁足場工_側面塗装足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1561000101_1588700101_1579500101_1386700101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_橋梁足場等設置工(コンクリート管理橋)_橋梁足場工_側面塗装足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>側面塗装足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>側面塗装足場</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
         <specification name="塗装足場" ifcVersion="IFC2X3">
             <applicability minOccurs="1" maxOccurs="1">
                 <attribute>
@@ -55,14 +99,30 @@
                         <simpleValue>数量情報_202304_01_河川改修_水門_橋梁足場等設置工(コンクリート管理橋)_橋梁足場工_塗装足場</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>塗装足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="主体足場（パイプ吊足場）" />
+                            <xs:enumeration value="主体足場（ワイヤーブリッジ転用足場）" />
+                            <xs:enumeration value="中段足場" />
+                            <xs:enumeration value="朝顔" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_橋梁足場等設置工(コンクリート管理橋)_橋梁足場工_塗装足場</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>橋梁の種類</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾌﾟﾚｰﾄｶﾞｰﾀﾞ･ﾎﾞｯｸｽｶﾞｰﾀﾞ" />
-                            <xs:enumeration value="2_ﾗｰﾒﾝ" />
-                            <xs:enumeration value="3_ﾄﾗｽ･ｱｰﾁ" />
-                            <xs:enumeration value="4_少数Ｉ桁" />
+                            <xs:enumeration value="ﾌﾟﾚｰﾄｶﾞｰﾀﾞ･ﾎﾞｯｸｽｶﾞｰﾀﾞ" />
+                            <xs:enumeration value="ﾗｰﾒﾝ" />
+                            <xs:enumeration value="ﾄﾗｽ･ｱｰﾁ" />
+                            <xs:enumeration value="少数Ｉ桁" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -104,15 +164,76 @@
                         <simpleValue>数量情報_202304_01_河川改修_水門_橋梁足場等設置工(コンクリート管理橋)_橋梁足場工_床版足場</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>床版足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="主体足場（パイプ吊足場）" />
+                            <xs:enumeration value="主体足場（ワイヤーブリッジ転用足場）" />
+                            <xs:enumeration value="中段足場" />
+                            <xs:enumeration value="床版追加足場" />
+                            <xs:enumeration value="朝顔" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_橋梁足場等設置工(コンクリート管理橋)_橋梁足場工_床版足場</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>橋梁の種類</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾌﾟﾚｰﾄｶﾞｰﾀﾞ･ﾎﾞｯｸｽｶﾞｰﾀﾞ" />
-                            <xs:enumeration value="2_ﾗｰﾒﾝ" />
-                            <xs:enumeration value="3_ﾄﾗｽ･ｱｰﾁ" />
-                            <xs:enumeration value="4_少数Ｉ桁" />
+                            <xs:enumeration value="ﾌﾟﾚｰﾄｶﾞｰﾀﾞ･ﾎﾞｯｸｽｶﾞｰﾀﾞ" />
+                            <xs:enumeration value="ﾗｰﾒﾝ" />
+                            <xs:enumeration value="ﾄﾗｽ･ｱｰﾁ" />
+                            <xs:enumeration value="少数Ｉ桁" />
                         </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="支承設置用足場" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>支承設置用足場</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_橋梁足場等設置工(コンクリート管理橋)_橋梁足場工_支承設置用足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_橋梁足場等設置工(コンクリート管理橋)_橋梁足場工_支承設置用足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1561000101_1588700101_1579500101_1386900101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_橋梁足場等設置工(コンクリート管理橋)_橋梁足場工_支承設置用足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支承設置用足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>支承設置用足場（ｍ）</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -153,14 +274,32 @@
                         <simpleValue>数量情報_202304_01_河川改修_水門_橋梁足場等設置工(コンクリート管理橋)_橋梁足場工_架設足場</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>架設足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="主体足場（パイプ吊足場）" />
+                            <xs:enumeration value="主体足場（ワイヤーブリッジ転用足場）" />
+                            <xs:enumeration value="中段足場" />
+                            <xs:enumeration value="安全通路" />
+                            <xs:enumeration value="部分作業床" />
+                            <xs:enumeration value="朝顔" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_橋梁足場等設置工(コンクリート管理橋)_橋梁足場工_架設足場</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>橋梁の種類</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾌﾟﾚｰﾄｶﾞｰﾀﾞ･ﾎﾞｯｸｽｶﾞｰﾀﾞ" />
-                            <xs:enumeration value="2_ﾗｰﾒﾝ" />
-                            <xs:enumeration value="3_ﾄﾗｽ･ｱｰﾁ" />
-                            <xs:enumeration value="4_少数Ｉ桁" />
+                            <xs:enumeration value="ﾌﾟﾚｰﾄｶﾞｰﾀﾞ･ﾎﾞｯｸｽｶﾞｰﾀﾞ" />
+                            <xs:enumeration value="ﾗｰﾒﾝ" />
+                            <xs:enumeration value="ﾄﾗｽ･ｱｰﾁ" />
+                            <xs:enumeration value="少数Ｉ桁" />
                         </xs:restriction>
                     </value>
                 </property>

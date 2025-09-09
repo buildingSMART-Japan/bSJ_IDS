@@ -66,6 +66,39 @@
                         <simpleValue>土質区分</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_光ケーブル配管工_作業土工_埋戻し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>埋戻し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>埋戻し・締固め</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_光ケーブル配管工_作業土工_埋戻し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>埋設表示ｼｰﾄ材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>埋設表示シート（材料費)</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_光ケーブル配管工_作業土工_埋戻し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>敷砂，保護砂（材料費）</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="掘削(光ケーブル配管)" ifcVersion="IFC2X3">
@@ -116,9 +149,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_押土有" />
-                            <xs:enumeration value="2_押土無" />
+                            <xs:enumeration value="押土有" />
+                            <xs:enumeration value="押土無" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_光ケーブル配管工_作業土工_掘削(光ケーブル配管)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>掘削費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>掘削（光ケーブル配管）</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -146,8 +190,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_障害有" />
-                            <xs:enumeration value="2_障害無" />
+                            <xs:enumeration value="障害有" />
+                            <xs:enumeration value="障害無" />
                         </xs:restriction>
                     </value>
                 </property>

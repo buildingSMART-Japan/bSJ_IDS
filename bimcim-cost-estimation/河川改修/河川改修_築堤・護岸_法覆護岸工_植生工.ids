@@ -50,6 +50,17 @@
                         <simpleValue>1470400101_1045600101_1053200101_1058200501_B058800101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_植生工_市松芝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>散水養生費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>養生（散水養生）</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_植生工_市松芝</simpleValue>
@@ -57,6 +68,17 @@
                     <baseName>
                         <simpleValue>施工規模</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_植生工_市松芝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>芝張費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>市松芝</simpleValue>
+                    </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
@@ -67,8 +89,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_高麗芝" />
-                            <xs:enumeration value="2_野芝" />
+                            <xs:enumeration value="高麗芝" />
+                            <xs:enumeration value="野芝" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -105,6 +127,17 @@
                         <simpleValue>1470400101_1045600101_1053200101_1058200501_B058600101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_植生工_張芝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>張芝費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>人力施工による植生工</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_植生工_張芝</simpleValue>
@@ -114,12 +147,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1000m2以上" />
-                            <xs:enumeration value="2_500m2以上1000m2未満" />
-                            <xs:enumeration value="3_500m2未満" />
-                            <xs:enumeration value="4_500m2以上" />
-                            <xs:enumeration value="5_300m2以上500m2未満" />
-                            <xs:enumeration value="6_300m2未満" />
+                            <xs:enumeration value="1000m2以上" />
+                            <xs:enumeration value="500m2以上1000m2未満" />
+                            <xs:enumeration value="500m2未満" />
+                            <xs:enumeration value="500m2以上" />
+                            <xs:enumeration value="300m2以上500m2未満" />
+                            <xs:enumeration value="300m2未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -132,12 +165,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_植生ﾏｯﾄ工" />
-                            <xs:enumeration value="2_植生ｼｰﾄ工(標準品)" />
-                            <xs:enumeration value="3_植生ｼｰﾄ工(環境品)" />
-                            <xs:enumeration value="4_植生筋工" />
-                            <xs:enumeration value="5_筋芝工" />
-                            <xs:enumeration value="6_張芝工" />
+                            <xs:enumeration value="植生ﾏｯﾄ工" />
+                            <xs:enumeration value="植生ｼｰﾄ工(標準品)" />
+                            <xs:enumeration value="植生ｼｰﾄ工(環境品)" />
+                            <xs:enumeration value="植生筋工" />
+                            <xs:enumeration value="筋芝工" />
+                            <xs:enumeration value="張芝工" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -183,11 +216,22 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1000m2以上" />
-                            <xs:enumeration value="2_500m2以上1000m2未満" />
-                            <xs:enumeration value="3_250m2以上500m2未満" />
-                            <xs:enumeration value="4_250m2未満" />
+                            <xs:enumeration value="1000m2以上" />
+                            <xs:enumeration value="500m2以上1000m2未満" />
+                            <xs:enumeration value="250m2以上500m2未満" />
+                            <xs:enumeration value="250m2未満" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_植生工_種子散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>種子散布費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>機械播種施工による植生工</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -198,6 +242,17 @@
                         <simpleValue>種子規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_植生工_種子散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>繊維ﾈｯﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>繊維ネット工</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_植生工_種子散布</simpleValue>
@@ -207,9 +262,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_肥料有り" />
-                            <xs:enumeration value="2_肥料無し" />
+                            <xs:enumeration value="肥料有り" />
+                            <xs:enumeration value="肥料無し" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_植生工_種子散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾗｽ張費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ラス張工［市場単価］</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -254,13 +320,24 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1000m2以上" />
-                            <xs:enumeration value="2_500m2以上1000m2未満" />
-                            <xs:enumeration value="3_500m2未満" />
-                            <xs:enumeration value="4_500m2以上" />
-                            <xs:enumeration value="5_300m2以上500m2未満" />
-                            <xs:enumeration value="6_300m2未満" />
+                            <xs:enumeration value="1000m2以上" />
+                            <xs:enumeration value="500m2以上1000m2未満" />
+                            <xs:enumeration value="500m2未満" />
+                            <xs:enumeration value="500m2以上" />
+                            <xs:enumeration value="300m2以上500m2未満" />
+                            <xs:enumeration value="300m2未満" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_法覆護岸工_植生工_筋芝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>筋芝費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>人力施工による植生工</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -272,12 +349,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_植生ﾏｯﾄ工" />
-                            <xs:enumeration value="2_植生ｼｰﾄ工(標準品)" />
-                            <xs:enumeration value="3_植生ｼｰﾄ工(環境品)" />
-                            <xs:enumeration value="4_植生筋工" />
-                            <xs:enumeration value="5_筋芝工" />
-                            <xs:enumeration value="6_張芝工" />
+                            <xs:enumeration value="植生ﾏｯﾄ工" />
+                            <xs:enumeration value="植生ｼｰﾄ工(標準品)" />
+                            <xs:enumeration value="植生ｼｰﾄ工(環境品)" />
+                            <xs:enumeration value="植生筋工" />
+                            <xs:enumeration value="筋芝工" />
+                            <xs:enumeration value="張芝工" />
                         </xs:restriction>
                     </value>
                 </property>

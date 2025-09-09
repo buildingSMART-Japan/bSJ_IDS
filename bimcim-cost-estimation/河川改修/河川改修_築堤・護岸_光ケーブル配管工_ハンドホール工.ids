@@ -58,6 +58,17 @@
                         <simpleValue>寸法</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_築堤・護岸_光ケーブル配管工_ハンドホール工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾊﾝﾄﾞﾎｰﾙ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ハンドホール</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
     </specifications>
