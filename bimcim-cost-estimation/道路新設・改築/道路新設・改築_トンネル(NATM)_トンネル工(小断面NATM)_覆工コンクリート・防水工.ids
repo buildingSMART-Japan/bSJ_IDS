@@ -50,6 +50,17 @@
                         <simpleValue>1470700101_1482900101_1604400101_1603600104_1603800501</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_トンネル工(小断面NATM)_覆工コンクリート・防水工_覆工コンクリート・防水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠工（覆工コンクリート）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_トンネル工(小断面NATM)_覆工コンクリート・防水工_覆工コンクリート・防水</simpleValue>
@@ -59,12 +70,34 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_B" />
-                            <xs:enumeration value="2_CI" />
-                            <xs:enumeration value="3_CII" />
-                            <xs:enumeration value="4_DI" />
-                            <xs:enumeration value="5_DII" />
+                            <xs:enumeration value="B" />
+                            <xs:enumeration value="CI" />
+                            <xs:enumeration value="CII" />
+                            <xs:enumeration value="DI" />
+                            <xs:enumeration value="DII" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_トンネル工(小断面NATM)_覆工コンクリート・防水工_覆工コンクリート・防水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>覆工コンクリート工等</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_トンネル工(小断面NATM)_覆工コンクリート・防水工_覆工コンクリート・防水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防水費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>防水工</simpleValue>
                     </value>
                 </property>
             </requirements>

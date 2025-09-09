@@ -50,6 +50,28 @@
                         <simpleValue>1470700101_1482900101_1485400101_1485500101_1548300101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_インバート工_インバート掘削工_インバート掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>埋戻し費(敷均し･締固め)(CI･CII)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>インバート敷均し締固め工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_インバート工_インバート掘削工_インバート掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>埋戻し費(敷均し･締固め)(DI･DII･DIII)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>インバート敷均し締固め工</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_インバート工_インバート掘削工_インバート掘削</simpleValue>
@@ -59,12 +81,78 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_CI" />
-                            <xs:enumeration value="2_CII" />
-                            <xs:enumeration value="3_DI" />
-                            <xs:enumeration value="4_DII" />
-                            <xs:enumeration value="5_DIII" />
+                            <xs:enumeration value="CI" />
+                            <xs:enumeration value="CII" />
+                            <xs:enumeration value="DI" />
+                            <xs:enumeration value="DII" />
+                            <xs:enumeration value="DIII" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_インバート工_インバート掘削工_インバート掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>積込費(CI･CII)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>埋戻材の積込作業</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_インバート工_インバート掘削工_インバート掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>積込費(DI･DII･DIII)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>埋戻材の積込作業</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_インバート工_インバート掘削工_インバート掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>運搬費(CI･CII)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>インバートずり出し工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_インバート工_インバート掘削工_インバート掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>運搬費(DI･DII･DIII)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>インバートずり出し工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_インバート工_インバート掘削工_インバート掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｲﾝﾊﾞｰﾄ掘削費(CI･CII)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>インバート掘削工（大型ブレーカ掘削）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_インバート工_インバート掘削工_インバート掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｲﾝﾊﾞｰﾄ掘削費(DI･DII･DIII)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>インバート掘削工（大型ブレーカ掘削）</simpleValue>
                     </value>
                 </property>
             </requirements>

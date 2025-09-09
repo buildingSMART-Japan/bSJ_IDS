@@ -66,6 +66,17 @@
                         <simpleValue>固化材の種類</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_地盤改良工_路床安定処理工_安定処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>安定処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>安定処理</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_舗装_地盤改良工_路床安定処理工_安定処理</simpleValue>
@@ -75,8 +86,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｽﾀﾋﾞﾗｲｻﾞ(標準)" />
-                            <xs:enumeration value="2_ﾊﾞｯｸﾎｳ" />
+                            <xs:enumeration value="ｽﾀﾋﾞﾗｲｻﾞ(標準)" />
+                            <xs:enumeration value="ﾊﾞｯｸﾎｳ" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -89,8 +100,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_路床" />
-                            <xs:enumeration value="2_構造物基礎" />
+                            <xs:enumeration value="路床" />
+                            <xs:enumeration value="構造物基礎" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -103,10 +114,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_0.6m以下" />
-                            <xs:enumeration value="2_0.6mを超え1m以下" />
-                            <xs:enumeration value="3_1m以下" />
-                            <xs:enumeration value="4_1mを超え2m以下" />
+                            <xs:enumeration value="0.6m以下" />
+                            <xs:enumeration value="0.6mを超え1m以下" />
+                            <xs:enumeration value="1m以下" />
+                            <xs:enumeration value="1mを超え2m以下" />
                         </xs:restriction>
                     </value>
                 </property>

@@ -59,9 +59,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_砂材料費有" />
-                            <xs:enumeration value="2_砂材料費無" />
+                            <xs:enumeration value="砂材料費有" />
+                            <xs:enumeration value="砂材料費無" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_サンドマット工_サンドマット</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｻﾝﾄﾞﾏｯﾄ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>サンドマット</simpleValue>
                     </value>
                 </property>
             </requirements>

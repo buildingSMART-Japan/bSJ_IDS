@@ -44,6 +44,17 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_橋梁付属物工_地覆工_プレキャスト地覆</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>付属材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_橋梁付属物工_地覆工_プレキャスト地覆</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -57,6 +68,17 @@
                     <baseName>
                         <simpleValue>底幅</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_橋梁付属物工_地覆工_プレキャスト地覆</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ）</simpleValue>
+                    </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
@@ -73,6 +95,17 @@
                     <baseName>
                         <simpleValue>ﾌﾞﾛｯｸ規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_橋梁付属物工_地覆工_プレキャスト地覆</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ地覆設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>プレキャスト地覆据付</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -107,6 +140,17 @@
                         <simpleValue>1470700101_1390900101_1378900201_1379600102_B379700102</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_橋梁付属物工_地覆工_場所打地覆</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_橋梁付属物工_地覆工_場所打地覆</simpleValue>
@@ -114,6 +158,39 @@
                     <baseName>
                         <simpleValue>形状寸法</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_橋梁付属物工_地覆工_場所打地覆</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>目地板</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_橋梁付属物工_地覆工_場所打地覆</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋工［市場単価］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_橋梁付属物工_地覆工_場所打地覆</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

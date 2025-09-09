@@ -59,18 +59,73 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_C=370kg/m3(普通)" />
-                            <xs:enumeration value="10_24-12-40(高炉)" />
-                            <xs:enumeration value="11_各種" />
-                            <xs:enumeration value="2_C=370kg/m3(高炉)" />
-                            <xs:enumeration value="3_18-8-25(20)(普通)" />
-                            <xs:enumeration value="4_18-12-25(20)(普通)" />
-                            <xs:enumeration value="5_18-8-25(20)(高炉)" />
-                            <xs:enumeration value="6_18-12-25(20)(高炉)" />
-                            <xs:enumeration value="7_24-8-40(普通)" />
-                            <xs:enumeration value="8_24-12-40(普通)" />
-                            <xs:enumeration value="9_24-8-40(高炉)" />
+                            <xs:enumeration value="C=370kg/m3(普通)" />
+                            <xs:enumeration value="C=370kg/m3(高炉)" />
+                            <xs:enumeration value="18-8-25(20)(普通)" />
+                            <xs:enumeration value="18-12-25(20)(普通)" />
+                            <xs:enumeration value="18-8-25(20)(高炉)" />
+                            <xs:enumeration value="18-12-25(20)(高炉)" />
+                            <xs:enumeration value="24-8-40(普通)" />
+                            <xs:enumeration value="24-12-40(普通)" />
+                            <xs:enumeration value="24-8-40(高炉)" />
+                            <xs:enumeration value="24-12-40(高炉)" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_中詰コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鋼管内コンクリート打設工</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="井筒内掘削" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>井筒内掘削</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_井筒内掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_井筒内掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>井筒内掘削費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>井筒内掘削工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_井筒内掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1411100101_1426600101_1432500102_1432700101</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -106,6 +161,28 @@
                         <simpleValue>1470700101_1411100101_1426600101_1432500102_1418300201</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_底スラブコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>底ｽﾗﾌﾞｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>底盤コンクリート打設工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_底スラブコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>水中ｺﾝｸﾘｰﾄ均し･確認費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>水中コンクリート均し確認</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_底スラブコンクリート</simpleValue>
@@ -115,17 +192,17 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_C=370kg/m3(普通)" />
-                            <xs:enumeration value="10_24-12-40(高炉)" />
-                            <xs:enumeration value="11_各種" />
-                            <xs:enumeration value="2_C=370kg/m3(高炉)" />
-                            <xs:enumeration value="3_18-8-25(20)(普通)" />
-                            <xs:enumeration value="4_18-12-25(20)(普通)" />
-                            <xs:enumeration value="5_18-8-25(20)(高炉)" />
-                            <xs:enumeration value="6_18-12-25(20)(高炉)" />
-                            <xs:enumeration value="7_24-8-40(普通)" />
-                            <xs:enumeration value="8_24-12-40(普通)" />
-                            <xs:enumeration value="9_24-8-40(高炉)" />
+                            <xs:enumeration value="C=370kg/m3(普通)" />
+                            <xs:enumeration value="C=370kg/m3(高炉)" />
+                            <xs:enumeration value="18-8-25(20)(普通)" />
+                            <xs:enumeration value="18-12-25(20)(普通)" />
+                            <xs:enumeration value="18-8-25(20)(高炉)" />
+                            <xs:enumeration value="18-12-25(20)(高炉)" />
+                            <xs:enumeration value="24-8-40(普通)" />
+                            <xs:enumeration value="24-12-40(普通)" />
+                            <xs:enumeration value="24-8-40(高炉)" />
+                            <xs:enumeration value="24-12-40(高炉)" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -167,10 +244,21 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_敷砂</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>敷均し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>底面均し（敷砂）工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_敷砂</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>敷砂規格</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>1_砂</simpleValue>
+                        <simpleValue>砂</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -206,6 +294,17 @@
                         <simpleValue>1470700101_1411100101_1426600101_1432500102_1433300101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_杭切断</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>杭切断費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鋼管矢板切断・撤去工</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_杭切断</simpleValue>
@@ -215,10 +314,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_800mm" />
-                            <xs:enumeration value="2_900～1000mm" />
-                            <xs:enumeration value="3_1100～1200mm" />
+                            <xs:enumeration value="800mm" />
+                            <xs:enumeration value="900～1000mm" />
+                            <xs:enumeration value="1100～1200mm" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_杭切断</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｽｸﾗｯﾌﾟ処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>スクラップ処理</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -259,14 +369,28 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_殻処分</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>処分費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="処分費（ｍ３）" />
+                            <xs:enumeration value="処分費（ｔ）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_殻処分</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>殻種別</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｱｽﾌｧﾙﾄ殻" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ殻(無筋)" />
-                            <xs:enumeration value="3_ｺﾝｸﾘｰﾄ殻(鉄筋)" />
-                            <xs:enumeration value="4_ﾓﾙﾀﾙ殻" />
+                            <xs:enumeration value="ｱｽﾌｧﾙﾄ殻" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ殻(無筋)" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ殻(鉄筋)" />
+                            <xs:enumeration value="ﾓﾙﾀﾙ殻" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -312,11 +436,132 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｺﾝｸﾘｰﾄ(無筋)構造物とりこわし" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ(鉄筋)構造物とりこわし" />
-                            <xs:enumeration value="3_舗装版破砕" />
-                            <xs:enumeration value="4_吹付法面とりこわし(ﾓﾙﾀﾙ)" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ(無筋)構造物とりこわし" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ(鉄筋)構造物とりこわし" />
+                            <xs:enumeration value="舗装版破砕" />
+                            <xs:enumeration value="吹付法面とりこわし(ﾓﾙﾀﾙ)" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_殻運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>殻運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>殻運搬</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="継手処理" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>継手処理</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_継手処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_継手処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1411100101_1426600101_1432500102_1432800101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_継手処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>排土費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>継手管内排土工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_継手処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>止水材注入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>継手管内止水材注入工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_継手処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾓﾙﾀﾙ注入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>継手管内モルタル注入工</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="鋼管内掘削" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>鋼管内掘削</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_鋼管内掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_鋼管内掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1411100101_1426600101_1432500102_1578200101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_鋼管内掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>管内掘削費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鋼管内掘削工</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -341,6 +586,24 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_鋼管矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>H形鋼杭損料</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="Ｈ形鋼杭賃料" />
+                            <xs:enumeration value="鋼矢板・Ｈ形鋼（埋設）" />
+                            <xs:enumeration value="鋼矢板・Ｈ形鋼（一部埋設）" />
+                            <xs:enumeration value="鋼矢板・Ｈ形鋼（一部撤去）" />
+                            <xs:enumeration value="鋼矢板・Ｈ形鋼（一部または全体を撤去）" />
+                            <xs:enumeration value="鋼矢板・Ｈ形鋼（一部または全体を埋設）" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_鋼管矢板</simpleValue>
@@ -352,6 +615,54 @@
                         <simpleValue>1470700101_1411100101_1426600101_1432500102_1004600201</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_鋼管矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>導材加工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>導材加工費</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_鋼管矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>導材材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｔ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_鋼管矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>導材設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>切梁・腹起し設置・撤去</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_鋼管矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>導杭設置･撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="バイブロハンマ施工によるＨ形鋼打込み" />
+                            <xs:enumeration value="ＷＪ併用バイブロハンマ施工によるＨ形鋼打込み" />
+                            <xs:enumeration value="バイブロハンマ施工によるＨ形鋼引抜き" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_鋼管矢板</simpleValue>
@@ -359,6 +670,20 @@
                     <baseName>
                         <simpleValue>打込工法</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_鋼管矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>杭打費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="鋼管矢板打込工（打撃工法）" />
+                            <xs:enumeration value="鋼管矢板打込工（中掘工法）" />
+                        </xs:restriction>
+                    </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
@@ -411,10 +736,43 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_鋼管矢板支保</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>井筒内支保材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>導枠、井筒内支保材料費</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_鋼管矢板支保</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>井筒内支保設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>井筒内支保設置・撤去工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_鋼管矢板支保</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
                         <simpleValue>1470700101_1411100101_1426600101_1432500102_1433400101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_鋼管矢板支保</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>山留材賃料</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>山留材賃料</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -426,12 +784,34 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_H-250" />
-                            <xs:enumeration value="2_H-300" />
-                            <xs:enumeration value="3_H-350" />
-                            <xs:enumeration value="4_H-400" />
-                            <xs:enumeration value="5_H-594" />
+                            <xs:enumeration value="H-250" />
+                            <xs:enumeration value="H-300" />
+                            <xs:enumeration value="H-350" />
+                            <xs:enumeration value="H-400" />
+                            <xs:enumeration value="H-594" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_鋼管矢板支保</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>腹起し材加工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>腹起し加工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_鋼管矢板支保</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>腹起し材材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｔ）</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -476,18 +856,29 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_C=370kg/m3(普通)" />
-                            <xs:enumeration value="10_24-12-40(高炉)" />
-                            <xs:enumeration value="11_各種" />
-                            <xs:enumeration value="2_C=370kg/m3(高炉)" />
-                            <xs:enumeration value="3_18-8-25(20)(普通)" />
-                            <xs:enumeration value="4_18-12-25(20)(普通)" />
-                            <xs:enumeration value="5_18-8-25(20)(高炉)" />
-                            <xs:enumeration value="6_18-12-25(20)(高炉)" />
-                            <xs:enumeration value="7_24-8-40(普通)" />
-                            <xs:enumeration value="8_24-12-40(普通)" />
-                            <xs:enumeration value="9_24-8-40(高炉)" />
+                            <xs:enumeration value="C=370kg/m3(普通)" />
+                            <xs:enumeration value="C=370kg/m3(高炉)" />
+                            <xs:enumeration value="18-8-25(20)(普通)" />
+                            <xs:enumeration value="18-12-25(20)(普通)" />
+                            <xs:enumeration value="18-8-25(20)(高炉)" />
+                            <xs:enumeration value="18-12-25(20)(高炉)" />
+                            <xs:enumeration value="24-8-40(普通)" />
+                            <xs:enumeration value="24-12-40(普通)" />
+                            <xs:enumeration value="24-8-40(高炉)" />
+                            <xs:enumeration value="24-12-40(高炉)" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_間詰コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>井筒内支保間詰コンクリート工</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -532,8 +923,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_機械施工" />
-                            <xs:enumeration value="2_人力施工" />
+                            <xs:enumeration value="機械施工" />
+                            <xs:enumeration value="人力施工" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -546,9 +937,130 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_無筋構造物" />
-                            <xs:enumeration value="2_鉄筋構造物" />
+                            <xs:enumeration value="無筋構造物" />
+                            <xs:enumeration value="鉄筋構造物" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_間詰コンクリート撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>間詰ｺﾝｸﾘｰﾄはつり費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>構造物とりこわし</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="頂版結合(プレートブラケット)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>頂版結合(プレートブラケット)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_頂版結合(プレートブラケット)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_頂版結合(プレートブラケット)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1411100101_1426600101_1432500102_1433800301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_頂版結合(プレートブラケット)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>結合材材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コネクタ材料費（プレートブラケット）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_頂版結合(プレートブラケット)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>結合材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コネクタ取付工（プレートブラケット方式）</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="頂版結合(鉄筋スタッド)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>頂版結合(鉄筋スタッド)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_頂版結合(鉄筋スタッド)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_頂版結合(鉄筋スタッド)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1411100101_1426600101_1432500102_1433900101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_頂版結合(鉄筋スタッド)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>結合材材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コネクタ材料費（鉄筋スタッド方式）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_RC橋脚工_鋼管矢板基礎工_頂版結合(鉄筋スタッド)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>結合材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コネクタ取付工（鉄筋スタッド方式）</simpleValue>
                     </value>
                 </property>
             </requirements>

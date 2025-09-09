@@ -19,6 +19,61 @@
         <milestone>詳細設計</milestone>
     </info>
     <specifications>
+        <specification name="シール材" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>シール材</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_現場打構築工_継手工_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_現場打構築工_継手工_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1561200101_1492600201_1492900101_B616000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_現場打構築工_継手工_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼｰﾙ材設置(材料費)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>シール材（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_現場打構築工_継手工_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼｰﾙ材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>シール材</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
         <specification name="スリップバー" ifcVersion="IFC2X3">
             <applicability minOccurs="1" maxOccurs="1">
                 <attribute>
@@ -57,6 +112,28 @@
                     <baseName>
                         <simpleValue>鉄筋材料規格・径</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_現場打構築工_継手工_スリップバー</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｽﾘｯﾌﾟﾊﾞｰ材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（本）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_現場打構築工_継手工_スリップバー</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｽﾘｯﾌﾟﾊﾞｰ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>スリップバー設置</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -100,19 +177,41 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_FF(塩ﾋﾞ製)200×5" />
-                            <xs:enumeration value="10_CC300×7" />
-                            <xs:enumeration value="11_UC200×6" />
-                            <xs:enumeration value="12_各種" />
-                            <xs:enumeration value="2_FC(塩ﾋﾞ製)200×5" />
-                            <xs:enumeration value="3_CF(塩ﾋﾞ製)200×5" />
-                            <xs:enumeration value="4_CF(塩ﾋﾞ製)230×9" />
-                            <xs:enumeration value="5_CC(塩ﾋﾞ製)200×5" />
-                            <xs:enumeration value="6_UC(塩ﾋﾞ製)300×7" />
-                            <xs:enumeration value="7_S.R(塩ﾋﾞ製)200×5" />
-                            <xs:enumeration value="8_S.SF(塩ﾋﾞ製)200×5" />
-                            <xs:enumeration value="9_CF300×7" />
+                            <xs:enumeration value="FF(塩ﾋﾞ製)200×5" />
+                            <xs:enumeration value="FC(塩ﾋﾞ製)200×5" />
+                            <xs:enumeration value="CF(塩ﾋﾞ製)200×5" />
+                            <xs:enumeration value="CF(塩ﾋﾞ製)230×9" />
+                            <xs:enumeration value="CC(塩ﾋﾞ製)200×5" />
+                            <xs:enumeration value="UC(塩ﾋﾞ製)300×7" />
+                            <xs:enumeration value="S.R(塩ﾋﾞ製)200×5" />
+                            <xs:enumeration value="S.SF(塩ﾋﾞ製)200×5" />
+                            <xs:enumeration value="CF300×7" />
+                            <xs:enumeration value="CC300×7" />
+                            <xs:enumeration value="UC200×6" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_現場打構築工_継手工_止水板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>止水板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>止水板</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_現場打構築工_継手工_止水板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>止水板設置費(砂防)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>止水板設置</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -157,19 +256,19 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_瀝青質目地板ｔ=10" />
-                            <xs:enumeration value="10_樹脂発泡体(30倍発泡)t=20" />
-                            <xs:enumeration value="11_ｺﾞﾑ発泡体t=20" />
-                            <xs:enumeration value="12_発泡ｽﾁﾛｰﾙt=20" />
-                            <xs:enumeration value="13_各種" />
-                            <xs:enumeration value="2_瀝青繊維質目地板t=10" />
-                            <xs:enumeration value="3_樹脂発泡体(15倍発泡)t=10" />
-                            <xs:enumeration value="4_樹脂発泡体(30倍発泡)t=10" />
-                            <xs:enumeration value="5_ｺﾞﾑ発泡体t=10" />
-                            <xs:enumeration value="6_発泡ｽﾁﾛｰﾙt=10" />
-                            <xs:enumeration value="7_瀝青質目地板ｔ=20" />
-                            <xs:enumeration value="8_瀝青繊維質目地板t=20" />
-                            <xs:enumeration value="9_樹脂発泡体(15倍発泡)t=20" />
+                            <xs:enumeration value="瀝青質目地板ｔ=10" />
+                            <xs:enumeration value="瀝青繊維質目地板t=10" />
+                            <xs:enumeration value="樹脂発泡体(15倍発泡)t=10" />
+                            <xs:enumeration value="樹脂発泡体(30倍発泡)t=10" />
+                            <xs:enumeration value="ｺﾞﾑ発泡体t=10" />
+                            <xs:enumeration value="発泡ｽﾁﾛｰﾙt=10" />
+                            <xs:enumeration value="瀝青質目地板ｔ=20" />
+                            <xs:enumeration value="瀝青繊維質目地板t=20" />
+                            <xs:enumeration value="樹脂発泡体(15倍発泡)t=20" />
+                            <xs:enumeration value="樹脂発泡体(30倍発泡)t=20" />
+                            <xs:enumeration value="ｺﾞﾑ発泡体t=20" />
+                            <xs:enumeration value="発泡ｽﾁﾛｰﾙt=20" />
+                            <xs:enumeration value="各種" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
                     </value>
@@ -183,9 +282,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_厚10mm" />
-                            <xs:enumeration value="2_厚20mm" />
+                            <xs:enumeration value="厚10mm" />
+                            <xs:enumeration value="厚20mm" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_現場打構築工_継手工_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>目地板</simpleValue>
                     </value>
                 </property>
             </requirements>

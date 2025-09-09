@@ -39,6 +39,21 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑内付帯工_地下排水工_中央排水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>中央排水管設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="ヒューム管（Ｂ形管）" />
+                            <xs:enumeration value="フィルター材" />
+                            <xs:enumeration value="コンクリート" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑内付帯工_地下排水工_中央排水</simpleValue>
@@ -59,21 +74,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_200mm" />
-                            <xs:enumeration value="10_800mm" />
-                            <xs:enumeration value="11_900mm" />
-                            <xs:enumeration value="12_1000mm" />
-                            <xs:enumeration value="13_1100mm" />
-                            <xs:enumeration value="14_1200mm" />
-                            <xs:enumeration value="15_1350mm" />
-                            <xs:enumeration value="2_250mm" />
-                            <xs:enumeration value="3_300mm" />
-                            <xs:enumeration value="4_350mm" />
-                            <xs:enumeration value="5_400mm" />
-                            <xs:enumeration value="6_450mm" />
-                            <xs:enumeration value="7_500mm" />
-                            <xs:enumeration value="8_600mm" />
-                            <xs:enumeration value="9_700mm" />
+                            <xs:enumeration value="200mm" />
+                            <xs:enumeration value="250mm" />
+                            <xs:enumeration value="300mm" />
+                            <xs:enumeration value="350mm" />
+                            <xs:enumeration value="400mm" />
+                            <xs:enumeration value="450mm" />
+                            <xs:enumeration value="500mm" />
+                            <xs:enumeration value="600mm" />
+                            <xs:enumeration value="700mm" />
+                            <xs:enumeration value="800mm" />
+                            <xs:enumeration value="900mm" />
+                            <xs:enumeration value="1000mm" />
+                            <xs:enumeration value="1100mm" />
+                            <xs:enumeration value="1200mm" />
+                            <xs:enumeration value="1350mm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -116,6 +131,20 @@
                     </baseName>
                     <value>
                         <simpleValue>1470700101_1482900101_1485900101_1323600201_B486600101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑内付帯工_地下排水工_横断排水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>横断排水管設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="管据付" />
+                            <xs:enumeration value="フィルター材" />
+                        </xs:restriction>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -198,6 +227,17 @@
                     <baseName>
                         <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑内付帯工_地下排水工_集水桝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾄﾝﾈﾙ内集水桝設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>トンネル集水桝工</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

@@ -50,6 +50,17 @@
                         <simpleValue>1470700101_1340700101_1582000101_1354600101_1507500201</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_道路植栽工_道路植栽工_地被類植付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>地被類植付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>道路植栽（地被類植付け）</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_舗装_道路植栽工_道路植栽工_地被類植付</simpleValue>
@@ -100,18 +111,60 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_中木二脚鳥居添木付高250cm上" />
-                            <xs:enumeration value="10_高木二脚鳥居組合せ幹周50cm以上" />
-                            <xs:enumeration value="11_高木八ッ掛幹周40cm未満" />
-                            <xs:enumeration value="12_高木八ッ掛幹周40cm以上" />
-                            <xs:enumeration value="2_中木八ッ掛(竹)樹高100cm以上" />
-                            <xs:enumeration value="3_中木布掛(竹)樹高100cm以上" />
-                            <xs:enumeration value="4_中木添柱形(1本形･竹)高100cm上" />
-                            <xs:enumeration value="5_中木 生垣形 樹高100cm以上" />
-                            <xs:enumeration value="6_高木二脚鳥居添木付幹周30cm未満" />
-                            <xs:enumeration value="7_高木二脚鳥居添木無幹周30上40未" />
-                            <xs:enumeration value="8_高木三脚鳥居幹周30cm以上60cm未" />
-                            <xs:enumeration value="9_高木十字鳥居幹周30cm以上" />
+                            <xs:enumeration value="中木二脚鳥居添木付高250cm上" />
+                            <xs:enumeration value="中木八ッ掛(竹)樹高100cm以上" />
+                            <xs:enumeration value="中木布掛(竹)樹高100cm以上" />
+                            <xs:enumeration value="中木添柱形(1本形･竹)高100cm上" />
+                            <xs:enumeration value="中木 生垣形 樹高100cm以上" />
+                            <xs:enumeration value="高木二脚鳥居添木付幹周30cm未満" />
+                            <xs:enumeration value="高木二脚鳥居添木無幹周30上40未" />
+                            <xs:enumeration value="高木三脚鳥居幹周30cm以上60cm未" />
+                            <xs:enumeration value="高木十字鳥居幹周30cm以上" />
+                            <xs:enumeration value="高木二脚鳥居組合せ幹周50cm以上" />
+                            <xs:enumeration value="高木八ッ掛幹周40cm未満" />
+                            <xs:enumeration value="高木八ッ掛幹周40cm以上" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_道路植栽工_道路植栽工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支柱撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="道路植栽（支柱撤去）" />
+                            <xs:enumeration value="道路植栽（支柱撤去（２））" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_道路植栽工_道路植栽工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支柱補修費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="植樹管理（支柱補修）" />
+                            <xs:enumeration value="植樹管理（支柱補修（２））" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_道路植栽工_道路植栽工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支柱設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="道路植栽（支柱設置）" />
+                            <xs:enumeration value="道路植栽（支柱設置（２））" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -124,12 +177,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_支柱 10本未満" />
-                            <xs:enumeration value="2_支柱 10本以上50本未満" />
-                            <xs:enumeration value="3_支柱 50本以上" />
-                            <xs:enumeration value="4_支柱 5m未満" />
-                            <xs:enumeration value="5_支柱 5m以上30m未満" />
-                            <xs:enumeration value="6_支柱 30m以上" />
+                            <xs:enumeration value="支柱 10本未満" />
+                            <xs:enumeration value="支柱 10本以上50本未満" />
+                            <xs:enumeration value="支柱 50本以上" />
+                            <xs:enumeration value="支柱 5m未満" />
+                            <xs:enumeration value="支柱 5m以上30m未満" />
+                            <xs:enumeration value="支柱 30m以上" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -174,6 +227,17 @@
                         <simpleValue>1470700101_1340700101_1582000101_1354600101_1354800101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_道路植栽工_道路植栽工_植樹</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>植樹費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>道路植栽（植樹）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_舗装_道路植栽工_道路植栽工_植樹</simpleValue>
@@ -183,14 +247,14 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_低木樹高60cm未満" />
-                            <xs:enumeration value="2_中木樹高60cm以上100cm未満" />
-                            <xs:enumeration value="3_中木樹高100cm以上200cm未満" />
-                            <xs:enumeration value="4_中木樹高200cm以上300cm未満" />
-                            <xs:enumeration value="5_高木幹周20cm未満" />
-                            <xs:enumeration value="6_高木幹周20cm以上40cm未満" />
-                            <xs:enumeration value="7_高木幹周40cm以上60cm未満" />
-                            <xs:enumeration value="8_高木幹周60cm以上90cm未満" />
+                            <xs:enumeration value="低木樹高60cm未満" />
+                            <xs:enumeration value="中木樹高60cm以上100cm未満" />
+                            <xs:enumeration value="中木樹高100cm以上200cm未満" />
+                            <xs:enumeration value="中木樹高200cm以上300cm未満" />
+                            <xs:enumeration value="高木幹周20cm未満" />
+                            <xs:enumeration value="高木幹周20cm以上40cm未満" />
+                            <xs:enumeration value="高木幹周40cm以上60cm未満" />
+                            <xs:enumeration value="高木幹周60cm以上90cm未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -221,6 +285,39 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_舗装_道路植栽工_道路植栽工_植樹帯盛土</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>人力盛土費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>埋戻し</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_道路植栽工_道路植栽工_植樹帯盛土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仮置場からの運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土砂等運搬</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_道路植栽工_道路植栽工_植樹帯盛土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仮置場での積込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>積込（ルーズ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_道路植栽工_道路植栽工_植樹帯盛土</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -234,6 +331,48 @@
                     <baseName>
                         <simpleValue>土質</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_道路植栽工_道路植栽工_植樹帯盛土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>採取土埋戻し材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="積込（ルーズ）" />
+                            <xs:enumeration value="土砂等運搬" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_道路植栽工_道路植栽工_植樹帯盛土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>機械盛土費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="路体（築堤）盛土" />
+                            <xs:enumeration value="整地" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_道路植栽工_道路植栽工_植樹帯盛土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>購入土埋戻し材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="土材料" />
+                            <xs:enumeration value="土砂等運搬" />
+                        </xs:restriction>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -275,6 +414,17 @@
                     <baseName>
                         <simpleValue>樹名板規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_道路植栽工_道路植栽工_樹名板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>樹名板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>樹名板</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
     <info>
         <title>道路新設・改築_コンクリート橋上部_橋梁付属物工_伸縮装置工</title>
         <copyright>buildingSMART Japan 土木委員会</copyright>
@@ -44,6 +44,17 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_橋梁付属物工_伸縮装置工_埋設ジョイント</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>伸縮継手装置設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>橋梁用埋設型伸縮継手装置設置工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_橋梁付属物工_伸縮装置工_埋設ジョイント</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -80,6 +91,17 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_橋梁付属物工_伸縮装置工_鋼・ゴム製伸縮装置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>伸縮継手装置設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>橋梁用伸縮継手装置設置工</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_橋梁付属物工_伸縮装置工_鋼・ゴム製伸縮装置</simpleValue>
@@ -121,6 +143,23 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_橋梁付属物工_伸縮装置工_鋼製伸縮装置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>伸縮継手装置設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="移動式クレーン運転費（賃料）［鋼橋架設工］" />
+                            <xs:enumeration value="架設工（鈑桁・箱桁・少数Ｉ桁・細幅箱桁・ﾗｰﾒﾝ橋）" />
+                            <xs:enumeration value="架設工具損料" />
+                            <xs:enumeration value="発動発電機賃料［鋼橋架設工］" />
+                            <xs:enumeration value="鋼製伸縮装置新設" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_橋梁付属物工_伸縮装置工_鋼製伸縮装置</simpleValue>
@@ -138,6 +177,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1470700101_1390900101_1378900201_1379000202_B379205101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_橋梁付属物工_伸縮装置工_鋼製伸縮装置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（式）</simpleValue>
                     </value>
                 </property>
             </requirements>

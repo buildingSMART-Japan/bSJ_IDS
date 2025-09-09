@@ -50,6 +50,17 @@
                         <simpleValue>1470700101_1561200101_1047700201_1049500301_B562700101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_スラリー撹拌</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>先掘費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>積込（ルーズ）</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_スラリー撹拌</simpleValue>
@@ -66,6 +77,20 @@
                         <simpleValue>杭径</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_スラリー撹拌</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>汚泥土処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="残土等処分" />
+                            <xs:enumeration value="処分費（ｔ）" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_スラリー撹拌</simpleValue>
@@ -81,6 +106,28 @@
                     <baseName>
                         <simpleValue>長さ(杭長)</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_スラリー撹拌</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｽﾗﾘｰ撹拌費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>スラリー撹拌工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_スラリー撹拌</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｽﾗﾘｰﾌﾟﾗﾝﾄ現場内移設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>スラリプラント現場内移設</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -115,6 +162,20 @@
                         <simpleValue>1470700101_1561200101_1047700201_1049500301_B049800101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_中層混合処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>先掘費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="掘削" />
+                            <xs:enumeration value="積込（ルーズ）" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_中層混合処理</simpleValue>
@@ -130,6 +191,42 @@
                     <baseName>
                         <simpleValue>施工規模</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_中層混合処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>汚泥土処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="残土等処分" />
+                            <xs:enumeration value="処分費（ｔ）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_中層混合処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｽﾗﾘｰ撹拌費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>中層混合処理工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_中層混合処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｽﾗﾘｰﾌﾟﾗﾝﾄ現場内移設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>スラリプラント現場内移設</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -189,9 +286,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_有り" />
-                            <xs:enumeration value="2_無し" />
+                            <xs:enumeration value="有り" />
+                            <xs:enumeration value="無し" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>粉体噴射撹拌費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>粉体噴射撹拌</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -203,17 +311,17 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_3mを超え6m未満" />
-                            <xs:enumeration value="10_20mを超え27m未満" />
-                            <xs:enumeration value="11_27m以上33m以下" />
-                            <xs:enumeration value="2_6m以上10m未満" />
-                            <xs:enumeration value="3_10m以上14m未満" />
-                            <xs:enumeration value="4_14m以上17m未満" />
-                            <xs:enumeration value="5_17m以上20m以下" />
-                            <xs:enumeration value="6_3mを超え6m未満" />
-                            <xs:enumeration value="7_6m以上10m未満" />
-                            <xs:enumeration value="8_10m以上15m未満" />
-                            <xs:enumeration value="9_15m以上20m以下" />
+                            <xs:enumeration value="3mを超え6m未満" />
+                            <xs:enumeration value="6m以上10m未満" />
+                            <xs:enumeration value="10m以上14m未満" />
+                            <xs:enumeration value="14m以上17m未満" />
+                            <xs:enumeration value="17m以上20m以下" />
+                            <xs:enumeration value="3mを超え6m未満" />
+                            <xs:enumeration value="6m以上10m未満" />
+                            <xs:enumeration value="10m以上15m未満" />
+                            <xs:enumeration value="15m以上20m以下" />
+                            <xs:enumeration value="20mを超え27m未満" />
+                            <xs:enumeration value="27m以上33m以下" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -226,26 +334,254 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_2m未満" />
-                            <xs:enumeration value="10_10m以上12m未満" />
-                            <xs:enumeration value="11_12m以上14m未満" />
-                            <xs:enumeration value="12_14m以上15m未満" />
-                            <xs:enumeration value="13_15m以上17m未満" />
-                            <xs:enumeration value="14_17m以上20m以下" />
-                            <xs:enumeration value="15_20mを超え23m未満" />
-                            <xs:enumeration value="16_23m以上27m未満" />
-                            <xs:enumeration value="17_27m以上32m未満" />
-                            <xs:enumeration value="18_32m以上33m以下" />
-                            <xs:enumeration value="2_2m以上3m未満" />
-                            <xs:enumeration value="3_3m以上4m未満" />
-                            <xs:enumeration value="4_4m以上5m未満" />
-                            <xs:enumeration value="5_5m以上6m未満" />
-                            <xs:enumeration value="6_6m以上7m未満" />
-                            <xs:enumeration value="7_7m以上8m未満" />
-                            <xs:enumeration value="8_8m以上9m未満" />
-                            <xs:enumeration value="9_9m以上10m未満" />
+                            <xs:enumeration value="2m未満" />
+                            <xs:enumeration value="2m以上3m未満" />
+                            <xs:enumeration value="3m以上4m未満" />
+                            <xs:enumeration value="4m以上5m未満" />
+                            <xs:enumeration value="5m以上6m未満" />
+                            <xs:enumeration value="6m以上7m未満" />
+                            <xs:enumeration value="7m以上8m未満" />
+                            <xs:enumeration value="8m以上9m未満" />
+                            <xs:enumeration value="9m以上10m未満" />
+                            <xs:enumeration value="10m以上12m未満" />
+                            <xs:enumeration value="12m以上14m未満" />
+                            <xs:enumeration value="14m以上15m未満" />
+                            <xs:enumeration value="15m以上17m未満" />
+                            <xs:enumeration value="17m以上20m以下" />
+                            <xs:enumeration value="20mを超え23m未満" />
+                            <xs:enumeration value="23m以上27m未満" />
+                            <xs:enumeration value="27m以上32m未満" />
+                            <xs:enumeration value="32m以上33m以下" />
                         </xs:restriction>
                     </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="粉体噴射撹拌(先掘)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>粉体噴射撹拌(先掘)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌(先掘)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌(先掘)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1561200101_1047700201_1049500301_B049600202</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌(先掘)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>先掘費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>掘削</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌(先掘)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>改良材種類</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌(先掘)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>杭径</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌(先掘)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>長さ(打設長)</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌(先掘)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>長さ(杭長)</simpleValue>
+                    </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="粉体噴射撹拌(移設)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>粉体噴射撹拌(移設)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌(移設)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌(移設)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1561200101_1047700201_1049500301_B049605201</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌(移設)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>改良材種類</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌(移設)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>杭径</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌(移設)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>移設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>粉体噴射撹拌(移設)</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌(移設)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>長さ(打設長)</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌(移設)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>長さ(杭長)</simpleValue>
+                    </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="粉体噴射撹拌(軸間変更)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>粉体噴射撹拌(軸間変更)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌(軸間変更)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌(軸間変更)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1561200101_1047700201_1049500301_B049605301</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌(軸間変更)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>改良材種類</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌(軸間変更)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>杭径</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌(軸間変更)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>軸間変更費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>粉体噴射撹拌（軸間変更）</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌(軸間変更)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>長さ(打設長)</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_粉体噴射撹拌(軸間変更)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>長さ(杭長)</simpleValue>
+                    </baseName>
                 </property>
             </requirements>
         </specification>
@@ -285,14 +621,71 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_薬液注入</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>排水汚泥土処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="排水汚泥土処理" />
+                            <xs:enumeration value="中和剤材料費" />
+                            <xs:enumeration value="バキューム車運転費" />
+                            <xs:enumeration value="処分費（ｍ３）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_薬液注入</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>注入材料</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｾﾒﾝﾄﾍﾞﾝﾅｲﾄ" />
-                            <xs:enumeration value="2_溶液型有機系" />
-                            <xs:enumeration value="3_溶液型無機系" />
+                            <xs:enumeration value="ｾﾒﾝﾄﾍﾞﾝﾅｲﾄ" />
+                            <xs:enumeration value="溶液型有機系" />
+                            <xs:enumeration value="溶液型無機系" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_薬液注入</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>注入設備据付解体･移設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="注入設備据付・解体" />
+                            <xs:enumeration value="注入設備移設" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_薬液注入</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>薬液注入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="二重管ストレーナ工法" />
+                            <xs:enumeration value="二重管ダブルパッカー工法（削孔工）" />
+                            <xs:enumeration value="二重管ダブルパッカー工法（一次注入）" />
+                            <xs:enumeration value="二重管ダブルパッカー工法（二次注入）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_薬液注入</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>足場工</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -336,6 +729,42 @@
                         <simpleValue>工法</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_高圧噴射撹拌</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>排泥処理ﾋﾟｯﾄ掘削費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>積込（ルーズ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_高圧噴射撹拌</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>改良後の整地費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>路体（築堤）盛土</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_高圧噴射撹拌</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>汚泥土処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="残土等処分" />
+                            <xs:enumeration value="処分費（ｔ）" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_高圧噴射撹拌</simpleValue>
@@ -343,6 +772,31 @@
                     <baseName>
                         <simpleValue>注入材種類</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_高圧噴射撹拌</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>注入設備据付解体･移設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="注入設備据付・解体" />
+                            <xs:enumeration value="注入設備移設" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_高圧噴射撹拌</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>足場工</simpleValue>
+                    </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
@@ -359,6 +813,22 @@
                     <baseName>
                         <simpleValue>長さ(注入長)</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下横断歩道_地盤改良工_固結工_高圧噴射撹拌</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>高圧噴射撹拌費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="高圧噴射撹拌工（単管工法）" />
+                            <xs:enumeration value="高圧噴射撹拌工（二重管工法）" />
+                            <xs:enumeration value="高圧噴射撹拌工（三重管工法［削孔工］）" />
+                            <xs:enumeration value="高圧噴射撹拌工（三重管工法［注入工］）" />
+                        </xs:restriction>
+                    </value>
                 </property>
             </requirements>
         </specification>

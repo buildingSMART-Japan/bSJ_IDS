@@ -19,6 +19,53 @@
         <milestone>詳細設計</milestone>
     </info>
     <specifications>
+        <specification name="PC防護" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>PC防護</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_PC防護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_PC防護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>PC防護費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="防護工" />
+                            <xs:enumeration value="橋面手摺工" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_PC防護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1390900101_1588000101_1541500201_1409800101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
         <specification name="支保工" ifcVersion="IFC2X3">
             <applicability minOccurs="1" maxOccurs="1">
                 <attribute>
@@ -59,8 +106,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_くさび結合支保工" />
-                            <xs:enumeration value="2_支柱支保工" />
+                            <xs:enumeration value="くさび結合支保工" />
+                            <xs:enumeration value="支柱支保工" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -73,17 +120,149 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_19.6以上29.4kN/m2未満" />
-                            <xs:enumeration value="2_29.4以上39.2kN/m2未満" />
-                            <xs:enumeration value="3_39.2以上49.0kN/m2未満" />
-                            <xs:enumeration value="4_49.0以上58.8kN/m2未満" />
-                            <xs:enumeration value="5_58.8以上68.6kN/m2未満" />
-                            <xs:enumeration value="6_68.6以上78.5kN/m2以下" />
-                            <xs:enumeration value="1_19.6以上29.4kN/m2未満" />
-                            <xs:enumeration value="2_29.4以上39.2kN/m2未満" />
-                            <xs:enumeration value="3_39.2以上49.0kN/m2未満" />
-                            <xs:enumeration value="4_49.0以上58.8kN/m2以下" />
+                            <xs:enumeration value="19.6以上29.4kN/m2未満" />
+                            <xs:enumeration value="29.4以上39.2kN/m2未満" />
+                            <xs:enumeration value="39.2以上49.0kN/m2未満" />
+                            <xs:enumeration value="49.0以上58.8kN/m2未満" />
+                            <xs:enumeration value="58.8以上68.6kN/m2未満" />
+                            <xs:enumeration value="68.6以上78.5kN/m2以下" />
+                            <xs:enumeration value="19.6以上29.4kN/m2未満" />
+                            <xs:enumeration value="29.4以上39.2kN/m2未満" />
+                            <xs:enumeration value="39.2以上49.0kN/m2未満" />
+                            <xs:enumeration value="49.0以上58.8kN/m2以下" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_支保工</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支保費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="支保設置撤去（上支保・床版・箱桁）" />
+                            <xs:enumeration value="支保設置撤去（本体工・中央閉合）" />
+                            <xs:enumeration value="くさび結合支保工（側径間部）" />
+                            <xs:enumeration value="支柱支保工（側径間部）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="支保工基礎" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>支保工基礎</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_支保工基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_支保工基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1390900101_1588000101_1541500201_1403300101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_支保工基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎用鋼材設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="基礎用鋼材設置・撤去" />
+                            <xs:enumeration value="鋼矢板・Ｈ形鋼（一部撤去）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_支保工基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支柱受台設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="支柱受台設置・撤去工" />
+                            <xs:enumeration value="鋼矢板・Ｈ形鋼（一部撤去）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="柱頭部仮支承" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>柱頭部仮支承</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_柱頭部仮支承</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_柱頭部仮支承</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>PC鋼棒解放費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＰＣ鋼棒解放工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_柱頭部仮支承</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1390900101_1588000101_1541500201_1403900101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_柱頭部仮支承</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>柱頭部仮支承費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>柱頭部仮支承工</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -119,6 +298,50 @@
                         <simpleValue>1470700101_1390900101_1588000101_1541500201_1373100901</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_桁架設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業車引戻し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>作業車引戻工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_桁架設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業車移動据付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>作業車移動据付工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_桁架設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業車組立解体費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>作業車据付解体工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_桁架設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業車ｸﾗｲﾐﾝｸﾞ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>作業車クライミング工</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_桁架設</simpleValue>
@@ -127,6 +350,17 @@
                         <simpleValue>桁種類</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_桁架設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>機械器具損料</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＰＣ橋片持架設用機械器具損料</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_桁架設</simpleValue>
@@ -134,6 +368,53 @@
                     <baseName>
                         <simpleValue>規格</simpleValue>
                     </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="足場" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>足場</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1390900101_1588000101_1541500201_1005502201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_架設工(片持架設)_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="柱頭部足場工" />
+                            <xs:enumeration value="橋側足場工" />
+                        </xs:restriction>
+                    </value>
                 </property>
             </requirements>
         </specification>

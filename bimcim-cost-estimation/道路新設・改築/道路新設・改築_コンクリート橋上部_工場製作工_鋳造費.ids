@@ -58,6 +58,17 @@
                         <simpleValue>支承規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_工場製作工_鋳造費_金属支承</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>金属支承材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>支承材料費（鋼橋各種）</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
     </specifications>

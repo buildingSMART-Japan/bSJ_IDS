@@ -44,6 +44,17 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_トンネル工(非常駐車帯工)_掘削・支保工_掘削・支保(機械掘削工法)</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>ずり運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ずり出し工（ダンプトラック運転）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_トンネル工(非常駐車帯工)_掘削・支保工_掘削・支保(機械掘削工法)</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -59,8 +70,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_切羽監視責任者無" />
-                            <xs:enumeration value="2_切羽監視責任者有" />
+                            <xs:enumeration value="切羽監視責任者無" />
+                            <xs:enumeration value="切羽監視責任者有" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -73,8 +84,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_上半" />
-                            <xs:enumeration value="2_下半" />
+                            <xs:enumeration value="上半" />
+                            <xs:enumeration value="下半" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -87,12 +98,23 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_CI" />
-                            <xs:enumeration value="2_CII" />
-                            <xs:enumeration value="3_DI" />
-                            <xs:enumeration value="4_DII" />
-                            <xs:enumeration value="5_DIII" />
+                            <xs:enumeration value="CI" />
+                            <xs:enumeration value="CII" />
+                            <xs:enumeration value="DI" />
+                            <xs:enumeration value="DII" />
+                            <xs:enumeration value="DIII" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_トンネル工(非常駐車帯工)_掘削・支保工_掘削・支保(機械掘削工法)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>掘削･支保費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>掘削等&lt;掘削､吹付け､ロックボルト､金網､鋼製支保工&gt;</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -104,8 +126,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_通常断面" />
-                            <xs:enumeration value="2_大断面" />
+                            <xs:enumeration value="通常断面" />
+                            <xs:enumeration value="大断面" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -118,9 +140,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_鏡吹付工施工無" />
-                            <xs:enumeration value="2_鏡吹付工施工有" />
+                            <xs:enumeration value="鏡吹付工施工無" />
+                            <xs:enumeration value="鏡吹付工施工有" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_トンネル工(非常駐車帯工)_掘削・支保工_掘削・支保(機械掘削工法)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>集塵機運転費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>集塵機運転</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -150,6 +183,17 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_トンネル工(非常駐車帯工)_掘削・支保工_掘削・支保(発破工法)</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>ずり運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ずり出し工（ダンプトラック運転）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_トンネル工(非常駐車帯工)_掘削・支保工_掘削・支保(発破工法)</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -165,8 +209,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_切羽監視責任者無" />
-                            <xs:enumeration value="2_切羽監視責任者有" />
+                            <xs:enumeration value="切羽監視責任者無" />
+                            <xs:enumeration value="切羽監視責任者有" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -179,12 +223,23 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_CI" />
-                            <xs:enumeration value="2_CII" />
-                            <xs:enumeration value="3_DI" />
-                            <xs:enumeration value="4_DII" />
-                            <xs:enumeration value="5_DIII" />
+                            <xs:enumeration value="CI" />
+                            <xs:enumeration value="CII" />
+                            <xs:enumeration value="DI" />
+                            <xs:enumeration value="DII" />
+                            <xs:enumeration value="DIII" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_トンネル工(非常駐車帯工)_掘削・支保工_掘削・支保(発破工法)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>掘削･支保費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>掘削等&lt;掘削､吹付け､ロックボルト､金網､鋼製支保工&gt;</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -196,8 +251,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_通常断面" />
-                            <xs:enumeration value="2_大断面" />
+                            <xs:enumeration value="通常断面" />
+                            <xs:enumeration value="大断面" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -210,9 +265,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_鏡吹付工施工無" />
-                            <xs:enumeration value="2_鏡吹付工施工有" />
+                            <xs:enumeration value="鏡吹付工施工無" />
+                            <xs:enumeration value="鏡吹付工施工有" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_トンネル工(非常駐車帯工)_掘削・支保工_掘削・支保(発破工法)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>集塵機運転費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>集塵機運転</simpleValue>
                     </value>
                 </property>
             </requirements>

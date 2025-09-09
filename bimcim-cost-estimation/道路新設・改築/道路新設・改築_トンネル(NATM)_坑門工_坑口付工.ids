@@ -59,12 +59,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_厚5cm" />
-                            <xs:enumeration value="2_厚6cm" />
-                            <xs:enumeration value="3_厚7cm" />
-                            <xs:enumeration value="4_厚8cm" />
-                            <xs:enumeration value="5_厚9cm" />
-                            <xs:enumeration value="6_厚10cm" />
+                            <xs:enumeration value="厚5cm" />
+                            <xs:enumeration value="厚6cm" />
+                            <xs:enumeration value="厚7cm" />
+                            <xs:enumeration value="厚8cm" />
+                            <xs:enumeration value="厚9cm" />
+                            <xs:enumeration value="厚10cm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -75,6 +75,183 @@
                     <baseName>
                         <simpleValue>ｾﾒﾝﾄ種類</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑門工_坑口付工_モルタル吹付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾓﾙﾀﾙ吹付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>モルタル吹付工</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="坑口処理" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>坑口処理</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑門工_坑口付工_坑口処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑門工_坑口付工_坑口処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>やらず設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>やらず設置撤去工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑門工_坑口付工_坑口処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1482900101_1486700101_1486800101_B487000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑門工_坑口付工_坑口処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土のう積費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土のう設置工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑門工_坑口付工_坑口処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>坑口切付け費(土砂機械掘削)</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="押土（ルーズ）" />
+                            <xs:enumeration value="積込（ルーズ）" />
+                            <xs:enumeration value="掘削" />
+                            <xs:enumeration value="床掘り" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑門工_坑口付工_坑口処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>坑口切付け費(岩機械掘削)</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="掘削" />
+                            <xs:enumeration value="転石破砕" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑門工_坑口付工_坑口処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>坑口切付け費(現地敷均し)</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="路体（築堤）盛土" />
+                            <xs:enumeration value="基面整正" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑門工_坑口付工_坑口処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>坑口切付け費(破砕片除去)</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="積込（ルーズ）" />
+                            <xs:enumeration value="押土（ルーズ）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑門工_坑口付工_坑口処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>坑口切付け費(積込･運搬)</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="積込（ルーズ）" />
+                            <xs:enumeration value="土砂等運搬" />
+                            <xs:enumeration value="整地" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑門工_坑口付工_坑口処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>坑口切付費(土砂人力掘削･運搬)</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="掘削" />
+                            <xs:enumeration value="床掘り" />
+                            <xs:enumeration value="人力積込" />
+                            <xs:enumeration value="土砂等運搬" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑門工_坑口付工_坑口処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>捨導坑設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>捨導坑設置撤去工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑門工_坑口付工_坑口処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>捨枠設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>捨枠設置撤去工</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -107,6 +284,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1470700101_1482900101_1486700101_1486800101_1486900101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑門工_坑口付工_斜面ボルト</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>斜面ﾎﾞﾙﾄ打設費(ﾛｯｸﾎﾞﾙﾄ使用)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>斜面ボルト打設工</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -167,11 +355,22 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1000m2以上" />
-                            <xs:enumeration value="2_500m2以上1000m2未満" />
-                            <xs:enumeration value="3_250m2以上500m2未満" />
-                            <xs:enumeration value="4_250m2未満" />
+                            <xs:enumeration value="1000m2以上" />
+                            <xs:enumeration value="500m2以上1000m2未満" />
+                            <xs:enumeration value="250m2以上500m2未満" />
+                            <xs:enumeration value="250m2未満" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑門工_坑口付工_種子散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>種子散布費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>機械播種施工による植生工</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -182,6 +381,17 @@
                         <simpleValue>種子規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑門工_坑口付工_種子散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>繊維ﾈｯﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>繊維ネット工</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑門工_坑口付工_種子散布</simpleValue>
@@ -191,9 +401,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_肥料有り" />
-                            <xs:enumeration value="2_肥料無し" />
+                            <xs:enumeration value="肥料有り" />
+                            <xs:enumeration value="肥料無し" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑門工_坑口付工_種子散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾗｽ張費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ラス張工［市場単価］</simpleValue>
                     </value>
                 </property>
             </requirements>

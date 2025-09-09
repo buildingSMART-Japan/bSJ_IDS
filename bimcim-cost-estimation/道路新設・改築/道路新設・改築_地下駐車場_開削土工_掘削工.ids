@@ -44,6 +44,17 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_地下駐車場_開削土工_掘削工_開削掘削</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>仮置場での整地費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>整地</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下駐車場_開削土工_掘削工_開削掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -59,9 +70,35 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_土砂" />
-                            <xs:enumeration value="2_岩塊･玉石" />
+                            <xs:enumeration value="土砂" />
+                            <xs:enumeration value="岩塊･玉石" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下駐車場_開削土工_掘削工_開削掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>掘削費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="水中掘削" />
+                            <xs:enumeration value="床掘（掘削深５ｍ＜Ｈ≦２０ｍ）" />
+                            <xs:enumeration value="床掘（掘削深　Ｈ＞２０ｍ）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下駐車場_開削土工_掘削工_開削掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>自工区流用･仮置場への運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土砂等運搬</simpleValue>
                     </value>
                 </property>
             </requirements>

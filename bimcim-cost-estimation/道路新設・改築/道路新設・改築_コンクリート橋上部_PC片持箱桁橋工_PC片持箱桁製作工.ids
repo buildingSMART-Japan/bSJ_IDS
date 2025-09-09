@@ -52,6 +52,17 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_PC片持箱桁製作工_PCケーブル</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>PCｹｰﾌﾞﾙ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＰＣケーブル工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_PC片持箱桁製作工_PCケーブル</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -67,9 +78,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_縦締 1900KN型(12S12.4A)" />
-                            <xs:enumeration value="2_縦締 2200KN型(12S12.7B)" />
-                            <xs:enumeration value="3_横締 570KN型(1S21.8)" />
+                            <xs:enumeration value="縦締 1900KN型(12S12.4A)" />
+                            <xs:enumeration value="縦締 2200KN型(12S12.7B)" />
+                            <xs:enumeration value="横締 570KN型(1S21.8)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -95,6 +106,17 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_PC片持箱桁製作工_PC固定</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>PCｹｰﾌﾞﾙ定着費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＰＣケーブル定着工［ＰＣ橋片持架設工］</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_PC片持箱桁製作工_PC固定</simpleValue>
@@ -139,9 +161,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_縦締 1900kN(195t)型(12S12.4A)" />
-                            <xs:enumeration value="2_縦締 2200kN(225t)型(12S12.7B)" />
-                            <xs:enumeration value="3_横締 570kN(60t)型(1S21.8)" />
+                            <xs:enumeration value="縦締 1900kN(195t)型(12S12.4A)" />
+                            <xs:enumeration value="縦締 2200kN(225t)型(12S12.7B)" />
+                            <xs:enumeration value="横締 570kN(60t)型(1S21.8)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -180,6 +202,17 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_PC片持箱桁製作工_PC継手</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>PCｹｰﾌﾞﾙ継手費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＰＣ継手工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_PC片持箱桁製作工_PC継手</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -195,8 +228,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_両締め" />
-                            <xs:enumeration value="2_片締め" />
+                            <xs:enumeration value="両締め" />
+                            <xs:enumeration value="片締め" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -209,8 +242,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_発動発電機使用" />
-                            <xs:enumeration value="2_商用電源使用" />
+                            <xs:enumeration value="発動発電機使用" />
+                            <xs:enumeration value="商用電源使用" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -249,6 +282,17 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_PC片持箱桁製作工_PC緊張</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>PCｹｰﾌﾞﾙ緊張費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＰＣケーブル緊張工［ＰＣ橋片持架設工］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_PC片持箱桁製作工_PC緊張</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -272,11 +316,11 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_縦締(両引)1900kN型(12S12.4A)" />
-                            <xs:enumeration value="2_縦締(両引)2200kN型(12S12.7B)" />
-                            <xs:enumeration value="3_縦締(片引)1900kN型(12S12.4A)" />
-                            <xs:enumeration value="4_縦締(片引)2200kN型(12S12.7B)" />
-                            <xs:enumeration value="5_横締 570kN(60t)型(1S21.8)" />
+                            <xs:enumeration value="縦締(両引)1900kN型(12S12.4A)" />
+                            <xs:enumeration value="縦締(両引)2200kN型(12S12.7B)" />
+                            <xs:enumeration value="縦締(片引)1900kN型(12S12.4A)" />
+                            <xs:enumeration value="縦締(片引)2200kN型(12S12.7B)" />
+                            <xs:enumeration value="横締 570kN(60t)型(1S21.8)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -307,6 +351,50 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_PC片持箱桁製作工_PC鋼棒</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>PC鋼棒定着費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＰＣ鋼棒　定着工［ＰＣ橋片持架設工］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_PC片持箱桁製作工_PC鋼棒</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>PC鋼棒継手費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＰＣ鋼棒　継手工［ＰＣ橋片持架設工］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_PC片持箱桁製作工_PC鋼棒</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>PC鋼棒緊張費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＰＣ鋼棒緊張工［ＰＣ橋片持架設工］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_PC片持箱桁製作工_PC鋼棒</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>PC鋼棒設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＰＣ鋼棒工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_PC片持箱桁製作工_PC鋼棒</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -322,8 +410,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_普通継手" />
-                            <xs:enumeration value="2_G継手" />
+                            <xs:enumeration value="普通継手" />
+                            <xs:enumeration value="G継手" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -336,10 +424,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_径26A種2号" />
-                            <xs:enumeration value="2_径26B種2号" />
-                            <xs:enumeration value="3_径32A種2号" />
-                            <xs:enumeration value="4_径32B種2号" />
+                            <xs:enumeration value="径26A種2号" />
+                            <xs:enumeration value="径26B種2号" />
+                            <xs:enumeration value="径32A種2号" />
+                            <xs:enumeration value="径32B種2号" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -393,8 +481,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｺﾝｸﾘｰﾄ夜間割増無" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ夜間割増有" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ夜間割増無" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ夜間割増有" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -407,10 +495,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_40-8-25(20)(早強)" />
-                            <xs:enumeration value="2_40-12-25(20)(早強)" />
-                            <xs:enumeration value="3_各種" />
+                            <xs:enumeration value="40-8-25(20)(早強)" />
+                            <xs:enumeration value="40-12-25(20)(早強)" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_PC片持箱桁製作工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート工（ＰＣ橋片持架設工）</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -454,6 +553,28 @@
                         <simpleValue>型枠の種類</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_PC片持箱桁製作工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠製作・設置・撤去工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_PC片持箱桁製作工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鋼製型枠材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鋼製型枠材料費</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="鉄筋" ifcVersion="IFC2X3">
@@ -496,15 +617,26 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_SD295 D10" />
-                            <xs:enumeration value="2_SD295 D13" />
-                            <xs:enumeration value="3_SD295 D16" />
-                            <xs:enumeration value="4_SD345 D10" />
-                            <xs:enumeration value="5_SD345 D13" />
-                            <xs:enumeration value="6_SD345 D16～25" />
-                            <xs:enumeration value="7_SD345 D29～32" />
-                            <xs:enumeration value="8_各種" />
+                            <xs:enumeration value="SD295 D10" />
+                            <xs:enumeration value="SD295 D13" />
+                            <xs:enumeration value="SD295 D16" />
+                            <xs:enumeration value="SD345 D10" />
+                            <xs:enumeration value="SD345 D13" />
+                            <xs:enumeration value="SD345 D16～25" />
+                            <xs:enumeration value="SD345 D29～32" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC片持箱桁橋工_PC片持箱桁製作工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋工（ＰＣ橋片持架設工）</simpleValue>
                     </value>
                 </property>
             </requirements>

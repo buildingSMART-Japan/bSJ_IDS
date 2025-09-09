@@ -66,6 +66,28 @@
                         <simpleValue>固化材の種類</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_道路改良_地盤改良工_自走式土質改良工_土質改良</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土質改良機設置（撤去）費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>自走式土質改良機設置・撤去工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_道路改良_地盤改良工_自走式土質改良工_土質改良</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土質改良費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土質改良工</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_道路改良_地盤改良工_自走式土質改良工_土質改良</simpleValue>
@@ -75,9 +97,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾚｷ質土" />
-                            <xs:enumeration value="2_砂及び砂質土" />
-                            <xs:enumeration value="3_粘性土" />
+                            <xs:enumeration value="ﾚｷ質土" />
+                            <xs:enumeration value="砂及び砂質土" />
+                            <xs:enumeration value="粘性土" />
                         </xs:restriction>
                     </value>
                 </property>

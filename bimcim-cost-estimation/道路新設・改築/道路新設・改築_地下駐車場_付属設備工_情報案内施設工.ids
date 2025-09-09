@@ -58,6 +58,17 @@
                         <simpleValue>材質･形状寸法</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下駐車場_付属設備工_情報案内施設工_スクリーン</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｽｸﾘｰﾝ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>スクリーン設置</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="案内板" ifcVersion="IFC2X3">
@@ -98,6 +109,17 @@
                     <baseName>
                         <simpleValue>材質･形状寸法</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下駐車場_付属設備工_情報案内施設工_案内板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>案内板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>案内板設置</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

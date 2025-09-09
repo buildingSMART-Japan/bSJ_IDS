@@ -44,6 +44,17 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_仮設工_法面吹付工_仮設用モルタル吹付</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>仮設用ﾓﾙﾀﾙ吹付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>仮設用モルタル吹付工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_仮設工_法面吹付工_仮設用モルタル吹付</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -59,10 +70,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1000m2以上" />
-                            <xs:enumeration value="2_500m2以上1000m2未満" />
-                            <xs:enumeration value="3_250m2以上500m2未満" />
-                            <xs:enumeration value="4_250m2未満" />
+                            <xs:enumeration value="1000m2以上" />
+                            <xs:enumeration value="500m2以上1000m2未満" />
+                            <xs:enumeration value="250m2以上500m2未満" />
+                            <xs:enumeration value="250m2未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -75,8 +86,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_法面清掃不要の補正無" />
-                            <xs:enumeration value="2_法面清掃不要の補正有" />
+                            <xs:enumeration value="法面清掃不要の補正無" />
+                            <xs:enumeration value="法面清掃不要の補正有" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -89,11 +100,22 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_普通(袋物)" />
-                            <xs:enumeration value="2_高炉B(袋物)" />
-                            <xs:enumeration value="3_各種" />
+                            <xs:enumeration value="普通(袋物)" />
+                            <xs:enumeration value="高炉B(袋物)" />
+                            <xs:enumeration value="各種" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_仮設工_法面吹付工_仮設用モルタル吹付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾗｽ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ラス張工［市場単価］</simpleValue>
                     </value>
                 </property>
             </requirements>

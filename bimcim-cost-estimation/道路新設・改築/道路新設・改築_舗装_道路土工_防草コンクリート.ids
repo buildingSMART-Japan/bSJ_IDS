@@ -50,6 +50,39 @@
                         <simpleValue>1470700101_1340700101_1000500103_1002220101_1058210101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_道路土工_防草コンクリート_張りコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_道路土工_防草コンクリート_張りコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基面整正費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>基面整正</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_道路土工_防草コンクリート_張りコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>養生費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>養生工</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_舗装_道路土工_防草コンクリート_張りコンクリート</simpleValue>
@@ -59,9 +92,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｺﾝｸﾘｰﾄ夜間割増無" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ夜間割増有" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ夜間割増無" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ夜間割増有" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_道路土工_防草コンクリート_張りコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ打設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ｺﾝｸﾘｰﾄ打設工</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -73,15 +117,15 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_18-8-25（20）（普通）" />
-                            <xs:enumeration value="2_18-8-40（普通）" />
-                            <xs:enumeration value="3_21-8-25（20）（普通）" />
-                            <xs:enumeration value="4_21-8-40（普通）" />
-                            <xs:enumeration value="5_18-8-25（20）（高炉）" />
-                            <xs:enumeration value="6_18-8-40（高炉）" />
-                            <xs:enumeration value="7_21-8-25（20）（高炉）" />
-                            <xs:enumeration value="8_21-8-40（高炉）" />
-                            <xs:enumeration value="9_各種" />
+                            <xs:enumeration value="18-8-25（20）（普通）" />
+                            <xs:enumeration value="18-8-40（普通）" />
+                            <xs:enumeration value="21-8-25（20）（普通）" />
+                            <xs:enumeration value="21-8-40（普通）" />
+                            <xs:enumeration value="18-8-25（20）（高炉）" />
+                            <xs:enumeration value="18-8-40（高炉）" />
+                            <xs:enumeration value="21-8-25（20）（高炉）" />
+                            <xs:enumeration value="21-8-40（高炉）" />
+                            <xs:enumeration value="各種" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
                     </value>

@@ -58,6 +58,17 @@
                         <simpleValue>防水材の種類</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド上部工_防水工_防水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防水費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>防水費</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
     </specifications>

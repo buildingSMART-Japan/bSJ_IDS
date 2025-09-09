@@ -59,12 +59,23 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_土砂" />
-                            <xs:enumeration value="2_岩塊・玉石" />
-                            <xs:enumeration value="3_軟岩" />
-                            <xs:enumeration value="4_中硬岩" />
-                            <xs:enumeration value="5_硬岩" />
+                            <xs:enumeration value="土砂" />
+                            <xs:enumeration value="岩塊・玉石" />
+                            <xs:enumeration value="軟岩" />
+                            <xs:enumeration value="中硬岩" />
+                            <xs:enumeration value="硬岩" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_人力積込</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>掘削土処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>人力積込</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -109,9 +120,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_標準" />
-                            <xs:enumeration value="2_小規模" />
-                            <xs:enumeration value="3_現場制約あり" />
+                            <xs:enumeration value="標準" />
+                            <xs:enumeration value="小規模" />
+                            <xs:enumeration value="現場制約あり" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -124,9 +135,24 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_土砂(岩塊･玉石混り土含む)" />
-                            <xs:enumeration value="2_軟岩" />
-                            <xs:enumeration value="3_硬岩" />
+                            <xs:enumeration value="土砂(岩塊･玉石混り土含む)" />
+                            <xs:enumeration value="軟岩" />
+                            <xs:enumeration value="硬岩" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_土砂等運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="土砂等運搬" />
+                            <xs:enumeration value="ダンプトラック運搬（１０ｔ積級）［共同溝工］" />
+                            <xs:enumeration value="土砂運搬工（不整地運搬車による運搬）" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -171,6 +197,17 @@
                         <simpleValue>土質</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_整地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>掘削土処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>整地</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="既製コンクリート杭" ifcVersion="IFC2X3">
@@ -193,6 +230,17 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_既製コンクリート杭</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>中詰ｺﾝｸﾘｰﾄ打設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_既製コンクリート杭</simpleValue>
@@ -225,20 +273,35 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_既製コンクリート杭</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>杭打費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="鋼管・既製コンクリート杭打工［パイルハンマ工］" />
+                            <xs:enumeration value="鋼管・既製コンクリート杭打工［中掘工］" />
+                            <xs:enumeration value="回転杭工" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_既製コンクリート杭</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>杭種別</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_PC杭" />
-                            <xs:enumeration value="10_SC+PHC杭C種" />
-                            <xs:enumeration value="2_PHC杭A種" />
-                            <xs:enumeration value="3_PHC杭B種" />
-                            <xs:enumeration value="4_PHC杭C種" />
-                            <xs:enumeration value="5_RC杭1種" />
-                            <xs:enumeration value="6_RC杭2種" />
-                            <xs:enumeration value="7_SC杭" />
-                            <xs:enumeration value="8_SC+PHC杭A種" />
-                            <xs:enumeration value="9_SC+PHC杭B種" />
+                            <xs:enumeration value="PC杭" />
+                            <xs:enumeration value="PHC杭A種" />
+                            <xs:enumeration value="PHC杭B種" />
+                            <xs:enumeration value="PHC杭C種" />
+                            <xs:enumeration value="RC杭1種" />
+                            <xs:enumeration value="RC杭2種" />
+                            <xs:enumeration value="SC杭" />
+                            <xs:enumeration value="SC+PHC杭A種" />
+                            <xs:enumeration value="SC+PHC杭B種" />
+                            <xs:enumeration value="SC+PHC杭C種" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -249,6 +312,31 @@
                     <baseName>
                         <simpleValue>杭長</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_既製コンクリート杭</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>杭頭処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋工［市場単価］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_既製コンクリート杭</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｶｯﾄｵﾌ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="既製コンクリート杭カットオフ工" />
+                            <xs:enumeration value="積込（コンクリート殻）" />
+                        </xs:restriction>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -291,6 +379,20 @@
                         <simpleValue>土質</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_残土等処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>掘削土処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="残土等処分" />
+                            <xs:enumeration value="処分費（ｔ）" />
+                        </xs:restriction>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="殻処分" ifcVersion="IFC2X3">
@@ -329,14 +431,28 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_殻処分</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>処分費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="処分費（ｍ３）" />
+                            <xs:enumeration value="処分費（ｔ）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_殻処分</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>殻種別</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｱｽﾌｧﾙﾄ殻" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ殻(無筋)" />
-                            <xs:enumeration value="3_ｺﾝｸﾘｰﾄ殻(鉄筋)" />
-                            <xs:enumeration value="4_ﾓﾙﾀﾙ殻" />
+                            <xs:enumeration value="ｱｽﾌｧﾙﾄ殻" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ殻(無筋)" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ殻(鉄筋)" />
+                            <xs:enumeration value="ﾓﾙﾀﾙ殻" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -382,11 +498,66 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｺﾝｸﾘｰﾄ(無筋)構造物とりこわし" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ(鉄筋)構造物とりこわし" />
-                            <xs:enumeration value="3_舗装版破砕" />
-                            <xs:enumeration value="4_吹付法面とりこわし(ﾓﾙﾀﾙ)" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ(無筋)構造物とりこわし" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ(鉄筋)構造物とりこわし" />
+                            <xs:enumeration value="舗装版破砕" />
+                            <xs:enumeration value="吹付法面とりこわし(ﾓﾙﾀﾙ)" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_殻運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>殻運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>殻運搬</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="現場取卸(鋼管杭)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>現場取卸(鋼管杭)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_現場取卸(鋼管杭)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_現場取卸(鋼管杭)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1543800201_1544100101_1052000204_B003805201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_現場取卸(鋼管杭)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>現場取卸費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>現場取卸（鋼管杭）</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -431,10 +602,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_土砂" />
-                            <xs:enumeration value="2_岩塊･玉石" />
-                            <xs:enumeration value="3_破砕岩" />
+                            <xs:enumeration value="土砂" />
+                            <xs:enumeration value="岩塊･玉石" />
+                            <xs:enumeration value="破砕岩" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_積込(ルーズ)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>掘削土処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>積込（ルーズ）</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -464,10 +646,79 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_鋼管杭</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>中詰ｺﾝｸﾘｰﾄ打設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_鋼管杭</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
                         <simpleValue>1470700101_1543800201_1544100101_1052000204_B052400201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_鋼管杭</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>導杭打込･引抜費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="バイブロハンマ施工によるＨ形鋼打込み" />
+                            <xs:enumeration value="ＷＪ併用バイブロハンマ施工によるＨ形鋼打込み" />
+                            <xs:enumeration value="バイブロハンマ施工によるＨ形鋼引抜き" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_鋼管杭</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>導杭賃料</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>Ｈ形鋼杭賃料</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_鋼管杭</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>杭打費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="鋼管・既製コンクリート杭打工［パイルハンマ工］" />
+                            <xs:enumeration value="鋼管・既製コンクリート杭打工［中掘工］" />
+                            <xs:enumeration value="鋼管ソイルセメント杭工" />
+                            <xs:enumeration value="回転杭工" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_鋼製シェッド下部工_既製杭工_鋼管杭</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>杭頭処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="鋼管杭杭頭処理溶接工" />
+                            <xs:enumeration value="ガス切断" />
+                            <xs:enumeration value="スクラップ" />
+                            <xs:enumeration value="鉄筋工［市場単価］" />
+                        </xs:restriction>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">

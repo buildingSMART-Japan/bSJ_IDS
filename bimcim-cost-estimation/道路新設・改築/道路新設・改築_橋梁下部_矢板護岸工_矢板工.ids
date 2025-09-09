@@ -50,6 +50,31 @@
                         <simpleValue>1470700101_1411100101_1535800101_1051100801_1051700101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_タイロッド</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（組）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_タイロッド</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="ﾀｲﾛｯﾄﾞ設置" />
+                            <xs:enumeration value="ﾀｲﾛｯﾄﾞ撤去" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_タイロッド</simpleValue>
@@ -108,13 +133,13 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_IIw型" />
-                            <xs:enumeration value="2_IIIw型" />
-                            <xs:enumeration value="3_IVw型" />
-                            <xs:enumeration value="4_10H型" />
-                            <xs:enumeration value="5_25H型" />
-                            <xs:enumeration value="6_45H型" />
-                            <xs:enumeration value="7_50H型" />
+                            <xs:enumeration value="IIw型" />
+                            <xs:enumeration value="IIIw型" />
+                            <xs:enumeration value="IVw型" />
+                            <xs:enumeration value="10H型" />
+                            <xs:enumeration value="25H型" />
+                            <xs:enumeration value="45H型" />
+                            <xs:enumeration value="50H型" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -131,13 +156,45 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_広幅鋼矢板</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>広幅鋼矢板材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="鋼矢板材料（６－２０ｍ以外は適用外）" />
+                            <xs:enumeration value="鋼矢板（各種）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_広幅鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>打込工法</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
-                            <xs:enumeration value="2_ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
-                            <xs:enumeration value="3_油圧圧入工法" />
+                            <xs:enumeration value="ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
+                            <xs:enumeration value="ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
+                            <xs:enumeration value="油圧圧入工法" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_広幅鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>油圧圧入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="鋼矢板圧入（Ｎｍａｘ≦２５）" />
+                            <xs:enumeration value="鋼矢板圧入（Ｎｍａｘ≦５０）" />
+                            <xs:enumeration value="鋼矢板圧入（５０＜Ｎｍａｘ≦６００）" />
+                            <xs:enumeration value="継鋼矢板圧入（Ｎｍａｘ≦２５）" />
+                            <xs:enumeration value="継鋼矢板圧入（Ｎｍａｘ≦５０）" />
+                            <xs:enumeration value="油圧式杭圧入引抜機据付・解体" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -156,6 +213,28 @@
                     <baseName>
                         <simpleValue>鋼矢板打込長</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_広幅鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛﾊﾝﾏ打込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＷＪ併用バイブロハンマ施工による鋼矢板打込み</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_広幅鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾊﾞｲﾌﾞﾛﾊﾝﾏ打込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>バイブロハンマ施工による鋼矢板打込み</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -190,6 +269,28 @@
                         <simpleValue>1470700101_1411100101_1535800101_1051100801_B051900101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_控え版</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_控え版</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>基礎砕石</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_控え版</simpleValue>
@@ -207,10 +308,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｺﾝｸﾘｰﾄﾎﾟﾝﾌﾟ車打設" />
-                            <xs:enumeration value="2_ｸﾚｰﾝ車打設" />
-                            <xs:enumeration value="3_ﾊﾞｯｸﾎｳ(ｸﾚｰﾝ機能付)打設" />
-                            <xs:enumeration value="4_人力打設" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄﾎﾟﾝﾌﾟ車打設" />
+                            <xs:enumeration value="ｸﾚｰﾝ車打設" />
+                            <xs:enumeration value="ﾊﾞｯｸﾎｳ(ｸﾚｰﾝ機能付)打設" />
+                            <xs:enumeration value="人力打設" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -223,9 +324,31 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_無筋・鉄筋構造物" />
-                            <xs:enumeration value="2_小型構造物" />
+                            <xs:enumeration value="無筋・鉄筋構造物" />
+                            <xs:enumeration value="小型構造物" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_控え版</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>目地板</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_控え版</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋工［市場単価］</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -245,53 +368,64 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_21-8-25(20)(普通)" />
-                            <xs:enumeration value="10_40-12-25(20)(普通)" />
-                            <xs:enumeration value="11_18-8-40(普通)" />
-                            <xs:enumeration value="12_18-12-40(普通)" />
-                            <xs:enumeration value="13_19.5-8-40(普通)" />
-                            <xs:enumeration value="14_21-8-40(普通)" />
-                            <xs:enumeration value="15_21-12-40(普通)" />
-                            <xs:enumeration value="16_22.5-8-40(普通)" />
-                            <xs:enumeration value="17_24-8-40(普通)" />
-                            <xs:enumeration value="18_24-12-40(普通)" />
-                            <xs:enumeration value="19_4.5-2.5-40(普通)" />
-                            <xs:enumeration value="2_21-12-25(20)(普通)" />
-                            <xs:enumeration value="20_21-8-25(20)(高炉)" />
-                            <xs:enumeration value="21_21-12-25(20)(高炉)" />
-                            <xs:enumeration value="22_24-8-25(20)(高炉)" />
-                            <xs:enumeration value="23_24-12-25(20)(高炉)" />
-                            <xs:enumeration value="24_19.5-5-40(高炉)" />
-                            <xs:enumeration value="25_19.5-8-40(高炉)" />
-                            <xs:enumeration value="26_19.5-12-40(高炉)" />
-                            <xs:enumeration value="27_18-5-40(高炉)" />
-                            <xs:enumeration value="28_21-5-40(高炉)" />
-                            <xs:enumeration value="29_18-8-40(高炉)" />
-                            <xs:enumeration value="3_24-8-25(20)(普通)" />
-                            <xs:enumeration value="30_18-12-40(高炉)" />
-                            <xs:enumeration value="31_21-8-40(高炉)" />
-                            <xs:enumeration value="32_24-8-40(高炉)" />
-                            <xs:enumeration value="33_24-12-40(高炉)" />
-                            <xs:enumeration value="34_21-12-40(高炉)" />
-                            <xs:enumeration value="35_40-8-25(早強)" />
-                            <xs:enumeration value="36_40-12-25(早強)" />
-                            <xs:enumeration value="37_21-8-25(早強)" />
-                            <xs:enumeration value="38_21-12-25(早強)" />
-                            <xs:enumeration value="39_24-8-25(早強)" />
-                            <xs:enumeration value="4_24-12-25(20)(普通)" />
-                            <xs:enumeration value="40_24-12-25(早強)" />
-                            <xs:enumeration value="41_18-8-25(高炉)" />
-                            <xs:enumeration value="42_18-12-25(高炉)" />
-                            <xs:enumeration value="43_21-5-80(高炉)" />
-                            <xs:enumeration value="44_18-3-40(高炉)" />
-                            <xs:enumeration value="45_21-3-40(高炉)" />
-                            <xs:enumeration value="46_各種" />
-                            <xs:enumeration value="5_27-8-25(20)(普通)" />
-                            <xs:enumeration value="6_27-12-25(20)(普通)" />
-                            <xs:enumeration value="7_30-8-25(20)(普通)" />
-                            <xs:enumeration value="8_30-12-25(20)(普通)" />
-                            <xs:enumeration value="9_40-8-25(20)(普通)" />
+                            <xs:enumeration value="21-8-25(20)(普通)" />
+                            <xs:enumeration value="21-12-25(20)(普通)" />
+                            <xs:enumeration value="24-8-25(20)(普通)" />
+                            <xs:enumeration value="24-12-25(20)(普通)" />
+                            <xs:enumeration value="27-8-25(20)(普通)" />
+                            <xs:enumeration value="27-12-25(20)(普通)" />
+                            <xs:enumeration value="30-8-25(20)(普通)" />
+                            <xs:enumeration value="30-12-25(20)(普通)" />
+                            <xs:enumeration value="40-8-25(20)(普通)" />
+                            <xs:enumeration value="40-12-25(20)(普通)" />
+                            <xs:enumeration value="18-8-40(普通)" />
+                            <xs:enumeration value="18-12-40(普通)" />
+                            <xs:enumeration value="19.5-8-40(普通)" />
+                            <xs:enumeration value="21-8-40(普通)" />
+                            <xs:enumeration value="21-12-40(普通)" />
+                            <xs:enumeration value="22.5-8-40(普通)" />
+                            <xs:enumeration value="24-8-40(普通)" />
+                            <xs:enumeration value="24-12-40(普通)" />
+                            <xs:enumeration value="4.5-2.5-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(高炉)" />
+                            <xs:enumeration value="21-12-25(20)(高炉)" />
+                            <xs:enumeration value="24-8-25(20)(高炉)" />
+                            <xs:enumeration value="24-12-25(20)(高炉)" />
+                            <xs:enumeration value="19.5-5-40(高炉)" />
+                            <xs:enumeration value="19.5-8-40(高炉)" />
+                            <xs:enumeration value="19.5-12-40(高炉)" />
+                            <xs:enumeration value="18-5-40(高炉)" />
+                            <xs:enumeration value="21-5-40(高炉)" />
+                            <xs:enumeration value="18-8-40(高炉)" />
+                            <xs:enumeration value="18-12-40(高炉)" />
+                            <xs:enumeration value="21-8-40(高炉)" />
+                            <xs:enumeration value="24-8-40(高炉)" />
+                            <xs:enumeration value="24-12-40(高炉)" />
+                            <xs:enumeration value="21-12-40(高炉)" />
+                            <xs:enumeration value="40-8-25(早強)" />
+                            <xs:enumeration value="40-12-25(早強)" />
+                            <xs:enumeration value="21-8-25(早強)" />
+                            <xs:enumeration value="21-12-25(早強)" />
+                            <xs:enumeration value="24-8-25(早強)" />
+                            <xs:enumeration value="24-12-25(早強)" />
+                            <xs:enumeration value="18-8-25(高炉)" />
+                            <xs:enumeration value="18-12-25(高炉)" />
+                            <xs:enumeration value="21-5-80(高炉)" />
+                            <xs:enumeration value="18-3-40(高炉)" />
+                            <xs:enumeration value="21-3-40(高炉)" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_控え版</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -327,6 +461,17 @@
                         <simpleValue>1470700101_1411100101_1535800101_1051100801_1051800101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_腹起し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｔ）</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_腹起し</simpleValue>
@@ -334,6 +479,20 @@
                     <baseName>
                         <simpleValue>溝形鋼規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_腹起し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="腹起し設置" />
+                            <xs:enumeration value="腹起し撤去" />
+                        </xs:restriction>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -366,6 +525,110 @@
                     </baseName>
                     <value>
                         <simpleValue>1470700101_1411100101_1535800101_1051100801_1051300101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_軽量鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>導材布設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>導材布設</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_軽量鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>導材撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>導材撤去</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_軽量鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>導材材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｔ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_軽量鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>導杭引抜費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>バイブロハンマ施工によるＨ形鋼引抜き</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_軽量鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>導杭打込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>バイブロハンマ施工によるＨ形鋼打込み</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_軽量鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>打込費(水上)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>打込み（バイブロハンマ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_軽量鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>打込費(陸上)</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="ドロップハンマ杭打工" />
+                            <xs:enumeration value="やぐら組立解体" />
+                            <xs:enumeration value="バックホウ装着式バイブロハンマ" />
+                            <xs:enumeration value="軽量鋼矢板打込工" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_軽量鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鋼矢板（各種）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_軽量鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>油圧圧入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>油圧圧入</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -434,10 +697,42 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
-                            <xs:enumeration value="2_ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
-                            <xs:enumeration value="3_ｱｰｽｵｰｶﾞ併用圧入工法" />
-                            <xs:enumeration value="4_油圧圧入工法" />
+                            <xs:enumeration value="ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
+                            <xs:enumeration value="ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
+                            <xs:enumeration value="ｱｰｽｵｰｶﾞ併用圧入工法" />
+                            <xs:enumeration value="油圧圧入工法" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>油圧圧入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="鋼矢板圧入（Ｎｍａｘ≦２５）" />
+                            <xs:enumeration value="鋼矢板圧入（Ｎｍａｘ≦５０）" />
+                            <xs:enumeration value="鋼矢板圧入（５０＜Ｎｍａｘ≦６００）" />
+                            <xs:enumeration value="継鋼矢板圧入（Ｎｍａｘ≦２５）" />
+                            <xs:enumeration value="継鋼矢板圧入（Ｎｍａｘ≦５０）" />
+                            <xs:enumeration value="油圧式杭圧入引抜機据付・解体" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>矢板材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="鋼矢板材料（６－２０ｍ以外は適用外）" />
+                            <xs:enumeration value="鋼矢板（各種）" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -450,11 +745,11 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_II型" />
-                            <xs:enumeration value="2_III型" />
-                            <xs:enumeration value="3_IV型" />
-                            <xs:enumeration value="4_VL型" />
-                            <xs:enumeration value="5_VIL型" />
+                            <xs:enumeration value="II型" />
+                            <xs:enumeration value="III型" />
+                            <xs:enumeration value="IV型" />
+                            <xs:enumeration value="VL型" />
+                            <xs:enumeration value="VIL型" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -491,10 +786,46 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_SY295" />
-                            <xs:enumeration value="2_SY390" />
-                            <xs:enumeration value="3_SYW295" />
-                            <xs:enumeration value="4_SYW390" />
+                            <xs:enumeration value="SY295" />
+                            <xs:enumeration value="SY390" />
+                            <xs:enumeration value="SYW295" />
+                            <xs:enumeration value="SYW390" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｱｰｽｵｰｶﾞ併用圧入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鋼矢板打込み工（アースオーガ併用圧入）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛﾊﾝﾏ打込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＷＪ併用バイブロハンマ施工による鋼矢板打込み</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_矢板護岸工_矢板工_鋼矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾊﾞｲﾌﾞﾛﾊﾝﾏ打込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="バイブロハンマ施工による鋼矢板打込み" />
+                            <xs:enumeration value="鋼矢板打込み工（陸上・バイブロ（可変））" />
                         </xs:restriction>
                     </value>
                 </property>

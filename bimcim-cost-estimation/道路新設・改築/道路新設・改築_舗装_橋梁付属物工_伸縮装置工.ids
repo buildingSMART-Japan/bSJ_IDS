@@ -44,6 +44,17 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_舗装_橋梁付属物工_伸縮装置工_埋設ジョイント</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>伸縮継手装置設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>橋梁用埋設型伸縮継手装置設置工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_橋梁付属物工_伸縮装置工_埋設ジョイント</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -58,7 +69,7 @@
                         <simpleValue>工種</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>1_新設</simpleValue>
+                        <simpleValue>新設</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -91,6 +102,17 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_橋梁付属物工_伸縮装置工_鋼・ゴム製伸縮装置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>伸縮継手装置設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>橋梁用伸縮継手装置設置工</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_舗装_橋梁付属物工_伸縮装置工_鋼・ゴム製伸縮装置</simpleValue>

@@ -44,6 +44,17 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_道路改良_仮設工_防護施設工_仮囲い</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>仮囲い設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>仮囲い設置・撤去</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_道路改良_仮設工_防護施設工_仮囲い</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -59,9 +70,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_設置･撤去" />
-                            <xs:enumeration value="2_設置" />
-                            <xs:enumeration value="3_撤去" />
+                            <xs:enumeration value="設置･撤去" />
+                            <xs:enumeration value="設置" />
+                            <xs:enumeration value="撤去" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -123,8 +134,23 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_無し" />
-                            <xs:enumeration value="2_有り" />
+                            <xs:enumeration value="無し" />
+                            <xs:enumeration value="有り" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_道路改良_仮設工_防護施設工_切土及び発破防護柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土留材等材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="土留材（板材）材料費" />
+                            <xs:enumeration value="金網材料費" />
+                            <xs:enumeration value="シート・ナイロンネット材料費" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -137,9 +163,41 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_無し" />
-                            <xs:enumeration value="2_有り" />
+                            <xs:enumeration value="無し" />
+                            <xs:enumeration value="有り" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_道路改良_仮設工_防護施設工_切土及び発破防護柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鋼材賃料等</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="鋼矢板・Ｈ形鋼（埋設）" />
+                            <xs:enumeration value="鋼矢板・Ｈ形鋼（一部埋設）" />
+                            <xs:enumeration value="鋼矢板・Ｈ形鋼（一部撤去）" />
+                            <xs:enumeration value="鋼矢板・Ｈ形鋼（一部または全体を撤去）" />
+                            <xs:enumeration value="鋼矢板・Ｈ形鋼（一部または全体を埋設）" />
+                            <xs:enumeration value="鋼矢板賃料（普通鋼矢板）" />
+                            <xs:enumeration value="鋼矢板材料（６－２０ｍ以外は適用外）" />
+                            <xs:enumeration value="鋼矢板（各種）" />
+                            <xs:enumeration value="Ｈ形鋼杭賃料" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_道路改良_仮設工_防護施設工_切土及び発破防護柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防護柵設置･撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>切土及び発破防護柵の設置・撤去</simpleValue>
                     </value>
                 </property>
             </requirements>

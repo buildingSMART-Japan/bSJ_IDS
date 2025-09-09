@@ -58,7 +58,7 @@
                         <simpleValue>岩区分</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>1_DIII</simpleValue>
+                        <simpleValue>DIII</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -76,6 +76,28 @@
                     <baseName>
                         <simpleValue>長さ</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_掘削補助工_掘削補助工A_フォアパイリング</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌｫｱﾊﾟｲﾘﾝｸﾞ費(機械掘削工法)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>フォアパイリングＤIII</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_掘削補助工_掘削補助工A_フォアパイリング</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌｫｱﾊﾟｲﾘﾝｸﾞ費(発破工法)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>フォアパイリングＤIII</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -134,6 +156,17 @@
                         <simpleValue>長さ</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_掘削補助工_掘削補助工A_ミニパイプルーフ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾐﾆﾊﾟｲﾌﾟﾙｰﾌ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ミニパイプルーフ工</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="仮インバート" ifcVersion="IFC2X3">
@@ -156,6 +189,17 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_掘削補助工_掘削補助工A_仮インバート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仮ｲﾝﾊﾞｰﾄ吹付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>仮インバート吹付工</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_掘削補助工_掘削補助工A_仮インバート</simpleValue>
@@ -192,8 +236,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_補強材有" />
-                            <xs:enumeration value="2_補強材無" />
+                            <xs:enumeration value="補強材有" />
+                            <xs:enumeration value="補強材無" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -204,6 +248,17 @@
                     <baseName>
                         <simpleValue>補強材規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_掘削補助工_掘削補助工A_仮インバート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>補強鋼材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>補強材鋼材設置工</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -236,6 +291,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1470700101_1482900101_1487500101_1487600101_1487800101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_掘削補助工_掘削補助工A_先受け矢板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>先受け矢板費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>先受け矢板工</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -285,6 +351,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1470700101_1482900101_1487500101_1487600101_1488100101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_掘削補助工_掘削補助工A_増しロックボルト</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>増しﾛｯｸﾎﾞﾙﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>増しロックボルト工</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -344,6 +421,17 @@
                         <simpleValue>吹付厚</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_掘削補助工_掘削補助工A_増し吹付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>増し吹付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>増し吹付工</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_掘削補助工_掘削補助工A_増し吹付</simpleValue>
@@ -361,8 +449,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_補強材有" />
-                            <xs:enumeration value="2_補強材無" />
+                            <xs:enumeration value="補強材有" />
+                            <xs:enumeration value="補強材無" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -405,6 +493,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1470700101_1482900101_1487500101_1487600101_1487900101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_掘削補助工_掘削補助工A_岩盤固結</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>岩盤固結費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>岩盤固結工</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -455,6 +554,17 @@
                     <baseName>
                         <simpleValue>材料規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_掘削補助工_掘削補助工A_鏡ロックボルト</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鏡ﾛｯｸﾎﾞﾙﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鏡ロックボルト工</simpleValue>
+                    </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
@@ -512,6 +622,17 @@
                     <baseName>
                         <simpleValue>材料規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_掘削補助工_掘削補助工A_鏡吹付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鏡吹付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鏡吹付工</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

@@ -50,6 +50,17 @@
                         <simpleValue>1470700101_1482900101_1002500901_1133000101_1353600101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_仮設工_仮区画線工_仮区画線</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>区画線設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>区画線設置</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_仮設工_仮区画線工_仮区画線</simpleValue>
@@ -59,8 +70,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_厚1.5mm" />
-                            <xs:enumeration value="2_厚1.0mm" />
+                            <xs:enumeration value="厚1.5mm" />
+                            <xs:enumeration value="厚1.0mm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -73,8 +84,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_常温" />
-                            <xs:enumeration value="2_加熱" />
+                            <xs:enumeration value="常温" />
+                            <xs:enumeration value="加熱" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -87,8 +98,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_排水性舗装無" />
-                            <xs:enumeration value="2_排水性舗装有" />
+                            <xs:enumeration value="排水性舗装無" />
+                            <xs:enumeration value="排水性舗装有" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -101,9 +112,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_溶融式手動" />
-                            <xs:enumeration value="2_ﾍﾟｲﾝﾄ式 溶剤型" />
-                            <xs:enumeration value="3_ﾍﾟｲﾝﾄ式 水性型" />
+                            <xs:enumeration value="溶融式手動" />
+                            <xs:enumeration value="ﾍﾟｲﾝﾄ式 溶剤型" />
+                            <xs:enumeration value="ﾍﾟｲﾝﾄ式 水性型" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -116,19 +127,19 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_実線 15cm" />
-                            <xs:enumeration value="10_ｾﾞﾌﾞﾗ 20cm" />
-                            <xs:enumeration value="11_ｾﾞﾌﾞﾗ 30cm" />
-                            <xs:enumeration value="12_ｾﾞﾌﾞﾗ 45cm" />
-                            <xs:enumeration value="13_矢印･記号･文字 15cm換算" />
-                            <xs:enumeration value="2_実線 20cm" />
-                            <xs:enumeration value="3_実線 30cm" />
-                            <xs:enumeration value="4_実線 45cm" />
-                            <xs:enumeration value="5_破線 15cm" />
-                            <xs:enumeration value="6_破線 20cm" />
-                            <xs:enumeration value="7_破線 30cm" />
-                            <xs:enumeration value="8_破線 45cm" />
-                            <xs:enumeration value="9_ｾﾞﾌﾞﾗ 15cm" />
+                            <xs:enumeration value="実線 15cm" />
+                            <xs:enumeration value="実線 20cm" />
+                            <xs:enumeration value="実線 30cm" />
+                            <xs:enumeration value="実線 45cm" />
+                            <xs:enumeration value="破線 15cm" />
+                            <xs:enumeration value="破線 20cm" />
+                            <xs:enumeration value="破線 30cm" />
+                            <xs:enumeration value="破線 45cm" />
+                            <xs:enumeration value="ｾﾞﾌﾞﾗ 15cm" />
+                            <xs:enumeration value="ｾﾞﾌﾞﾗ 20cm" />
+                            <xs:enumeration value="ｾﾞﾌﾞﾗ 30cm" />
+                            <xs:enumeration value="ｾﾞﾌﾞﾗ 45cm" />
+                            <xs:enumeration value="矢印･記号･文字 15cm換算" />
                         </xs:restriction>
                     </value>
                 </property>

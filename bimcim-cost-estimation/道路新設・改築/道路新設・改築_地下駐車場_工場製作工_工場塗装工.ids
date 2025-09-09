@@ -19,6 +19,64 @@
         <milestone>詳細設計</milestone>
     </info>
     <specifications>
+        <specification name="メッキ" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>メッキ</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下駐車場_工場製作工_工場塗装工_メッキ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下駐車場_工場製作工_工場塗装工_メッキ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1561100101_1037200801_1037300102_1037600102</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下駐車場_工場製作工_工場塗装工_メッキ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>溶融亜鉛ﾒｯｷ材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="溶融亜鉛メッキ（検査路用）" />
+                            <xs:enumeration value="溶融亜鉛メッキ" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下駐車場_工場製作工_工場塗装工_メッキ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>溶融亜鉛ﾒｯｷ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>溶融亜鉛メッキ工</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
         <specification name="前処理" ifcVersion="IFC2X3">
             <applicability minOccurs="1" maxOccurs="1">
                 <attribute>
@@ -50,6 +108,17 @@
                         <simpleValue>1470700101_1561100101_1037200801_1037300102_1037400102</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_地下駐車場_工場製作工_工場塗装工_前処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>塗装前処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>塗装前処理（二次素地調整）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_地下駐車場_工場製作工_工場塗装工_前処理</simpleValue>
@@ -59,9 +128,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｴｯﾁﾝｸﾞﾌﾟﾗｲﾏｰ" />
-                            <xs:enumeration value="2_ｼﾞﾝｸﾘｯﾁﾌﾟﾗｲﾏｰ" />
-                            <xs:enumeration value="3_原板ﾌﾞﾗｽﾄのみ" />
+                            <xs:enumeration value="ｴｯﾁﾝｸﾞﾌﾟﾗｲﾏｰ" />
+                            <xs:enumeration value="ｼﾞﾝｸﾘｯﾁﾌﾟﾗｲﾏｰ" />
+                            <xs:enumeration value="原板ﾌﾞﾗｽﾄのみ" />
                         </xs:restriction>
                     </value>
                 </property>

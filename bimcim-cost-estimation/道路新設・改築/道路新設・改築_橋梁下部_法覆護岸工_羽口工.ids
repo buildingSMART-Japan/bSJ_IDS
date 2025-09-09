@@ -44,6 +44,17 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_法覆護岸工_羽口工_かご枠</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>かご枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>かご枠</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_法覆護岸工_羽口工_かご枠</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -109,6 +120,17 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_法覆護岸工_羽口工_じゃかご</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>じゃかご費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>じゃかご</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_法覆護岸工_羽口工_じゃかご</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -124,9 +146,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_径45cm" />
-                            <xs:enumeration value="2_径60cm" />
+                            <xs:enumeration value="径45cm" />
+                            <xs:enumeration value="径60cm" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_法覆護岸工_羽口工_じゃかご</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>止杭設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>止杭打込</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -172,6 +205,17 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_法覆護岸工_羽口工_ふとんかご</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>ふとんかご費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ふとんかご</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_法覆護岸工_羽口工_ふとんかご</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -195,8 +239,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｽﾛｰﾌﾟ式" />
-                            <xs:enumeration value="2_階段式" />
+                            <xs:enumeration value="ｽﾛｰﾌﾟ式" />
+                            <xs:enumeration value="階段式" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -209,9 +253,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_高さ40cm×幅120cm" />
-                            <xs:enumeration value="2_高さ50cm×幅120cm" />
-                            <xs:enumeration value="3_高さ60cm×幅120cm" />
+                            <xs:enumeration value="高さ40cm×幅120cm" />
+                            <xs:enumeration value="高さ50cm×幅120cm" />
+                            <xs:enumeration value="高さ60cm×幅120cm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -272,6 +316,17 @@
                         <simpleValue>1470700101_1411100101_1053200101_1059200101_B053600101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_法覆護岸工_羽口工_連節ブロック張</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>連節ﾌﾞﾛｯｸ張費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>連節ブロック張</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_法覆護岸工_羽口工_連節ブロック張</simpleValue>
@@ -279,6 +334,50 @@
                     <baseName>
                         <simpleValue>ﾌﾞﾛｯｸ規格(型)</simpleValue>
                     </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="連節ブロック張(コンクリート)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>連節ブロック張(コンクリート)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_法覆護岸工_羽口工_連節ブロック張(コンクリート)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_法覆護岸工_羽口工_連節ブロック張(コンクリート)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1411100101_1053200101_1059200101_B053605101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_法覆護岸工_羽口工_連節ブロック張(コンクリート)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -322,9 +421,67 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_一般型枠" />
-                            <xs:enumeration value="2_化粧型枠" />
-                            <xs:enumeration value="3_撤去しない埋設型枠" />
+                            <xs:enumeration value="一般型枠" />
+                            <xs:enumeration value="化粧型枠" />
+                            <xs:enumeration value="撤去しない埋設型枠" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_法覆護岸工_羽口工_連節ブロック張(型枠)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="連節ブロック水中吊落し" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>連節ブロック水中吊落し</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_法覆護岸工_羽口工_連節ブロック水中吊落し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_法覆護岸工_羽口工_連節ブロック水中吊落し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1411100101_1053200101_1059200101_B053605301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_法覆護岸工_羽口工_連節ブロック水中吊落し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>連節ﾌﾞﾛｯｸ張費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="連節ブロック水中吊落し工" />
+                            <xs:enumeration value="連節ブロック水中吊落し材料費" />
                         </xs:restriction>
                     </value>
                 </property>

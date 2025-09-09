@@ -48,15 +48,15 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾏﾙﾁｽﾄﾗﾝﾄﾞ 1900kN型(12S12.4A)" />
-                            <xs:enumeration value="2_ﾏﾙﾁｽﾄﾗﾝﾄﾞ 2200kN型(12S12.7B)" />
-                            <xs:enumeration value="3_ﾏﾙﾁｽﾄﾗﾝﾄﾞ 2900kN型(12S15.2A)" />
-                            <xs:enumeration value="4_ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞ 390kN型(1S17.8)" />
-                            <xs:enumeration value="5_ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞ 450kN型(1S19.3)" />
-                            <xs:enumeration value="6_ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞ 570kN型(1S21.8)" />
-                            <xs:enumeration value="7_ﾊﾞｰｼｽﾃﾑ 径23(1B23A･1B23B)" />
-                            <xs:enumeration value="8_ﾊﾞｰｼｽﾃﾑ 径26(1B26A･1B26B)" />
-                            <xs:enumeration value="9_ﾊﾞｰｼｽﾃﾑ 径32(1B32A･1B32B)" />
+                            <xs:enumeration value="ﾏﾙﾁｽﾄﾗﾝﾄﾞ 1900kN型(12S12.4A)" />
+                            <xs:enumeration value="ﾏﾙﾁｽﾄﾗﾝﾄﾞ 2200kN型(12S12.7B)" />
+                            <xs:enumeration value="ﾏﾙﾁｽﾄﾗﾝﾄﾞ 2900kN型(12S15.2A)" />
+                            <xs:enumeration value="ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞ 390kN型(1S17.8)" />
+                            <xs:enumeration value="ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞ 450kN型(1S19.3)" />
+                            <xs:enumeration value="ｼﾝｸﾞﾙｽﾄﾗﾝﾄﾞ 570kN型(1S21.8)" />
+                            <xs:enumeration value="ﾊﾞｰｼｽﾃﾑ 径23(1B23A･1B23B)" />
+                            <xs:enumeration value="ﾊﾞｰｼｽﾃﾑ 径26(1B26A･1B26B)" />
+                            <xs:enumeration value="ﾊﾞｰｼｽﾃﾑ 径32(1B32A･1B32B)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -69,12 +69,23 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_A種1号 5m≦L&lt;8m" />
-                            <xs:enumeration value="2_A種1号 L≧8m" />
-                            <xs:enumeration value="3_B種1号 5m≦L&lt;8m" />
-                            <xs:enumeration value="4_B種1号 L≧8m" />
-                            <xs:enumeration value="5_各種" />
+                            <xs:enumeration value="A種1号 5m≦L&lt;8m" />
+                            <xs:enumeration value="A種1号 L≧8m" />
+                            <xs:enumeration value="B種1号 5m≦L&lt;8m" />
+                            <xs:enumeration value="B種1号 L≧8m" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC箱桁橋工_PC箱桁製作工_PCケーブル・緊張</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>PCｹｰﾌﾞﾙ継手費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>接続工</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -97,9 +108,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_縦締" />
-                            <xs:enumeration value="2_横締" />
-                            <xs:enumeration value="3_鉛直締" />
+                            <xs:enumeration value="縦締" />
+                            <xs:enumeration value="横締" />
+                            <xs:enumeration value="鉛直締" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -112,10 +123,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_両締め" />
-                            <xs:enumeration value="2_片締め[固定側(緊張用)]" />
-                            <xs:enumeration value="3_片締め[固定側(固定用)]" />
+                            <xs:enumeration value="両締め" />
+                            <xs:enumeration value="片締め[固定側(緊張用)]" />
+                            <xs:enumeration value="片締め[固定側(固定用)]" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC箱桁橋工_PC箱桁製作工_PCケーブル・緊張</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙ･緊張費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ケーブル・緊張工（縦締・横締・鉛直締）</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -160,8 +182,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_一般養生" />
-                            <xs:enumeration value="2_一般養生以外" />
+                            <xs:enumeration value="一般養生" />
+                            <xs:enumeration value="一般養生以外" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -174,8 +196,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｺﾝｸﾘｰﾄ夜間割増無" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ夜間割増有" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ夜間割増無" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ夜間割増有" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -188,12 +210,23 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_36-8-25(20)(早強)" />
-                            <xs:enumeration value="2_36-12-25(20)(早強)" />
-                            <xs:enumeration value="3_40-8-25(20)(早強)" />
-                            <xs:enumeration value="4_40-12-25(20)(早強)" />
-                            <xs:enumeration value="5_各種" />
+                            <xs:enumeration value="36-8-25(20)(早強)" />
+                            <xs:enumeration value="36-12-25(20)(早強)" />
+                            <xs:enumeration value="40-8-25(20)(早強)" />
+                            <xs:enumeration value="40-12-25(20)(早強)" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC箱桁橋工_PC箱桁製作工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート工</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -238,12 +271,26 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_SD295 D13" />
-                            <xs:enumeration value="2_SD295 D16" />
-                            <xs:enumeration value="3_SD345 D13" />
-                            <xs:enumeration value="4_SD345 D16～25" />
-                            <xs:enumeration value="5_SD345 D29～32" />
-                            <xs:enumeration value="6_鉄筋各種" />
+                            <xs:enumeration value="SD295 D13" />
+                            <xs:enumeration value="SD295 D16" />
+                            <xs:enumeration value="SD345 D13" />
+                            <xs:enumeration value="SD345 D16～25" />
+                            <xs:enumeration value="SD345 D29～32" />
+                            <xs:enumeration value="鉄筋各種" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC箱桁橋工_PC箱桁製作工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="鉄筋工" />
+                            <xs:enumeration value="ガス圧接工（手動・自動）［市場単価］" />
                         </xs:restriction>
                     </value>
                 </property>

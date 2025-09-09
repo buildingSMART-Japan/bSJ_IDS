@@ -48,10 +48,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_径26A種2号" />
-                            <xs:enumeration value="2_径26B種2号" />
-                            <xs:enumeration value="3_径32A種2号" />
-                            <xs:enumeration value="4_径32B種2号" />
+                            <xs:enumeration value="径26A種2号" />
+                            <xs:enumeration value="径26B種2号" />
+                            <xs:enumeration value="径32A種2号" />
+                            <xs:enumeration value="径32B種2号" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -73,6 +73,17 @@
                     <baseName>
                         <simpleValue>材質規格（寸法等）</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリートシェッド_シェッド付属物工_落橋防止装置工_落橋防止装置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>落橋防止装置設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＰＣ鋼棒　定着工［ＰＣ橋片持架設工］</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

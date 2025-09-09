@@ -66,6 +66,28 @@
                         <simpleValue>材質</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_橋梁付属物工_銘板工_銘板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾈｰﾑﾌﾟﾚｰﾄ材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ネームプレート（ＰＣ橋用）材料費</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_橋梁付属物工_銘板工_銘板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾈｰﾑﾌﾟﾚｰﾄ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ネームプレート設置</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
     </specifications>

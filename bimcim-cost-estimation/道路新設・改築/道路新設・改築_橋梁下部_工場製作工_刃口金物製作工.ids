@@ -50,6 +50,17 @@
                         <simpleValue>1470700101_1411100101_1037200601_1411300101_1039901401</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_工場製作工_刃口金物製作工_製作加工</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>製作加工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>刃口金物材料費</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_橋梁下部_工場製作工_刃口金物製作工_製作加工</simpleValue>

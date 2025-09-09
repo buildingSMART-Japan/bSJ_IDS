@@ -50,6 +50,17 @@
                         <simpleValue>1470700101_1543800201_1037201001_1370400201_1370700101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_工場製作工_鋳造費_排水桝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>排水桝材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>工場製作材料費（個）</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_工場製作工_鋳造費_排水桝</simpleValue>
@@ -98,6 +109,17 @@
                     <baseName>
                         <simpleValue>材質</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_工場製作工_鋳造費_銘板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>橋名板材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>工場製作材料費（枚）</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

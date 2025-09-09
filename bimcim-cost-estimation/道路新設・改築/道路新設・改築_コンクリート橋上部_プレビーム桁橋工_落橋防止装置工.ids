@@ -58,6 +58,17 @@
                         <simpleValue>1470700101_1390900101_1587300101_1566300501_1564500601</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_プレビーム桁橋工_落橋防止装置工_落橋防止装置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>落橋防止装置設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>落橋防止装置据付（ＰＣ橋架設工）</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
     </specifications>

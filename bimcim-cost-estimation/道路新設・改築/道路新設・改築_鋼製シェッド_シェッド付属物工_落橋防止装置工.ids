@@ -50,6 +50,28 @@
                         <simpleValue>1470700101_1543800201_1543300201_1566300401_1564500201</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_シェッド付属物工_落橋防止装置工_落橋防止装置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>据付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>落橋防止装置</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_シェッド付属物工_落橋防止装置工_落橋防止装置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（箇所）</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_鋼製シェッド_シェッド付属物工_落橋防止装置工_落橋防止装置</simpleValue>

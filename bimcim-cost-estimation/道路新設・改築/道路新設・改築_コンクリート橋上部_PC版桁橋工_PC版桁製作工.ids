@@ -52,10 +52,43 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC版桁橋工_PC版桁製作工_PCケーブル</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>PCｹｰﾌﾞﾙ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ケーブル工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC版桁橋工_PC版桁製作工_PCケーブル</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
                         <simpleValue>1470700101_1390900101_1587900101_1397800101_1394100401</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC版桁橋工_PC版桁製作工_PCケーブル</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（式）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC版桁橋工_PC版桁製作工_PCケーブル</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｸﾞﾗｳﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>グラウト工</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -80,6 +113,17 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC版桁橋工_PC版桁製作工_PC固定</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>PCｹｰﾌﾞﾙ定着費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＰＣ定着工</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC版桁橋工_PC版桁製作工_PC固定</simpleValue>
@@ -108,8 +152,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_両締め" />
-                            <xs:enumeration value="2_片締め" />
+                            <xs:enumeration value="両締め" />
+                            <xs:enumeration value="片締め" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -122,8 +166,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_発動発電機使用" />
-                            <xs:enumeration value="2_商用電源使用" />
+                            <xs:enumeration value="発動発電機使用" />
+                            <xs:enumeration value="商用電源使用" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -162,6 +206,17 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC版桁橋工_PC版桁製作工_PC継手</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>PCｹｰﾌﾞﾙ継手費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＰＣ継手工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC版桁橋工_PC版桁製作工_PC継手</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -177,8 +232,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_両締め" />
-                            <xs:enumeration value="2_片締め" />
+                            <xs:enumeration value="両締め" />
+                            <xs:enumeration value="片締め" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -191,8 +246,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_発動発電機使用" />
-                            <xs:enumeration value="2_商用電源使用" />
+                            <xs:enumeration value="発動発電機使用" />
+                            <xs:enumeration value="商用電源使用" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -245,6 +300,17 @@
                         <simpleValue>緊張区分</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC版桁橋工_PC版桁製作工_PC緊張</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>緊張費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>緊張工</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="コンクリート" ifcVersion="IFC2X3">
@@ -295,8 +361,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｺﾝｸﾘｰﾄ夜間割増無" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ夜間割増有" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ夜間割増無" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ夜間割増有" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -307,6 +373,17 @@
                     <baseName>
                         <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC版桁橋工_PC版桁製作工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート工</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -349,6 +426,17 @@
                         <simpleValue>型枠の種類</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC版桁橋工_PC版桁製作工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠工</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="横締めケーブル" ifcVersion="IFC2X3">
@@ -390,6 +478,17 @@
                         <simpleValue>1470700101_1390900101_1587900101_1397800101_1398700101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC版桁橋工_PC版桁製作工_横締めケーブル</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>横締めｹｰﾌﾞﾙ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>横締めケーブル工</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC版桁橋工_PC版桁製作工_横締めケーブル</simpleValue>
@@ -399,8 +498,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_両締め" />
-                            <xs:enumeration value="2_片締め" />
+                            <xs:enumeration value="両締め" />
+                            <xs:enumeration value="片締め" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -413,9 +512,97 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_発動発電機使用" />
-                            <xs:enumeration value="2_商用電源使用" />
+                            <xs:enumeration value="発動発電機使用" />
+                            <xs:enumeration value="商用電源使用" />
                         </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="横締め緊張" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>横締め緊張</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC版桁橋工_PC版桁製作工_横締め緊張</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC版桁橋工_PC版桁製作工_横締め緊張</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1390900101_1587900101_1397800101_1398800101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC版桁橋工_PC版桁製作工_横締め緊張</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>横締め緊張費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>横締め緊張工</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="移動型枠" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>移動型枠</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC版桁橋工_PC版桁製作工_移動型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC版桁橋工_PC版桁製作工_移動型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1390900101_1587900101_1397800101_1398000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC版桁橋工_PC版桁製作工_移動型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>移動型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>移動型枠</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -458,6 +645,17 @@
                     <baseName>
                         <simpleValue>鉄筋材料規格・径</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC版桁橋工_PC版桁製作工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋工</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

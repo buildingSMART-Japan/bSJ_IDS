@@ -58,6 +58,17 @@
                         <simpleValue>桁規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_プレビーム桁橋工_プレビーム桁製作工_プレビーム桁製作</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚﾋﾞｰﾑ桁材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（本）</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
     </specifications>

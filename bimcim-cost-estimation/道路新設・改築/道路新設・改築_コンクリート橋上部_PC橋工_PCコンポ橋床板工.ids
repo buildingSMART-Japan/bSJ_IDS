@@ -19,6 +19,94 @@
         <milestone>詳細設計</milestone>
     </info>
     <specifications>
+        <specification name="PC板仮置" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>PC板仮置</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC橋工_PCコンポ橋床板工_PC板仮置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC橋工_PCコンポ橋床板工_PC板仮置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>PC板仮置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＰＣ板仮置工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC橋工_PCコンポ橋床板工_PC板仮置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1390900101_1393300101_1597000101_1597200101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="PC板支承" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>PC板支承</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC橋工_PCコンポ橋床板工_PC板支承</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC橋工_PCコンポ橋床板工_PC板支承</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>PC板支承費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＰＣ板支承工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC橋工_PCコンポ橋床板工_PC板支承</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1390900101_1393300101_1597000101_1597100101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
         <specification name="PC板敷設" ifcVersion="IFC2X3">
             <applicability minOccurs="1" maxOccurs="1">
                 <attribute>
@@ -52,10 +140,120 @@
                         <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC橋工_PCコンポ橋床板工_PC板敷設</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>PC板敷設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＰＣ板敷設工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC橋工_PCコンポ橋床板工_PC板敷設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>PC板材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＰＣ板材料費（ＰＣコンポ桁のみ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC橋工_PCコンポ橋床板工_PC板敷設</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
                         <simpleValue>1470700101_1390900101_1393300101_1597000101_1597300101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="型枠(PCコンポ床版工)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>型枠(PCコンポ床版工)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC橋工_PCコンポ橋床板工_型枠(PCコンポ床版工)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC橋工_PCコンポ橋床板工_型枠(PCコンポ床版工)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1390900101_1393300101_1597000101_1597500101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC橋工_PCコンポ橋床板工_型枠(PCコンポ床版工)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠工（PCコンポ床版工）</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="継目" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>継目</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC橋工_PCコンポ橋床板工_継目</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC橋工_PCコンポ橋床板工_継目</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1390900101_1393300101_1597000101_1597400101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_コンクリート橋上部_PC橋工_PCコンポ橋床板工_継目</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>継目費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>継目工</simpleValue>
                     </value>
                 </property>
             </requirements>

@@ -66,6 +66,17 @@
                         <simpleValue>固化材の種類</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_地盤改良工_路床安定処理工(ICT)_安定処理(ICT)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>安定処理費(ICT)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>安定処理(ICT)</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_舗装_地盤改良工_路床安定処理工(ICT)_安定処理(ICT)</simpleValue>

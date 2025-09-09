@@ -59,8 +59,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_削孔有" />
-                            <xs:enumeration value="2_削孔無" />
+                            <xs:enumeration value="削孔有" />
+                            <xs:enumeration value="削孔無" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -79,6 +79,28 @@
                     <baseName>
                         <simpleValue>材料規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑内付帯工_裏面排水工_湧水処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>湧水処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>湧水処理削孔・挿入</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑内付帯工_裏面排水工_湧水処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>湧水材料費(鋼材のみ)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｋｇ）</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -120,6 +142,17 @@
                     <baseName>
                         <simpleValue>材料規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑内付帯工_裏面排水工_裏面排水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>裏面排水設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>裏面排水設置工</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

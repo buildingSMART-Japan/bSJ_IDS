@@ -58,6 +58,21 @@
                         <simpleValue>ｶﾞｰﾄﾞｹｰﾌﾞﾙ規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_防護柵工_路側防護柵工_ガードケーブル</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｶﾞｰﾄﾞｹｰﾌﾞﾙ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="中間支柱" />
+                            <xs:enumeration value="端末支柱" />
+                            <xs:enumeration value="ケーブル張" />
+                        </xs:restriction>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="ガードパイプ" ifcVersion="IFC2X3">
@@ -100,8 +115,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_土中建込" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ建込" />
+                            <xs:enumeration value="土中建込" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ建込" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -114,11 +129,11 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_100m以上" />
-                            <xs:enumeration value="2_50m以上100m未満" />
-                            <xs:enumeration value="3_20m以上50m未満" />
-                            <xs:enumeration value="4_20m以上100m未満" />
-                            <xs:enumeration value="5_20m未満" />
+                            <xs:enumeration value="100m以上" />
+                            <xs:enumeration value="50m以上100m未満" />
+                            <xs:enumeration value="20m以上50m未満" />
+                            <xs:enumeration value="20m以上100m未満" />
+                            <xs:enumeration value="20m未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -131,8 +146,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_曲線部補正無" />
-                            <xs:enumeration value="2_曲線部補正有" />
+                            <xs:enumeration value="曲線部補正無" />
+                            <xs:enumeration value="曲線部補正有" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -145,17 +160,28 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_Gp-Ap-2E 塗装品" />
-                            <xs:enumeration value="10_Gp-Bp-2B ﾒｯｷ品" />
-                            <xs:enumeration value="2_Gp-Bp-2E 塗装品" />
-                            <xs:enumeration value="3_Gp-Cp-2E 塗装品" />
-                            <xs:enumeration value="4_Gp-Ap-2E ﾒｯｷ品" />
-                            <xs:enumeration value="5_Gp-Bp-2E ﾒｯｷ品" />
-                            <xs:enumeration value="6_Gp-Ap-2B 塗装品" />
-                            <xs:enumeration value="7_Gp-Bp-2B 塗装品" />
-                            <xs:enumeration value="8_Gp-Cp-2B 塗装品" />
-                            <xs:enumeration value="9_Gp-Ap-2B ﾒｯｷ品" />
+                            <xs:enumeration value="Gp-Ap-2E 塗装品" />
+                            <xs:enumeration value="Gp-Bp-2E 塗装品" />
+                            <xs:enumeration value="Gp-Cp-2E 塗装品" />
+                            <xs:enumeration value="Gp-Ap-2E ﾒｯｷ品" />
+                            <xs:enumeration value="Gp-Bp-2E ﾒｯｷ品" />
+                            <xs:enumeration value="Gp-Ap-2B 塗装品" />
+                            <xs:enumeration value="Gp-Bp-2B 塗装品" />
+                            <xs:enumeration value="Gp-Cp-2B 塗装品" />
+                            <xs:enumeration value="Gp-Ap-2B ﾒｯｷ品" />
+                            <xs:enumeration value="Gp-Bp-2B ﾒｯｷ品" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_防護柵工_路側防護柵工_ガードパイプ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｶﾞｰﾄﾞﾊﾟｲﾌﾟ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>防護柵設置工（ガードパイプ設置工）</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -200,8 +226,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_土中建込" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ建込" />
+                            <xs:enumeration value="土中建込" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ建込" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -214,11 +240,11 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_100m以上" />
-                            <xs:enumeration value="2_50m以上100m未満" />
-                            <xs:enumeration value="3_21m以上50m未満" />
-                            <xs:enumeration value="4_21m以上100m未満" />
-                            <xs:enumeration value="5_21m未満" />
+                            <xs:enumeration value="100m以上" />
+                            <xs:enumeration value="50m以上100m未満" />
+                            <xs:enumeration value="21m以上50m未満" />
+                            <xs:enumeration value="21m以上100m未満" />
+                            <xs:enumeration value="21m未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -231,8 +257,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_曲線部補正無" />
-                            <xs:enumeration value="2_曲線部補正有" />
+                            <xs:enumeration value="曲線部補正無" />
+                            <xs:enumeration value="曲線部補正有" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -245,8 +271,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_標準型" />
-                            <xs:enumeration value="2_耐雪型" />
+                            <xs:enumeration value="標準型" />
+                            <xs:enumeration value="耐雪型" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -259,15 +285,15 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_塗装品 Gr-A-2B" />
-                            <xs:enumeration value="2_塗装品 Gr-B-2B" />
-                            <xs:enumeration value="3_塗装品 Gr-C-2B" />
-                            <xs:enumeration value="4_塗装品 Gr-Am-2B" />
-                            <xs:enumeration value="5_塗装品 Gr-Bm-2B" />
-                            <xs:enumeration value="6_ﾒｯｷ品 Gr-A-2B" />
-                            <xs:enumeration value="7_ﾒｯｷ品 Gr-B-2B" />
-                            <xs:enumeration value="8_ﾒｯｷ品 Gr-Am-2B" />
-                            <xs:enumeration value="9_ﾒｯｷ品 Gr-Bm-2B" />
+                            <xs:enumeration value="塗装品 Gr-A-2B" />
+                            <xs:enumeration value="塗装品 Gr-B-2B" />
+                            <xs:enumeration value="塗装品 Gr-C-2B" />
+                            <xs:enumeration value="塗装品 Gr-Am-2B" />
+                            <xs:enumeration value="塗装品 Gr-Bm-2B" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-A-2B" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-B-2B" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-Am-2B" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-Bm-2B" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -280,15 +306,15 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_塗装品 Gr-A-4E" />
-                            <xs:enumeration value="2_塗装品 Gr-B-4E" />
-                            <xs:enumeration value="3_塗装品 Gr-C-4E" />
-                            <xs:enumeration value="4_塗装品 Gr-Am-4E" />
-                            <xs:enumeration value="5_塗装品 Gr-Bm-4E" />
-                            <xs:enumeration value="6_ﾒｯｷ品 Gr-A-4E" />
-                            <xs:enumeration value="7_ﾒｯｷ品 Gr-B-4E" />
-                            <xs:enumeration value="8_ﾒｯｷ品 Gr-Am-4E" />
-                            <xs:enumeration value="9_ﾒｯｷ品 Gr-Bm-4E" />
+                            <xs:enumeration value="塗装品 Gr-A-4E" />
+                            <xs:enumeration value="塗装品 Gr-B-4E" />
+                            <xs:enumeration value="塗装品 Gr-C-4E" />
+                            <xs:enumeration value="塗装品 Gr-Am-4E" />
+                            <xs:enumeration value="塗装品 Gr-Bm-4E" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-A-4E" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-B-4E" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-Am-4E" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-Bm-4E" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -301,22 +327,22 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_塗装品 Gr-A2-2B" />
-                            <xs:enumeration value="10_ﾒｯｷ品 Gr-A2-2B" />
-                            <xs:enumeration value="11_ﾒｯｷ品 Gr-A3-2B" />
-                            <xs:enumeration value="12_ﾒｯｷ品 Gr-A4-2B" />
-                            <xs:enumeration value="13_ﾒｯｷ品 Gr-A5-2B" />
-                            <xs:enumeration value="14_ﾒｯｷ品 Gr-B2-2B" />
-                            <xs:enumeration value="15_ﾒｯｷ品 Gr-B3-2B" />
-                            <xs:enumeration value="16_ﾒｯｷ品 Gr-B4-2B" />
-                            <xs:enumeration value="2_塗装品 Gr-A3-2B" />
-                            <xs:enumeration value="3_塗装品 Gr-A4-2B" />
-                            <xs:enumeration value="4_塗装品 Gr-A5-2B" />
-                            <xs:enumeration value="5_塗装品 Gr-B2-2B" />
-                            <xs:enumeration value="6_塗装品 Gr-B3-2B" />
-                            <xs:enumeration value="7_塗装品 Gr-B4-2B" />
-                            <xs:enumeration value="8_塗装品 Gr-C2-2B" />
-                            <xs:enumeration value="9_塗装品 Gr-C3-2B" />
+                            <xs:enumeration value="塗装品 Gr-A2-2B" />
+                            <xs:enumeration value="塗装品 Gr-A3-2B" />
+                            <xs:enumeration value="塗装品 Gr-A4-2B" />
+                            <xs:enumeration value="塗装品 Gr-A5-2B" />
+                            <xs:enumeration value="塗装品 Gr-B2-2B" />
+                            <xs:enumeration value="塗装品 Gr-B3-2B" />
+                            <xs:enumeration value="塗装品 Gr-B4-2B" />
+                            <xs:enumeration value="塗装品 Gr-C2-2B" />
+                            <xs:enumeration value="塗装品 Gr-C3-2B" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-A2-2B" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-A3-2B" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-A4-2B" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-A5-2B" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-B2-2B" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-B3-2B" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-B4-2B" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -329,22 +355,39 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_塗装品 Gr-A2-4E" />
-                            <xs:enumeration value="10_ﾒｯｷ品 Gr-A2-4E" />
-                            <xs:enumeration value="11_ﾒｯｷ品 Gr-A3-3E" />
-                            <xs:enumeration value="12_ﾒｯｷ品 Gr-A4-2E" />
-                            <xs:enumeration value="13_ﾒｯｷ品 Gr-A5-2E" />
-                            <xs:enumeration value="14_ﾒｯｷ品 Gr-B2-4E" />
-                            <xs:enumeration value="15_ﾒｯｷ品 Gr-B3-3E" />
-                            <xs:enumeration value="16_ﾒｯｷ品 Gr-B4-2E" />
-                            <xs:enumeration value="2_塗装品 Gr-A3-3E" />
-                            <xs:enumeration value="3_塗装品 Gr-A4-2E" />
-                            <xs:enumeration value="4_塗装品 Gr-A5-2E" />
-                            <xs:enumeration value="5_塗装品 Gr-B2-4E" />
-                            <xs:enumeration value="6_塗装品 Gr-B3-3E" />
-                            <xs:enumeration value="7_塗装品 Gr-B4-2E" />
-                            <xs:enumeration value="8_塗装品 Gr-C2-3E" />
-                            <xs:enumeration value="9_塗装品 Gr-C3-2E" />
+                            <xs:enumeration value="塗装品 Gr-A2-4E" />
+                            <xs:enumeration value="塗装品 Gr-A3-3E" />
+                            <xs:enumeration value="塗装品 Gr-A4-2E" />
+                            <xs:enumeration value="塗装品 Gr-A5-2E" />
+                            <xs:enumeration value="塗装品 Gr-B2-4E" />
+                            <xs:enumeration value="塗装品 Gr-B3-3E" />
+                            <xs:enumeration value="塗装品 Gr-B4-2E" />
+                            <xs:enumeration value="塗装品 Gr-C2-3E" />
+                            <xs:enumeration value="塗装品 Gr-C3-2E" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-A2-4E" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-A3-3E" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-A4-2E" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-A5-2E" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-B2-4E" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-B3-3E" />
+                            <xs:enumeration value="ﾒｯｷ品 Gr-B4-2E" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_舗装_防護柵工_路側防護柵工_ガードレール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｶﾞｰﾄﾞﾚｰﾙ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="防護柵設置工（ガードレール設置工）" />
+                            <xs:enumeration value="防護柵設置工（材料費を除く手間のみ）" />
+                            <xs:enumeration value="防護柵設置工（ガードレール設置工）耐雪型" />
+                            <xs:enumeration value="防護柵設置工（手間のみ）耐雪型" />
+                            <xs:enumeration value="ビーム補強金具" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -357,8 +400,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾋﾞｰﾑ補強金具有" />
-                            <xs:enumeration value="2_ﾋﾞｰﾑ補強金具無" />
+                            <xs:enumeration value="ﾋﾞｰﾑ補強金具有" />
+                            <xs:enumeration value="ﾋﾞｰﾑ補強金具無" />
                         </xs:restriction>
                     </value>
                 </property>

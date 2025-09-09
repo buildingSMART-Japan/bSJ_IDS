@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
     <info>
         <title>道路新設・改築_トンネル(NATM)_坑内付帯工_箱抜工</title>
         <copyright>buildingSMART Japan 土木委員会</copyright>
@@ -57,6 +57,98 @@
                     <baseName>
                         <simpleValue>掘削区分(岩)</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑内付帯工_箱抜工_箱抜</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>箱抜吹付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>箱抜吹付工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑内付帯工_箱抜工_箱抜</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>箱抜型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑内付帯工_箱抜工_箱抜</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>箱抜掘削費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="箱抜掘削工" />
+                            <xs:enumeration value="箱抜掘削ずり積込" />
+                            <xs:enumeration value="箱抜掘削ずり運搬工" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑内付帯工_箱抜工_箱抜</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>箱抜補強費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>箱抜補強工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑内付帯工_箱抜工_箱抜</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>箱抜金網費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>箱抜金網工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑内付帯工_箱抜工_箱抜</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>箱抜鋼製支保費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>箱抜鋼製支保工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑内付帯工_箱抜工_箱抜</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>箱抜ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>箱抜コンクリート工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_坑内付帯工_箱抜工_箱抜</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>箱抜ﾛｯｸﾎﾞﾙﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>箱抜ロックボルト工</simpleValue>
+                    </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>

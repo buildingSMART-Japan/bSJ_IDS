@@ -58,6 +58,17 @@
                         <simpleValue>巻厚</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_覆工_床版コンクリート工_床版コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>床版ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>床版コンクリート工</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_トンネル(NATM)_覆工_床版コンクリート工_床版コンクリート</simpleValue>

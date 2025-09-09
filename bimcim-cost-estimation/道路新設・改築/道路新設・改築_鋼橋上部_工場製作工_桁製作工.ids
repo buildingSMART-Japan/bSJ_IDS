@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
     <info>
         <title>道路新設・改築_鋼橋上部_工場製作工_桁製作工</title>
         <copyright>buildingSMART Japan 土木委員会</copyright>
@@ -58,6 +58,17 @@
                         <simpleValue>径･長さ</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼橋上部_工場製作工_桁製作工_スタッドジベル</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>スタッドジベル材料費（各種）</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="ボルト・ナット" ifcVersion="IFC2X3">
@@ -91,6 +102,20 @@
                         <simpleValue>1470700101_1367500101_1037200401_1367700101_1124200401</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼橋上部_工場製作工_桁製作工_ボルト・ナット</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="高力ボルト材料費（規格品）" />
+                            <xs:enumeration value="高力ボルト材料費（各種）" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_鋼橋上部_工場製作工_桁製作工_ボルト・ナット</simpleValue>
@@ -99,7 +124,7 @@
                         <simpleValue>ﾎﾞﾙﾄ･ﾅｯﾄ種類</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>1_H.T.B</simpleValue>
+                        <simpleValue>H.T.B</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -135,6 +160,53 @@
                         <simpleValue>1470700101_1367500101_1037200401_1367700101_1039900601</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼橋上部_工場製作工_桁製作工_製作加工</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>副資材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>副資材費（ｔ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼橋上部_工場製作工_桁製作工_製作加工</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>形鋼材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="鋼材費（形鋼１　各種）" />
+                            <xs:enumeration value="鋼材費（形鋼２　規格品）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼橋上部_工場製作工_桁製作工_製作加工</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>棒鋼材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鋼材費（丸鋼・耐溝状腐食電縫鋼管）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼橋上部_工場製作工_桁製作工_製作加工</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>製作加工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>製作直接労務費（橋桁）</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路新設・改築_鋼橋上部_工場製作工_桁製作工_製作加工</simpleValue>
@@ -142,6 +214,22 @@
                     <baseName>
                         <simpleValue>鋼材規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_鋼橋上部_工場製作工_桁製作工_製作加工</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鋼板材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="鋼材費（鋼板１　各種）" />
+                            <xs:enumeration value="鋼材費（鋼板２　ガーダー形式）" />
+                            <xs:enumeration value="鋼材費（鋼板２　ボックス形式）" />
+                            <xs:enumeration value="鋼材費（鋼板２　トラス・アーチ形式）" />
+                        </xs:restriction>
+                    </value>
                 </property>
             </requirements>
         </specification>

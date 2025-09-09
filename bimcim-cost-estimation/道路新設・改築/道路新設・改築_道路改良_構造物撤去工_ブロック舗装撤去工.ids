@@ -19,6 +19,94 @@
         <milestone>詳細設計</milestone>
     </info>
     <specifications>
+        <specification name="インターロッキングブロック撤去" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>インターロッキングブロック撤去</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_道路改良_構造物撤去工_ブロック舗装撤去工_インターロッキングブロック撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_道路改良_構造物撤去工_ブロック舗装撤去工_インターロッキングブロック撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1301600101_1069300101_1591000101_1585000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_道路改良_構造物撤去工_ブロック舗装撤去工_インターロッキングブロック撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>インターロッキングブロック撤去（再設置）</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ノンスリップ撤去" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ノンスリップ撤去</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_道路改良_構造物撤去工_ブロック舗装撤去工_ノンスリップ撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_道路改良_構造物撤去工_ブロック舗装撤去工_ノンスリップ撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1301600101_1069300101_1591000101_1553400201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_道路改良_構造物撤去工_ブロック舗装撤去工_ノンスリップ撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ノンスリップ撤去工</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
         <specification name="特殊ブロック撤去" ifcVersion="IFC2X3">
             <applicability minOccurs="1" maxOccurs="1">
                 <attribute>
@@ -48,6 +136,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1470700101_1301600101_1069300101_1591000101_B585100101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_道路改良_構造物撤去工_ブロック舗装撤去工_特殊ブロック撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>特殊ブロック舗装</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
