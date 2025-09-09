@@ -19,6 +19,50 @@
         <milestone>詳細設計</milestone>
     </info>
     <specifications>
+        <specification name="足場" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>足場</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_現場打構築工_防水工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_現場打構築工_防水工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472200101_1492100101_1492600301_1493200101_1005502601</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_現場打構築工_防水工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>足場工</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
         <specification name="防水" ifcVersion="IFC2X3">
             <applicability minOccurs="1" maxOccurs="1">
                 <attribute>
@@ -59,12 +103,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_一般部及び換気部 底頂部" />
-                            <xs:enumeration value="2_一般部及び換気部 側部内防水" />
-                            <xs:enumeration value="3_一般部及び換気部 側部外防水" />
-                            <xs:enumeration value="4_特殊部 底頂部" />
-                            <xs:enumeration value="5_特殊部 側部内防水" />
-                            <xs:enumeration value="6_特殊部 側部外防水" />
+                            <xs:enumeration value="一般部及び換気部 底頂部" />
+                            <xs:enumeration value="一般部及び換気部 側部内防水" />
+                            <xs:enumeration value="一般部及び換気部 側部外防水" />
+                            <xs:enumeration value="特殊部 底頂部" />
+                            <xs:enumeration value="特殊部 側部内防水" />
+                            <xs:enumeration value="特殊部 側部外防水" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -75,6 +119,17 @@
                     <baseName>
                         <simpleValue>材質</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_現場打構築工_防水工_防水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防水費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>防水工</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -118,11 +173,33 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_一般部及び換気部 底頂部" />
-                            <xs:enumeration value="2_一般部及び換気部 側部" />
-                            <xs:enumeration value="3_特殊部 底頂部" />
-                            <xs:enumeration value="4_特殊部 側部" />
+                            <xs:enumeration value="一般部及び換気部 底頂部" />
+                            <xs:enumeration value="一般部及び換気部 側部" />
+                            <xs:enumeration value="特殊部 底頂部" />
+                            <xs:enumeration value="特殊部 側部" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_現場打構築工_防水工_防水保護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防水保護費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>防水層保護工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_現場打構築工_防水工_防水保護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>養生材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>養生材工</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -171,14 +248,28 @@
                         <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_現場打構築工_防水工_防水壁</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="型枠" />
+                            <xs:enumeration value="型枠工（撤去しない埋設型枠）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_現場打構築工_防水工_防水壁</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>打設工法</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｺﾝｸﾘｰﾄﾎﾟﾝﾌﾟ車打設" />
-                            <xs:enumeration value="2_ｸﾚｰﾝ車打設" />
-                            <xs:enumeration value="3_ﾊﾞｯｸﾎｳ(ｸﾚｰﾝ機能付)打設" />
-                            <xs:enumeration value="4_人力打設" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄﾎﾟﾝﾌﾟ車打設" />
+                            <xs:enumeration value="ｸﾚｰﾝ車打設" />
+                            <xs:enumeration value="ﾊﾞｯｸﾎｳ(ｸﾚｰﾝ機能付)打設" />
+                            <xs:enumeration value="人力打設" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -191,8 +282,22 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_無筋・鉄筋構造物" />
-                            <xs:enumeration value="2_小型構造物" />
+                            <xs:enumeration value="無筋・鉄筋構造物" />
+                            <xs:enumeration value="小型構造物" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_現場打構築工_防水工_防水壁</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="鉄筋工［市場単価］" />
+                            <xs:enumeration value="ガス圧接工（手動・自動）［市場単価］" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -205,53 +310,64 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_21-8-25(20)(普通)" />
-                            <xs:enumeration value="10_40-12-25(20)(普通)" />
-                            <xs:enumeration value="11_18-8-40(普通)" />
-                            <xs:enumeration value="12_18-12-40(普通)" />
-                            <xs:enumeration value="13_19.5-8-40(普通)" />
-                            <xs:enumeration value="14_21-8-40(普通)" />
-                            <xs:enumeration value="15_21-12-40(普通)" />
-                            <xs:enumeration value="16_22.5-8-40(普通)" />
-                            <xs:enumeration value="17_24-8-40(普通)" />
-                            <xs:enumeration value="18_24-12-40(普通)" />
-                            <xs:enumeration value="19_4.5-2.5-40(普通)" />
-                            <xs:enumeration value="2_21-12-25(20)(普通)" />
-                            <xs:enumeration value="20_21-8-25(20)(高炉)" />
-                            <xs:enumeration value="21_21-12-25(20)(高炉)" />
-                            <xs:enumeration value="22_24-8-25(20)(高炉)" />
-                            <xs:enumeration value="23_24-12-25(20)(高炉)" />
-                            <xs:enumeration value="24_19.5-5-40(高炉)" />
-                            <xs:enumeration value="25_19.5-8-40(高炉)" />
-                            <xs:enumeration value="26_19.5-12-40(高炉)" />
-                            <xs:enumeration value="27_18-5-40(高炉)" />
-                            <xs:enumeration value="28_21-5-40(高炉)" />
-                            <xs:enumeration value="29_18-8-40(高炉)" />
-                            <xs:enumeration value="3_24-8-25(20)(普通)" />
-                            <xs:enumeration value="30_18-12-40(高炉)" />
-                            <xs:enumeration value="31_21-8-40(高炉)" />
-                            <xs:enumeration value="32_24-8-40(高炉)" />
-                            <xs:enumeration value="33_24-12-40(高炉)" />
-                            <xs:enumeration value="34_21-12-40(高炉)" />
-                            <xs:enumeration value="35_40-8-25(早強)" />
-                            <xs:enumeration value="36_40-12-25(早強)" />
-                            <xs:enumeration value="37_21-8-25(早強)" />
-                            <xs:enumeration value="38_21-12-25(早強)" />
-                            <xs:enumeration value="39_24-8-25(早強)" />
-                            <xs:enumeration value="4_24-12-25(20)(普通)" />
-                            <xs:enumeration value="40_24-12-25(早強)" />
-                            <xs:enumeration value="41_18-8-25(高炉)" />
-                            <xs:enumeration value="42_18-12-25(高炉)" />
-                            <xs:enumeration value="43_21-5-80(高炉)" />
-                            <xs:enumeration value="44_18-3-40(高炉)" />
-                            <xs:enumeration value="45_21-3-40(高炉)" />
-                            <xs:enumeration value="46_各種" />
-                            <xs:enumeration value="5_27-8-25(20)(普通)" />
-                            <xs:enumeration value="6_27-12-25(20)(普通)" />
-                            <xs:enumeration value="7_30-8-25(20)(普通)" />
-                            <xs:enumeration value="8_30-12-25(20)(普通)" />
-                            <xs:enumeration value="9_40-8-25(20)(普通)" />
+                            <xs:enumeration value="21-8-25(20)(普通)" />
+                            <xs:enumeration value="21-12-25(20)(普通)" />
+                            <xs:enumeration value="24-8-25(20)(普通)" />
+                            <xs:enumeration value="24-12-25(20)(普通)" />
+                            <xs:enumeration value="27-8-25(20)(普通)" />
+                            <xs:enumeration value="27-12-25(20)(普通)" />
+                            <xs:enumeration value="30-8-25(20)(普通)" />
+                            <xs:enumeration value="30-12-25(20)(普通)" />
+                            <xs:enumeration value="40-8-25(20)(普通)" />
+                            <xs:enumeration value="40-12-25(20)(普通)" />
+                            <xs:enumeration value="18-8-40(普通)" />
+                            <xs:enumeration value="18-12-40(普通)" />
+                            <xs:enumeration value="19.5-8-40(普通)" />
+                            <xs:enumeration value="21-8-40(普通)" />
+                            <xs:enumeration value="21-12-40(普通)" />
+                            <xs:enumeration value="22.5-8-40(普通)" />
+                            <xs:enumeration value="24-8-40(普通)" />
+                            <xs:enumeration value="24-12-40(普通)" />
+                            <xs:enumeration value="4.5-2.5-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(高炉)" />
+                            <xs:enumeration value="21-12-25(20)(高炉)" />
+                            <xs:enumeration value="24-8-25(20)(高炉)" />
+                            <xs:enumeration value="24-12-25(20)(高炉)" />
+                            <xs:enumeration value="19.5-5-40(高炉)" />
+                            <xs:enumeration value="19.5-8-40(高炉)" />
+                            <xs:enumeration value="19.5-12-40(高炉)" />
+                            <xs:enumeration value="18-5-40(高炉)" />
+                            <xs:enumeration value="21-5-40(高炉)" />
+                            <xs:enumeration value="18-8-40(高炉)" />
+                            <xs:enumeration value="18-12-40(高炉)" />
+                            <xs:enumeration value="21-8-40(高炉)" />
+                            <xs:enumeration value="24-8-40(高炉)" />
+                            <xs:enumeration value="24-12-40(高炉)" />
+                            <xs:enumeration value="21-12-40(高炉)" />
+                            <xs:enumeration value="40-8-25(早強)" />
+                            <xs:enumeration value="40-12-25(早強)" />
+                            <xs:enumeration value="21-8-25(早強)" />
+                            <xs:enumeration value="21-12-25(早強)" />
+                            <xs:enumeration value="24-8-25(早強)" />
+                            <xs:enumeration value="24-12-25(早強)" />
+                            <xs:enumeration value="18-8-25(高炉)" />
+                            <xs:enumeration value="18-12-25(高炉)" />
+                            <xs:enumeration value="21-5-80(高炉)" />
+                            <xs:enumeration value="18-3-40(高炉)" />
+                            <xs:enumeration value="21-3-40(高炉)" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_現場打構築工_防水工_防水壁</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
                     </value>
                 </property>
             </requirements>

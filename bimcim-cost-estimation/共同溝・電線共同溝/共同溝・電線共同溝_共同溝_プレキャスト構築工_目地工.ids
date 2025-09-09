@@ -66,6 +66,61 @@
                         <simpleValue>種類</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_プレキャスト構築工_目地工_コーキング</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺｰｷﾝｸﾞ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コーキング設置</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="シール" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>シール</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_プレキャスト構築工_目地工_シール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_プレキャスト構築工_目地工_シール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472200101_1492100101_1493600101_1494600101_1494800101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_プレキャスト構築工_目地工_シール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼｰﾙ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>シール設置</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
     </specifications>

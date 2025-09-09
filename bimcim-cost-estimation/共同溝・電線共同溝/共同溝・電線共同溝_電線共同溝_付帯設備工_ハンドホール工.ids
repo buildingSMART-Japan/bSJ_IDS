@@ -58,6 +58,17 @@
                         <simpleValue>寸法</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_電線共同溝_付帯設備工_ハンドホール工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾊﾝﾄﾞﾎｰﾙ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ハンドホール設置</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
     </specifications>

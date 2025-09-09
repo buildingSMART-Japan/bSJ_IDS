@@ -44,6 +44,17 @@
                         <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_プレキャスト構築工_縦締工_PC鋼材</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>PC鋼材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_プレキャスト構築工_縦締工_PC鋼材</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -114,6 +125,17 @@
                     <baseName>
                         <simpleValue>緊張区分</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_プレキャスト構築工_縦締工_縦締め緊張</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>縦締め緊張費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>縦締め緊張工</simpleValue>
+                    </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>

@@ -50,6 +50,50 @@
                         <simpleValue>1472200101_1492100101_1037200801_1492200101_1039901701</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_工場製作工_設備・金物製作工_製作加工</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>副資材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>副資材費（ｔ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_工場製作工_設備・金物製作工_製作加工</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>形鋼材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鋼材費（形鋼１　各種）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_工場製作工_設備・金物製作工_製作加工</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>棒鋼材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鋼材費（丸鋼・耐溝状腐食電縫鋼管）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_工場製作工_設備・金物製作工_製作加工</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>製作加工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>製作直接労務費（検査路）</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_工場製作工_設備・金物製作工_製作加工</simpleValue>
@@ -57,6 +101,17 @@
                     <baseName>
                         <simpleValue>鋼材規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_工場製作工_設備・金物製作工_製作加工</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鋼板材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鋼材費（鋼板１　各種）</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

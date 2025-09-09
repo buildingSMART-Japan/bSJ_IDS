@@ -59,9 +59,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_土砂" />
-                            <xs:enumeration value="2_ｱｽﾌｧﾙﾄ塊" />
+                            <xs:enumeration value="土砂" />
+                            <xs:enumeration value="ｱｽﾌｧﾙﾄ塊" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_電線共同溝_開削土工_掘削工_土砂等運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>自工区流用･仮置場への運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>運搬（電線共同溝）</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -106,9 +117,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_残土受入れ地での処理" />
-                            <xs:enumeration value="2_敷均し(ﾙｰｽﾞ)" />
+                            <xs:enumeration value="残土受入れ地での処理" />
+                            <xs:enumeration value="敷均し(ﾙｰｽﾞ)" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_電線共同溝_開削土工_掘削工_整地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>敷均し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>整地</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -151,6 +173,17 @@
                     <baseName>
                         <simpleValue>土質</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_電線共同溝_開削土工_掘削工_開削掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>掘削費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>床掘り</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

@@ -59,10 +59,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_一般養生" />
-                            <xs:enumeration value="2_特殊養生(練炭)" />
-                            <xs:enumeration value="3_特殊養生(ｼﾞｪｯﾄﾋｰﾀ)" />
-                            <xs:enumeration value="4_特殊養生(仮囲い内ｼﾞｪｯﾄﾋｰﾀ養生)" />
+                            <xs:enumeration value="一般養生" />
+                            <xs:enumeration value="特殊養生(練炭)" />
+                            <xs:enumeration value="特殊養生(ｼﾞｪｯﾄﾋｰﾀ)" />
+                            <xs:enumeration value="特殊養生(仮囲い内ｼﾞｪｯﾄﾋｰﾀ養生)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -75,8 +75,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｺﾝｸﾘｰﾄ夜間割増無" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ夜間割増有" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ夜間割増無" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ夜間割増有" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -89,14 +89,72 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_18-8-25(20)(普通)" />
-                            <xs:enumeration value="2_18-8-40(普通)" />
-                            <xs:enumeration value="3_18-8-25(20)(高炉)" />
-                            <xs:enumeration value="4_18-8-40(高炉)" />
-                            <xs:enumeration value="5_18-8-25(早強)" />
-                            <xs:enumeration value="6_18-8-40(早強)" />
-                            <xs:enumeration value="7_各種" />
+                            <xs:enumeration value="18-8-25(20)(普通)" />
+                            <xs:enumeration value="18-8-40(普通)" />
+                            <xs:enumeration value="18-8-25(20)(高炉)" />
+                            <xs:enumeration value="18-8-40(高炉)" />
+                            <xs:enumeration value="18-8-25(早強)" />
+                            <xs:enumeration value="18-8-40(早強)" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_現場打構築工_歩床工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="コンクリートポンプ車打設（歩床部）" />
+                            <xs:enumeration value="人力打設（歩床部）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="型枠" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_現場打構築工_歩床工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_現場打構築工_歩床工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472200101_1492100101_1492600301_1492800101_1040801701</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_現場打構築工_歩床工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠工（歩床部型枠）</simpleValue>
                     </value>
                 </property>
             </requirements>

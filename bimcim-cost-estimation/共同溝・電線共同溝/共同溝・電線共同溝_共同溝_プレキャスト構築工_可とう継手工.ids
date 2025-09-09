@@ -66,6 +66,17 @@
                         <simpleValue>内高</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_プレキャスト構築工_可とう継手工_可とう継手</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>可とう継手費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>可とう継手設置</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
     </specifications>

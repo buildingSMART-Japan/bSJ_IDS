@@ -58,6 +58,17 @@
                         <simpleValue>舗装厚</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_情報ボックス_情報ボックス工_舗装版破砕工_舗装版切断</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>舗装版切断費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>舗装版切断</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_共同溝・電線共同溝_情報ボックス_情報ボックス工_舗装版破砕工_舗装版切断</simpleValue>
@@ -67,9 +78,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｱｽﾌｧﾙﾄ舗装版" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ舗装版" />
-                            <xs:enumeration value="3_ｺﾝｸﾘｰﾄ+ｱｽﾌｧﾙﾄ(ｶﾊﾞｰ)舗装版" />
+                            <xs:enumeration value="ｱｽﾌｧﾙﾄ舗装版" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ舗装版" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ+ｱｽﾌｧﾙﾄ(ｶﾊﾞｰ)舗装版" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -104,6 +115,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1472200101_1577600101_1568500201_1594300201_B499900401</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_情報ボックス_情報ボックス工_舗装版破砕工_舗装版破砕</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>破砕費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>舗装版破砕</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">

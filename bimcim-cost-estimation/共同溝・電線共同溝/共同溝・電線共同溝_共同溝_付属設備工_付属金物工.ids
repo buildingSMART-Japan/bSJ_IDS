@@ -58,6 +58,17 @@
                         <simpleValue>ｽﾃｯﾌﾟ規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_付属設備工_付属金物工_ステップ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｽﾃｯﾌﾟ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ステップ設置</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="タラップ" ifcVersion="IFC2X3">
@@ -99,6 +110,17 @@
                         <simpleValue>寸法</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_付属設備工_付属金物工_タラップ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾀﾗｯﾌﾟ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>タラップ設置</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="手摺" ifcVersion="IFC2X3">
@@ -130,6 +152,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1472200101_1492100101_1494900101_1495300101_1495600101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_付属設備工_付属金物工_手摺</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>手摺設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>手摺設置</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -171,6 +204,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1472200101_1492100101_1494900101_1495300101_1495400101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_付属設備工_付属金物工_換気防護柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>換気防護柵設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>換気防護柵設置</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -222,6 +266,17 @@
                         <simpleValue>寸法</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_付属設備工_付属金物工_梯子</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>梯子設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>梯子設置</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="銘板" ifcVersion="IFC2X3">
@@ -270,6 +325,17 @@
                     <baseName>
                         <simpleValue>材質</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_付属設備工_付属金物工_銘板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>銘板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>銘板設置</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

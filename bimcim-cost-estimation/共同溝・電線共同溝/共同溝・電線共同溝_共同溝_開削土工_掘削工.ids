@@ -44,6 +44,17 @@
                         <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_開削土工_掘削工_開削掘削</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>仮置場での整地費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>整地</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_開削土工_掘削工_開削掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -57,6 +68,28 @@
                     <baseName>
                         <simpleValue>土質</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_開削土工_掘削工_開削掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>掘削費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>掘削工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_開削土工_掘削工_開削掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>自工区流用･仮置場への運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ダンプトラック運搬（共同溝工）</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

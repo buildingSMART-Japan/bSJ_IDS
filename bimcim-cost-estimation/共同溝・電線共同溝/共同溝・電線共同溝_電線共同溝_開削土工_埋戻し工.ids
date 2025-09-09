@@ -59,8 +59,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_土砂" />
-                            <xs:enumeration value="2_中埋砂" />
+                            <xs:enumeration value="土砂" />
+                            <xs:enumeration value="中埋砂" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -71,6 +71,17 @@
                     <baseName>
                         <simpleValue>土質区分</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_電線共同溝_開削土工_埋戻し工_埋戻し・締固め</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>埋戻し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>埋戻し・締固め</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -99,10 +110,43 @@
                         <simpleValue>数量情報_202304_01_共同溝・電線共同溝_電線共同溝_開削土工_埋戻し工_埋戻し土</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>仮置場から･又は購入土の運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土砂等運搬</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_電線共同溝_開削土工_埋戻し工_埋戻し土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仮置場での積込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>積込（ルーズ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_電線共同溝_開削土工_埋戻し工_埋戻し土</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
                         <simpleValue>1472200101_1540200101_1492300102_1492500102_B004100801</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_電線共同溝_開削土工_埋戻し工_埋戻し土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土砂購入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土材料</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">

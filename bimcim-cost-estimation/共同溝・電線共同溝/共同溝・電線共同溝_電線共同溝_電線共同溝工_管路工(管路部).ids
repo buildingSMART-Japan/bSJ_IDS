@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
     <info>
         <title>共同溝・電線共同溝_電線共同溝_電線共同溝工_管路工(管路部)</title>
         <copyright>buildingSMART Japan 土木委員会</copyright>
@@ -66,6 +66,20 @@
                         <simpleValue>材質</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_電線共同溝_電線共同溝工_管路工(管路部)_埋設管路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>管路材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="管路材設置" />
+                            <xs:enumeration value="管路受台(スペーサ)(材料費)" />
+                        </xs:restriction>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="埋設表示シート" ifcVersion="IFC2X3">
@@ -97,6 +111,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1472200101_1540200101_1540300101_1540400101_B585600101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_電線共同溝_電線共同溝工_管路工(管路部)_埋設表示シート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼｰﾄ材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>埋設表示シート（材料費）</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -140,6 +165,20 @@
                         <simpleValue>1472200101_1540200101_1540300101_1540400101_B498400101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_電線共同溝_電線共同溝工_管路工(管路部)_露出管路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>受･支持金具材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="受金具(材料費)" />
+                            <xs:enumeration value="支持金具(材料費)" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_共同溝・電線共同溝_電線共同溝_電線共同溝工_管路工(管路部)_露出管路</simpleValue>
@@ -155,6 +194,17 @@
                     <baseName>
                         <simpleValue>材質</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_電線共同溝_電線共同溝工_管路工(管路部)_露出管路</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>管路材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>管路材設置</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

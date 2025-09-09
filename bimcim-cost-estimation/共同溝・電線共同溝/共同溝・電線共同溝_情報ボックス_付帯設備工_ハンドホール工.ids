@@ -58,6 +58,50 @@
                         <simpleValue>寸法</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_情報ボックス_付帯設備工_ハンドホール工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支持金具(材料費)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>支持金具（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_情報ボックス_付帯設備工_ハンドホール工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾊﾝﾄﾞﾎｰﾙ固定板材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ハンドホール固定板（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_情報ボックス_付帯設備工_ハンドホール工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾊﾝﾄﾞﾎｰﾙ布設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ハンドホール</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_情報ボックス_付帯設備工_ハンドホール工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾊﾝﾄﾞﾎｰﾙ蓋(材料費)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ハンドホール蓋（材料費）</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
     </specifications>

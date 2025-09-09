@@ -55,14 +55,28 @@
                         <simpleValue>数量情報_202304_01_共同溝・電線共同溝_電線共同溝_舗装版撤去工_舗装版破砕工_殻処分</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>処分費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="処分費（ｍ３）" />
+                            <xs:enumeration value="処分費（ｔ）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_電線共同溝_舗装版撤去工_舗装版破砕工_殻処分</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>殻種別</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｱｽﾌｧﾙﾄ殻" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ殻(無筋)" />
-                            <xs:enumeration value="3_ｺﾝｸﾘｰﾄ殻(鉄筋)" />
-                            <xs:enumeration value="4_ﾓﾙﾀﾙ殻" />
+                            <xs:enumeration value="ｱｽﾌｧﾙﾄ殻" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ殻(無筋)" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ殻(鉄筋)" />
+                            <xs:enumeration value="ﾓﾙﾀﾙ殻" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -107,6 +121,17 @@
                         <simpleValue>殼種別</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_電線共同溝_舗装版撤去工_舗装版破砕工_殻運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>殼運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>運搬（電線共同溝）</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="舗装版切断" ifcVersion="IFC2X3">
@@ -148,6 +173,17 @@
                         <simpleValue>舗装厚</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_電線共同溝_舗装版撤去工_舗装版破砕工_舗装版切断</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>舗装版切断費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>舗装版切断</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_共同溝・電線共同溝_電線共同溝_舗装版撤去工_舗装版破砕工_舗装版切断</simpleValue>
@@ -157,9 +193,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｱｽﾌｧﾙﾄ舗装版" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ舗装版" />
-                            <xs:enumeration value="3_ｺﾝｸﾘｰﾄ+ｱｽﾌｧﾙﾄ(ｶﾊﾞｰ)舗装版" />
+                            <xs:enumeration value="ｱｽﾌｧﾙﾄ舗装版" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ舗装版" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ+ｱｽﾌｧﾙﾄ(ｶﾊﾞｰ)舗装版" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -194,6 +230,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1472200101_1540200101_1594200101_1594300101_B499900301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_電線共同溝_舗装版撤去工_舗装版破砕工_舗装版破砕</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>破砕費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>舗装版破砕積込</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">

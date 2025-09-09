@@ -50,6 +50,17 @@
                         <simpleValue>1472200101_1492100101_1492600301_1594100101_1594700101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_現場打構築工_現場打躯体工(構造物単位)_共同溝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>共同溝構築費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>共同溝工（１）</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_現場打構築工_現場打躯体工(構造物単位)_共同溝</simpleValue>
@@ -74,6 +85,28 @@
                         <simpleValue>土被り</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_現場打構築工_現場打躯体工(構造物単位)_共同溝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>化粧型枠（共同溝工）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_現場打構築工_現場打躯体工(構造物単位)_共同溝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>特殊目地材材料費</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_現場打構築工_現場打躯体工(構造物単位)_共同溝</simpleValue>
@@ -91,17 +124,17 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_21-8-25(20)(普通)" />
-                            <xs:enumeration value="10_24-8-25(早強)" />
-                            <xs:enumeration value="11_各種" />
-                            <xs:enumeration value="2_24-8-25(20)(普通)" />
-                            <xs:enumeration value="3_21-8-40(普通)" />
-                            <xs:enumeration value="4_24-8-40(普通)" />
-                            <xs:enumeration value="5_21-8-25(20)(高炉)" />
-                            <xs:enumeration value="6_24-8-25(20)(高炉)" />
-                            <xs:enumeration value="7_21-8-40(高炉)" />
-                            <xs:enumeration value="8_24-8-40(高炉)" />
-                            <xs:enumeration value="9_21-8-25(早強)" />
+                            <xs:enumeration value="21-8-25(20)(普通)" />
+                            <xs:enumeration value="24-8-25(20)(普通)" />
+                            <xs:enumeration value="21-8-40(普通)" />
+                            <xs:enumeration value="24-8-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(高炉)" />
+                            <xs:enumeration value="24-8-25(20)(高炉)" />
+                            <xs:enumeration value="21-8-40(高炉)" />
+                            <xs:enumeration value="24-8-40(高炉)" />
+                            <xs:enumeration value="21-8-25(早強)" />
+                            <xs:enumeration value="24-8-25(早強)" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -146,6 +179,17 @@
                         <simpleValue>目地形式</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_現場打構築工_現場打躯体工(構造物単位)_誘発目地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>誘発目地材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>誘発目地材設置工</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="鉄筋" ifcVersion="IFC2X3">
@@ -188,50 +232,64 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_SD295 D10" />
-                            <xs:enumeration value="10_SD345 D41" />
-                            <xs:enumeration value="11_SD345 D51" />
-                            <xs:enumeration value="12_SR235 φ9" />
-                            <xs:enumeration value="13_SR235 φ13" />
-                            <xs:enumeration value="14_SR235 φ16～25" />
-                            <xs:enumeration value="15_SD390 D25" />
-                            <xs:enumeration value="16_SD390 D29" />
-                            <xs:enumeration value="17_SD390 D32" />
-                            <xs:enumeration value="18_SD390 D35" />
-                            <xs:enumeration value="19_SD390 D38" />
-                            <xs:enumeration value="2_SD295 D13" />
-                            <xs:enumeration value="20_SD390 D41" />
-                            <xs:enumeration value="21_SD490 D35" />
-                            <xs:enumeration value="22_SD490 D38" />
-                            <xs:enumeration value="23_SD490 D41" />
-                            <xs:enumeration value="24_SD345(ねじ節鉄筋) D13" />
-                            <xs:enumeration value="25_SD345(ねじ節鉄筋) D16" />
-                            <xs:enumeration value="26_SD345(ねじ節鉄筋) D19" />
-                            <xs:enumeration value="27_SD345(ねじ節鉄筋) D22" />
-                            <xs:enumeration value="28_SD345(ねじ節鉄筋) D25" />
-                            <xs:enumeration value="29_SD345(ねじ節鉄筋) D29" />
-                            <xs:enumeration value="3_SD295 D16" />
-                            <xs:enumeration value="30_SD345(ねじ節鉄筋) D32" />
-                            <xs:enumeration value="31_SD345(ねじ節鉄筋) D35" />
-                            <xs:enumeration value="32_SD345(ねじ節鉄筋) D38" />
-                            <xs:enumeration value="33_SD345(ねじ節鉄筋) D41" />
-                            <xs:enumeration value="34_SD345(ねじ節鉄筋) D51" />
-                            <xs:enumeration value="35_SD390(ねじ節鉄筋) D25" />
-                            <xs:enumeration value="36_SD390(ねじ節鉄筋) D29" />
-                            <xs:enumeration value="37_SD390(ねじ節鉄筋) D32" />
-                            <xs:enumeration value="38_SD390(ねじ節鉄筋) D35" />
-                            <xs:enumeration value="39_SD390(ねじ節鉄筋) D38" />
-                            <xs:enumeration value="4_SD345 D10" />
-                            <xs:enumeration value="40_SD390(ねじ節鉄筋) D41" />
-                            <xs:enumeration value="41_SD490(ねじ節鉄筋) D35" />
-                            <xs:enumeration value="42_SD490(ねじ節鉄筋) D38" />
-                            <xs:enumeration value="43_SD490(ねじ節鉄筋) D41" />
-                            <xs:enumeration value="44_各種" />
-                            <xs:enumeration value="5_SD345 D13" />
-                            <xs:enumeration value="6_SD345 D16～25" />
-                            <xs:enumeration value="7_SD345 D29～32" />
-                            <xs:enumeration value="8_SD345 D35" />
-                            <xs:enumeration value="9_SD345 D38" />
+                            <xs:enumeration value="SD295 D10" />
+                            <xs:enumeration value="SD295 D13" />
+                            <xs:enumeration value="SD295 D16" />
+                            <xs:enumeration value="SD345 D10" />
+                            <xs:enumeration value="SD345 D13" />
+                            <xs:enumeration value="SD345 D16～25" />
+                            <xs:enumeration value="SD345 D29～32" />
+                            <xs:enumeration value="SD345 D35" />
+                            <xs:enumeration value="SD345 D38" />
+                            <xs:enumeration value="SD345 D41" />
+                            <xs:enumeration value="SD345 D51" />
+                            <xs:enumeration value="SR235 φ9" />
+                            <xs:enumeration value="SR235 φ13" />
+                            <xs:enumeration value="SR235 φ16～25" />
+                            <xs:enumeration value="SD390 D25" />
+                            <xs:enumeration value="SD390 D29" />
+                            <xs:enumeration value="SD390 D32" />
+                            <xs:enumeration value="SD390 D35" />
+                            <xs:enumeration value="SD390 D38" />
+                            <xs:enumeration value="SD390 D41" />
+                            <xs:enumeration value="SD490 D35" />
+                            <xs:enumeration value="SD490 D38" />
+                            <xs:enumeration value="SD490 D41" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D13" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D16" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D19" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D22" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D25" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D29" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D32" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D35" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D38" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D41" />
+                            <xs:enumeration value="SD345(ねじ節鉄筋) D51" />
+                            <xs:enumeration value="SD390(ねじ節鉄筋) D25" />
+                            <xs:enumeration value="SD390(ねじ節鉄筋) D29" />
+                            <xs:enumeration value="SD390(ねじ節鉄筋) D32" />
+                            <xs:enumeration value="SD390(ねじ節鉄筋) D35" />
+                            <xs:enumeration value="SD390(ねじ節鉄筋) D38" />
+                            <xs:enumeration value="SD390(ねじ節鉄筋) D41" />
+                            <xs:enumeration value="SD490(ねじ節鉄筋) D35" />
+                            <xs:enumeration value="SD490(ねじ節鉄筋) D38" />
+                            <xs:enumeration value="SD490(ねじ節鉄筋) D41" />
+                            <xs:enumeration value="各種" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_共同溝・電線共同溝_共同溝_現場打構築工_現場打躯体工(構造物単位)_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="鉄筋工［市場単価］" />
+                            <xs:enumeration value="ガス圧接工（手動・自動）［市場単価］" />
                         </xs:restriction>
                     </value>
                 </property>
