@@ -48,10 +48,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_無し" />
-                            <xs:enumeration value="2_L=1000mm" />
-                            <xs:enumeration value="3_L=4000mm" />
-                            <xs:enumeration value="4_L=5000mm" />
+                            <xs:enumeration value="無し" />
+                            <xs:enumeration value="L=1000mm" />
+                            <xs:enumeration value="L=4000mm" />
+                            <xs:enumeration value="L=5000mm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -64,10 +64,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_鉄筋ｺﾝｸﾘｰﾄU型 JIS A 5372" />
-                            <xs:enumeration value="2_道路用鉄筋ｺﾝｸﾘｰﾄ側溝 1種 JIS A 5372" />
-                            <xs:enumeration value="3_道路用鉄筋ｺﾝｸﾘｰﾄ側溝 3種 JIS A 5372" />
-                            <xs:enumeration value="4_側溝(各種)" />
+                            <xs:enumeration value="鉄筋ｺﾝｸﾘｰﾄU型 JIS A 5372" />
+                            <xs:enumeration value="道路用鉄筋ｺﾝｸﾘｰﾄ側溝 1種 JIS A 5372" />
+                            <xs:enumeration value="道路用鉄筋ｺﾝｸﾘｰﾄ側溝 3種 JIS A 5372" />
+                            <xs:enumeration value="側溝(各種)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -80,31 +80,42 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_240 240×240×600" />
-                            <xs:enumeration value="10_300A 300×300×2000" />
-                            <xs:enumeration value="11_300B 300×400×2000" />
-                            <xs:enumeration value="12_300C 300×500×2000" />
-                            <xs:enumeration value="13_400A 400×400×2000" />
-                            <xs:enumeration value="14_400B 400×500×2000" />
-                            <xs:enumeration value="15_500A 500×500×2000" />
-                            <xs:enumeration value="16_500B 500×600×2000" />
-                            <xs:enumeration value="17_250 250×250×2000" />
-                            <xs:enumeration value="18_300A 300×300×2000" />
-                            <xs:enumeration value="19_300B 300×400×2000" />
-                            <xs:enumeration value="2_300A 300×240×600" />
-                            <xs:enumeration value="20_300C 300×500×2000" />
-                            <xs:enumeration value="21_400A 400×400×2000" />
-                            <xs:enumeration value="22_400B 400×500×2000" />
-                            <xs:enumeration value="23_500A 500×500×2000" />
-                            <xs:enumeration value="24_500B 500×600×2000" />
-                            <xs:enumeration value="3_300B 300×300×600" />
-                            <xs:enumeration value="4_300C 300×360×600" />
-                            <xs:enumeration value="5_360A 360×300×600" />
-                            <xs:enumeration value="6_360B 360×360×600" />
-                            <xs:enumeration value="7_450 450×450×600" />
-                            <xs:enumeration value="8_600 600×600×600" />
-                            <xs:enumeration value="9_250 250×250×2000" />
+                            <xs:enumeration value="240 240×240×600" />
+                            <xs:enumeration value="300A 300×240×600" />
+                            <xs:enumeration value="300B 300×300×600" />
+                            <xs:enumeration value="300C 300×360×600" />
+                            <xs:enumeration value="360A 360×300×600" />
+                            <xs:enumeration value="360B 360×360×600" />
+                            <xs:enumeration value="450 450×450×600" />
+                            <xs:enumeration value="600 600×600×600" />
+                            <xs:enumeration value="250 250×250×2000" />
+                            <xs:enumeration value="300A 300×300×2000" />
+                            <xs:enumeration value="300B 300×400×2000" />
+                            <xs:enumeration value="300C 300×500×2000" />
+                            <xs:enumeration value="400A 400×400×2000" />
+                            <xs:enumeration value="400B 400×500×2000" />
+                            <xs:enumeration value="500A 500×500×2000" />
+                            <xs:enumeration value="500B 500×600×2000" />
+                            <xs:enumeration value="250 250×250×2000" />
+                            <xs:enumeration value="300A 300×300×2000" />
+                            <xs:enumeration value="300B 300×400×2000" />
+                            <xs:enumeration value="300C 300×500×2000" />
+                            <xs:enumeration value="400A 400×400×2000" />
+                            <xs:enumeration value="400B 400×500×2000" />
+                            <xs:enumeration value="500A 500×500×2000" />
+                            <xs:enumeration value="500B 500×600×2000" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_排水構造物工_排水工_小段排水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>U型側溝設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>Ｕ型側溝</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -127,9 +138,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_据付け" />
-                            <xs:enumeration value="2_再利用撤去" />
-                            <xs:enumeration value="3_再利用撤去・据付け" />
+                            <xs:enumeration value="据付け" />
+                            <xs:enumeration value="再利用撤去" />
+                            <xs:enumeration value="再利用撤去・据付け" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -182,6 +193,39 @@
                         <simpleValue>1472400101_1508200101_1322400201_1580900101_1058210101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_排水構造物工_排水工_張りコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_排水構造物工_排水工_張りコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基面整正費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>基面整正</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_排水構造物工_排水工_張りコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>養生費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>養生工</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_排水構造物工_排水工_張りコンクリート</simpleValue>
@@ -191,9 +235,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｺﾝｸﾘｰﾄ夜間割増無" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ夜間割増有" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ夜間割増無" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ夜間割増有" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_排水構造物工_排水工_張りコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ打設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ｺﾝｸﾘｰﾄ打設工</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -205,15 +260,15 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_18-8-25（20）（普通）" />
-                            <xs:enumeration value="2_18-8-40（普通）" />
-                            <xs:enumeration value="3_21-8-25（20）（普通）" />
-                            <xs:enumeration value="4_21-8-40（普通）" />
-                            <xs:enumeration value="5_18-8-25（20）（高炉）" />
-                            <xs:enumeration value="6_18-8-40（高炉）" />
-                            <xs:enumeration value="7_21-8-25（20）（高炉）" />
-                            <xs:enumeration value="8_21-8-40（高炉）" />
-                            <xs:enumeration value="9_各種" />
+                            <xs:enumeration value="18-8-25（20）（普通）" />
+                            <xs:enumeration value="18-8-40（普通）" />
+                            <xs:enumeration value="21-8-25（20）（普通）" />
+                            <xs:enumeration value="21-8-40（普通）" />
+                            <xs:enumeration value="18-8-25（20）（高炉）" />
+                            <xs:enumeration value="18-8-40（高炉）" />
+                            <xs:enumeration value="21-8-25（20）（高炉）" />
+                            <xs:enumeration value="21-8-40（高炉）" />
+                            <xs:enumeration value="各種" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
                     </value>
@@ -249,10 +304,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_無し" />
-                            <xs:enumeration value="2_L=1000mm" />
-                            <xs:enumeration value="3_L=4000mm" />
-                            <xs:enumeration value="4_L=5000mm" />
+                            <xs:enumeration value="無し" />
+                            <xs:enumeration value="L=1000mm" />
+                            <xs:enumeration value="L=4000mm" />
+                            <xs:enumeration value="L=5000mm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -265,10 +320,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_鉄筋ｺﾝｸﾘｰﾄU型 JIS A 5372" />
-                            <xs:enumeration value="2_道路用鉄筋ｺﾝｸﾘｰﾄ側溝 1種 JIS A 5372" />
-                            <xs:enumeration value="3_道路用鉄筋ｺﾝｸﾘｰﾄ側溝 3種 JIS A 5372" />
-                            <xs:enumeration value="4_側溝(各種)" />
+                            <xs:enumeration value="鉄筋ｺﾝｸﾘｰﾄU型 JIS A 5372" />
+                            <xs:enumeration value="道路用鉄筋ｺﾝｸﾘｰﾄ側溝 1種 JIS A 5372" />
+                            <xs:enumeration value="道路用鉄筋ｺﾝｸﾘｰﾄ側溝 3種 JIS A 5372" />
+                            <xs:enumeration value="側溝(各種)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -281,31 +336,42 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_240 240×240×600" />
-                            <xs:enumeration value="10_300A 300×300×2000" />
-                            <xs:enumeration value="11_300B 300×400×2000" />
-                            <xs:enumeration value="12_300C 300×500×2000" />
-                            <xs:enumeration value="13_400A 400×400×2000" />
-                            <xs:enumeration value="14_400B 400×500×2000" />
-                            <xs:enumeration value="15_500A 500×500×2000" />
-                            <xs:enumeration value="16_500B 500×600×2000" />
-                            <xs:enumeration value="17_250 250×250×2000" />
-                            <xs:enumeration value="18_300A 300×300×2000" />
-                            <xs:enumeration value="19_300B 300×400×2000" />
-                            <xs:enumeration value="2_300A 300×240×600" />
-                            <xs:enumeration value="20_300C 300×500×2000" />
-                            <xs:enumeration value="21_400A 400×400×2000" />
-                            <xs:enumeration value="22_400B 400×500×2000" />
-                            <xs:enumeration value="23_500A 500×500×2000" />
-                            <xs:enumeration value="24_500B 500×600×2000" />
-                            <xs:enumeration value="3_300B 300×300×600" />
-                            <xs:enumeration value="4_300C 300×360×600" />
-                            <xs:enumeration value="5_360A 360×300×600" />
-                            <xs:enumeration value="6_360B 360×360×600" />
-                            <xs:enumeration value="7_450 450×450×600" />
-                            <xs:enumeration value="8_600 600×600×600" />
-                            <xs:enumeration value="9_250 250×250×2000" />
+                            <xs:enumeration value="240 240×240×600" />
+                            <xs:enumeration value="300A 300×240×600" />
+                            <xs:enumeration value="300B 300×300×600" />
+                            <xs:enumeration value="300C 300×360×600" />
+                            <xs:enumeration value="360A 360×300×600" />
+                            <xs:enumeration value="360B 360×360×600" />
+                            <xs:enumeration value="450 450×450×600" />
+                            <xs:enumeration value="600 600×600×600" />
+                            <xs:enumeration value="250 250×250×2000" />
+                            <xs:enumeration value="300A 300×300×2000" />
+                            <xs:enumeration value="300B 300×400×2000" />
+                            <xs:enumeration value="300C 300×500×2000" />
+                            <xs:enumeration value="400A 400×400×2000" />
+                            <xs:enumeration value="400B 400×500×2000" />
+                            <xs:enumeration value="500A 500×500×2000" />
+                            <xs:enumeration value="500B 500×600×2000" />
+                            <xs:enumeration value="250 250×250×2000" />
+                            <xs:enumeration value="300A 300×300×2000" />
+                            <xs:enumeration value="300B 300×400×2000" />
+                            <xs:enumeration value="300C 300×500×2000" />
+                            <xs:enumeration value="400A 400×400×2000" />
+                            <xs:enumeration value="400B 400×500×2000" />
+                            <xs:enumeration value="500A 500×500×2000" />
+                            <xs:enumeration value="500B 500×600×2000" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_排水構造物工_排水工_縦排水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>U型側溝設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>Ｕ型側溝</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -328,9 +394,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_据付け" />
-                            <xs:enumeration value="2_再利用撤去" />
-                            <xs:enumeration value="3_再利用撤去・据付け" />
+                            <xs:enumeration value="据付け" />
+                            <xs:enumeration value="再利用撤去" />
+                            <xs:enumeration value="再利用撤去・据付け" />
                         </xs:restriction>
                     </value>
                 </property>

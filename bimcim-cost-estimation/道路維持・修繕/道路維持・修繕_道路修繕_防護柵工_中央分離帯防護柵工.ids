@@ -59,8 +59,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_土工部" />
-                            <xs:enumeration value="2_橋梁部" />
+                            <xs:enumeration value="土工部" />
+                            <xs:enumeration value="橋梁部" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -73,8 +73,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_LD種" />
-                            <xs:enumeration value="2_各種" />
+                            <xs:enumeration value="LD種" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -85,6 +85,23 @@
                     <baseName>
                         <simpleValue>ﾜｲﾔﾛｰﾌﾟ規格（各種）</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_防護柵工_中央分離帯防護柵工_ワイヤロープ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾜｲﾔﾛｰﾌﾟ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="端末基礎・端末金具設置（鋼管杭）" />
+                            <xs:enumeration value="中間支柱・端末支柱設置" />
+                            <xs:enumeration value="橋梁部基礎・支柱設置" />
+                            <xs:enumeration value="ワイヤロープ設置" />
+                            <xs:enumeration value="ターンバックル設置" />
+                        </xs:restriction>
+                    </value>
                 </property>
             </requirements>
         </specification>

@@ -58,6 +58,21 @@
                         <simpleValue>作業条件</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_ガードケーブル復旧</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｶﾞｰﾄﾞｹｰﾌﾞﾙ撤去設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="中間支柱" />
+                            <xs:enumeration value="端末支柱" />
+                            <xs:enumeration value="ケーブル張" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_ガードケーブル復旧</simpleValue>
@@ -107,6 +122,17 @@
                         <simpleValue>ｼｰﾄ種類</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_張紙防止シート復旧</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼｰﾄ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>貼紙防止シート工（設置）</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="標識板復旧" ifcVersion="IFC2X3">
@@ -149,9 +175,24 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_5基以上" />
-                            <xs:enumeration value="2_3～4基" />
-                            <xs:enumeration value="3_2基以下" />
+                            <xs:enumeration value="5基以上" />
+                            <xs:enumeration value="3～4基" />
+                            <xs:enumeration value="2基以下" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_標識板復旧</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>標識板撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="標識板撤去（警戒・規制・指示・路線番号標識）" />
+                            <xs:enumeration value="標識板撤去（案内標識（路側式・片持式・門型式））" />
+                            <xs:enumeration value="標識板撤去（添架式標識板）" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -164,9 +205,34 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_2.0m2未満" />
-                            <xs:enumeration value="2_2.0m2以上" />
+                            <xs:enumeration value="2.0m2未満" />
+                            <xs:enumeration value="2.0m2以上" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_標識板復旧</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>標識板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="標識板設置（案内標識［路線番号除く］）" />
+                            <xs:enumeration value="標識板設置（警戒・規制・指示・路線番号標識）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_標識板復旧</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>添架式取付金具費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>添架式標識板取付金具設置</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -178,10 +244,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_信号ｱｰﾑ部" />
-                            <xs:enumeration value="2_照明柱･既設標識柱" />
-                            <xs:enumeration value="3_歩道橋" />
+                            <xs:enumeration value="信号ｱｰﾑ部" />
+                            <xs:enumeration value="照明柱･既設標識柱" />
+                            <xs:enumeration value="歩道橋" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_標識板復旧</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｸﾗﾝﾌﾟ型ﾌﾞﾗｹｯﾄ材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（個）</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -226,8 +303,22 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_アスファルト削孔" />
-                            <xs:enumeration value="2_コンクリート削孔" />
+                            <xs:enumeration value="アスファルト削孔" />
+                            <xs:enumeration value="コンクリート削孔" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_舗装版削孔</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>舗装版削孔費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="アスファルト削孔（コンクリート穿孔機）" />
+                            <xs:enumeration value="コンクリート削孔（コンクリート穿孔機）" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -281,10 +372,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_30本以上" />
-                            <xs:enumeration value="2_10本以上30本未満" />
-                            <xs:enumeration value="3_10本未満" />
+                            <xs:enumeration value="30本以上" />
+                            <xs:enumeration value="10本以上30本未満" />
+                            <xs:enumeration value="10本未満" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_視線誘導標復旧</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>視線誘導標撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>道路付属物撤去工（視線誘導標）</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -294,6 +396,20 @@
                     <baseName>
                         <simpleValue>視線誘導標規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_視線誘導標復旧</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>視線誘導標設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="視線誘導標設置［市場単価］" />
+                            <xs:enumeration value="視線誘導標設置（スノーポール併用型）" />
+                        </xs:restriction>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -337,10 +453,32 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_撤去" />
-                            <xs:enumeration value="2_設置" />
-                            <xs:enumeration value="3_撤去・設置" />
+                            <xs:enumeration value="撤去" />
+                            <xs:enumeration value="設置" />
+                            <xs:enumeration value="撤去・設置" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_距離標復旧</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>距離標撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>撤去</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_距離標復旧</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>距離標材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>距離標(材料費)</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -350,6 +488,17 @@
                     <baseName>
                         <simpleValue>距離標規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_距離標復旧</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>距離標設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>設置</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -393,12 +542,23 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_メッキ品" />
-                            <xs:enumeration value="2_下地亜鉛メッキ＋静電粉体塗装（白色）" />
-                            <xs:enumeration value="3_下地亜鉛メッキ＋静電粉体塗装（景観色）" />
-                            <xs:enumeration value="4_静電粉体塗装（白色）" />
-                            <xs:enumeration value="5_静電粉体塗装（景観色）" />
+                            <xs:enumeration value="メッキ品" />
+                            <xs:enumeration value="下地亜鉛メッキ＋静電粉体塗装（白色）" />
+                            <xs:enumeration value="下地亜鉛メッキ＋静電粉体塗装（景観色）" />
+                            <xs:enumeration value="静電粉体塗装（白色）" />
+                            <xs:enumeration value="静電粉体塗装（景観色）" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_路側標識復旧</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>建柱･基礎設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>標識柱・基礎設置（路側式）</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -410,9 +570,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_5基以上" />
-                            <xs:enumeration value="2_3～4基" />
-                            <xs:enumeration value="3_2基以下" />
+                            <xs:enumeration value="5基以上" />
+                            <xs:enumeration value="3～4基" />
+                            <xs:enumeration value="2基以下" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -425,8 +585,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_曲げ支柱無" />
-                            <xs:enumeration value="2_曲げ支柱有" />
+                            <xs:enumeration value="曲げ支柱無" />
+                            <xs:enumeration value="曲げ支柱有" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -439,14 +599,14 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_単柱式 径60.5" />
-                            <xs:enumeration value="2_単柱式 径76.3" />
-                            <xs:enumeration value="3_単柱式 径89.1" />
-                            <xs:enumeration value="4_単柱式 径101.6" />
-                            <xs:enumeration value="5_複柱式 径60.5" />
-                            <xs:enumeration value="6_複柱式 径76.3" />
-                            <xs:enumeration value="7_複柱式 径89.1" />
-                            <xs:enumeration value="8_複柱式 径101.6" />
+                            <xs:enumeration value="単柱式 径60.5" />
+                            <xs:enumeration value="単柱式 径76.3" />
+                            <xs:enumeration value="単柱式 径89.1" />
+                            <xs:enumeration value="単柱式 径101.6" />
+                            <xs:enumeration value="複柱式 径60.5" />
+                            <xs:enumeration value="複柱式 径76.3" />
+                            <xs:enumeration value="複柱式 径89.1" />
+                            <xs:enumeration value="複柱式 径101.6" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -457,6 +617,17 @@
                     <baseName>
                         <simpleValue>柱長さ</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_路側標識復旧</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>標識柱･基礎撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>標識柱・基礎撤去（路側式）</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -500,10 +671,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1m" />
-                            <xs:enumeration value="2_1.5m" />
-                            <xs:enumeration value="3_2m" />
-                            <xs:enumeration value="4_3m" />
+                            <xs:enumeration value="1m" />
+                            <xs:enumeration value="1.5m" />
+                            <xs:enumeration value="2m" />
+                            <xs:enumeration value="3m" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -516,10 +687,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_土中建込" />
-                            <xs:enumeration value="2_ﾌﾟﾚｷｬｽﾄｺﾝｸﾘｰﾄﾌﾞﾛｯｸ建込" />
-                            <xs:enumeration value="3_ｺﾝｸﾘｰﾄ建込" />
-                            <xs:enumeration value="4_ｱﾝｶｰﾎﾞﾙﾄ固定" />
+                            <xs:enumeration value="土中建込" />
+                            <xs:enumeration value="ﾌﾟﾚｷｬｽﾄｺﾝｸﾘｰﾄﾌﾞﾛｯｸ建込" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ建込" />
+                            <xs:enumeration value="ｱﾝｶｰﾎﾞﾙﾄ固定" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -532,10 +703,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_100m以上" />
-                            <xs:enumeration value="2_50m以上100m未満" />
-                            <xs:enumeration value="3_50m未満" />
-                            <xs:enumeration value="4_100m未満" />
+                            <xs:enumeration value="100m以上" />
+                            <xs:enumeration value="50m以上100m未満" />
+                            <xs:enumeration value="50m未満" />
+                            <xs:enumeration value="100m未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -556,8 +727,36 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_根巻きｺﾝｸﾘｰﾄ無" />
-                            <xs:enumeration value="2_根巻きｺﾝｸﾘｰﾄ有" />
+                            <xs:enumeration value="根巻きｺﾝｸﾘｰﾄ無" />
+                            <xs:enumeration value="根巻きｺﾝｸﾘｰﾄ有" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_転落(横断)防止柵復旧</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>転落(横断)防止柵撤去設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="防護柵（横断・転落防止柵）撤去工" />
+                            <xs:enumeration value="防護柵（横断・転落防止柵）設置工" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_転落(横断)防止柵復旧</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>転落(横断)防止柵部材撤去設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="部材撤去工（ビーム・パネル）" />
+                            <xs:enumeration value="部材設置工（ビーム・パネル）" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -570,8 +769,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾋﾞｰﾑ式･ﾊﾟﾈﾙ式" />
-                            <xs:enumeration value="2_門型" />
+                            <xs:enumeration value="ﾋﾞｰﾑ式･ﾊﾟﾈﾙ式" />
+                            <xs:enumeration value="門型" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -608,6 +807,61 @@
                         <simpleValue>1472400101_1519400101_1520900101_1505400201_B505605101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_防護柵基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>均しｺﾝｸﾘｰﾄ型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_防護柵基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>均しｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_防護柵基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_防護柵基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎砕石費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>基礎砕石</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_防護柵基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_防護柵基礎</simpleValue>
@@ -615,6 +869,39 @@
                     <baseName>
                         <simpleValue>幅</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_防護柵基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>目地板</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_防護柵基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>箱抜き費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>箱抜き</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_防護柵基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋工［市場単価］</simpleValue>
+                    </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
@@ -625,8 +912,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_場所打基礎" />
-                            <xs:enumeration value="2_ﾌﾟﾚｷｬｽﾄ基礎" />
+                            <xs:enumeration value="場所打基礎" />
+                            <xs:enumeration value="ﾌﾟﾚｷｬｽﾄ基礎" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -647,54 +934,65 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_21-8-25(20)(普通)" />
-                            <xs:enumeration value="10_40-12-25(20)(普通)" />
-                            <xs:enumeration value="11_18-8-40(普通)" />
-                            <xs:enumeration value="12_18-12-40(普通)" />
-                            <xs:enumeration value="13_19.5-8-40(普通)" />
-                            <xs:enumeration value="14_21-8-40(普通)" />
-                            <xs:enumeration value="15_21-12-40(普通)" />
-                            <xs:enumeration value="16_22.5-8-40(普通)" />
-                            <xs:enumeration value="17_24-8-40(普通)" />
-                            <xs:enumeration value="18_24-12-40(普通)" />
-                            <xs:enumeration value="19_4.5-2.5-40(普通)" />
-                            <xs:enumeration value="2_21-12-25(20)(普通)" />
-                            <xs:enumeration value="20_21-8-25(20)(高炉)" />
-                            <xs:enumeration value="21_21-12-25(20)(高炉)" />
-                            <xs:enumeration value="22_24-8-25(20)(高炉)" />
-                            <xs:enumeration value="23_24-12-25(20)(高炉)" />
-                            <xs:enumeration value="24_19.5-5-40(高炉)" />
-                            <xs:enumeration value="25_19.5-8-40(高炉)" />
-                            <xs:enumeration value="26_19.5-12-40(高炉)" />
-                            <xs:enumeration value="27_18-5-40(高炉)" />
-                            <xs:enumeration value="28_21-5-40(高炉)" />
-                            <xs:enumeration value="29_18-8-40(高炉)" />
-                            <xs:enumeration value="3_24-8-25(20)(普通)" />
-                            <xs:enumeration value="30_18-12-40(高炉)" />
-                            <xs:enumeration value="31_21-8-40(高炉)" />
-                            <xs:enumeration value="32_24-8-40(高炉)" />
-                            <xs:enumeration value="33_24-12-40(高炉)" />
-                            <xs:enumeration value="34_21-12-40(高炉)" />
-                            <xs:enumeration value="35_40-8-25(早強)" />
-                            <xs:enumeration value="36_40-12-25(早強)" />
-                            <xs:enumeration value="37_21-8-25(早強)" />
-                            <xs:enumeration value="38_21-12-25(早強)" />
-                            <xs:enumeration value="39_24-8-25(早強)" />
-                            <xs:enumeration value="4_24-12-25(20)(普通)" />
-                            <xs:enumeration value="40_24-12-25(早強)" />
-                            <xs:enumeration value="41_18-8-25(高炉)" />
-                            <xs:enumeration value="42_18-12-25(高炉)" />
-                            <xs:enumeration value="43_21-5-80(高炉)" />
-                            <xs:enumeration value="44_18-3-40(高炉)" />
-                            <xs:enumeration value="45_21-3-40(高炉)" />
-                            <xs:enumeration value="46_各種" />
-                            <xs:enumeration value="5_27-8-25(20)(普通)" />
-                            <xs:enumeration value="6_27-12-25(20)(普通)" />
-                            <xs:enumeration value="7_30-8-25(20)(普通)" />
-                            <xs:enumeration value="8_30-12-25(20)(普通)" />
-                            <xs:enumeration value="9_40-8-25(20)(普通)" />
+                            <xs:enumeration value="21-8-25(20)(普通)" />
+                            <xs:enumeration value="21-12-25(20)(普通)" />
+                            <xs:enumeration value="24-8-25(20)(普通)" />
+                            <xs:enumeration value="24-12-25(20)(普通)" />
+                            <xs:enumeration value="27-8-25(20)(普通)" />
+                            <xs:enumeration value="27-12-25(20)(普通)" />
+                            <xs:enumeration value="30-8-25(20)(普通)" />
+                            <xs:enumeration value="30-12-25(20)(普通)" />
+                            <xs:enumeration value="40-8-25(20)(普通)" />
+                            <xs:enumeration value="40-12-25(20)(普通)" />
+                            <xs:enumeration value="18-8-40(普通)" />
+                            <xs:enumeration value="18-12-40(普通)" />
+                            <xs:enumeration value="19.5-8-40(普通)" />
+                            <xs:enumeration value="21-8-40(普通)" />
+                            <xs:enumeration value="21-12-40(普通)" />
+                            <xs:enumeration value="22.5-8-40(普通)" />
+                            <xs:enumeration value="24-8-40(普通)" />
+                            <xs:enumeration value="24-12-40(普通)" />
+                            <xs:enumeration value="4.5-2.5-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(高炉)" />
+                            <xs:enumeration value="21-12-25(20)(高炉)" />
+                            <xs:enumeration value="24-8-25(20)(高炉)" />
+                            <xs:enumeration value="24-12-25(20)(高炉)" />
+                            <xs:enumeration value="19.5-5-40(高炉)" />
+                            <xs:enumeration value="19.5-8-40(高炉)" />
+                            <xs:enumeration value="19.5-12-40(高炉)" />
+                            <xs:enumeration value="18-5-40(高炉)" />
+                            <xs:enumeration value="21-5-40(高炉)" />
+                            <xs:enumeration value="18-8-40(高炉)" />
+                            <xs:enumeration value="18-12-40(高炉)" />
+                            <xs:enumeration value="21-8-40(高炉)" />
+                            <xs:enumeration value="24-8-40(高炉)" />
+                            <xs:enumeration value="24-12-40(高炉)" />
+                            <xs:enumeration value="21-12-40(高炉)" />
+                            <xs:enumeration value="40-8-25(早強)" />
+                            <xs:enumeration value="40-12-25(早強)" />
+                            <xs:enumeration value="21-8-25(早強)" />
+                            <xs:enumeration value="21-12-25(早強)" />
+                            <xs:enumeration value="24-8-25(早強)" />
+                            <xs:enumeration value="24-12-25(早強)" />
+                            <xs:enumeration value="18-8-25(高炉)" />
+                            <xs:enumeration value="18-12-25(高炉)" />
+                            <xs:enumeration value="21-5-80(高炉)" />
+                            <xs:enumeration value="18-3-40(高炉)" />
+                            <xs:enumeration value="21-3-40(高炉)" />
+                            <xs:enumeration value="各種" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属物復旧工_付属物復旧工_防護柵基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ基礎ﾌﾞﾛｯｸ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>プレキャスト基礎ブロック</simpleValue>
                     </value>
                 </property>
             </requirements>

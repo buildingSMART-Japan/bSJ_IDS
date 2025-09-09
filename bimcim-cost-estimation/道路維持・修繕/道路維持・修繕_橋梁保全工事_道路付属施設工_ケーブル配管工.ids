@@ -44,6 +44,72 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ケーブル配管</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>(巻きｺﾝｸﾘｰﾄ)型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ケーブル配管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>(巻きｺﾝｸﾘｰﾄ)鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋工［市場単価］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ケーブル配管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仮置場からの運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土砂等運搬</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ケーブル配管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仮置場での整地費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>整地</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ケーブル配管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仮置場での積込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>積込（ルーズ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ケーブル配管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仮置場への運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土砂等運搬</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ケーブル配管</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -55,13 +121,152 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ケーブル配管</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>土砂人力床掘り･運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="床掘り" />
+                            <xs:enumeration value="人力積込" />
+                            <xs:enumeration value="土砂等運搬" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ケーブル配管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土砂床掘り費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>掘削</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ケーブル配管</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>土質区分</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_土砂" />
-                            <xs:enumeration value="2_岩" />
-                            <xs:enumeration value="3_土工無" />
+                            <xs:enumeration value="土砂" />
+                            <xs:enumeration value="岩" />
+                            <xs:enumeration value="土工無" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ケーブル配管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>均しｺﾝｸﾘｰﾄ型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ケーブル配管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>均しｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ケーブル配管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>埋戻し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="埋戻し" />
+                            <xs:enumeration value="路体（築堤）盛土" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ケーブル配管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎砕石費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>基礎砕石</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ケーブル配管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>小規模土工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="床掘り" />
+                            <xs:enumeration value="埋戻し" />
+                            <xs:enumeration value="土砂等運搬" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ケーブル配管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>岩人力床掘り･運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="掘削" />
+                            <xs:enumeration value="人力積込" />
+                            <xs:enumeration value="土砂等運搬" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ケーブル配管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>巻きｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ケーブル配管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>床均し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>基面整正</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ケーブル配管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>採取土埋戻し材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="積込（ルーズ）" />
+                            <xs:enumeration value="土砂等運搬" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -80,6 +285,36 @@
                     <baseName>
                         <simpleValue>管規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ケーブル配管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>購入土埋戻し材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="土材料" />
+                            <xs:enumeration value="土砂等運搬" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ケーブル配管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>配管費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="硬質ビニル管敷設" />
+                            <xs:enumeration value="鋼管敷設（地中）" />
+                            <xs:enumeration value="波付硬質合成樹脂管（ＦＥＰ）敷設" />
+                            <xs:enumeration value="コンクリート管敷設" />
+                        </xs:restriction>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -108,10 +343,112 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ハンドホール</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>仮置場からの運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土砂等運搬</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仮置場での整地費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>整地</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仮置場での積込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>積込（ルーズ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仮置場への運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土砂等運搬</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
                         <simpleValue>1472400101_1508500101_1353100101_1537900101_B357000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土砂床掘り費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>掘削</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>均しｺﾝｸﾘｰﾄ型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>均しｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>埋戻し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="埋戻し" />
+                            <xs:enumeration value="路体（築堤）盛土" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎砕石費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>基礎砕石</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -127,13 +464,138 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ハンドホール</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>小規模土工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="床掘り" />
+                            <xs:enumeration value="埋戻し" />
+                            <xs:enumeration value="土砂等運搬" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>床均し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>基面整正</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>床掘り･運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="床掘り" />
+                            <xs:enumeration value="人力積込" />
+                            <xs:enumeration value="掘削" />
+                            <xs:enumeration value="土砂等運搬" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>採取土埋戻し材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="積込（ルーズ）" />
+                            <xs:enumeration value="土砂等運搬" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>蓋版設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>蓋版設置</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>購入土埋戻し材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="土材料" />
+                            <xs:enumeration value="土砂等運搬" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾊﾝﾄﾞﾎｰﾙ型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾊﾝﾄﾞﾎｰﾙ鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋工［市場単価］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾊﾝﾄﾞﾎｰﾙｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>ﾊﾝﾄﾞﾎｰﾙﾀｲﾌﾟ</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_現場打" />
-                            <xs:enumeration value="2_ﾌﾟﾚｷｬｽﾄ" />
+                            <xs:enumeration value="現場打" />
+                            <xs:enumeration value="ﾌﾟﾚｷｬｽﾄ" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路付属施設工_ケーブル配管工_ハンドホール</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄﾊﾝﾄﾞﾎｰﾙ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>プレキャストハンドホール設置</simpleValue>
                     </value>
                 </property>
             </requirements>

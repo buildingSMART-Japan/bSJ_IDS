@@ -19,6 +19,58 @@
         <milestone>詳細設計</milestone>
     </info>
     <specifications>
+        <specification name="アンカー工材料費(アンカー)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>アンカー工材料費(アンカー)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_アンカー工材料費(アンカー)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_アンカー工材料費(アンカー)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1176100201_1308600201_B004905101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_アンカー工材料費(アンカー)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>アンカー（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_アンカー工材料費(アンカー)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｱﾝｶｰ工数量</simpleValue>
+                    </baseName>
+                </property>
+            </requirements>
+        </specification>
         <specification name="アンカー鋼材加工・組立・挿入・緊張・定着・頭部処理(アンカー)" ifcVersion="IFC2X3">
             <applicability minOccurs="1" maxOccurs="1">
                 <attribute>
@@ -57,6 +109,17 @@
                     <baseName>
                         <simpleValue>ｱﾝｶｰ鋼材数量</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_アンカー鋼材加工・組立・挿入・緊張・定着・頭部処理(アンカー)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｱﾝｶｰ鋼材現地組立加工･挿入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ｱﾝｶｰ鋼材加工･組立･挿入･緊張･定着･頭部処理</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -99,6 +162,17 @@
                         <simpleValue>圧縮強度</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_グラウト注入</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>注入打設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>グラウト注入(ｱﾝｶｰ)</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_グラウト注入</simpleValue>
@@ -140,6 +214,53 @@
                         <simpleValue>1472400101_1508200101_1176100201_1308600201_B577100101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_プレキャストコンクリート板据付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>裏込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>裏込工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_プレキャストコンクリート板据付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼﾞｮｲﾝﾄ処理材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ジョイント金物（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_プレキャストコンクリート板据付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼﾞｮｲﾝﾄ処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ジョイント処理</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_プレキャストコンクリート板据付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼﾞｮｲﾝﾄ処理費(ｽｸｴｱﾀｲﾌﾟ)</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="ジョイント処理（スクエアタイプ）" />
+                            <xs:enumeration value="目地工（スクエアタイプ）" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_プレキャストコンクリート板据付</simpleValue>
@@ -149,9 +270,75 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｸﾛｽﾀｲﾌﾟ" />
-                            <xs:enumeration value="2_ｾﾐｽｸｴｱﾀｲﾌﾟ･ｽｸｴｱﾀｲﾌﾟ" />
+                            <xs:enumeration value="ｸﾛｽﾀｲﾌﾟ" />
+                            <xs:enumeration value="ｾﾐｽｸｴｱﾀｲﾌﾟ･ｽｸｴｱﾀｲﾌﾟ" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_プレキャストコンクリート板据付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄｺﾝｸﾘｰﾄ板(材料費)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>プレキャストコンクリート板（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_プレキャストコンクリート板据付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄｺﾝｸﾘｰﾄ板据付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>プレキャストコンクリート板</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ボーリングマシン移設" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ボーリングマシン移設</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_ボーリングマシン移設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_ボーリングマシン移設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1176100201_1308600201_B004905501</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_ボーリングマシン移設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾎﾞｰﾘﾝｸﾞﾏｼﾝ移設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ボーリングマシン移設（アンカー）</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -187,6 +374,17 @@
                         <simpleValue>1472400101_1508200101_1176100201_1308600201_B004905201</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_削孔(アンカー)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>削孔費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>削孔（アンカー）</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_削孔(アンカー)</simpleValue>
@@ -218,6 +416,50 @@
                     <baseName>
                         <simpleValue>杭長</simpleValue>
                     </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="足場(アンカー)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>足場(アンカー)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_足場(アンカー)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_足場(アンカー)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1176100201_1308600201_B191800102</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_アンカー工(プレキャストコンクリート板)_足場(アンカー)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>足場(ｱﾝｶｰ)</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

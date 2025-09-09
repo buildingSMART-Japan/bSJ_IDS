@@ -58,6 +58,17 @@
                         <simpleValue>柵高</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_落石雪害防止工_防雪柵工_防雪柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防雪柵材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>防雪柵（材料費）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_落石雪害防止工_防雪柵工_防雪柵</simpleValue>
@@ -67,9 +78,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_有り" />
-                            <xs:enumeration value="2_無し" />
+                            <xs:enumeration value="有り" />
+                            <xs:enumeration value="無し" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_落石雪害防止工_防雪柵工_防雪柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防雪柵設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>防雪柵</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">

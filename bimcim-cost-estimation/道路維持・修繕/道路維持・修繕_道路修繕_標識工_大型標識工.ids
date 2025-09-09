@@ -59,9 +59,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_4.0m3未満" />
-                            <xs:enumeration value="2_4.0m3以上6.0m3未満" />
-                            <xs:enumeration value="3_6.0m3以上" />
+                            <xs:enumeration value="4.0m3未満" />
+                            <xs:enumeration value="4.0m3以上6.0m3未満" />
+                            <xs:enumeration value="6.0m3以上" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -74,9 +74,31 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_片持式の基礎" />
-                            <xs:enumeration value="2_門型式の基礎" />
+                            <xs:enumeration value="片持式の基礎" />
+                            <xs:enumeration value="門型式の基礎" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_標識工_大型標識工_標識基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>標識基礎費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>標識基礎設置（片持式・門型式）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_標識工_大型標識工_標識基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｱﾝｶｰﾎﾞﾙﾄ材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>アンカーボルト材料費</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -121,9 +143,45 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_2.0m2未満" />
-                            <xs:enumeration value="2_2.0m2以上" />
+                            <xs:enumeration value="2.0m2未満" />
+                            <xs:enumeration value="2.0m2以上" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_標識工_大型標識工_標識板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>標識板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="標識板設置（案内標識［路線番号除く］）" />
+                            <xs:enumeration value="標識板設置（警戒・規制・指示・路線番号標識）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_標識工_大型標識工_標識板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>添架式取付金具費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>添架式標識板取付金具設置</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_標識工_大型標識工_標識板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｸﾗﾝﾌﾟ型ﾌﾞﾗｹｯﾄ材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（個）</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -157,6 +215,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1472400101_1508200101_1348800101_1547500101_1352500101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_標識工_大型標識工_片持標識柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>建柱費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>標識柱設置（片持式）</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -208,6 +277,17 @@
                         <simpleValue>板規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_標識工_大型標識工_着雪防止板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>着雪防止板費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>標識着雪防止板取付</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="門型標識柱" ifcVersion="IFC2X3">
@@ -248,6 +328,17 @@
                     <baseName>
                         <simpleValue>型式</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_標識工_大型標識工_門型標識柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>建柱費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>標識柱設置（門型式）</simpleValue>
+                    </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>

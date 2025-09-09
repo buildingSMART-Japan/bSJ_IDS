@@ -58,6 +58,28 @@
                         <simpleValue>塗料種別</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_現場塗装工_張紙防止塗装工_張紙防止塗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>塗装材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>張紙防止塗装（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_現場塗装工_張紙防止塗装工_張紙防止塗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>塗装費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>張紙防止塗装</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
     </specifications>

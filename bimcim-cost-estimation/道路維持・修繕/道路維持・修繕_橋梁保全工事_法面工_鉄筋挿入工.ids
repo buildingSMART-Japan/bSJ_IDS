@@ -19,6 +19,50 @@
         <milestone>詳細設計</milestone>
     </info>
     <specifications>
+        <specification name="足場(鉄筋挿入)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>足場(鉄筋挿入)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_法面工_鉄筋挿入工_足場(鉄筋挿入)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_法面工_鉄筋挿入工_足場(鉄筋挿入)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仮設足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋挿入工の仮設足場工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_法面工_鉄筋挿入工_足場(鉄筋挿入)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508500101_1176100201_1308600301_1603100101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
         <specification name="鉄筋挿入" ifcVersion="IFC2X3">
             <applicability minOccurs="1" maxOccurs="1">
                 <attribute>
@@ -50,6 +94,17 @@
                         <simpleValue>1472400101_1508500101_1176100201_1308600301_1552100101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_法面工_鉄筋挿入工_鉄筋挿入</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>削孔機械上下移動費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>削孔機械の上下移動</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_法面工_鉄筋挿入工_鉄筋挿入</simpleValue>
@@ -67,9 +122,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_200m以上" />
-                            <xs:enumeration value="2_100m以上200m未満" />
-                            <xs:enumeration value="3_100ｍ未満" />
+                            <xs:enumeration value="200m以上" />
+                            <xs:enumeration value="100m以上200m未満" />
+                            <xs:enumeration value="100ｍ未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -82,10 +137,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_I 削孔に要する重機の搬入可能" />
-                            <xs:enumeration value="2_II 削孔に要する重機の搬入困難" />
-                            <xs:enumeration value="3_III 重機搬入,仮設足場設置,土足場の確保困難" />
+                            <xs:enumeration value="I 削孔に要する重機の搬入可能" />
+                            <xs:enumeration value="II 削孔に要する重機の搬入困難" />
+                            <xs:enumeration value="III 重機搬入,仮設足場設置,土足場の確保困難" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_法面工_鉄筋挿入工_鉄筋挿入</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋挿入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋挿入工</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">

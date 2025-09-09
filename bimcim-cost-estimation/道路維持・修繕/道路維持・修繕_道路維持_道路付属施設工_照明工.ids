@@ -59,9 +59,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_高さ:GL8～12m重量:350kg以下" />
-                            <xs:enumeration value="2_高さ:GL8～12m重量:350kg超1,000kg以下" />
+                            <xs:enumeration value="高さ:GL8～12m重量:350kg以下" />
+                            <xs:enumeration value="高さ:GL8～12m重量:350kg超1,000kg以下" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属施設工_照明工_照明柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>照明柱設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>道路照明灯建柱</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -97,6 +108,54 @@
                         <simpleValue>1472400101_1519400101_1353100101_1538100101_B357200101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属施設工_照明工_照明柱基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土砂人力床掘り･運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="床掘り" />
+                            <xs:enumeration value="人力積込" />
+                            <xs:enumeration value="土砂等運搬" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属施設工_照明工_照明柱基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土砂床掘り費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>積込（ルーズ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属施設工_照明工_照明柱基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠（スパイラルダクト）設置</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属施設工_照明工_照明柱基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>埋戻し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>埋戻し</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属施設工_照明工_照明柱基礎</simpleValue>
@@ -104,6 +163,43 @@
                     <baseName>
                         <simpleValue>基礎型式</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属施設工_照明工_照明柱基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>基礎砕石</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属施設工_照明工_照明柱基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>小規模土工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="床掘り" />
+                            <xs:enumeration value="埋戻し" />
+                            <xs:enumeration value="土砂等運搬" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路付属施設工_照明工_照明柱基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

@@ -58,6 +58,28 @@
                         <simpleValue>導水材種類</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_トンネル工_漏水対策工_線導水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>線導水材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>線導水（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_トンネル工_漏水対策工_線導水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>線導水費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>線導水</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="面導水" ifcVersion="IFC2X3">
@@ -98,6 +120,28 @@
                     <baseName>
                         <simpleValue>導水材種類</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_トンネル工_漏水対策工_面導水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>面導水材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>面導水（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_トンネル工_漏水対策工_面導水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>面導水費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>面導水</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

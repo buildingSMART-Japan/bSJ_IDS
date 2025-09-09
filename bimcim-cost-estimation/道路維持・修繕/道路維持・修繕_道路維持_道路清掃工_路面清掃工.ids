@@ -44,6 +44,17 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路清掃工_路面清掃工_路面清掃(中央分離帯・人力)</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>人力清掃費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>路面清掃(歩道等・人力)</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路清掃工_路面清掃工_路面清掃(中央分離帯・人力)</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -67,16 +78,16 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_歩道　塵埃量少ない" />
-                            <xs:enumeration value="10_歩道(草の処理)　塵埃量多い" />
-                            <xs:enumeration value="2_歩道　塵埃量普通" />
-                            <xs:enumeration value="3_歩道　塵埃量多い" />
-                            <xs:enumeration value="4_横断歩道橋・地下道　塵埃量少ない" />
-                            <xs:enumeration value="5_横断歩道橋・地下道　塵埃量普通" />
-                            <xs:enumeration value="6_横断歩道橋・地下道　塵埃量多い" />
-                            <xs:enumeration value="7_中央分離帯　塵埃量普通" />
-                            <xs:enumeration value="8_中央分離帯　塵埃量多い" />
-                            <xs:enumeration value="9_歩道(草の処理)　塵埃量普通" />
+                            <xs:enumeration value="歩道　塵埃量少ない" />
+                            <xs:enumeration value="歩道　塵埃量普通" />
+                            <xs:enumeration value="歩道　塵埃量多い" />
+                            <xs:enumeration value="横断歩道橋・地下道　塵埃量少ない" />
+                            <xs:enumeration value="横断歩道橋・地下道　塵埃量普通" />
+                            <xs:enumeration value="横断歩道橋・地下道　塵埃量多い" />
+                            <xs:enumeration value="中央分離帯　塵埃量普通" />
+                            <xs:enumeration value="中央分離帯　塵埃量多い" />
+                            <xs:enumeration value="歩道(草の処理)　塵埃量普通" />
+                            <xs:enumeration value="歩道(草の処理)　塵埃量多い" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -107,6 +118,17 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路清掃工_路面清掃工_路面清掃(機械)</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>人力清掃費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>歩道掃き出し</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路清掃工_路面清掃工_路面清掃(機械)</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -120,6 +142,17 @@
                     <baseName>
                         <simpleValue>作業形態</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路清掃工_路面清掃工_路面清掃(機械)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>機械清掃費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>路面清掃（機械清掃工）</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -148,6 +181,17 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路清掃工_路面清掃工_路面清掃(歩道・人力)</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>人力清掃費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>路面清掃(歩道等・人力)</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路清掃工_路面清掃工_路面清掃(歩道・人力)</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -171,16 +215,16 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_歩道　塵埃量少ない" />
-                            <xs:enumeration value="10_歩道(草の処理)　塵埃量多い" />
-                            <xs:enumeration value="2_歩道　塵埃量普通" />
-                            <xs:enumeration value="3_歩道　塵埃量多い" />
-                            <xs:enumeration value="4_横断歩道橋・地下道　塵埃量少ない" />
-                            <xs:enumeration value="5_横断歩道橋・地下道　塵埃量普通" />
-                            <xs:enumeration value="6_横断歩道橋・地下道　塵埃量多い" />
-                            <xs:enumeration value="7_中央分離帯　塵埃量普通" />
-                            <xs:enumeration value="8_中央分離帯　塵埃量多い" />
-                            <xs:enumeration value="9_歩道(草の処理)　塵埃量普通" />
+                            <xs:enumeration value="歩道　塵埃量少ない" />
+                            <xs:enumeration value="歩道　塵埃量普通" />
+                            <xs:enumeration value="歩道　塵埃量多い" />
+                            <xs:enumeration value="横断歩道橋・地下道　塵埃量少ない" />
+                            <xs:enumeration value="横断歩道橋・地下道　塵埃量普通" />
+                            <xs:enumeration value="横断歩道橋・地下道　塵埃量多い" />
+                            <xs:enumeration value="中央分離帯　塵埃量普通" />
+                            <xs:enumeration value="中央分離帯　塵埃量多い" />
+                            <xs:enumeration value="歩道(草の処理)　塵埃量普通" />
+                            <xs:enumeration value="歩道(草の処理)　塵埃量多い" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -211,6 +255,17 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路清掃工_路面清掃工_路面清掃(歩道橋・地下道・人力)</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>人力清掃費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>路面清掃(歩道等・人力)</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路清掃工_路面清掃工_路面清掃(歩道橋・地下道・人力)</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -234,16 +289,16 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_歩道　塵埃量少ない" />
-                            <xs:enumeration value="10_歩道(草の処理)　塵埃量多い" />
-                            <xs:enumeration value="2_歩道　塵埃量普通" />
-                            <xs:enumeration value="3_歩道　塵埃量多い" />
-                            <xs:enumeration value="4_横断歩道橋・地下道　塵埃量少ない" />
-                            <xs:enumeration value="5_横断歩道橋・地下道　塵埃量普通" />
-                            <xs:enumeration value="6_横断歩道橋・地下道　塵埃量多い" />
-                            <xs:enumeration value="7_中央分離帯　塵埃量普通" />
-                            <xs:enumeration value="8_中央分離帯　塵埃量多い" />
-                            <xs:enumeration value="9_歩道(草の処理)　塵埃量普通" />
+                            <xs:enumeration value="歩道　塵埃量少ない" />
+                            <xs:enumeration value="歩道　塵埃量普通" />
+                            <xs:enumeration value="歩道　塵埃量多い" />
+                            <xs:enumeration value="横断歩道橋・地下道　塵埃量少ない" />
+                            <xs:enumeration value="横断歩道橋・地下道　塵埃量普通" />
+                            <xs:enumeration value="横断歩道橋・地下道　塵埃量多い" />
+                            <xs:enumeration value="中央分離帯　塵埃量普通" />
+                            <xs:enumeration value="中央分離帯　塵埃量多い" />
+                            <xs:enumeration value="歩道(草の処理)　塵埃量普通" />
+                            <xs:enumeration value="歩道(草の処理)　塵埃量多い" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -274,6 +329,17 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路清掃工_路面清掃工_路面清掃(路肩部・人力)</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>人力清掃費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>路面清掃（路肩部・人力）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路清掃工_路面清掃工_路面清掃(路肩部・人力)</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -297,9 +363,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_塵埃量少ない" />
-                            <xs:enumeration value="2_塵埃量普通" />
-                            <xs:enumeration value="3_塵埃量多い" />
+                            <xs:enumeration value="塵埃量少ない" />
+                            <xs:enumeration value="塵埃量普通" />
+                            <xs:enumeration value="塵埃量多い" />
                         </xs:restriction>
                     </value>
                 </property>

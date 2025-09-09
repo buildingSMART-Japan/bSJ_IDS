@@ -58,6 +58,17 @@
                         <simpleValue>車止めﾎﾟｽﾄ径</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_防護柵工_車止めポスト工_車止めポスト</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>車止めﾎﾟｽﾄ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>車止めポスト設置</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_防護柵工_車止めポスト工_車止めポスト</simpleValue>

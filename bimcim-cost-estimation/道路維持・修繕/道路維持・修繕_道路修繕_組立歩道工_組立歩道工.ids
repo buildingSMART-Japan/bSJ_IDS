@@ -58,6 +58,28 @@
                         <simpleValue>材料規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_組立歩道工_組立歩道工_組立歩道</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>組立歩道材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>組立歩道（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_組立歩道工_組立歩道工_組立歩道</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>組立歩道費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>組立歩道組立据付</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="足場" ifcVersion="IFC2X3">
@@ -100,9 +122,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_安全ネット必要" />
-                            <xs:enumeration value="2_安全ネット不要" />
+                            <xs:enumeration value="安全ネット必要" />
+                            <xs:enumeration value="安全ネット不要" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_組立歩道工_組立歩道工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>足場工</simpleValue>
                     </value>
                 </property>
             </requirements>

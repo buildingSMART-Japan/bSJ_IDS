@@ -50,6 +50,17 @@
                         <simpleValue>1472400101_1519400101_1322400201_1323600101_B323700101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_排水構造物工_地下排水工_地下排水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>暗渠排水管設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>暗渠排水管</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_排水構造物工_地下排水工_地下排水</simpleValue>
@@ -59,10 +70,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_直管" />
-                            <xs:enumeration value="2_波状管" />
-                            <xs:enumeration value="3_網状管" />
+                            <xs:enumeration value="直管" />
+                            <xs:enumeration value="波状管" />
+                            <xs:enumeration value="網状管" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_排水構造物工_地下排水工_地下排水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌｨﾙﾀｰ材敷設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>フィルター材</simpleValue>
                     </value>
                 </property>
             </requirements>

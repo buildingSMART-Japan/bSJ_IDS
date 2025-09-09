@@ -55,14 +55,28 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_舗装工_薄層カラー舗装工_殻処分</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>処分費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="処分費（ｍ３）" />
+                            <xs:enumeration value="処分費（ｔ）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_舗装工_薄層カラー舗装工_殻処分</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>殻種別</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｱｽﾌｧﾙﾄ殻" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ殻(無筋)" />
-                            <xs:enumeration value="3_ｺﾝｸﾘｰﾄ殻(鉄筋)" />
-                            <xs:enumeration value="4_ﾓﾙﾀﾙ殻" />
+                            <xs:enumeration value="ｱｽﾌｧﾙﾄ殻" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ殻(無筋)" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ殻(鉄筋)" />
+                            <xs:enumeration value="ﾓﾙﾀﾙ殻" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -108,11 +122,22 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｺﾝｸﾘｰﾄ(無筋)構造物とりこわし" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ(鉄筋)構造物とりこわし" />
-                            <xs:enumeration value="3_舗装版破砕" />
-                            <xs:enumeration value="4_吹付法面とりこわし(ﾓﾙﾀﾙ)" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ(無筋)構造物とりこわし" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ(鉄筋)構造物とりこわし" />
+                            <xs:enumeration value="舗装版破砕" />
+                            <xs:enumeration value="吹付法面とりこわし(ﾓﾙﾀﾙ)" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_舗装工_薄層カラー舗装工_殻運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>殻運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>殻運搬</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -156,6 +181,17 @@
                         <simpleValue>舗装厚</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_舗装工_薄層カラー舗装工_舗装版切断</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>舗装版切断費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>舗装版切断</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_舗装工_薄層カラー舗装工_舗装版切断</simpleValue>
@@ -165,9 +201,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｱｽﾌｧﾙﾄ舗装版" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ舗装版" />
-                            <xs:enumeration value="3_ｺﾝｸﾘｰﾄ+ｱｽﾌｧﾙﾄ(ｶﾊﾞｰ)舗装版" />
+                            <xs:enumeration value="ｱｽﾌｧﾙﾄ舗装版" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ舗装版" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ+ｱｽﾌｧﾙﾄ(ｶﾊﾞｰ)舗装版" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -204,6 +240,17 @@
                         <simpleValue>1472400101_1508200101_1508400101_1510300101_B499900101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_舗装工_薄層カラー舗装工_舗装版破砕</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>破砕費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>舗装版破砕</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_舗装工_薄層カラー舗装工_舗装版破砕</simpleValue>
@@ -221,9 +268,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｱｽﾌｧﾙﾄ舗装版" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ舗装版" />
-                            <xs:enumeration value="3_Co+As(ｶﾊﾞｰ)舗装版" />
+                            <xs:enumeration value="ｱｽﾌｧﾙﾄ舗装版" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ舗装版" />
+                            <xs:enumeration value="Co+As(ｶﾊﾞｰ)舗装版" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -258,6 +305,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1472400101_1508200101_1508400101_1510300101_B499905101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_舗装工_薄層カラー舗装工_舗装版破砕(小規模)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>破砕費(小規模)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>舗装版破砕積込（小規模土工）</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -301,6 +359,20 @@
                         <simpleValue>1472400101_1508200101_1508400101_1510300101_B499905201</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_舗装工_薄層カラー舗装工_舗装版破砕(急速施工)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>破砕費(機械･急速施工)</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="直接掘削積込" />
+                            <xs:enumeration value="とりこわし掘削積込" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_舗装工_薄層カラー舗装工_舗装版破砕(急速施工)</simpleValue>
@@ -318,9 +390,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｱｽﾌｧﾙﾄ舗装版" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ舗装版" />
-                            <xs:enumeration value="3_Co+As(ｶﾊﾞｰ)舗装版" />
+                            <xs:enumeration value="ｱｽﾌｧﾙﾄ舗装版" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ舗装版" />
+                            <xs:enumeration value="Co+As(ｶﾊﾞｰ)舗装版" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -355,6 +427,61 @@
                     </baseName>
                     <value>
                         <simpleValue>1472400101_1508200101_1508400101_1510300101_1067000103</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_舗装工_薄層カラー舗装工_薄層カラー舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>加熱混合型薄層ｶﾗｰ舗装費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>加熱混合型薄層カラー舗装工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_舗装工_薄層カラー舗装工_薄層カラー舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠式ｶﾗｰﾀｲﾙ舗装費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠式カラータイル舗装工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_舗装工_薄層カラー舗装工_薄層カラー舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>景観透水性舗装費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>樹脂ﾓﾙﾀﾙ舗装工・景観透水性舗装工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_舗装工_薄層カラー舗装工_薄層カラー舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>樹脂系すべり止め舗装費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>樹脂系すべり止め舗装工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_舗装工_薄層カラー舗装工_薄層カラー舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>樹脂ﾓﾙﾀﾙ舗装費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>樹脂ﾓﾙﾀﾙ舗装工・景観透水性舗装工</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">

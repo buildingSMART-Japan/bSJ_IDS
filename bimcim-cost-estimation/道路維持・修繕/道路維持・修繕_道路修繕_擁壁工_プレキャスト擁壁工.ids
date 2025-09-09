@@ -58,6 +58,17 @@
                         <simpleValue>幅</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_擁壁工_プレキャスト擁壁工_プレキャスト擁壁</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>設置</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>プレキャスト擁壁設置</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_擁壁工_プレキャスト擁壁工_プレキャスト擁壁</simpleValue>
@@ -67,10 +78,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_0.5m以上1.0m以下" />
-                            <xs:enumeration value="2_1.0mを超え2.0m以下" />
-                            <xs:enumeration value="3_2.0mを超え3.5m以下" />
-                            <xs:enumeration value="4_3.5mを超え5.0m以下" />
+                            <xs:enumeration value="0.5m以上1.0m以下" />
+                            <xs:enumeration value="1.0mを超え2.0m以下" />
+                            <xs:enumeration value="2.0mを超え3.5m以下" />
+                            <xs:enumeration value="3.5mを超え5.0m以下" />
                         </xs:restriction>
                     </value>
                 </property>

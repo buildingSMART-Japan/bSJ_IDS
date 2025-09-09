@@ -39,6 +39,21 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路清掃工_道路付属物清掃工_トンネル照明器具清掃(人力)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>人力器具清掃費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="照明機具清掃作業" />
+                            <xs:enumeration value="人力施工表面清掃" />
+                            <xs:enumeration value="人力施工表面及び内面清掃" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路清掃工_道路付属物清掃工_トンネル照明器具清掃(人力)</simpleValue>
@@ -67,8 +82,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_貸与" />
-                            <xs:enumeration value="2_持込" />
+                            <xs:enumeration value="貸与" />
+                            <xs:enumeration value="持込" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -112,6 +127,20 @@
                     <baseName>
                         <simpleValue>作業形態</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路清掃工_道路付属物清掃工_トンネル照明器具清掃(機械)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>機械照明器具清掃費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="照明機具清掃作業" />
+                            <xs:enumeration value="機械施工表面清掃" />
+                        </xs:restriction>
+                    </value>
                 </property>
             </requirements>
         </specification>

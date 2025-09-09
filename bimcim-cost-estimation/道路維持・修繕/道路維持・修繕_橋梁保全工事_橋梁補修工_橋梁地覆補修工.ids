@@ -48,17 +48,28 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_21-8-25(20)(普通)" />
-                            <xs:enumeration value="2_21-12-25(20)(普通)" />
-                            <xs:enumeration value="3_21-8-25(20)(高炉)" />
-                            <xs:enumeration value="4_21-12-25(20)(高炉)" />
-                            <xs:enumeration value="5_24-8-25(20)(普通)" />
-                            <xs:enumeration value="6_24-12-25(20)(普通)" />
-                            <xs:enumeration value="7_24-8-25(20)(高炉)" />
-                            <xs:enumeration value="8_24-12-25(20)(高炉)" />
-                            <xs:enumeration value="9_各種" />
+                            <xs:enumeration value="21-8-25(20)(普通)" />
+                            <xs:enumeration value="21-12-25(20)(普通)" />
+                            <xs:enumeration value="21-8-25(20)(高炉)" />
+                            <xs:enumeration value="21-12-25(20)(高炉)" />
+                            <xs:enumeration value="24-8-25(20)(普通)" />
+                            <xs:enumeration value="24-12-25(20)(普通)" />
+                            <xs:enumeration value="24-8-25(20)(高炉)" />
+                            <xs:enumeration value="24-12-25(20)(高炉)" />
+                            <xs:enumeration value="各種" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁補修工_橋梁地覆補修工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>コンクリート費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -79,6 +90,50 @@
                     <baseName>
                         <simpleValue>形状寸法</simpleValue>
                     </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="橋梁地覆とりこわし" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>橋梁地覆とりこわし</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁補修工_橋梁地覆補修工_橋梁地覆とりこわし</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁補修工_橋梁地覆補修工_橋梁地覆とりこわし</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>とりこわし費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>とりこわし</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁補修工_橋梁地覆補修工_橋梁地覆とりこわし</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508500101_1500901001_1586600101_B586610101</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -113,6 +168,17 @@
                         <simpleValue>1472400101_1508500101_1500901001_1586600101_B517600101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁補修工_橋梁地覆補修工_足場・防護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>足場･防護費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>足場・防護</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁補修工_橋梁地覆補修工_足場・防護</simpleValue>
@@ -122,8 +188,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｼｰﾄ" />
-                            <xs:enumeration value="2_ｼｰﾄ+板張" />
+                            <xs:enumeration value="ｼｰﾄ" />
+                            <xs:enumeration value="ｼｰﾄ+板張" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -169,18 +235,29 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_SD295 D10" />
-                            <xs:enumeration value="10_鉄筋各種" />
-                            <xs:enumeration value="2_SD295 D13" />
-                            <xs:enumeration value="3_SD295 D16" />
-                            <xs:enumeration value="4_SD345 D10" />
-                            <xs:enumeration value="5_SD345 D13" />
-                            <xs:enumeration value="6_SD345 D16～25" />
-                            <xs:enumeration value="7_SR235 φ9" />
-                            <xs:enumeration value="8_SR235 φ13" />
-                            <xs:enumeration value="9_SR235 φ16～25" />
+                            <xs:enumeration value="SD295 D10" />
+                            <xs:enumeration value="SD295 D13" />
+                            <xs:enumeration value="SD295 D16" />
+                            <xs:enumeration value="SD345 D10" />
+                            <xs:enumeration value="SD345 D13" />
+                            <xs:enumeration value="SD345 D16～25" />
+                            <xs:enumeration value="SR235 φ9" />
+                            <xs:enumeration value="SR235 φ13" />
+                            <xs:enumeration value="SR235 φ16～25" />
+                            <xs:enumeration value="鉄筋各種" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋梁補修工_橋梁地覆補修工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋</simpleValue>
                     </value>
                 </property>
             </requirements>

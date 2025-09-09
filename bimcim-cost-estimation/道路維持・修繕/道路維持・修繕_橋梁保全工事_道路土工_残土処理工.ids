@@ -59,9 +59,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_標準" />
-                            <xs:enumeration value="2_小規模" />
-                            <xs:enumeration value="3_現場制約あり" />
+                            <xs:enumeration value="標準" />
+                            <xs:enumeration value="小規模" />
+                            <xs:enumeration value="現場制約あり" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -74,9 +74,24 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_土砂(岩塊･玉石混り土含む)" />
-                            <xs:enumeration value="2_軟岩" />
-                            <xs:enumeration value="3_硬岩" />
+                            <xs:enumeration value="土砂(岩塊･玉石混り土含む)" />
+                            <xs:enumeration value="軟岩" />
+                            <xs:enumeration value="硬岩" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路土工_残土処理工_土砂等運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="土砂等運搬" />
+                            <xs:enumeration value="ダンプトラック運搬（１０ｔ積級）［共同溝工］" />
+                            <xs:enumeration value="土砂運搬工（不整地運搬車による運搬）" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -122,8 +137,66 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_残土受入れ地での処理" />
-                            <xs:enumeration value="2_敷均し(ﾙｰｽﾞ)" />
+                            <xs:enumeration value="残土受入れ地での処理" />
+                            <xs:enumeration value="敷均し(ﾙｰｽﾞ)" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路土工_残土処理工_整地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>敷均し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>整地</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="残土等処分" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>残土等処分</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路土工_残土処理工_残土等処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路土工_残土処理工_残土等処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508500101_1000500102_1002000106_B002105201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_道路土工_残土処理工_残土等処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>処分費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="残土等処分" />
+                            <xs:enumeration value="処分費（ｔ）" />
                         </xs:restriction>
                     </value>
                 </property>

@@ -59,9 +59,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_基礎ブロック" />
-                            <xs:enumeration value="2_鋼管基礎" />
+                            <xs:enumeration value="基礎ブロック" />
+                            <xs:enumeration value="鋼管基礎" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_防護柵工_防止柵工_基礎ブロック,鋼管基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎ﾌﾞﾛｯｸ，鋼管基礎設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>基礎ブロック，鋼管基礎</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -114,10 +125,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_土中建込" />
-                            <xs:enumeration value="2_ﾌﾟﾚｷｬｽﾄｺﾝｸﾘｰﾄﾌﾞﾛｯｸ建込" />
-                            <xs:enumeration value="3_ｺﾝｸﾘｰﾄ建込" />
-                            <xs:enumeration value="4_ｱﾝｶｰﾎﾞﾙﾄ固定" />
+                            <xs:enumeration value="土中建込" />
+                            <xs:enumeration value="ﾌﾟﾚｷｬｽﾄｺﾝｸﾘｰﾄﾌﾞﾛｯｸ建込" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ建込" />
+                            <xs:enumeration value="ｱﾝｶｰﾎﾞﾙﾄ固定" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -128,6 +139,34 @@
                     <baseName>
                         <simpleValue>柵高</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_防護柵工_防止柵工_転落(横断)防止柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>転落(横断)防止柵設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="防護柵（横断・転落防止柵）設置工" />
+                            <xs:enumeration value="防護柵（横断・転落防止柵）撤去工" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_防護柵工_防止柵工_転落(横断)防止柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>転落(横断)防止柵部材設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="部材設置工（ビーム・パネル）" />
+                            <xs:enumeration value="部材撤去工（ビーム・パネル）" />
+                        </xs:restriction>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -171,9 +210,31 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_基礎ブロック" />
-                            <xs:enumeration value="2_鋼管基礎" />
+                            <xs:enumeration value="基礎ブロック" />
+                            <xs:enumeration value="鋼管基礎" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_防護柵工_防止柵工_金網・支柱(立入防止柵)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎ﾌﾞﾛｯｸ，鋼管基礎材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>金網・支柱(立入防止柵)(材料費)</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_防護柵工_防止柵工_金網・支柱(立入防止柵)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎ﾌﾞﾛｯｸ，鋼管基礎設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>金網・支柱(立入防止柵)</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -185,9 +246,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_2m以下" />
-                            <xs:enumeration value="2_2mを超え2.5m以下" />
                             <xs:enumeration value="（入力してください）" />
+                            <xs:enumeration value="2m以下" />
+                            <xs:enumeration value="2mを超え2.5m以下" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -200,8 +261,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1.5ｍ" />
-                            <xs:enumeration value="2_2ｍ" />
+                            <xs:enumeration value="1.5ｍ" />
+                            <xs:enumeration value="2ｍ" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -238,6 +299,17 @@
                         <simpleValue>1472400101_1519400101_1347900101_1106700301_B604600101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_防護柵工_防止柵工_門扉</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>門扉材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>門扉（材料費）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_防護柵工_防止柵工_門扉</simpleValue>
@@ -247,9 +319,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_片開き" />
-                            <xs:enumeration value="2_両開き" />
+                            <xs:enumeration value="片開き" />
+                            <xs:enumeration value="両開き" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_防護柵工_防止柵工_門扉</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>門扉設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>門扉</simpleValue>
                     </value>
                 </property>
             </requirements>

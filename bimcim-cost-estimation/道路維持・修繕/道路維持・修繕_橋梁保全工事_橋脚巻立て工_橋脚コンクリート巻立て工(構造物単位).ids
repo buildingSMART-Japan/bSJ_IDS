@@ -66,6 +66,17 @@
                         <simpleValue>径</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工(構造物単位)_コンクリート削孔</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>アンカー材（材料費）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工(構造物単位)_コンクリート削孔</simpleValue>
@@ -75,8 +86,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｱﾝｶｰ材有" />
-                            <xs:enumeration value="2_ｱﾝｶｰ材無" />
+                            <xs:enumeration value="ｱﾝｶｰ材有" />
+                            <xs:enumeration value="ｱﾝｶｰ材無" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -87,6 +98,17 @@
                     <baseName>
                         <simpleValue>ｱﾝｶｰ材長さ</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工(構造物単位)_コンクリート削孔</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ削孔費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート削孔</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -130,12 +152,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_A支柱" />
-                            <xs:enumeration value="2_B支柱" />
-                            <xs:enumeration value="3_C支柱" />
-                            <xs:enumeration value="4_D支柱" />
-                            <xs:enumeration value="5_E支柱" />
-                            <xs:enumeration value="6_F支柱" />
+                            <xs:enumeration value="A支柱" />
+                            <xs:enumeration value="B支柱" />
+                            <xs:enumeration value="C支柱" />
+                            <xs:enumeration value="D支柱" />
+                            <xs:enumeration value="E支柱" />
+                            <xs:enumeration value="F支柱" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -148,10 +170,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_a施工" />
-                            <xs:enumeration value="2_b施工" />
-                            <xs:enumeration value="3_c施工" />
-                            <xs:enumeration value="4_d施工" />
+                            <xs:enumeration value="a施工" />
+                            <xs:enumeration value="b施工" />
+                            <xs:enumeration value="c施工" />
+                            <xs:enumeration value="d施工" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -164,8 +186,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_養生費有" />
-                            <xs:enumeration value="2_養生費無" />
+                            <xs:enumeration value="養生費有" />
+                            <xs:enumeration value="養生費無" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -178,9 +200,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｺﾝｸﾘｰﾄ夜間割増無" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ夜間割増有" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ夜間割増無" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ夜間割増有" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工(構造物単位)_コンクリート巻立て</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ巻立て費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート巻立て</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -192,19 +225,19 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_21-8-25(20)(普通)" />
-                            <xs:enumeration value="10_24-12-40(普通)" />
-                            <xs:enumeration value="11_24-8-40(高炉)" />
-                            <xs:enumeration value="12_24-12-40(高炉)" />
-                            <xs:enumeration value="13_各種" />
-                            <xs:enumeration value="2_21-12-25(20)(普通)" />
-                            <xs:enumeration value="3_21-8-25(20)(高炉)" />
-                            <xs:enumeration value="4_21-12-25(20)(高炉)" />
-                            <xs:enumeration value="5_24-8-25(20)(普通)" />
-                            <xs:enumeration value="6_24-12-25(20)(普通)" />
-                            <xs:enumeration value="7_24-8-25(20)(高炉)" />
-                            <xs:enumeration value="8_24-12-25(20)(高炉)" />
-                            <xs:enumeration value="9_24-8-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(普通)" />
+                            <xs:enumeration value="21-12-25(20)(普通)" />
+                            <xs:enumeration value="21-8-25(20)(高炉)" />
+                            <xs:enumeration value="21-12-25(20)(高炉)" />
+                            <xs:enumeration value="24-8-25(20)(普通)" />
+                            <xs:enumeration value="24-12-25(20)(普通)" />
+                            <xs:enumeration value="24-8-25(20)(高炉)" />
+                            <xs:enumeration value="24-12-25(20)(高炉)" />
+                            <xs:enumeration value="24-8-40(普通)" />
+                            <xs:enumeration value="24-12-40(普通)" />
+                            <xs:enumeration value="24-8-40(高炉)" />
+                            <xs:enumeration value="24-12-40(高炉)" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
                     </value>
                 </property>

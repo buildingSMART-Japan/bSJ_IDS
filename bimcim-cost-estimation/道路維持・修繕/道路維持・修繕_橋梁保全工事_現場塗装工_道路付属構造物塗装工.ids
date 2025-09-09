@@ -44,6 +44,17 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_現場塗装工_道路付属構造物塗装工_上塗</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>上塗費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>付属構造物塗替</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_現場塗装工_道路付属構造物塗装工_上塗</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -59,20 +70,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_長油性ﾌﾀﾙ酸樹脂塗料･上塗･淡彩" />
-                            <xs:enumeration value="10_塩化ｺﾞﾑ系塗料･上塗･青緑系" />
-                            <xs:enumeration value="11_塩化ｺﾞﾑ系塗料･上塗･黄色系" />
-                            <xs:enumeration value="12_塩化ｺﾞﾑ系塗料･上塗･中彩A" />
-                            <xs:enumeration value="13_塩化ｺﾞﾑ系塗料･上塗･中彩B" />
-                            <xs:enumeration value="14_塩化ｺﾞﾑ系塗料･上塗･白色" />
-                            <xs:enumeration value="2_長油性ﾌﾀﾙ酸樹脂塗料･上塗･赤系" />
-                            <xs:enumeration value="3_長油性ﾌﾀﾙ酸樹脂塗料･上塗･青緑" />
-                            <xs:enumeration value="4_長油性ﾌﾀﾙ酸樹脂塗料･上塗･黄色" />
-                            <xs:enumeration value="5_長油性ﾌﾀﾙ酸樹脂塗料･上塗･中彩A" />
-                            <xs:enumeration value="6_長油性ﾌﾀﾙ酸樹脂塗料･上塗･中彩B" />
-                            <xs:enumeration value="7_長油性ﾌﾀﾙ酸樹脂塗料･上塗･白色" />
-                            <xs:enumeration value="8_塩化ｺﾞﾑ系塗料･上塗･淡彩" />
-                            <xs:enumeration value="9_塩化ｺﾞﾑ系塗料･上塗･赤系" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料･上塗･淡彩" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料･上塗･赤系" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料･上塗･青緑" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料･上塗･黄色" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料･上塗･中彩A" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料･上塗･中彩B" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料･上塗･白色" />
+                            <xs:enumeration value="塩化ｺﾞﾑ系塗料･上塗･淡彩" />
+                            <xs:enumeration value="塩化ｺﾞﾑ系塗料･上塗･赤系" />
+                            <xs:enumeration value="塩化ｺﾞﾑ系塗料･上塗･青緑系" />
+                            <xs:enumeration value="塩化ｺﾞﾑ系塗料･上塗･黄色系" />
+                            <xs:enumeration value="塩化ｺﾞﾑ系塗料･上塗･中彩A" />
+                            <xs:enumeration value="塩化ｺﾞﾑ系塗料･上塗･中彩B" />
+                            <xs:enumeration value="塩化ｺﾞﾑ系塗料･上塗･白色" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -93,9 +104,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_１回" />
-                            <xs:enumeration value="2_２回" />
-                            <xs:enumeration value="3_３回" />
+                            <xs:enumeration value="１回" />
+                            <xs:enumeration value="２回" />
+                            <xs:enumeration value="３回" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -108,8 +119,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_各種" />
-                            <xs:enumeration value="2_上塗" />
+                            <xs:enumeration value="各種" />
+                            <xs:enumeration value="上塗" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -148,6 +159,17 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_現場塗装工_道路付属構造物塗装工_下塗</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>下塗費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>付属構造物塗替</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_現場塗装工_道路付属構造物塗装工_下塗</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -163,9 +185,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_１回" />
-                            <xs:enumeration value="2_２回" />
-                            <xs:enumeration value="3_３回" />
+                            <xs:enumeration value="１回" />
+                            <xs:enumeration value="２回" />
+                            <xs:enumeration value="３回" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -178,10 +200,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_各種" />
-                            <xs:enumeration value="2_下塗" />
-                            <xs:enumeration value="1_鉛･ｸﾛﾑﾌﾘｰさび止めﾍﾟｲﾝﾄ･下塗･淡彩" />
-                            <xs:enumeration value="2_ﾌｪﾉｰﾙ樹脂MIO塗装･下塗･淡彩" />
+                            <xs:enumeration value="各種" />
+                            <xs:enumeration value="下塗" />
+                            <xs:enumeration value="鉛･ｸﾛﾑﾌﾘｰさび止めﾍﾟｲﾝﾄ･下塗･淡彩" />
+                            <xs:enumeration value="ﾌｪﾉｰﾙ樹脂MIO塗装･下塗･淡彩" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -228,6 +250,17 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_現場塗装工_道路付属構造物塗装工_中塗</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>中塗費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>付属構造物塗替</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_現場塗装工_道路付属構造物塗装工_中塗</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -243,20 +276,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_長油性ﾌﾀﾙ酸樹脂塗料･中塗･淡彩" />
-                            <xs:enumeration value="10_塩化ｺﾞﾑ系塗料･中塗･青緑系" />
-                            <xs:enumeration value="11_塩化ｺﾞﾑ系塗料･中塗･黄色系" />
-                            <xs:enumeration value="12_塩化ｺﾞﾑ系塗料･中塗･中彩A" />
-                            <xs:enumeration value="13_塩化ｺﾞﾑ系塗料･中塗･中彩B" />
-                            <xs:enumeration value="14_塩化ｺﾞﾑ系塗料･中塗･白色" />
-                            <xs:enumeration value="2_長油性ﾌﾀﾙ酸樹脂塗料･中塗･赤系" />
-                            <xs:enumeration value="3_長油性ﾌﾀﾙ酸樹脂塗料･中塗･青緑" />
-                            <xs:enumeration value="4_長油性ﾌﾀﾙ酸樹脂塗料･中塗･黄色" />
-                            <xs:enumeration value="5_長油性ﾌﾀﾙ酸樹脂塗料･中塗･中彩A" />
-                            <xs:enumeration value="6_長油性ﾌﾀﾙ酸樹脂塗料･中塗･中彩B" />
-                            <xs:enumeration value="7_長油性ﾌﾀﾙ酸樹脂塗料･中塗･白色" />
-                            <xs:enumeration value="8_塩化ｺﾞﾑ系塗料･中塗･淡彩" />
-                            <xs:enumeration value="9_塩化ｺﾞﾑ系塗料･中塗･赤系" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料･中塗･淡彩" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料･中塗･赤系" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料･中塗･青緑" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料･中塗･黄色" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料･中塗･中彩A" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料･中塗･中彩B" />
+                            <xs:enumeration value="長油性ﾌﾀﾙ酸樹脂塗料･中塗･白色" />
+                            <xs:enumeration value="塩化ｺﾞﾑ系塗料･中塗･淡彩" />
+                            <xs:enumeration value="塩化ｺﾞﾑ系塗料･中塗･赤系" />
+                            <xs:enumeration value="塩化ｺﾞﾑ系塗料･中塗･青緑系" />
+                            <xs:enumeration value="塩化ｺﾞﾑ系塗料･中塗･黄色系" />
+                            <xs:enumeration value="塩化ｺﾞﾑ系塗料･中塗･中彩A" />
+                            <xs:enumeration value="塩化ｺﾞﾑ系塗料･中塗･中彩B" />
+                            <xs:enumeration value="塩化ｺﾞﾑ系塗料･中塗･白色" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -277,9 +310,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_１回" />
-                            <xs:enumeration value="2_２回" />
-                            <xs:enumeration value="3_３回" />
+                            <xs:enumeration value="１回" />
+                            <xs:enumeration value="２回" />
+                            <xs:enumeration value="３回" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -292,8 +325,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_各種" />
-                            <xs:enumeration value="2_中塗" />
+                            <xs:enumeration value="各種" />
+                            <xs:enumeration value="中塗" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -336,6 +369,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1472400101_1508500101_1500800201_1586400101_B501000301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_現場塗装工_道路付属構造物塗装工_素地調整</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>素地調整費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>素地調整</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">

@@ -67,8 +67,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_散水車持込" />
-                            <xs:enumeration value="2_散水車貸与" />
+                            <xs:enumeration value="散水車持込" />
+                            <xs:enumeration value="散水車貸与" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -81,13 +81,24 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1800L" />
-                            <xs:enumeration value="2_5500～6500L" />
-                            <xs:enumeration value="3_7500～8000L" />
-                            <xs:enumeration value="4_6500L 耐塩式(貸与)" />
-                            <xs:enumeration value="5_各種" />
-                            <xs:enumeration value="6_散水車なし" />
+                            <xs:enumeration value="1800L" />
+                            <xs:enumeration value="5500～6500L" />
+                            <xs:enumeration value="7500～8000L" />
+                            <xs:enumeration value="6500L 耐塩式(貸与)" />
+                            <xs:enumeration value="各種" />
+                            <xs:enumeration value="散水車なし" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路清掃工_構造物清掃工_トンネル壁面清掃</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>機械清掃費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>トンネル清掃工</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -99,8 +110,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_持込" />
-                            <xs:enumeration value="2_貸与" />
+                            <xs:enumeration value="持込" />
+                            <xs:enumeration value="貸与" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -113,8 +124,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾌﾞﾗｼ持込" />
-                            <xs:enumeration value="2_ﾌﾞﾗｼ支給" />
+                            <xs:enumeration value="ﾌﾞﾗｼ持込" />
+                            <xs:enumeration value="ﾌﾞﾗｼ支給" />
                         </xs:restriction>
                     </value>
                 </property>

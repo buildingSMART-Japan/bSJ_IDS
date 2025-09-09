@@ -59,10 +59,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_厚10cm" />
-                            <xs:enumeration value="2_厚15cm" />
-                            <xs:enumeration value="3_厚20cm" />
+                            <xs:enumeration value="厚10cm" />
+                            <xs:enumeration value="厚15cm" />
+                            <xs:enumeration value="厚20cm" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_法面吹付工_コンクリート吹付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ吹付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート吹付工</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -74,8 +85,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_普通ｾﾒﾝﾄ" />
-                            <xs:enumeration value="2_高炉ｾﾒﾝﾄ" />
+                            <xs:enumeration value="普通ｾﾒﾝﾄ" />
+                            <xs:enumeration value="高炉ｾﾒﾝﾄ" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -121,12 +132,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_厚5cm" />
-                            <xs:enumeration value="2_厚6cm" />
-                            <xs:enumeration value="3_厚7cm" />
-                            <xs:enumeration value="4_厚8cm" />
-                            <xs:enumeration value="5_厚9cm" />
-                            <xs:enumeration value="6_厚10cm" />
+                            <xs:enumeration value="厚5cm" />
+                            <xs:enumeration value="厚6cm" />
+                            <xs:enumeration value="厚7cm" />
+                            <xs:enumeration value="厚8cm" />
+                            <xs:enumeration value="厚9cm" />
+                            <xs:enumeration value="厚10cm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -137,6 +148,17 @@
                     <baseName>
                         <simpleValue>ｾﾒﾝﾄ種類</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_法面工_法面吹付工_モルタル吹付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾓﾙﾀﾙ吹付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>モルタル吹付工</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

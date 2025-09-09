@@ -50,6 +50,17 @@
                         <simpleValue>1472400101_1508200101_1037200901_1553700101_1039902401</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_工場製作工_桁補強材製作工_製作加工</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>製作加工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>桁補強材料費</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_工場製作工_桁補強材製作工_製作加工</simpleValue>

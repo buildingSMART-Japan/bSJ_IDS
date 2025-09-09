@@ -1,0 +1,430 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>道路維持・修繕_共通仮設_共通仮設費_安全費</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>1.0</version>
+        <description>令和5年度対応の積算用属性情報（properties_202304_01.xlsx）に準拠します。
+このIDSファイルにない項目、設定が困難な項目等は、設計数量管理機能で設定してしてください。
+このIDSファイルは次のソフトウェアで出力したIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2025-07-01</date>
+        <purpose>BIM/CIM積算のための属性情報を設定します。</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="トンネル呼吸用保護具等費用" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>トンネル呼吸用保護具等費用</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_トンネル呼吸用保護具等費用</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_トンネル呼吸用保護具等費用</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>トンネル呼吸用保護具等費用</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>トンネル呼吸用保護具等費用</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_トンネル呼吸用保護具等費用</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1119300106_1119400206_1121300101_1567900101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="保安管理費" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>保安管理費</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_保安管理費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_保安管理費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1119300106_1119400206_1121300101_1562500101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_保安管理費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>保安管理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>保安管理費</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="安全管理員" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>安全管理員</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_安全管理員</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_安全管理員</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1119300106_1119400206_1121300101_1121600201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_安全管理員</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>安全管理員費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>安全管理員</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="安全設備費" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>安全設備費</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_安全設備費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_安全設備費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1119300106_1119400206_1121300101_1555305101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_安全設備費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>安全設備費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>安全設備</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_安全設備費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>酸素呼吸装置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>酸素呼吸装置</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_安全設備費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>酸素集合装置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>酸素集合装置</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="救急設備費" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>救急設備費</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_救急設備費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_救急設備費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1119300106_1119400206_1121300101_1555300101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_救急設備費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>救急設備費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>救急設備</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_救急設備費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>酸素呼吸装置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>酸素呼吸装置</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_救急設備費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>酸素集合装置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>酸素集合装置</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="機械誘導員" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>機械誘導員</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_機械誘導員</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_機械誘導員</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1119300106_1119400206_1121300101_1121500201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_機械誘導員</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>機械誘導員費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>機械誘導員</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="鉛等呼吸用保護具等費用" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>鉛等呼吸用保護具等費用</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_鉛等呼吸用保護具等費用</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_鉛等呼吸用保護具等費用</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1119300106_1119400206_1121300101_1567900201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_鉛等呼吸用保護具等費用</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉛等呼吸用保護具等費用</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉛等呼吸用保護具等費用</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="高圧線防護施設費" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>高圧線防護施設費</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_高圧線防護施設費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_高圧線防護施設費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1119300106_1119400206_1121300101_1121700101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_高圧線防護施設費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>設置・撤去</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_共通仮設_共通仮設費_安全費_高圧線防護施設費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防護材材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>防護材料</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>

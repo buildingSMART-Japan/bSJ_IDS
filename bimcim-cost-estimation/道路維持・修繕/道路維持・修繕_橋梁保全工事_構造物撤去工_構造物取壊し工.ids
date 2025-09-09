@@ -67,8 +67,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
-                            <xs:enumeration value="2_ｸﾚｰﾝ工法" />
+                            <xs:enumeration value="ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
+                            <xs:enumeration value="ｸﾚｰﾝ工法" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -79,6 +79,31 @@
                     <baseName>
                         <simpleValue>引抜長</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_H鋼杭引抜き</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｸﾚｰﾝ引抜費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>クレーンによるＨ形鋼引抜き工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_H鋼杭引抜き</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾊﾞｲﾌﾞﾛﾊﾝﾏ引抜費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="バイブロハンマ施工によるＨ形鋼引抜き" />
+                            <xs:enumeration value="Ｈ形鋼引抜き工（陸上・バイブロ（可変））" />
+                        </xs:restriction>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -107,6 +132,17 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_コンクリートはつり</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>はつり費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリートはつり</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_コンクリートはつり</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -122,9 +158,64 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_3cm以下" />
-                            <xs:enumeration value="2_3cmを超え6cm以下" />
+                            <xs:enumeration value="3cm以下" />
+                            <xs:enumeration value="3cmを超え6cm以下" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_コンクリートはつり</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>殻積込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>運搬車への積込</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="コンクリートブロック撤去" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>コンクリートブロック撤去</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_コンクリートブロック撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_コンクリートブロック撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508500101_1069300101_1038800502_1070200101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_コンクリートブロック撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリートブロック撤去</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -169,9 +260,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_無筋構造物" />
-                            <xs:enumeration value="2_鉄筋構造物" />
+                            <xs:enumeration value="無筋構造物" />
+                            <xs:enumeration value="鉄筋構造物" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_コンクリート取壊し運搬処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ取壊し･運搬･処理費(複合)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>構造物とりこわし・運搬・処分（複合）</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -207,6 +309,17 @@
                         <simpleValue>1472400101_1508500101_1069300101_1038800502_1038900102</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_コンクリート構造物取壊し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>取壊し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>構造物とりこわし</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_コンクリート構造物取壊し</simpleValue>
@@ -216,8 +329,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_機械施工" />
-                            <xs:enumeration value="2_人力施工" />
+                            <xs:enumeration value="機械施工" />
+                            <xs:enumeration value="人力施工" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -230,8 +343,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_無筋構造物" />
-                            <xs:enumeration value="2_鉄筋構造物" />
+                            <xs:enumeration value="無筋構造物" />
+                            <xs:enumeration value="鉄筋構造物" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -266,8 +379,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_上向作業無" />
-                            <xs:enumeration value="2_上向作業有" />
+                            <xs:enumeration value="上向作業無" />
+                            <xs:enumeration value="上向作業有" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -291,10 +404,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_500m2以上" />
-                            <xs:enumeration value="2_300m2以上500m2未満" />
-                            <xs:enumeration value="3_300m2未満" />
+                            <xs:enumeration value="500m2以上" />
+                            <xs:enumeration value="300m2以上500m2未満" />
+                            <xs:enumeration value="300m2未満" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_コンクリート表面処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ表面処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート表面処理工（ウォータージェット工）</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -330,6 +454,17 @@
                         <simpleValue>1472400101_1508500101_1069300101_1038800502_B039300102</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_吹付法面取壊し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>取壊し･積込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>吹付法面取壊し</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_吹付法面取壊し</simpleValue>
@@ -339,8 +474,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_人力施工" />
-                            <xs:enumeration value="2_機械施工" />
+                            <xs:enumeration value="人力施工" />
+                            <xs:enumeration value="機械施工" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -353,8 +488,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_集積積込有" />
-                            <xs:enumeration value="2_集積積込無" />
+                            <xs:enumeration value="集積積込有" />
+                            <xs:enumeration value="集積積込無" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -400,9 +535,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_IIw型" />
-                            <xs:enumeration value="2_IIIw型" />
-                            <xs:enumeration value="3_IVw型" />
+                            <xs:enumeration value="IIw型" />
+                            <xs:enumeration value="IIIw型" />
+                            <xs:enumeration value="IVw型" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -415,8 +550,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾊﾞｲﾌﾞﾛﾊﾝﾏ引抜工法" />
-                            <xs:enumeration value="2_油圧引抜工法" />
+                            <xs:enumeration value="ﾊﾞｲﾌﾞﾛﾊﾝﾏ引抜工法" />
+                            <xs:enumeration value="油圧引抜工法" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -427,6 +562,31 @@
                     <baseName>
                         <simpleValue>引抜長</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_広幅鋼矢板引抜き</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>油圧引抜費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="油圧式杭圧入引抜機による鋼矢板引抜き" />
+                            <xs:enumeration value="油圧式杭圧入引抜機据付・解体" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_広幅鋼矢板引抜き</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾊﾞｲﾌﾞﾛﾊﾝﾏ引抜費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>広幅鋼矢板引抜き工（陸上）</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -459,6 +619,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1472400101_1508500101_1069300101_1038800502_B070300101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_根固めブロック撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>根固めﾌﾞﾛｯｸ撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>消波根固めブロック工（ブロック撤去）</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -502,6 +673,17 @@
                         <simpleValue>1472400101_1508500101_1069300101_1038800502_B039005102</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_舗装版切断</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>舗装版切断費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>舗装版切断</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_舗装版切断</simpleValue>
@@ -511,9 +693,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｱｽﾌｧﾙﾄ舗装版" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ舗装版" />
-                            <xs:enumeration value="3_Co+As(ｶﾊﾞｰ)舗装版" />
+                            <xs:enumeration value="ｱｽﾌｧﾙﾄ舗装版" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ舗装版" />
+                            <xs:enumeration value="Co+As(ｶﾊﾞｰ)舗装版" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -526,9 +708,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_15cm以下" />
-                            <xs:enumeration value="2_15cmを超え30cm以下" />
-                            <xs:enumeration value="3_30cmを超え40cm以下" />
+                            <xs:enumeration value="15cm以下" />
+                            <xs:enumeration value="15cmを超え30cm以下" />
+                            <xs:enumeration value="30cmを超え40cm以下" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -541,9 +723,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_15cm以下" />
-                            <xs:enumeration value="2_15cmを超え30cm以下" />
-                            <xs:enumeration value="3_30cmを超え40cm以下" />
+                            <xs:enumeration value="15cm以下" />
+                            <xs:enumeration value="15cmを超え30cm以下" />
+                            <xs:enumeration value="30cmを超え40cm以下" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -556,8 +738,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_15cm以下" />
-                            <xs:enumeration value="2_15cmを超え30cm以下" />
+                            <xs:enumeration value="15cm以下" />
+                            <xs:enumeration value="15cmを超え30cm以下" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -603,8 +785,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_機械施工" />
-                            <xs:enumeration value="2_人力施工" />
+                            <xs:enumeration value="機械施工" />
+                            <xs:enumeration value="人力施工" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -616,6 +798,17 @@
                         <simpleValue>舗装版厚</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_舗装版破砕</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>舗装版破砕費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>舗装版破砕</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_舗装版破砕</simpleValue>
@@ -625,9 +818,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｱｽﾌｧﾙﾄ舗装版" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ舗装版" />
-                            <xs:enumeration value="3_Co+As(ｶﾊﾞｰ)舗装版" />
+                            <xs:enumeration value="ｱｽﾌｧﾙﾄ舗装版" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ舗装版" />
+                            <xs:enumeration value="Co+As(ｶﾊﾞｰ)舗装版" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -664,6 +857,17 @@
                         <simpleValue>1472400101_1508500101_1069300101_1038800502_1039400102</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_鋼材切断</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>切断費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ガス切断</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_鋼材切断</simpleValue>
@@ -673,9 +877,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_鋼管杭(φ400～600)" />
-                            <xs:enumeration value="2_Ｈ鋼杭(H300～H400)" />
-                            <xs:enumeration value="3_鋼矢板(II,III,IV,V,VL,IIw,IIIw,IVw,10H,25H型)" />
+                            <xs:enumeration value="鋼管杭(φ400～600)" />
+                            <xs:enumeration value="Ｈ鋼杭(H300～H400)" />
+                            <xs:enumeration value="鋼矢板(II,III,IV,V,VL,IIw,IIIw,IVw,10H,25H型)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -721,9 +925,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾊﾞｲﾌﾞﾛﾊﾝﾏ引抜工法" />
-                            <xs:enumeration value="2_油圧引抜工法" />
-                            <xs:enumeration value="3_ｸﾚｰﾝ引抜工法" />
+                            <xs:enumeration value="ﾊﾞｲﾌﾞﾛﾊﾝﾏ引抜工法" />
+                            <xs:enumeration value="油圧引抜工法" />
+                            <xs:enumeration value="ｸﾚｰﾝ引抜工法" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -740,15 +944,54 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_鋼矢板引抜き</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>油圧引抜費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="鋼矢板引抜き" />
+                            <xs:enumeration value="油圧式杭圧入引抜機据付・解体" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_鋼矢板引抜き</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>鋼矢板型式</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_II型" />
-                            <xs:enumeration value="2_III型" />
-                            <xs:enumeration value="3_IV型" />
-                            <xs:enumeration value="4_VL型" />
-                            <xs:enumeration value="5_VIL型" />
+                            <xs:enumeration value="II型" />
+                            <xs:enumeration value="III型" />
+                            <xs:enumeration value="IV型" />
+                            <xs:enumeration value="VL型" />
+                            <xs:enumeration value="VIL型" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_鋼矢板引抜き</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｸﾚｰﾝ引抜費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>クレーンによる鋼矢板引抜き工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_構造物撤去工_構造物取壊し工_鋼矢板引抜き</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾊﾞｲﾌﾞﾛﾊﾝﾏ引抜費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="バイブロハンマ施工による鋼矢板引抜き" />
+                            <xs:enumeration value="鋼矢板引抜き工（陸上・バイブロ（可変））" />
                         </xs:restriction>
                     </value>
                 </property>

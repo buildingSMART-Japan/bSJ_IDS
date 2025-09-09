@@ -44,6 +44,17 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁補修工_表面被覆工_プライマー塗布</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>プライマー塗布費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>表面被覆工（塗装工法）プライマー塗布</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁補修工_表面被覆工_プライマー塗布</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -85,6 +96,17 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁補修工_表面被覆工_上塗り材塗布</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>上塗り材塗布費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>表面被覆工（塗装工法）上塗り材塗布</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁補修工_表面被覆工_上塗り材塗布</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -98,6 +120,50 @@
                     <baseName>
                         <simpleValue>材料種類</simpleValue>
                     </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="下地処理" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>下地処理</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁補修工_表面被覆工_下地処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁補修工_表面被覆工_下地処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>下地処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>表面被覆工（塗装工法）下地処理</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁補修工_表面被覆工_下地処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1500901001_1587200101_1587210101</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -121,6 +187,17 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁補修工_表面被覆工_下塗り(パテ塗布)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>下塗り(パテ塗布)費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>表面被覆工（塗装工法）下塗り（パテ塗布）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁補修工_表面被覆工_下塗り(パテ塗布)</simpleValue>
@@ -167,6 +244,17 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁補修工_表面被覆工_中塗り材塗布</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>中塗り材塗布費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>表面被覆工（塗装工法）中塗り材塗布</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁補修工_表面被覆工_中塗り材塗布</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -180,6 +268,94 @@
                     <baseName>
                         <simpleValue>材料種類</simpleValue>
                     </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="足場" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>足場</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁補修工_表面被覆工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁補修工_表面被覆工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1500901001_1587200101_1005500801</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁補修工_表面被覆工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>足場工</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="防護" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>防護</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁補修工_表面被覆工_防護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁補修工_表面被覆工_防護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1500901001_1587200101_1330200301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁補修工_表面被覆工_防護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防護費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>防護工</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

@@ -59,9 +59,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_処分" />
-                            <xs:enumeration value="2_再利用" />
+                            <xs:enumeration value="処分" />
+                            <xs:enumeration value="再利用" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_構造物撤去工_縁石撤去工_地先境界ブロック撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>地先境界ブロック撤去</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -106,9 +117,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_処分" />
-                            <xs:enumeration value="2_再利用" />
+                            <xs:enumeration value="処分" />
+                            <xs:enumeration value="再利用" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_構造物撤去工_縁石撤去工_歩車道境界ブロック撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>歩車道境界ブロック撤去</simpleValue>
                     </value>
                 </property>
             </requirements>

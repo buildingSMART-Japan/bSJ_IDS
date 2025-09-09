@@ -71,13 +71,123 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_カルバート工_プレキャストカルバート工_プレキャストボックス</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>均しｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ" />
+                            <xs:enumeration value="型枠" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_カルバート工_プレキャストカルバート工_プレキャストボックス</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>基礎砕石</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_カルバート工_プレキャストカルバート工_プレキャストボックス</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>大型ﾌﾟﾚｷｬｽﾄﾎﾞｯｸｽｶﾙﾊﾞｰﾄ据付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="大型ﾌﾟﾚｷｬｽﾄﾎﾞｯｸｽｶﾙﾊﾞｰﾄ" />
+                            <xs:enumeration value="大型ﾌﾟﾚｷｬｽﾄﾎﾞｯｸｽｶﾙﾊﾞｰﾄ据付" />
+                            <xs:enumeration value="材料費(大型ﾌﾟﾚｷｬｽﾄﾎﾞｯｸｽｶﾙﾊﾞｰﾄ)" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_カルバート工_プレキャストカルバート工_プレキャストボックス</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋工［市場単価］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_カルバート工_プレキャストカルバート工_プレキャストボックス</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>ﾎﾞｯｸｽｶﾙﾊﾞｰﾄ種別</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾎﾞｯｸｽｶﾙﾊﾞｰﾄ" />
-                            <xs:enumeration value="2_大型ﾌﾟﾚｷｬｽﾄﾎﾞｯｸｽｶﾙﾊﾞｰﾄ" />
+                            <xs:enumeration value="ﾎﾞｯｸｽｶﾙﾊﾞｰﾄ" />
+                            <xs:enumeration value="大型ﾌﾟﾚｷｬｽﾄﾎﾞｯｸｽｶﾙﾊﾞｰﾄ" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_カルバート工_プレキャストカルバート工_プレキャストボックス</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾎﾞｯｸｽｶﾙﾊﾞｰﾄ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="ボックスカルバート" />
+                            <xs:enumeration value="ＰＣ鋼材費" />
+                            <xs:enumeration value="定着金具費" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="止水シート(大型プレキャストボックスカルバート)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>止水シート(大型プレキャストボックスカルバート)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_カルバート工_プレキャストカルバート工_止水シート(大型プレキャストボックスカルバート)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_カルバート工_プレキャストカルバート工_止水シート(大型プレキャストボックスカルバート)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508500101_1317200101_1319900101_1018200401</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_カルバート工_プレキャストカルバート工_止水シート(大型プレキャストボックスカルバート)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>止水シート設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>止水シート</simpleValue>
                     </value>
                 </property>
             </requirements>

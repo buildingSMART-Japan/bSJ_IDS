@@ -55,14 +55,28 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_舗装工_路面切削工_殻処分</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>処分費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="処分費（ｍ３）" />
+                            <xs:enumeration value="処分費（ｔ）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_舗装工_路面切削工_殻処分</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>殻種別</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｱｽﾌｧﾙﾄ殻" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ殻(無筋)" />
-                            <xs:enumeration value="3_ｺﾝｸﾘｰﾄ殻(鉄筋)" />
-                            <xs:enumeration value="4_ﾓﾙﾀﾙ殻" />
+                            <xs:enumeration value="ｱｽﾌｧﾙﾄ殻" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ殻(無筋)" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ殻(鉄筋)" />
+                            <xs:enumeration value="ﾓﾙﾀﾙ殻" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -107,6 +121,17 @@
                         <simpleValue>殻種別</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_舗装工_路面切削工_殻運搬(路面切削)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>路面切削廃材運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>殻運搬（路面切削）</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="路面切削" ifcVersion="IFC2X3">
@@ -140,6 +165,17 @@
                         <simpleValue>1472400101_1519400101_1508400201_1499500101_B499600101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_舗装工_路面切削工_路面切削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>切削費(持込)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>路面切削</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_舗装工_路面切削工_路面切削</simpleValue>
@@ -149,10 +185,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_全面切削6cm以下(4000m2以下)" />
-                            <xs:enumeration value="2_全面切削6cm以下(4000m2を超え)" />
-                            <xs:enumeration value="3_全面切削6cmを超え12cm以下" />
-                            <xs:enumeration value="4_帯状切削3cm以下" />
+                            <xs:enumeration value="全面切削6cm以下(4000m2以下)" />
+                            <xs:enumeration value="全面切削6cm以下(4000m2を超え)" />
+                            <xs:enumeration value="全面切削6cmを超え12cm以下" />
+                            <xs:enumeration value="帯状切削3cm以下" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -165,8 +201,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_段差すりつけ撤去作業無" />
-                            <xs:enumeration value="2_段差すりつけ撤去作業有" />
+                            <xs:enumeration value="段差すりつけ撤去作業無" />
+                            <xs:enumeration value="段差すりつけ撤去作業有" />
                         </xs:restriction>
                     </value>
                 </property>

@@ -58,6 +58,17 @@
                         <simpleValue>径･長さ</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_工場製作工_RC橋脚巻立て鋼板製作工_スタッドジベル</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｽﾀｯﾄﾞｼﾞﾍﾞﾙ製作費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>スタッドジベル（材料費）</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="製作加工" ifcVersion="IFC2X3">
@@ -89,6 +100,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1472400101_1508500101_1037200901_1600400101_B039902001</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_橋梁保全工事_工場製作工_RC橋脚巻立て鋼板製作工_製作加工</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>製作加工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鋼板（材料費）</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">

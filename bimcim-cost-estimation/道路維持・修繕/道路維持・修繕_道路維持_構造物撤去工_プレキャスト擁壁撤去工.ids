@@ -58,6 +58,17 @@
                         <simpleValue>作業区分</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_構造物撤去工_プレキャスト擁壁撤去工_プレキャスト擁壁撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>プレキャスト擁壁撤去工</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
     </specifications>

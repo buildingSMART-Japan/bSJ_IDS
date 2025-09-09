@@ -48,8 +48,27 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_下部工ブラケット取付無し" />
-                            <xs:enumeration value="2_下部工ブラケット取付有り" />
+                            <xs:enumeration value="下部工ブラケット取付無し" />
+                            <xs:enumeration value="下部工ブラケット取付有り" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁支承工_鋼橋支承工_支承取替</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>下部工ブラケット取付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="コンクリート削孔（電動式コアボーリングマシン）" />
+                            <xs:enumeration value="コンクリート削孔（電動ハンマドリル）" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ削孔（さく岩機［ﾊﾝﾄﾞﾄﾞﾘﾙ(空圧式)］）" />
+                            <xs:enumeration value="下部工ブラケット取付" />
+                            <xs:enumeration value="下部工ブラケット（材料費）" />
+                            <xs:enumeration value="アンカー" />
+                            <xs:enumeration value="注入材（材料費）" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -69,14 +88,58 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁支承工_鋼橋支承工_支承取替</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>支承アンカーボルト削孔費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="コンクリート削孔（電動式コアボーリングマシン）" />
+                            <xs:enumeration value="コンクリート削孔（電動ハンマドリル）" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ削孔（さく岩機［ﾊﾝﾄﾞﾄﾞﾘﾙ(空圧式)］）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁支承工_鋼橋支承工_支承取替</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支承アンカー定着費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="アンカー" />
+                            <xs:enumeration value="注入材（材料費）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁支承工_鋼橋支承工_支承取替</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支承取替費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="支承取替（鋼橋）" />
+                            <xs:enumeration value="支承（材料費）" />
+                            <xs:enumeration value="桁付ブラケット(材料費)" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁支承工_鋼橋支承工_支承取替</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>支承形式</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_I" />
-                            <xs:enumeration value="2_II" />
-                            <xs:enumeration value="3_III" />
-                            <xs:enumeration value="4_IV" />
+                            <xs:enumeration value="I" />
+                            <xs:enumeration value="II" />
+                            <xs:enumeration value="III" />
+                            <xs:enumeration value="IV" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -89,9 +152,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_支承直下部以外のはつりの有り" />
-                            <xs:enumeration value="2_支承直下部以外のはつりの無し" />
+                            <xs:enumeration value="支承直下部以外のはつりの有り" />
+                            <xs:enumeration value="支承直下部以外のはつりの無し" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁支承工_鋼橋支承工_支承取替</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>沓座ｺﾝｸﾘｰﾄ（支承直下部以外）はつり費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>沓座ｺﾝｸﾘｰﾄはつり（支承直下部以外）</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -103,10 +177,98 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_鈑桁" />
-                            <xs:enumeration value="2_1箱桁2沓" />
-                            <xs:enumeration value="3_1箱桁1沓" />
+                            <xs:enumeration value="鈑桁" />
+                            <xs:enumeration value="1箱桁2沓" />
+                            <xs:enumeration value="1箱桁1沓" />
                         </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="足場" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>足場</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁支承工_鋼橋支承工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁支承工_鋼橋支承工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1586000101_1515800101_B005500601</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁支承工_鋼橋支承工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>足場</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="防護" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>防護</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁支承工_鋼橋支承工_防護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁支承工_鋼橋支承工_防護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1586000101_1515800101_1330200301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁支承工_鋼橋支承工_防護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防護費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>防護工</simpleValue>
                     </value>
                 </property>
             </requirements>

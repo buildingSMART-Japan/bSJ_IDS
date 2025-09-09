@@ -59,8 +59,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_100m2以上" />
-                            <xs:enumeration value="2_100m2未満" />
+                            <xs:enumeration value="100m2以上" />
+                            <xs:enumeration value="100m2未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -73,9 +73,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_縦方向･幅9mm-深さ6mm-間隔60mm" />
-                            <xs:enumeration value="2_縦方向･幅9mm-深さ4mm-間隔60mm" />
-                            <xs:enumeration value="3_横方向･幅9mm-深さ6mm-間隔60mm" />
+                            <xs:enumeration value="縦方向･幅9mm-深さ6mm-間隔60mm" />
+                            <xs:enumeration value="縦方向･幅9mm-深さ4mm-間隔60mm" />
+                            <xs:enumeration value="横方向･幅9mm-深さ6mm-間隔60mm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -88,9 +88,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｱｽﾌｧﾙﾄ舗装" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ舗装" />
+                            <xs:enumeration value="ｱｽﾌｧﾙﾄ舗装" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ舗装" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_舗装工_グルービング工_グルービング</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｸﾞﾙｰﾋﾞﾝｸﾞ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>グルービング工</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -143,9 +154,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｱｽﾌｧﾙﾄ舗装" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ舗装" />
+                            <xs:enumeration value="ｱｽﾌｧﾙﾄ舗装" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ舗装" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_舗装工_グルービング工_グルービング(路面排水用)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｸﾞﾙｰﾋﾞﾝｸﾞ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>グルービング工(路面排水用)</simpleValue>
                     </value>
                 </property>
             </requirements>

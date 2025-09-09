@@ -67,9 +67,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_側溝清掃車持込" />
-                            <xs:enumeration value="2_側溝清掃車貸与" />
+                            <xs:enumeration value="側溝清掃車持込" />
+                            <xs:enumeration value="側溝清掃車貸与" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路清掃工_橋梁清掃工_排水管清掃</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>排水管清掃費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>橋梁排水管清掃工</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -81,8 +92,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_排水管清掃車持込" />
-                            <xs:enumeration value="2_排水管清掃車貸与" />
+                            <xs:enumeration value="排水管清掃車持込" />
+                            <xs:enumeration value="排水管清掃車貸与" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -95,8 +106,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_高所作業車持込" />
-                            <xs:enumeration value="2_高所作業車貸与" />
+                            <xs:enumeration value="高所作業車持込" />
+                            <xs:enumeration value="高所作業車貸与" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -140,6 +151,17 @@
                     <baseName>
                         <simpleValue>作業形態</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_道路清掃工_橋梁清掃工_櫛型ジョイント清掃</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>櫛型ジョイント清掃費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>櫛型ジョイント清掃工</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

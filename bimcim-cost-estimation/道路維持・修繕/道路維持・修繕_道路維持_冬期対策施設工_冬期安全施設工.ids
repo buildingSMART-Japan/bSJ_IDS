@@ -50,6 +50,17 @@
                         <simpleValue>1472400101_1519400101_1528800101_1528900101_B529400101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_冬期対策施設工_冬期安全施設工_スノーポール撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｽﾉｰﾎﾟｰﾙ撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>スノーポール設置・撤去</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_冬期対策施設工_冬期安全施設工_スノーポール撤去</simpleValue>
@@ -59,9 +70,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_かぶせ型" />
-                            <xs:enumeration value="2_土中単柱型" />
-                            <xs:enumeration value="3_挿入単柱型" />
+                            <xs:enumeration value="かぶせ型" />
+                            <xs:enumeration value="土中単柱型" />
+                            <xs:enumeration value="挿入単柱型" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -107,9 +118,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_設置" />
-                            <xs:enumeration value="2_撤去" />
-                            <xs:enumeration value="3_設置･撤去" />
+                            <xs:enumeration value="設置" />
+                            <xs:enumeration value="撤去" />
+                            <xs:enumeration value="設置･撤去" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -122,9 +133,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｽﾉｰﾎﾟｰﾙ材料有" />
-                            <xs:enumeration value="2_ｽﾉｰﾎﾟｰﾙ材料無" />
+                            <xs:enumeration value="ｽﾉｰﾎﾟｰﾙ材料有" />
+                            <xs:enumeration value="ｽﾉｰﾎﾟｰﾙ材料無" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_冬期対策施設工_冬期安全施設工_スノーポール設置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｽﾉｰﾎﾟｰﾙ材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>スノーポール（材料費）</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -136,10 +158,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_かぶせ型" />
-                            <xs:enumeration value="2_土中単柱型" />
-                            <xs:enumeration value="3_挿入単柱型" />
+                            <xs:enumeration value="かぶせ型" />
+                            <xs:enumeration value="土中単柱型" />
+                            <xs:enumeration value="挿入単柱型" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_冬期対策施設工_冬期安全施設工_スノーポール設置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｽﾉｰﾎﾟｰﾙ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>スノーポール設置・撤去</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -184,8 +217,22 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_アスファルト削孔" />
-                            <xs:enumeration value="2_コンクリート削孔" />
+                            <xs:enumeration value="アスファルト削孔" />
+                            <xs:enumeration value="コンクリート削孔" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_冬期対策施設工_冬期安全施設工_舗装版削孔</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>舗装版削孔費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="アスファルト削孔（コンクリート穿孔機）" />
+                            <xs:enumeration value="コンクリート削孔（コンクリート穿孔機）" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -222,6 +269,50 @@
                         <simpleValue>1472400101_1519400101_1528800101_1528900101_B595000101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_冬期対策施設工_冬期安全施設工_落雪(せり出し)防護柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_冬期対策施設工_冬期安全施設工_落雪(せり出し)防護柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎砕石費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>基礎砕石</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_冬期対策施設工_冬期安全施設工_落雪(せり出し)防護柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋工［市場単価］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_冬期対策施設工_冬期安全施設工_落雪(せり出し)防護柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_冬期対策施設工_冬期安全施設工_落雪(せり出し)防護柵</simpleValue>
@@ -230,6 +321,33 @@
                         <simpleValue>柵高</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_冬期対策施設工_冬期安全施設工_落雪(せり出し)防護柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>落雪防護柵材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="金網ロープ（メッキ）（材料）［落雪防護］" />
+                            <xs:enumeration value="中間支柱（材料）［落雪防護柵］" />
+                            <xs:enumeration value="端末支柱（材料）［落雪防護柵］" />
+                            <xs:enumeration value="上弦材（材料）［落雪防護柵］" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_冬期対策施設工_冬期安全施設工_落雪(せり出し)防護柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>落雪防護柵設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>落雪（せり出し）防護柵設置</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_冬期対策施設工_冬期安全施設工_落雪(せり出し)防護柵</simpleValue>
@@ -237,6 +355,17 @@
                     <baseName>
                         <simpleValue>防雪防護柵種類</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_冬期対策施設工_冬期安全施設工_落雪(せり出し)防護柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｽﾃｰ取付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ステー取付ＣＯ用</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -279,6 +408,17 @@
                         <simpleValue>柵高</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_冬期対策施設工_冬期安全施設工_防雪柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防雪柵材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>防雪柵（材料費）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_冬期対策施設工_冬期安全施設工_防雪柵</simpleValue>
@@ -288,9 +428,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_有り" />
-                            <xs:enumeration value="2_無し" />
+                            <xs:enumeration value="有り" />
+                            <xs:enumeration value="無し" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_冬期対策施設工_冬期安全施設工_防雪柵</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防雪柵設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>防雪柵</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -343,9 +494,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_張出し" />
-                            <xs:enumeration value="2_収納" />
+                            <xs:enumeration value="張出し" />
+                            <xs:enumeration value="収納" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_冬期対策施設工_冬期安全施設工_防雪柵現地張出し・収納</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防雪柵現地張出し･収納費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>防雪柵現地張出し・収納</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -357,8 +519,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_4.3m以下（吹払式・吹止式）" />
-                            <xs:enumeration value="2_4.3mを超え5.5m以下（吹止式）" />
+                            <xs:enumeration value="4.3m以下（吹払式・吹止式）" />
+                            <xs:enumeration value="4.3mを超え5.5m以下（吹止式）" />
                         </xs:restriction>
                     </value>
                 </property>

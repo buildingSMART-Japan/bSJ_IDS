@@ -44,6 +44,17 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_寄植せん定</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>せん定費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>植樹管理（寄植せん定）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_寄植せん定</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -59,8 +70,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_せん定 低木" />
-                            <xs:enumeration value="2_せん定 中木" />
+                            <xs:enumeration value="せん定 低木" />
+                            <xs:enumeration value="せん定 中木" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -105,6 +116,17 @@
                         <simpleValue>1472400101_1519400101_1506300102_1506400201_1548700101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_寄植・芝施肥</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>寄植･芝施肥費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>植樹管理（施肥）（寄植・芝）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_寄植・芝施肥</simpleValue>
@@ -114,8 +136,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_寄植 中木･低木" />
-                            <xs:enumeration value="2_芝" />
+                            <xs:enumeration value="寄植 中木･低木" />
+                            <xs:enumeration value="芝" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -128,10 +150,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_供用区間 標準(歩道及び交通島)" />
-                            <xs:enumeration value="2_供用区間 中央分離帯" />
-                            <xs:enumeration value="3_供用区間 環境緑地帯" />
-                            <xs:enumeration value="4_未供用区間" />
+                            <xs:enumeration value="供用区間 標準(歩道及び交通島)" />
+                            <xs:enumeration value="供用区間 中央分離帯" />
+                            <xs:enumeration value="供用区間 環境緑地帯" />
+                            <xs:enumeration value="未供用区間" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -144,12 +166,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_100m2未満" />
-                            <xs:enumeration value="2_100m2以上1000m2未満" />
-                            <xs:enumeration value="3_1000m2以上" />
-                            <xs:enumeration value="4_100m2未満" />
-                            <xs:enumeration value="5_100m2以上1000m2未満" />
-                            <xs:enumeration value="6_1000m2以上" />
+                            <xs:enumeration value="100m2未満" />
+                            <xs:enumeration value="100m2以上1000m2未満" />
+                            <xs:enumeration value="1000m2以上" />
+                            <xs:enumeration value="100m2未満" />
+                            <xs:enumeration value="100m2以上1000m2未満" />
+                            <xs:enumeration value="1000m2以上" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -203,9 +225,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_寄植 低木" />
-                            <xs:enumeration value="2_寄植 中木" />
-                            <xs:enumeration value="3_芝" />
+                            <xs:enumeration value="寄植 低木" />
+                            <xs:enumeration value="寄植 中木" />
+                            <xs:enumeration value="芝" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -218,10 +240,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_供用区間 標準(歩道及び交通島)" />
-                            <xs:enumeration value="2_供用区間 中央分離帯" />
-                            <xs:enumeration value="3_供用区間 環境緑地帯" />
-                            <xs:enumeration value="4_未供用区間" />
+                            <xs:enumeration value="供用区間 標準(歩道及び交通島)" />
+                            <xs:enumeration value="供用区間 中央分離帯" />
+                            <xs:enumeration value="供用区間 環境緑地帯" />
+                            <xs:enumeration value="未供用区間" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -234,10 +256,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_100m2未満" />
-                            <xs:enumeration value="2_100m2以上1000m2未満" />
-                            <xs:enumeration value="3_1000m2以上" />
+                            <xs:enumeration value="100m2未満" />
+                            <xs:enumeration value="100m2以上1000m2未満" />
+                            <xs:enumeration value="1000m2以上" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_寄植・芝薬剤散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>植地防除費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>植樹管理（防除）（寄植・芝）</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -281,6 +314,17 @@
                         <simpleValue>1472400101_1519400101_1506300102_1506400201_1507000101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_抜根除草</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>抜根除草費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>植樹管理（抜根除草）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_抜根除草</simpleValue>
@@ -290,8 +334,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_植込み地" />
-                            <xs:enumeration value="2_芝生" />
+                            <xs:enumeration value="植込み地" />
+                            <xs:enumeration value="芝生" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -304,10 +348,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_供用区間 標準(歩道及び交通島)" />
-                            <xs:enumeration value="2_供用区間 中央分離帯" />
-                            <xs:enumeration value="3_供用区間 環境緑地帯" />
-                            <xs:enumeration value="4_未供用区間" />
+                            <xs:enumeration value="供用区間 標準(歩道及び交通島)" />
+                            <xs:enumeration value="供用区間 中央分離帯" />
+                            <xs:enumeration value="供用区間 環境緑地帯" />
+                            <xs:enumeration value="未供用区間" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -320,9 +364,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_100m2未満" />
-                            <xs:enumeration value="2_100m2以上1000m2未満" />
-                            <xs:enumeration value="3_1000m2以上" />
+                            <xs:enumeration value="100m2未満" />
+                            <xs:enumeration value="100m2以上1000m2未満" />
+                            <xs:enumeration value="1000m2以上" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -368,18 +412,60 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_中木二脚鳥居添木付高250cm上" />
-                            <xs:enumeration value="10_高木二脚鳥居組合せ幹周50cm以上" />
-                            <xs:enumeration value="11_高木八ッ掛幹周40cm未満" />
-                            <xs:enumeration value="12_高木八ッ掛幹周40cm以上" />
-                            <xs:enumeration value="2_中木八ッ掛(竹)樹高100cm以上" />
-                            <xs:enumeration value="3_中木布掛(竹)樹高100cm以上" />
-                            <xs:enumeration value="4_中木添柱形(1本形･竹)高100cm上" />
-                            <xs:enumeration value="5_中木 生垣形 樹高100cm以上" />
-                            <xs:enumeration value="6_高木二脚鳥居添木付幹周30cm未満" />
-                            <xs:enumeration value="7_高木二脚鳥居添木無幹周30上40未" />
-                            <xs:enumeration value="8_高木三脚鳥居幹周30cm以上60cm未" />
-                            <xs:enumeration value="9_高木十字鳥居幹周30cm以上" />
+                            <xs:enumeration value="中木二脚鳥居添木付高250cm上" />
+                            <xs:enumeration value="中木八ッ掛(竹)樹高100cm以上" />
+                            <xs:enumeration value="中木布掛(竹)樹高100cm以上" />
+                            <xs:enumeration value="中木添柱形(1本形･竹)高100cm上" />
+                            <xs:enumeration value="中木 生垣形 樹高100cm以上" />
+                            <xs:enumeration value="高木二脚鳥居添木付幹周30cm未満" />
+                            <xs:enumeration value="高木二脚鳥居添木無幹周30上40未" />
+                            <xs:enumeration value="高木三脚鳥居幹周30cm以上60cm未" />
+                            <xs:enumeration value="高木十字鳥居幹周30cm以上" />
+                            <xs:enumeration value="高木二脚鳥居組合せ幹周50cm以上" />
+                            <xs:enumeration value="高木八ッ掛幹周40cm未満" />
+                            <xs:enumeration value="高木八ッ掛幹周40cm以上" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支柱撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="道路植栽（支柱撤去）" />
+                            <xs:enumeration value="道路植栽（支柱撤去（２））" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支柱補修費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="植樹管理（支柱補修）" />
+                            <xs:enumeration value="植樹管理（支柱補修（２））" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支柱設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="道路植栽（支柱設置）" />
+                            <xs:enumeration value="道路植栽（支柱設置（２））" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -392,12 +478,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_支柱 10本未満" />
-                            <xs:enumeration value="2_支柱 10本以上50本未満" />
-                            <xs:enumeration value="3_支柱 50本以上" />
-                            <xs:enumeration value="4_支柱 5m未満" />
-                            <xs:enumeration value="5_支柱 5m以上30m未満" />
-                            <xs:enumeration value="6_支柱 30m以上" />
+                            <xs:enumeration value="支柱 10本未満" />
+                            <xs:enumeration value="支柱 10本以上50本未満" />
+                            <xs:enumeration value="支柱 50本以上" />
+                            <xs:enumeration value="支柱 5m未満" />
+                            <xs:enumeration value="支柱 5m以上30m未満" />
+                            <xs:enumeration value="支柱 30m以上" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -436,16 +522,30 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_樹木せん定</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>せん定費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="植樹管理（高木せん定）" />
+                            <xs:enumeration value="植樹管理（低木・中木せん定）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_樹木せん定</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>中･低木種類</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_せん定球形樹高100cm未満" />
-                            <xs:enumeration value="2_せん定球形樹高100cm以上200cm未満" />
-                            <xs:enumeration value="3_せん定球形樹高200cm以上300cm未満" />
-                            <xs:enumeration value="4_せん定円筒形樹高100cm未満" />
-                            <xs:enumeration value="5_せん定円筒形樹高100-200cm未満" />
-                            <xs:enumeration value="6_せん定円筒形樹高200-300cm未満" />
+                            <xs:enumeration value="せん定球形樹高100cm未満" />
+                            <xs:enumeration value="せん定球形樹高100cm以上200cm未満" />
+                            <xs:enumeration value="せん定球形樹高200cm以上300cm未満" />
+                            <xs:enumeration value="せん定円筒形樹高100cm未満" />
+                            <xs:enumeration value="せん定円筒形樹高100-200cm未満" />
+                            <xs:enumeration value="せん定円筒形樹高200-300cm未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -469,8 +569,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_高木" />
-                            <xs:enumeration value="2_中･低木" />
+                            <xs:enumeration value="高木" />
+                            <xs:enumeration value="中･低木" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -491,14 +591,14 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_せん定夏期幹周30cm未満" />
-                            <xs:enumeration value="2_せん定夏期幹周30cm以上60cm未満" />
-                            <xs:enumeration value="3_せん定夏期幹周60cm以上90cm未満" />
-                            <xs:enumeration value="4_せん定夏期幹周90cm以上120cm未満" />
-                            <xs:enumeration value="5_せん定冬期幹周30cm未満" />
-                            <xs:enumeration value="6_せん定冬期幹周30cm以上60cm未満" />
-                            <xs:enumeration value="7_せん定冬期幹周60cm以上90cm未満" />
-                            <xs:enumeration value="8_せん定冬期幹周90cm以上120cm未満" />
+                            <xs:enumeration value="せん定夏期幹周30cm未満" />
+                            <xs:enumeration value="せん定夏期幹周30cm以上60cm未満" />
+                            <xs:enumeration value="せん定夏期幹周60cm以上90cm未満" />
+                            <xs:enumeration value="せん定夏期幹周90cm以上120cm未満" />
+                            <xs:enumeration value="せん定冬期幹周30cm未満" />
+                            <xs:enumeration value="せん定冬期幹周30cm以上60cm未満" />
+                            <xs:enumeration value="せん定冬期幹周60cm以上90cm未満" />
+                            <xs:enumeration value="せん定冬期幹周90cm以上120cm未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -533,6 +633,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1472400101_1519400101_1506300102_1506400201_1545800101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_樹木施肥</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>樹木施肥費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>樹木施肥</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -584,6 +695,17 @@
                         <simpleValue>潅水時期</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_潅水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>潅水費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>潅水</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="移植" ifcVersion="IFC2X3">
@@ -617,6 +739,28 @@
                         <simpleValue>1472400101_1519400101_1506300102_1506400201_B548900101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_移植</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>埋戻し不足土材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土材料</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_移植</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>埋戻し不足土運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土砂等運搬</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_移植</simpleValue>
@@ -626,14 +770,14 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_低木樹高60cm未満" />
-                            <xs:enumeration value="2_中木樹高60cm以上100cm未満" />
-                            <xs:enumeration value="3_中木樹高100cm以上200cm未満" />
-                            <xs:enumeration value="4_中木樹高200cm以上300cm未満" />
-                            <xs:enumeration value="5_高木幹周20cm未満" />
-                            <xs:enumeration value="6_高木幹周20cm以上40cm未満" />
-                            <xs:enumeration value="7_高木幹周40cm以上60cm未満" />
-                            <xs:enumeration value="8_高木幹周60cm上90cm未満" />
+                            <xs:enumeration value="低木樹高60cm未満" />
+                            <xs:enumeration value="中木樹高60cm以上100cm未満" />
+                            <xs:enumeration value="中木樹高100cm以上200cm未満" />
+                            <xs:enumeration value="中木樹高200cm以上300cm未満" />
+                            <xs:enumeration value="高木幹周20cm未満" />
+                            <xs:enumeration value="高木幹周20cm以上40cm未満" />
+                            <xs:enumeration value="高木幹周40cm以上60cm未満" />
+                            <xs:enumeration value="高木幹周60cm上90cm未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -646,13 +790,13 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_低木樹高60cm未満" />
-                            <xs:enumeration value="2_中木樹高60cm以上100cm未満" />
-                            <xs:enumeration value="3_中木樹高100cm以上200cm未満" />
-                            <xs:enumeration value="4_中木樹高200cm以上300cm未満" />
-                            <xs:enumeration value="5_高木幹周30cm未満" />
-                            <xs:enumeration value="6_高木幹周30cm以上60cm未満" />
-                            <xs:enumeration value="7_高木幹周60cm以上90cm未満" />
+                            <xs:enumeration value="低木樹高60cm未満" />
+                            <xs:enumeration value="中木樹高60cm以上100cm未満" />
+                            <xs:enumeration value="中木樹高100cm以上200cm未満" />
+                            <xs:enumeration value="中木樹高200cm以上300cm未満" />
+                            <xs:enumeration value="高木幹周30cm未満" />
+                            <xs:enumeration value="高木幹周30cm以上60cm未満" />
+                            <xs:enumeration value="高木幹周60cm以上90cm未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -665,12 +809,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_100本未満" />
-                            <xs:enumeration value="2_100本以上1000本未満" />
-                            <xs:enumeration value="3_1000本以上" />
-                            <xs:enumeration value="4_10本未満" />
-                            <xs:enumeration value="5_10本以上50本未満" />
-                            <xs:enumeration value="6_50本以上" />
+                            <xs:enumeration value="100本未満" />
+                            <xs:enumeration value="100本以上1000本未満" />
+                            <xs:enumeration value="1000本以上" />
+                            <xs:enumeration value="10本未満" />
+                            <xs:enumeration value="10本以上50本未満" />
+                            <xs:enumeration value="50本以上" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -683,13 +827,24 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_中低木6本未満" />
-                            <xs:enumeration value="2_中低木6本以上10本未満" />
-                            <xs:enumeration value="3_中低木10本以上" />
-                            <xs:enumeration value="4_高木3本未満" />
-                            <xs:enumeration value="5_高木3本以上5本未満" />
-                            <xs:enumeration value="6_高木5本以上" />
+                            <xs:enumeration value="中低木6本未満" />
+                            <xs:enumeration value="中低木6本以上10本未満" />
+                            <xs:enumeration value="中低木10本以上" />
+                            <xs:enumeration value="高木3本未満" />
+                            <xs:enumeration value="高木3本以上5本未満" />
+                            <xs:enumeration value="高木5本以上" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_移植</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>植樹費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>道路植栽（植樹）</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -701,9 +856,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_有" />
-                            <xs:enumeration value="2_無" />
+                            <xs:enumeration value="有" />
+                            <xs:enumeration value="無" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_移植</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>移植費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>移植工（掘取工）</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -737,6 +903,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1472400101_1519400101_1506300102_1506400201_1507400101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_芝刈</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>芝刈費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>芝刈</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -789,8 +966,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_土壌改良材無" />
-                            <xs:enumeration value="2_土壌改良材有" />
+                            <xs:enumeration value="土壌改良材無" />
+                            <xs:enumeration value="土壌改良材有" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -803,8 +980,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_植樹割増し無" />
-                            <xs:enumeration value="2_植樹割増し有" />
+                            <xs:enumeration value="植樹割増し無" />
+                            <xs:enumeration value="植樹割増し有" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -817,11 +994,22 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_低木樹高60cm未満" />
-                            <xs:enumeration value="2_中木樹高60cm以上100cm未満" />
-                            <xs:enumeration value="3_中木樹高100cm以上200cm未満" />
-                            <xs:enumeration value="4_中木樹高200cm以上300cm未満" />
+                            <xs:enumeration value="低木樹高60cm未満" />
+                            <xs:enumeration value="中木樹高60cm以上100cm未満" />
+                            <xs:enumeration value="中木樹高100cm以上200cm未満" />
+                            <xs:enumeration value="中木樹高200cm以上300cm未満" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_補植</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>補植費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>植樹管理（補植）</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -866,8 +1054,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_夜間作業補正無" />
-                            <xs:enumeration value="2_夜間作業補正有" />
+                            <xs:enumeration value="夜間作業補正無" />
+                            <xs:enumeration value="夜間作業補正有" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -880,12 +1068,12 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_低木樹高60cm未満" />
-                            <xs:enumeration value="2_中木樹高60cm以上100cm未満" />
-                            <xs:enumeration value="3_中木樹高100cm以上200cm未満" />
-                            <xs:enumeration value="4_中木樹高200cm以上300cm未満" />
-                            <xs:enumeration value="5_高木幹周60cm未満" />
-                            <xs:enumeration value="6_高木幹周60cm以上120cm未満" />
+                            <xs:enumeration value="低木樹高60cm未満" />
+                            <xs:enumeration value="中木樹高60cm以上100cm未満" />
+                            <xs:enumeration value="中木樹高100cm以上200cm未満" />
+                            <xs:enumeration value="中木樹高200cm以上300cm未満" />
+                            <xs:enumeration value="高木幹周60cm未満" />
+                            <xs:enumeration value="高木幹周60cm以上120cm未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -898,10 +1086,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_供用区間 標準(歩道及び交通島)" />
-                            <xs:enumeration value="2_供用区間 中央分離帯" />
-                            <xs:enumeration value="3_供用区間 環境緑地帯" />
-                            <xs:enumeration value="4_未供用区間" />
+                            <xs:enumeration value="供用区間 標準(歩道及び交通島)" />
+                            <xs:enumeration value="供用区間 中央分離帯" />
+                            <xs:enumeration value="供用区間 環境緑地帯" />
+                            <xs:enumeration value="未供用区間" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -914,9 +1102,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_10本未満" />
-                            <xs:enumeration value="2_10本以上50本未満" />
-                            <xs:enumeration value="3_50本以上" />
+                            <xs:enumeration value="10本未満" />
+                            <xs:enumeration value="10本以上50本未満" />
+                            <xs:enumeration value="50本以上" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -929,8 +1117,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_時間制約補正無" />
-                            <xs:enumeration value="2_時間制約補正有" />
+                            <xs:enumeration value="時間制約補正無" />
+                            <xs:enumeration value="時間制約補正有" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -941,6 +1129,17 @@
                     <baseName>
                         <simpleValue>薬剤種類</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_植栽維持工_樹木・芝生管理工_防除</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>高木･中低木薬剤防除費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>植樹管理（防除）（高木・中木・低木）</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

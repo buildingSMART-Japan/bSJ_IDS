@@ -59,15 +59,15 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_125cm2以上140cm2未満" />
-                            <xs:enumeration value="2_140cm2以上155cm2未満" />
-                            <xs:enumeration value="3_155cm2以上175cm2未満" />
-                            <xs:enumeration value="4_175cm2以上195cm2未満" />
-                            <xs:enumeration value="5_195cm2以上215cm2未満" />
-                            <xs:enumeration value="6_215cm2以上235cm2未満" />
-                            <xs:enumeration value="7_235cm2以上255cm2未満" />
-                            <xs:enumeration value="8_255cm2以上280cm2未満" />
-                            <xs:enumeration value="9_280cm2以上300cm2未満" />
+                            <xs:enumeration value="125cm2以上140cm2未満" />
+                            <xs:enumeration value="140cm2以上155cm2未満" />
+                            <xs:enumeration value="155cm2以上175cm2未満" />
+                            <xs:enumeration value="175cm2以上195cm2未満" />
+                            <xs:enumeration value="195cm2以上215cm2未満" />
+                            <xs:enumeration value="215cm2以上235cm2未満" />
+                            <xs:enumeration value="235cm2以上255cm2未満" />
+                            <xs:enumeration value="255cm2以上280cm2未満" />
+                            <xs:enumeration value="280cm2以上300cm2未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -80,11 +80,11 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_細粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="2_細粒度ｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="3_再生細粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="4_再生細粒度ｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="5_各種(締固め後密度2.10t/m3)" />
+                            <xs:enumeration value="細粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="細粒度ｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="再生細粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="再生細粒度ｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="各種(締固め後密度2.10t/m3)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -95,6 +95,17 @@
                     <baseName>
                         <simpleValue>材料規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_縁石工_縁石工_アスカーブ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｱｽｶｰﾌﾞ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>アスカーブ</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -129,6 +140,17 @@
                         <simpleValue>1472400101_1519400101_1581500101_1067900301_B068100103</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_縁石工_縁石工_地先境界ブロック</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>地先境界ﾌﾞﾛｯｸ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>地先境界ブロック</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_縁石工_縁石工_地先境界ブロック</simpleValue>
@@ -138,16 +160,16 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_A種(120×120×600)" />
-                            <xs:enumeration value="2_B種(150×120×600)" />
-                            <xs:enumeration value="3_C種(150×150×600)" />
-                            <xs:enumeration value="4_各種(600mm以下､50kg未満)" />
-                            <xs:enumeration value="5_各種(600mm以下､50kg以上100kg未満)" />
-                            <xs:enumeration value="6_各種(600mm超1000mm以下、50kg以上150kg未満)" />
-                            <xs:enumeration value="7_各種(1000mm超2000mm以下、150kg以上550kg未満)" />
-                            <xs:enumeration value="1_A種(120×120×600)" />
-                            <xs:enumeration value="2_B種(150×120×600)" />
-                            <xs:enumeration value="3_C種(150×150×600)" />
+                            <xs:enumeration value="A種(120×120×600)" />
+                            <xs:enumeration value="B種(150×120×600)" />
+                            <xs:enumeration value="C種(150×150×600)" />
+                            <xs:enumeration value="各種(600mm以下､50kg未満)" />
+                            <xs:enumeration value="各種(600mm以下､50kg以上100kg未満)" />
+                            <xs:enumeration value="各種(600mm超1000mm以下、50kg以上150kg未満)" />
+                            <xs:enumeration value="各種(1000mm超2000mm以下、150kg以上550kg未満)" />
+                            <xs:enumeration value="A種(120×120×600)" />
+                            <xs:enumeration value="B種(150×120×600)" />
+                            <xs:enumeration value="C種(150×150×600)" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
                     </value>
@@ -185,6 +207,39 @@
                         <simpleValue>1472400101_1519400101_1581500101_1067900301_B354100101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_縁石工_縁石工_植樹ブロック</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>均しｺﾝｸﾘｰﾄ型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_縁石工_縁石工_植樹ブロック</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>均しｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_縁石工_縁石工_植樹ブロック</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎砕石費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>基礎砕石</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_縁石工_縁石工_植樹ブロック</simpleValue>
@@ -192,6 +247,20 @@
                     <baseName>
                         <simpleValue>ﾌﾞﾛｯｸ規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_縁石工_縁石工_植樹ブロック</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="ブロック費" />
+                            <xs:enumeration value="植樹ブロック（据付）" />
+                        </xs:restriction>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -226,6 +295,17 @@
                         <simpleValue>1472400101_1519400101_1581500101_1067900301_B068000102</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_縁石工_縁石工_歩車道境界ブロック</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>歩車道境界ﾌﾞﾛｯｸ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>歩車道境界ブロック</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_縁石工_縁石工_歩車道境界ブロック</simpleValue>
@@ -235,16 +315,16 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_A種(150/170×200×600)" />
-                            <xs:enumeration value="2_B種(180/205×250×600)" />
-                            <xs:enumeration value="3_C種(180/210×300×600)" />
-                            <xs:enumeration value="4_各種(600mm以下､50kg未満)" />
-                            <xs:enumeration value="5_各種(600mm以下､50kg以上100kg未満)" />
-                            <xs:enumeration value="6_各種(600mm超1000mm以下、50kg以上150kg未満)" />
-                            <xs:enumeration value="7_各種(1000mm超2000mm以下、150kg以上550kg未満)" />
-                            <xs:enumeration value="1_A種(150/170×200×600)" />
-                            <xs:enumeration value="2_B種(180/205×250×600)" />
-                            <xs:enumeration value="3_C種(180/210×300×600)" />
+                            <xs:enumeration value="A種(150/170×200×600)" />
+                            <xs:enumeration value="B種(180/205×250×600)" />
+                            <xs:enumeration value="C種(180/210×300×600)" />
+                            <xs:enumeration value="各種(600mm以下､50kg未満)" />
+                            <xs:enumeration value="各種(600mm以下､50kg以上100kg未満)" />
+                            <xs:enumeration value="各種(600mm超1000mm以下、50kg以上150kg未満)" />
+                            <xs:enumeration value="各種(1000mm超2000mm以下、150kg以上550kg未満)" />
+                            <xs:enumeration value="A種(150/170×200×600)" />
+                            <xs:enumeration value="B種(180/205×250×600)" />
+                            <xs:enumeration value="C種(180/210×300×600)" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
                     </value>

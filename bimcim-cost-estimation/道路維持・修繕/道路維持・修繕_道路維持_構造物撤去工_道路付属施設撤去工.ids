@@ -50,6 +50,17 @@
                         <simpleValue>1472400101_1519400101_1069300101_1590900101_1512100201</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_構造物撤去工_道路付属施設撤去工_境界鋲撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>道路付属物撤去工（境界鋲）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_構造物撤去工_道路付属施設撤去工_境界鋲撤去</simpleValue>
@@ -59,9 +70,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_30枚以上" />
-                            <xs:enumeration value="2_10枚以上30枚未満" />
-                            <xs:enumeration value="3_10枚未満" />
+                            <xs:enumeration value="30枚以上" />
+                            <xs:enumeration value="10枚以上30枚未満" />
+                            <xs:enumeration value="10枚未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -106,6 +117,17 @@
                         <simpleValue>取外し部材規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_構造物撤去工_道路付属施設撤去工_横断歩道橋側板(裾隠・目隠)撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>横断歩道橋側板工（裾隠・目隠板）</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="車線分離標撤去" ifcVersion="IFC2X3">
@@ -148,9 +170,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_穿孔式(1本脚)" />
-                            <xs:enumeration value="2_穿孔式(3本脚)" />
-                            <xs:enumeration value="3_貼付式" />
+                            <xs:enumeration value="穿孔式(1本脚)" />
+                            <xs:enumeration value="穿孔式(3本脚)" />
+                            <xs:enumeration value="貼付式" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -163,10 +185,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_30本以上" />
-                            <xs:enumeration value="2_10本以上30本未満" />
-                            <xs:enumeration value="3_10本未満" />
+                            <xs:enumeration value="30本以上" />
+                            <xs:enumeration value="10本以上30本未満" />
+                            <xs:enumeration value="10本未満" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_構造物撤去工_道路付属施設撤去工_車線分離標撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>車線分離標撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>道路付属物撤去工（車線分離標）</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -202,6 +235,17 @@
                         <simpleValue>1472400101_1519400101_1069300101_1590900101_1538400201</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_構造物撤去工_道路付属施設撤去工_道路鋲撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>道路付属物撤去工（道路鋲）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路維持_構造物撤去工_道路付属施設撤去工_道路鋲撤去</simpleValue>
@@ -211,8 +255,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_穿孔式" />
-                            <xs:enumeration value="2_貼付式" />
+                            <xs:enumeration value="穿孔式" />
+                            <xs:enumeration value="貼付式" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -225,9 +269,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_30個以上" />
-                            <xs:enumeration value="2_10個以上30個未満" />
-                            <xs:enumeration value="3_10個未満" />
+                            <xs:enumeration value="30個以上" />
+                            <xs:enumeration value="10個以上30個未満" />
+                            <xs:enumeration value="10個未満" />
                         </xs:restriction>
                     </value>
                 </property>

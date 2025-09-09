@@ -59,8 +59,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_20cm以下" />
-                            <xs:enumeration value="2_20cmを超え40cm以下" />
+                            <xs:enumeration value="20cm以下" />
+                            <xs:enumeration value="20cmを超え40cm以下" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -73,8 +73,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_混合用乳剤無" />
-                            <xs:enumeration value="2_混合用乳剤有" />
+                            <xs:enumeration value="混合用乳剤無" />
+                            <xs:enumeration value="混合用乳剤有" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -87,9 +87,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_砂散布無" />
-                            <xs:enumeration value="2_砂散布有" />
+                            <xs:enumeration value="砂散布無" />
+                            <xs:enumeration value="砂散布有" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_舗装工_路上再生工_路上路盤再生工</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>路上路盤再生費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>路上路盤再生工</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -101,8 +112,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_養生工無" />
-                            <xs:enumeration value="2_養生工有" />
+                            <xs:enumeration value="養生工無" />
+                            <xs:enumeration value="養生工有" />
                         </xs:restriction>
                     </value>
                 </property>

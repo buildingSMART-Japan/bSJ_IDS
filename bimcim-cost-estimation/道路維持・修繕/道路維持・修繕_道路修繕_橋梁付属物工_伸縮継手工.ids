@@ -39,6 +39,17 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_伸縮継手工_埋設ジョイント補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>伸縮継手装置補修費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>橋梁用埋設型伸縮継手装置設置工</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_伸縮継手工_埋設ジョイント補修</simpleValue>
@@ -67,8 +78,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_舗装厚内型" />
-                            <xs:enumeration value="2_床版箱抜型" />
+                            <xs:enumeration value="舗装厚内型" />
+                            <xs:enumeration value="床版箱抜型" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -88,7 +99,7 @@
                         <simpleValue>工種</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>1_補修</simpleValue>
+                        <simpleValue>補修</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -100,8 +111,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1車線相当" />
-                            <xs:enumeration value="2_2車線相当" />
+                            <xs:enumeration value="1車線相当" />
+                            <xs:enumeration value="2車線相当" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -151,14 +162,28 @@
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_伸縮継手工_殻処分</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>処分費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="処分費（ｍ３）" />
+                            <xs:enumeration value="処分費（ｔ）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_伸縮継手工_殻処分</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>殻種別</simpleValue>
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｱｽﾌｧﾙﾄ殻" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ殻(無筋)" />
-                            <xs:enumeration value="3_ｺﾝｸﾘｰﾄ殻(鉄筋)" />
-                            <xs:enumeration value="4_ﾓﾙﾀﾙ殻" />
+                            <xs:enumeration value="ｱｽﾌｧﾙﾄ殻" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ殻(無筋)" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ殻(鉄筋)" />
+                            <xs:enumeration value="ﾓﾙﾀﾙ殻" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -204,11 +229,22 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｺﾝｸﾘｰﾄ(無筋)構造物とりこわし" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ(鉄筋)構造物とりこわし" />
-                            <xs:enumeration value="3_舗装版破砕" />
-                            <xs:enumeration value="4_吹付法面とりこわし(ﾓﾙﾀﾙ)" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ(無筋)構造物とりこわし" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ(鉄筋)構造物とりこわし" />
+                            <xs:enumeration value="舗装版破砕" />
+                            <xs:enumeration value="吹付法面とりこわし(ﾓﾙﾀﾙ)" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_伸縮継手工_殻運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>殻運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>殻運搬</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -242,9 +278,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1車線相当" />
-                            <xs:enumeration value="2_2車線相当" />
+                            <xs:enumeration value="1車線相当" />
+                            <xs:enumeration value="2車線相当" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_伸縮継手工_鋼・ゴム製伸縮装置補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>伸縮継手装置補修費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>橋梁用伸縮継手装置設置工</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -256,8 +303,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_軽量型" />
-                            <xs:enumeration value="2_普通型" />
+                            <xs:enumeration value="軽量型" />
+                            <xs:enumeration value="普通型" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -270,8 +317,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_伸縮装置本体材料有" />
-                            <xs:enumeration value="2_伸縮装置本体材料無" />
+                            <xs:enumeration value="伸縮装置本体材料有" />
+                            <xs:enumeration value="伸縮装置本体材料無" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -295,8 +342,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_新設" />
-                            <xs:enumeration value="2_補修" />
+                            <xs:enumeration value="新設" />
+                            <xs:enumeration value="補修" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -331,10 +378,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_補修軽量2車線" />
-                            <xs:enumeration value="2_補修普通2車線" />
-                            <xs:enumeration value="3_補修軽量1車線" />
-                            <xs:enumeration value="4_補修普通1車線" />
+                            <xs:enumeration value="補修軽量2車線" />
+                            <xs:enumeration value="補修普通2車線" />
+                            <xs:enumeration value="補修軽量1車線" />
+                            <xs:enumeration value="補修普通1車線" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -347,6 +394,83 @@
                     </baseName>
                     <value>
                         <simpleValue>1472400101_1508200101_1378900401_1515600101_B548600101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_伸縮継手工_鋼製伸縮継手補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>取替費(鋼製)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鋼製伸縮装置補修</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_伸縮継手工_鋼製伸縮継手補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>後打ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_伸縮継手工_鋼製伸縮継手補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>打継用接着材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>打継用接着材</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_伸縮継手工_鋼製伸縮継手補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>殻積込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>積込（コンクリート殻）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_伸縮継手工_鋼製伸縮継手補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>補強鉄筋材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｔ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_伸縮継手工_鋼製伸縮継手補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>超速硬ｺﾝｸﾘｰﾄ材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ３）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_伸縮継手工_鋼製伸縮継手補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄｱﾝｶｰ材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（本）</simpleValue>
                     </value>
                 </property>
             </requirements>

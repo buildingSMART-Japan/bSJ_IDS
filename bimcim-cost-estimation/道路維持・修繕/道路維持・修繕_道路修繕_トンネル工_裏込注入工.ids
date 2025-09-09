@@ -50,6 +50,17 @@
                         <simpleValue>1472400101_1508200101_1519000101_1490600101_1490700101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_トンネル工_裏込注入工_裏込注入</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>注入孔目詰費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>目詰工</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_トンネル工_裏込注入工_裏込注入</simpleValue>
@@ -57,6 +68,28 @@
                     <baseName>
                         <simpleValue>注入材種類</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_トンネル工_裏込注入工_裏込注入</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>裏込注入孔削孔費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>裏込注入孔削孔工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_トンネル工_裏込注入工_裏込注入</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>裏込注入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>裏込注入工</simpleValue>
+                    </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
@@ -67,8 +100,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_足場有" />
-                            <xs:enumeration value="2_足場無" />
+                            <xs:enumeration value="足場有" />
+                            <xs:enumeration value="足場無" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -81,10 +114,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_新設ﾄﾝﾈﾙ･ｴｱﾓﾙﾀﾙ" />
-                            <xs:enumeration value="2_既設ﾄﾝﾈﾙ･ｴｱﾓﾙﾀﾙ" />
-                            <xs:enumeration value="3_既設ﾄﾝﾈﾙ･可塑性ｴｱﾓﾙﾀﾙ" />
-                            <xs:enumeration value="4_既設ﾄﾝﾈﾙ･発泡ｳﾚﾀﾝ(40倍)" />
+                            <xs:enumeration value="新設ﾄﾝﾈﾙ･ｴｱﾓﾙﾀﾙ" />
+                            <xs:enumeration value="既設ﾄﾝﾈﾙ･ｴｱﾓﾙﾀﾙ" />
+                            <xs:enumeration value="既設ﾄﾝﾈﾙ･可塑性ｴｱﾓﾙﾀﾙ" />
+                            <xs:enumeration value="既設ﾄﾝﾈﾙ･発泡ｳﾚﾀﾝ(40倍)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -113,8 +146,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_水路ﾄﾝﾈﾙ" />
-                            <xs:enumeration value="2_道路ﾄﾝﾈﾙ" />
+                            <xs:enumeration value="水路ﾄﾝﾈﾙ" />
+                            <xs:enumeration value="道路ﾄﾝﾈﾙ" />
                         </xs:restriction>
                     </value>
                 </property>

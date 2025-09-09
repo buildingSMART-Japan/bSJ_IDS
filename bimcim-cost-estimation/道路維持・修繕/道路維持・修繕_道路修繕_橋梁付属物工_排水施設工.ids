@@ -19,6 +19,50 @@
         <milestone>詳細設計</milestone>
     </info>
     <specifications>
+        <specification name="コンクリートアンカーボルト設置" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>コンクリートアンカーボルト設置</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_排水施設工_コンクリートアンカーボルト設置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_排水施設工_コンクリートアンカーボルト設置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1378900401_1517100101_B379505101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_排水施設工_コンクリートアンカーボルト設置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｱﾝｶｰﾎﾞﾙﾄ穿孔及び設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリートアンカーボルト設置</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
         <specification name="排水桝" ifcVersion="IFC2X3">
             <applicability minOccurs="1" maxOccurs="1">
                 <attribute>
@@ -50,6 +94,28 @@
                         <simpleValue>1472400101_1508200101_1378900401_1517100101_B370700201</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_排水施設工_排水桝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>排水桝材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>排水桝A(材料費)</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_排水施設工_排水桝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>排水桝設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>排水桝</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_排水施設工_排水桝</simpleValue>
@@ -59,9 +125,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_排水桝A" />
-                            <xs:enumeration value="2_排水桝B 20kg/個未満" />
-                            <xs:enumeration value="3_排水桝B 20kg/個以上 110kg/個以下" />
+                            <xs:enumeration value="排水桝A" />
+                            <xs:enumeration value="排水桝B 20kg/個未満" />
+                            <xs:enumeration value="排水桝B 20kg/個以上 110kg/個以下" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -98,6 +164,31 @@
                         <simpleValue>1472400101_1508200101_1378900401_1517100101_B379500104</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_排水施設工_排水管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>排水管材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>排水管（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_排水施設工_排水管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>排水管設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="排水管設置" />
+                            <xs:enumeration value="移動式クレーン運転費（賃料）［鋼橋架設工］" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_排水施設工_排水管</simpleValue>
@@ -107,10 +198,98 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_VP管" />
-                            <xs:enumeration value="2_鋼管" />
-                            <xs:enumeration value="3_FRP管" />
+                            <xs:enumeration value="VP管" />
+                            <xs:enumeration value="鋼管" />
+                            <xs:enumeration value="FRP管" />
                         </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="足場" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>足場</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_排水施設工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_排水施設工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1378900401_1517100101_1005500801</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_排水施設工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>足場工</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="防護" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>防護</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_排水施設工_防護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_排水施設工_防護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1378900401_1517100101_1330200301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_道路修繕_橋梁付属物工_排水施設工_防護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防護費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>防護工</simpleValue>
                     </value>
                 </property>
             </requirements>
