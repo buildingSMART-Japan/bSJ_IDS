@@ -50,6 +50,17 @@
                         <simpleValue>1470600101_1207900101_1069300102_1591200101_B529400201</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_冬期安全施設撤去工_スノーポール撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>スノーポール設置・撤去</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_冬期安全施設撤去工_スノーポール撤去</simpleValue>
@@ -59,9 +70,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_かぶせ型" />
-                            <xs:enumeration value="2_土中単柱型" />
-                            <xs:enumeration value="3_挿入単柱型" />
+                            <xs:enumeration value="かぶせ型" />
+                            <xs:enumeration value="土中単柱型" />
+                            <xs:enumeration value="挿入単柱型" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -107,10 +118,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_仮設式(支柱+張立材)" />
-                            <xs:enumeration value="2_仮設式(張立材のみ)" />
-                            <xs:enumeration value="3_固定式(支柱+張立材)" />
-                            <xs:enumeration value="4_固定式(張立材のみ)" />
+                            <xs:enumeration value="仮設式(支柱+張立材)" />
+                            <xs:enumeration value="仮設式(張立材のみ)" />
+                            <xs:enumeration value="固定式(支柱+張立材)" />
+                            <xs:enumeration value="固定式(張立材のみ)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -123,9 +134,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_吹溜式" />
-                            <xs:enumeration value="2_吹払式" />
+                            <xs:enumeration value="吹溜式" />
+                            <xs:enumeration value="吹払式" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_冬期安全施設撤去工_防雪柵撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>防雪柵</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -137,10 +159,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_3.5m以下" />
-                            <xs:enumeration value="2_3.5m超え6.0m以下" />
-                            <xs:enumeration value="3_5.0m以下" />
-                            <xs:enumeration value="4_4.0m以下" />
+                            <xs:enumeration value="3.5m以下" />
+                            <xs:enumeration value="3.5m超え6.0m以下" />
+                            <xs:enumeration value="5.0m以下" />
+                            <xs:enumeration value="4.0m以下" />
                         </xs:restriction>
                     </value>
                 </property>

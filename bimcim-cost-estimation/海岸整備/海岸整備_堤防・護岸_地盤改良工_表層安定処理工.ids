@@ -59,9 +59,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_砂材料費有" />
-                            <xs:enumeration value="2_砂材料費無" />
+                            <xs:enumeration value="砂材料費有" />
+                            <xs:enumeration value="砂材料費無" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_地盤改良工_表層安定処理工_サンドマット</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｻﾝﾄﾞﾏｯﾄ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>サンドマット</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -113,6 +124,17 @@
                         <simpleValue>固化材の種類</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_地盤改良工_表層安定処理工_安定処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>安定処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>安定処理</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_地盤改良工_表層安定処理工_安定処理</simpleValue>
@@ -122,8 +144,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｽﾀﾋﾞﾗｲｻﾞ(標準)" />
-                            <xs:enumeration value="2_ﾊﾞｯｸﾎｳ" />
+                            <xs:enumeration value="ｽﾀﾋﾞﾗｲｻﾞ(標準)" />
+                            <xs:enumeration value="ﾊﾞｯｸﾎｳ" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -136,8 +158,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_路床" />
-                            <xs:enumeration value="2_構造物基礎" />
+                            <xs:enumeration value="路床" />
+                            <xs:enumeration value="構造物基礎" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -150,10 +172,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_0.6m以下" />
-                            <xs:enumeration value="2_0.6mを超え1m以下" />
-                            <xs:enumeration value="3_1m以下" />
-                            <xs:enumeration value="4_1mを超え2m以下" />
+                            <xs:enumeration value="0.6m以下" />
+                            <xs:enumeration value="0.6mを超え1m以下" />
+                            <xs:enumeration value="1m以下" />
+                            <xs:enumeration value="1mを超え2m以下" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -190,6 +212,22 @@
                         <simpleValue>1470600101_1207900101_1047700102_1047800201_B048200201</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_地盤改良工_表層安定処理工_置換</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>採取土置換材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="押土（ルーズ）" />
+                            <xs:enumeration value="積込（ルーズ）" />
+                            <xs:enumeration value="土砂等運搬" />
+                            <xs:enumeration value="掘削" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_地盤改良工_表層安定処理工_置換</simpleValue>
@@ -198,6 +236,17 @@
                         <simpleValue>施工数量</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_地盤改良工_表層安定処理工_置換</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>置換土敷均し･締固め費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>路体（築堤）盛土</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_地盤改良工_表層安定処理工_置換</simpleValue>
@@ -205,6 +254,46 @@
                     <baseName>
                         <simpleValue>置換材料</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_地盤改良工_表層安定処理工_置換</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>置換材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="土材料" />
+                            <xs:enumeration value="土砂等運搬" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_地盤改良工_表層安定処理工_置換</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>自工区流用･仮置場への運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土砂等運搬</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_地盤改良工_表層安定処理工_置換</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>軟弱土掘削･積込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="押土（ルーズ）" />
+                            <xs:enumeration value="積込（ルーズ）" />
+                            <xs:enumeration value="掘削" />
+                        </xs:restriction>
+                    </value>
                 </property>
             </requirements>
         </specification>

@@ -44,10 +44,54 @@
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_コンクリート舗装</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>人力舗設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート舗装工　人力舗設</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_コンクリート舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
                         <simpleValue>1470600101_1207900101_1065500104_1066310101_1066600101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_コンクリート舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート舗装工（材料）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_コンクリート舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>機械舗設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート舗装工　機械舗設</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_コンクリート舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>特殊養生費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>特殊養生工</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -67,11 +111,11 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_曲げ4.5-2.5-40" />
-                            <xs:enumeration value="2_曲げ4.5-6.5-40" />
-                            <xs:enumeration value="3_曲げ4.5-2.5-40(高炉)" />
-                            <xs:enumeration value="4_曲げ4.5-6.5-40(高炉)" />
-                            <xs:enumeration value="5_各種" />
+                            <xs:enumeration value="曲げ4.5-2.5-40" />
+                            <xs:enumeration value="曲げ4.5-6.5-40" />
+                            <xs:enumeration value="曲げ4.5-2.5-40(高炉)" />
+                            <xs:enumeration value="曲げ4.5-6.5-40(高炉)" />
+                            <xs:enumeration value="各種" />
                             <xs:enumeration value="（入力してください）" />
                         </xs:restriction>
                     </value>
@@ -117,6 +161,17 @@
                         <simpleValue>1470600101_1207900101_1065500104_1066310101_B066005101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_上層路盤(歩道部)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>路盤材敷均し･締固め費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>上層路盤（歩道部）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_上層路盤(歩道部)</simpleValue>
@@ -126,13 +181,13 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_再生粒度調整砕石 RM-25" />
-                            <xs:enumeration value="2_再生粒度調整砕石 RM-30" />
-                            <xs:enumeration value="3_再生粒度調整砕石 RM-40" />
-                            <xs:enumeration value="4_粒度調整砕石 M-25" />
-                            <xs:enumeration value="5_粒度調整砕石 M-30" />
-                            <xs:enumeration value="6_粒度調整砕石 M-40" />
-                            <xs:enumeration value="7_路盤材(各種)" />
+                            <xs:enumeration value="再生粒度調整砕石 RM-25" />
+                            <xs:enumeration value="再生粒度調整砕石 RM-30" />
+                            <xs:enumeration value="再生粒度調整砕石 RM-40" />
+                            <xs:enumeration value="粒度調整砕石 M-25" />
+                            <xs:enumeration value="粒度調整砕石 M-30" />
+                            <xs:enumeration value="粒度調整砕石 M-40" />
+                            <xs:enumeration value="路盤材(各種)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -185,6 +240,17 @@
                         <simpleValue>1470600101_1207900101_1065500104_1066310101_B066010101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_上層路盤(車道・路肩部)(ICT)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>路盤材敷均し･締固め費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>上層路盤（車道・路肩部）(ICT)</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_上層路盤(車道・路肩部)(ICT)</simpleValue>
@@ -194,13 +260,13 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_再生粒度調整砕石 RM-25" />
-                            <xs:enumeration value="2_再生粒度調整砕石 RM-30" />
-                            <xs:enumeration value="3_再生粒度調整砕石 RM-40" />
-                            <xs:enumeration value="4_粒度調整砕石 M-25" />
-                            <xs:enumeration value="5_粒度調整砕石 M-30" />
-                            <xs:enumeration value="6_粒度調整砕石 M-40" />
-                            <xs:enumeration value="7_路盤材(各種)" />
+                            <xs:enumeration value="再生粒度調整砕石 RM-25" />
+                            <xs:enumeration value="再生粒度調整砕石 RM-30" />
+                            <xs:enumeration value="再生粒度調整砕石 RM-40" />
+                            <xs:enumeration value="粒度調整砕石 M-25" />
+                            <xs:enumeration value="粒度調整砕石 M-30" />
+                            <xs:enumeration value="粒度調整砕石 M-40" />
+                            <xs:enumeration value="路盤材(各種)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -253,6 +319,17 @@
                         <simpleValue>1470600101_1207900101_1065500104_1066310101_B065905101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_下層路盤(歩道部)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>路盤材敷均し･締固め費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>下層路盤（歩道部）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_下層路盤(歩道部)</simpleValue>
@@ -262,13 +339,13 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｸﾗｯｼｬﾗﾝ C-20" />
-                            <xs:enumeration value="2_ｸﾗｯｼｬﾗﾝ C-30" />
-                            <xs:enumeration value="3_ｸﾗｯｼｬﾗﾝ C-40" />
-                            <xs:enumeration value="4_再生ｸﾗｯｼｬﾗﾝ RC-20" />
-                            <xs:enumeration value="5_再生ｸﾗｯｼｬﾗﾝ RC-30" />
-                            <xs:enumeration value="6_再生ｸﾗｯｼｬﾗﾝ RC-40" />
-                            <xs:enumeration value="7_路盤材(各種)" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ C-20" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ C-30" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ C-40" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ RC-20" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ RC-30" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ RC-40" />
+                            <xs:enumeration value="路盤材(各種)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -321,6 +398,17 @@
                         <simpleValue>1470600101_1207900101_1065500104_1066310101_B065910101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_下層路盤(車道・路肩部)(ICT)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>路盤材敷均し･締固め費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>下層路盤（車道・路肩部）(ICT)</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_下層路盤(車道・路肩部)(ICT)</simpleValue>
@@ -330,13 +418,13 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｸﾗｯｼｬﾗﾝ C-20" />
-                            <xs:enumeration value="2_ｸﾗｯｼｬﾗﾝ C-30" />
-                            <xs:enumeration value="3_ｸﾗｯｼｬﾗﾝ C-40" />
-                            <xs:enumeration value="4_再生ｸﾗｯｼｬﾗﾝ RC-20" />
-                            <xs:enumeration value="5_再生ｸﾗｯｼｬﾗﾝ RC-30" />
-                            <xs:enumeration value="6_再生ｸﾗｯｼｬﾗﾝ RC-40" />
-                            <xs:enumeration value="7_路盤材(各種)" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ C-20" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ C-30" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ C-40" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ RC-20" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ RC-30" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ RC-40" />
+                            <xs:enumeration value="路盤材(各種)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -390,10 +478,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1.4m未満（1層当り平均仕上り厚50mm以下）" />
-                            <xs:enumeration value="2_1.4m未満（1層当り平均仕上り厚50mm超70mm以下）" />
-                            <xs:enumeration value="3_1.4m以上" />
+                            <xs:enumeration value="1.4m未満（1層当り平均仕上り厚50mm以下）" />
+                            <xs:enumeration value="1.4m未満（1層当り平均仕上り厚50mm超70mm以下）" />
+                            <xs:enumeration value="1.4m以上" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_中間層(歩道部)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>施工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>中間層（歩道部）</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -405,29 +504,29 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_密粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="10_再生密粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="11_再生密粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="12_再生粗粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="13_細粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="14_細粒度ｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="15_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="16_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="17_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(5F)" />
-                            <xs:enumeration value="18_再生細粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="19_各種(1.90以上2.00t/m3未満)" />
-                            <xs:enumeration value="2_密粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="20_各種(2.00以上2.10t/m3未満)" />
-                            <xs:enumeration value="21_各種(2.10以上2.20t/m3未満)" />
-                            <xs:enumeration value="22_各種(2.20以上2.30t/m3未満)" />
-                            <xs:enumeration value="23_各種(2.30以上2.40t/m3未満)" />
-                            <xs:enumeration value="3_密粒度ｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="4_密粒度ｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="5_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20)" />
-                            <xs:enumeration value="6_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13)" />
-                            <xs:enumeration value="7_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="8_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="9_粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="再生密粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="再生密粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="再生粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="細粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="細粒度ｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(5F)" />
+                            <xs:enumeration value="再生細粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="各種(1.90以上2.00t/m3未満)" />
+                            <xs:enumeration value="各種(2.00以上2.10t/m3未満)" />
+                            <xs:enumeration value="各種(2.10以上2.20t/m3未満)" />
+                            <xs:enumeration value="各種(2.20以上2.30t/m3未満)" />
+                            <xs:enumeration value="各種(2.30以上2.40t/m3未満)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -489,11 +588,22 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_1.4m未満（1層当り平均仕上り厚50mm以下）" />
-                            <xs:enumeration value="2_1.4m未満（1層当り平均仕上り厚50mm超70mm以下）" />
-                            <xs:enumeration value="3_1.4m以上3.0m以下" />
-                            <xs:enumeration value="4_3.0m超" />
+                            <xs:enumeration value="1.4m未満（1層当り平均仕上り厚50mm以下）" />
+                            <xs:enumeration value="1.4m未満（1層当り平均仕上り厚50mm超70mm以下）" />
+                            <xs:enumeration value="1.4m以上3.0m以下" />
+                            <xs:enumeration value="3.0m超" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_中間層(車道・路肩部)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>施工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>中間層（車道・路肩部）</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -505,42 +615,42 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_密粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="10_再生密粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="11_再生密粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="12_再生粗粒度ｱｽｺﾝ(20)" />
-                            <xs:enumeration value="13_改質As 粗粒AC-100(20)" />
-                            <xs:enumeration value="14_改質As 密粒AC-100(20)" />
-                            <xs:enumeration value="15_改質As 密粒AC-100(13)" />
-                            <xs:enumeration value="16_改質As 密粒I型(20)" />
-                            <xs:enumeration value="17_改質As 密粒II型(20)DS3000" />
-                            <xs:enumeration value="18_改質As 粗粒I型(20)" />
-                            <xs:enumeration value="19_改質As 粗粒I型(20)DS3000" />
-                            <xs:enumeration value="2_密粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="20_改質As 粗粒II型(20)DS5000" />
-                            <xs:enumeration value="21_改質As 再生粗粒I型(20)" />
-                            <xs:enumeration value="22_改質As 再生粗粒I型(20)DS3000" />
-                            <xs:enumeration value="23_改質As 再生粗粒II型(20)DS5000" />
-                            <xs:enumeration value="24_細粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="25_細粒度ｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="26_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="27_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="28_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(5F)" />
-                            <xs:enumeration value="29_再生細粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="3_密粒度ｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="30_開粒度ｱｽｺﾝ(13)" />
-                            <xs:enumeration value="31_各種(1.90以上2.00t/m3未満)" />
-                            <xs:enumeration value="32_各種(2.00以上2.10t/m3未満)" />
-                            <xs:enumeration value="33_各種(2.10以上2.20t/m3未満)" />
-                            <xs:enumeration value="34_各種(2.20以上2.30t/m3未満)" />
-                            <xs:enumeration value="35_各種(2.30以上2.40t/m3未満)" />
-                            <xs:enumeration value="36_各種(2.40以上2.50t/m3未満)" />
-                            <xs:enumeration value="4_密粒度ｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="5_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20)" />
-                            <xs:enumeration value="6_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13)" />
-                            <xs:enumeration value="7_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
-                            <xs:enumeration value="8_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
-                            <xs:enumeration value="9_粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="密粒度ｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="再生密粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="再生密粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="再生粗粒度ｱｽｺﾝ(20)" />
+                            <xs:enumeration value="改質As 粗粒AC-100(20)" />
+                            <xs:enumeration value="改質As 密粒AC-100(20)" />
+                            <xs:enumeration value="改質As 密粒AC-100(13)" />
+                            <xs:enumeration value="改質As 密粒I型(20)" />
+                            <xs:enumeration value="改質As 密粒II型(20)DS3000" />
+                            <xs:enumeration value="改質As 粗粒I型(20)" />
+                            <xs:enumeration value="改質As 粗粒I型(20)DS3000" />
+                            <xs:enumeration value="改質As 粗粒II型(20)DS5000" />
+                            <xs:enumeration value="改質As 再生粗粒I型(20)" />
+                            <xs:enumeration value="改質As 再生粗粒I型(20)DS3000" />
+                            <xs:enumeration value="改質As 再生粗粒II型(20)DS5000" />
+                            <xs:enumeration value="細粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="細粒度ｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
+                            <xs:enumeration value="細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(5F)" />
+                            <xs:enumeration value="再生細粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="開粒度ｱｽｺﾝ(13)" />
+                            <xs:enumeration value="各種(1.90以上2.00t/m3未満)" />
+                            <xs:enumeration value="各種(2.00以上2.10t/m3未満)" />
+                            <xs:enumeration value="各種(2.10以上2.20t/m3未満)" />
+                            <xs:enumeration value="各種(2.20以上2.30t/m3未満)" />
+                            <xs:enumeration value="各種(2.30以上2.40t/m3未満)" />
+                            <xs:enumeration value="各種(2.40以上2.50t/m3未満)" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -593,6 +703,17 @@
                         <simpleValue>1470600101_1207900101_1065500104_1066310101_1066800101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_横目地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>横目地費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート舗装工（目地工）　横目地工</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_横目地</simpleValue>
@@ -602,9 +723,53 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_膨張目地" />
-                            <xs:enumeration value="2_収縮目地" />
+                            <xs:enumeration value="膨張目地" />
+                            <xs:enumeration value="収縮目地" />
                         </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="目地切り・清掃" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>目地切り・清掃</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_目地切り・清掃</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_目地切り・清掃</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470600101_1207900101_1065500104_1066310101_1606000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_目地切り・清掃</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地切り・清掃費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>目地切り・清掃</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -648,6 +813,17 @@
                         <simpleValue>目地材種類・厚さ</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_縦目地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>縦目地費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート舗装工（目地工）　縦目地工</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="連続鉄筋コンクリート舗装" ifcVersion="IFC2X3">
@@ -681,6 +857,28 @@
                         <simpleValue>1470600101_1207900101_1065500104_1066310101_B345705101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_連続鉄筋コンクリート舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>連続鉄筋コンクリート舗装工（材料）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_連続鉄筋コンクリート舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>特殊養生費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>特殊養生工</simpleValue>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_連続鉄筋コンクリート舗装</simpleValue>
@@ -688,6 +886,17 @@
                     <baseName>
                         <simpleValue>舗装厚</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_コンクリート舗装工(ICT)_連続鉄筋コンクリート舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>連続鉄筋ｺﾝｸﾘｰﾄ舗装費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>連続鉄筋コンクリート舗装工</simpleValue>
+                    </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>

@@ -59,9 +59,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_据付" />
-                            <xs:enumeration value="2_撤去" />
-                            <xs:enumeration value="3_据付・撤去" />
+                            <xs:enumeration value="据付" />
+                            <xs:enumeration value="撤去" />
+                            <xs:enumeration value="据付・撤去" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -82,16 +82,38 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_50kg以上80kg以下" />
-                            <xs:enumeration value="2_80kgを超え200kg以下" />
-                            <xs:enumeration value="3_200kgを超え400kg以下" />
-                            <xs:enumeration value="4_400kgを超え600kg以下" />
-                            <xs:enumeration value="5_600kgを超え800kg以下" />
-                            <xs:enumeration value="6_800kgを超え1200kg以下" />
-                            <xs:enumeration value="7_1200kgを超え1600kg以下" />
-                            <xs:enumeration value="8_1600kgを超え2200kg以下" />
-                            <xs:enumeration value="9_2200kgを超え2800kg以下" />
+                            <xs:enumeration value="50kg以上80kg以下" />
+                            <xs:enumeration value="80kgを超え200kg以下" />
+                            <xs:enumeration value="200kgを超え400kg以下" />
+                            <xs:enumeration value="400kgを超え600kg以下" />
+                            <xs:enumeration value="600kgを超え800kg以下" />
+                            <xs:enumeration value="800kgを超え1200kg以下" />
+                            <xs:enumeration value="1200kgを超え1600kg以下" />
+                            <xs:enumeration value="1600kgを超え2200kg以下" />
+                            <xs:enumeration value="2200kgを超え2800kg以下" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_集水桝工_プレキャスト集水桝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ集水桝材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>プレキャスト集水桝（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_集水桝工_プレキャスト集水桝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ集水桝設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>プレキャスト集水桝</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -125,6 +147,28 @@
                     </baseName>
                     <value>
                         <simpleValue>1470600101_1207900101_1065500104_1067700207_B580705101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_集水桝工_プレキャスト集水桝基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_集水桝工_プレキャスト集水桝基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -177,9 +221,31 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_法面作業補正有" />
-                            <xs:enumeration value="2_法面作業補正無" />
+                            <xs:enumeration value="法面作業補正有" />
+                            <xs:enumeration value="法面作業補正無" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_集水桝工_現場打ち集水桝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>集水桝設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>現場打ち集水桝・街渠桝(本体)</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_集水桝工_現場打ち集水桝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>集水桝鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋工［市場単価］</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -190,7 +256,7 @@
                         <simpleValue>集水桝･街渠桝種類</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>1_現場打材</simpleValue>
+                        <simpleValue>現場打材</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -202,21 +268,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_21-8-25(20)(普通)" />
-                            <xs:enumeration value="10_21-8-40(高炉)" />
-                            <xs:enumeration value="11_24-8-40(高炉)" />
-                            <xs:enumeration value="12_21-8-25(早強)" />
-                            <xs:enumeration value="13_24-8-25(早強)" />
-                            <xs:enumeration value="14_18-8-25(高炉)" />
-                            <xs:enumeration value="15_各種" />
-                            <xs:enumeration value="2_24-8-25(20)(普通)" />
-                            <xs:enumeration value="3_27-8-25(20)(普通)" />
-                            <xs:enumeration value="4_18-8-40(普通)" />
-                            <xs:enumeration value="5_21-8-40(普通)" />
-                            <xs:enumeration value="6_24-8-40(普通)" />
-                            <xs:enumeration value="7_21-8-25(20)(高炉)" />
-                            <xs:enumeration value="8_24-8-25(20)(高炉)" />
-                            <xs:enumeration value="9_18-8-40(高炉)" />
+                            <xs:enumeration value="21-8-25(20)(普通)" />
+                            <xs:enumeration value="24-8-25(20)(普通)" />
+                            <xs:enumeration value="27-8-25(20)(普通)" />
+                            <xs:enumeration value="18-8-40(普通)" />
+                            <xs:enumeration value="21-8-40(普通)" />
+                            <xs:enumeration value="24-8-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(高炉)" />
+                            <xs:enumeration value="24-8-25(20)(高炉)" />
+                            <xs:enumeration value="18-8-40(高炉)" />
+                            <xs:enumeration value="21-8-40(高炉)" />
+                            <xs:enumeration value="24-8-40(高炉)" />
+                            <xs:enumeration value="21-8-25(早強)" />
+                            <xs:enumeration value="24-8-25(早強)" />
+                            <xs:enumeration value="18-8-25(高炉)" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -251,6 +317,28 @@
                     </baseName>
                     <value>
                         <simpleValue>1470600101_1207900101_1065500104_1067700207_1582100101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_集水桝工_蓋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>蓋版材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（枚）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路工_集水桝工_蓋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>蓋版設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>蓋版</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">

@@ -39,6 +39,20 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_消波工_捨石工_中詰石</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>中詰石設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="捨石工（捨石材料）" />
+                            <xs:enumeration value="捨石投入" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_消波工_捨石工_中詰石</simpleValue>
@@ -59,8 +73,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_岩石等" />
-                            <xs:enumeration value="2_砂利" />
+                            <xs:enumeration value="岩石等" />
+                            <xs:enumeration value="砂利" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -97,6 +111,20 @@
                         <simpleValue>1470600101_1239600101_1250300101_1064200401_B064300104</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_消波工_捨石工_捨石</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>捨石費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="捨石" />
+                            <xs:enumeration value="捨石（材料費）" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_消波工_捨石工_捨石</simpleValue>
@@ -127,6 +155,20 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_消波工_捨石工_捨石(海上)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>中詰石設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="捨石工（捨石材料）" />
+                            <xs:enumeration value="捨石投入" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_消波工_捨石工_捨石(海上)</simpleValue>
@@ -147,8 +189,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_岩石等" />
-                            <xs:enumeration value="2_砂利" />
+                            <xs:enumeration value="岩石等" />
+                            <xs:enumeration value="砂利" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -194,10 +236,65 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_本均し" />
-                            <xs:enumeration value="2_荒均し" />
-                            <xs:enumeration value="3_被覆均し" />
+                            <xs:enumeration value="本均し" />
+                            <xs:enumeration value="荒均し" />
+                            <xs:enumeration value="被覆均し" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_消波工_捨石工_捨石均し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>捨石均し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>捨石工（捨石均し）</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="表面均し" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>表面均し</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_消波工_捨石工_表面均し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_消波工_捨石工_表面均し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470600101_1239600101_1250300101_1064200401_B064400104</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_消波工_捨石工_表面均し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>表面均し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>表面均し</simpleValue>
                     </value>
                 </property>
             </requirements>

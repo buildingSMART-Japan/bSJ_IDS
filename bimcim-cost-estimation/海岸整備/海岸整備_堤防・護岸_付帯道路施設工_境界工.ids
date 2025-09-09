@@ -58,6 +58,17 @@
                         <simpleValue>本体ｺﾝｸﾘｰﾄ規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路施設工_境界工_境界(法留)壁</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
             </requirements>
         </specification>
         <specification name="境界杭" ifcVersion="IFC2X3">
@@ -99,6 +110,17 @@
                         <simpleValue>境界杭規格</simpleValue>
                     </baseName>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路施設工_境界工_境界杭</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>境界杭設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>付属物設置工（境界杭設置）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路施設工_境界工_境界杭</simpleValue>
@@ -108,8 +130,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_根巻き基礎有り" />
-                            <xs:enumeration value="2_根巻き基礎無し" />
+                            <xs:enumeration value="根巻き基礎有り" />
+                            <xs:enumeration value="根巻き基礎無し" />
                         </xs:restriction>
                     </value>
                 </property>

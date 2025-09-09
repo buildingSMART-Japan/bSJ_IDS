@@ -50,6 +50,17 @@
                         <simpleValue>1470600101_1207900101_1069300102_1595900101_1512000201</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_道路付属物撤去工_境界杭撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>付属物撤去工（境界杭）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_道路付属物撤去工_境界杭撤去</simpleValue>
@@ -59,9 +70,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_30本以上" />
-                            <xs:enumeration value="2_10本以上30本未満" />
-                            <xs:enumeration value="3_10本未満" />
+                            <xs:enumeration value="30本以上" />
+                            <xs:enumeration value="10本以上30本未満" />
+                            <xs:enumeration value="10本未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -98,6 +109,17 @@
                         <simpleValue>1470600101_1207900101_1069300102_1595900101_1512200201</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_道路付属物撤去工_視線誘導標撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>道路付属物撤去工（視線誘導標）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_道路付属物撤去工_視線誘導標撤去</simpleValue>
@@ -107,10 +129,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_土中建込" />
-                            <xs:enumeration value="2_ｺﾝｸﾘｰﾄ建込" />
-                            <xs:enumeration value="3_防護柵取付" />
-                            <xs:enumeration value="4_構造物取付" />
+                            <xs:enumeration value="土中建込" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ建込" />
+                            <xs:enumeration value="防護柵取付" />
+                            <xs:enumeration value="構造物取付" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -123,9 +145,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_30本以上" />
-                            <xs:enumeration value="2_10本以上30本未満" />
-                            <xs:enumeration value="3_10本未満" />
+                            <xs:enumeration value="30本以上" />
+                            <xs:enumeration value="10本以上30本未満" />
+                            <xs:enumeration value="10本未満" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -179,10 +201,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_パネル式(アンカー固定)" />
-                            <xs:enumeration value="2_パネル式(金具固定)" />
-                            <xs:enumeration value="3_パネル式(土中埋込)" />
+                            <xs:enumeration value="パネル式(アンカー固定)" />
+                            <xs:enumeration value="パネル式(金具固定)" />
+                            <xs:enumeration value="パネル式(土中埋込)" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_道路付属物撤去工_距離標撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>距離標撤去</simpleValue>
                     </value>
                 </property>
             </requirements>

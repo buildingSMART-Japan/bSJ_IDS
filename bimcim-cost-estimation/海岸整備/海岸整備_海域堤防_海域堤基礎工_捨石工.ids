@@ -39,6 +39,20 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_海域堤防_海域堤基礎工_捨石工_中詰石</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>中詰石設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="捨石工（捨石材料）" />
+                            <xs:enumeration value="捨石投入" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_海域堤防_海域堤基礎工_捨石工_中詰石</simpleValue>
@@ -59,8 +73,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_岩石等" />
-                            <xs:enumeration value="2_砂利" />
+                            <xs:enumeration value="岩石等" />
+                            <xs:enumeration value="砂利" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -86,6 +100,20 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_海域堤防_海域堤基礎工_捨石工_捨石(海上)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>中詰石設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="捨石工（捨石材料）" />
+                            <xs:enumeration value="捨石投入" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_海域堤防_海域堤基礎工_捨石工_捨石(海上)</simpleValue>
@@ -106,8 +134,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_岩石等" />
-                            <xs:enumeration value="2_砂利" />
+                            <xs:enumeration value="岩石等" />
+                            <xs:enumeration value="砂利" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -153,10 +181,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_本均し" />
-                            <xs:enumeration value="2_荒均し" />
-                            <xs:enumeration value="3_被覆均し" />
+                            <xs:enumeration value="本均し" />
+                            <xs:enumeration value="荒均し" />
+                            <xs:enumeration value="被覆均し" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_海域堤防_海域堤基礎工_捨石工_捨石均し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>捨石均し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>捨石工（捨石均し）</simpleValue>
                     </value>
                 </property>
             </requirements>

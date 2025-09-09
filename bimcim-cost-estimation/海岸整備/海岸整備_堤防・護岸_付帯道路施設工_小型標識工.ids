@@ -59,9 +59,45 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_2.0m2未満" />
-                            <xs:enumeration value="2_2.0m2以上" />
+                            <xs:enumeration value="2.0m2未満" />
+                            <xs:enumeration value="2.0m2以上" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路施設工_小型標識工_標識板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>標識板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="標識板設置（案内標識［路線番号除く］）" />
+                            <xs:enumeration value="標識板設置（警戒・規制・指示・路線番号標識）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路施設工_小型標識工_標識板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>添架式取付金具費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>添架式標識板取付金具設置</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路施設工_小型標識工_標識板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｸﾗﾝﾌﾟ型ﾌﾞﾗｹｯﾄ材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（個）</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -97,6 +133,17 @@
                         <simpleValue>1470600101_1207900101_1595800101_1068200104_1547400101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路施設工_小型標識工_標識柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>建柱･基礎設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>標識柱・基礎設置（路側式）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_付帯道路施設工_小型標識工_標識柱</simpleValue>
@@ -106,9 +153,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_5基以上" />
-                            <xs:enumeration value="2_3～4基" />
-                            <xs:enumeration value="3_2基以下" />
+                            <xs:enumeration value="5基以上" />
+                            <xs:enumeration value="3～4基" />
+                            <xs:enumeration value="2基以下" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -121,14 +168,14 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_単柱式 径60.5" />
-                            <xs:enumeration value="2_単柱式 径76.3" />
-                            <xs:enumeration value="3_単柱式 径89.1" />
-                            <xs:enumeration value="4_単柱式 径101.6" />
-                            <xs:enumeration value="5_複柱式 径60.5" />
-                            <xs:enumeration value="6_複柱式 径76.3" />
-                            <xs:enumeration value="7_複柱式 径89.1" />
-                            <xs:enumeration value="8_複柱式 径101.6" />
+                            <xs:enumeration value="単柱式 径60.5" />
+                            <xs:enumeration value="単柱式 径76.3" />
+                            <xs:enumeration value="単柱式 径89.1" />
+                            <xs:enumeration value="単柱式 径101.6" />
+                            <xs:enumeration value="複柱式 径60.5" />
+                            <xs:enumeration value="複柱式 径76.3" />
+                            <xs:enumeration value="複柱式 径89.1" />
+                            <xs:enumeration value="複柱式 径101.6" />
                         </xs:restriction>
                     </value>
                 </property>

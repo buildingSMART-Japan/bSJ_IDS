@@ -39,6 +39,20 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_排水構造物工_管渠工_PC管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>PC管設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="ＰＣ管" />
+                            <xs:enumeration value="ＰＣ管(材料費)" />
+                        </xs:restriction>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_排水構造物工_管渠工_PC管</simpleValue>
@@ -59,9 +73,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_据付" />
-                            <xs:enumeration value="2_撤去" />
-                            <xs:enumeration value="3_据付・撤去" />
+                            <xs:enumeration value="据付" />
+                            <xs:enumeration value="撤去" />
+                            <xs:enumeration value="据付・撤去" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -74,18 +88,18 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_径600mm" />
-                            <xs:enumeration value="10_径1650mm" />
-                            <xs:enumeration value="11_径1800mm" />
-                            <xs:enumeration value="12_径2000mm" />
-                            <xs:enumeration value="2_径700mm" />
-                            <xs:enumeration value="3_径800mm" />
-                            <xs:enumeration value="4_径900mm" />
-                            <xs:enumeration value="5_径1000mm" />
-                            <xs:enumeration value="6_径1100mm" />
-                            <xs:enumeration value="7_径1200mm" />
-                            <xs:enumeration value="8_径1350mm" />
-                            <xs:enumeration value="9_径1500mm" />
+                            <xs:enumeration value="径600mm" />
+                            <xs:enumeration value="径700mm" />
+                            <xs:enumeration value="径800mm" />
+                            <xs:enumeration value="径900mm" />
+                            <xs:enumeration value="径1000mm" />
+                            <xs:enumeration value="径1100mm" />
+                            <xs:enumeration value="径1200mm" />
+                            <xs:enumeration value="径1350mm" />
+                            <xs:enumeration value="径1500mm" />
+                            <xs:enumeration value="径1650mm" />
+                            <xs:enumeration value="径1800mm" />
+                            <xs:enumeration value="径2000mm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -139,9 +153,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_据付" />
-                            <xs:enumeration value="2_撤去" />
-                            <xs:enumeration value="3_据付･撤去" />
+                            <xs:enumeration value="据付" />
+                            <xs:enumeration value="撤去" />
+                            <xs:enumeration value="据付･撤去" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -154,10 +168,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_90°巻き" />
-                            <xs:enumeration value="2_180°巻き" />
-                            <xs:enumeration value="3_360°巻き" />
-                            <xs:enumeration value="4_無し" />
+                            <xs:enumeration value="90°巻き" />
+                            <xs:enumeration value="180°巻き" />
+                            <xs:enumeration value="360°巻き" />
+                            <xs:enumeration value="無し" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -170,21 +184,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_200mm" />
-                            <xs:enumeration value="10_800mm" />
-                            <xs:enumeration value="11_900mm" />
-                            <xs:enumeration value="12_1000mm" />
-                            <xs:enumeration value="13_1100mm" />
-                            <xs:enumeration value="14_1200mm" />
-                            <xs:enumeration value="15_1350mm" />
-                            <xs:enumeration value="2_250mm" />
-                            <xs:enumeration value="3_300mm" />
-                            <xs:enumeration value="4_350mm" />
-                            <xs:enumeration value="5_400mm" />
-                            <xs:enumeration value="6_450mm" />
-                            <xs:enumeration value="7_500mm" />
-                            <xs:enumeration value="8_600mm" />
-                            <xs:enumeration value="9_700mm" />
+                            <xs:enumeration value="200mm" />
+                            <xs:enumeration value="250mm" />
+                            <xs:enumeration value="300mm" />
+                            <xs:enumeration value="350mm" />
+                            <xs:enumeration value="400mm" />
+                            <xs:enumeration value="450mm" />
+                            <xs:enumeration value="500mm" />
+                            <xs:enumeration value="600mm" />
+                            <xs:enumeration value="700mm" />
+                            <xs:enumeration value="800mm" />
+                            <xs:enumeration value="900mm" />
+                            <xs:enumeration value="1000mm" />
+                            <xs:enumeration value="1100mm" />
+                            <xs:enumeration value="1200mm" />
+                            <xs:enumeration value="1350mm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -197,10 +211,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_外圧管1種" />
-                            <xs:enumeration value="2_外圧管2種" />
-                            <xs:enumeration value="3_各種" />
+                            <xs:enumeration value="外圧管1種" />
+                            <xs:enumeration value="外圧管2種" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_排水構造物工_管渠工_ヒューム管(B形管)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾋｭｰﾑ管設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ヒューム管（Ｂ形管）</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -236,6 +261,17 @@
                         <simpleValue>1470600101_1207900101_1322400301_1546500101_B040500102</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_排水構造物工_管渠工_均しコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_排水構造物工_管渠工_均しコンクリート</simpleValue>
@@ -245,10 +281,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｺﾝｸﾘｰﾄﾎﾟﾝﾌﾟ車打設" />
-                            <xs:enumeration value="2_ｸﾚｰﾝ車打設" />
-                            <xs:enumeration value="3_ﾊﾞｯｸﾎｳ(ｸﾚｰﾝ機能付)打設" />
-                            <xs:enumeration value="4_人力打設" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄﾎﾟﾝﾌﾟ車打設" />
+                            <xs:enumeration value="ｸﾚｰﾝ車打設" />
+                            <xs:enumeration value="ﾊﾞｯｸﾎｳ(ｸﾚｰﾝ機能付)打設" />
+                            <xs:enumeration value="人力打設" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -269,8 +305,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_無筋・鉄筋構造物" />
-                            <xs:enumeration value="2_小型構造物" />
+                            <xs:enumeration value="無筋・鉄筋構造物" />
+                            <xs:enumeration value="小型構造物" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -283,53 +319,64 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_21-8-25(20)(普通)" />
-                            <xs:enumeration value="10_40-12-25(20)(普通)" />
-                            <xs:enumeration value="11_18-8-40(普通)" />
-                            <xs:enumeration value="12_18-12-40(普通)" />
-                            <xs:enumeration value="13_19.5-8-40(普通)" />
-                            <xs:enumeration value="14_21-8-40(普通)" />
-                            <xs:enumeration value="15_21-12-40(普通)" />
-                            <xs:enumeration value="16_22.5-8-40(普通)" />
-                            <xs:enumeration value="17_24-8-40(普通)" />
-                            <xs:enumeration value="18_24-12-40(普通)" />
-                            <xs:enumeration value="19_4.5-2.5-40(普通)" />
-                            <xs:enumeration value="2_21-12-25(20)(普通)" />
-                            <xs:enumeration value="20_21-8-25(20)(高炉)" />
-                            <xs:enumeration value="21_21-12-25(20)(高炉)" />
-                            <xs:enumeration value="22_24-8-25(20)(高炉)" />
-                            <xs:enumeration value="23_24-12-25(20)(高炉)" />
-                            <xs:enumeration value="24_19.5-5-40(高炉)" />
-                            <xs:enumeration value="25_19.5-8-40(高炉)" />
-                            <xs:enumeration value="26_19.5-12-40(高炉)" />
-                            <xs:enumeration value="27_18-5-40(高炉)" />
-                            <xs:enumeration value="28_21-5-40(高炉)" />
-                            <xs:enumeration value="29_18-8-40(高炉)" />
-                            <xs:enumeration value="3_24-8-25(20)(普通)" />
-                            <xs:enumeration value="30_18-12-40(高炉)" />
-                            <xs:enumeration value="31_21-8-40(高炉)" />
-                            <xs:enumeration value="32_24-8-40(高炉)" />
-                            <xs:enumeration value="33_24-12-40(高炉)" />
-                            <xs:enumeration value="34_21-12-40(高炉)" />
-                            <xs:enumeration value="35_40-8-25(早強)" />
-                            <xs:enumeration value="36_40-12-25(早強)" />
-                            <xs:enumeration value="37_21-8-25(早強)" />
-                            <xs:enumeration value="38_21-12-25(早強)" />
-                            <xs:enumeration value="39_24-8-25(早強)" />
-                            <xs:enumeration value="4_24-12-25(20)(普通)" />
-                            <xs:enumeration value="40_24-12-25(早強)" />
-                            <xs:enumeration value="41_18-8-25(高炉)" />
-                            <xs:enumeration value="42_18-12-25(高炉)" />
-                            <xs:enumeration value="43_21-5-80(高炉)" />
-                            <xs:enumeration value="44_18-3-40(高炉)" />
-                            <xs:enumeration value="45_21-3-40(高炉)" />
-                            <xs:enumeration value="46_各種" />
-                            <xs:enumeration value="5_27-8-25(20)(普通)" />
-                            <xs:enumeration value="6_27-12-25(20)(普通)" />
-                            <xs:enumeration value="7_30-8-25(20)(普通)" />
-                            <xs:enumeration value="8_30-12-25(20)(普通)" />
-                            <xs:enumeration value="9_40-8-25(20)(普通)" />
+                            <xs:enumeration value="21-8-25(20)(普通)" />
+                            <xs:enumeration value="21-12-25(20)(普通)" />
+                            <xs:enumeration value="24-8-25(20)(普通)" />
+                            <xs:enumeration value="24-12-25(20)(普通)" />
+                            <xs:enumeration value="27-8-25(20)(普通)" />
+                            <xs:enumeration value="27-12-25(20)(普通)" />
+                            <xs:enumeration value="30-8-25(20)(普通)" />
+                            <xs:enumeration value="30-12-25(20)(普通)" />
+                            <xs:enumeration value="40-8-25(20)(普通)" />
+                            <xs:enumeration value="40-12-25(20)(普通)" />
+                            <xs:enumeration value="18-8-40(普通)" />
+                            <xs:enumeration value="18-12-40(普通)" />
+                            <xs:enumeration value="19.5-8-40(普通)" />
+                            <xs:enumeration value="21-8-40(普通)" />
+                            <xs:enumeration value="21-12-40(普通)" />
+                            <xs:enumeration value="22.5-8-40(普通)" />
+                            <xs:enumeration value="24-8-40(普通)" />
+                            <xs:enumeration value="24-12-40(普通)" />
+                            <xs:enumeration value="4.5-2.5-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(高炉)" />
+                            <xs:enumeration value="21-12-25(20)(高炉)" />
+                            <xs:enumeration value="24-8-25(20)(高炉)" />
+                            <xs:enumeration value="24-12-25(20)(高炉)" />
+                            <xs:enumeration value="19.5-5-40(高炉)" />
+                            <xs:enumeration value="19.5-8-40(高炉)" />
+                            <xs:enumeration value="19.5-12-40(高炉)" />
+                            <xs:enumeration value="18-5-40(高炉)" />
+                            <xs:enumeration value="21-5-40(高炉)" />
+                            <xs:enumeration value="18-8-40(高炉)" />
+                            <xs:enumeration value="18-12-40(高炉)" />
+                            <xs:enumeration value="21-8-40(高炉)" />
+                            <xs:enumeration value="24-8-40(高炉)" />
+                            <xs:enumeration value="24-12-40(高炉)" />
+                            <xs:enumeration value="21-12-40(高炉)" />
+                            <xs:enumeration value="40-8-25(早強)" />
+                            <xs:enumeration value="40-12-25(早強)" />
+                            <xs:enumeration value="21-8-25(早強)" />
+                            <xs:enumeration value="21-12-25(早強)" />
+                            <xs:enumeration value="24-8-25(早強)" />
+                            <xs:enumeration value="24-12-25(早強)" />
+                            <xs:enumeration value="18-8-25(高炉)" />
+                            <xs:enumeration value="18-12-25(高炉)" />
+                            <xs:enumeration value="21-5-80(高炉)" />
+                            <xs:enumeration value="18-3-40(高炉)" />
+                            <xs:enumeration value="21-3-40(高炉)" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_排水構造物工_管渠工_均しコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -374,17 +421,28 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｸﾗｯｼｬﾗﾝ40～0" />
-                            <xs:enumeration value="10_砕石(各種)" />
-                            <xs:enumeration value="2_ｸﾗｯｼｬﾗﾝ30～0" />
-                            <xs:enumeration value="3_ｸﾗｯｼｬﾗﾝ20～0" />
-                            <xs:enumeration value="4_高炉ｽﾗｸﾞCS-40" />
-                            <xs:enumeration value="5_高炉ｽﾗｸﾞMS-25" />
-                            <xs:enumeration value="6_高炉ｽﾗｸﾞHMS-25" />
-                            <xs:enumeration value="7_ｸﾗｯｼｬﾗﾝ80～0" />
-                            <xs:enumeration value="8_再生ｸﾗｯｼｬﾗﾝ40～0" />
-                            <xs:enumeration value="9_再生ｸﾗｯｼｬﾗﾝ80～0" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ40～0" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ30～0" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ20～0" />
+                            <xs:enumeration value="高炉ｽﾗｸﾞCS-40" />
+                            <xs:enumeration value="高炉ｽﾗｸﾞMS-25" />
+                            <xs:enumeration value="高炉ｽﾗｸﾞHMS-25" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ80～0" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ40～0" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ80～0" />
+                            <xs:enumeration value="砕石(各種)" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_排水構造物工_管渠工_基礎材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎砕石費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>基礎砕石</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -396,13 +454,13 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_7.5cm以下" />
-                            <xs:enumeration value="2_7.5cmを超え12.5cm以下" />
-                            <xs:enumeration value="3_12.5cmを超え17.5cm以下" />
-                            <xs:enumeration value="4_17.5cmを超え20.0cm以下" />
-                            <xs:enumeration value="5_20.0cmを超え22.5cm以下" />
-                            <xs:enumeration value="6_22.5cmを超え27.5cm以下" />
-                            <xs:enumeration value="7_27.5cmを超え30.0cm以下" />
+                            <xs:enumeration value="7.5cm以下" />
+                            <xs:enumeration value="7.5cmを超え12.5cm以下" />
+                            <xs:enumeration value="12.5cmを超え17.5cm以下" />
+                            <xs:enumeration value="17.5cmを超え20.0cm以下" />
+                            <xs:enumeration value="20.0cmを超え22.5cm以下" />
+                            <xs:enumeration value="22.5cmを超え27.5cm以下" />
+                            <xs:enumeration value="27.5cmを超え30.0cm以下" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -428,6 +486,28 @@
                 </property>
             </applicability>
             <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_排水構造物工_管渠工_巻きコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>(巻きｺﾝｸﾘｰﾄ)型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_排水構造物工_管渠工_巻きコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>(巻きｺﾝｸﾘｰﾄ)鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋工［市場単価］</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_排水構造物工_管渠工_巻きコンクリート</simpleValue>
@@ -437,8 +517,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_コンクリート夜間割増有" />
-                            <xs:enumeration value="2_コンクリート夜間割増無" />
+                            <xs:enumeration value="コンクリート夜間割増有" />
+                            <xs:enumeration value="コンクリート夜間割増無" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -453,6 +533,17 @@
                         <simpleValue>1470600101_1207900101_1322400301_1546500101_B040505101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_排水構造物工_管渠工_巻きコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>巻きｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_排水構造物工_管渠工_巻きコンクリート</simpleValue>
@@ -462,10 +553,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｺﾝｸﾘｰﾄﾎﾟﾝﾌﾟ車打設" />
-                            <xs:enumeration value="2_ｸﾚｰﾝ車打設" />
-                            <xs:enumeration value="3_ﾊﾞｯｸﾎｳ(ｸﾚｰﾝ機能付)打設" />
-                            <xs:enumeration value="4_人力打設" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄﾎﾟﾝﾌﾟ車打設" />
+                            <xs:enumeration value="ｸﾚｰﾝ車打設" />
+                            <xs:enumeration value="ﾊﾞｯｸﾎｳ(ｸﾚｰﾝ機能付)打設" />
+                            <xs:enumeration value="人力打設" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -478,8 +569,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_無筋・鉄筋構造物" />
-                            <xs:enumeration value="2_小型構造物" />
+                            <xs:enumeration value="無筋・鉄筋構造物" />
+                            <xs:enumeration value="小型構造物" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -492,8 +583,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_養生費有" />
-                            <xs:enumeration value="2_養生費無" />
+                            <xs:enumeration value="養生費有" />
+                            <xs:enumeration value="養生費無" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -506,52 +597,52 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_21-8-25(20)(普通)" />
-                            <xs:enumeration value="10_40-12-25(20)(普通)" />
-                            <xs:enumeration value="11_18-8-40(普通)" />
-                            <xs:enumeration value="12_18-12-40(普通)" />
-                            <xs:enumeration value="13_19.5-8-40(普通)" />
-                            <xs:enumeration value="14_21-8-40(普通)" />
-                            <xs:enumeration value="15_21-12-40(普通)" />
-                            <xs:enumeration value="16_22.5-8-40(普通)" />
-                            <xs:enumeration value="17_24-8-40(普通)" />
-                            <xs:enumeration value="18_24-12-40(普通)" />
-                            <xs:enumeration value="19_4.5-2.5-40(普通)" />
-                            <xs:enumeration value="2_21-12-25(20)(普通)" />
-                            <xs:enumeration value="20_21-8-25(20)(高炉)" />
-                            <xs:enumeration value="21_21-12-25(20)(高炉)" />
-                            <xs:enumeration value="22_24-8-25(20)(高炉)" />
-                            <xs:enumeration value="23_24-12-25(20)(高炉)" />
-                            <xs:enumeration value="24_19.5-5-40(高炉)" />
-                            <xs:enumeration value="25_19.5-8-40(高炉)" />
-                            <xs:enumeration value="26_19.5-12-40(高炉)" />
-                            <xs:enumeration value="27_18-5-40(高炉)" />
-                            <xs:enumeration value="28_21-5-40(高炉)" />
-                            <xs:enumeration value="29_18-8-40(高炉)" />
-                            <xs:enumeration value="3_24-8-25(20)(普通)" />
-                            <xs:enumeration value="30_18-12-40(高炉)" />
-                            <xs:enumeration value="31_21-8-40(高炉)" />
-                            <xs:enumeration value="32_24-8-40(高炉)" />
-                            <xs:enumeration value="33_24-12-40(高炉)" />
-                            <xs:enumeration value="34_21-12-40(高炉)" />
-                            <xs:enumeration value="35_40-8-25(早強)" />
-                            <xs:enumeration value="36_40-12-25(早強)" />
-                            <xs:enumeration value="37_21-8-25(早強)" />
-                            <xs:enumeration value="38_21-12-25(早強)" />
-                            <xs:enumeration value="39_24-8-25(早強)" />
-                            <xs:enumeration value="4_24-12-25(20)(普通)" />
-                            <xs:enumeration value="40_24-12-25(早強)" />
-                            <xs:enumeration value="41_18-8-25(高炉)" />
-                            <xs:enumeration value="42_18-12-25(高炉)" />
-                            <xs:enumeration value="43_21-5-80(高炉)" />
-                            <xs:enumeration value="44_18-3-40(高炉)" />
-                            <xs:enumeration value="45_21-3-40(高炉)" />
-                            <xs:enumeration value="46_各種" />
-                            <xs:enumeration value="5_27-8-25(20)(普通)" />
-                            <xs:enumeration value="6_27-12-25(20)(普通)" />
-                            <xs:enumeration value="7_30-8-25(20)(普通)" />
-                            <xs:enumeration value="8_30-12-25(20)(普通)" />
-                            <xs:enumeration value="9_40-8-25(20)(普通)" />
+                            <xs:enumeration value="21-8-25(20)(普通)" />
+                            <xs:enumeration value="21-12-25(20)(普通)" />
+                            <xs:enumeration value="24-8-25(20)(普通)" />
+                            <xs:enumeration value="24-12-25(20)(普通)" />
+                            <xs:enumeration value="27-8-25(20)(普通)" />
+                            <xs:enumeration value="27-12-25(20)(普通)" />
+                            <xs:enumeration value="30-8-25(20)(普通)" />
+                            <xs:enumeration value="30-12-25(20)(普通)" />
+                            <xs:enumeration value="40-8-25(20)(普通)" />
+                            <xs:enumeration value="40-12-25(20)(普通)" />
+                            <xs:enumeration value="18-8-40(普通)" />
+                            <xs:enumeration value="18-12-40(普通)" />
+                            <xs:enumeration value="19.5-8-40(普通)" />
+                            <xs:enumeration value="21-8-40(普通)" />
+                            <xs:enumeration value="21-12-40(普通)" />
+                            <xs:enumeration value="22.5-8-40(普通)" />
+                            <xs:enumeration value="24-8-40(普通)" />
+                            <xs:enumeration value="24-12-40(普通)" />
+                            <xs:enumeration value="4.5-2.5-40(普通)" />
+                            <xs:enumeration value="21-8-25(20)(高炉)" />
+                            <xs:enumeration value="21-12-25(20)(高炉)" />
+                            <xs:enumeration value="24-8-25(20)(高炉)" />
+                            <xs:enumeration value="24-12-25(20)(高炉)" />
+                            <xs:enumeration value="19.5-5-40(高炉)" />
+                            <xs:enumeration value="19.5-8-40(高炉)" />
+                            <xs:enumeration value="19.5-12-40(高炉)" />
+                            <xs:enumeration value="18-5-40(高炉)" />
+                            <xs:enumeration value="21-5-40(高炉)" />
+                            <xs:enumeration value="18-8-40(高炉)" />
+                            <xs:enumeration value="18-12-40(高炉)" />
+                            <xs:enumeration value="21-8-40(高炉)" />
+                            <xs:enumeration value="24-8-40(高炉)" />
+                            <xs:enumeration value="24-12-40(高炉)" />
+                            <xs:enumeration value="21-12-40(高炉)" />
+                            <xs:enumeration value="40-8-25(早強)" />
+                            <xs:enumeration value="40-12-25(早強)" />
+                            <xs:enumeration value="21-8-25(早強)" />
+                            <xs:enumeration value="21-12-25(早強)" />
+                            <xs:enumeration value="24-8-25(早強)" />
+                            <xs:enumeration value="24-12-25(早強)" />
+                            <xs:enumeration value="18-8-25(高炉)" />
+                            <xs:enumeration value="18-12-25(高炉)" />
+                            <xs:enumeration value="21-5-80(高炉)" />
+                            <xs:enumeration value="18-3-40(高炉)" />
+                            <xs:enumeration value="21-3-40(高炉)" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -597,10 +688,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_据付" />
-                            <xs:enumeration value="2_撤去" />
-                            <xs:enumeration value="3_据付・撤去" />
+                            <xs:enumeration value="据付" />
+                            <xs:enumeration value="撤去" />
+                            <xs:enumeration value="据付・撤去" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_排水構造物工_管渠工_暗渠排水管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>暗渠排水管設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>暗渠排水管</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -612,9 +714,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_50～150mm" />
-                            <xs:enumeration value="2_200～400mm" />
-                            <xs:enumeration value="3_450～600mm" />
+                            <xs:enumeration value="50～150mm" />
+                            <xs:enumeration value="200～400mm" />
+                            <xs:enumeration value="450～600mm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -627,9 +729,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_直管" />
-                            <xs:enumeration value="2_波状管" />
-                            <xs:enumeration value="3_網状管" />
+                            <xs:enumeration value="直管" />
+                            <xs:enumeration value="波状管" />
+                            <xs:enumeration value="網状管" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -675,20 +777,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_200mm" />
-                            <xs:enumeration value="10_800mm" />
-                            <xs:enumeration value="11_900mm" />
-                            <xs:enumeration value="12_1000mm" />
-                            <xs:enumeration value="13_1100mm" />
-                            <xs:enumeration value="14_1200mm" />
-                            <xs:enumeration value="2_250mm" />
-                            <xs:enumeration value="3_300mm" />
-                            <xs:enumeration value="4_350mm" />
-                            <xs:enumeration value="5_400mm" />
-                            <xs:enumeration value="6_450mm" />
-                            <xs:enumeration value="7_500mm" />
-                            <xs:enumeration value="8_600mm" />
-                            <xs:enumeration value="9_700mm" />
+                            <xs:enumeration value="200mm" />
+                            <xs:enumeration value="250mm" />
+                            <xs:enumeration value="300mm" />
+                            <xs:enumeration value="350mm" />
+                            <xs:enumeration value="400mm" />
+                            <xs:enumeration value="450mm" />
+                            <xs:enumeration value="500mm" />
+                            <xs:enumeration value="600mm" />
+                            <xs:enumeration value="700mm" />
+                            <xs:enumeration value="800mm" />
+                            <xs:enumeration value="900mm" />
+                            <xs:enumeration value="1000mm" />
+                            <xs:enumeration value="1100mm" />
+                            <xs:enumeration value="1200mm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -699,6 +801,17 @@
                     <baseName>
                         <simpleValue>管規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_排水構造物工_管渠工_鉄筋コンクリート台付管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋ｺﾝｸﾘｰﾄ台付管設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋コンクリート台付管据付</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

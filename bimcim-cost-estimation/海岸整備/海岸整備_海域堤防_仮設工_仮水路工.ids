@@ -59,9 +59,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ﾌﾗﾝｼﾞ型" />
-                            <xs:enumeration value="2_ﾗｯﾌﾟ型" />
+                            <xs:enumeration value="ﾌﾗﾝｼﾞ型" />
+                            <xs:enumeration value="ﾗｯﾌﾟ型" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_海域堤防_仮設工_仮水路工_コルゲートパイプ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾙｹﾞｰﾄﾊﾟｲﾌﾟ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コルゲートパイプ</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -106,9 +117,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_据付" />
-                            <xs:enumeration value="2_撤去" />
-                            <xs:enumeration value="3_据付･撤去" />
+                            <xs:enumeration value="据付" />
+                            <xs:enumeration value="撤去" />
+                            <xs:enumeration value="据付･撤去" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -121,10 +132,10 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_90°巻き" />
-                            <xs:enumeration value="2_180°巻き" />
-                            <xs:enumeration value="3_360°巻き" />
-                            <xs:enumeration value="4_無し" />
+                            <xs:enumeration value="90°巻き" />
+                            <xs:enumeration value="180°巻き" />
+                            <xs:enumeration value="360°巻き" />
+                            <xs:enumeration value="無し" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -137,21 +148,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_200mm" />
-                            <xs:enumeration value="10_800mm" />
-                            <xs:enumeration value="11_900mm" />
-                            <xs:enumeration value="12_1000mm" />
-                            <xs:enumeration value="13_1100mm" />
-                            <xs:enumeration value="14_1200mm" />
-                            <xs:enumeration value="15_1350mm" />
-                            <xs:enumeration value="2_250mm" />
-                            <xs:enumeration value="3_300mm" />
-                            <xs:enumeration value="4_350mm" />
-                            <xs:enumeration value="5_400mm" />
-                            <xs:enumeration value="6_450mm" />
-                            <xs:enumeration value="7_500mm" />
-                            <xs:enumeration value="8_600mm" />
-                            <xs:enumeration value="9_700mm" />
+                            <xs:enumeration value="200mm" />
+                            <xs:enumeration value="250mm" />
+                            <xs:enumeration value="300mm" />
+                            <xs:enumeration value="350mm" />
+                            <xs:enumeration value="400mm" />
+                            <xs:enumeration value="450mm" />
+                            <xs:enumeration value="500mm" />
+                            <xs:enumeration value="600mm" />
+                            <xs:enumeration value="700mm" />
+                            <xs:enumeration value="800mm" />
+                            <xs:enumeration value="900mm" />
+                            <xs:enumeration value="1000mm" />
+                            <xs:enumeration value="1100mm" />
+                            <xs:enumeration value="1200mm" />
+                            <xs:enumeration value="1350mm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -164,10 +175,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_外圧管1種" />
-                            <xs:enumeration value="2_外圧管2種" />
-                            <xs:enumeration value="3_各種" />
+                            <xs:enumeration value="外圧管1種" />
+                            <xs:enumeration value="外圧管2種" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_海域堤防_仮設工_仮水路工_ヒューム管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾋｭｰﾑ管設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ヒューム管（Ｂ形管）</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -220,9 +242,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_直管" />
-                            <xs:enumeration value="2_波状管" />
-                            <xs:enumeration value="3_網状管" />
+                            <xs:enumeration value="直管" />
+                            <xs:enumeration value="波状管" />
+                            <xs:enumeration value="網状管" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -235,19 +257,30 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｸﾗｯｼｬﾗﾝ C80" />
-                            <xs:enumeration value="10_再生ｸﾗｯｼｬﾗﾝ RC40" />
-                            <xs:enumeration value="11_再生ｸﾗｯｼｬﾗﾝ RC30" />
-                            <xs:enumeration value="12_各種" />
-                            <xs:enumeration value="2_ｸﾗｯｼｬﾗﾝ C40" />
-                            <xs:enumeration value="3_ｸﾗｯｼｬﾗﾝ C30" />
-                            <xs:enumeration value="4_粒度調整砕石 M40" />
-                            <xs:enumeration value="5_粒度調整砕石 M30" />
-                            <xs:enumeration value="6_粒度調整砕石 M25" />
-                            <xs:enumeration value="7_ｺﾝｸﾘｰﾄ用骨材 砕石 40-5" />
-                            <xs:enumeration value="8_単粒度砕石 4号 30-20" />
-                            <xs:enumeration value="9_再生ｸﾗｯｼｬﾗﾝ RC80" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ C80" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ C40" />
+                            <xs:enumeration value="ｸﾗｯｼｬﾗﾝ C30" />
+                            <xs:enumeration value="粒度調整砕石 M40" />
+                            <xs:enumeration value="粒度調整砕石 M30" />
+                            <xs:enumeration value="粒度調整砕石 M25" />
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄ用骨材 砕石 40-5" />
+                            <xs:enumeration value="単粒度砕石 4号 30-20" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ RC80" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ RC40" />
+                            <xs:enumeration value="再生ｸﾗｯｼｬﾗﾝ RC30" />
+                            <xs:enumeration value="各種" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_海域堤防_仮設工_仮水路工_フィルター材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌｨﾙﾀｰ材敷設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>フィルター材</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -292,13 +325,13 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_仕拵･積立･撤去" />
-                            <xs:enumeration value="2_仕拵･積立" />
-                            <xs:enumeration value="3_撤去" />
-                            <xs:enumeration value="1_製作･設置" />
-                            <xs:enumeration value="2_製作" />
-                            <xs:enumeration value="3_設置" />
-                            <xs:enumeration value="4_撤去" />
+                            <xs:enumeration value="仕拵･積立･撤去" />
+                            <xs:enumeration value="仕拵･積立" />
+                            <xs:enumeration value="撤去" />
+                            <xs:enumeration value="製作･設置" />
+                            <xs:enumeration value="製作" />
+                            <xs:enumeration value="設置" />
+                            <xs:enumeration value="撤去" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -311,9 +344,20 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_土のう" />
-                            <xs:enumeration value="2_大型土のう" />
+                            <xs:enumeration value="土のう" />
+                            <xs:enumeration value="大型土のう" />
                         </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_海域堤防_仮設工_仮水路工_土のう</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土のう積費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土のう工</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -323,6 +367,116 @@
                     <baseName>
                         <simpleValue>大型土のう規格</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_海域堤防_仮設工_仮水路工_土のう</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>大型土のう費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>大型土のう工</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="土のう積" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>土のう積</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_海域堤防_仮設工_仮水路工_土のう積</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_海域堤防_仮設工_仮水路工_土のう積</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470600101_1261800101_1002500901_1009000201_1602300101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_海域堤防_仮設工_仮水路工_土のう積</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土のう積費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土のう積工</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="暗渠排水管" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>暗渠排水管</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_海域堤防_仮設工_仮水路工_暗渠排水管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_海域堤防_仮設工_仮水路工_暗渠排水管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470600101_1261800101_1002500901_1009000201_B323705101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_海域堤防_仮設工_仮水路工_暗渠排水管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>暗渠排水管設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>暗渠排水管</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_海域堤防_仮設工_仮水路工_暗渠排水管</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌｨﾙﾀｰ材敷設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>フィルター材</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>
@@ -364,6 +518,42 @@
                     <baseName>
                         <simpleValue>幅</simpleValue>
                     </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_海域堤防_仮設工_仮水路工_素掘側溝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>掘削積込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>積込（ルーズ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_海域堤防_仮設工_仮水路工_素掘側溝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>現地敷均し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="整地" />
+                            <xs:enumeration value="路体（築堤）盛土" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_海域堤防_仮設工_仮水路工_素掘側溝</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>土砂等運搬</simpleValue>
+                    </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>

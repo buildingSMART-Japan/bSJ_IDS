@@ -59,9 +59,100 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_設置･撤去" />
-                            <xs:enumeration value="2_設置" />
-                            <xs:enumeration value="3_撤去" />
+                            <xs:enumeration value="設置･撤去" />
+                            <xs:enumeration value="設置" />
+                            <xs:enumeration value="撤去" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_仮設工_汚濁防止工_汚濁防止フェンス</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>汚濁防止ﾌｪﾝｽ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>汚濁防止フェンス</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="濁水処理設備" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>濁水処理設備</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_仮設工_汚濁防止工_濁水処理設備</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_仮設工_汚濁防止工_濁水処理設備</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470600101_1239600101_1002500901_1011700102_B011900102</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_仮設工_汚濁防止工_濁水処理設備</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>泥土処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="積込（ルーズ）" />
+                            <xs:enumeration value="土砂等運搬" />
+                            <xs:enumeration value="残土等処分" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_仮設工_汚濁防止工_濁水処理設備</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾗﾝﾄ設備費(100m3/h超)</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="濁水処理設備設置・撤去" />
+                            <xs:enumeration value="濁水処理設備運転" />
+                            <xs:enumeration value="凝集剤等" />
+                            <xs:enumeration value="濁水処理設備保守点検" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_仮設工_汚濁防止工_濁水処理設備</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾗﾝﾄ設備費(30～100m3/h)</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="濁水処理設備設置・撤去（濁水処理工（一般土木））" />
+                            <xs:enumeration value="濁水処理設備保守点検（濁水処理工（一般土木））" />
+                            <xs:enumeration value="凝集剤等" />
+                            <xs:enumeration value="濁水処理設備運転" />
                         </xs:restriction>
                     </value>
                 </property>

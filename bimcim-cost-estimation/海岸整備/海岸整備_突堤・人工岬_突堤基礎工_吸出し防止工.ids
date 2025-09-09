@@ -44,6 +44,17 @@
                         <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_突堤基礎工_吸出し防止工_ふとんかご</simpleValue>
                     </propertySet>
                     <baseName>
+                        <simpleValue>ふとんかご費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ふとんかご</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_突堤基礎工_吸出し防止工_ふとんかご</simpleValue>
+                    </propertySet>
+                    <baseName>
                         <simpleValue>体系コード</simpleValue>
                     </baseName>
                     <value>
@@ -67,8 +78,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_ｽﾛｰﾌﾟ式" />
-                            <xs:enumeration value="2_階段式" />
+                            <xs:enumeration value="ｽﾛｰﾌﾟ式" />
+                            <xs:enumeration value="階段式" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -81,9 +92,9 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_高さ40cm×幅120cm" />
-                            <xs:enumeration value="2_高さ50cm×幅120cm" />
-                            <xs:enumeration value="3_高さ60cm×幅120cm" />
+                            <xs:enumeration value="高さ40cm×幅120cm" />
+                            <xs:enumeration value="高さ50cm×幅120cm" />
+                            <xs:enumeration value="高さ60cm×幅120cm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -110,6 +121,72 @@
                     <baseName>
                         <simpleValue>高さ</simpleValue>
                     </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="粗朶沈床" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>粗朶沈床</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_突堤基礎工_吸出し防止工_粗朶沈床</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_突堤基礎工_吸出し防止工_粗朶沈床</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470600101_1239600101_1241300101_1063600201_1063900104</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_突堤基礎工_吸出し防止工_粗朶沈床</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>沈床沈設･沈石投入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>沈床沈設・沈石投入</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_突堤基礎工_吸出し防止工_粗朶沈床</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>連柴製作･沈床組立費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>連柴製作・沈床組立</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_突堤・人工岬_突堤基礎工_吸出し防止工_粗朶沈床</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>間詰石投入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>間詰石投入</simpleValue>
+                    </value>
                 </property>
             </requirements>
         </specification>

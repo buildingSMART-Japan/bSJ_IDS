@@ -1,0 +1,1025 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>海岸整備_養浜_仮設工_コンクリート製造設備工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>1.0</version>
+        <description>令和5年度対応の積算用属性情報（properties_202304_01.xlsx）に準拠します。
+このIDSファイルにない項目、設定が困難な項目等は、設計数量管理機能で設定してしてください。
+このIDSファイルは次のソフトウェアで出力したIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2025-07-01</date>
+        <purpose>BIM/CIM積算のための属性情報を設定します。</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="ケーブルクレーン設備(一般)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ケーブルクレーン設備(一般)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470600101_1285000101_1002500901_1139700101_B580300101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙｸﾚｰﾝ基礎土工費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="積込（ルーズ）" />
+                            <xs:enumeration value="埋戻し" />
+                            <xs:enumeration value="整地" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙｸﾚｰﾝ基礎撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>構造物とりこわし</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙｸﾚｰﾝ基礎材料費(型枠材)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ２）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙｸﾚｰﾝ基礎材料費(基礎砕石)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ３）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙｸﾚｰﾝ基礎材料費(ｱﾝｶｰﾍﾞｰｽ)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｔ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙｸﾚｰﾝ基礎材料費(ｺﾝｸﾘｰﾄ)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ３）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙｸﾚｰﾝ基礎殻処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="殻運搬" />
+                            <xs:enumeration value="処分費（ｍ３）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙｸﾚｰﾝ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="ﾃﾞｨｰｾﾞﾙ駆動式2.9tｽﾊﾟﾝ75m以下" />
+                            <xs:enumeration value="ﾃﾞｨｰｾﾞﾙ駆動式2.9tｽﾊﾟﾝ76～125m以下" />
+                            <xs:enumeration value="ﾃﾞｨｰｾﾞﾙ駆動式2.9tｽﾊﾟﾝ126～175m以下" />
+                            <xs:enumeration value="ﾃﾞｨｰｾﾞﾙ駆動式2.9tｽﾊﾟﾝ176～225m以下" />
+                            <xs:enumeration value="ﾃﾞｨｰｾﾞﾙ駆動式2.9tｽﾊﾟﾝ226～275m以下" />
+                            <xs:enumeration value="ﾃﾞｨｰｾﾞﾙ駆動式2.9tｽﾊﾟﾝ276～325m以下" />
+                            <xs:enumeration value="ﾃﾞｨｰｾﾞﾙ駆動式2.9tｽﾊﾟﾝ326～375m以下" />
+                            <xs:enumeration value="ﾃﾞｨｰｾﾞﾙ駆動式2.9tｽﾊﾟﾝ376～425m以下" />
+                            <xs:enumeration value="ﾃﾞｨｰｾﾞﾙ駆動式2.9tｽﾊﾟﾝ426～500m以下" />
+                            <xs:enumeration value="2t未満ｽﾊﾟﾝ75m以下" />
+                            <xs:enumeration value="2t未満ｽﾊﾟﾝ76～125m以下" />
+                            <xs:enumeration value="2t未満ｽﾊﾟﾝ126～175m以下" />
+                            <xs:enumeration value="2t未満ｽﾊﾟﾝ176～225m以下" />
+                            <xs:enumeration value="2t未満ｽﾊﾟﾝ226～275m以下" />
+                            <xs:enumeration value="2t未満ｽﾊﾟﾝ276～325m以下" />
+                            <xs:enumeration value="2t未満ｽﾊﾟﾝ326～375m以下" />
+                            <xs:enumeration value="2t未満ｽﾊﾟﾝ376～425m以下" />
+                            <xs:enumeration value="2t未満ｽﾊﾟﾝ426～500m以下" />
+                            <xs:enumeration value="3t未満ｽﾊﾟﾝ75m以下" />
+                            <xs:enumeration value="3t未満ｽﾊﾟﾝ76～125m以下" />
+                            <xs:enumeration value="3t未満ｽﾊﾟﾝ126～175m以下" />
+                            <xs:enumeration value="3t未満ｽﾊﾟﾝ176～225m以下" />
+                            <xs:enumeration value="3t未満ｽﾊﾟﾝ226～275m以下" />
+                            <xs:enumeration value="3t未満ｽﾊﾟﾝ276～325m以下" />
+                            <xs:enumeration value="3t未満ｽﾊﾟﾝ326～375m以下" />
+                            <xs:enumeration value="3t未満ｽﾊﾟﾝ376～425m以下" />
+                            <xs:enumeration value="3t未満ｽﾊﾟﾝ426～500m以下" />
+                            <xs:enumeration value="4t未満ｽﾊﾟﾝ75m以下" />
+                            <xs:enumeration value="4t未満ｽﾊﾟﾝ76～125m以下" />
+                            <xs:enumeration value="4t未満ｽﾊﾟﾝ126～175m以下" />
+                            <xs:enumeration value="4t未満ｽﾊﾟﾝ176～225m以下" />
+                            <xs:enumeration value="4t未満ｽﾊﾟﾝ226～275m以下" />
+                            <xs:enumeration value="4t未満ｽﾊﾟﾝ276～325m以下" />
+                            <xs:enumeration value="4t未満ｽﾊﾟﾝ326～375m以下" />
+                            <xs:enumeration value="4t未満ｽﾊﾟﾝ376～425m以下" />
+                            <xs:enumeration value="4t未満ｽﾊﾟﾝ426～500m以下" />
+                            <xs:enumeration value="5t未満ｽﾊﾟﾝ75m以下" />
+                            <xs:enumeration value="5t未満ｽﾊﾟﾝ76～125m以下" />
+                            <xs:enumeration value="5t未満ｽﾊﾟﾝ126～175m以下" />
+                            <xs:enumeration value="5t未満ｽﾊﾟﾝ176～225m以下" />
+                            <xs:enumeration value="5t未満ｽﾊﾟﾝ226～275m以下" />
+                            <xs:enumeration value="5t未満ｽﾊﾟﾝ276～325m以下" />
+                            <xs:enumeration value="5t未満ｽﾊﾟﾝ326～375m以下" />
+                            <xs:enumeration value="5t未満ｽﾊﾟﾝ376～425m以下" />
+                            <xs:enumeration value="5t未満ｽﾊﾟﾝ426～500m以下" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙｸﾚｰﾝ設備据付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="ケーブルクレーン設備（基礎設置）" />
+                            <xs:enumeration value="ケーブルクレーン設備（据付け）" />
+                            <xs:enumeration value="ワイヤーロープ損耗費" />
+                            <xs:enumeration value="機械据付撤去" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙｸﾚｰﾝ設備撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="ケーブルクレーン設備（解体）" />
+                            <xs:enumeration value="機械撤去" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ケーブルクレーン設備(砂防)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ケーブルクレーン設備(砂防)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470600101_1285000101_1002500901_1139700101_B589900101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙｸﾚｰﾝ基礎撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>構造物とりこわし</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙｸﾚｰﾝ基礎材料費(型枠材)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ２）［砂防］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙｸﾚｰﾝ基礎材料費(基礎砕石)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ３）［砂防］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙｸﾚｰﾝ基礎材料費(ｱﾝｶｰﾍﾞｰｽ)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｔ）［砂防］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙｸﾚｰﾝ基礎材料費(ｺﾝｸﾘｰﾄ)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ３）［砂防］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙｸﾚｰﾝ基礎殻処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="殻運搬" />
+                            <xs:enumeration value="処分費（ｍ３）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙｸﾚｰﾝ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="ﾃﾞｨｰｾﾞﾙ駆動式2.9tｽﾊﾟﾝ75m以下" />
+                            <xs:enumeration value="ﾃﾞｨｰｾﾞﾙ駆動式2.9tｽﾊﾟﾝ76～125m以下" />
+                            <xs:enumeration value="ﾃﾞｨｰｾﾞﾙ駆動式2.9tｽﾊﾟﾝ126～175m以下" />
+                            <xs:enumeration value="ﾃﾞｨｰｾﾞﾙ駆動式2.9tｽﾊﾟﾝ176～225m以下" />
+                            <xs:enumeration value="ﾃﾞｨｰｾﾞﾙ駆動式2.9tｽﾊﾟﾝ226～275m以下" />
+                            <xs:enumeration value="ﾃﾞｨｰｾﾞﾙ駆動式2.9tｽﾊﾟﾝ276～325m以下" />
+                            <xs:enumeration value="ﾃﾞｨｰｾﾞﾙ駆動式2.9tｽﾊﾟﾝ326～375m以下" />
+                            <xs:enumeration value="ﾃﾞｨｰｾﾞﾙ駆動式2.9tｽﾊﾟﾝ376～425m以下" />
+                            <xs:enumeration value="ﾃﾞｨｰｾﾞﾙ駆動式2.9tｽﾊﾟﾝ426～500m以下" />
+                            <xs:enumeration value="2t未満ｽﾊﾟﾝ75m以下" />
+                            <xs:enumeration value="2t未満ｽﾊﾟﾝ76～125m以下" />
+                            <xs:enumeration value="2t未満ｽﾊﾟﾝ126～175m以下" />
+                            <xs:enumeration value="2t未満ｽﾊﾟﾝ176～225m以下" />
+                            <xs:enumeration value="2t未満ｽﾊﾟﾝ226～275m以下" />
+                            <xs:enumeration value="2t未満ｽﾊﾟﾝ276～325m以下" />
+                            <xs:enumeration value="2t未満ｽﾊﾟﾝ326～375m以下" />
+                            <xs:enumeration value="2t未満ｽﾊﾟﾝ376～425m以下" />
+                            <xs:enumeration value="2t未満ｽﾊﾟﾝ426～500m以下" />
+                            <xs:enumeration value="3t未満ｽﾊﾟﾝ75m以下" />
+                            <xs:enumeration value="3t未満ｽﾊﾟﾝ76～125m以下" />
+                            <xs:enumeration value="3t未満ｽﾊﾟﾝ126～175m以下" />
+                            <xs:enumeration value="3t未満ｽﾊﾟﾝ176～225m以下" />
+                            <xs:enumeration value="3t未満ｽﾊﾟﾝ226～275m以下" />
+                            <xs:enumeration value="3t未満ｽﾊﾟﾝ276～325m以下" />
+                            <xs:enumeration value="3t未満ｽﾊﾟﾝ326～375m以下" />
+                            <xs:enumeration value="3t未満ｽﾊﾟﾝ376～425m以下" />
+                            <xs:enumeration value="3t未満ｽﾊﾟﾝ426～500m以下" />
+                            <xs:enumeration value="4t未満ｽﾊﾟﾝ75m以下" />
+                            <xs:enumeration value="4t未満ｽﾊﾟﾝ76～125m以下" />
+                            <xs:enumeration value="4t未満ｽﾊﾟﾝ126～175m以下" />
+                            <xs:enumeration value="4t未満ｽﾊﾟﾝ176～225m以下" />
+                            <xs:enumeration value="4t未満ｽﾊﾟﾝ226～275m以下" />
+                            <xs:enumeration value="4t未満ｽﾊﾟﾝ276～325m以下" />
+                            <xs:enumeration value="4t未満ｽﾊﾟﾝ326～375m以下" />
+                            <xs:enumeration value="4t未満ｽﾊﾟﾝ376～425m以下" />
+                            <xs:enumeration value="4t未満ｽﾊﾟﾝ426～500m以下" />
+                            <xs:enumeration value="5t未満ｽﾊﾟﾝ75m以下" />
+                            <xs:enumeration value="5t未満ｽﾊﾟﾝ76～125m以下" />
+                            <xs:enumeration value="5t未満ｽﾊﾟﾝ126～175m以下" />
+                            <xs:enumeration value="5t未満ｽﾊﾟﾝ176～225m以下" />
+                            <xs:enumeration value="5t未満ｽﾊﾟﾝ226～275m以下" />
+                            <xs:enumeration value="5t未満ｽﾊﾟﾝ276～325m以下" />
+                            <xs:enumeration value="5t未満ｽﾊﾟﾝ326～375m以下" />
+                            <xs:enumeration value="5t未満ｽﾊﾟﾝ376～425m以下" />
+                            <xs:enumeration value="5t未満ｽﾊﾟﾝ426～500m以下" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙｸﾚｰﾝ設備据付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="ケーブルクレーン設備（基礎設置）" />
+                            <xs:enumeration value="ケーブルクレーン設備（据付け）" />
+                            <xs:enumeration value="ワイヤーロープ損耗費" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙｸﾚｰﾝ設備撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ケーブルクレーン設備（解体）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_ケーブルクレーン設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｹｰﾌﾞﾙｸﾚｰﾝ設備補修費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ケーブルクレーン補修</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="コンクリートプラント設備(一般)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>コンクリートプラント設備(一般)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470600101_1285000101_1002500901_1139700101_B139800101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>混合貯蔵ﾋﾞﾝ基礎掘削費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="積込（ルーズ）" />
+                            <xs:enumeration value="基面整正" />
+                            <xs:enumeration value="埋戻し" />
+                            <xs:enumeration value="整地" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>混合貯蔵ﾋﾞﾝ基礎材料費(型枠材)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ３）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>設備名</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄﾌﾟﾗﾝﾄ" />
+                            <xs:enumeration value="ｾﾒﾝﾄｻｲﾛ" />
+                            <xs:enumeration value="骨材貯蔵ﾋﾞﾝ" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>骨材貯蔵ﾋﾞﾝ基礎撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>構造物とりこわし</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>骨材貯蔵ﾋﾞﾝ基礎材料費(基礎砕石)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ３）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>骨材貯蔵ﾋﾞﾝ基礎材料費(ｺﾝｸﾘｰﾄ)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ３）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>骨材貯蔵ﾋﾞﾝ基礎殻処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="殻運搬" />
+                            <xs:enumeration value="処分費（ｍ３）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>骨材貯蔵ﾋﾞﾝ補修費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>骨材貯蔵ビン補修</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>骨材貯蔵ﾋﾞﾝ設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>骨材貯蔵ビン設置</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄﾌﾟﾗﾝﾄ基礎掘削費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="積込（ルーズ）" />
+                            <xs:enumeration value="基面整正" />
+                            <xs:enumeration value="埋戻し" />
+                            <xs:enumeration value="整地" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄﾌﾟﾗﾝﾄ基礎撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>構造物とりこわし</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄﾌﾟﾗﾝﾄ基礎殻処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="殻運搬" />
+                            <xs:enumeration value="処分費（ｍ３）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄﾌﾟﾗﾝﾄ補修費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリートプラント基礎設置・撤去・補修</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄﾌﾟﾗﾝﾄ設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="コンクリートプラント基礎設置・撤去・補修" />
+                            <xs:enumeration value="軌条布設・撤去" />
+                            <xs:enumeration value="機械据付撤去" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｾﾒﾝﾄｻｲﾛ基礎撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>構造物とりこわし</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｾﾒﾝﾄｻｲﾛ基礎殻処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="殻運搬" />
+                            <xs:enumeration value="処分費（ｍ３）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｾﾒﾝﾄｻｲﾛ基礎ｺﾝｸﾘｰﾄ</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="基礎砕石" />
+                            <xs:enumeration value="ミキサー設備によるコンクリート混合作業" />
+                            <xs:enumeration value="コンクリート" />
+                            <xs:enumeration value="型枠" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｾﾒﾝﾄｻｲﾛ設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>セメントサイロ設置</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾗﾝﾄ基礎材料費(型枠材)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ２）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾗﾝﾄ基礎材料費(基礎砕石)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ３）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾗﾝﾄ基礎材料費(ｺﾝｸﾘｰﾄ)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ３）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(一般)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾐｷｻｰ設備によるｺﾝｸﾘｰﾄ混合作業費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="ミキサー設備によるコンクリート混合作業" />
+                            <xs:enumeration value="ミキサー設備によるコンクリート混合作業" />
+                        </xs:restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="コンクリートプラント設備(砂防)" ifcVersion="IFC2X3">
+            <applicability minOccurs="1" maxOccurs="1">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>コンクリートプラント設備(砂防)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470600101_1285000101_1002500901_1139700101_B581300101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>混合貯蔵ﾋﾞﾝ基礎材料費(型枠材)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ３）［砂防］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>給水設備撤去費[砂防工]</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="給水設備（水槽）設置・撤去［砂防］" />
+                            <xs:enumeration value="給水設備（導水管）設置・撤去［砂防］" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>給水設備設置費[砂防工]</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="給水設備（水槽）設置・撤去［砂防］" />
+                            <xs:enumeration value="給水設備（導水管）設置・撤去［砂防］" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>設備名</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="ｺﾝｸﾘｰﾄﾌﾟﾗﾝﾄ" />
+                            <xs:enumeration value="ｾﾒﾝﾄｻｲﾛ" />
+                            <xs:enumeration value="骨材貯蔵ﾋﾞﾝ" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>骨材貯蔵ﾋﾞﾝ基礎撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>構造物とりこわし</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>骨材貯蔵ﾋﾞﾝ基礎材料費(基礎砕石)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ３）［砂防］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>骨材貯蔵ﾋﾞﾝ基礎材料費(ｺﾝｸﾘｰﾄ)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ３）［砂防］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>骨材貯蔵ﾋﾞﾝ基礎殻処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="殻運搬" />
+                            <xs:enumeration value="処分費（ｍ３）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>骨材貯蔵ﾋﾞﾝ補修費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>骨材貯蔵ビン（木製）補修［砂防］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>骨材貯蔵ﾋﾞﾝ設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>骨材貯蔵ビン木製、基礎・設置・撤去［砂防］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄﾌﾟﾗﾝﾄ基礎撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>構造物とりこわし</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄﾌﾟﾗﾝﾄ基礎殻処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="殻運搬" />
+                            <xs:enumeration value="処分費（ｍ３）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄﾌﾟﾗﾝﾄ補修費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コンクリートプラント補修［砂防］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄﾌﾟﾗﾝﾄ設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="機械据付撤去" />
+                            <xs:enumeration value="コンクリートプラント基礎・設置・撤去［砂防］" />
+                            <xs:enumeration value="軌条設備設置・撤去［砂防］" />
+                            <xs:enumeration value="機械設備設置・撤去［砂防］" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｾﾒﾝﾄｻｲﾛ基礎撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>構造物とりこわし</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｾﾒﾝﾄｻｲﾛ基礎殻処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="殻運搬" />
+                            <xs:enumeration value="処分費（ｍ３）" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｾﾒﾝﾄｻｲﾛ基礎ｺﾝｸﾘｰﾄ</simpleValue>
+                    </baseName>
+                    <value>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="基礎砕石" />
+                            <xs:enumeration value="コンクリート" />
+                            <xs:enumeration value="型枠" />
+                        </xs:restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｾﾒﾝﾄｻｲﾛ設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>セメントサイロ設置・撤去［砂防］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾗﾝﾄ基礎材料費(型枠材)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ２）［砂防］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾗﾝﾄ基礎材料費(基礎砕石)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ３）［砂防］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_養浜_仮設工_コンクリート製造設備工_コンクリートプラント設備(砂防)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾗﾝﾄ基礎材料費(ｺﾝｸﾘｰﾄ)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>材料費（ｍ３）［砂防］</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>

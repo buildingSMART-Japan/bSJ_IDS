@@ -58,7 +58,18 @@
                         <simpleValue>作業区分</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>1_撤去</simpleValue>
+                        <simpleValue>撤去</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_排水構造物撤去工_L形側溝撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>プレキャストＬ形側溝(製品長0.6m/個)</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -102,7 +113,18 @@
                         <simpleValue>作業区分</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>1_撤去</simpleValue>
+                        <simpleValue>撤去</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_排水構造物撤去工_PC管撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ＰＣ管</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -146,7 +168,18 @@
                         <simpleValue>作業区分</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>1_再利用撤去</simpleValue>
+                        <simpleValue>再利用撤去</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_排水構造物撤去工_U型側溝撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>Ｕ型側溝</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -190,7 +223,18 @@
                         <simpleValue>作業区分</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>1_撤去</simpleValue>
+                        <simpleValue>撤去</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_排水構造物撤去工_コルゲートパイプ撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コルゲートパイプ</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -234,7 +278,18 @@
                         <simpleValue>作業区分</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>1_撤去</simpleValue>
+                        <simpleValue>撤去</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_排水構造物撤去工_コルゲートフリューム撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>コルゲートフリューム</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -270,6 +325,17 @@
                         <simpleValue>1470600101_1207900101_1069300102_1590400101_B582600101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_排水構造物撤去工_ヒューム管撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ヒューム管（Ｂ形管）</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_排水構造物撤去工_ヒューム管撤去</simpleValue>
@@ -279,21 +345,21 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_200mm" />
-                            <xs:enumeration value="10_800mm" />
-                            <xs:enumeration value="11_900mm" />
-                            <xs:enumeration value="12_1000mm" />
-                            <xs:enumeration value="13_1100mm" />
-                            <xs:enumeration value="14_1200mm" />
-                            <xs:enumeration value="15_1350mm" />
-                            <xs:enumeration value="2_250mm" />
-                            <xs:enumeration value="3_300mm" />
-                            <xs:enumeration value="4_350mm" />
-                            <xs:enumeration value="5_400mm" />
-                            <xs:enumeration value="6_450mm" />
-                            <xs:enumeration value="7_500mm" />
-                            <xs:enumeration value="8_600mm" />
-                            <xs:enumeration value="9_700mm" />
+                            <xs:enumeration value="200mm" />
+                            <xs:enumeration value="250mm" />
+                            <xs:enumeration value="300mm" />
+                            <xs:enumeration value="350mm" />
+                            <xs:enumeration value="400mm" />
+                            <xs:enumeration value="450mm" />
+                            <xs:enumeration value="500mm" />
+                            <xs:enumeration value="600mm" />
+                            <xs:enumeration value="700mm" />
+                            <xs:enumeration value="800mm" />
+                            <xs:enumeration value="900mm" />
+                            <xs:enumeration value="1000mm" />
+                            <xs:enumeration value="1100mm" />
+                            <xs:enumeration value="1200mm" />
+                            <xs:enumeration value="1350mm" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -346,7 +412,18 @@
                         <simpleValue>作業区分</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>1_撤去</simpleValue>
+                        <simpleValue>撤去</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_排水構造物撤去工_ボックスカルバート撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>ボックスカルバート</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -382,6 +459,17 @@
                         <simpleValue>1470600101_1207900101_1069300102_1590400101_B583400101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_排水構造物撤去工_マンホール撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>プレキャストマンホール</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_排水構造物撤去工_マンホール撤去</simpleValue>
@@ -391,8 +479,8 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_2000Kg/基以下" />
-                            <xs:enumeration value="2_2000Kg/基を超え4000Kg/基以下" />
+                            <xs:enumeration value="2000Kg/基以下" />
+                            <xs:enumeration value="2000Kg/基を超え4000Kg/基以下" />
                         </xs:restriction>
                     </value>
                 </property>
@@ -437,7 +525,18 @@
                         <simpleValue>作業区分</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>1_撤去</simpleValue>
+                        <simpleValue>撤去</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_排水構造物撤去工_暗渠排水管撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>暗渠排水管</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -481,7 +580,18 @@
                         <simpleValue>作業区分</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>1_撤去</simpleValue>
+                        <simpleValue>撤去</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_排水構造物撤去工_管(函)渠型側溝撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>管（函）渠型側溝</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -515,6 +625,17 @@
                     </baseName>
                     <value>
                         <simpleValue>1470600101_1207900101_1069300102_1590400101_1583700101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_排水構造物撤去工_蓋版撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>蓋版</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -566,7 +687,18 @@
                         <simpleValue>作業区分</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>1_撤去</simpleValue>
+                        <simpleValue>撤去</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_排水構造物撤去工_鉄筋コンクリート台付管撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>鉄筋コンクリート台付管</simpleValue>
                     </value>
                 </property>
             </requirements>
@@ -602,6 +734,17 @@
                         <simpleValue>1470600101_1207900101_1069300102_1590400101_B583100101</simpleValue>
                     </value>
                 </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_排水構造物撤去工_集水桝撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>プレキャスト集水桝</simpleValue>
+                    </value>
+                </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
                         <simpleValue>数量情報_202304_01_海岸整備_堤防・護岸_構造物撤去工_排水構造物撤去工_集水桝撤去</simpleValue>
@@ -611,15 +754,15 @@
                     </baseName>
                     <value>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="1_50kg以上80kg以下" />
-                            <xs:enumeration value="2_80kgを超え200kg以下" />
-                            <xs:enumeration value="3_200kgを超え400kg以下" />
-                            <xs:enumeration value="4_400kgを超え600kg以下" />
-                            <xs:enumeration value="5_600kgを超え800kg以下" />
-                            <xs:enumeration value="6_800kgを超え1200kg以下" />
-                            <xs:enumeration value="7_1200kgを超え1600kg以下" />
-                            <xs:enumeration value="8_1600kgを超え2200kg以下" />
-                            <xs:enumeration value="9_2200kgを超え2800kg以下" />
+                            <xs:enumeration value="50kg以上80kg以下" />
+                            <xs:enumeration value="80kgを超え200kg以下" />
+                            <xs:enumeration value="200kgを超え400kg以下" />
+                            <xs:enumeration value="400kgを超え600kg以下" />
+                            <xs:enumeration value="600kgを超え800kg以下" />
+                            <xs:enumeration value="800kgを超え1200kg以下" />
+                            <xs:enumeration value="1200kgを超え1600kg以下" />
+                            <xs:enumeration value="1600kgを超え2200kg以下" />
+                            <xs:enumeration value="2200kgを超え2800kg以下" />
                         </xs:restriction>
                     </value>
                 </property>
