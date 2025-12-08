@@ -17,7 +17,7 @@ bSDDの仕様との適合のため、BIM/CIMポータルの積算用属性情報
     Civil 3D
     Revit</description>
         <author>openbim-help@building-smart.or.jp</author>
-        <date>2025-07-01</date>
+        <date>2025-12-08</date>
         <purpose>BIM/CIM積算のための属性情報を設定します。</purpose>
         <milestone>詳細設計</milestone>
     </info>
