@@ -1,0 +1,929 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>1.0</version>
+        <description>令和5年度対応の積算用属性情報（properties_202304_01.xlsx）に準拠します。
+bSDDの仕様との適合のため、BIM/CIMポータルの積算用属性情報とは次の値が異なります。
+    属性セット名
+    規格_属性値
+このIDSファイルにない項目、設定が困難な項目等は、設計数量管理機能で設定してしてください。
+このIDSファイルは次のソフトウェアで出力したIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2025-07-01</date>
+        <purpose>BIM/CIM積算のための属性情報を設定します。</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="中詰ｺﾝｸﾘｰﾄ" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>中詰ｺﾝｸﾘｰﾄ</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_中詰ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_中詰ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>中詰ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_中詰コンクリート打設</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_中詰ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1519400101_1315300101_1053300901_B051005201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_中詰ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_21-8-25(20)(普通)" />
+                            <enumeration value="2_24-8-25(20)(普通)" />
+                            <enumeration value="3_27-8-25(20)(普通)" />
+                            <enumeration value="4_30-8-25(20)(普通)" />
+                            <enumeration value="5_40-8-25(20)(普通)" />
+                            <enumeration value="6_18-8-40(普通)" />
+                            <enumeration value="7_19.5-8-40(普通)" />
+                            <enumeration value="8_21-8-40(普通)" />
+                            <enumeration value="9_21-12-40(普通)" />
+                            <enumeration value="10_22.5-8-40(普通)" />
+                            <enumeration value="11_24-8-40(普通)" />
+                            <enumeration value="12_4.5-2.5-40(普通)" />
+                            <enumeration value="13_21-8-25(20)(高炉)" />
+                            <enumeration value="14_24-8-25(20)(高炉)" />
+                            <enumeration value="15_19.5-5-40(高炉)" />
+                            <enumeration value="16_19.5-8-40(高炉)" />
+                            <enumeration value="17_18-5-40(高炉)" />
+                            <enumeration value="18_21-5-40(高炉)" />
+                            <enumeration value="19_18-8-40(高炉)" />
+                            <enumeration value="20_21-8-40(高炉)" />
+                            <enumeration value="21_24-8-40(高炉)" />
+                            <enumeration value="22_21-12-40(高炉)" />
+                            <enumeration value="23_40-8-25(早強)" />
+                            <enumeration value="24_21-8-25(早強)" />
+                            <enumeration value="25_24-8-25(早強)" />
+                            <enumeration value="26_18-8-25(高炉)" />
+                            <enumeration value="27_21-5-80(高炉)" />
+                            <enumeration value="28_18-3-40(高炉)" />
+                            <enumeration value="29_21-3-40(高炉)" />
+                            <enumeration value="30_各種" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="基礎材" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>基礎材</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_基礎材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_基礎材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1519400101_1315300101_1053300901_B040400201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_基礎材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎材規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｸﾗｯｼｬﾗﾝ40～0" />
+                            <enumeration value="2_ｸﾗｯｼｬﾗﾝ30～0" />
+                            <enumeration value="3_ｸﾗｯｼｬﾗﾝ20～0" />
+                            <enumeration value="4_高炉ｽﾗｸﾞCS-40" />
+                            <enumeration value="5_高炉ｽﾗｸﾞMS-25" />
+                            <enumeration value="6_高炉ｽﾗｸﾞHMS-25" />
+                            <enumeration value="7_ｸﾗｯｼｬﾗﾝ80～0" />
+                            <enumeration value="8_再生ｸﾗｯｼｬﾗﾝ40～0" />
+                            <enumeration value="9_再生ｸﾗｯｼｬﾗﾝ80～0" />
+                            <enumeration value="10_砕石(各種)" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_基礎材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎砕石費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_基礎砕石</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_基礎材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>敷厚</simpleValue>
+                    </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="現場打基礎ｺﾝｸﾘｰﾄ" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>現場打基礎ｺﾝｸﾘｰﾄ</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_現場打基礎ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_現場打基礎ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1519400101_1315300101_1053300901_B315800101</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_現場打基礎ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>底幅</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_現場打基礎ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>高さ</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_現場打基礎ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_18-8-25(普通)" />
+                            <enumeration value="2_18-8-40(普通)" />
+                            <enumeration value="3_18-8-25(高炉)" />
+                            <enumeration value="4_18-8-40(高炉)" />
+                            <enumeration value="5_生ｺﾝｸﾘｰﾄ各種" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_現場打基礎ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_現場打基礎コンクリート</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="現場打天端ｺﾝｸﾘｰﾄ" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>現場打天端ｺﾝｸﾘｰﾄ</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_現場打天端ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_現場打天端ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1519400101_1315300101_1053300901_B053800301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_現場打天端ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>現場打天端ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_現場打天端コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_現場打天端ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_18-8-25(普通)" />
+                            <enumeration value="2_18-8-40(普通)" />
+                            <enumeration value="3_18-8-25(高炉)" />
+                            <enumeration value="4_18-8-40(高炉)" />
+                            <enumeration value="5_生ｺﾝｸﾘｰﾄ各種" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="現場打小口止ｺﾝｸﾘｰﾄ" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>現場打小口止ｺﾝｸﾘｰﾄ</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_現場打小口止ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_現場打小口止ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1519400101_1315300101_1053300901_B611000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_現場打小口止ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>現場打小口止ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_現場打小口止コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_現場打小口止ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_18-8-25(普通)" />
+                            <enumeration value="2_18-8-40(普通)" />
+                            <enumeration value="3_18-8-25(高炉)" />
+                            <enumeration value="4_18-8-40(高炉)" />
+                            <enumeration value="5_生ｺﾝｸﾘｰﾄ各種" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="現場打横帯(隔壁)ｺﾝｸﾘｰﾄ" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>現場打横帯(隔壁)ｺﾝｸﾘｰﾄ</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_現場打横帯(隔壁)ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_現場打横帯(隔壁)ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1519400101_1315300101_1053300901_B612000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_現場打横帯(隔壁)ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>現場打横帯(隔壁)ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_現場打横帯（隔壁）コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_現場打横帯(隔壁)ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_18-8-25(普通)" />
+                            <enumeration value="2_18-8-40(普通)" />
+                            <enumeration value="3_18-8-25(高炉)" />
+                            <enumeration value="4_18-8-40(高炉)" />
+                            <enumeration value="5_生ｺﾝｸﾘｰﾄ各種" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="目地板" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>目地板</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1519400101_1315300101_1053300901_B601700101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地板の種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_瀝青質目地板ｔ=10" />
+                            <enumeration value="2_瀝青繊維質目地板t=10" />
+                            <enumeration value="3_樹脂発泡体(15倍発泡)t=10" />
+                            <enumeration value="4_樹脂発泡体(30倍発泡)t=10" />
+                            <enumeration value="5_ｺﾞﾑ発泡体t=10" />
+                            <enumeration value="6_発泡ｽﾁﾛｰﾙt=10" />
+                            <enumeration value="7_瀝青質目地板ｔ=20" />
+                            <enumeration value="8_瀝青繊維質目地板t=20" />
+                            <enumeration value="9_樹脂発泡体(15倍発泡)t=20" />
+                            <enumeration value="10_樹脂発泡体(30倍発泡)t=20" />
+                            <enumeration value="11_ｺﾞﾑ発泡体t=20" />
+                            <enumeration value="12_発泡ｽﾁﾛｰﾙt=20" />
+                            <enumeration value="13_各種" />
+                            <enumeration value="（入力してください）" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地板厚さ</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_厚10mm" />
+                            <enumeration value="2_厚20mm" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_目地板</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="連節ﾌﾞﾛｯｸ張" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>連節ﾌﾞﾛｯｸ張</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_連節ﾌﾞﾛｯｸ張</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_連節ﾌﾞﾛｯｸ張</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1519400101_1315300101_1053300901_B577000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_連節ﾌﾞﾛｯｸ張</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>連節ﾌﾞﾛｯｸ張費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_連節ブロック張</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_連節ﾌﾞﾛｯｸ張</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ規格</simpleValue>
+                    </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ｼｰﾙ材" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ｼｰﾙ材</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ｼｰﾙ材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ｼｰﾙ材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1519400101_1315300101_1053300901_B616000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ｼｰﾙ材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼｰﾙ材設置(材料費)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_シール材（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ｼｰﾙ材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼｰﾙ材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_シール材</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ﾌﾟﾚｷｬｽﾄ基礎ﾌﾞﾛｯｸ" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ基礎ﾌﾞﾛｯｸ</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ基礎ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ基礎ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1519400101_1315300101_1053300901_B051000301</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ基礎ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>底幅</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ基礎ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>高さ</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ基礎ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ基礎ﾌﾞﾛｯｸ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_ﾌﾟﾚｷｬｽﾄ基礎ﾌﾞﾛｯｸ</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ基礎ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ基礎ﾌﾞﾛｯｸ（材料費）</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_ﾌﾟﾚｷｬｽﾄ基礎ﾌﾞﾛｯｸ（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ基礎ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ材規格（型）</simpleValue>
+                    </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ﾌﾟﾚｷｬｽﾄ小口止ﾌﾞﾛｯｸ" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ小口止ﾌﾞﾛｯｸ</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ小口止ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ小口止ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1519400101_1315300101_1053300901_B613000101</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ小口止ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>幅</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ小口止ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>高さ</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ小口止ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ小口止ﾌﾞﾛｯｸ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_プレキャスト小口止ブロック</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ小口止ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ小口止ﾌﾞﾛｯｸ（材料費）</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_プレキャスト小口止ブロック（材料費）</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ﾌﾟﾚｷｬｽﾄ巻止ﾌﾞﾛｯｸ" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ巻止ﾌﾞﾛｯｸ</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ巻止ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ巻止ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1519400101_1315300101_1053300901_B615000101</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ巻止ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>幅</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ巻止ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>高さ</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ巻止ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ巻止ﾌﾞﾛｯｸ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_プレキャスト巻止ブロック</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ巻止ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ巻止ﾌﾞﾛｯｸ（材料費）</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_プレキャスト巻止ブロック（材料費）</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ﾌﾟﾚｷｬｽﾄ横帯(隔壁)ﾌﾞﾛｯｸ" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ横帯(隔壁)ﾌﾞﾛｯｸ</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ横帯(隔壁)ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ横帯(隔壁)ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1519400101_1315300101_1053300901_B614000101</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ横帯(隔壁)ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>幅</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ横帯(隔壁)ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>高さ</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ横帯(隔壁)ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ横帯(隔壁)ﾌﾞﾛｯｸ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_プレキャスト横帯（隔壁）ブロック</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路維持_石･ﾌﾞﾛｯｸ積(張)工_ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ工(連節ﾌﾞﾛｯｸ張)_ﾌﾟﾚｷｬｽﾄ横帯(隔壁)ﾌﾞﾛｯｸ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ横帯(隔壁)ﾌﾞﾛｯｸ（材料費）</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_プレキャスト横帯（隔壁）ブロック（材料費）</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>

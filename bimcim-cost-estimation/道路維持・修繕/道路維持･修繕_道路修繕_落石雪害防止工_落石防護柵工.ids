@@ -1,0 +1,919 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>1.0</version>
+        <description>令和5年度対応の積算用属性情報（properties_202304_01.xlsx）に準拠します。
+bSDDの仕様との適合のため、BIM/CIMポータルの積算用属性情報とは次の値が異なります。
+    属性セット名
+    規格_属性値
+このIDSファイルにない項目、設定が困難な項目等は、設計数量管理機能で設定してしてください。
+このIDSファイルは次のソフトウェアで出力したIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2025-07-01</date>
+        <purpose>BIM/CIM積算のための属性情報を設定します。</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="処分費" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>処分費</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_処分費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_処分費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1324500101_1325200101_B040805101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_処分費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>堆積塵芥処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_処分費（ｍ３）" />
+                            <enumeration value="2_処分費（ｔ）" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="型枠" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1324500101_1325200101_B040800102</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>化粧型枠材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_化粧型枠（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠の種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_一般型枠" />
+                            <enumeration value="2_化粧型枠" />
+                            <enumeration value="3_撤去しない埋設型枠" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_型枠</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="基礎材" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>基礎材</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_基礎材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_基礎材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1324500101_1325200101_B040400201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_基礎材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎材規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｸﾗｯｼｬﾗﾝ40～0" />
+                            <enumeration value="2_ｸﾗｯｼｬﾗﾝ30～0" />
+                            <enumeration value="3_ｸﾗｯｼｬﾗﾝ20～0" />
+                            <enumeration value="4_高炉ｽﾗｸﾞCS-40" />
+                            <enumeration value="5_高炉ｽﾗｸﾞMS-25" />
+                            <enumeration value="6_高炉ｽﾗｸﾞHMS-25" />
+                            <enumeration value="7_ｸﾗｯｼｬﾗﾝ80～0" />
+                            <enumeration value="8_再生ｸﾗｯｼｬﾗﾝ40～0" />
+                            <enumeration value="9_再生ｸﾗｯｼｬﾗﾝ80～0" />
+                            <enumeration value="10_砕石(各種)" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_基礎材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎砕石費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_基礎砕石</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_基礎材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>敷厚</simpleValue>
+                    </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="支柱" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>支柱</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1324500101_1325200101_1506900401</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支柱型式</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>施工区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_中間支柱" />
+                            <enumeration value="2_端末支柱" />
+                            <enumeration value="3_中間支柱(特殊品)" />
+                            <enumeration value="（入力してください）" />
+                        </restriction>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>杭径</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>杭長(設計長)</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>落石防護柵設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_落石防護柵（支柱設置工）" />
+                            <enumeration value="1_場所打杭工(ダウンザホールハンマ工)" />
+                        </restriction>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>規格・仕様</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>規格･仕様</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_柵高1.50m ﾒｯｷ" />
+                            <enumeration value="2_柵高2.00m ﾒｯｷ" />
+                            <enumeration value="3_柵高2.50m ﾒｯｷ" />
+                            <enumeration value="4_柵高3.00m ﾒｯｷ" />
+                            <enumeration value="5_柵高3.50m ﾒｯｷ" />
+                            <enumeration value="6_柵高4.00m ﾒｯｷ" />
+                            <enumeration value="7_柵高1.50m ﾒｯｷ" />
+                            <enumeration value="8_柵高2.00m ﾒｯｷ" />
+                            <enumeration value="9_柵高2.50m ﾒｯｷ" />
+                            <enumeration value="10_柵高3.00m ﾒｯｷ" />
+                            <enumeration value="11_柵高3.50m ﾒｯｷ" />
+                            <enumeration value="12_柵高4.00m ﾒｯｷ" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防護柵種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_落石防護柵" />
+                            <enumeration value="2_高エネルギー吸収柵" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="目地板" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>目地板</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1324500101_1325200101_B601700101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地板の種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_瀝青質目地板ｔ=10" />
+                            <enumeration value="2_瀝青繊維質目地板t=10" />
+                            <enumeration value="3_樹脂発泡体(15倍発泡)t=10" />
+                            <enumeration value="4_樹脂発泡体(30倍発泡)t=10" />
+                            <enumeration value="5_ｺﾞﾑ発泡体t=10" />
+                            <enumeration value="6_発泡ｽﾁﾛｰﾙt=10" />
+                            <enumeration value="7_瀝青質目地板ｔ=20" />
+                            <enumeration value="8_瀝青繊維質目地板t=20" />
+                            <enumeration value="9_樹脂発泡体(15倍発泡)t=20" />
+                            <enumeration value="10_樹脂発泡体(30倍発泡)t=20" />
+                            <enumeration value="11_ｺﾞﾑ発泡体t=20" />
+                            <enumeration value="12_発泡ｽﾁﾛｰﾙt=20" />
+                            <enumeration value="13_各種" />
+                            <enumeration value="（入力してください）" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地板厚さ</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_厚10mm" />
+                            <enumeration value="2_厚20mm" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地板設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_目地板</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="足場" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>足場</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1324500101_1325200101_1005500101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>安全ネットの有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_安全ネット必要" />
+                            <enumeration value="2_安全ネット不要" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_足場工</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="鉄筋" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>鉄筋</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1324500101_1325200101_1040900101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋材料規格･径</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_SD295 D10" />
+                            <enumeration value="2_SD295 D13" />
+                            <enumeration value="3_SD295 D16" />
+                            <enumeration value="4_SD345 D10" />
+                            <enumeration value="5_SD345 D13" />
+                            <enumeration value="6_SD345 D16～25" />
+                            <enumeration value="7_SD345 D29～32" />
+                            <enumeration value="8_SD345 D35" />
+                            <enumeration value="9_SD345 D38" />
+                            <enumeration value="10_SD345 D41" />
+                            <enumeration value="11_SD345 D51" />
+                            <enumeration value="12_SR235 φ9" />
+                            <enumeration value="13_SR235 φ13" />
+                            <enumeration value="14_SR235 φ16～25" />
+                            <enumeration value="15_SD390 D25" />
+                            <enumeration value="16_SD390 D29" />
+                            <enumeration value="17_SD390 D32" />
+                            <enumeration value="18_SD390 D35" />
+                            <enumeration value="19_SD390 D38" />
+                            <enumeration value="20_SD390 D41" />
+                            <enumeration value="21_SD490 D35" />
+                            <enumeration value="22_SD490 D38" />
+                            <enumeration value="23_SD490 D41" />
+                            <enumeration value="24_SD345(ねじ節鉄筋) D13" />
+                            <enumeration value="25_SD345(ねじ節鉄筋) D16" />
+                            <enumeration value="26_SD345(ねじ節鉄筋) D19" />
+                            <enumeration value="27_SD345(ねじ節鉄筋) D22" />
+                            <enumeration value="28_SD345(ねじ節鉄筋) D25" />
+                            <enumeration value="29_SD345(ねじ節鉄筋) D29" />
+                            <enumeration value="30_SD345(ねじ節鉄筋) D32" />
+                            <enumeration value="31_SD345(ねじ節鉄筋) D35" />
+                            <enumeration value="32_SD345(ねじ節鉄筋) D38" />
+                            <enumeration value="33_SD345(ねじ節鉄筋) D41" />
+                            <enumeration value="34_SD345(ねじ節鉄筋) D51" />
+                            <enumeration value="35_SD390(ねじ節鉄筋) D25" />
+                            <enumeration value="36_SD390(ねじ節鉄筋) D29" />
+                            <enumeration value="37_SD390(ねじ節鉄筋) D32" />
+                            <enumeration value="38_SD390(ねじ節鉄筋) D35" />
+                            <enumeration value="39_SD390(ねじ節鉄筋) D38" />
+                            <enumeration value="40_SD390(ねじ節鉄筋) D41" />
+                            <enumeration value="41_SD490(ねじ節鉄筋) D35" />
+                            <enumeration value="42_SD490(ねじ節鉄筋) D38" />
+                            <enumeration value="43_SD490(ねじ節鉄筋) D41" />
+                            <enumeration value="44_各種" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_鉄筋工［市場単価］" />
+                            <enumeration value="2_ガス圧接工（手動・自動）［市場単価］" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ｺﾝｸﾘｰﾄ" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ｺﾝｸﾘｰﾄ</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1324500101_1325200101_B041102601</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>擁壁の平均高さ</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>擁壁の種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_小型擁壁" />
+                            <enumeration value="2_重力式･もたれ式擁壁" />
+                            <enumeration value="3_逆Ｔ型･Ｌ型擁壁" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>養生費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_一般養生" />
+                            <enumeration value="2_特殊養生(練炭･ｼﾞｪｯﾄﾋｰﾀ)" />
+                            <enumeration value="3_仮囲い内ｼﾞｪｯﾄﾋｰﾀ養生" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ夜間割増の有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｺﾝｸﾘｰﾄ夜間割増無" />
+                            <enumeration value="2_ｺﾝｸﾘｰﾄ夜間割増有" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_ペーラインコンクリート（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_21-8-25(20)(普通)" />
+                            <enumeration value="2_21-12-25(20)(普通)" />
+                            <enumeration value="3_24-8-25(20)(普通)" />
+                            <enumeration value="4_24-12-25(20)(普通)" />
+                            <enumeration value="5_27-8-25(20)(普通)" />
+                            <enumeration value="6_27-12-25(20)(普通)" />
+                            <enumeration value="7_18-8-40(普通)" />
+                            <enumeration value="8_18-12-40(普通)" />
+                            <enumeration value="9_21-8-40(普通)" />
+                            <enumeration value="10_21-12-40(普通)" />
+                            <enumeration value="11_24-8-40(普通)" />
+                            <enumeration value="12_24-12-40(普通)" />
+                            <enumeration value="13_21-8-25(20)(高炉)" />
+                            <enumeration value="14_21-12-25(20)(高炉)" />
+                            <enumeration value="15_24-8-25(20)(高炉)" />
+                            <enumeration value="16_24-12-25(20)(高炉)" />
+                            <enumeration value="17_18-8-40(高炉)" />
+                            <enumeration value="18_18-12-40(高炉)" />
+                            <enumeration value="19_21-8-40(高炉)" />
+                            <enumeration value="20_21-12-40(高炉)" />
+                            <enumeration value="21_24-8-40(高炉)" />
+                            <enumeration value="22_24-12-40(高炉)" />
+                            <enumeration value="23_21-8-25(早強)" />
+                            <enumeration value="24_21-12-25(早強)" />
+                            <enumeration value="25_24-8-25(早強)" />
+                            <enumeration value="26_24-12-25(早強)" />
+                            <enumeration value="27_18-8-25(高炉)" />
+                            <enumeration value="28_18-12-25(高炉)" />
+                            <enumeration value="29_各種" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_コンクリート（場所打擁壁）</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ｼｰﾙ材" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ｼｰﾙ材</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ｼｰﾙ材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ｼｰﾙ材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1324500101_1325200101_B616000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ｼｰﾙ材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼｰﾙ材設置(材料費)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_シール材（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ｼｰﾙ材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼｰﾙ材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_シール材</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ｽﾃｰﾛｰﾌﾟ" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ｽﾃｰﾛｰﾌﾟ</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ｽﾃｰﾛｰﾌﾟ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ｽﾃｰﾛｰﾌﾟ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1324500101_1325200101_1578900101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ｽﾃｰﾛｰﾌﾟ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>落石防護柵設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_ステーロープ設置［市場単価］</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ﾛｰﾌﾟ･金網" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ﾛｰﾌﾟ･金網</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ﾛｰﾌﾟ･金網</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ﾛｰﾌﾟ･金網</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1324500101_1325200101_1181500201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ﾛｰﾌﾟ･金網</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>厚メッキの有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_厚メッキ無" />
+                            <enumeration value="2_厚メッキ有" />
+                        </restriction>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ﾛｰﾌﾟ･金網</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>柵高</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ﾛｰﾌﾟ･金網</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>落石防護柵設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_落石防護柵（ロープ・金網設置工）" />
+                            <enumeration value="2_耐雪型落石防護柵（ロープ・金網設置工）" />
+                        </restriction>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持･修繕_道路修繕_落石雪害防止工_落石防護柵工_ﾛｰﾌﾟ･金網</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>規格・仕様</simpleValue>
+                    </baseName>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>
