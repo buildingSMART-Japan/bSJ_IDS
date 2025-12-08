@@ -1,0 +1,2080 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>1.0</version>
+        <description>令和5年度対応の積算用属性情報（properties_202304_01.xlsx）に準拠します。
+bSDDの仕様との適合のため、BIM/CIMポータルの積算用属性情報とは次の値が異なります。
+    属性セット名
+    規格_属性値
+このIDSファイルにない項目、設定が困難な項目等は、設計数量管理機能で設定してしてください。
+このIDSファイルは次のソフトウェアで出力したIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2025-07-01</date>
+        <purpose>BIM/CIM積算のための属性情報を設定します。</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="人力積込" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>人力積込</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_人力積込</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_人力積込</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>人力積込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_人力積込</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_人力積込</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B000707001</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_人力積込</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業内容</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_人力積込</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土質</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_土砂" />
+                            <enumeration value="2_岩塊・玉石" />
+                            <enumeration value="3_軟岩" />
+                            <enumeration value="4_中硬岩" />
+                            <enumeration value="5_硬岩" />
+                            <enumeration value="6_ｱｽﾌｧﾙﾄ塊" />
+                            <enumeration value="7_ｺﾝｸﾘｰﾄ塊" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="人力運搬" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>人力運搬</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_人力運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_人力運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>人力運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_人力運搬(積込み～運搬～取卸し)" />
+                            <enumeration value="2_人力運搬(運搬～取卸し)" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_人力運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B000706701</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_人力運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>換算距離</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_20ｍ以下" />
+                            <enumeration value="2_40ｍ以下" />
+                            <enumeration value="3_60ｍ以下" />
+                            <enumeration value="4_80ｍ以下" />
+                            <enumeration value="5_100ｍ以下" />
+                            <enumeration value="6_120ｍ以下" />
+                            <enumeration value="7_140ｍ以下" />
+                            <enumeration value="8_160ｍ以下" />
+                            <enumeration value="9_180ｍ以下" />
+                            <enumeration value="10_200ｍ以下" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="仮橋上部" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>仮橋上部</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮橋上部</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮橋上部</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>上部工撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_上部工架設・撤去工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮橋上部</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>上部工架設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_上部工架設・撤去工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮橋上部</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>上部材材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_材料費（ｔ）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮橋上部</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>上部材賃料</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_部材賃料" />
+                            <enumeration value="2_Ｈ形鋼杭賃料" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮橋上部</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_1008400103</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮橋上部</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_架設" />
+                            <enumeration value="2_撤去" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="仮橋ｺﾝｸﾘｰﾄ基礎" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>仮橋ｺﾝｸﾘｰﾄ基礎</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮橋ｺﾝｸﾘｰﾄ基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮橋ｺﾝｸﾘｰﾄ基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B008100102</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮橋ｺﾝｸﾘｰﾄ基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_型枠</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮橋ｺﾝｸﾘｰﾄ基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_基礎砕石</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮橋ｺﾝｸﾘｰﾄ基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>幅</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮橋ｺﾝｸﾘｰﾄ基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>打設工法</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｺﾝｸﾘｰﾄﾎﾟﾝﾌﾟ車打設" />
+                            <enumeration value="2_ｸﾚｰﾝ車打設" />
+                            <enumeration value="3_ﾊﾞｯｸﾎｳ(ｸﾚｰﾝ機能付)打設" />
+                            <enumeration value="4_人力打設" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮橋ｺﾝｸﾘｰﾄ基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>構造物種別</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_無筋・鉄筋構造物" />
+                            <enumeration value="2_小型構造物" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮橋ｺﾝｸﾘｰﾄ基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_鉄筋工［市場単価］</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮橋ｺﾝｸﾘｰﾄ基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>長さ</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮橋ｺﾝｸﾘｰﾄ基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>高さ</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮橋ｺﾝｸﾘｰﾄ基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_21-8-25(20)(普通)" />
+                            <enumeration value="2_21-12-25(20)(普通)" />
+                            <enumeration value="3_24-8-25(20)(普通)" />
+                            <enumeration value="4_24-12-25(20)(普通)" />
+                            <enumeration value="5_27-8-25(20)(普通)" />
+                            <enumeration value="6_27-12-25(20)(普通)" />
+                            <enumeration value="7_30-8-25(20)(普通)" />
+                            <enumeration value="8_30-12-25(20)(普通)" />
+                            <enumeration value="9_40-8-25(20)(普通)" />
+                            <enumeration value="10_40-12-25(20)(普通)" />
+                            <enumeration value="11_18-8-40(普通)" />
+                            <enumeration value="12_18-12-40(普通)" />
+                            <enumeration value="13_19.5-8-40(普通)" />
+                            <enumeration value="14_21-8-40(普通)" />
+                            <enumeration value="15_21-12-40(普通)" />
+                            <enumeration value="16_22.5-8-40(普通)" />
+                            <enumeration value="17_24-8-40(普通)" />
+                            <enumeration value="18_24-12-40(普通)" />
+                            <enumeration value="19_4.5-2.5-40(普通)" />
+                            <enumeration value="20_21-8-25(20)(高炉)" />
+                            <enumeration value="21_21-12-25(20)(高炉)" />
+                            <enumeration value="22_24-8-25(20)(高炉)" />
+                            <enumeration value="23_24-12-25(20)(高炉)" />
+                            <enumeration value="24_19.5-5-40(高炉)" />
+                            <enumeration value="25_19.5-8-40(高炉)" />
+                            <enumeration value="26_19.5-12-40(高炉)" />
+                            <enumeration value="27_18-5-40(高炉)" />
+                            <enumeration value="28_21-5-40(高炉)" />
+                            <enumeration value="29_18-8-40(高炉)" />
+                            <enumeration value="30_18-12-40(高炉)" />
+                            <enumeration value="31_21-8-40(高炉)" />
+                            <enumeration value="32_24-8-40(高炉)" />
+                            <enumeration value="33_24-12-40(高炉)" />
+                            <enumeration value="34_21-12-40(高炉)" />
+                            <enumeration value="35_40-8-25(早強)" />
+                            <enumeration value="36_40-12-25(早強)" />
+                            <enumeration value="37_21-8-25(早強)" />
+                            <enumeration value="38_21-12-25(早強)" />
+                            <enumeration value="39_24-8-25(早強)" />
+                            <enumeration value="40_24-12-25(早強)" />
+                            <enumeration value="41_18-8-25(高炉)" />
+                            <enumeration value="42_18-12-25(高炉)" />
+                            <enumeration value="43_21-5-80(高炉)" />
+                            <enumeration value="44_18-3-40(高炉)" />
+                            <enumeration value="45_21-3-40(高炉)" />
+                            <enumeration value="46_各種" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮橋ｺﾝｸﾘｰﾄ基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_コンクリート</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="仮設高欄" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>仮設高欄</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮設高欄</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮設高欄</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_1008800103</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮設高欄</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_設置" />
+                            <enumeration value="2_撤去" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮設高欄</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>形式区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｶﾞｰﾄﾞﾚｰﾙ型" />
+                            <enumeration value="2_単管ﾊﾟｲﾌﾟ型" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮設高欄</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>高欄撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_高欄設置・撤去工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮設高欄</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>高欄設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_高欄設置・撤去工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_仮設高欄</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>高欄賃料</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_高欄賃料［仮橋・仮桟橋］</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="土材料" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>土材料</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_土材料</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_土材料</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B013305301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_土材料</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土砂購入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_土材料</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="土砂等運搬" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>土砂等運搬</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_土砂等運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_土砂等運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B000705201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_土砂等運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土砂等発生現場</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_標準" />
+                            <enumeration value="2_小規模" />
+                            <enumeration value="3_現場制約あり" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_土砂等運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土質</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_土砂(岩塊･玉石混り土含む)" />
+                            <enumeration value="2_軟岩" />
+                            <enumeration value="3_硬岩" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_土砂等運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_土砂等運搬" />
+                            <enumeration value="2_ダンプトラック運搬（１０ｔ積級）［共同溝工］" />
+                            <enumeration value="3_土砂運搬工（不整地運搬車による運搬）" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="埋戻し" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>埋戻し</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_埋戻し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_埋戻し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B004100301</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_埋戻し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土質</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_埋戻し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土質区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_土砂" />
+                            <enumeration value="2_岩塊・玉石" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_埋戻し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>埋戻し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_埋戻し</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_埋戻し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>施工方法</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_最小埋戻幅4m以上" />
+                            <enumeration value="2_最大埋戻幅4m以上" />
+                            <enumeration value="3_最大埋戻幅1m以上4m未満" />
+                            <enumeration value="4_最大埋戻幅1m未満" />
+                            <enumeration value="5_上記以外(小規模)" />
+                            <enumeration value="6_現場制約あり" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="基面整正" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>基面整正</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_基面整正</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_基面整正</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B000706501</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_基面整正</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基面整正費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_基面整正</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="床掘り" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>床掘り</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_床掘り</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_床掘り</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B007900201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_床掘り</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土質</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_土砂" />
+                            <enumeration value="2_岩塊･玉石" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_床掘り</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>掘削費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_床掘り</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="床掘り(掘削)" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>床掘り(掘削)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_床掘り(掘削)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_床掘り(掘削)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B000706401</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_床掘り(掘削)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土質</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_土砂" />
+                            <enumeration value="2_岩塊･玉石" />
+                            <enumeration value="3_軟岩" />
+                            <enumeration value="4_硬岩" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_床掘り(掘削)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>掘削</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_掘削</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="押土(ﾙｰｽﾞ)" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>押土(ﾙｰｽﾞ)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_押土(ﾙｰｽﾞ)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_押土(ﾙｰｽﾞ)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B000705501</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_押土(ﾙｰｽﾞ)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土質</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_土砂" />
+                            <enumeration value="2_岩塊･玉石" />
+                            <enumeration value="3_破砕岩" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_押土(ﾙｰｽﾞ)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>集積押土費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_押土（ルーズ）</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="掘削補助機械搬入搬出" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>掘削補助機械搬入搬出</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_掘削補助機械搬入搬出</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_掘削補助機械搬入搬出</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B000706601</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_掘削補助機械搬入搬出</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>掘削補助機械搬入搬出費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_掘削補助機械搬入搬出</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="整地" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>整地</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_整地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_整地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B000705401</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_整地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_残土受入れ地での処理" />
+                            <enumeration value="2_敷均し(ﾙｰｽﾞ)" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_整地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>敷均し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_整地</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="橋脚" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>橋脚</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_橋脚</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_橋脚</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_1008200103</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_橋脚</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>導材･導杭施工の有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_有" />
+                            <enumeration value="2_無" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_橋脚</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>導杭引抜費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_杭橋脚引抜き工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_橋脚</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>導杭打込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_杭橋脚打込み工（杭基礎形式）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_橋脚</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>導枠設置･撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_導枠設置・撤去工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_橋脚</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>杭橋脚引抜費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_杭橋脚引抜き工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_橋脚</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>杭橋脚打込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_杭橋脚打込み工（杭基礎形式）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_橋脚</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>橋脚本体撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_橋脚設置・撤去工（直接基礎形式）" />
+                            <enumeration value="2_杭橋脚設置・撤去工（杭基礎形式）" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_橋脚</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>橋脚本体設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_橋脚設置・撤去工（直接基礎形式）" />
+                            <enumeration value="2_杭橋脚設置・撤去工（杭基礎形式）" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_橋脚</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>橋脚賃料</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_Ｈ形鋼杭賃料" />
+                            <enumeration value="2_橋脚部材賃料" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_橋脚</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>橋脚部材費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_鋼矢板・Ｈ形鋼（埋設）" />
+                            <enumeration value="2_鋼矢板・Ｈ形鋼（一部埋設）" />
+                            <enumeration value="3_鋼矢板・Ｈ形鋼（一部撤去）" />
+                            <enumeration value="4_鋼矢板・Ｈ形鋼（一部または全体を撤去）" />
+                            <enumeration value="5_鋼矢板・Ｈ形鋼（一部または全体を埋設）" />
+                            <enumeration value="6_材料費（ｔ）" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="残土等処分" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>残土等処分</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_残土等処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_残土等処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B002105201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_残土等処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>処分費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_残土等処分" />
+                            <enumeration value="2_処分費（ｔ）" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="殻処分" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>殻処分</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_殻処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_殻処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B003805103</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_殻処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>処分費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_処分費（ｍ３）" />
+                            <enumeration value="2_処分費（ｔ）" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_殻処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>殻種別</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｱｽﾌｧﾙﾄ殻" />
+                            <enumeration value="2_ｺﾝｸﾘｰﾄ殻(無筋)" />
+                            <enumeration value="3_ｺﾝｸﾘｰﾄ殻(鉄筋)" />
+                            <enumeration value="4_ﾓﾙﾀﾙ殻" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="殻運搬" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>殻運搬</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_殻運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_殻運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B003800103</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_殻運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>殻種別</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｺﾝｸﾘｰﾄ(無筋)構造物とりこわし" />
+                            <enumeration value="2_ｺﾝｸﾘｰﾄ(鉄筋)構造物とりこわし" />
+                            <enumeration value="3_舗装版破砕" />
+                            <enumeration value="4_吹付法面とりこわし(ﾓﾙﾀﾙ)" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_殻運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>殻運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_殻運搬</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="現場取卸(鋼管杭)" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>現場取卸(鋼管杭)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_現場取卸(鋼管杭)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_現場取卸(鋼管杭)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B003805201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_現場取卸(鋼管杭)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>現場取卸費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_現場取卸（鋼管杭）</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="積込(ｺﾝｸﾘｰﾄ殻)" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>積込(ｺﾝｸﾘｰﾄ殻)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_積込(ｺﾝｸﾘｰﾄ殻)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_積込(ｺﾝｸﾘｰﾄ殻)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B038905101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_積込(ｺﾝｸﾘｰﾄ殻)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ殻積込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_積込（コンクリート殻）</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="積込(ﾙｰｽﾞ)" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>積込(ﾙｰｽﾞ)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_積込(ﾙｰｽﾞ)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_積込(ﾙｰｽﾞ)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B000705601</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_積込(ﾙｰｽﾞ)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業内容</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_土量50,000m3未満" />
+                            <enumeration value="2_土量50,000m3以上" />
+                            <enumeration value="3_平均施工幅1m以上2m未満" />
+                            <enumeration value="4_小規模(標準)" />
+                            <enumeration value="5_小規模(標準以外)" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_積込(ﾙｰｽﾞ)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>土質</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_土砂" />
+                            <enumeration value="2_岩塊･玉石" />
+                            <enumeration value="3_破砕岩" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_積込(ﾙｰｽﾞ)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>機械積込費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_積込（ルーズ）</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="覆工板設置･撤去(仮桟橋設置撤去工)" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>覆工板設置･撤去(仮桟橋設置撤去工)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_覆工板設置･撤去(仮桟橋設置撤去工)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_覆工板設置･撤去(仮桟橋設置撤去工)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B008605201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_覆工板設置･撤去(仮桟橋設置撤去工)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工板日々取付取外し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_覆工板開閉工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_覆工板設置･撤去(仮桟橋設置撤去工)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工板設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_覆工板設置・撤去［仮設材設置撤去工］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_覆工板設置･撤去(仮桟橋設置撤去工)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工板賃料</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_覆工板賃料</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="覆工板設置･撤去(仮橋・仮桟橋)" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>覆工板設置･撤去(仮橋・仮桟橋)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_覆工板設置･撤去(仮橋・仮桟橋)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_覆工板設置･撤去(仮橋・仮桟橋)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B008605301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_覆工板設置･撤去(仮橋・仮桟橋)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工板日々取付取外し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_覆工板開閉工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_覆工板設置･撤去(仮橋・仮桟橋)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工板設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_覆工板設置・撤去工［仮橋・仮桟橋］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_覆工板設置･撤去(仮橋・仮桟橋)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工板賃料</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_覆工板賃料</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="覆工板設置･撤去(電線共同溝)" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>覆工板設置･撤去(電線共同溝)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_覆工板設置･撤去(電線共同溝)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_覆工板設置･撤去(電線共同溝)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B008605101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_覆工板設置･撤去(電線共同溝)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工板日々取付取外し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_覆工板開閉工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_覆工板設置･撤去(電線共同溝)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工板設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_覆工板設置・撤去［電線共同溝］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_覆工板設置･撤去(電線共同溝)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>覆工板賃料</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_覆工板賃料</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="転石破砕" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>転石破砕</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_転石破砕</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_転石破砕</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B000706201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_転石破砕</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>火薬使用の有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_火薬使用無" />
+                            <enumeration value="2_火薬使用有" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_転石破砕</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>転石破砕費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_転石破砕</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="鋼管杭" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>鋼管杭</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_鋼管杭</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_鋼管杭</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>中詰ｺﾝｸﾘｰﾄ打設費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_鋼管杭</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B052400202</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_鋼管杭</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>導杭打込･引抜費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_バイブロハンマ施工によるＨ形鋼打込み" />
+                            <enumeration value="2_ＷＪ併用バイブロハンマ施工によるＨ形鋼打込み" />
+                            <enumeration value="3_バイブロハンマ施工によるＨ形鋼引抜き" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_鋼管杭</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>導杭賃料</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_Ｈ形鋼杭賃料</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_鋼管杭</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>杭打費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_鋼管・既製コンクリート杭打工［パイルハンマ工］" />
+                            <enumeration value="2_鋼管・既製コンクリート杭打工［中掘工］" />
+                            <enumeration value="3_鋼管ソイルセメント杭工" />
+                            <enumeration value="4_回転杭工" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_鋼管杭</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>杭頭処理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_鋼管杭杭頭処理溶接工" />
+                            <enumeration value="2_ガス切断" />
+                            <enumeration value="3_スクラップ" />
+                            <enumeration value="4_鉄筋工［市場単価］" />
+                        </restriction>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_鋼管杭</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鋼管径(杭径)</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_鋼管杭</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鋼管長さ(杭長)</simpleValue>
+                    </baseName>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="防舷材" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>防舷材</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_防舷材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_防舷材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_1090100101</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_防舷材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料規格</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_防舷材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防舷材撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_防舷材撤去</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_防舷材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防舷材設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_防舷材材料" />
+                            <enumeration value="2_防舷材取付" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ｺﾝｸﾘｰﾄ構造物取壊し" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ｺﾝｸﾘｰﾄ構造物取壊し</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_ｺﾝｸﾘｰﾄ構造物取壊し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_ｺﾝｸﾘｰﾄ構造物取壊し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1501100101_1002500901_1007800201_B038900201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_ｺﾝｸﾘｰﾄ構造物取壊し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>工法区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_機械施工" />
+                            <enumeration value="2_人力施工" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_ｺﾝｸﾘｰﾄ構造物取壊し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>構造物区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_無筋構造物" />
+                            <enumeration value="2_鉄筋構造物" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_河川維持_仮設工_仮橋･仮桟橋工_ｺﾝｸﾘｰﾄ構造物取壊し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ構造物取壊し費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_構造物とりこわし</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>

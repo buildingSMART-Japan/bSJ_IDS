@@ -1,0 +1,393 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>河川維持･修繕_共通仮設_共通仮設費_運搬費</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>1.0</version>
+        <description>令和5年度対応の積算用属性情報（properties_202304_01.xlsx）に準拠します。
+bSDDの仕様との適合のため、BIM/CIMポータルの積算用属性情報とは次の値が異なります。
+    属性セット名
+    規格_属性値
+このIDSファイルにない項目、設定が困難な項目等は、設計数量管理機能で設定してしてください。
+このIDSファイルは次のソフトウェアで出力したIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2025-07-01</date>
+        <purpose>BIM/CIM積算のための属性情報を設定します。</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="交通船" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>交通船</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_交通船</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_交通船</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>交通船費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_間接費（交通船運転）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_交通船</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1119300106_1119400206_1119500601_1298100101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="仮設材運搬費" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>仮設材運搬費</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_仮設材運搬費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_仮設材運搬費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仮設材積込･取卸費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_仮設材等の積込み取卸し費</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_仮設材運搬費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仮設材運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_仮設材等(鋼矢板、Ｈ形鋼、覆工板、敷鉄板等)の運搬</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_仮設材運搬費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1119300106_1119400206_1119500601_1119900101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="作業船等えい航費" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>作業船等えい航費</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_作業船等えい航費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_作業船等えい航費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1119300106_1119400206_1119500601_1297500101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_作業船等えい航費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業船等えい航費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_間接費（回航又はえい航運転費（引船））</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="作業船等回航費" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>作業船等回航費</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_作業船等回航費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_作業船等回航費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1119300106_1119400206_1119500601_1297400101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_作業船等回航費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業船等回航費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_間接費（回航又はえい航運転費（引船））" />
+                            <enumeration value="2_間接費（回航用艤装費）" />
+                            <enumeration value="3_間接費（回航用検査料）" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="建設機械運搬費" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>建設機械運搬費</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_建設機械運搬費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_建設機械運搬費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1119300106_1119400206_1119500601_1119700101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_建設機械運搬費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>貨物自動車による運搬費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_貨物自動車による運搬（１車１回）</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="浚渫船回航費" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>浚渫船回航費</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_浚渫船回航費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_浚渫船回航費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1119300106_1119400206_1119500601_1119600101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_浚渫船回航費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>浚渫船回航費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_浚渫船回航費</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="重建設機械分解組立費" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>重建設機械分解組立費</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_重建設機械分解組立費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_重建設機械分解組立費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1119300106_1119400206_1119500601_1119800101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_重建設機械分解組立費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>重建設機械分解組立費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_重建設機械分解組立</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="重建設機械分解組立輸送費" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>重建設機械分解組立輸送費</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_重建設機械分解組立輸送費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_重建設機械分解組立輸送費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472300101_1119300106_1119400206_1119500601_1534600101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川維持･修繕_共通仮設_共通仮設費_運搬費_重建設機械分解組立輸送費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>重建設機械分解組立輸送費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_重建設機械分解組立輸送</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>
