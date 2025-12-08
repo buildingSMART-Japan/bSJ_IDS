@@ -1,10 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
     <info>
         <title>河川改修_水門_護床工_かご工</title>
         <copyright>buildingSMART Japan 土木委員会</copyright>
         <version>1.0</version>
         <description>令和5年度対応の積算用属性情報（properties_202304_01.xlsx）に準拠します。
+bSDDの仕様との適合のため、BIM/CIMポータルの積算用属性情報とは次の値が異なります。
+    属性セット名
+    規格_属性値
 このIDSファイルにない項目、設定が困難な項目等は、設計数量管理機能で設定してしてください。
 このIDSファイルは次のソフトウェアで出力したIFCファイルへの適用を想定しています。
     V-nasClair
@@ -19,19 +22,19 @@
         <milestone>詳細設計</milestone>
     </info>
     <specifications>
-        <specification name="かごマット(スロープ型)" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
+        <specification name="かごﾏｯﾄ(多段積型)" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
                 <attribute>
                     <name>
                         <simpleValue>ObjectType</simpleValue>
                     </name>
                     <value>
-                        <simpleValue>かごマット(スロープ型)</simpleValue>
+                        <simpleValue>かごﾏｯﾄ(多段積型)</simpleValue>
                     </value>
                 </attribute>
                 <property dataType="IFCREAL">
                     <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごマット(スロープ型)</simpleValue>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごﾏｯﾄ(多段積型)</simpleValue>
                     </propertySet>
                     <baseName>
                         <simpleValue>数量</simpleValue>
@@ -41,122 +44,21 @@
             <requirements>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごマット(スロープ型)</simpleValue>
-                    </propertySet>
-                    <baseName>
-                        <simpleValue>かご厚さ</simpleValue>
-                    </baseName>
-                    <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="t=30cm" />
-                            <xs:enumeration value="t=50cm" />
-                        </xs:restriction>
-                    </value>
-                </property>
-                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
-                    <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごマット(スロープ型)</simpleValue>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごﾏｯﾄ(多段積型)</simpleValue>
                     </propertySet>
                     <baseName>
                         <simpleValue>かご本体材質</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="亜鉛ｱﾙﾐﾒｯｷ" />
-                            <xs:enumeration value="各種" />
-                        </xs:restriction>
-                    </value>
-                </property>
-                <property dataType="IFCTEXT" cardinality="required">
-                    <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごマット(スロープ型)</simpleValue>
-                    </propertySet>
-                    <baseName>
-                        <simpleValue>かごﾏｯﾄ費</simpleValue>
-                    </baseName>
-                    <value>
-                        <simpleValue>かごマット設置（スロープ型）</simpleValue>
-                    </value>
-                </property>
-                <property dataType="IFCTEXT" cardinality="required">
-                    <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごマット(スロープ型)</simpleValue>
-                    </propertySet>
-                    <baseName>
-                        <simpleValue>体系コード</simpleValue>
-                    </baseName>
-                    <value>
-                        <simpleValue>1470400101_1561000101_1098700101_1064500201_B057100101</simpleValue>
-                    </value>
-                </property>
-                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
-                    <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごマット(スロープ型)</simpleValue>
-                    </propertySet>
-                    <baseName>
-                        <simpleValue>詰石種類</simpleValue>
-                    </baseName>
-                    <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="栗石" />
-                            <xs:enumeration value="割栗石" />
-                        </xs:restriction>
-                    </value>
-                </property>
-                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
-                    <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごマット(スロープ型)</simpleValue>
-                    </propertySet>
-                    <baseName>
-                        <simpleValue>詰石規格</simpleValue>
-                    </baseName>
-                    <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="径5～15cm" />
-                            <xs:enumeration value="径15～20cm" />
-                            <xs:enumeration value="各種" />
-                        </xs:restriction>
-                    </value>
-                </property>
-            </requirements>
-        </specification>
-        <specification name="かごマット(多段積型)" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
-                <attribute>
-                    <name>
-                        <simpleValue>ObjectType</simpleValue>
-                    </name>
-                    <value>
-                        <simpleValue>かごマット(多段積型)</simpleValue>
-                    </value>
-                </attribute>
-                <property dataType="IFCREAL">
-                    <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごマット(多段積型)</simpleValue>
-                    </propertySet>
-                    <baseName>
-                        <simpleValue>数量</simpleValue>
-                    </baseName>
-                </property>
-            </applicability>
-            <requirements>
-                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
-                    <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごマット(多段積型)</simpleValue>
-                    </propertySet>
-                    <baseName>
-                        <simpleValue>かご本体材質</simpleValue>
-                    </baseName>
-                    <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="亜鉛アルミメッキ鉄線" />
-                            <xs:enumeration value="各種" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_亜鉛アルミメッキ鉄線" />
+                            <enumeration value="2_各種" />
+                        </restriction>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごマット(多段積型)</simpleValue>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごﾏｯﾄ(多段積型)</simpleValue>
                     </propertySet>
                     <baseName>
                         <simpleValue>かご本体材質（文字入力）</simpleValue>
@@ -164,18 +66,18 @@
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
                     <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごマット(多段積型)</simpleValue>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごﾏｯﾄ(多段積型)</simpleValue>
                     </propertySet>
                     <baseName>
                         <simpleValue>かごﾏｯﾄ費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>かごマット工(多段型)</simpleValue>
+                        <simpleValue>1_かごマット工(多段型)</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
                     <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごマット(多段積型)</simpleValue>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごﾏｯﾄ(多段積型)</simpleValue>
                     </propertySet>
                     <baseName>
                         <simpleValue>体系コード</simpleValue>
@@ -186,36 +88,36 @@
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごマット(多段積型)</simpleValue>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごﾏｯﾄ(多段積型)</simpleValue>
                     </propertySet>
                     <baseName>
                         <simpleValue>詰石種類</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="割栗石" />
-                            <xs:enumeration value="栗石" />
-                            <xs:enumeration value="玉石" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_割栗石" />
+                            <enumeration value="2_栗石" />
+                            <enumeration value="3_玉石" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごマット(多段積型)</simpleValue>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごﾏｯﾄ(多段積型)</simpleValue>
                     </propertySet>
                     <baseName>
                         <simpleValue>詰石規格</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="15～20cm" />
-                            <xs:enumeration value="各種" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_15～20cm" />
+                            <enumeration value="2_各種" />
+                        </restriction>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
                     <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごマット(多段積型)</simpleValue>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごﾏｯﾄ(多段積型)</simpleValue>
                     </propertySet>
                     <baseName>
                         <simpleValue>詰石規格（文字入力）</simpleValue>
@@ -223,8 +125,109 @@
                 </property>
             </requirements>
         </specification>
+        <specification name="かごﾏｯﾄ(ｽﾛｰﾌﾟ型)" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>かごﾏｯﾄ(ｽﾛｰﾌﾟ型)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごﾏｯﾄ(ｽﾛｰﾌﾟ型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごﾏｯﾄ(ｽﾛｰﾌﾟ型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>かご厚さ</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_t=30cm" />
+                            <enumeration value="2_t=50cm" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごﾏｯﾄ(ｽﾛｰﾌﾟ型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>かご本体材質</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_亜鉛ｱﾙﾐﾒｯｷ" />
+                            <enumeration value="2_各種" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごﾏｯﾄ(ｽﾛｰﾌﾟ型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>かごﾏｯﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_かごマット設置（スロープ型）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごﾏｯﾄ(ｽﾛｰﾌﾟ型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1561000101_1098700101_1064500201_B057100101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごﾏｯﾄ(ｽﾛｰﾌﾟ型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>詰石種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_栗石" />
+                            <enumeration value="2_割栗石" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_かごﾏｯﾄ(ｽﾛｰﾌﾟ型)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>詰石規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_径5～15cm" />
+                            <enumeration value="2_径15～20cm" />
+                            <enumeration value="3_各種" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
         <specification name="じゃかご" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
+            <applicability minOccurs="0" maxOccurs="unbounded">
                 <attribute>
                     <name>
                         <simpleValue>ObjectType</simpleValue>
@@ -251,7 +254,7 @@
                         <simpleValue>じゃかご費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>じゃかご</simpleValue>
+                        <simpleValue>1_じゃかご</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -273,10 +276,10 @@
                         <simpleValue>径</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="径45cm" />
-                            <xs:enumeration value="径60cm" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_径45cm" />
+                            <enumeration value="2_径60cm" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -287,7 +290,7 @@
                         <simpleValue>止杭設置費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>止杭打込</simpleValue>
+                        <simpleValue>1_止杭打込</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -309,7 +312,7 @@
             </requirements>
         </specification>
         <specification name="ふとんかご" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
+            <applicability minOccurs="0" maxOccurs="unbounded">
                 <attribute>
                     <name>
                         <simpleValue>ObjectType</simpleValue>
@@ -336,7 +339,7 @@
                         <simpleValue>ふとんかご費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>ふとんかご</simpleValue>
+                        <simpleValue>1_ふとんかご</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -366,10 +369,10 @@
                         <simpleValue>種別</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="ｽﾛｰﾌﾟ式" />
-                            <xs:enumeration value="階段式" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｽﾛｰﾌﾟ式" />
+                            <enumeration value="2_階段式" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -380,11 +383,11 @@
                         <simpleValue>規格</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="高さ40cm×幅120cm" />
-                            <xs:enumeration value="高さ50cm×幅120cm" />
-                            <xs:enumeration value="高さ60cm×幅120cm" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_高さ40cm×幅120cm" />
+                            <enumeration value="2_高さ50cm×幅120cm" />
+                            <enumeration value="3_高さ60cm×幅120cm" />
+                        </restriction>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -413,19 +416,19 @@
                 </property>
             </requirements>
         </specification>
-        <specification name="ブロックマット" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
+        <specification name="ﾌﾞﾛｯｸﾏｯﾄ" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
                 <attribute>
                     <name>
                         <simpleValue>ObjectType</simpleValue>
                     </name>
                     <value>
-                        <simpleValue>ブロックマット</simpleValue>
+                        <simpleValue>ﾌﾞﾛｯｸﾏｯﾄ</simpleValue>
                     </value>
                 </attribute>
                 <property dataType="IFCREAL">
                     <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_ブロックマット</simpleValue>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_ﾌﾞﾛｯｸﾏｯﾄ</simpleValue>
                     </propertySet>
                     <baseName>
                         <simpleValue>数量</simpleValue>
@@ -435,7 +438,7 @@
             <requirements>
                 <property dataType="IFCTEXT" cardinality="required">
                     <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_ブロックマット</simpleValue>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_ﾌﾞﾛｯｸﾏｯﾄ</simpleValue>
                     </propertySet>
                     <baseName>
                         <simpleValue>体系コード</simpleValue>
@@ -446,32 +449,32 @@
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_ブロックマット</simpleValue>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_ﾌﾞﾛｯｸﾏｯﾄ</simpleValue>
                     </propertySet>
                     <baseName>
                         <simpleValue>法勾配</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="1:1.5以上 1:1.8未満" />
-                            <xs:enumeration value="1:1.8以上 1:2.0未満" />
-                            <xs:enumeration value="1:2.0以上 1:3.0未満" />
-                            <xs:enumeration value="1:3.0" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_1:1.5以上 1:1.8未満" />
+                            <enumeration value="2_1:1.8以上 1:2.0未満" />
+                            <enumeration value="3_1:2.0以上 1:3.0未満" />
+                            <enumeration value="4_1:3.0" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
                     <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_ブロックマット</simpleValue>
+                        <simpleValue>数量情報_202304_01_河川改修_水門_護床工_かご工_ﾌﾞﾛｯｸﾏｯﾄ</simpleValue>
                     </propertySet>
                     <baseName>
                         <simpleValue>ﾌﾞﾛｯｸﾏｯﾄ費</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="ﾌﾞﾛｯｸﾏｯﾄ工（最大法長5.5ｍ以下）" />
-                            <xs:enumeration value="ﾌﾞﾛｯｸﾏｯﾄ工（最大法長5.5ｍ超え18m以下）" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ﾌﾞﾛｯｸﾏｯﾄ工（最大法長5.5ｍ以下）" />
+                            <enumeration value="2_ﾌﾞﾛｯｸﾏｯﾄ工（最大法長5.5ｍ超え18m以下）" />
+                        </restriction>
                     </value>
                 </property>
             </requirements>

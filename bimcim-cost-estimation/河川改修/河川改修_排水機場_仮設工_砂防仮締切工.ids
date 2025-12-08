@@ -1,10 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
     <info>
         <title>河川改修_排水機場_仮設工_砂防仮締切工</title>
         <copyright>buildingSMART Japan 土木委員会</copyright>
         <version>1.0</version>
         <description>令和5年度対応の積算用属性情報（properties_202304_01.xlsx）に準拠します。
+bSDDの仕様との適合のため、BIM/CIMポータルの積算用属性情報とは次の値が異なります。
+    属性セット名
+    規格_属性値
 このIDSファイルにない項目、設定が困難な項目等は、設計数量管理機能で設定してしてください。
 このIDSファイルは次のソフトウェアで出力したIFCファイルへの適用を想定しています。
     V-nasClair
@@ -19,52 +22,8 @@
         <milestone>詳細設計</milestone>
     </info>
     <specifications>
-        <specification name="コンクリート締切" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
-                <attribute>
-                    <name>
-                        <simpleValue>ObjectType</simpleValue>
-                    </name>
-                    <value>
-                        <simpleValue>コンクリート締切</simpleValue>
-                    </value>
-                </attribute>
-                <property dataType="IFCREAL">
-                    <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_排水機場_仮設工_砂防仮締切工_コンクリート締切</simpleValue>
-                    </propertySet>
-                    <baseName>
-                        <simpleValue>数量</simpleValue>
-                    </baseName>
-                </property>
-            </applicability>
-            <requirements>
-                <property dataType="IFCTEXT" cardinality="required">
-                    <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_排水機場_仮設工_砂防仮締切工_コンクリート締切</simpleValue>
-                    </propertySet>
-                    <baseName>
-                        <simpleValue>体系コード</simpleValue>
-                    </baseName>
-                    <value>
-                        <simpleValue>1470400101_1479800101_1002500901_1590200101_1567300101</simpleValue>
-                    </value>
-                </property>
-                <property dataType="IFCTEXT" cardinality="required">
-                    <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_排水機場_仮設工_砂防仮締切工_コンクリート締切</simpleValue>
-                    </propertySet>
-                    <baseName>
-                        <simpleValue>砂防ｺﾝｸﾘｰﾄ仮締切費</simpleValue>
-                    </baseName>
-                    <value>
-                        <simpleValue>砂防コンクリート仮締切［複合］</simpleValue>
-                    </value>
-                </property>
-            </requirements>
-        </specification>
         <specification name="土砂締切" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
+            <applicability minOccurs="0" maxOccurs="unbounded">
                 <attribute>
                     <name>
                         <simpleValue>ObjectType</simpleValue>
@@ -102,13 +61,13 @@
                         <simpleValue>砂防土砂仮締切費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>砂防土砂仮締切</simpleValue>
+                        <simpleValue>1_砂防土砂仮締切</simpleValue>
                     </value>
                 </property>
             </requirements>
         </specification>
         <specification name="大型土のう締切" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
+            <applicability minOccurs="0" maxOccurs="unbounded">
                 <attribute>
                     <name>
                         <simpleValue>ObjectType</simpleValue>
@@ -146,7 +105,51 @@
                         <simpleValue>砂防大型土のう仮締切費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>砂防大型土のう仮締切</simpleValue>
+                        <simpleValue>1_砂防大型土のう仮締切</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ｺﾝｸﾘｰﾄ締切" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ｺﾝｸﾘｰﾄ締切</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_排水機場_仮設工_砂防仮締切工_ｺﾝｸﾘｰﾄ締切</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_排水機場_仮設工_砂防仮締切工_ｺﾝｸﾘｰﾄ締切</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1479800101_1002500901_1590200101_1567300101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_排水機場_仮設工_砂防仮締切工_ｺﾝｸﾘｰﾄ締切</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>砂防ｺﾝｸﾘｰﾄ仮締切費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_砂防コンクリート仮締切［複合］</simpleValue>
                     </value>
                 </property>
             </requirements>

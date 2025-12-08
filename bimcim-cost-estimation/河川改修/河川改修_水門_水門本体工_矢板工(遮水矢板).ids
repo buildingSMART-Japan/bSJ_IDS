@@ -1,10 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
     <info>
         <title>河川改修_水門_水門本体工_矢板工(遮水矢板)</title>
         <copyright>buildingSMART Japan 土木委員会</copyright>
         <version>1.0</version>
         <description>令和5年度対応の積算用属性情報（properties_202304_01.xlsx）に準拠します。
+bSDDの仕様との適合のため、BIM/CIMポータルの積算用属性情報とは次の値が異なります。
+    属性セット名
+    規格_属性値
 このIDSファイルにない項目、設定が困難な項目等は、設計数量管理機能で設定してしてください。
 このIDSファイルは次のソフトウェアで出力したIFCファイルへの適用を想定しています。
     V-nasClair
@@ -20,7 +23,7 @@
     </info>
     <specifications>
         <specification name="可とう鋼矢板" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
+            <applicability minOccurs="0" maxOccurs="unbounded">
                 <attribute>
                     <name>
                         <simpleValue>ObjectType</simpleValue>
@@ -58,7 +61,7 @@
                         <simpleValue>可とう矢板材料費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>鋼矢板（各種）</simpleValue>
+                        <simpleValue>1_鋼矢板（各種）</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -77,12 +80,12 @@
                         <simpleValue>打込工法</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="ﾊﾞｲﾌﾞﾛ工法" />
-                            <xs:enumeration value="ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛ工法" />
-                            <xs:enumeration value="ｱｰｽｵｰｶﾞ併用圧入工法" />
-                            <xs:enumeration value="油圧式杭圧入工法" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ﾊﾞｲﾌﾞﾛ工法" />
+                            <enumeration value="2_ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛ工法" />
+                            <enumeration value="3_ｱｰｽｵｰｶﾞ併用圧入工法" />
+                            <enumeration value="4_油圧式杭圧入工法" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -93,12 +96,12 @@
                         <simpleValue>油圧圧入費</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="鋼矢板圧入（Ｎｍａｘ≦２５）" />
-                            <xs:enumeration value="鋼矢板圧入（Ｎｍａｘ≦５０）" />
-                            <xs:enumeration value="鋼矢板圧入（５０＜Ｎｍａｘ≦６００）" />
-                            <xs:enumeration value="油圧式杭圧入引抜機据付・解体" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_鋼矢板圧入（Ｎｍａｘ≦２５）" />
+                            <enumeration value="2_鋼矢板圧入（Ｎｍａｘ≦５０）" />
+                            <enumeration value="3_鋼矢板圧入（５０＜Ｎｍａｘ≦６００）" />
+                            <enumeration value="4_油圧式杭圧入引抜機据付・解体" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -109,13 +112,13 @@
                         <simpleValue>鋼矢板型式</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="II型" />
-                            <xs:enumeration value="III型" />
-                            <xs:enumeration value="IV型" />
-                            <xs:enumeration value="VL型" />
-                            <xs:enumeration value="VIL型" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_II型" />
+                            <enumeration value="2_III型" />
+                            <enumeration value="3_IV型" />
+                            <enumeration value="4_VL型" />
+                            <enumeration value="5_VIL型" />
+                        </restriction>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -134,7 +137,7 @@
                         <simpleValue>ｱｰｽｵｰｶﾞ併用圧入費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>鋼矢板打込み工（アースオーガ併用圧入）</simpleValue>
+                        <simpleValue>1_鋼矢板打込み工（アースオーガ併用圧入）</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -145,7 +148,7 @@
                         <simpleValue>ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛﾊﾝﾏ打込費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>ＷＪ併用バイブロハンマ施工による鋼矢板打込み</simpleValue>
+                        <simpleValue>1_ＷＪ併用バイブロハンマ施工による鋼矢板打込み</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -156,16 +159,16 @@
                         <simpleValue>ﾊﾞｲﾌﾞﾛﾊﾝﾏ打込費</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="バイブロハンマ施工による鋼矢板打込み" />
-                            <xs:enumeration value="鋼矢板打込み工（陸上・バイブロ（可変））" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_バイブロハンマ施工による鋼矢板打込み" />
+                            <enumeration value="2_鋼矢板打込み工（陸上・バイブロ（可変））" />
+                        </restriction>
                     </value>
                 </property>
             </requirements>
         </specification>
         <specification name="広幅鋼矢板" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
+            <applicability minOccurs="0" maxOccurs="unbounded">
                 <attribute>
                     <name>
                         <simpleValue>ObjectType</simpleValue>
@@ -203,15 +206,15 @@
                         <simpleValue>広幅鋼矢板型式</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="IIw型" />
-                            <xs:enumeration value="IIIw型" />
-                            <xs:enumeration value="IVw型" />
-                            <xs:enumeration value="10H型" />
-                            <xs:enumeration value="25H型" />
-                            <xs:enumeration value="45H型" />
-                            <xs:enumeration value="50H型" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_IIw型" />
+                            <enumeration value="2_IIIw型" />
+                            <enumeration value="3_IVw型" />
+                            <enumeration value="4_10H型" />
+                            <enumeration value="5_25H型" />
+                            <enumeration value="6_45H型" />
+                            <enumeration value="7_50H型" />
+                        </restriction>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -230,10 +233,10 @@
                         <simpleValue>広幅鋼矢板材料費</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="鋼矢板材料（６－２０ｍ以外は適用外）" />
-                            <xs:enumeration value="鋼矢板（各種）" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_鋼矢板材料（６－２０ｍ以外は適用外）" />
+                            <enumeration value="2_鋼矢板（各種）" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -244,11 +247,11 @@
                         <simpleValue>打込工法</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
-                            <xs:enumeration value="ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
-                            <xs:enumeration value="油圧圧入工法" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
+                            <enumeration value="2_ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
+                            <enumeration value="3_油圧圧入工法" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -259,14 +262,14 @@
                         <simpleValue>油圧圧入費</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="鋼矢板圧入（Ｎｍａｘ≦２５）" />
-                            <xs:enumeration value="鋼矢板圧入（Ｎｍａｘ≦５０）" />
-                            <xs:enumeration value="鋼矢板圧入（５０＜Ｎｍａｘ≦６００）" />
-                            <xs:enumeration value="継鋼矢板圧入（Ｎｍａｘ≦２５）" />
-                            <xs:enumeration value="継鋼矢板圧入（Ｎｍａｘ≦５０）" />
-                            <xs:enumeration value="油圧式杭圧入引抜機据付・解体" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_鋼矢板圧入（Ｎｍａｘ≦２５）" />
+                            <enumeration value="2_鋼矢板圧入（Ｎｍａｘ≦５０）" />
+                            <enumeration value="3_鋼矢板圧入（５０＜Ｎｍａｘ≦６００）" />
+                            <enumeration value="4_継鋼矢板圧入（Ｎｍａｘ≦２５）" />
+                            <enumeration value="5_継鋼矢板圧入（Ｎｍａｘ≦５０）" />
+                            <enumeration value="6_油圧式杭圧入引抜機据付・解体" />
+                        </restriction>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -293,7 +296,7 @@
                         <simpleValue>ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛﾊﾝﾏ打込費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>ＷＪ併用バイブロハンマ施工による鋼矢板打込み</simpleValue>
+                        <simpleValue>1_ＷＪ併用バイブロハンマ施工による鋼矢板打込み</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -304,13 +307,13 @@
                         <simpleValue>ﾊﾞｲﾌﾞﾛﾊﾝﾏ打込費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>バイブロハンマ施工による鋼矢板打込み</simpleValue>
+                        <simpleValue>1_バイブロハンマ施工による鋼矢板打込み</simpleValue>
                     </value>
                 </property>
             </requirements>
         </specification>
         <specification name="鋼矢板" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
+            <applicability minOccurs="0" maxOccurs="unbounded">
                 <attribute>
                     <name>
                         <simpleValue>ObjectType</simpleValue>
@@ -348,12 +351,12 @@
                         <simpleValue>打込工法</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
-                            <xs:enumeration value="ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
-                            <xs:enumeration value="ｱｰｽｵｰｶﾞ併用圧入工法" />
-                            <xs:enumeration value="油圧圧入工法" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
+                            <enumeration value="2_ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛﾊﾝﾏ工法" />
+                            <enumeration value="3_ｱｰｽｵｰｶﾞ併用圧入工法" />
+                            <enumeration value="4_油圧圧入工法" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -364,14 +367,14 @@
                         <simpleValue>油圧圧入費</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="鋼矢板圧入（Ｎｍａｘ≦２５）" />
-                            <xs:enumeration value="鋼矢板圧入（Ｎｍａｘ≦５０）" />
-                            <xs:enumeration value="鋼矢板圧入（５０＜Ｎｍａｘ≦６００）" />
-                            <xs:enumeration value="継鋼矢板圧入（Ｎｍａｘ≦２５）" />
-                            <xs:enumeration value="継鋼矢板圧入（Ｎｍａｘ≦５０）" />
-                            <xs:enumeration value="油圧式杭圧入引抜機据付・解体" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_鋼矢板圧入（Ｎｍａｘ≦２５）" />
+                            <enumeration value="2_鋼矢板圧入（Ｎｍａｘ≦５０）" />
+                            <enumeration value="3_鋼矢板圧入（５０＜Ｎｍａｘ≦６００）" />
+                            <enumeration value="4_継鋼矢板圧入（Ｎｍａｘ≦２５）" />
+                            <enumeration value="5_継鋼矢板圧入（Ｎｍａｘ≦５０）" />
+                            <enumeration value="6_油圧式杭圧入引抜機据付・解体" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -382,10 +385,10 @@
                         <simpleValue>矢板材料費</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="鋼矢板材料（６－２０ｍ以外は適用外）" />
-                            <xs:enumeration value="鋼矢板（各種）" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_鋼矢板材料（６－２０ｍ以外は適用外）" />
+                            <enumeration value="2_鋼矢板（各種）" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -396,13 +399,13 @@
                         <simpleValue>鋼矢板型式</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="II型" />
-                            <xs:enumeration value="III型" />
-                            <xs:enumeration value="IV型" />
-                            <xs:enumeration value="VL型" />
-                            <xs:enumeration value="VIL型" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_II型" />
+                            <enumeration value="2_III型" />
+                            <enumeration value="3_IV型" />
+                            <enumeration value="4_VL型" />
+                            <enumeration value="5_VIL型" />
+                        </restriction>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -437,12 +440,12 @@
                         <simpleValue>鋼矢板材質</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="SY295" />
-                            <xs:enumeration value="SY390" />
-                            <xs:enumeration value="SYW295" />
-                            <xs:enumeration value="SYW390" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_SY295" />
+                            <enumeration value="2_SY390" />
+                            <enumeration value="3_SYW295" />
+                            <enumeration value="4_SYW390" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -453,7 +456,7 @@
                         <simpleValue>ｱｰｽｵｰｶﾞ併用圧入費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>鋼矢板打込み工（アースオーガ併用圧入）</simpleValue>
+                        <simpleValue>1_鋼矢板打込み工（アースオーガ併用圧入）</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -464,7 +467,7 @@
                         <simpleValue>ｳｫｰﾀｰｼﾞｪｯﾄ併用ﾊﾞｲﾌﾞﾛﾊﾝﾏ打込費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>ＷＪ併用バイブロハンマ施工による鋼矢板打込み</simpleValue>
+                        <simpleValue>1_ＷＪ併用バイブロハンマ施工による鋼矢板打込み</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -475,10 +478,10 @@
                         <simpleValue>ﾊﾞｲﾌﾞﾛﾊﾝﾏ打込費</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="バイブロハンマ施工による鋼矢板打込み" />
-                            <xs:enumeration value="鋼矢板打込み工（陸上・バイブロ（可変））" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_バイブロハンマ施工による鋼矢板打込み" />
+                            <enumeration value="2_鋼矢板打込み工（陸上・バイブロ（可変））" />
+                        </restriction>
                     </value>
                 </property>
             </requirements>

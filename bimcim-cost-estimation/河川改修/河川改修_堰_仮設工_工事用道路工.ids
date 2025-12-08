@@ -1,10 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
     <info>
         <title>河川改修_堰_仮設工_工事用道路工</title>
         <copyright>buildingSMART Japan 土木委員会</copyright>
         <version>1.0</version>
         <description>令和5年度対応の積算用属性情報（properties_202304_01.xlsx）に準拠します。
+bSDDの仕様との適合のため、BIM/CIMポータルの積算用属性情報とは次の値が異なります。
+    属性セット名
+    規格_属性値
 このIDSファイルにない項目、設定が困難な項目等は、設計数量管理機能で設定してしてください。
 このIDSファイルは次のソフトウェアで出力したIFCファイルへの適用を想定しています。
     V-nasClair
@@ -19,52 +22,8 @@
         <milestone>詳細設計</milestone>
     </info>
     <specifications>
-        <specification name="仮設アスカーブ" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
-                <attribute>
-                    <name>
-                        <simpleValue>ObjectType</simpleValue>
-                    </name>
-                    <value>
-                        <simpleValue>仮設アスカーブ</simpleValue>
-                    </value>
-                </attribute>
-                <property dataType="IFCREAL">
-                    <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_工事用道路工_仮設アスカーブ</simpleValue>
-                    </propertySet>
-                    <baseName>
-                        <simpleValue>数量</simpleValue>
-                    </baseName>
-                </property>
-            </applicability>
-            <requirements>
-                <property dataType="IFCTEXT" cardinality="required">
-                    <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_工事用道路工_仮設アスカーブ</simpleValue>
-                    </propertySet>
-                    <baseName>
-                        <simpleValue>体系コード</simpleValue>
-                    </baseName>
-                    <value>
-                        <simpleValue>1470400101_1476400101_1002500901_1002600101_B579900101</simpleValue>
-                    </value>
-                </property>
-                <property dataType="IFCTEXT" cardinality="required">
-                    <propertySet>
-                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_工事用道路工_仮設アスカーブ</simpleValue>
-                    </propertySet>
-                    <baseName>
-                        <simpleValue>ｱｽｶｰﾌﾞ費</simpleValue>
-                    </baseName>
-                    <value>
-                        <simpleValue>アスカーブ</simpleValue>
-                    </value>
-                </property>
-            </requirements>
-        </specification>
         <specification name="仮設舗装" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
+            <applicability minOccurs="0" maxOccurs="unbounded">
                 <attribute>
                     <name>
                         <simpleValue>ObjectType</simpleValue>
@@ -102,12 +61,12 @@
                         <simpleValue>砕石路盤費</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="下層路盤（車道・路肩部）" />
-                            <xs:enumeration value="上層路盤（車道・路肩部）" />
-                            <xs:enumeration value="下層路盤（歩道部）" />
-                            <xs:enumeration value="上層路盤（歩道部）" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_下層路盤（車道・路肩部）" />
+                            <enumeration value="2_上層路盤（車道・路肩部）" />
+                            <enumeration value="3_下層路盤（歩道部）" />
+                            <enumeration value="4_上層路盤（歩道部）" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -118,7 +77,7 @@
                         <simpleValue>路床･路盤整正費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>不陸整正</simpleValue>
+                        <simpleValue>1_不陸整正</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -129,20 +88,64 @@
                         <simpleValue>ｱｽﾌｧﾙﾄ舗装費</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="基層(車道・路肩部)" />
-                            <xs:enumeration value="基層(歩道部)" />
-                            <xs:enumeration value="中間層（車道・路肩部）" />
-                            <xs:enumeration value="中間層（歩道部）" />
-                            <xs:enumeration value="表層(車道・路肩部)" />
-                            <xs:enumeration value="表層(歩道部)" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_基層(車道・路肩部)" />
+                            <enumeration value="2_基層(歩道部)" />
+                            <enumeration value="3_中間層（車道・路肩部）" />
+                            <enumeration value="4_中間層（歩道部）" />
+                            <enumeration value="5_表層(車道・路肩部)" />
+                            <enumeration value="6_表層(歩道部)" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="仮設ｱｽｶｰﾌﾞ" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>仮設ｱｽｶｰﾌﾞ</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_工事用道路工_仮設ｱｽｶｰﾌﾞ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_工事用道路工_仮設ｱｽｶｰﾌﾞ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1002500901_1002600101_B579900101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_河川改修_堰_仮設工_工事用道路工_仮設ｱｽｶｰﾌﾞ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｱｽｶｰﾌﾞ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_アスカーブ</simpleValue>
                     </value>
                 </property>
             </requirements>
         </specification>
         <specification name="土のう" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
+            <applicability minOccurs="0" maxOccurs="unbounded">
                 <attribute>
                     <name>
                         <simpleValue>ObjectType</simpleValue>
@@ -180,15 +183,15 @@
                         <simpleValue>作業区分</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="仕拵･積立･撤去" />
-                            <xs:enumeration value="仕拵･積立" />
-                            <xs:enumeration value="撤去" />
-                            <xs:enumeration value="製作･設置" />
-                            <xs:enumeration value="製作" />
-                            <xs:enumeration value="設置" />
-                            <xs:enumeration value="撤去" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_仕拵･積立･撤去" />
+                            <enumeration value="2_仕拵･積立" />
+                            <enumeration value="3_撤去" />
+                            <enumeration value="1_製作･設置" />
+                            <enumeration value="2_製作" />
+                            <enumeration value="3_設置" />
+                            <enumeration value="4_撤去" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -199,10 +202,10 @@
                         <simpleValue>土のう種類</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="土のう" />
-                            <xs:enumeration value="大型土のう" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_土のう" />
+                            <enumeration value="2_大型土のう" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -213,7 +216,7 @@
                         <simpleValue>土のう積費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>土のう工</simpleValue>
+                        <simpleValue>1_土のう工</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -232,13 +235,13 @@
                         <simpleValue>大型土のう費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>大型土のう工</simpleValue>
+                        <simpleValue>1_大型土のう工</simpleValue>
                     </value>
                 </property>
             </requirements>
         </specification>
         <specification name="土のう積" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
+            <applicability minOccurs="0" maxOccurs="unbounded">
                 <attribute>
                     <name>
                         <simpleValue>ObjectType</simpleValue>
@@ -276,13 +279,13 @@
                         <simpleValue>土のう積費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>土のう積工</simpleValue>
+                        <simpleValue>1_土のう積工</simpleValue>
                     </value>
                 </property>
             </requirements>
         </specification>
         <specification name="安定処理" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
+            <applicability minOccurs="0" maxOccurs="unbounded">
                 <attribute>
                     <name>
                         <simpleValue>ObjectType</simpleValue>
@@ -336,7 +339,7 @@
                         <simpleValue>安定処理費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>安定処理</simpleValue>
+                        <simpleValue>1_安定処理</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -347,10 +350,10 @@
                         <simpleValue>施工機種</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="ｽﾀﾋﾞﾗｲｻﾞ(標準)" />
-                            <xs:enumeration value="ﾊﾞｯｸﾎｳ" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｽﾀﾋﾞﾗｲｻﾞ(標準)" />
+                            <enumeration value="2_ﾊﾞｯｸﾎｳ" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -361,10 +364,10 @@
                         <simpleValue>施工箇所</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="路床" />
-                            <xs:enumeration value="構造物基礎" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_路床" />
+                            <enumeration value="2_構造物基礎" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -375,18 +378,18 @@
                         <simpleValue>混合深さ</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="0.6m以下" />
-                            <xs:enumeration value="0.6mを超え1m以下" />
-                            <xs:enumeration value="1m以下" />
-                            <xs:enumeration value="1mを超え2m以下" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_0.6m以下" />
+                            <enumeration value="2_0.6mを超え1m以下" />
+                            <enumeration value="3_1m以下" />
+                            <enumeration value="4_1mを超え2m以下" />
+                        </restriction>
                     </value>
                 </property>
             </requirements>
         </specification>
         <specification name="工事用道路盛土" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
+            <applicability minOccurs="0" maxOccurs="unbounded">
                 <attribute>
                     <name>
                         <simpleValue>ObjectType</simpleValue>
@@ -413,7 +416,7 @@
                         <simpleValue>人力盛土費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>埋戻し</simpleValue>
+                        <simpleValue>1_埋戻し</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -435,7 +438,7 @@
                         <simpleValue>土砂購入費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>土材料</simpleValue>
+                        <simpleValue>1_土材料</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -446,7 +449,7 @@
                         <simpleValue>掘削積込費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>積込（ルーズ）</simpleValue>
+                        <simpleValue>1_積込（ルーズ）</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -457,7 +460,7 @@
                         <simpleValue>敷均し･締固め費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>路体（築堤）盛土</simpleValue>
+                        <simpleValue>1_路体（築堤）盛土</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -468,11 +471,11 @@
                         <simpleValue>施工幅員</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="2.5m未満" />
-                            <xs:enumeration value="2.5m以上4.0m未満" />
-                            <xs:enumeration value="4.0m以上" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_2.5m未満" />
+                            <enumeration value="2_2.5m以上4.0m未満" />
+                            <enumeration value="3_4.0m以上" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -483,7 +486,7 @@
                         <simpleValue>法面整形費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>法面整形</simpleValue>
+                        <simpleValue>1_法面整形</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -494,13 +497,13 @@
                         <simpleValue>運搬費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>土砂等運搬</simpleValue>
+                        <simpleValue>1_土砂等運搬</simpleValue>
                     </value>
                 </property>
             </requirements>
         </specification>
         <specification name="工事用道路補修" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
+            <applicability minOccurs="0" maxOccurs="unbounded">
                 <attribute>
                     <name>
                         <simpleValue>ObjectType</simpleValue>
@@ -538,12 +541,12 @@
                         <simpleValue>砂利敷設費</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="下層路盤（車道・路肩部）" />
-                            <xs:enumeration value="上層路盤（車道・路肩部）" />
-                            <xs:enumeration value="下層路盤（歩道部）" />
-                            <xs:enumeration value="上層路盤（歩道部）" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_下層路盤（車道・路肩部）" />
+                            <enumeration value="2_上層路盤（車道・路肩部）" />
+                            <enumeration value="3_下層路盤（歩道部）" />
+                            <enumeration value="4_上層路盤（歩道部）" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -554,10 +557,10 @@
                         <simpleValue>砂利路面補修費</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="砂利路面補修" />
-                            <xs:enumeration value="不陸整正" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_砂利路面補修" />
+                            <enumeration value="2_不陸整正" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -568,18 +571,18 @@
                         <simpleValue>ｱｽﾌｧﾙﾄ路面補修費</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="Ａｓ路面舗装　アスファルト混合物（材のみ）" />
-                            <xs:enumeration value="加熱合材補修工" />
-                            <xs:enumeration value="常温合材補修工" />
-                            <xs:enumeration value="わだち掘れ補修工" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_Ａｓ路面舗装　アスファルト混合物（材のみ）" />
+                            <enumeration value="2_加熱合材補修工" />
+                            <enumeration value="3_常温合材補修工" />
+                            <enumeration value="4_わだち掘れ補修工" />
+                        </restriction>
                     </value>
                 </property>
             </requirements>
         </specification>
         <specification name="敷砂利" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
+            <applicability minOccurs="0" maxOccurs="unbounded">
                 <attribute>
                     <name>
                         <simpleValue>ObjectType</simpleValue>
@@ -625,7 +628,7 @@
                         <simpleValue>敷砂利費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>敷砂利</simpleValue>
+                        <simpleValue>1_敷砂利</simpleValue>
                     </value>
                 </property>
                 <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
@@ -639,7 +642,7 @@
             </requirements>
         </specification>
         <specification name="敷鉄板" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
+            <applicability minOccurs="0" maxOccurs="unbounded">
                 <attribute>
                     <name>
                         <simpleValue>ObjectType</simpleValue>
@@ -677,11 +680,11 @@
                         <simpleValue>作業区分</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="設置" />
-                            <xs:enumeration value="撤去" />
-                            <xs:enumeration value="設置･撤去" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_設置" />
+                            <enumeration value="2_撤去" />
+                            <enumeration value="3_設置･撤去" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -692,7 +695,7 @@
                         <simpleValue>敷鉄板設置･撤去費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>敷鉄板設置・撤去</simpleValue>
+                        <simpleValue>1_敷鉄板設置・撤去</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -703,7 +706,7 @@
                         <simpleValue>敷鉄板賃料等</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>敷鉄板賃料</simpleValue>
+                        <simpleValue>1_敷鉄板賃料</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -714,18 +717,18 @@
                         <simpleValue>鋼材規格</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="22×1,524×6,096(mm)" />
-                            <xs:enumeration value="22×1,524×3,048(mm)" />
-                            <xs:enumeration value="25×1,524×6,096(mm)" />
-                            <xs:enumeration value="各種" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_22×1,524×6,096(mm)" />
+                            <enumeration value="2_22×1,524×3,048(mm)" />
+                            <enumeration value="3_25×1,524×6,096(mm)" />
+                            <enumeration value="4_各種" />
+                        </restriction>
                     </value>
                 </property>
             </requirements>
         </specification>
         <specification name="殻処分" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
+            <applicability minOccurs="0" maxOccurs="unbounded">
                 <attribute>
                     <name>
                         <simpleValue>ObjectType</simpleValue>
@@ -763,10 +766,10 @@
                         <simpleValue>処分費</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="処分費（ｍ３）" />
-                            <xs:enumeration value="処分費（ｔ）" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_処分費（ｍ３）" />
+                            <enumeration value="2_処分費（ｔ）" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -777,18 +780,18 @@
                         <simpleValue>殻種別</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="ｱｽﾌｧﾙﾄ殻" />
-                            <xs:enumeration value="ｺﾝｸﾘｰﾄ殻(無筋)" />
-                            <xs:enumeration value="ｺﾝｸﾘｰﾄ殻(鉄筋)" />
-                            <xs:enumeration value="ﾓﾙﾀﾙ殻" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｱｽﾌｧﾙﾄ殻" />
+                            <enumeration value="2_ｺﾝｸﾘｰﾄ殻(無筋)" />
+                            <enumeration value="3_ｺﾝｸﾘｰﾄ殻(鉄筋)" />
+                            <enumeration value="4_ﾓﾙﾀﾙ殻" />
+                        </restriction>
                     </value>
                 </property>
             </requirements>
         </specification>
         <specification name="殻運搬" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
+            <applicability minOccurs="0" maxOccurs="unbounded">
                 <attribute>
                     <name>
                         <simpleValue>ObjectType</simpleValue>
@@ -826,12 +829,12 @@
                         <simpleValue>殻種別</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="ｺﾝｸﾘｰﾄ(無筋)構造物とりこわし" />
-                            <xs:enumeration value="ｺﾝｸﾘｰﾄ(鉄筋)構造物とりこわし" />
-                            <xs:enumeration value="舗装版破砕" />
-                            <xs:enumeration value="吹付法面とりこわし(ﾓﾙﾀﾙ)" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｺﾝｸﾘｰﾄ(無筋)構造物とりこわし" />
+                            <enumeration value="2_ｺﾝｸﾘｰﾄ(鉄筋)構造物とりこわし" />
+                            <enumeration value="3_舗装版破砕" />
+                            <enumeration value="4_吹付法面とりこわし(ﾓﾙﾀﾙ)" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required">
@@ -842,13 +845,13 @@
                         <simpleValue>殻運搬費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>殻運搬</simpleValue>
+                        <simpleValue>1_殻運搬</simpleValue>
                     </value>
                 </property>
             </requirements>
         </specification>
         <specification name="舗装版切断" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
+            <applicability minOccurs="0" maxOccurs="unbounded">
                 <attribute>
                     <name>
                         <simpleValue>ObjectType</simpleValue>
@@ -886,7 +889,7 @@
                         <simpleValue>舗装版切断費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>舗装版切断</simpleValue>
+                        <simpleValue>1_舗装版切断</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -897,11 +900,11 @@
                         <simpleValue>舗装版種別</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="ｱｽﾌｧﾙﾄ舗装版" />
-                            <xs:enumeration value="ｺﾝｸﾘｰﾄ舗装版" />
-                            <xs:enumeration value="Co+As(ｶﾊﾞｰ)舗装版" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｱｽﾌｧﾙﾄ舗装版" />
+                            <enumeration value="2_ｺﾝｸﾘｰﾄ舗装版" />
+                            <enumeration value="3_Co+As(ｶﾊﾞｰ)舗装版" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -912,11 +915,11 @@
                         <simpleValue>ｱｽﾌｧﾙﾄ舗装版厚</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="15cm以下" />
-                            <xs:enumeration value="15cmを超え30cm以下" />
-                            <xs:enumeration value="30cmを超え40cm以下" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_15cm以下" />
+                            <enumeration value="2_15cmを超え30cm以下" />
+                            <enumeration value="3_30cmを超え40cm以下" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -927,11 +930,11 @@
                         <simpleValue>ｺﾝｸﾘｰﾄ+ｱｽﾌｧﾙﾄ(ｶﾊﾞｰ)舗装版の全体厚</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="15cm以下" />
-                            <xs:enumeration value="15cmを超え30cm以下" />
-                            <xs:enumeration value="30cmを超え40cm以下" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_15cm以下" />
+                            <enumeration value="2_15cmを超え30cm以下" />
+                            <enumeration value="3_30cmを超え40cm以下" />
+                        </restriction>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -942,16 +945,16 @@
                         <simpleValue>ｺﾝｸﾘｰﾄ舗装版厚</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="15cm以下" />
-                            <xs:enumeration value="15cmを超え30cm以下" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_15cm以下" />
+                            <enumeration value="2_15cmを超え30cm以下" />
+                        </restriction>
                     </value>
                 </property>
             </requirements>
         </specification>
         <specification name="舗装版破砕" ifcVersion="IFC2X3">
-            <applicability minOccurs="1" maxOccurs="1">
+            <applicability minOccurs="0" maxOccurs="unbounded">
                 <attribute>
                     <name>
                         <simpleValue>ObjectType</simpleValue>
@@ -989,7 +992,7 @@
                         <simpleValue>舗装版破砕費</simpleValue>
                     </baseName>
                     <value>
-                        <simpleValue>舗装版破砕</simpleValue>
+                        <simpleValue>1_舗装版破砕</simpleValue>
                     </value>
                 </property>
                 <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
@@ -1000,11 +1003,11 @@
                         <simpleValue>舗装版種別</simpleValue>
                     </baseName>
                     <value>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="ｱｽﾌｧﾙﾄ舗装版" />
-                            <xs:enumeration value="ｺﾝｸﾘｰﾄ舗装版" />
-                            <xs:enumeration value="Co+As(ｶﾊﾞｰ)舗装版" />
-                        </xs:restriction>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｱｽﾌｧﾙﾄ舗装版" />
+                            <enumeration value="2_ｺﾝｸﾘｰﾄ舗装版" />
+                            <enumeration value="3_Co+As(ｶﾊﾞｰ)舗装版" />
+                        </restriction>
                     </value>
                 </property>
             </requirements>
