@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>道路新設･改築_道路改良_ｶﾙﾊﾞｰﾄ工_防水工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>1.0</version>
+        <description>令和5年度対応の積算用属性情報（properties_202304_01.xlsx）に準拠します。
+bSDDの仕様との適合のため、BIM/CIMポータルの積算用属性情報とは次の値が異なります。
+    属性セット名
+    規格_属性値
+このIDSファイルにない項目、設定が困難な項目等は、設計数量管理機能で設定してしてください。
+このIDSファイルは次のソフトウェアで出力したIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2025-07-01</date>
+        <purpose>BIM/CIM積算のための属性情報を設定します。</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="防水" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>防水</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_道路改良_ｶﾙﾊﾞｰﾄ工_防水工_防水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_道路改良_ｶﾙﾊﾞｰﾄ工_防水工_防水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1301600101_1317200101_1493200401_1493300301</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_道路改良_ｶﾙﾊﾞｰﾄ工_防水工_防水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防水材の種類</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_道路改良_ｶﾙﾊﾞｰﾄ工_防水工_防水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防水費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_防水費</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="防水保護" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>防水保護</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_道路改良_ｶﾙﾊﾞｰﾄ工_防水工_防水保護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_道路改良_ｶﾙﾊﾞｰﾄ工_防水工_防水保護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1301600101_1317200101_1493200401_1493400201</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_道路改良_ｶﾙﾊﾞｰﾄ工_防水工_防水保護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>施工種別</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_道路改良_ｶﾙﾊﾞｰﾄ工_防水工_防水保護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>防水保護費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_防水保護費</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_道路改良_ｶﾙﾊﾞｰﾄ工_防水工_防水保護</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾓﾙﾀﾙ規格</simpleValue>
+                    </baseName>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>

@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>道路新設･改築_舗装_舗装工_舗装準備工(ICT)</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>1.0</version>
+        <description>令和5年度対応の積算用属性情報（properties_202304_01.xlsx）に準拠します。
+bSDDの仕様との適合のため、BIM/CIMポータルの積算用属性情報とは次の値が異なります。
+    属性セット名
+    規格_属性値
+このIDSファイルにない項目、設定が困難な項目等は、設計数量管理機能で設定してしてください。
+このIDSファイルは次のソフトウェアで出力したIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2025-07-01</date>
+        <purpose>BIM/CIM積算のための属性情報を設定します。</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="不陸整正(ICT)" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>不陸整正(ICT)</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_舗装_舗装工_舗装準備工(ICT)_不陸整正(ICT)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_舗装_舗装工_舗装準備工(ICT)_不陸整正(ICT)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1340700101_1342800101_1065610201_B065710103</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_舗装_舗装工_舗装準備工(ICT)_不陸整正(ICT)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>補足材整正厚</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_1mm以上3mm未満" />
+                            <enumeration value="2_3mm以上6mm未満" />
+                            <enumeration value="3_6mm以上9mm未満" />
+                            <enumeration value="4_9mm以上13mm未満" />
+                            <enumeration value="5_13mm以上17mm未満" />
+                            <enumeration value="6_17mm以上21mm未満" />
+                            <enumeration value="7_21mm以上25mm未満" />
+                            <enumeration value="8_25mm以上29mm未満" />
+                            <enumeration value="9_29mm以上34mm未満" />
+                            <enumeration value="10_34mm以上39mm未満" />
+                            <enumeration value="11_39mm以上44mm未満" />
+                            <enumeration value="12_44mm以上49mm未満" />
+                            <enumeration value="13_49mm以上55mm未満" />
+                            <enumeration value="14_55mm以上61mm未満" />
+                            <enumeration value="15_61mm以上67mm未満" />
+                            <enumeration value="16_67mm以上75mm未満" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_舗装_舗装工_舗装準備工(ICT)_不陸整正(ICT)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>補足材有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_補足材無し" />
+                            <enumeration value="2_補足材有り" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_舗装_舗装工_舗装準備工(ICT)_不陸整正(ICT)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>補足材種類・規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｸﾗｯｼｬｰﾗﾝ C-20" />
+                            <enumeration value="2_ｸﾗｯｼｬｰﾗﾝ C-30" />
+                            <enumeration value="3_ｸﾗｯｼｬｰﾗﾝ C-40" />
+                            <enumeration value="4_再生ｸﾗｯｼｬｰﾗﾝ RC-20" />
+                            <enumeration value="5_再生ｸﾗｯｼｬｰﾗﾝ RC-30" />
+                            <enumeration value="6_再生ｸﾗｯｼｬｰﾗﾝ RC-40" />
+                            <enumeration value="7_再生粒度調整砕石 RM-25" />
+                            <enumeration value="8_再生粒度調整砕石 RM-30" />
+                            <enumeration value="9_再生粒度調整砕石 RM-40" />
+                            <enumeration value="10_粒度調整砕石 M-25" />
+                            <enumeration value="11_粒度調整砕石 M-30" />
+                            <enumeration value="12_粒度調整砕石 M-40" />
+                            <enumeration value="13_補足材料(各種)" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_舗装_舗装工_舗装準備工(ICT)_不陸整正(ICT)</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>路床･路盤整正費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_不陸整正(ICT)</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="調整ｺﾝｸﾘｰﾄ" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>調整ｺﾝｸﾘｰﾄ</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_舗装_舗装工_舗装準備工(ICT)_調整ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_舗装_舗装工_舗装準備工(ICT)_調整ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1340700101_1342800101_1065610201_B343100101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_舗装_舗装工_舗装準備工(ICT)_調整ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_型枠</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_舗装_舗装工_舗装準備工(ICT)_調整ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>打設工法</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｺﾝｸﾘｰﾄﾎﾟﾝﾌﾟ車打設" />
+                            <enumeration value="2_ｸﾚｰﾝ車打設" />
+                            <enumeration value="3_ﾊﾞｯｸﾎｳ(ｸﾚｰﾝ機能付)打設" />
+                            <enumeration value="4_人力打設" />
+                        </restriction>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_舗装_舗装工_舗装準備工(ICT)_調整ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>敷厚</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_舗装_舗装工_舗装準備工(ICT)_調整ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>構造物種別</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_無筋・鉄筋構造物" />
+                            <enumeration value="2_小型構造物" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_舗装_舗装工_舗装準備工(ICT)_調整ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_21-8-25(20)(普通)" />
+                            <enumeration value="2_21-12-25(20)(普通)" />
+                            <enumeration value="3_24-8-25(20)(普通)" />
+                            <enumeration value="4_24-12-25(20)(普通)" />
+                            <enumeration value="5_27-8-25(20)(普通)" />
+                            <enumeration value="6_27-12-25(20)(普通)" />
+                            <enumeration value="7_30-8-25(20)(普通)" />
+                            <enumeration value="8_30-12-25(20)(普通)" />
+                            <enumeration value="9_40-8-25(20)(普通)" />
+                            <enumeration value="10_40-12-25(20)(普通)" />
+                            <enumeration value="11_18-8-40(普通)" />
+                            <enumeration value="12_18-12-40(普通)" />
+                            <enumeration value="13_19.5-8-40(普通)" />
+                            <enumeration value="14_21-8-40(普通)" />
+                            <enumeration value="15_21-12-40(普通)" />
+                            <enumeration value="16_22.5-8-40(普通)" />
+                            <enumeration value="17_24-8-40(普通)" />
+                            <enumeration value="18_24-12-40(普通)" />
+                            <enumeration value="19_4.5-2.5-40(普通)" />
+                            <enumeration value="20_21-8-25(20)(高炉)" />
+                            <enumeration value="21_21-12-25(20)(高炉)" />
+                            <enumeration value="22_24-8-25(20)(高炉)" />
+                            <enumeration value="23_24-12-25(20)(高炉)" />
+                            <enumeration value="24_19.5-5-40(高炉)" />
+                            <enumeration value="25_19.5-8-40(高炉)" />
+                            <enumeration value="26_19.5-12-40(高炉)" />
+                            <enumeration value="27_18-5-40(高炉)" />
+                            <enumeration value="28_21-5-40(高炉)" />
+                            <enumeration value="29_18-8-40(高炉)" />
+                            <enumeration value="30_18-12-40(高炉)" />
+                            <enumeration value="31_21-8-40(高炉)" />
+                            <enumeration value="32_24-8-40(高炉)" />
+                            <enumeration value="33_24-12-40(高炉)" />
+                            <enumeration value="34_21-12-40(高炉)" />
+                            <enumeration value="35_40-8-25(早強)" />
+                            <enumeration value="36_40-12-25(早強)" />
+                            <enumeration value="37_21-8-25(早強)" />
+                            <enumeration value="38_21-12-25(早強)" />
+                            <enumeration value="39_24-8-25(早強)" />
+                            <enumeration value="40_24-12-25(早強)" />
+                            <enumeration value="41_18-8-25(高炉)" />
+                            <enumeration value="42_18-12-25(高炉)" />
+                            <enumeration value="43_21-5-80(高炉)" />
+                            <enumeration value="44_18-3-40(高炉)" />
+                            <enumeration value="45_21-3-40(高炉)" />
+                            <enumeration value="46_各種" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_舗装_舗装工_舗装準備工(ICT)_調整ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_コンクリート</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>

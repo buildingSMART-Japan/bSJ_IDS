@@ -1,0 +1,577 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>道路新設･改築_橋梁下部_法覆護岸工_法枠工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>1.0</version>
+        <description>令和5年度対応の積算用属性情報（properties_202304_01.xlsx）に準拠します。
+bSDDの仕様との適合のため、BIM/CIMポータルの積算用属性情報とは次の値が異なります。
+    属性セット名
+    規格_属性値
+このIDSファイルにない項目、設定が困難な項目等は、設計数量管理機能で設定してしてください。
+このIDSファイルは次のソフトウェアで出力したIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2025-07-01</date>
+        <purpose>BIM/CIM積算のための属性情報を設定します。</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="吹付枠" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>吹付枠</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_吹付枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_吹付枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>中詰材種類</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_吹付枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>中詰ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_吹付枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1411100101_1053200101_1056200101_B564000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_吹付枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>吹付材種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ﾓﾙﾀﾙ及びｺﾝｸﾘｰﾄ" />
+                            <enumeration value="2_植生基材" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_吹付枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>枠内中詰費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_植生土のう製作" />
+                            <enumeration value="2_中詰工（客土）" />
+                            <enumeration value="3_中詰工（割石又は栗石）" />
+                            <enumeration value="4_中詰工（砕石）" />
+                            <enumeration value="5_人力施工による植生工" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_吹付枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>枠内吹付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_モルタル吹付工" />
+                            <enumeration value="2_コンクリート吹付工" />
+                            <enumeration value="3_機械播種施工による植生工" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_吹付枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>枠設置･吹付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_吹付枠工［市場単価］" />
+                            <enumeration value="2_水切モルタル・コンクリート加算額［市場単価］" />
+                            <enumeration value="3_表面コテ仕上げ（加算額）［市場単価］" />
+                            <enumeration value="4_間詰モルタル・コンクリート加算額[市場単価]" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_吹付枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>梁断面ｻｲｽﾞ</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_梁断面積150×150" />
+                            <enumeration value="2_梁断面積200×200" />
+                            <enumeration value="3_梁断面積300×300" />
+                            <enumeration value="4_梁断面積400×400" />
+                            <enumeration value="5_梁断面積500×500" />
+                            <enumeration value="6_梁断面積600×600" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_吹付枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>植生基材吹付厚(枠内)</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_厚3cm" />
+                            <enumeration value="2_厚4cm" />
+                            <enumeration value="3_厚5cm" />
+                            <enumeration value="4_厚6cm" />
+                            <enumeration value="5_厚7cm" />
+                            <enumeration value="6_厚8cm" />
+                            <enumeration value="7_厚10cm" />
+                        </restriction>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_吹付枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>法枠規格</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_吹付枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾓﾙﾀﾙ及びｺﾝｸﾘｰﾄ吹付厚(枠内)</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_厚5cm" />
+                            <enumeration value="2_厚6cm" />
+                            <enumeration value="3_厚7cm" />
+                            <enumeration value="4_厚8cm" />
+                            <enumeration value="5_厚9cm" />
+                            <enumeration value="6_厚10cm" />
+                            <enumeration value="7_厚15cm" />
+                            <enumeration value="8_厚20cm" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_吹付枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾗｽ･ｱﾝｶｰﾋﾟﾝ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_ラス張工［市場単価］</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="現場打法枠" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>現場打法枠</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_現場打法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_現場打法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>中詰材種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_中詰ﾌﾞﾛｯｸ" />
+                            <enumeration value="2_客土" />
+                            <enumeration value="3_植生土のう" />
+                            <enumeration value="4_栗石(割石)" />
+                            <enumeration value="5_砕石" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_現場打法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>中詰費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_中詰工（中詰ブロック）" />
+                            <enumeration value="2_中詰工（客土）" />
+                            <enumeration value="3_中詰工（植生土のう）" />
+                            <enumeration value="4_中詰工（割石又は栗石）" />
+                            <enumeration value="5_中詰工（砕石）" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_現場打法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>中詰ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_現場打法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1411100101_1053200101_1056200101_B056300101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_現場打法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_型枠工" />
+                            <enumeration value="2_型枠工補助（ラフテレーンクレーン運転）" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_現場打法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>敷砂利･吸出し防止材･ｱﾝｶｰ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_敷砂利" />
+                            <enumeration value="2_吸出し防止材敷設工" />
+                            <enumeration value="3_アンカー設置工" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_現場打法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>枠内吹付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_コンクリート吹付工" />
+                            <enumeration value="2_モルタル吹付工" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_現場打法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>植生費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_人力施工による植生工</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_現場打法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>法枠規格</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_現場打法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_足場工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_現場打法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_鉄筋工［市場単価］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_現場打法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_21-8-25(20)(普通)" />
+                            <enumeration value="2_21-12-25(20)(普通)" />
+                            <enumeration value="3_24-8-25(20)(普通)" />
+                            <enumeration value="4_24-12-25(20)(普通)" />
+                            <enumeration value="5_27-8-25(20)(普通)" />
+                            <enumeration value="6_27-12-25(20)(普通)" />
+                            <enumeration value="7_30-8-25(20)(普通)" />
+                            <enumeration value="8_30-12-25(20)(普通)" />
+                            <enumeration value="9_40-8-25(20)(普通)" />
+                            <enumeration value="10_40-12-25(20)(普通)" />
+                            <enumeration value="11_18-8-40(普通)" />
+                            <enumeration value="12_18-12-40(普通)" />
+                            <enumeration value="13_19.5-8-40(普通)" />
+                            <enumeration value="14_21-8-40(普通)" />
+                            <enumeration value="15_21-12-40(普通)" />
+                            <enumeration value="16_22.5-8-40(普通)" />
+                            <enumeration value="17_24-8-40(普通)" />
+                            <enumeration value="18_24-12-40(普通)" />
+                            <enumeration value="19_4.5-2.5-40(普通)" />
+                            <enumeration value="20_21-8-25(20)(高炉)" />
+                            <enumeration value="21_21-12-25(20)(高炉)" />
+                            <enumeration value="22_24-8-25(20)(高炉)" />
+                            <enumeration value="23_24-12-25(20)(高炉)" />
+                            <enumeration value="24_19.5-5-40(高炉)" />
+                            <enumeration value="25_19.5-8-40(高炉)" />
+                            <enumeration value="26_19.5-12-40(高炉)" />
+                            <enumeration value="27_18-5-40(高炉)" />
+                            <enumeration value="28_21-5-40(高炉)" />
+                            <enumeration value="29_18-8-40(高炉)" />
+                            <enumeration value="30_18-12-40(高炉)" />
+                            <enumeration value="31_21-8-40(高炉)" />
+                            <enumeration value="32_24-8-40(高炉)" />
+                            <enumeration value="33_24-12-40(高炉)" />
+                            <enumeration value="34_21-12-40(高炉)" />
+                            <enumeration value="35_40-8-25(早強)" />
+                            <enumeration value="36_40-12-25(早強)" />
+                            <enumeration value="37_21-8-25(早強)" />
+                            <enumeration value="38_21-12-25(早強)" />
+                            <enumeration value="39_24-8-25(早強)" />
+                            <enumeration value="40_24-12-25(早強)" />
+                            <enumeration value="41_18-8-25(高炉)" />
+                            <enumeration value="42_18-12-25(高炉)" />
+                            <enumeration value="43_21-5-80(高炉)" />
+                            <enumeration value="44_18-3-40(高炉)" />
+                            <enumeration value="45_21-3-40(高炉)" />
+                            <enumeration value="46_各種" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_現場打法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_現場打法枠工（コンクリートポンプ車打設）" />
+                            <enumeration value="2_コンクリート" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ﾌﾟﾚｷｬｽﾄ法枠" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ法枠</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_ﾌﾟﾚｷｬｽﾄ法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_ﾌﾟﾚｷｬｽﾄ法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>中詰材種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_中詰ﾌﾞﾛｯｸ" />
+                            <enumeration value="2_客土" />
+                            <enumeration value="3_植生土のう" />
+                            <enumeration value="4_栗石(割石)" />
+                            <enumeration value="5_砕石" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_ﾌﾟﾚｷｬｽﾄ法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>中詰費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_中詰工（中詰ブロック）" />
+                            <enumeration value="2_中詰工（客土）" />
+                            <enumeration value="3_中詰工（植生土のう）" />
+                            <enumeration value="4_中詰工（割石又は栗石）" />
+                            <enumeration value="5_中詰工（砕石）" />
+                            <enumeration value="6_人力施工による植生工" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_ﾌﾟﾚｷｬｽﾄ法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>中詰ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_ﾌﾟﾚｷｬｽﾄ法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1411100101_1053200101_1056200101_B056400101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_ﾌﾟﾚｷｬｽﾄ法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>枠内吹付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_モルタル吹付工" />
+                            <enumeration value="2_コンクリート吹付工" />
+                            <enumeration value="3_機械播種施工による植生工" />
+                        </restriction>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_ﾌﾟﾚｷｬｽﾄ法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>法枠規格</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_ﾌﾟﾚｷｬｽﾄ法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>法枠設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_プレキャストブロック設置（中詰除く）" />
+                            <enumeration value="2_敷砂利" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設･改築_橋梁下部_法覆護岸工_法枠工_ﾌﾟﾚｷｬｽﾄ法枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>足場費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_足場工</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>
