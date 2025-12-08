@@ -1,0 +1,524 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>砂防･地すべり対策_流路_流路護岸工_基礎工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>1.0</version>
+        <description>令和5年度対応の積算用属性情報（properties_202304_01.xlsx）に準拠します。
+bSDDの仕様との適合のため、BIM/CIMポータルの積算用属性情報とは次の値が異なります。
+    属性セット名
+    規格_属性値
+このIDSファイルにない項目、設定が困難な項目等は、設計数量管理機能で設定してしてください。
+このIDSファイルは次のソフトウェアで出力したIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2025-07-01</date>
+        <purpose>BIM/CIM積算のための属性情報を設定します。</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="中詰ｺﾝｸﾘｰﾄ" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>中詰ｺﾝｸﾘｰﾄ</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_中詰ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_中詰ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>中詰ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_中詰コンクリート打設</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_中詰ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1151100101_1153200101_1050700202_B051005201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_中詰ｺﾝｸﾘｰﾄ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_21-8-25(20)(普通)" />
+                            <enumeration value="2_24-8-25(20)(普通)" />
+                            <enumeration value="3_27-8-25(20)(普通)" />
+                            <enumeration value="4_30-8-25(20)(普通)" />
+                            <enumeration value="5_40-8-25(20)(普通)" />
+                            <enumeration value="6_18-8-40(普通)" />
+                            <enumeration value="7_19.5-8-40(普通)" />
+                            <enumeration value="8_21-8-40(普通)" />
+                            <enumeration value="9_21-12-40(普通)" />
+                            <enumeration value="10_22.5-8-40(普通)" />
+                            <enumeration value="11_24-8-40(普通)" />
+                            <enumeration value="12_4.5-2.5-40(普通)" />
+                            <enumeration value="13_21-8-25(20)(高炉)" />
+                            <enumeration value="14_24-8-25(20)(高炉)" />
+                            <enumeration value="15_19.5-5-40(高炉)" />
+                            <enumeration value="16_19.5-8-40(高炉)" />
+                            <enumeration value="17_18-5-40(高炉)" />
+                            <enumeration value="18_21-5-40(高炉)" />
+                            <enumeration value="19_18-8-40(高炉)" />
+                            <enumeration value="20_21-8-40(高炉)" />
+                            <enumeration value="21_24-8-40(高炉)" />
+                            <enumeration value="22_21-12-40(高炉)" />
+                            <enumeration value="23_40-8-25(早強)" />
+                            <enumeration value="24_21-8-25(早強)" />
+                            <enumeration value="25_24-8-25(早強)" />
+                            <enumeration value="26_18-8-25(高炉)" />
+                            <enumeration value="27_21-5-80(高炉)" />
+                            <enumeration value="28_18-3-40(高炉)" />
+                            <enumeration value="29_21-3-40(高炉)" />
+                            <enumeration value="30_各種" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="中詰ｺﾝｸﾘｰﾄ殻" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>中詰ｺﾝｸﾘｰﾄ殻</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_中詰ｺﾝｸﾘｰﾄ殻</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_中詰ｺﾝｸﾘｰﾄ殻</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1151100101_1153200101_1050700202_B051005301</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_中詰ｺﾝｸﾘｰﾄ殻</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>工法区分</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_中詰ｺﾝｸﾘｰﾄ殻</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>施工規模</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_中詰ｺﾝｸﾘｰﾄ殻</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>構造物区分</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_中詰ｺﾝｸﾘｰﾄ殻</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾊﾞｯｸﾎｳ積込み費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_積込(ｺﾝｸﾘｰﾄ殻)</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="場所打基礎" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>場所打基礎</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_場所打基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_場所打基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1151100101_1153200101_1050700202_B581800101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_場所打基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_型枠" />
+                            <enumeration value="2_型枠工［砂防］" />
+                        </restriction>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_場所打基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>形状寸法</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_場所打基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>打設方法</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_人力打設" />
+                            <enumeration value="2_ｸﾚｰﾝ打設(平均高30m以下)" />
+                            <enumeration value="3_ｸﾚｰﾝ打設" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_場所打基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_鉄筋工［市場単価］</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_場所打基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費(人力打設)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_場所打基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費(平均高30m以下)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_一般部コンクリート打設</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_場所打基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費(ｸﾚｰﾝ打設)</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_コンクリート投入（ケーブルクレーン両端固定式）" />
+                            <enumeration value="2_コンクリート締固め・打継面清掃" />
+                            <enumeration value="3_コンクリート養生［散水］" />
+                            <enumeration value="4_コンクリート養生［練炭］" />
+                            <enumeration value="5_自然水施設" />
+                            <enumeration value="6_不整地運搬車による横取り" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_場所打基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費(ｺﾝｸﾘｰﾄﾌﾞﾛｯｸ費)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_現場打基礎コンクリート</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_場所打基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ運搬費(現地簡易)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_コンクリート運搬　アジテータトラック［砂防］</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ｺﾝｸﾘｰﾄ生産・運搬・ｸﾚｰﾝ打設" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ｺﾝｸﾘｰﾄ生産・運搬・ｸﾚｰﾝ打設</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_ｺﾝｸﾘｰﾄ生産・運搬・ｸﾚｰﾝ打設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_ｺﾝｸﾘｰﾄ生産・運搬・ｸﾚｰﾝ打設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1151100101_1153200101_1050700202_B051005501</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_ｺﾝｸﾘｰﾄ生産・運搬・ｸﾚｰﾝ打設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>現場ｺﾝｸﾘｰﾄﾌﾟﾗﾝﾄの有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_無し" />
+                            <enumeration value="2_有り" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_ｺﾝｸﾘｰﾄ生産・運搬・ｸﾚｰﾝ打設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄの規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_18-5-40(高炉B)" />
+                            <enumeration value="2_18-8-40(高炉B)" />
+                            <enumeration value="3_18-5-80(高炉B)" />
+                            <enumeration value="4_18-8-80(高炉B)" />
+                            <enumeration value="5_19.5-5-40(高炉B)" />
+                            <enumeration value="6_19.5-8-40(高炉B)" />
+                            <enumeration value="7_19.5-5-80(高炉B)" />
+                            <enumeration value="8_19.5-8-80(高炉B)" />
+                            <enumeration value="9_21-5-40(高炉B)" />
+                            <enumeration value="10_21-5-80(高炉B)" />
+                            <enumeration value="11_27-5-40(高炉B)" />
+                            <enumeration value="12_C=300kg/m3-5-40(高炉B)" />
+                            <enumeration value="13_C=300kg/m3-5-80(高炉B)" />
+                            <enumeration value="14_C=600kg/m3 Gmax=40(高炉B)" />
+                            <enumeration value="15_C=600kg/m3 Gmax=80(高炉B)" />
+                            <enumeration value="16_各種" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_ｺﾝｸﾘｰﾄ生産・運搬・ｸﾚｰﾝ打設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ費(ｹｰﾌﾞﾙｸﾚｰﾝ打設)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_コンクリート投入（ケーブルクレーン両端固定式）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_ｺﾝｸﾘｰﾄ生産・運搬・ｸﾚｰﾝ打設</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ運搬費(現地簡易)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_コンクリート運搬　アジテータトラック［砂防］</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ﾌﾟﾚｷｬｽﾄ基礎" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ基礎</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_ﾌﾟﾚｷｬｽﾄ基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_ﾌﾟﾚｷｬｽﾄ基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>中詰材の種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｺﾝｸﾘｰﾄ" />
+                            <enumeration value="2_ｺﾝｸﾘｰﾄ以外又は無し" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_ﾌﾟﾚｷｬｽﾄ基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>中詰ｺﾝｸﾘｰﾄ</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_中詰コンクリート（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_ﾌﾟﾚｷｬｽﾄ基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1151100101_1153200101_1050700202_B051000201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_ﾌﾟﾚｷｬｽﾄ基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎ﾌﾞﾛｯｸ据付費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_プレキャスト基礎</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_ﾌﾟﾚｷｬｽﾄ基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>底幅</simpleValue>
+                    </baseName>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_ﾌﾟﾚｷｬｽﾄ基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>高さ</simpleValue>
+                    </baseName>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_ﾌﾟﾚｷｬｽﾄ基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ基礎(材料費)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_プレキャスト基礎（材料費）</simpleValue>
+                    </value>
+                </property>
+                <property cardinality="required" instructions="適切なデータ型および値を設定してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_砂防･地すべり対策_流路_流路護岸工_基礎工_ﾌﾟﾚｷｬｽﾄ基礎</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾟﾚｷｬｽﾄ材規格(型)</simpleValue>
+                    </baseName>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>
