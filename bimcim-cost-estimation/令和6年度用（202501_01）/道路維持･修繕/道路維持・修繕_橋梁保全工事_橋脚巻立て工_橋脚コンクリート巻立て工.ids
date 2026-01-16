@@ -1,0 +1,393 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>202501.01</version>
+        <description>本IDSは、積算用属性情報（properties_202501_01.xlsx）のBIM/CIM積算MVDv0.3に対応したものです。
+本IDSは、ソフトウェア開発および業務におけるデータ入力を支援することを目的として公開しています。なお、本辞書の利用にあたっては、利用者の責任において使用してください。
+本IDSは、対象工種に応じて項目を編集（追加、削除、変更等）を行ってください。
+本IDSに含まれていない項目は、設計数量管理機能を用いて別途設定してください。
+本IDSファイルは、以下のソフトウェアで出力されたIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2026-01-13</date>
+        <purpose>ソフトウェア開発および業務におけるデータ入力の支援</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="コンクリート" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508500101_1586200101_1571100101_B041102801</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>養生費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_養生費有" />
+                            <enumeration value="2_養生費無" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ夜間割増の有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｺﾝｸﾘｰﾄ夜間割増無" />
+                            <enumeration value="2_ｺﾝｸﾘｰﾄ夜間割増有" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_21-8-25(20)(普通)" />
+                            <enumeration value="2_21-12-25(20)(普通)" />
+                            <enumeration value="3_21-8-25(20)(高炉)" />
+                            <enumeration value="4_21-12-25(20)(高炉)" />
+                            <enumeration value="5_24-8-25(20)(普通)" />
+                            <enumeration value="6_24-12-25(20)(普通)" />
+                            <enumeration value="7_24-8-25(20)(高炉)" />
+                            <enumeration value="8_24-12-25(20)(高炉)" />
+                            <enumeration value="9_24-8-40(普通)" />
+                            <enumeration value="10_24-12-40(普通)" />
+                            <enumeration value="11_24-8-40(高炉)" />
+                            <enumeration value="12_24-12-40(高炉)" />
+                            <enumeration value="13_各種" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="コンクリート削孔" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>コンクリート削孔</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工_コンクリート削孔</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工_コンクリート削孔</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508500101_1586200101_1571100101_B576500101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工_コンクリート削孔</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>削孔長</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工_コンクリート削孔</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>径</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工_コンクリート削孔</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｱﾝｶｰ材の有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｱﾝｶｰ材有" />
+                            <enumeration value="2_ｱﾝｶｰ材無" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工_コンクリート削孔</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｱﾝｶｰ材長さ</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="下地処理" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>下地処理</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工_下地処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工_下地処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508500101_1586200101_1571100101_B576700101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="型枠" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508500101_1586200101_1571100101_B040802301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠の種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_一般型枠" />
+                            <enumeration value="2_合板円形型枠" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="足場" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>足場</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508500101_1586200101_1571100101_B005502001</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="鉄筋" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>鉄筋</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508500101_1586200101_1571100101_1040900101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_橋梁保全工事_橋脚巻立て工_橋脚コンクリート巻立て工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋材料規格･径</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_SD295 D10" />
+                            <enumeration value="2_SD295 D13" />
+                            <enumeration value="3_SD295 D16" />
+                            <enumeration value="4_SD345 D10" />
+                            <enumeration value="5_SD345 D13" />
+                            <enumeration value="6_SD345 D16～25" />
+                            <enumeration value="7_SD345 D29～32" />
+                            <enumeration value="8_SD345 D35" />
+                            <enumeration value="9_SD345 D38" />
+                            <enumeration value="10_SD345 D41" />
+                            <enumeration value="11_SD345 D51" />
+                            <enumeration value="12_SR235 φ9" />
+                            <enumeration value="13_SR235 φ13" />
+                            <enumeration value="14_SR235 φ16～25" />
+                            <enumeration value="15_SD390 D25" />
+                            <enumeration value="16_SD390 D29" />
+                            <enumeration value="17_SD390 D32" />
+                            <enumeration value="18_SD390 D35" />
+                            <enumeration value="19_SD390 D38" />
+                            <enumeration value="20_SD390 D41" />
+                            <enumeration value="21_SD490 D35" />
+                            <enumeration value="22_SD490 D38" />
+                            <enumeration value="23_SD490 D41" />
+                            <enumeration value="24_SD345(ねじ節鉄筋) D13" />
+                            <enumeration value="25_SD345(ねじ節鉄筋) D16" />
+                            <enumeration value="26_SD345(ねじ節鉄筋) D19" />
+                            <enumeration value="27_SD345(ねじ節鉄筋) D22" />
+                            <enumeration value="28_SD345(ねじ節鉄筋) D25" />
+                            <enumeration value="29_SD345(ねじ節鉄筋) D29" />
+                            <enumeration value="30_SD345(ねじ節鉄筋) D32" />
+                            <enumeration value="31_SD345(ねじ節鉄筋) D35" />
+                            <enumeration value="32_SD345(ねじ節鉄筋) D38" />
+                            <enumeration value="33_SD345(ねじ節鉄筋) D41" />
+                            <enumeration value="34_SD345(ねじ節鉄筋) D51" />
+                            <enumeration value="35_SD390(ねじ節鉄筋) D25" />
+                            <enumeration value="36_SD390(ねじ節鉄筋) D29" />
+                            <enumeration value="37_SD390(ねじ節鉄筋) D32" />
+                            <enumeration value="38_SD390(ねじ節鉄筋) D35" />
+                            <enumeration value="39_SD390(ねじ節鉄筋) D38" />
+                            <enumeration value="40_SD390(ねじ節鉄筋) D41" />
+                            <enumeration value="41_SD490(ねじ節鉄筋) D35" />
+                            <enumeration value="42_SD490(ねじ節鉄筋) D38" />
+                            <enumeration value="43_SD490(ねじ節鉄筋) D41" />
+                            <enumeration value="44_各種" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>

@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>道路維持・修繕_道路維持_排水構造物工_排水工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>202501.01</version>
+        <description>本IDSは、積算用属性情報（properties_202501_01.xlsx）のBIM/CIM積算MVDv0.3に対応したものです。
+本IDSは、ソフトウェア開発および業務におけるデータ入力を支援することを目的として公開しています。なお、本辞書の利用にあたっては、利用者の責任において使用してください。
+本IDSは、対象工種に応じて項目を編集（追加、削除、変更等）を行ってください。
+本IDSに含まれていない項目は、設計数量管理機能を用いて別途設定してください。
+本IDSファイルは、以下のソフトウェアで出力されたIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2026-01-13</date>
+        <purpose>ソフトウェア開発および業務におけるデータ入力の支援</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="小段排水" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>小段排水</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路維持_排水構造物工_排水工_小段排水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路維持_排水構造物工_排水工_小段排水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>U型側溝の種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_鉄筋ｺﾝｸﾘｰﾄU型 JIS A 5372" />
+                            <enumeration value="2_道路用鉄筋ｺﾝｸﾘｰﾄ側溝 1種 JIS A 5372" />
+                            <enumeration value="3_道路用鉄筋ｺﾝｸﾘｰﾄ側溝 3種 JIS A 5372" />
+                            <enumeration value="4_側溝(各種)" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路維持_排水構造物工_排水工_小段排水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>U型側溝の規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_240 240×240×600" />
+                            <enumeration value="2_300A 300×240×600" />
+                            <enumeration value="3_300B 300×300×600" />
+                            <enumeration value="4_300C 300×360×600" />
+                            <enumeration value="5_360A 360×300×600" />
+                            <enumeration value="6_360B 360×360×600" />
+                            <enumeration value="7_450 450×450×600" />
+                            <enumeration value="8_600 600×600×600" />
+                            <enumeration value="9_250 250×250×2000" />
+                            <enumeration value="10_300A 300×300×2000" />
+                            <enumeration value="11_300B 300×400×2000" />
+                            <enumeration value="12_300C 300×500×2000" />
+                            <enumeration value="13_400A 400×400×2000" />
+                            <enumeration value="14_400B 400×500×2000" />
+                            <enumeration value="15_500A 500×500×2000" />
+                            <enumeration value="16_500B 500×600×2000" />
+                            <enumeration value="17_250 250×250×2000" />
+                            <enumeration value="18_300A 300×300×2000" />
+                            <enumeration value="19_300B 300×400×2000" />
+                            <enumeration value="20_300C 300×500×2000" />
+                            <enumeration value="21_400A 400×400×2000" />
+                            <enumeration value="22_400B 400×500×2000" />
+                            <enumeration value="23_500A 500×500×2000" />
+                            <enumeration value="24_500B 500×600×2000" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路維持_排水構造物工_排水工_小段排水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1519400101_1322400201_1580900101_B578400101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路維持_排水構造物工_排水工_小段排水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>内幅</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路維持_排水構造物工_排水工_小段排水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>内高</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="張りコンクリート" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>張りコンクリート</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路維持_排水構造物工_排水工_張りコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路維持_排水構造物工_排水工_張りコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1519400101_1322400201_1580900101_1058210101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路維持_排水構造物工_排水工_張りコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ夜間割増の有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｺﾝｸﾘｰﾄ夜間割増無" />
+                            <enumeration value="2_ｺﾝｸﾘｰﾄ夜間割増有" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路維持_排水構造物工_排水工_張りコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_18-8-25（20）（普通）" />
+                            <enumeration value="2_18-8-40（普通）" />
+                            <enumeration value="3_21-8-25（20）（普通）" />
+                            <enumeration value="4_21-8-40（普通）" />
+                            <enumeration value="5_18-8-25（20）（高炉）" />
+                            <enumeration value="6_18-8-40（高炉）" />
+                            <enumeration value="7_21-8-25（20）（高炉）" />
+                            <enumeration value="8_21-8-40（高炉）" />
+                            <enumeration value="9_各種" />
+                            <enumeration value="nan" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="縦排水" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>縦排水</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路維持_排水構造物工_排水工_縦排水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路維持_排水構造物工_排水工_縦排水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>U型側溝の種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_鉄筋ｺﾝｸﾘｰﾄU型 JIS A 5372" />
+                            <enumeration value="2_道路用鉄筋ｺﾝｸﾘｰﾄ側溝 1種 JIS A 5372" />
+                            <enumeration value="3_道路用鉄筋ｺﾝｸﾘｰﾄ側溝 3種 JIS A 5372" />
+                            <enumeration value="4_側溝(各種)" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路維持_排水構造物工_排水工_縦排水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>U型側溝の規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_240 240×240×600" />
+                            <enumeration value="2_300A 300×240×600" />
+                            <enumeration value="3_300B 300×300×600" />
+                            <enumeration value="4_300C 300×360×600" />
+                            <enumeration value="5_360A 360×300×600" />
+                            <enumeration value="6_360B 360×360×600" />
+                            <enumeration value="7_450 450×450×600" />
+                            <enumeration value="8_600 600×600×600" />
+                            <enumeration value="9_250 250×250×2000" />
+                            <enumeration value="10_300A 300×300×2000" />
+                            <enumeration value="11_300B 300×400×2000" />
+                            <enumeration value="12_300C 300×500×2000" />
+                            <enumeration value="13_400A 400×400×2000" />
+                            <enumeration value="14_400B 400×500×2000" />
+                            <enumeration value="15_500A 500×500×2000" />
+                            <enumeration value="16_500B 500×600×2000" />
+                            <enumeration value="17_250 250×250×2000" />
+                            <enumeration value="18_300A 300×300×2000" />
+                            <enumeration value="19_300B 300×400×2000" />
+                            <enumeration value="20_300C 300×500×2000" />
+                            <enumeration value="21_400A 400×400×2000" />
+                            <enumeration value="22_400B 400×500×2000" />
+                            <enumeration value="23_500A 500×500×2000" />
+                            <enumeration value="24_500B 500×600×2000" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路維持_排水構造物工_排水工_縦排水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1519400101_1322400201_1580900101_B578500101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路維持_排水構造物工_排水工_縦排水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>内幅</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路維持_排水構造物工_排水工_縦排水</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>内高</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>
