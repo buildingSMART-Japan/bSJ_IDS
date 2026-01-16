@@ -1,0 +1,610 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>202501.01</version>
+        <description>本IDSは、積算用属性情報（properties_202501_01.xlsx）のBIM/CIM積算MVDv0.3に対応したものです。
+本IDSは、ソフトウェア開発および業務におけるデータ入力を支援することを目的として公開しています。なお、本辞書の利用にあたっては、利用者の責任において使用してください。
+本IDSは、対象工種に応じて項目を編集（追加、削除、変更等）を行ってください。
+本IDSに含まれていない項目は、設計数量管理機能を用いて別途設定してください。
+本IDSファイルは、以下のソフトウェアで出力されたIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2026-01-13</date>
+        <purpose>ソフトウェア開発および業務におけるデータ入力の支援</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="コンクリート" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1482400101_1061300301_B041100503</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>養生費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_一般養生" />
+                            <enumeration value="2_特殊養生(練炭)" />
+                            <enumeration value="3_特殊養生(ｼﾞｪｯﾄﾋｰﾀ)" />
+                            <enumeration value="4_特殊養生(仮囲い内ｼﾞｪｯﾄﾋｰﾀ養生)" />
+                            <enumeration value="5_散水養生" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ夜間割増の有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｺﾝｸﾘｰﾄ夜間割増無" />
+                            <enumeration value="2_ｺﾝｸﾘｰﾄ夜間割増有" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_18-5-40(高炉B)" />
+                            <enumeration value="2_18-8-40(高炉B)" />
+                            <enumeration value="3_18-12-40(高炉)" />
+                            <enumeration value="4_18-5-80(高炉B)" />
+                            <enumeration value="5_18-8-80(高炉B)" />
+                            <enumeration value="6_19.5-5-40(高炉B)" />
+                            <enumeration value="7_19.5-8-40(高炉B)" />
+                            <enumeration value="8_19.5-12-40(高炉)" />
+                            <enumeration value="9_19.5-5-80(高炉B)" />
+                            <enumeration value="10_19.5-8-80(高炉B)" />
+                            <enumeration value="11_21-5-40(高炉B)" />
+                            <enumeration value="12_21-5-80(高炉B)" />
+                            <enumeration value="13_27-5-40(高炉B)" />
+                            <enumeration value="14_C=300kg/m3-5-40(高炉B)" />
+                            <enumeration value="15_C=300kg/m3-5-80(高炉B)" />
+                            <enumeration value="16_C=600kg/m3 Gmax=40(高炉B)" />
+                            <enumeration value="17_C=600kg/m3 Gmax=80(高炉B)" />
+                            <enumeration value="18_21-8-25(20)(普通)" />
+                            <enumeration value="19_21-12-25(20)(普通)" />
+                            <enumeration value="20_24-8-25(20)(普通)" />
+                            <enumeration value="21_24-12-25(20)(普通)" />
+                            <enumeration value="22_27-8-25(20)(普通)" />
+                            <enumeration value="23_27-12-25(20)(普通)" />
+                            <enumeration value="24_30-8-25(20)(普通)" />
+                            <enumeration value="25_30-12-25(20)(普通)" />
+                            <enumeration value="26_40-8-25(20)(普通)" />
+                            <enumeration value="27_40-12-25(20)(普通)" />
+                            <enumeration value="28_18-8-40(普通)" />
+                            <enumeration value="29_18-12-40(普通)" />
+                            <enumeration value="30_19.5-8-40(普通)" />
+                            <enumeration value="31_21-8-40(普通)" />
+                            <enumeration value="32_21-12-40(普通)" />
+                            <enumeration value="33_22.5-8-40(普通)" />
+                            <enumeration value="34_24-8-40(普通)" />
+                            <enumeration value="35_24-12-40(普通)" />
+                            <enumeration value="36_4.5-2.5-40(普通)" />
+                            <enumeration value="37_21-8-25(20)(高炉)" />
+                            <enumeration value="38_21-12-25(20)(高炉)" />
+                            <enumeration value="39_24-8-25(20)(高炉)" />
+                            <enumeration value="40_24-12-25(20)(高炉)" />
+                            <enumeration value="41_21-8-40(高炉)" />
+                            <enumeration value="42_24-8-40(高炉)" />
+                            <enumeration value="43_24-12-40(高炉)" />
+                            <enumeration value="44_21-12-40(高炉)" />
+                            <enumeration value="45_40-8-25(早強)" />
+                            <enumeration value="46_40-12-25(早強)" />
+                            <enumeration value="47_21-8-25(早強)" />
+                            <enumeration value="48_21-12-25(早強)" />
+                            <enumeration value="49_24-8-25(早強)" />
+                            <enumeration value="50_24-12-25(早強)" />
+                            <enumeration value="51_18-8-25(高炉)" />
+                            <enumeration value="52_18-12-25(高炉)" />
+                            <enumeration value="53_18-3-40(高炉)" />
+                            <enumeration value="54_21-3-40(高炉)" />
+                            <enumeration value="55_各種" />
+                            <enumeration value="56_ｺﾝｸﾘｰﾄ不要" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="シール材" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>シール材</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1482400101_1061300301_B616000101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="均しコンクリート" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>均しコンクリート</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_均しコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_均しコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1482400101_1061300301_B040500202</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_均しコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>敷厚</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_均しコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="型枠" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1482400101_1061300301_B040800301</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="基礎材" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>基礎材</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_基礎材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_基礎材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1482400101_1061300301_B040400201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_基礎材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>基礎材規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｸﾗｯｼｬﾗﾝ40～0" />
+                            <enumeration value="2_ｸﾗｯｼｬﾗﾝ30～0" />
+                            <enumeration value="3_ｸﾗｯｼｬﾗﾝ20～0" />
+                            <enumeration value="4_高炉ｽﾗｸﾞCS-40" />
+                            <enumeration value="5_高炉ｽﾗｸﾞMS-25" />
+                            <enumeration value="6_高炉ｽﾗｸﾞHMS-25" />
+                            <enumeration value="7_ｸﾗｯｼｬﾗﾝ80～0" />
+                            <enumeration value="8_再生ｸﾗｯｼｬﾗﾝ40～0" />
+                            <enumeration value="9_再生ｸﾗｯｼｬﾗﾝ80～0" />
+                            <enumeration value="10_砕石(各種)" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_基礎材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>敷厚</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="止水板" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>止水板</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_止水板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_止水板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1482400101_1061300301_B096200101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_止水板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>止水板種類･寸法</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_FF(塩ﾋﾞ製)200×5" />
+                            <enumeration value="2_FC(塩ﾋﾞ製)200×5" />
+                            <enumeration value="3_CF(塩ﾋﾞ製)200×5" />
+                            <enumeration value="4_CF(塩ﾋﾞ製)230×9" />
+                            <enumeration value="5_CC(塩ﾋﾞ製)200×5" />
+                            <enumeration value="6_UC(塩ﾋﾞ製)300×7" />
+                            <enumeration value="7_S.R(塩ﾋﾞ製)200×5" />
+                            <enumeration value="8_S.SF(塩ﾋﾞ製)200×5" />
+                            <enumeration value="9_CF300×7" />
+                            <enumeration value="10_CC300×7" />
+                            <enumeration value="11_UC200×6" />
+                            <enumeration value="12_各種" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="目地板" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>目地板</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1482400101_1061300301_B601700101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地板の種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_瀝青質目地板ｔ=10" />
+                            <enumeration value="2_瀝青繊維質目地板t=10" />
+                            <enumeration value="3_樹脂発泡体(15倍発泡)t=10" />
+                            <enumeration value="4_樹脂発泡体(30倍発泡)t=10" />
+                            <enumeration value="5_ｺﾞﾑ発泡体t=10" />
+                            <enumeration value="6_発泡ｽﾁﾛｰﾙt=10" />
+                            <enumeration value="7_瀝青質目地板ｔ=20" />
+                            <enumeration value="8_瀝青繊維質目地板t=20" />
+                            <enumeration value="9_樹脂発泡体(15倍発泡)t=20" />
+                            <enumeration value="10_樹脂発泡体(30倍発泡)t=20" />
+                            <enumeration value="11_ｺﾞﾑ発泡体t=20" />
+                            <enumeration value="12_発泡ｽﾁﾛｰﾙt=20" />
+                            <enumeration value="13_各種" />
+                            <enumeration value="nan" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地板厚さ</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_厚10mm" />
+                            <enumeration value="2_厚20mm" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="足場" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>足場</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1482400101_1061300301_1005500103</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>安全ネットの有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_安全ネット必要" />
+                            <enumeration value="2_安全ネット不要" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="鉄筋" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>鉄筋</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1482400101_1061300301_1040900102</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_山留擁壁工_コンクリート擁壁工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋材料規格･径</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_SD295 D10" />
+                            <enumeration value="2_SD295 D13" />
+                            <enumeration value="3_SD295 D16" />
+                            <enumeration value="4_SD345 D10" />
+                            <enumeration value="5_SD345 D13" />
+                            <enumeration value="6_SD345 D16～25" />
+                            <enumeration value="7_SD345 D29～32" />
+                            <enumeration value="8_SD345 D35" />
+                            <enumeration value="9_SD345 D38" />
+                            <enumeration value="10_SD345 D41" />
+                            <enumeration value="11_SD345 D51" />
+                            <enumeration value="12_SR235 φ9" />
+                            <enumeration value="13_SR235 φ13" />
+                            <enumeration value="14_SR235 φ16～25" />
+                            <enumeration value="15_SD390 D25" />
+                            <enumeration value="16_SD390 D29" />
+                            <enumeration value="17_SD390 D32" />
+                            <enumeration value="18_SD390 D35" />
+                            <enumeration value="19_SD390 D38" />
+                            <enumeration value="20_SD390 D41" />
+                            <enumeration value="21_SD490 D35" />
+                            <enumeration value="22_SD490 D38" />
+                            <enumeration value="23_SD490 D41" />
+                            <enumeration value="24_SD345(ねじ節鉄筋) D13" />
+                            <enumeration value="25_SD345(ねじ節鉄筋) D16" />
+                            <enumeration value="26_SD345(ねじ節鉄筋) D19" />
+                            <enumeration value="27_SD345(ねじ節鉄筋) D22" />
+                            <enumeration value="28_SD345(ねじ節鉄筋) D25" />
+                            <enumeration value="29_SD345(ねじ節鉄筋) D29" />
+                            <enumeration value="30_SD345(ねじ節鉄筋) D32" />
+                            <enumeration value="31_SD345(ねじ節鉄筋) D35" />
+                            <enumeration value="32_SD345(ねじ節鉄筋) D38" />
+                            <enumeration value="33_SD345(ねじ節鉄筋) D41" />
+                            <enumeration value="34_SD345(ねじ節鉄筋) D51" />
+                            <enumeration value="35_SD390(ねじ節鉄筋) D25" />
+                            <enumeration value="36_SD390(ねじ節鉄筋) D29" />
+                            <enumeration value="37_SD390(ねじ節鉄筋) D32" />
+                            <enumeration value="38_SD390(ねじ節鉄筋) D35" />
+                            <enumeration value="39_SD390(ねじ節鉄筋) D38" />
+                            <enumeration value="40_SD390(ねじ節鉄筋) D41" />
+                            <enumeration value="41_SD490(ねじ節鉄筋) D35" />
+                            <enumeration value="42_SD490(ねじ節鉄筋) D38" />
+                            <enumeration value="43_SD490(ねじ節鉄筋) D41" />
+                            <enumeration value="44_各種" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>
