@@ -1,0 +1,329 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>道路新設・改築_橋梁下部_工場製作工_工場塗装工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>202510.01</version>
+        <description>本IDSは、積算用属性情報（properties_202510_01.xlsx）のBIM/CIM積算MVDv0.3に対応したものです。
+本IDSは、ソフトウェア開発および業務におけるデータ入力を支援することを目的として公開しています。なお、本辞書の利用にあたっては、利用者の責任において使用してください。
+本IDSは、対象工種に応じて項目を編集（追加、削除、変更等）を行ってください。
+本IDSに含まれていない項目は、設計数量管理機能を用いて別途設定してください。
+本IDSファイルは、以下のソフトウェアで出力されたIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2026-01-13</date>
+        <purpose>ソフトウェア開発および業務におけるデータ入力の支援</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="メッキ" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>メッキ</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_橋梁下部_工場製作工_工場塗装工_メッキ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_橋梁下部_工場製作工_工場塗装工_メッキ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1411100101_1037200601_1037300102_1037600102</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="上塗" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>上塗</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_橋梁下部_工場製作工_工場塗装工_上塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_橋梁下部_工場製作工_工場塗装工_上塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1411100101_1037200601_1037300102_1038000601</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_橋梁下部_工場製作工_工場塗装工_上塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>塗装回数</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_橋梁下部_工場製作工_工場塗装工_上塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>塗装種別</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_フッ素系樹脂塗料上塗　上塗　赤系　フッ素系樹脂塗料用シンナー" />
+                            <enumeration value="2_フッ素系樹脂塗料上塗　上塗　青・緑系　フッ素系樹脂塗料用シンナー" />
+                            <enumeration value="3_フッ素系樹脂塗料上塗　上塗　黄・オレンジ系　フッ素系樹脂塗料用シンナー" />
+                            <enumeration value="4_フッ素系樹脂塗料上塗　上塗　中彩A　フッ素系樹脂塗料用シンナー" />
+                            <enumeration value="5_フッ素系樹脂塗料上塗　上塗　中彩B　フッ素系樹脂塗料用シンナー" />
+                            <enumeration value="6_フッ素系樹脂塗料上塗　上塗　淡彩　フッ素系樹脂塗料用シンナー" />
+                            <enumeration value="7_フッ素系樹脂塗料上塗　上塗　白　フッ素系樹脂塗料用シンナー" />
+                            <enumeration value="8_各種" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_橋梁下部_工場製作工_工場塗装工_上塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>塗装箇所</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="下塗" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>下塗</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_橋梁下部_工場製作工_工場塗装工_下塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_橋梁下部_工場製作工_工場塗装工_下塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1411100101_1037200601_1037300102_1037500102</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_橋梁下部_工場製作工_工場塗装工_下塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>塗装回数</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_橋梁下部_工場製作工_工場塗装工_下塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>塗装種別</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_鉛系・クロムフリーさび止めペイント　塗料用シンナー" />
+                            <enumeration value="2_無機ジンクリッチペイント　無機ジンクリッジプライマー用シンナー" />
+                            <enumeration value="3_エポキシ樹脂塗料下塗　エポキシ樹脂塗料用シンナー" />
+                            <enumeration value="4_変性エポキシ樹脂塗料内面用　エポキシ樹脂塗料用シンナー" />
+                            <enumeration value="5_ミストコート（エポキシ樹脂塗料　下塗）　エポキシ樹脂塗料用シンナー" />
+                            <enumeration value="6_各種" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_橋梁下部_工場製作工_工場塗装工_下塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>塗装箇所</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="中塗" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>中塗</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_橋梁下部_工場製作工_工場塗装工_中塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_橋梁下部_工場製作工_工場塗装工_中塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1411100101_1037200601_1037300102_1037900401</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_橋梁下部_工場製作工_工場塗装工_中塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>塗装回数</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_橋梁下部_工場製作工_工場塗装工_中塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>塗装種別</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_フッ素系樹脂塗料中塗　中塗　赤系　フッ素系樹脂塗料用シンナー" />
+                            <enumeration value="2_フッ素系樹脂塗料中塗　中塗　青・緑系　フッ素系樹脂塗料用シンナー" />
+                            <enumeration value="3_フッ素系樹脂塗料中塗　中塗　黄・オレンジ系　フッ素系樹脂塗料用シンナー" />
+                            <enumeration value="4_フッ素系樹脂塗料中塗　中塗　中彩A　フッ素系樹脂塗料用シンナー" />
+                            <enumeration value="5_フッ素系樹脂塗料中塗　中塗　中彩B　フッ素系樹脂塗料用シンナー" />
+                            <enumeration value="6_フッ素系樹脂塗料中塗　中塗　淡彩　フッ素系樹脂塗料用シンナー" />
+                            <enumeration value="7_フッ素系樹脂塗料中塗　中塗　白　フッ素系樹脂塗料用シンナー" />
+                            <enumeration value="8_各種" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_橋梁下部_工場製作工_工場塗装工_中塗</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>塗装箇所</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="前処理" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>前処理</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_橋梁下部_工場製作工_工場塗装工_前処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_橋梁下部_工場製作工_工場塗装工_前処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1411100101_1037200601_1037300102_1037400102</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_橋梁下部_工場製作工_工場塗装工_前処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_エッチングプライマー" />
+                            <enumeration value="2_ジンクリッチプライマー" />
+                            <enumeration value="3_原板ブラストのみ" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>
