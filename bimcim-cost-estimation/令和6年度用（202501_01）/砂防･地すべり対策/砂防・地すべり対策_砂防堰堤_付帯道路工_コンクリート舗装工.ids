@@ -1,0 +1,791 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>202501.01</version>
+        <description>本IDSは、積算用属性情報（properties_202501_01.xlsx）のBIM/CIM積算MVDv0.3に対応したものです。
+本IDSは、ソフトウェア開発および業務におけるデータ入力を支援することを目的として公開しています。なお、本辞書の利用にあたっては、利用者の責任において使用してください。
+本IDSは、対象工種に応じて項目を編集（追加、削除、変更等）を行ってください。
+本IDSに含まれていない項目は、設計数量管理機能を用いて別途設定してください。
+本IDSファイルは、以下のソフトウェアで出力されたIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2026-01-13</date>
+        <purpose>ソフトウェア開発および業務におけるデータ入力の支援</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="コンクリート舗装" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>コンクリート舗装</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_コンクリート舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_コンクリート舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1123800101_1065500103_1066300101_1066600101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_コンクリート舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>舗装厚</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_コンクリート舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_曲げ4.5-2.5-40" />
+                            <enumeration value="2_曲げ4.5-6.5-40" />
+                            <enumeration value="3_曲げ4.5-2.5-40(高炉)" />
+                            <enumeration value="4_曲げ4.5-6.5-40(高炉)" />
+                            <enumeration value="5_各種" />
+                            <enumeration value="nan" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="上層路盤（歩道部）" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>上層路盤（歩道部）</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_上層路盤（歩道部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_上層路盤（歩道部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仕上り厚</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_上層路盤（歩道部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1123800101_1065500103_1066300101_B066005101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_上層路盤（歩道部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>路盤材種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_再生粒度調整砕石 RM-25" />
+                            <enumeration value="2_再生粒度調整砕石 RM-30" />
+                            <enumeration value="3_再生粒度調整砕石 RM-40" />
+                            <enumeration value="4_粒度調整砕石 M-25" />
+                            <enumeration value="5_粒度調整砕石 M-30" />
+                            <enumeration value="6_粒度調整砕石 M-40" />
+                            <enumeration value="7_路盤材(各種)" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_上層路盤（歩道部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>路盤材規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="上層路盤（車道・路肩部）" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>上層路盤（車道・路肩部）</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_上層路盤（車道・路肩部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_上層路盤（車道・路肩部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仕上り厚</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_上層路盤（車道・路肩部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1123800101_1065500103_1066300101_B066000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_上層路盤（車道・路肩部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>路盤材種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_瀝青安定処理材(25)" />
+                            <enumeration value="2_瀝青安定処理材(30)" />
+                            <enumeration value="3_瀝青安定処理材(40)" />
+                            <enumeration value="4_再生瀝青安定処理材(40)" />
+                            <enumeration value="5_路盤材(各種)" />
+                            <enumeration value="6_再生粒度調整砕石 RM-25" />
+                            <enumeration value="7_再生粒度調整砕石 RM-30" />
+                            <enumeration value="8_再生粒度調整砕石 RM-40" />
+                            <enumeration value="9_粒度調整砕石 M-25" />
+                            <enumeration value="10_粒度調整砕石 M-30" />
+                            <enumeration value="11_粒度調整砕石 M-40" />
+                            <enumeration value="12_路盤材(各種)" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_上層路盤（車道・路肩部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>路盤材規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="下層路盤（歩道部）" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>下層路盤（歩道部）</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_下層路盤（歩道部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_下層路盤（歩道部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仕上り厚</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_下層路盤（歩道部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1123800101_1065500103_1066300101_B065905101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_下層路盤（歩道部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>路盤材種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｸﾗｯｼｬﾗﾝ C-20" />
+                            <enumeration value="2_ｸﾗｯｼｬﾗﾝ C-30" />
+                            <enumeration value="3_ｸﾗｯｼｬﾗﾝ C-40" />
+                            <enumeration value="4_再生ｸﾗｯｼｬﾗﾝ RC-20" />
+                            <enumeration value="5_再生ｸﾗｯｼｬﾗﾝ RC-30" />
+                            <enumeration value="6_再生ｸﾗｯｼｬﾗﾝ RC-40" />
+                            <enumeration value="7_路盤材(各種)" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_下層路盤（歩道部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>路盤材規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="下層路盤（車道・路肩部）" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>下層路盤（車道・路肩部）</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_下層路盤（車道・路肩部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_下層路盤（車道・路肩部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仕上り厚</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_下層路盤（車道・路肩部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1123800101_1065500103_1066300101_B065900101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_下層路盤（車道・路肩部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>路盤材種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ｸﾗｯｼｬﾗﾝ C-20" />
+                            <enumeration value="2_ｸﾗｯｼｬﾗﾝ C-30" />
+                            <enumeration value="3_ｸﾗｯｼｬﾗﾝ C-40" />
+                            <enumeration value="4_再生ｸﾗｯｼｬﾗﾝ RC-20" />
+                            <enumeration value="5_再生ｸﾗｯｼｬﾗﾝ RC-30" />
+                            <enumeration value="6_再生ｸﾗｯｼｬﾗﾝ RC-40" />
+                            <enumeration value="7_路盤材(各種)" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_下層路盤（車道・路肩部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>路盤材規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="中間層（歩道部）" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>中間層（歩道部）</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_中間層（歩道部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_中間層（歩道部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1123800101_1065500103_1066300101_B581105101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_中間層（歩道部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>平均幅員</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_1.4m未満（1層当り平均仕上り厚50mm以下）" />
+                            <enumeration value="2_1.4m未満（1層当り平均仕上り厚50mm超70mm以下）" />
+                            <enumeration value="3_1.4m以上" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_中間層（歩道部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_密粒度ｱｽｺﾝ(20)" />
+                            <enumeration value="2_密粒度ｱｽｺﾝ(13)" />
+                            <enumeration value="3_密粒度ｱｽｺﾝ(20F)" />
+                            <enumeration value="4_密粒度ｱｽｺﾝ(13F)" />
+                            <enumeration value="5_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20)" />
+                            <enumeration value="6_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13)" />
+                            <enumeration value="7_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
+                            <enumeration value="8_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
+                            <enumeration value="9_粗粒度ｱｽｺﾝ(20)" />
+                            <enumeration value="10_再生密粒度ｱｽｺﾝ(20)" />
+                            <enumeration value="11_再生密粒度ｱｽｺﾝ(13)" />
+                            <enumeration value="12_再生粗粒度ｱｽｺﾝ(20)" />
+                            <enumeration value="13_細粒度ｱｽｺﾝ(13)" />
+                            <enumeration value="14_細粒度ｱｽｺﾝ(13F)" />
+                            <enumeration value="15_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
+                            <enumeration value="16_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
+                            <enumeration value="17_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(5F)" />
+                            <enumeration value="18_再生細粒度ｱｽｺﾝ(13)" />
+                            <enumeration value="19_各種(1.90以上2.00t/m3未満)" />
+                            <enumeration value="20_各種(2.00以上2.10t/m3未満)" />
+                            <enumeration value="21_各種(2.10以上2.20t/m3未満)" />
+                            <enumeration value="22_各種(2.20以上2.30t/m3未満)" />
+                            <enumeration value="23_各種(2.30以上2.40t/m3未満)" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_中間層（歩道部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_中間層（歩道部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>舗装厚</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="中間層（車道・路肩部）" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>中間層（車道・路肩部）</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_中間層（車道・路肩部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_中間層（車道・路肩部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1123800101_1065500103_1066300101_B581100101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_中間層（車道・路肩部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>平均幅員</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_1.4m未満（1層当り平均仕上り厚50mm以下）" />
+                            <enumeration value="2_1.4m未満（1層当り平均仕上り厚50mm超70mm以下）" />
+                            <enumeration value="3_1.4m以上3.0m以下" />
+                            <enumeration value="4_3.0m超" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_中間層（車道・路肩部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_密粒度ｱｽｺﾝ(20)" />
+                            <enumeration value="2_密粒度ｱｽｺﾝ(13)" />
+                            <enumeration value="3_密粒度ｱｽｺﾝ(20F)" />
+                            <enumeration value="4_密粒度ｱｽｺﾝ(13F)" />
+                            <enumeration value="5_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20)" />
+                            <enumeration value="6_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13)" />
+                            <enumeration value="7_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
+                            <enumeration value="8_密粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
+                            <enumeration value="9_粗粒度ｱｽｺﾝ(20)" />
+                            <enumeration value="10_再生密粒度ｱｽｺﾝ(20)" />
+                            <enumeration value="11_再生密粒度ｱｽｺﾝ(13)" />
+                            <enumeration value="12_再生粗粒度ｱｽｺﾝ(20)" />
+                            <enumeration value="13_改質As 粗粒AC-100(20)" />
+                            <enumeration value="14_改質As 密粒AC-100(20)" />
+                            <enumeration value="15_改質As 密粒AC-100(13)" />
+                            <enumeration value="16_改質As 密粒I型(20)" />
+                            <enumeration value="17_改質As 密粒II型(20)DS3000" />
+                            <enumeration value="18_改質As 粗粒I型(20)" />
+                            <enumeration value="19_改質As 粗粒I型(20)DS3000" />
+                            <enumeration value="20_改質As 粗粒II型(20)DS5000" />
+                            <enumeration value="21_改質As 再生粗粒I型(20)" />
+                            <enumeration value="22_改質As 再生粗粒I型(20)DS3000" />
+                            <enumeration value="23_改質As 再生粗粒II型(20)DS5000" />
+                            <enumeration value="24_細粒度ｱｽｺﾝ(13)" />
+                            <enumeration value="25_細粒度ｱｽｺﾝ(13F)" />
+                            <enumeration value="26_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(20F)" />
+                            <enumeration value="27_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(13F)" />
+                            <enumeration value="28_細粒度ｷﾞｬｯﾌﾟｱｽｺﾝ(5F)" />
+                            <enumeration value="29_再生細粒度ｱｽｺﾝ(13)" />
+                            <enumeration value="30_開粒度ｱｽｺﾝ(13)" />
+                            <enumeration value="31_各種(1.90以上2.00t/m3未満)" />
+                            <enumeration value="32_各種(2.00以上2.10t/m3未満)" />
+                            <enumeration value="33_各種(2.10以上2.20t/m3未満)" />
+                            <enumeration value="34_各種(2.20以上2.30t/m3未満)" />
+                            <enumeration value="35_各種(2.30以上2.40t/m3未満)" />
+                            <enumeration value="36_各種(2.40以上2.50t/m3未満)" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_中間層（車道・路肩部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_中間層（車道・路肩部）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>舗装厚</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="横目地" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>横目地</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_横目地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_横目地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1123800101_1065500103_1066300101_1066800101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_横目地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地形式</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_膨張目地" />
+                            <enumeration value="2_収縮目地" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="目地切り・清掃" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>目地切り・清掃</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_目地切り・清掃</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_目地切り・清掃</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1123800101_1065500103_1066300101_1606000101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="縦目地" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>縦目地</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_縦目地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_縦目地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1123800101_1065500103_1066300101_1066700101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_縦目地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地材種類・厚さ</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="連続鉄筋コンクリート舗装" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>連続鉄筋コンクリート舗装</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_連続鉄筋コンクリート舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_連続鉄筋コンクリート舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470500101_1123800101_1065500103_1066300101_B345705101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_連続鉄筋コンクリート舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>舗装厚</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_砂防・地すべり対策_砂防堰堤_付帯道路工_コンクリート舗装工_連続鉄筋コンクリート舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘ-ﾄ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>
