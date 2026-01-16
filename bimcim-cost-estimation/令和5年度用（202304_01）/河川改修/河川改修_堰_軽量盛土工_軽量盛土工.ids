@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>河川改修_堰_軽量盛土工_軽量盛土工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>202510.01</version>
+        <description>本IDSは、積算用属性情報（properties_202510_01.xlsx）のBIM/CIM積算MVDv0.3に対応したものです。
+本IDSは、ソフトウェア開発および業務におけるデータ入力を支援することを目的として公開しています。なお、本辞書の利用にあたっては、利用者の責任において使用してください。
+本IDSは、対象工種に応じて項目を編集（追加、削除、変更等）を行ってください。
+本IDSに含まれていない項目は、設計数量管理機能を用いて別途設定してください。
+本IDSファイルは、以下のソフトウェアで出力されたIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2026-01-13</date>
+        <purpose>ソフトウェア開発および業務におけるデータ入力の支援</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="コンクリート床版" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>コンクリート床版</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_軽量盛土工_軽量盛土工_コンクリート床版</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_軽量盛土工_軽量盛土工_コンクリート床版</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>コンクリート規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_24－8－25（20）（普通）" />
+                            <enumeration value="2_24－12－25（20）（普通）" />
+                            <enumeration value="3_18－8－40（普通）" />
+                            <enumeration value="4_18－12－40（普通）" />
+                            <enumeration value="5_24－8－25（20）（高炉）" />
+                            <enumeration value="6_24－12－25（20）（高炉）" />
+                            <enumeration value="7_18－8－40（高炉）" />
+                            <enumeration value="8_18－12－40（高炉）" />
+                            <enumeration value="9_24－8－25（早強）" />
+                            <enumeration value="10_24－12－25（早強）" />
+                            <enumeration value="11_各種" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_軽量盛土工_軽量盛土工_コンクリート床版</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1593200101_1593300101_B592300101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_軽量盛土工_軽量盛土工_コンクリート床版</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>厚さ</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_10cm" />
+                            <enumeration value="2_15cm" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="基礎コンクリート" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>基礎コンクリート</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_軽量盛土工_軽量盛土工_基礎コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_軽量盛土工_軽量盛土工_基礎コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>コンクリート規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_21－8－25（20）（普通）" />
+                            <enumeration value="2_21－12－25（20）（普通）" />
+                            <enumeration value="3_24－8－25（20）（普通）" />
+                            <enumeration value="4_24－12－25（20）（普通）" />
+                            <enumeration value="5_27－8－25（20）（普通）" />
+                            <enumeration value="6_27－12－25（20）（普通）" />
+                            <enumeration value="7_30－8－25（20）（普通）" />
+                            <enumeration value="8_30－12－25（20）（普通）" />
+                            <enumeration value="9_40－8－25（20）（普通）" />
+                            <enumeration value="10_40－12－25（20）（普通）" />
+                            <enumeration value="11_18－8－40（普通）" />
+                            <enumeration value="12_18－12－40（普通）" />
+                            <enumeration value="13_19.5－8－40（普通）" />
+                            <enumeration value="14_21－8－40（普通）" />
+                            <enumeration value="15_21－12－40（普通）" />
+                            <enumeration value="16_22.5－8－40（普通）" />
+                            <enumeration value="17_24－8－40（普通）" />
+                            <enumeration value="18_24－12－40（普通）" />
+                            <enumeration value="19_4.5－2.5－40（普通）" />
+                            <enumeration value="20_21－8－25（20）（高炉）" />
+                            <enumeration value="21_21－12－25（20）（高炉）" />
+                            <enumeration value="22_24－8－25（20）（高炉）" />
+                            <enumeration value="23_24－12－25（20）（高炉）" />
+                            <enumeration value="24_19.5－5－40（高炉）" />
+                            <enumeration value="25_19.5－8－40（高炉）" />
+                            <enumeration value="26_19.5－12－40（高炉）" />
+                            <enumeration value="27_18－5－40（高炉）" />
+                            <enumeration value="28_21－5－40（高炉）" />
+                            <enumeration value="29_18－8－40（高炉）" />
+                            <enumeration value="30_18－12－40（高炉）" />
+                            <enumeration value="31_21－8－40（高炉）" />
+                            <enumeration value="32_24－8－40（高炉）" />
+                            <enumeration value="33_24－12－40（高炉）" />
+                            <enumeration value="34_21－12－40（高炉）" />
+                            <enumeration value="35_40－8－25（早強）" />
+                            <enumeration value="36_40－12－25（早強）" />
+                            <enumeration value="37_21－8－25（早強）" />
+                            <enumeration value="38_21－12－25（早強）" />
+                            <enumeration value="39_24－8－25（早強）" />
+                            <enumeration value="40_24－12－25（早強）" />
+                            <enumeration value="41_18－8－25（高炉）" />
+                            <enumeration value="42_18－12－25（高炉）" />
+                            <enumeration value="43_21－5－80（高炉）" />
+                            <enumeration value="44_18－3－40（高炉）" />
+                            <enumeration value="45_21－3－40（高炉）" />
+                            <enumeration value="46_各種" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_軽量盛土工_軽量盛土工_基礎コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1593200101_1593300101_B595300101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="壁面材" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>壁面材</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_軽量盛土工_軽量盛土工_壁面材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_軽量盛土工_軽量盛土工_壁面材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1593200101_1593300101_B594905201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_軽量盛土工_軽量盛土工_壁面材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>壁面材仕様・規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="支柱" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>支柱</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_軽量盛土工_軽量盛土工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_軽量盛土工_軽量盛土工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1593200101_1593300101_B594905101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_軽量盛土工_軽量盛土工_支柱</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支柱仕様・規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="裏込砕石" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>裏込砕石</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_軽量盛土工_軽量盛土工_裏込砕石</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_軽量盛土工_軽量盛土工_裏込砕石</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1593200101_1593300101_B221800301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_軽量盛土工_軽量盛土工_裏込砕石</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>砕石規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_再生クラッシャーランRC－80" />
+                            <enumeration value="2_再生クラッシャーランRC－40" />
+                            <enumeration value="3_クラッシャーランC－80" />
+                            <enumeration value="4_クラッシャーランC－40" />
+                            <enumeration value="5_各種" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="軽量盛土" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>軽量盛土</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_軽量盛土工_軽量盛土工_軽量盛土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_軽量盛土工_軽量盛土工_軽量盛土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1593200101_1593300101_B595100101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>
