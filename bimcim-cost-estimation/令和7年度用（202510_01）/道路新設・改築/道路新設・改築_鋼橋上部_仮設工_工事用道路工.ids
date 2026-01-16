@@ -1,0 +1,677 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>道路新設・改築_鋼橋上部_仮設工_工事用道路工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>202510.01</version>
+        <description>本IDSは、積算用属性情報（properties_202510_01.xlsx）のBIM/CIM積算MVDv0.3に対応したものです。
+本IDSは、ソフトウェア開発および業務におけるデータ入力を支援することを目的として公開しています。なお、本辞書の利用にあたっては、利用者の責任において使用してください。
+本IDSは、対象工種に応じて項目を編集（追加、削除、変更等）を行ってください。
+本IDSに含まれていない項目は、設計数量管理機能を用いて別途設定してください。
+本IDSファイルは、以下のソフトウェアで出力されたIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2026-01-13</date>
+        <purpose>ソフトウェア開発および業務におけるデータ入力の支援</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="仮設アスカーブ" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>仮設アスカーブ</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_仮設アスカーブ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_仮設アスカーブ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1367500101_1002500901_1002600101_B579900101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="仮設舗装" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>仮設舗装</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_仮設舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_仮設舗装</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1367500101_1002500901_1002600101_B003400102</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="土のう" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>土のう</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_土のう</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_土のう</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1367500101_1002500901_1002600101_1003700102</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_土のう</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>大型土のう規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="土のう積" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>土のう積</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_土のう積</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_土のう積</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1367500101_1002500901_1002600101_1602300101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="安定処理" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>安定処理</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_安定処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_安定処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1367500101_1002500901_1002600101_B544500103</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_安定処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>固化材100m2あたり使用量</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_安定処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>固化材の種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_安定処理</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>混合深さ</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_0.6m以下" />
+                            <enumeration value="2_0.6mを超え1m以下" />
+                            <enumeration value="3_1m以下" />
+                            <enumeration value="4_1mを超え2m以下" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="工事用道路盛土" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>工事用道路盛土</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_工事用道路盛土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_工事用道路盛土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1367500101_1002500901_1002600101_B002700102</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_工事用道路盛土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>施工幅員</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_2.5m未満" />
+                            <enumeration value="2_2.5m以上4.0m未満" />
+                            <enumeration value="3_4.0m以上" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="工事用道路補修" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>工事用道路補修</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_工事用道路補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_工事用道路補修</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1367500101_1002500901_1002600101_B003600102</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="敷砂利" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>敷砂利</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_敷砂利</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_敷砂利</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1367500101_1002500901_1002600101_1003100102</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_敷砂利</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>敷厚</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_敷砂利</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>砕石規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="敷鉄板" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>敷鉄板</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_敷鉄板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_敷鉄板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1367500101_1002500901_1002600101_1003200201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_敷鉄板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_設置" />
+                            <enumeration value="2_撤去" />
+                            <enumeration value="3_設置・撤去" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_敷鉄板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鋼材規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_22×1,524×6,096（mm）" />
+                            <enumeration value="2_22×1,524×3,048（mm）" />
+                            <enumeration value="3_25×1,524×6,096（mm）" />
+                            <enumeration value="4_各種" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="殻処分" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>殻処分</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_殻処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_殻処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1367500101_1002500901_1002600101_B003805102</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_殻処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>殻種別</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_アスファルト殻" />
+                            <enumeration value="2_コンクリート殻（無筋）" />
+                            <enumeration value="3_コンクリート殻（鉄筋）" />
+                            <enumeration value="4_モルタル殻" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="殻運搬" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>殻運搬</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_殻運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_殻運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1367500101_1002500901_1002600101_B003800402</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_殻運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>殻種別</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_コンクリート（無筋）構造物とりこわし" />
+                            <enumeration value="2_コンクリート（鉄筋）構造物とりこわし" />
+                            <enumeration value="3_舗装版破砕" />
+                            <enumeration value="4_吹付法面とりこわし（モルタル）" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="舗装版切断" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>舗装版切断</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_舗装版切断</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_舗装版切断</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>アスファルト舗装版厚</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_15cm以下" />
+                            <enumeration value="2_15cmを超え30cm以下" />
+                            <enumeration value="3_30cmを超え40cm以下" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_舗装版切断</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>コンクリート舗装版厚</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_15cm以下" />
+                            <enumeration value="2_15cmを超え30cm以下" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_舗装版切断</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>コンクリート＋アスファルト（カバー）舗装版の全体厚</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_15cm以下" />
+                            <enumeration value="2_15cmを超え30cm以下" />
+                            <enumeration value="3_30cmを超え40cm以下" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_舗装版切断</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1367500101_1002500901_1002600101_B580005101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_舗装版切断</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>舗装版種別</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_アスファルト舗装版" />
+                            <enumeration value="2_コンクリート舗装版" />
+                            <enumeration value="3_コンクリート＋アスファルト（カバー）舗装版" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="舗装版破砕" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>舗装版破砕</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_舗装版破砕</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_舗装版破砕</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1367500101_1002500901_1002600101_B580000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_道路新設・改築_鋼橋上部_仮設工_工事用道路工_舗装版破砕</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>舗装版種別</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_アスファルト舗装版" />
+                            <enumeration value="2_コンクリート舗装版" />
+                            <enumeration value="3_コンクリート＋アスファルト（カバー）舗装版" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>
