@@ -1,0 +1,637 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>202501.01</version>
+        <description>本IDSは、積算用属性情報（properties_202501_01.xlsx）のBIM/CIM積算MVDv0.3に対応したものです。
+本IDSは、ソフトウェア開発および業務におけるデータ入力を支援することを目的として公開しています。なお、本辞書の利用にあたっては、利用者の責任において使用してください。
+本IDSは、対象工種に応じて項目を編集（追加、削除、変更等）を行ってください。
+本IDSに含まれていない項目は、設計数量管理機能を用いて別途設定してください。
+本IDSファイルは、以下のソフトウェアで出力されたIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2026-01-13</date>
+        <purpose>ソフトウェア開発および業務におけるデータ入力の支援</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="L形側溝撤去" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>L形側溝撤去</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_L形側溝撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_L形側溝撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1301600101_1069300101_1590400101_B582500101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_L形側溝撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_撤去</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="PC管撤去" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>PC管撤去</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_PC管撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_PC管撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1301600101_1069300101_1590400101_B582800101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_PC管撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_撤去</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="U型側溝撤去" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>U型側溝撤去</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_U型側溝撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_U型側溝撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1301600101_1069300101_1590400101_1583600101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_U型側溝撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_再利用撤去</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="コルゲートパイプ撤去" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>コルゲートパイプ撤去</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_コルゲートパイプ撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_コルゲートパイプ撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1301600101_1069300101_1590400101_B583200101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_コルゲートパイプ撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_撤去</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="コルゲートフリューム撤去" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>コルゲートフリューム撤去</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_コルゲートフリューム撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_コルゲートフリューム撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1301600101_1069300101_1590400101_B583300101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_コルゲートフリューム撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_撤去</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ヒューム管撤去" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ヒューム管撤去</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_ヒューム管撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_ヒューム管撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1301600101_1069300101_1590400101_B582600101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_ヒューム管撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>管径</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_200mm" />
+                            <enumeration value="2_250mm" />
+                            <enumeration value="3_300mm" />
+                            <enumeration value="4_350mm" />
+                            <enumeration value="5_400mm" />
+                            <enumeration value="6_450mm" />
+                            <enumeration value="7_500mm" />
+                            <enumeration value="8_600mm" />
+                            <enumeration value="9_700mm" />
+                            <enumeration value="10_800mm" />
+                            <enumeration value="11_900mm" />
+                            <enumeration value="12_1000mm" />
+                            <enumeration value="13_1100mm" />
+                            <enumeration value="14_1200mm" />
+                            <enumeration value="15_1350mm" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_ヒューム管撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ボックスカルバート撤去" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ボックスカルバート撤去</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_ボックスカルバート撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_ボックスカルバート撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1301600101_1069300101_1590400101_B582700101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_ボックスカルバート撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_撤去</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="マンホール撤去" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>マンホール撤去</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_マンホール撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_マンホール撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1301600101_1069300101_1590400101_B583400101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_マンホール撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>製品質量（kg/基）</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_2000Kg/基以下" />
+                            <enumeration value="2_2000Kg/基を超え4000Kg/基以下" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="暗渠排水管撤去" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>暗渠排水管撤去</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_暗渠排水管撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_暗渠排水管撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1301600101_1069300101_1590400101_B582900101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_暗渠排水管撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_撤去</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="管（函）渠型側溝撤去" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>管（函）渠型側溝撤去</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_管（函）渠型側溝撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_管（函）渠型側溝撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1301600101_1069300101_1590400101_B583000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_管（函）渠型側溝撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_撤去</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="蓋版撤去" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>蓋版撤去</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_蓋版撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_蓋版撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1301600101_1069300101_1590400101_1583700101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_蓋版撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>蓋種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="鉄筋コンクリート台付管撤去" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>鉄筋コンクリート台付管撤去</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_鉄筋コンクリート台付管撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_鉄筋コンクリート台付管撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1301600101_1069300101_1590400101_B583500101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_鉄筋コンクリート台付管撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_撤去</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="集水桝撤去" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>集水桝撤去</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_集水桝撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_集水桝撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1301600101_1069300101_1590400101_B583100101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路新設・改築_道路改良_構造物撤去工_排水構造物撤去工_集水桝撤去</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>製品質量(kg/基)</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_50kg以上80kg以下" />
+                            <enumeration value="2_80kgを超え200kg以下" />
+                            <enumeration value="3_200kgを超え400kg以下" />
+                            <enumeration value="4_400kgを超え600kg以下" />
+                            <enumeration value="5_600kgを超え800kg以下" />
+                            <enumeration value="6_800kgを超え1200kg以下" />
+                            <enumeration value="7_1200kgを超え1600kg以下" />
+                            <enumeration value="8_1600kgを超え2200kg以下" />
+                            <enumeration value="9_2200kgを超え2800kg以下" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>
