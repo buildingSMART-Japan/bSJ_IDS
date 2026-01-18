@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>河川改修_堰_仮設工_仮区画線工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>202510.01</version>
+        <description>本IDSは、積算用属性情報（properties_202510_01.xlsx）のBIM/CIM積算MVDv0.3に対応したものです。
+本IDSは、ソフトウェア開発および業務におけるデータ入力を支援することを目的として公開しています。なお、本辞書の利用にあたっては、利用者の責任において使用してください。
+本IDSは、対象工種に応じて項目を編集（追加、削除、変更等）を行ってください。
+本IDSに含まれていない項目は、設計数量管理機能を用いて別途設定してください。
+本IDSファイルは、以下のソフトウェアで出力されたIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2026-01-16</date>
+        <purpose>ソフトウェア開発および業務におけるデータ入力の支援</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="仮区画線" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>仮区画線</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_仮設工_仮区画線工_仮区画線</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_仮設工_仮区画線工_仮区画線</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1002500901_1133000101_1353600101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_仮設工_仮区画線工_仮区画線</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>塗布厚</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_厚1.5mm" />
+                            <enumeration value="2_厚1.0mm" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_仮設工_仮区画線工_仮区画線</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>塗料規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_常温" />
+                            <enumeration value="2_加熱" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_仮設工_仮区画線工_仮区画線</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>排水性舗装の有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_排水性舗装無" />
+                            <enumeration value="2_排水性舗装有" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_仮設工_仮区画線工_仮区画線</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>施工方法区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_溶融式手動" />
+                            <enumeration value="2_ペイント式　溶剤型" />
+                            <enumeration value="3_ペイント式　水性型" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_仮設工_仮区画線工_仮区画線</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>規格・仕様区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_実線　15cm" />
+                            <enumeration value="2_実線　20cm" />
+                            <enumeration value="3_実線　30cm" />
+                            <enumeration value="4_実線　45cm" />
+                            <enumeration value="5_破線　15cm" />
+                            <enumeration value="6_破線　20cm" />
+                            <enumeration value="7_破線　30cm" />
+                            <enumeration value="8_破線　45cm" />
+                            <enumeration value="9_ゼブラ　15cm" />
+                            <enumeration value="10_ゼブラ　20cm" />
+                            <enumeration value="11_ゼブラ　30cm" />
+                            <enumeration value="12_ゼブラ　45cm" />
+                            <enumeration value="13_矢印・記号・文字　15cm換算" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>

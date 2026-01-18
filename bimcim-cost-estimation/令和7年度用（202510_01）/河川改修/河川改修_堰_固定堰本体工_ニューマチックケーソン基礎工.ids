@@ -1,0 +1,855 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>202510.01</version>
+        <description>本IDSは、積算用属性情報（properties_202510_01.xlsx）のBIM/CIM積算MVDv0.3に対応したものです。
+本IDSは、ソフトウェア開発および業務におけるデータ入力を支援することを目的として公開しています。なお、本辞書の利用にあたっては、利用者の責任において使用してください。
+本IDSは、対象工種に応じて項目を編集（追加、削除、変更等）を行ってください。
+本IDSに含まれていない項目は、設計数量管理機能を用いて別途設定してください。
+本IDSファイルは、以下のソフトウェアで出力されたIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2026-01-16</date>
+        <purpose>ソフトウェア開発および業務におけるデータ入力の支援</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="コンクリート" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>コンクリート規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_21－8－25（20）（普通）" />
+                            <enumeration value="2_21－12－25（20）（普通）" />
+                            <enumeration value="3_24－8－25（20）（普通）" />
+                            <enumeration value="4_24－12－25（20）（普通）" />
+                            <enumeration value="5_27－8－25（20）（普通）" />
+                            <enumeration value="6_27－12－25（20）（普通）" />
+                            <enumeration value="7_30－8－25（20）（普通）" />
+                            <enumeration value="8_30－12－25（20）（普通）" />
+                            <enumeration value="9_40－8－25（20）（普通）" />
+                            <enumeration value="10_40－12－25（20）（普通）" />
+                            <enumeration value="11_18－8－40（普通）" />
+                            <enumeration value="12_18－12－40（普通）" />
+                            <enumeration value="13_19.5－8－40（普通）" />
+                            <enumeration value="14_21－8－40（普通）" />
+                            <enumeration value="15_21－12－40（普通）" />
+                            <enumeration value="16_22.5－8－40（普通）" />
+                            <enumeration value="17_24－8－40（普通）" />
+                            <enumeration value="18_24－12－40（普通）" />
+                            <enumeration value="19_4.5－2.5－40（普通）" />
+                            <enumeration value="20_21－8－25（20）（高炉）" />
+                            <enumeration value="21_21－12－25（20）（高炉）" />
+                            <enumeration value="22_24－8－25（20）（高炉）" />
+                            <enumeration value="23_24－12－25（20）（高炉）" />
+                            <enumeration value="24_19.5－5－40（高炉）" />
+                            <enumeration value="25_19.5－8－40（高炉）" />
+                            <enumeration value="26_19.5－12－40（高炉）" />
+                            <enumeration value="27_18－5－40（高炉）" />
+                            <enumeration value="28_21－5－40（高炉）" />
+                            <enumeration value="29_18－8－40（高炉）" />
+                            <enumeration value="30_18－12－40（高炉）" />
+                            <enumeration value="31_21－8－40（高炉）" />
+                            <enumeration value="32_24－8－40（高炉）" />
+                            <enumeration value="33_24－12－40（高炉）" />
+                            <enumeration value="34_21－12－40（高炉）" />
+                            <enumeration value="35_40－8－25（早強）" />
+                            <enumeration value="36_40－12－25（早強）" />
+                            <enumeration value="37_21－8－25（早強）" />
+                            <enumeration value="38_21－12－25（早強）" />
+                            <enumeration value="39_24－8－25（早強）" />
+                            <enumeration value="40_24－12－25（早強）" />
+                            <enumeration value="41_18－8－25（高炉）" />
+                            <enumeration value="42_18－12－25（高炉）" />
+                            <enumeration value="43_21－5－80（高炉）" />
+                            <enumeration value="44_18－3－40（高炉）" />
+                            <enumeration value="45_21－3－40（高炉）" />
+                            <enumeration value="46_各種" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1477500101_1418800101_B041100105</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ニューマチックケーソン設備" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ニューマチックケーソン設備</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_ニューマチックケーソン設備</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_ニューマチックケーソン設備</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1477500101_1418800101_1418900101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ブローパイプバルブ調整" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ブローパイプバルブ調整</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_ブローパイプバルブ調整</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_ブローパイプバルブ調整</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1477500101_1418800101_1554100101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="中埋コンクリート" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>中埋コンクリート</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_中埋コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_中埋コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>コンクリート規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_18－18－25（20）（普通）" />
+                            <enumeration value="2_21－18－25（20）（普通）" />
+                            <enumeration value="3_各種" />
+                            <enumeration value="nan" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_中埋コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1477500101_1418800101_1420600101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="中詰充填" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>中詰充填</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_中詰充填</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_中詰充填</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>中詰材規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_中詰充填</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1477500101_1418800101_1418400101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="処分費" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>処分費</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_処分費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_処分費</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1477500101_1418800101_B040805101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="刃口金物据付" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>刃口金物据付</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_刃口金物据付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_刃口金物据付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1477500101_1418800101_1417500101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="型枠" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1477500101_1418800101_B040800102</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠の種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_一般型枠" />
+                            <enumeration value="2_化粧型枠" />
+                            <enumeration value="3_撤去しない埋設型枠" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="天端コンクリート用型枠・支保" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>天端コンクリート用型枠・支保</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_天端コンクリート用型枠・支保</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_天端コンクリート用型枠・支保</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1477500101_1418800101_1418500101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="支保" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>支保</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_支保</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_支保</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1477500101_1418800101_1096700107</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_支保</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支保耐力</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_f≦40kN／m2［t≦120cm］" />
+                            <enumeration value="2_40kN／m2＜f≦60kN／m2［120＜t≦190cm］" />
+                            <enumeration value="3_40kN／m2＜f≦80kN／m2［120＜t≦250cm］" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="止水壁取壊し" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>止水壁取壊し</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_止水壁取壊し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_止水壁取壊し</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1477500101_1418800101_B418600101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="殻処分" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>殻処分</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_殻処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_殻処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1477500101_1418800101_B003805104</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_殻処分</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>殻種別</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_アスファルト殻" />
+                            <enumeration value="2_コンクリート殻（無筋）" />
+                            <enumeration value="3_コンクリート殻（鉄筋）" />
+                            <enumeration value="4_モルタル殻" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="殻運搬" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>殻運搬</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_殻運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_殻運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1477500101_1418800101_B003800104</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_殻運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>殻種別</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_コンクリート（無筋）構造物とりこわし" />
+                            <enumeration value="2_コンクリート（鉄筋）構造物とりこわし" />
+                            <enumeration value="3_舗装版破砕" />
+                            <enumeration value="4_吹付法面とりこわし（モルタル）" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="沈下促進" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>沈下促進</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_沈下促進</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_沈下促進</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1477500101_1418800101_1417700201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_沈下促進</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>水荷重型式</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_沈下促進</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>載荷材料型式（コンクリートブロック）</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="沈下掘削" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>沈下掘削</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_沈下掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_沈下掘削</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1477500101_1418800101_1417600201</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="砂セントル" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>砂セントル</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_砂セントル</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_砂セントル</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1477500101_1418800101_1420400101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_砂セントル</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="足場" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>足場</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_足場</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1477500101_1418800101_1005502801</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="鉄筋" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>鉄筋</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1476400101_1477500101_1418800101_1040900101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202510_01_河川改修_堰_固定堰本体工_ニューマチックケーソン基礎工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋材料規格・径</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_SD295　D10" />
+                            <enumeration value="2_SD295　D13" />
+                            <enumeration value="3_SD295　D16" />
+                            <enumeration value="4_SD345　D10" />
+                            <enumeration value="5_SD345　D13" />
+                            <enumeration value="6_SD345　D16～D25" />
+                            <enumeration value="7_SD345　D29～D32" />
+                            <enumeration value="8_SD345　D35" />
+                            <enumeration value="9_SD345　D38" />
+                            <enumeration value="10_SD345　D41" />
+                            <enumeration value="11_SD345　D51" />
+                            <enumeration value="12_SR235　φ9" />
+                            <enumeration value="13_SR235　φ13" />
+                            <enumeration value="14_SR235　φ16～25" />
+                            <enumeration value="15_SD390　D25" />
+                            <enumeration value="16_SD390　D29" />
+                            <enumeration value="17_SD390　D32" />
+                            <enumeration value="18_SD390　D35" />
+                            <enumeration value="19_SD390　D38" />
+                            <enumeration value="20_SD390　D41" />
+                            <enumeration value="21_SD490　D35" />
+                            <enumeration value="22_SD490　D38" />
+                            <enumeration value="23_SD490　D41" />
+                            <enumeration value="24_SD345（ねじ節鉄筋）　D13" />
+                            <enumeration value="25_SD345（ねじ節鉄筋）　D16" />
+                            <enumeration value="26_SD345（ねじ節鉄筋）　D19" />
+                            <enumeration value="27_SD345（ねじ節鉄筋）　D22" />
+                            <enumeration value="28_SD345（ねじ節鉄筋）　D25" />
+                            <enumeration value="29_SD345（ねじ節鉄筋）　D29" />
+                            <enumeration value="30_SD345（ねじ節鉄筋）　D32" />
+                            <enumeration value="31_SD345（ねじ節鉄筋）　D35" />
+                            <enumeration value="32_SD345（ねじ節鉄筋）　D38" />
+                            <enumeration value="33_SD345（ねじ節鉄筋）　D41" />
+                            <enumeration value="34_SD345（ねじ節鉄筋）　D51" />
+                            <enumeration value="35_SD390（ねじ節鉄筋）　D25" />
+                            <enumeration value="36_SD390（ねじ節鉄筋）　D29" />
+                            <enumeration value="37_SD390（ねじ節鉄筋）　D32" />
+                            <enumeration value="38_SD390（ねじ節鉄筋）　D35" />
+                            <enumeration value="39_SD390（ねじ節鉄筋）　D38" />
+                            <enumeration value="40_SD390（ねじ節鉄筋）　D41" />
+                            <enumeration value="41_SD490（ねじ節鉄筋）　D35" />
+                            <enumeration value="42_SD490（ねじ節鉄筋）　D38" />
+                            <enumeration value="43_SD490（ねじ節鉄筋）　D41" />
+                            <enumeration value="44_各種" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>
