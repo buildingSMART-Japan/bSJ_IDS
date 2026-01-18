@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>道路維持・修繕_道路修繕_落石雪害防止工_落石防止網工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>202501.01</version>
+        <description>本IDSは、積算用属性情報（properties_202501_01.xlsx）のBIM/CIM積算MVDv0.3に対応したものです。
+本IDSは、ソフトウェア開発および業務におけるデータ入力を支援することを目的として公開しています。なお、本辞書の利用にあたっては、利用者の責任において使用してください。
+本IDSは、対象工種に応じて項目を編集（追加、削除、変更等）を行ってください。
+本IDSに含まれていない項目は、設計数量管理機能を用いて別途設定してください。
+本IDSファイルは、以下のソフトウェアで出力されたIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2026-01-16</date>
+        <purpose>ソフトウェア開発および業務におけるデータ入力の支援</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="ロックネット" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ロックネット</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路修繕_落石雪害防止工_落石防止網工_ロックネット</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路修繕_落石雪害防止工_落石防止網工_ロックネット</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>アンカー規格・仕様</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_岩盤用 D22mm×長1,000mm" />
+                            <enumeration value="2_岩盤用 D25mm×長1,000mm" />
+                            <enumeration value="3_岩盤用 D29mm×長1,000mm" />
+                            <enumeration value="4_岩盤用 D32mm×長1,000mm" />
+                            <enumeration value="5_羽根付ｱﾝｶｰ 径25mm×長1,500mm" />
+                            <enumeration value="6_高耐力ｱﾝｶｰ(ﾌﾟﾚｰﾄ羽付)長1,500mm" />
+                            <enumeration value="7_高耐力ｱﾝｶｰ(ﾌﾟﾚｰﾄ羽付)長2,000mm" />
+                            <enumeration value="8_高耐力ｱﾝｶｰ(溝形鋼羽付)長1,500mm" />
+                            <enumeration value="9_高耐力ｱﾝｶｰ(溝形鋼羽付)長2,000mm" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路修繕_落石雪害防止工_落石防止網工_ロックネット</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1508200101_1324500101_1324900101_B325000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路修繕_落石雪害防止工_落石防止網工_ロックネット</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支柱規格・仕様</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_支柱高 2.0m" />
+                            <enumeration value="2_支柱高 2.5m" />
+                            <enumeration value="3_支柱高 3.0m" />
+                            <enumeration value="4_支柱高 3.5m" />
+                            <enumeration value="5_支柱高 4.0m" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路修繕_落石雪害防止工_落石防止網工_ロックネット</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>網規格(寸法)</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_線径 2.6mm" />
+                            <enumeration value="2_線径 3.2mm" />
+                            <enumeration value="3_線径 4.0mm" />
+                            <enumeration value="4_線径 5.0mm" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_道路維持・修繕_道路修繕_落石雪害防止工_落石防止網工_ロックネット</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>網規格(種別)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>
