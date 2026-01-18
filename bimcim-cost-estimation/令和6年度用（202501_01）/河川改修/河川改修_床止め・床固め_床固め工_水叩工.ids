@@ -1,0 +1,1152 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>河川改修_床止め・床固め_床固め工_水叩工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>202501.01</version>
+        <description>本IDSは、積算用属性情報（properties_202501_01.xlsx）のBIM/CIM積算MVDv0.3に対応したものです。
+本IDSは、ソフトウェア開発および業務におけるデータ入力を支援することを目的として公開しています。なお、本辞書の利用にあたっては、利用者の責任において使用してください。
+本IDSは、対象工種に応じて項目を編集（追加、削除、変更等）を行ってください。
+本IDSに含まれていない項目は、設計数量管理機能を用いて別途設定してください。
+本IDSファイルは、以下のソフトウェアで出力されたIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2026-01-16</date>
+        <purpose>ソフトウェア開発および業務におけるデータ入力の支援</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="コンクリート" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>コンクリート</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1155400201_1097800501_B041100102</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_21-8-25(20)(普通)" />
+                            <enumeration value="2_21-12-25(20)(普通)" />
+                            <enumeration value="3_24-8-25(20)(普通)" />
+                            <enumeration value="4_24-12-25(20)(普通)" />
+                            <enumeration value="5_27-8-25(20)(普通)" />
+                            <enumeration value="6_27-12-25(20)(普通)" />
+                            <enumeration value="7_30-8-25(20)(普通)" />
+                            <enumeration value="8_30-12-25(20)(普通)" />
+                            <enumeration value="9_40-8-25(20)(普通)" />
+                            <enumeration value="10_40-12-25(20)(普通)" />
+                            <enumeration value="11_18-8-40(普通)" />
+                            <enumeration value="12_18-12-40(普通)" />
+                            <enumeration value="13_19.5-8-40(普通)" />
+                            <enumeration value="14_21-8-40(普通)" />
+                            <enumeration value="15_21-12-40(普通)" />
+                            <enumeration value="16_22.5-8-40(普通)" />
+                            <enumeration value="17_24-8-40(普通)" />
+                            <enumeration value="18_24-12-40(普通)" />
+                            <enumeration value="19_4.5-2.5-40(普通)" />
+                            <enumeration value="20_21-8-25(20)(高炉)" />
+                            <enumeration value="21_21-12-25(20)(高炉)" />
+                            <enumeration value="22_24-8-25(20)(高炉)" />
+                            <enumeration value="23_24-12-25(20)(高炉)" />
+                            <enumeration value="24_19.5-5-40(高炉)" />
+                            <enumeration value="25_19.5-8-40(高炉)" />
+                            <enumeration value="26_19.5-12-40(高炉)" />
+                            <enumeration value="27_18-5-40(高炉)" />
+                            <enumeration value="28_21-5-40(高炉)" />
+                            <enumeration value="29_18-8-40(高炉)" />
+                            <enumeration value="30_18-12-40(高炉)" />
+                            <enumeration value="31_21-8-40(高炉)" />
+                            <enumeration value="32_24-8-40(高炉)" />
+                            <enumeration value="33_24-12-40(高炉)" />
+                            <enumeration value="34_21-12-40(高炉)" />
+                            <enumeration value="35_40-8-25(早強)" />
+                            <enumeration value="36_40-12-25(早強)" />
+                            <enumeration value="37_21-8-25(早強)" />
+                            <enumeration value="38_21-12-25(早強)" />
+                            <enumeration value="39_24-8-25(早強)" />
+                            <enumeration value="40_24-12-25(早強)" />
+                            <enumeration value="41_18-8-25(高炉)" />
+                            <enumeration value="42_18-12-25(高炉)" />
+                            <enumeration value="43_21-5-80(高炉)" />
+                            <enumeration value="44_18-3-40(高炉)" />
+                            <enumeration value="45_21-3-40(高炉)" />
+                            <enumeration value="46_各種" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="シール材" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>シール材</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_シール材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1155400201_1097800501_B616000101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="吸出し防止材" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>吸出し防止材</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_吸出し防止材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_吸出し防止材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1155400201_1097800501_B063700103</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_吸出し防止材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>厚さ</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_吸出し防止材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材質</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_吸出し防止材</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="均しコンクリート" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>均しコンクリート</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_均しコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_均しコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1155400201_1097800501_B040500102</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_均しコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>敷厚</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_均しコンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_21-8-25(20)(普通)" />
+                            <enumeration value="2_21-12-25(20)(普通)" />
+                            <enumeration value="3_24-8-25(20)(普通)" />
+                            <enumeration value="4_24-12-25(20)(普通)" />
+                            <enumeration value="5_27-8-25(20)(普通)" />
+                            <enumeration value="6_27-12-25(20)(普通)" />
+                            <enumeration value="7_30-8-25(20)(普通)" />
+                            <enumeration value="8_30-12-25(20)(普通)" />
+                            <enumeration value="9_40-8-25(20)(普通)" />
+                            <enumeration value="10_40-12-25(20)(普通)" />
+                            <enumeration value="11_18-8-40(普通)" />
+                            <enumeration value="12_18-12-40(普通)" />
+                            <enumeration value="13_19.5-8-40(普通)" />
+                            <enumeration value="14_21-8-40(普通)" />
+                            <enumeration value="15_21-12-40(普通)" />
+                            <enumeration value="16_22.5-8-40(普通)" />
+                            <enumeration value="17_24-8-40(普通)" />
+                            <enumeration value="18_24-12-40(普通)" />
+                            <enumeration value="19_4.5-2.5-40(普通)" />
+                            <enumeration value="20_21-8-25(20)(高炉)" />
+                            <enumeration value="21_21-12-25(20)(高炉)" />
+                            <enumeration value="22_24-8-25(20)(高炉)" />
+                            <enumeration value="23_24-12-25(20)(高炉)" />
+                            <enumeration value="24_19.5-5-40(高炉)" />
+                            <enumeration value="25_19.5-8-40(高炉)" />
+                            <enumeration value="26_19.5-12-40(高炉)" />
+                            <enumeration value="27_18-5-40(高炉)" />
+                            <enumeration value="28_21-5-40(高炉)" />
+                            <enumeration value="29_18-8-40(高炉)" />
+                            <enumeration value="30_18-12-40(高炉)" />
+                            <enumeration value="31_21-8-40(高炉)" />
+                            <enumeration value="32_24-8-40(高炉)" />
+                            <enumeration value="33_24-12-40(高炉)" />
+                            <enumeration value="34_21-12-40(高炉)" />
+                            <enumeration value="35_40-8-25(早強)" />
+                            <enumeration value="36_40-12-25(早強)" />
+                            <enumeration value="37_21-8-25(早強)" />
+                            <enumeration value="38_21-12-25(早強)" />
+                            <enumeration value="39_24-8-25(早強)" />
+                            <enumeration value="40_24-12-25(早強)" />
+                            <enumeration value="41_18-8-25(高炉)" />
+                            <enumeration value="42_18-12-25(高炉)" />
+                            <enumeration value="43_21-5-80(高炉)" />
+                            <enumeration value="44_18-3-40(高炉)" />
+                            <enumeration value="45_21-3-40(高炉)" />
+                            <enumeration value="46_各種" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="型枠" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>型枠</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1155400201_1097800501_B040800201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_型枠</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>型枠の種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_一般型枠" />
+                            <enumeration value="2_化粧型枠" />
+                            <enumeration value="3_撤去しない埋設型枠" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="巨石張（空）" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>巨石張（空）</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_巨石張（空）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_巨石張（空）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1155400201_1097800501_B056805201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_巨石張（空）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>吸出し防止材の有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_吸出し防止材有" />
+                            <enumeration value="2_吸出し防止材無" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_巨石張（空）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>石材径</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_40cm以上60cm未満" />
+                            <enumeration value="2_60cm以上80cm未満" />
+                            <enumeration value="3_80cm以上100cm以下" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="巨石張（練）" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>巨石張（練）</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_巨石張（練）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_巨石張（練）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1155400201_1097800501_B056800101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_巨石張（練）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>止水ｼｰﾄの有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_止水ｼｰﾄ有" />
+                            <enumeration value="2_止水ｼｰﾄ無" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_巨石張（練）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>石材径</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_40cm以上60cm未満" />
+                            <enumeration value="2_60cm以上80cm未満" />
+                            <enumeration value="3_80cm以上100cm以下" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_巨石張（練）</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>遮水ｼｰﾄの有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_遮水ｼｰﾄ有" />
+                            <enumeration value="2_遮水ｼｰﾄ無" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="巨石採取" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>巨石採取</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_巨石採取</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_巨石採取</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1155400201_1097800501_B056805101</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="巨石運搬" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>巨石運搬</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_巨石運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_巨石運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1155400201_1097800501_B056805301</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="根固めブロック据付" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>根固めブロック据付</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_根固めブロック据付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_根固めブロック据付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1155400201_1097800501_B063000102</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_根固めブロック据付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ種類(型式)</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_無筋ﾌﾞﾛｯｸ" />
+                            <enumeration value="2_鉄筋ﾌﾞﾛｯｸ" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_根固めブロック据付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ種類(実質量)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_根固めブロック据付</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ購入の有無</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ﾌﾞﾛｯｸ購入有" />
+                            <enumeration value="2_ﾌﾞﾛｯｸ購入無" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="根固めブロック製作" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>根固めブロック製作</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_根固めブロック製作</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_根固めブロック製作</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1155400201_1097800501_B062900102</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_根固めブロック製作</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ種類(型式)</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_無筋ﾌﾞﾛｯｸ" />
+                            <enumeration value="2_鉄筋ﾌﾞﾛｯｸ" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_根固めブロック製作</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ種類(実質量)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="止水板" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>止水板</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_止水板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_止水板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1155400201_1097800501_B096200101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_止水板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>止水板種類･寸法</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_FF(塩ﾋﾞ製)200×5" />
+                            <enumeration value="2_FC(塩ﾋﾞ製)200×5" />
+                            <enumeration value="3_CF(塩ﾋﾞ製)200×5" />
+                            <enumeration value="4_CF(塩ﾋﾞ製)230×9" />
+                            <enumeration value="5_CC(塩ﾋﾞ製)200×5" />
+                            <enumeration value="6_UC(塩ﾋﾞ製)300×7" />
+                            <enumeration value="7_S.R(塩ﾋﾞ製)200×5" />
+                            <enumeration value="8_S.SF(塩ﾋﾞ製)200×5" />
+                            <enumeration value="9_CF300×7" />
+                            <enumeration value="10_CC300×7" />
+                            <enumeration value="11_UC200×6" />
+                            <enumeration value="12_各種" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="消波根固めブロック仮置" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>消波根固めブロック仮置</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック仮置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック仮置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1155400201_1097800501_B063005101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック仮置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ種類(型式)</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_無筋ﾌﾞﾛｯｸ" />
+                            <enumeration value="2_鉄筋ﾌﾞﾛｯｸ" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック仮置</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ種類(実質量)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="消波根固めブロック製作" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>消波根固めブロック製作</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック製作</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック製作</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1155400201_1097800501_B063005301</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック製作</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ種類（型式）</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック製作</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾌﾞﾛｯｸ種類（実質量）</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="消波根固めブロック運搬" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>消波根固めブロック運搬</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1155400201_1097800501_B063005201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_積込み･荷卸" />
+                            <enumeration value="2_積込み･据付け(乱積)" />
+                            <enumeration value="3_積込み･据付け(層積)" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>消波根固めﾌﾞﾛｯｸ運搬</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_2.5t以下" />
+                            <enumeration value="2_2.5tを超え5.5t以下" />
+                            <enumeration value="3_5.5tを超え11.0t以下" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>積載個数</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_1個" />
+                            <enumeration value="2_2個" />
+                            <enumeration value="3_3個" />
+                            <enumeration value="4_4個" />
+                            <enumeration value="5_5個" />
+                            <enumeration value="6_6個" />
+                            <enumeration value="7_7個" />
+                            <enumeration value="8_8個" />
+                            <enumeration value="9_9個" />
+                            <enumeration value="10_10個" />
+                            <enumeration value="11_11個以上15個以下" />
+                            <enumeration value="12_15個を超え23個以下" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_消波根固めブロック運搬</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>距離</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_0.5km以下" />
+                            <enumeration value="2_1.0km以下" />
+                            <enumeration value="3_1.5km以下" />
+                            <enumeration value="4_2.0km以下" />
+                            <enumeration value="5_2.5km以下" />
+                            <enumeration value="6_3.0km以下" />
+                            <enumeration value="7_3.5km以下" />
+                            <enumeration value="8_4.0km以下" />
+                            <enumeration value="9_4.5km以下" />
+                            <enumeration value="10_5.0km以下" />
+                            <enumeration value="11_5.5km以下" />
+                            <enumeration value="12_6.0km以下" />
+                            <enumeration value="13_6.5km以下" />
+                            <enumeration value="14_7.0km以下" />
+                            <enumeration value="15_7.5km以下" />
+                            <enumeration value="16_8.5km以下" />
+                            <enumeration value="17_9.5km以下" />
+                            <enumeration value="18_10.5km以下" />
+                            <enumeration value="19_11.5km以下" />
+                            <enumeration value="20_12.5km以下" />
+                            <enumeration value="21_14.0km以下" />
+                            <enumeration value="22_15.0km以下" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="目地板" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>目地板</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1155400201_1097800501_B601700101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地板の種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_瀝青質目地板ｔ=10" />
+                            <enumeration value="2_瀝青繊維質目地板t=10" />
+                            <enumeration value="3_樹脂発泡体(15倍発泡)t=10" />
+                            <enumeration value="4_樹脂発泡体(30倍発泡)t=10" />
+                            <enumeration value="5_ｺﾞﾑ発泡体t=10" />
+                            <enumeration value="6_発泡ｽﾁﾛｰﾙt=10" />
+                            <enumeration value="7_瀝青質目地板ｔ=20" />
+                            <enumeration value="8_瀝青繊維質目地板t=20" />
+                            <enumeration value="9_樹脂発泡体(15倍発泡)t=20" />
+                            <enumeration value="10_樹脂発泡体(30倍発泡)t=20" />
+                            <enumeration value="11_ｺﾞﾑ発泡体t=20" />
+                            <enumeration value="12_発泡ｽﾁﾛｰﾙt=20" />
+                            <enumeration value="13_各種" />
+                            <enumeration value="nan" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_目地板</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>目地板厚さ</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_厚10mm" />
+                            <enumeration value="2_厚20mm" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="鉄筋" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>鉄筋</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470400101_1481100101_1155400201_1097800501_1040900102</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202501_01_河川改修_床止め・床固め_床固め工_水叩工_鉄筋</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>鉄筋材料規格･径</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_SD295 D10" />
+                            <enumeration value="2_SD295 D13" />
+                            <enumeration value="3_SD295 D16" />
+                            <enumeration value="4_SD345 D10" />
+                            <enumeration value="5_SD345 D13" />
+                            <enumeration value="6_SD345 D16～25" />
+                            <enumeration value="7_SD345 D29～32" />
+                            <enumeration value="8_SD345 D35" />
+                            <enumeration value="9_SD345 D38" />
+                            <enumeration value="10_SD345 D41" />
+                            <enumeration value="11_SD345 D51" />
+                            <enumeration value="12_SR235 φ9" />
+                            <enumeration value="13_SR235 φ13" />
+                            <enumeration value="14_SR235 φ16～25" />
+                            <enumeration value="15_SD390 D25" />
+                            <enumeration value="16_SD390 D29" />
+                            <enumeration value="17_SD390 D32" />
+                            <enumeration value="18_SD390 D35" />
+                            <enumeration value="19_SD390 D38" />
+                            <enumeration value="20_SD390 D41" />
+                            <enumeration value="21_SD490 D35" />
+                            <enumeration value="22_SD490 D38" />
+                            <enumeration value="23_SD490 D41" />
+                            <enumeration value="24_SD345(ねじ節鉄筋) D13" />
+                            <enumeration value="25_SD345(ねじ節鉄筋) D16" />
+                            <enumeration value="26_SD345(ねじ節鉄筋) D19" />
+                            <enumeration value="27_SD345(ねじ節鉄筋) D22" />
+                            <enumeration value="28_SD345(ねじ節鉄筋) D25" />
+                            <enumeration value="29_SD345(ねじ節鉄筋) D29" />
+                            <enumeration value="30_SD345(ねじ節鉄筋) D32" />
+                            <enumeration value="31_SD345(ねじ節鉄筋) D35" />
+                            <enumeration value="32_SD345(ねじ節鉄筋) D38" />
+                            <enumeration value="33_SD345(ねじ節鉄筋) D41" />
+                            <enumeration value="34_SD345(ねじ節鉄筋) D51" />
+                            <enumeration value="35_SD390(ねじ節鉄筋) D25" />
+                            <enumeration value="36_SD390(ねじ節鉄筋) D29" />
+                            <enumeration value="37_SD390(ねじ節鉄筋) D32" />
+                            <enumeration value="38_SD390(ねじ節鉄筋) D35" />
+                            <enumeration value="39_SD390(ねじ節鉄筋) D38" />
+                            <enumeration value="40_SD390(ねじ節鉄筋) D41" />
+                            <enumeration value="41_SD490(ねじ節鉄筋) D35" />
+                            <enumeration value="42_SD490(ねじ節鉄筋) D38" />
+                            <enumeration value="43_SD490(ねじ節鉄筋) D41" />
+                            <enumeration value="44_各種" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>
