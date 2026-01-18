@@ -1,0 +1,756 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>202304.01</version>
+        <description>本IDSは、積算用属性情報（properties_202304_01.xlsx）のBIM/CIM積算MVDv0.3に対応したものです。
+本IDSは、ソフトウェア開発および業務におけるデータ入力を支援することを目的として公開しています。なお、本辞書の利用にあたっては、利用者の責任において使用してください。
+本IDSは、対象工種に応じて項目を編集（追加、削除、変更等）を行ってください。
+本IDSに含まれていない項目は、設計数量管理機能を用いて別途設定してください。
+本IDSファイルは、以下のソフトウェアで出力されたIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2026-01-16</date>
+        <purpose>ソフトウェア開発および業務におけるデータ入力の支援</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="ウエルポイント" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ウエルポイント</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_ウエルポイント</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_ウエルポイント</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1482900101_1487500101_1488600101_1010300101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_ウエルポイント</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_設置、撤去" />
+                            <enumeration value="2_設置のみ" />
+                            <enumeration value="3_撤去のみ" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_ウエルポイント</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>施工規模</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_100本未満" />
+                            <enumeration value="2_100本以上" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_ウエルポイント</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>機材設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ウエルポイント設置・撤去" />
+                            <enumeration value="2_ウエルポイントポンプ設置・撤去" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_ウエルポイント</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｳｴﾙﾎﾟｲﾝﾄ工損料</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_ウエルポイント工損料</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_ウエルポイント</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｳｴﾙﾎﾟｲﾝﾄﾎﾟﾝﾌﾟ運転管理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_ウエルポイントポンプ運転管理</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_ウエルポイント</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｼﾞｪｯﾄ装置損料</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_ジェット装置損料</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_ウエルポイント</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾎﾟﾝﾌﾟ組数</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="ディープウェル" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>ディープウェル</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_ディープウェル</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_ディープウェル</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1482900101_1487500101_1488600101_1010400104</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_ディープウェル</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>径</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_ディープウェル</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>機材損料</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ディープウェル損料" />
+                            <enumeration value="2_ケーシングパイプ" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_ディープウェル</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>機材設置撤去費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_ディープウェル設置" />
+                            <enumeration value="2_揚水設備" />
+                            <enumeration value="3_給水設備" />
+                            <enumeration value="4_ケーシングパイプ撤去工" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_ディープウェル</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>深さ</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_ディープウェル</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>蓋材料費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_上蓋</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_ディープウェル</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾃﾞｨｰﾌﾟｳｪﾙ運転管理費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_ディープウェル運転管理</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="トンネル仮巻コンクリート" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>トンネル仮巻コンクリート</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_トンネル仮巻コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_トンネル仮巻コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>仮巻ｺﾝｸﾘｰﾄ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_仮巻コンクリート工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_トンネル仮巻コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1482900101_1487500101_1488600101_1489100101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_トンネル仮巻コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>巻厚</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_トンネル仮巻コンクリート</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ｺﾝｸﾘｰﾄ規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="パイプルーフ" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>パイプルーフ</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_パイプルーフ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_パイプルーフ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1482900101_1487500101_1488600101_1488900101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_パイプルーフ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>径</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_パイプルーフ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_パイプルーフ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>長さ</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_パイプルーフ</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>ﾊﾟｲﾌﾟﾙｰﾌ設置費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_パイプルーフ工</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="垂直縫地" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>垂直縫地</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_垂直縫地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_垂直縫地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1482900101_1487500101_1488600101_1488800101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_垂直縫地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>垂直縫地費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_垂直縫地工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_垂直縫地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>径</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_垂直縫地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_垂直縫地</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>長さ</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="押え盛土" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>押え盛土</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_押え盛土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_押え盛土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1482900101_1487500101_1488600101_B489000101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_押え盛土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>押え盛土費(人力盛土)</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_埋戻し" />
+                            <enumeration value="2_路体（築堤）盛土" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_押え盛土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>押え盛土費(掘削･積込)</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_押土（ルーズ）" />
+                            <enumeration value="2_積込（ルーズ）" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_押え盛土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>押え盛土費(敷均し･締固め)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_路体（築堤）盛土</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_押え盛土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>押え盛土費(添加材混合)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_添加材混合盛土工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_押え盛土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>押え盛土費(運搬)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_土砂等運搬</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_押え盛土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>押え盛土費(ｴｱﾓﾙﾀﾙ)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_エアモルタル盛土工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_押え盛土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>改良材添加量</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_押え盛土</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="水抜ボーリング" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>水抜ボーリング</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_水抜ボーリング</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_水抜ボーリング</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1482900101_1487500101_1488600101_1488700101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_水抜ボーリング</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>径</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_水抜ボーリング</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料規格</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_水抜ボーリング</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>水抜ﾎﾞｰﾘﾝｸﾞ費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_水抜ボーリング工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_水抜ボーリング</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>長さ</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="薬液注入" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>薬液注入</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_薬液注入</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_薬液注入</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1470700101_1482900101_1487500101_1488600101_1189600201</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_薬液注入</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>坑内薬液注入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_坑内薬液注入工</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_薬液注入</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>坑外薬液注入費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_二重管ストレーナ工法" />
+                            <enumeration value="2_二重管ダブルパッカー工法（削孔工）" />
+                            <enumeration value="3_二重管ダブルパッカー工法（一次注入）" />
+                            <enumeration value="4_二重管ダブルパッカー工法（二次注入）" />
+                            <enumeration value="5_注入設備据付・解体" />
+                            <enumeration value="6_注入設備移設" />
+                            <enumeration value="7_排水汚泥土処理" />
+                            <enumeration value="8_中和剤材料費" />
+                            <enumeration value="9_バキューム車運転費" />
+                            <enumeration value="10_処分費（ｍ３）" />
+                            <enumeration value="11_処分費（ｔ）" />
+                            <enumeration value="12_足場工" />
+                            <enumeration value="13_器具洗浄費" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路新設・改築_トンネル（NATM）_掘削補助工_掘削補助工B_薬液注入</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>注入材料</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>
