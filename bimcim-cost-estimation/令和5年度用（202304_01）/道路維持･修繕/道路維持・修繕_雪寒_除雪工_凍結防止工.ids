@@ -1,0 +1,473 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ids schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+    <info>
+        <title>道路維持・修繕_雪寒_除雪工_凍結防止工</title>
+        <copyright>buildingSMART Japan 土木委員会</copyright>
+        <version>202304.01</version>
+        <description>本IDSは、積算用属性情報（properties_202304_01.xlsx）のBIM/CIM積算MVDv0.3に対応したものです。
+本IDSは、ソフトウェア開発および業務におけるデータ入力を支援することを目的として公開しています。なお、本辞書の利用にあたっては、利用者の責任において使用してください。
+本IDSは、対象工種に応じて項目を編集（追加、削除、変更等）を行ってください。
+本IDSに含まれていない項目は、設計数量管理機能を用いて別途設定してください。
+本IDSファイルは、以下のソフトウェアで出力されたIFCファイルへの適用を想定しています。
+    V-nasClair
+    TREND-CORE
+    SiTE-STRUCTURE
+    SketchUp
+    Civil 3D
+    Revit</description>
+        <author>openbim-help@building-smart.or.jp</author>
+        <date>2026-01-16</date>
+        <purpose>ソフトウェア開発および業務におけるデータ入力の支援</purpose>
+        <milestone>詳細設計</milestone>
+    </info>
+    <specifications>
+        <specification name="人力薬剤散布" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>人力薬剤散布</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_人力薬剤散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_人力薬剤散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1530400101_1530500101_1532000101_1539400101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_人力薬剤散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業種別</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_人力薬剤散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>凍結防止剤人力散布費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_凍結防止剤人力散布</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_人力薬剤散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支給品</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_支給品有" />
+                            <enumeration value="2_支給品無" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_人力薬剤散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支給品費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_支給品</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_人力薬剤散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>薬剤種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="凍結防止剤" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>凍結防止剤</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_凍結防止剤</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_凍結防止剤</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1472400101_1530400101_1530500101_1532000101_1539600101" />
+                            <enumeration value="1472400101_1530400101_1530500101_1532000101_1539600201" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_凍結防止剤</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>作業種別</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="nan" />
+                            <enumeration value="nan" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_凍結防止剤</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支給品</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_支給品有" />
+                            <enumeration value="2_支給品無" />
+                            <enumeration value="1_支給品有" />
+                            <enumeration value="2_支給品無" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_凍結防止剤</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支給品費</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_支給品" />
+                            <enumeration value="1_支給品" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_凍結防止剤</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>材料費(各種)</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_材料費（ｔ）" />
+                            <enumeration value="1_材料費（Ｌ）" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_凍結防止剤</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>薬剤種類</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="nan" />
+                            <enumeration value="nan" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="凍結防止剤散布" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>凍結防止剤散布</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_凍結防止剤散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_凍結防止剤散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1530400101_1530500101_1532000101_1532100101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_凍結防止剤散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>損耗品持込･貸与区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_損耗品持込" />
+                            <enumeration value="2_損耗品貸与" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_凍結防止剤散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>支給品費</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_支給品</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_凍結防止剤散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>散布装置運転費(夜間作業)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_凍結防止剤散布装置運転</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_凍結防止剤散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>散布装置運転費(昼間作業)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_凍結防止剤散布装置運転</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_凍結防止剤散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>散布車運転費(夜間作業)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_凍結防止剤散布車運転</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_凍結防止剤散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>散布車運転費(昼間作業)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_凍結防止剤散布車運転</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_凍結防止剤散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>機械持込･貸与区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_機械持込" />
+                            <enumeration value="2_機械貸与" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_凍結防止剤散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>機種</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_凍結防止剤散布</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>種別時間帯</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_昼間" />
+                            <enumeration value="2_夜間" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+        <specification name="散水車" ifcVersion="IFC2X3">
+            <applicability minOccurs="0" maxOccurs="unbounded">
+                <attribute>
+                    <name>
+                        <simpleValue>ObjectType</simpleValue>
+                    </name>
+                    <value>
+                        <simpleValue>散水車</simpleValue>
+                    </value>
+                </attribute>
+                <property dataType="IFCREAL">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_散水車</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>数量</simpleValue>
+                    </baseName>
+                </property>
+            </applicability>
+            <requirements>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_散水車</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>体系コード</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1472400101_1530400101_1530500101_1532000101_1532200101</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_散水車</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>損耗品持込･貸与区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_損耗品持込" />
+                            <enumeration value="2_損耗品貸与" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_散水車</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>散水車運転費(夜間作業)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_散水車運転（凍結防止剤散布）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_散水車</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>散水車運転費(昼間作業)</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>1_散水車運転（凍結防止剤散布）</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_散水車</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>機械持込･貸与区分</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_機械持込" />
+                            <enumeration value="2_機械貸与" />
+                        </restriction>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_散水車</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>機種</simpleValue>
+                    </baseName>
+                    <value>
+                        <simpleValue>nan</simpleValue>
+                    </value>
+                </property>
+                <property dataType="IFCTEXT" cardinality="required" instructions="設定する値は1つです。使用しない値は削除してください。">
+                    <propertySet>
+                        <simpleValue>数量情報_202304_01_道路維持・修繕_雪寒_除雪工_凍結防止工_散水車</simpleValue>
+                    </propertySet>
+                    <baseName>
+                        <simpleValue>種別時間帯</simpleValue>
+                    </baseName>
+                    <value>
+                        <restriction base="xs:string">
+                            <enumeration value="1_昼間" />
+                            <enumeration value="2_夜間" />
+                        </restriction>
+                    </value>
+                </property>
+            </requirements>
+        </specification>
+    </specifications>
+</ids>
